@@ -1,0 +1,53 @@
+{
+    "ltex.language": "de-CH",
+    "markdown-preview-enhanced.useKroki": true,
+    "markdown-preview-enhanced.plantumlServer": "https://kroki.io",
+    "latex-workshop.latex.recipe.default": "latexmk",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk",
+                "makeglossaries",
+                "latexmk"
+            ]
+        },
+        {
+            "name": "makeglossaries",
+            "tools": [
+                "makeglossaries"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "%DOC%.tex"
+            ],
+            "env": {}
+        },
+        {
+            "name": "makeglossaries",
+            "command": "makeglossaries",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        }
+    ]
+}

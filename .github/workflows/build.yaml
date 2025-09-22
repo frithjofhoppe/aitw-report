@@ -1,0 +1,43 @@
+name: Build LaTeX Document
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Cache TeX Live
+        uses: actions/cache@v4
+        with:
+          path: /usr/local/texlive
+          key: texlive-${{ runner.os }}-${{ hashFiles('**/*.tex') }}
+          restore-keys: texlive-${{ runner.os }}-
+
+      - name: Install Minimal TeX Live with Required Packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-science texlive-lang-german biber latexmk
+
+      - name: Compile LaTeX Document
+        run: |
+          latexmk -pdf -interaction=nonstopmode -shell-escape ip6-project-documentation.tex
+          makeglossaries ip6-project-documentation
+          latexmk -pdf -interaction=nonstopmode -shell-escape ip6-project-documentation.tex
+        working-directory: ./  # Adjust if your .tex file is in a subfolder
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ip6-project-documentation-pdf
+          path: ip6-project-documentation.pdf

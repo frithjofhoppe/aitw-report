@@ -1,3 +1,30 @@
 \section{Einleitung}
 
-\lipsum[6-7]
+Die Bundesverwaltung verfolgt eine Hybrid-Multi-Cloud Strategie, welche die Nutzung unterschiedlicher Cloud-Anbieter sowie der eigenen Infrastrukturen kombiniert. Das \ac{bit} nimmt dabei die Rolle eines \ac{CSB} wahr. Das \ac{CSB} stellt die Anbindung an verschiedene Hyperscaler sicher und betreibt gleichzeitig eine eigene Private-Cloud Infrastruktur on-premise.
+
+Die konkrete Ausführung der Strategie wird im Rahmen einer öffentlichen Ausschreibung ermittelt \hl{ggf hier info}. Vor Abschluss dieser existieren keine Präfenrezen an Cloud-Anbietern sowohl für den Public-Cloud wie Private-Cloud Aspekt der Strategie.
+
+Diese Arbeit strebt ebenfalls einen Inhalt unabhängig von Anbietern an sowohl in der Erarbeitung der Grundlagen wie auch der Ausarbeitung. Der Eindruck von etwaigen Präferenzen ist auf die Autoren zurückzuführen und hat keinen direkten Bezug zum \ac{bit}
+
+Im Rahmen des IP5 Projektes \textit{25fs imvs29} \hl{ggf als anhang anfügen} wurde sich bereits mit der plattformübergreifenden Governance auseinandergesetzt. Die vorgeschlagene Architektur war dort basierend auf der Sprache OSCAL. Mit einem PoC wurde gezeigt, dass eine agnostische Implementation grundsätzlich möglich ist. Die Erkenntnisse aus dieser vorgegangenen Arbeit von den gleichen Autoren haben möglicherweise Implikationen auf Teilaspekte der Arbeit in dieser Bachelorthesis.
+
+\subsection{Zielsetzung}
+
+Eine Nutzung der verschiedenen Cloud-Plattformen bedingt, dass eine grundlegende Struktur existiert auf welche Anwender innerhalb der \ac{bv} aufbauen können. Das \ac{bit} strebt hierbei die Anwendung der Konzepte hinter dem Begriff \ac{lz} an. Die Annahme ist dass eine \ac{lz} eine durch den Plattformprovider vordefinierten Struktur bezeichnet, in welcher die effektiven Angebote bezogen werden können.
+
+Aus der bisherigen Erfahrung \hl{hier verweis auf vorarbeit} unterschieden sich die Plattformprovider in der Art und Weise wie ihre Plattform strukturiert ist. Idee oder Konzepte werden zwar häufig zwischen den Providern geteilt, die Ausgestaltung unterscheidet sich jedoch. Für einen grösseren Anwender wie das \ac{bit} bedeutet dies das es einen Ansatz braucht, mit dem eine Anwendung (bspw dem Konzept der \ac{lz}) über Grenzen von Provider hinweg möglich ist. Es ist somit trotzt der Unterschiedlichkeit eine Homogenisierung wünschenswert. Eine Vereinheitlichung ermöglicht es dem \ac{bit} einen Leitrahmen zu definieren welcher für die verschiedenen Projekte gilt, welche ihre Vorhaben auf der Plattform laufen lassen.
+
+Diese Arbeit beschäftigt sich im Rahmen der aufgezeigten Problematik mit folgenden Fragestellungen
+
+\textit{Welche Komponenten machen eine Landingzone für eine Hybrid-Multi-Cloud-Umgebung aus?}
+
+\textit{Wie sieht eine geeignete technische Architektur einer Landingzone für eine Hybrid-Multi-Cloud-Umgebung aus und was muss sie erfüllen?}
+
+
+% Für den Betrieb von Cloud-Diensten nutzen die einzelnen Provider sogenannte Landingzones - vordefinierte Strukturen, die den Rahmen für die Nutzung der jeweiligen Plattform bilden. Die bisherigen Erfahrungen zeigen jedoch, dass sich diese Landingzones zwischen den Anbietern grundlegend unterscheiden und bisher keine übergreifende technische Lösung existiert, die eine einheitliche Nutzung und Steuerung über mehrere Plattformen hinweg ermöglicht.
+
+% Damit entsteht die Herausforderung, Anforderungen und zentrale Elemente einer Provider-agnostischen Landingzone zu identifizieren, die eine konsistente, sichere und Compliance-konforme Nutzung der verschiedenen Plattformen innerhalb der Bundesverwaltung sicherstellt.
+
+\subsection{Methodik}
+
+\hl{Beschreiben was in welchem abschnitt passiert - verknüpfen wie die abschnitte zusammenhängen}

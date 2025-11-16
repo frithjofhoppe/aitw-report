@@ -4,7 +4,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-129" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cloud Team&lt;/span&gt;&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-129" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cloud Team Bundesverwaltung&lt;/span&gt;&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="-740" y="-130" width="270" height="210" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-66" value="&lt;div style=&quot;text-align: left;&quot;&gt;SOLL/IST&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
@@ -147,7 +147,7 @@
           <mxGeometry x="-350" y="142" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-106" value="BIT verfolgt einen &lt;b&gt;partitioned multi-cloud Pattern&lt;/b&gt; Ansatz. Services werden nach best of breed-approach gewählt&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" vertex="1" parent="1">
-          <mxGeometry x="-800" y="220" width="180" height="110" as="geometry" />
+          <mxGeometry x="-450" y="320" width="180" height="110" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-109" target="Lzv2f7MgehNdQIw8qka4-103">
           <mxGeometry relative="1" as="geometry" />
@@ -160,7 +160,7 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-109" value="Workload" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-430" y="-230" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-110" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.464;entryDx=0;entryDy=0;exitX=0.994;exitY=0.569;exitDx=0;exitDy=0;exitPerimeter=0;entryPerimeter=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-106" target="Lzv2f7MgehNdQIw8qka4-98">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-110" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-106" target="Lzv2f7MgehNdQIw8qka4-98">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="-700" y="90" as="sourcePoint" />
             <mxPoint x="-650" y="40" as="targetPoint" />
@@ -196,7 +196,7 @@
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-131" value="creates" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-130">
           <mxGeometry x="0.308" y="-3" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="-19" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-119" value="Customer" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -212,6 +212,15 @@
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-134" value="Cloud&lt;div&gt;Engineering&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-600" y="-10" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-141" value="Maintains shared Knowledgebase" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-765" y="135.5" width="150" height="84.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-142" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-141" target="Lzv2f7MgehNdQIw8qka4-129">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-630" y="240" as="sourcePoint" />
+            <mxPoint x="-580" y="190" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

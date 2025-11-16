@@ -118,6 +118,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-149" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-98" target="Lzv2f7MgehNdQIw8qka4-148">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-150" value="is" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-149">
+          <mxGeometry x="0.045" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-98" value="&lt;span style=&quot;text-align: left;&quot;&gt;Cloud Plattform&lt;/span&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="-530" y="97" width="320" height="140" as="geometry" />
         </mxCell>
@@ -172,8 +180,11 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-112" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Metamodell&lt;/h1&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-780" y="-350" width="180" height="50" as="geometry" />
         </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-114" target="Lzv2f7MgehNdQIw8qka4-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-114" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Strategische Ziele&lt;/h1&gt;&lt;p&gt;- Struktur auf den verschiedenen Cloud Plattformen sollen vereinheitlicht werden (betrieben durch aktuell CSB), um divergierende Implementationen in den Ämtern zu vermeiden&lt;/p&gt;&lt;p&gt;- Cloud Plattform Angebot sollen standardisiert werden, um kundenvorhaben geeignete Dienstleistungen anbieten zu können&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="80" y="-23" width="370" height="143" as="geometry" />
+          <mxGeometry x="50" y="-90" width="300" height="180" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-137" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-115" target="Lzv2f7MgehNdQIw8qka4-119">
           <mxGeometry relative="1" as="geometry">
@@ -223,7 +234,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-145" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Annahmen&lt;/h1&gt;&lt;p&gt;Kundenvorhaben werden basierend auf ihren Anforderungen entsprechend Services / Cloud -Plattformen enmpfohlen&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="70" y="-370" width="260" height="130" as="geometry" />
+          <mxGeometry x="40" y="-230" width="260" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-147" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Metriken&lt;/h1&gt;&lt;p&gt;- Ausgaben für IKT-Plattformen&lt;/p&gt;&lt;p&gt;- Ausgaben für Verwaltung der Cloud-Plattformen&lt;/p&gt;&lt;p&gt;- Aufwand Onboarding Neukunde&lt;/p&gt;&lt;p&gt;- Aufwand Migration bestehende Kundenlösung (legacy plattform)&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="790" width="330" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-148" value="Informatik Plattform" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-650" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-154" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.551;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-147" target="Lzv2f7MgehNdQIw8qka4-61">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

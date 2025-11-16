@@ -1,35 +1,35 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="28.1.0">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="2137" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2410" dy="948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-61" value="&lt;span style=&quot;text-align: left;&quot;&gt;Strategie&lt;/span&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-66" value="&lt;div style=&quot;text-align: left;&quot;&gt;SOLL/IST&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="960" y="270" width="340" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-65" value="&lt;div style=&quot;text-align: left;&quot;&gt;Capabilities&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="790" y="270" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-64" value="&lt;div style=&quot;text-align: left;&quot;&gt;Requirements&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="620" y="270" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-63" value="&lt;div style=&quot;text-align: left;&quot;&gt;Architektur Prinzipien&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="450" y="270" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-62" value="&lt;div style=&quot;text-align: left;&quot;&gt;Inhalts strukturieren&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="280" y="270" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-61" value="&lt;div style=&quot;text-align: left;&quot;&gt;Strategie&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="110" y="270" width="160" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-60" value="&lt;span style=&quot;text-align: left;&quot;&gt;Grundlagen&lt;/span&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="-120" y="270" width="220" height="280" as="geometry" />
+          <mxGeometry x="-100" y="270" width="200" height="280" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-6" target="Lzv2f7MgehNdQIw8qka4-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-6" value="Architecture principles definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="340" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-8" target="Lzv2f7MgehNdQIw8qka4-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-8" value="Define business outcomes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="10" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-9" value="Identify capabilities" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="10" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-10" value="Map capabilities gaps" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="680" y="10" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.03;entryY=0.53;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-9" target="Lzv2f7MgehNdQIw8qka4-10">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="470" y="345" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-16" target="Lzv2f7MgehNdQIw8qka4-20">
           <mxGeometry relative="1" as="geometry" />
@@ -38,10 +38,10 @@
           <mxGeometry x="-70" y="325" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-17" value="NFR definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="610" y="340" width="120" height="60" as="geometry" />
+          <mxGeometry x="630" y="345" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-20" value="Strategische Ziele definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="370" width="120" height="60" as="geometry" />
+          <mxGeometry x="130" y="355" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-24" target="Lzv2f7MgehNdQIw8qka4-36">
           <mxGeometry relative="1" as="geometry" />
@@ -50,12 +50,12 @@
           <mxGeometry x="810" y="345" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-26" value="&lt;div&gt;Identifizieren regulatorischer Vorgaben (e.g. Klassifizierung)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="345" width="120" height="60" as="geometry" />
+          <mxGeometry x="300" y="350" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-30" value="" style="endArrow=classic;html=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="-50" y="250" as="sourcePoint" />
-            <mxPoint x="1000" y="250" as="targetPoint" />
+            <mxPoint x="-120" y="250" as="sourcePoint" />
+            <mxPoint x="1290" y="250" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-31" value="Reihenfolge von Tasks" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-30">
@@ -73,10 +73,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-38" value="Assess current state (e.g. AzurePortal CSB)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="990" y="380" width="120" height="60" as="geometry" />
+          <mxGeometry x="980" y="375" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-45" value="Define target state / prioritized" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="380" width="120" height="60" as="geometry" />
+          <mxGeometry x="1160" y="375" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-47" target="Lzv2f7MgehNdQIw8qka4-20">
           <mxGeometry relative="1" as="geometry" />
@@ -85,13 +85,13 @@
           <mxGeometry x="-70" y="415" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-50" value="Metriken definieren zum messen/validieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="450" width="120" height="60" as="geometry" />
+          <mxGeometry x="130" y="435" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-51" value="LZ Auswahl Matrix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="280" y="435" width="120" height="60" as="geometry" />
+          <mxGeometry x="300" y="440" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-52" value="Spezifische LZ Prinzipien" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="450" y="435" width="120" height="60" as="geometry" />
+          <mxGeometry x="470" y="440" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,11 +1,14 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="28.1.0">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="1913" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2137" dy="785" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-6" target="Lzv2f7MgehNdQIw8qka4-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-6" value="Architecture principles definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="300" width="120" height="60" as="geometry" />
+          <mxGeometry x="450" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-8" target="Lzv2f7MgehNdQIw8qka4-9">
           <mxGeometry relative="1" as="geometry" />
@@ -22,37 +25,26 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.03;entryY=0.53;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-9" target="Lzv2f7MgehNdQIw8qka4-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-16" value="Metamodell definieren (Terminologie etc)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="420" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-17" target="Lzv2f7MgehNdQIw8qka4-6">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-16" target="Lzv2f7MgehNdQIw8qka4-20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-19" value="beeinflusst" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-18">
-          <mxGeometry x="-0.0226" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-16" value="Metamodell definieren (Terminologie etc)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="325" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-17" value="NFR definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-20" target="Lzv2f7MgehNdQIw8qka4-17">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry x="610" y="340" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-20" value="Strategische Ziele definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="430" width="120" height="60" as="geometry" />
+          <mxGeometry x="120" y="370" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-24" value="Define capability map" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="630" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-25" value="Define landing zone" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="890" y="300" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-26" target="Lzv2f7MgehNdQIw8qka4-17">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-24" target="Lzv2f7MgehNdQIw8qka4-36">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-24" value="Define capability domains L1" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="345" width="120" height="60" as="geometry" />
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-26" value="&lt;div&gt;Identifizieren regulatorischer Vorgaben (e.g. Klassifizierung)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="300" width="120" height="60" as="geometry" />
+          <mxGeometry x="280" y="345" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-30" value="" style="endArrow=classic;html=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -64,6 +56,36 @@
           <mxGeometry x="0.1761" y="2" relative="1" as="geometry">
             <mxPoint x="-85" y="-8" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-34" value="&lt;span style=&quot;text-align: left;&quot;&gt;Partitioning principle:Highly regulated data (D1) must reside on on-prem or sovereign cloud; public cloud access only via controlled interfaces.Portability principle:Cloud-agnostic runtimes (e.g. Kubernetes, containers) for workloads that may move between providers.&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Security principle:Single identity and access model across clouds (federated IAM, central policies).&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Network principle:All clouds are connected via a controlled hub-and-spoke model with central inspection.&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Observability principle: Logs and metrics from all environments feed into a central observability platform.&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Compliance principl: Multi-cloud designs must be traceable to data residency and sector regulatio&lt;/span&gt;" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="190" y="700" width="400" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-36" value="Define additional layer of capabilities" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-38" target="Lzv2f7MgehNdQIw8qka4-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-38" value="Assess current state (e.g. AzurePortal CSB)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="990" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-45" value="Define target state / prioritized" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-47" target="Lzv2f7MgehNdQIw8qka4-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-47" value="Stakeholder map definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-50" y="415" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-50" value="Metriken definieren zum messen/validieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-51" value="LZ Auswahl Matrix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="435" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-52" value="Spezifische LZ Prinzipien" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="435" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

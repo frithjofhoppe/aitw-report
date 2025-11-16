@@ -4,6 +4,12 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-61" value="&lt;span style=&quot;text-align: left;&quot;&gt;Strategie&lt;/span&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="110" y="270" width="160" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-60" value="&lt;span style=&quot;text-align: left;&quot;&gt;Grundlagen&lt;/span&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="270" width="220" height="280" as="geometry" />
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-6" target="Lzv2f7MgehNdQIw8qka4-52">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -29,7 +35,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-16" value="Metamodell definieren (Terminologie etc)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="325" width="120" height="60" as="geometry" />
+          <mxGeometry x="-70" y="325" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-17" value="NFR definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="610" y="340" width="120" height="60" as="geometry" />
@@ -76,10 +82,10 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-47" value="Stakeholder map definieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-50" y="415" width="120" height="60" as="geometry" />
+          <mxGeometry x="-70" y="415" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-50" value="Metriken definieren zum messen/validieren" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="460" width="120" height="60" as="geometry" />
+          <mxGeometry x="120" y="450" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-51" value="LZ Auswahl Matrix" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="280" y="435" width="120" height="60" as="geometry" />

@@ -1,9 +1,24 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="28.1.0">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="2410" dy="2117" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2137" dy="1954" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-80" target="Lzv2f7MgehNdQIw8qka4-88">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-240" y="415" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-93" value="provide" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-92">
+          <mxGeometry x="0.2958" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-80" value="&lt;span style=&quot;text-align: left;&quot;&gt;Cloud Plattform&lt;/span&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-610" y="345" width="320" height="140" as="geometry" />
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-66" value="&lt;div style=&quot;text-align: left;&quot;&gt;SOLL/IST&lt;/div&gt;" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="960" y="270" width="340" height="280" as="geometry" />
         </mxCell>
@@ -92,6 +107,63 @@
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-52" value="Spezifische LZ Prinzipien" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="470" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-67" value="Grundlage existiert duch Abklärungen Thierry" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-160" y="585" width="140" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-70" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-67" target="Lzv2f7MgehNdQIw8qka4-47">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="640" as="sourcePoint" />
+            <mxPoint x="240" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-72" target="Lzv2f7MgehNdQIw8qka4-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-83" value="defined on" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-82">
+          <mxGeometry x="-0.1895" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-72" target="Lzv2f7MgehNdQIw8qka4-88">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-95" value="contains" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-94">
+          <mxGeometry x="-0.0215" y="-2" relative="1" as="geometry">
+            <mxPoint x="-4" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-72" value="Landing Zone" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-73" value="Cloud Plattform&lt;div&gt;Public&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-74" value="Cloud Plattform&lt;div&gt;OnPremise&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-430" y="390" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-76" value="BIT verfolgt einen partitioned multi-cloud Pattern Ansatz. Services werden nach best of breed-approach gewählt" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-770" y="175" width="180" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-84" target="Lzv2f7MgehNdQIw8qka4-72">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-86" value="runs within" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-85">
+          <mxGeometry x="-0.267" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-84" value="Workload" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-87" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-76" target="Lzv2f7MgehNdQIw8qka4-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-780" y="390" as="sourcePoint" />
+            <mxPoint x="-730" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-88" value="Shared&lt;div&gt;Components&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="200" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

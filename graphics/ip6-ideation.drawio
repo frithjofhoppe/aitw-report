@@ -67,7 +67,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-34" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Partitioning principle:Highly regulated data (D1) must reside on on-prem or sovereign cloud; public cloud access only via controlled interfaces.Portability principle:Cloud-agnostic runtimes (e.g. Kubernetes, containers) for workloads that may move between providers.&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Security principle:Single identity and access model across clouds (federated IAM, central policies).&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Network principle:All clouds are connected via a controlled hub-and-spoke model with central inspection.&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Observability principle: Logs and metrics from all environments feed into a central observability platform.&lt;/span&gt;&lt;br style=&quot;padding: 0px; margin: 0px; text-align: left;&quot;&gt;&lt;span style=&quot;text-align: left;&quot;&gt;Compliance principl: Multi-cloud designs must be traceable to data residency and sector regulatio&lt;/span&gt;" vertex="1">
-          <mxGeometry height="260" width="400" x="960" y="-400" as="geometry" />
+          <mxGeometry height="260" width="400" x="430" y="-740" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Define additional layer of capabilities" vertex="1">
           <mxGeometry height="60" width="120" x="810" y="435" as="geometry" />
@@ -434,11 +434,11 @@
             <mxRectangle height="44" width="180" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0sQTEfLdZaxYTiRMNoNk-1" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-65">
+        <mxCell id="0sQTEfLdZaxYTiRMNoNk-1" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-64">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-249" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="240" width="770" x="710" y="700" as="geometry" />
+          <mxGeometry height="240" width="770" x="655" y="710" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-250" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="40" width="770" as="geometry" />

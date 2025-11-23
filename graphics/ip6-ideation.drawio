@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="2422" dy="2025" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3360" dy="2132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -167,7 +167,7 @@
             <mxPoint x="-4" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Landing Zone" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Landing Zone (LZ)" vertex="1">
           <mxGeometry height="60" width="120" x="-430" y="-100" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cloud Plattform&lt;div&gt;Public&lt;/div&gt;" vertex="1">
@@ -182,12 +182,12 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-107" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-103">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-108" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="runs within" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-108" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-107" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="runs within guardrails" vertex="1">
           <mxGeometry relative="1" x="-0.267" y="3" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-109" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Workload" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-109" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&quot;Froundation&quot;" vertex="1">
           <mxGeometry height="60" width="120" x="-430" y="-230" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-110" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-106" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-98" value="">
@@ -227,9 +227,21 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-130" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-109">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-131" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-130" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="creates" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-131" connectable="0" parent="Lzv2f7MgehNdQIw8qka4-130" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="orders" vertex="1">
           <mxGeometry relative="1" x="0.308" y="-3" as="geometry">
-            <mxPoint x="-19" y="-3" as="offset" />
+            <mxPoint x="-19" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-3" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bkIMsVyfUaJifPXmQBw0-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-580" y="-350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-4" connectable="0" parent="bkIMsVyfUaJifPXmQBw0-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="creates" vertex="1">
+          <mxGeometry relative="1" x="0.3277" y="2" as="geometry">
+            <mxPoint x="11" y="17" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-119" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Customer" vertex="1">
@@ -256,7 +268,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-145" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Annahmen&lt;/h1&gt;&lt;p&gt;- Kundenvorhaben werden basierend auf ihren Anforderungen entsprechend Services / Cloud -Plattformen enmpfohlen&lt;/p&gt;&lt;p&gt;- Anwendungen lassen sich in Gruppen von ähnlichen NFRs clustern. Siehe dreieck. LZ lassen sich so gruppieren&lt;/p&gt;" vertex="1">
-          <mxGeometry height="130" width="260" x="-80" y="-500" as="geometry" />
+          <mxGeometry height="130" width="260" x="50" y="-507.25" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-147" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Metriken&lt;/h1&gt;&lt;p&gt;- Ausgaben für IKT-Plattformen&lt;/p&gt;&lt;p&gt;- Ausgaben für Verwaltung der Cloud-Plattformen&lt;/p&gt;&lt;p&gt;- Aufwand Onboarding Neukunde&lt;/p&gt;&lt;p&gt;- Aufwand Migration bestehende Kundenlösung (legacy plattform)&lt;/p&gt;" vertex="1">
           <mxGeometry height="160" width="330" x="-130" y="730" as="geometry" />
@@ -267,8 +279,8 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-154" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.551;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;" target="Lzv2f7MgehNdQIw8qka4-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-184" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fragen/ToDo&lt;/h1&gt;&lt;p&gt;@Thierry. Sind mögliche Landingzones überlappend mit bestehenden Netzwerkzonen?&lt;/p&gt;&lt;p&gt;@ Thierry/Ben. Welche Architekturprinzipien werden berücksichtigt?&lt;/p&gt;&lt;p&gt;@Thierry. Welche gruppierungen/cluster von anwendungen gibt es? LZ Typen&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="130" width="250" x="-90" y="-320" as="geometry" />
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-184" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fragen/ToDo&lt;/h1&gt;&lt;p&gt;@Thierry. Sind mögliche Landingzones überlappend mit bestehenden Netzwerkzonen?&lt;/p&gt;&lt;p&gt;@ Thierry/Ben. Welche Architekturprinzipien werden berücksichtigt?&lt;/p&gt;&lt;p&gt;@Thierry. Welche gruppierungen/cluster von anwendungen gibt es? LZ Typen&lt;/p&gt;&lt;p&gt;@Thierry. Kann eine SGC-Foundation nur ein Environment in der Public Cloud darstellen oder auch bspw on prem?&lt;/p&gt;&lt;p&gt;@Thierry. Kann das Schutzniveau für die Foundation ebenfalls im Cockpit ausgewählt werden? Bzw wie soll die Unterscheidung gemacht werde können&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="277.5" width="320" x="50" y="-807.5" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-194" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="710" width="1020" x="-40" y="910" as="geometry" />
@@ -460,7 +472,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-249" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="760" width="770" x="870" y="680" as="geometry" />
+          <mxGeometry height="790" width="770" x="870" y="680" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-250" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="40" width="770" as="geometry" />
@@ -488,7 +500,7 @@
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-255" parent="Lzv2f7MgehNdQIw8qka4-253" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Die einzelnen Komponenten der Landing Zone lassen sich programmatisch definieren" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-255" parent="Lzv2f7MgehNdQIw8qka4-253" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Die einzelnen Komponenten des Landing Zone lassen sich programmatisch definieren" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -506,7 +518,7 @@
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-258" parent="Lzv2f7MgehNdQIw8qka4-256" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Die Dauer in welcher Policies von der auf Landing Zones und deren Workload propagiert werden" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-258" parent="Lzv2f7MgehNdQIw8qka4-256" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Die Dauer in welcher Policies von der auf Landing Zones auf die SGC Foundations propagiert werden" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -524,7 +536,7 @@
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-261" parent="Lzv2f7MgehNdQIw8qka4-259" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Governance / Richtlinie müssen automatisch umgesetzt und geprüft werden können" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-261" parent="Lzv2f7MgehNdQIw8qka4-259" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Governance / Richtlinie müssen automatisch in Foundation umgesetzt und geprüft werden können" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -553,50 +565,50 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-265" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
-          <mxGeometry height="40" width="770" y="200" as="geometry" />
+          <mxGeometry height="50" width="770" y="200" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-266" parent="Lzv2f7MgehNdQIw8qka4-265" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Konsistenz des Deployments" vertex="1">
-          <mxGeometry height="40" width="140" as="geometry">
-            <mxRectangle height="40" width="140" as="alternateBounds" />
+          <mxGeometry height="50" width="140" as="geometry">
+            <mxRectangle height="50" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-267" parent="Lzv2f7MgehNdQIw8qka4-265" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Umgebungen in der Landing Zone müssen einheitlich provisioniert werden. Zuverlässigkeit der Provisionierung" vertex="1">
-          <mxGeometry height="40" width="300" x="140" as="geometry">
-            <mxRectangle height="40" width="300" as="alternateBounds" />
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-267" parent="Lzv2f7MgehNdQIw8qka4-265" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Foundations in der Landing Zone müssen einheitlich provisioniert werden. Zuverlässigkeit der Provisionierung" vertex="1">
+          <mxGeometry height="50" width="300" x="140" as="geometry">
+            <mxRectangle height="50" width="300" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-293" parent="Lzv2f7MgehNdQIw8qka4-265" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Gleiche Basis/Rahmen unabhängig vom Deployment / à la idempotenz" vertex="1">
-          <mxGeometry height="40" width="330" x="440" as="geometry">
-            <mxRectangle height="40" width="330" as="alternateBounds" />
+          <mxGeometry height="50" width="330" x="440" as="geometry">
+            <mxRectangle height="50" width="330" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-30" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="240" as="geometry" />
+          <mxGeometry height="60" width="770" y="250" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-31" parent="M4ungtDmL2TPskDHLVFA-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Bereitstellungszeit" vertex="1">
-          <mxGeometry height="40" width="140" as="geometry">
-            <mxRectangle height="40" width="140" as="alternateBounds" />
+          <mxGeometry height="60" width="140" as="geometry">
+            <mxRectangle height="60" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-32" parent="M4ungtDmL2TPskDHLVFA-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Zeitdauer welche zwischen der Bestellung durch den Kunden im Bestellportal bis zur Verfügbarkeit der Accounts vergeht" vertex="1">
-          <mxGeometry height="40" width="300" x="140" as="geometry">
-            <mxRectangle height="40" width="300" as="alternateBounds" />
+        <mxCell id="M4ungtDmL2TPskDHLVFA-32" parent="M4ungtDmL2TPskDHLVFA-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Zeitdauer welche zwischen der Bestellung durch den Kunden bis zur Verfügbarkeit der Foundation vergeht" vertex="1">
+          <mxGeometry height="60" width="300" x="140" as="geometry">
+            <mxRectangle height="60" width="300" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-33" parent="M4ungtDmL2TPskDHLVFA-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Zeitdauer ist relevant um einen Vorteil von einem Bestellportal gegenüber Provisionierung im Portal vom Cloud Anbieter zu erhalten" vertex="1">
-          <mxGeometry height="40" width="330" x="440" as="geometry">
-            <mxRectangle height="40" width="330" as="alternateBounds" />
+        <mxCell id="M4ungtDmL2TPskDHLVFA-33" parent="M4ungtDmL2TPskDHLVFA-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Zeitdauer ist relevant um einen Vorteil von Bestellportal gegenüber Provisionierung im Portal vom Cloud Anbieter zu erhalten" vertex="1">
+          <mxGeometry height="60" width="330" x="440" as="geometry">
+            <mxRectangle height="60" width="330" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-26" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="280" as="geometry" />
+          <mxGeometry height="40" width="770" y="310" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-27" parent="M4ungtDmL2TPskDHLVFA-26" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Blueprint Kompatibilität" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-28" parent="M4ungtDmL2TPskDHLVFA-26" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Acconts müssen einer LZ Version zugeordnet werden können" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-28" parent="M4ungtDmL2TPskDHLVFA-26" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Foundations müssen einer LZ Version zugeordnet werden können" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -607,14 +619,14 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-38" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="320" as="geometry" />
+          <mxGeometry height="40" width="770" y="350" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-39" parent="M4ungtDmL2TPskDHLVFA-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Zentale Observability" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-40" parent="M4ungtDmL2TPskDHLVFA-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Inhalte müssen von einer Logging und Metrik Lösung abgedeckt werden" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-40" parent="M4ungtDmL2TPskDHLVFA-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Foundation müssen von einer Logging und Metrik in der LZ Lösung abgedeckt werden" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -625,14 +637,14 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-34" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="360" as="geometry" />
+          <mxGeometry height="40" width="770" y="390" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-35" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Mandantenfähgikeit" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-36" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Abgrenzung pro Kunde / Mandat von Workload" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-36" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Abgrenzung pro Kunde vom Workload" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -643,25 +655,25 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-42" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="400" as="geometry" />
+          <mxGeometry height="40" width="770" y="430" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-43" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Verrechenbarkeit" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-44" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Kosten welche in den LZ anfallen können verrechnet werden" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-44" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Kosten welche in den LZ Shared components anfallen können verrechnet werden" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-45" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Kosten für die Landingzone / Gemeinkosten müssen gedeckt werden" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-45" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Kosten für die LZ shared components müssen gedeckt werden" vertex="1">
           <mxGeometry height="40" width="330" x="440" as="geometry">
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-46" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="440" as="geometry" />
+          <mxGeometry height="40" width="770" y="470" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-47" parent="M4ungtDmL2TPskDHLVFA-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Security Baselines" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
@@ -679,7 +691,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-54" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="480" as="geometry" />
+          <mxGeometry height="40" width="770" y="510" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-55" parent="M4ungtDmL2TPskDHLVFA-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Secret Management" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
@@ -697,7 +709,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-50" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="520" as="geometry" />
+          <mxGeometry height="40" width="770" y="550" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-51" parent="M4ungtDmL2TPskDHLVFA-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Rollen/Gruppenmodell" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
@@ -715,14 +727,14 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-58" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="560" as="geometry" />
+          <mxGeometry height="40" width="770" y="590" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-59" parent="M4ungtDmL2TPskDHLVFA-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Drift Detection" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-60" parent="M4ungtDmL2TPskDHLVFA-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Abweichungen von Policies werden innerhalb eines Zeitraums erkannt" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-60" parent="M4ungtDmL2TPskDHLVFA-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Abweichungen von Policies in Foundation werden&amp;nbsp; erkannt" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -733,7 +745,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-66" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="600" as="geometry" />
+          <mxGeometry height="40" width="770" y="630" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-67" parent="M4ungtDmL2TPskDHLVFA-66" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Dynamischer Servicekatalog" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
@@ -751,14 +763,14 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-62" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="640" as="geometry" />
+          <mxGeometry height="40" width="770" y="670" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-63" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Backup/Restore Management" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-64" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Pattern für Backup und Restore verhalten" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-64" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Pattern für Backup und Restore verhalten in LZ" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
@@ -769,7 +781,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-74" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="680" as="geometry" />
+          <mxGeometry height="40" width="770" y="710" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-75" parent="M4ungtDmL2TPskDHLVFA-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Netwerkmodell" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
@@ -787,9 +799,9 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-70" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
-          <mxGeometry height="40" width="770" y="720" as="geometry" />
+          <mxGeometry height="40" width="770" y="750" as="geometry" />
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-71" parent="M4ungtDmL2TPskDHLVFA-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-71" parent="M4ungtDmL2TPskDHLVFA-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
@@ -853,7 +865,7 @@
           <mxGeometry height="70" width="120" x="1420" y="-160" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Blueprint Kompatibiliät" vertex="1">
-          <mxGeometry height="70" width="120" x="1420" y="-270" as="geometry" />
+          <mxGeometry height="70" width="120" x="1480" y="-250" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-86" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Mandantenfähgiekt" vertex="1">
           <mxGeometry height="70" width="120" x="2932.5" y="-211.5" as="geometry" />
@@ -868,7 +880,7 @@
           <mxGeometry height="70" width="120" x="2390" y="-420" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-90" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rollen/&lt;div&gt;Gruppenmodell&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="1640" y="-435" as="geometry" />
+          <mxGeometry height="70" width="120" x="1620" y="-410" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-91" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Drift Detection" vertex="1">
           <mxGeometry height="70" width="120" x="2932.5" y="-120" as="geometry" />
@@ -881,6 +893,37 @@
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-94" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Netzwerkmodell" vertex="1">
           <mxGeometry height="70" width="120" x="2130" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-5" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="Lzv2f7MgehNdQIw8qka4-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-6" connectable="0" parent="bkIMsVyfUaJifPXmQBw0-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="runs within" vertex="1">
+          <mxGeometry relative="1" x="-0.1374" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Workload" vertex="1">
+          <mxGeometry height="60" width="120" x="-430" y="-380" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-10" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="Lzv2f7MgehNdQIw8qka4-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-11" connectable="0" parent="bkIMsVyfUaJifPXmQBw0-10" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="defines initial&lt;div&gt;setup of&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0653" y="3" as="geometry">
+            <mxPoint x="8" y="-23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Blueprint" vertex="1">
+          <mxGeometry height="60" width="120" x="-220" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-9" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="bkIMsVyfUaJifPXmQBw0-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-14" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-13" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;dashed=1;endArrow=none;endFill=0;" target="Lzv2f7MgehNdQIw8qka4-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bkIMsVyfUaJifPXmQBw0-13" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Entity named by BIT which describes the workload subscriptions / accounts ordered in the self-service portal" vertex="1">
+          <mxGeometry height="117.25" width="150" x="-180" y="-417.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.0">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="1758" dy="1486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1704" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -438,7 +438,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-249" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="400" width="770" x="780" y="670" as="geometry" />
+          <mxGeometry height="480" width="770" x="780" y="670" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-250" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="40" width="770" as="geometry" />
@@ -597,7 +597,7 @@
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-41" parent="M4ungtDmL2TPskDHLVFA-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-41" parent="M4ungtDmL2TPskDHLVFA-38" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Workloads müssen überwacht werden können" vertex="1">
           <mxGeometry height="40" width="330" x="440" as="geometry">
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>
@@ -605,17 +605,53 @@
         <mxCell id="M4ungtDmL2TPskDHLVFA-34" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="40" width="770" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-35" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-35" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Mandantenfähgikeit" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-36" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-36" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Abgrenzung pro Kunde / Mandat von Workload" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-37" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-37" parent="M4ungtDmL2TPskDHLVFA-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Unterscheidung ist nötig welche Akvitiäten, Workload etc zu welchem kunden gehören" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-42" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-43" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Verrechenbarkeit" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-44" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Kosten welche in den LZ anfallen können verrechnet werden" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-45" parent="M4ungtDmL2TPskDHLVFA-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Kosten für die Landingzone / Gemeinkosten müssen gedeckt werden" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-46" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-47" parent="M4ungtDmL2TPskDHLVFA-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Security Baselines" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-48" parent="M4ungtDmL2TPskDHLVFA-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="LZ besitzen eine einheitliches Set von Policies welche enforced werden" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-49" parent="M4ungtDmL2TPskDHLVFA-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vorgaben sollen gemäss dem Schutzniveau des Workloads enforced werde können" vertex="1">
           <mxGeometry height="40" width="330" x="440" as="geometry">
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>

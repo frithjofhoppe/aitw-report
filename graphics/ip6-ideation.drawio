@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.0">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="2088" dy="1706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3466" dy="3024" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -795,56 +795,8 @@
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-78" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IaC" vertex="1">
-          <mxGeometry height="70" width="120" x="1360" y="530" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-79" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Propagationsdauer&lt;div&gt;für Policies&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="1440" y="390" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-80" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Automated Compliance Validation" vertex="1">
-          <mxGeometry height="70" width="120" x="1510" y="460" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-81" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Versioning / Change Management" vertex="1">
-          <mxGeometry height="70" width="120" x="1580" y="480" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-82" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Konsistenz des Deployments" vertex="1">
-          <mxGeometry height="70" width="120" x="1650" y="610" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-83" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bereitstellungszeit" vertex="1">
-          <mxGeometry height="70" width="120" x="1520" y="580" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Blueprint Kompatibiliät" vertex="1">
-          <mxGeometry height="70" width="120" x="1660" y="420" as="geometry" />
-        </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-85" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Zentrale Obsevability" vertex="1">
-          <mxGeometry height="70" width="120" x="1540" y="335" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-86" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Mandantenfähgiekt" vertex="1">
-          <mxGeometry height="70" width="120" x="1730" y="340" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-87" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verrechenbarkeit" vertex="1">
-          <mxGeometry height="70" width="120" x="1820" y="530" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Security Baseline" vertex="1">
-          <mxGeometry height="70" width="120" x="1740" y="840" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-89" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Secret Management" vertex="1">
-          <mxGeometry height="70" width="120" x="1660" y="1120" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-90" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rollen/&lt;div&gt;Gruppenmodell&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="1650" y="1000" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-91" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Drift Detection" vertex="1">
-          <mxGeometry height="70" width="120" x="1680" y="930" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-92" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Dynamischer Servicekatalog" vertex="1">
-          <mxGeometry height="70" width="120" x="1694" y="720" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-93" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Backup/Restore Management" vertex="1">
-          <mxGeometry height="70" width="120" x="1660" y="820" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-94" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Netzwerkmodell" vertex="1">
-          <mxGeometry height="70" width="120" x="1750" y="1360" as="geometry" />
+          <mxGeometry height="70" width="120" x="2640" y="-370" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-95" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Ressourcen Provisionierung&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="536.5" width="200" x="1340" y="-586.5" as="geometry" />
@@ -872,6 +824,54 @@
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-110" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Policies definieren, Abweichungen erkennen und enforcen" vertex="1">
           <mxGeometry height="105" width="140" x="2922.5" y="-540" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-78" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IaC" vertex="1">
+          <mxGeometry height="70" width="120" x="1410" y="-420" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-79" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Propagationsdauer&lt;div&gt;für Policies&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="2932.5" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-80" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Automated Compliance Validation" vertex="1">
+          <mxGeometry height="70" width="120" x="2932.5" y="-310" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-81" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Versioning / Change Management" vertex="1">
+          <mxGeometry height="70" width="120" x="1350" y="-340" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-82" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Konsistenz des Deployments" vertex="1">
+          <mxGeometry height="70" width="120" x="1340" y="-211.5" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-83" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bereitstellungszeit" vertex="1">
+          <mxGeometry height="70" width="120" x="1420" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Blueprint Kompatibiliät" vertex="1">
+          <mxGeometry height="70" width="120" x="1420" y="-270" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-86" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Mandantenfähgiekt" vertex="1">
+          <mxGeometry height="70" width="120" x="2932.5" y="-211.5" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-87" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verrechenbarkeit" vertex="1">
+          <mxGeometry height="70" width="120" x="3210" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Security Baseline" vertex="1">
+          <mxGeometry height="70" width="120" x="1890" y="-390" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-89" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Secret Management" vertex="1">
+          <mxGeometry height="70" width="120" x="2390" y="-420" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-90" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rollen/&lt;div&gt;Gruppenmodell&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="1640" y="-435" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-91" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Drift Detection" vertex="1">
+          <mxGeometry height="70" width="120" x="2932.5" y="-120" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-92" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Dynamischer Servicekatalog" vertex="1">
+          <mxGeometry height="70" width="120" x="3180" y="-310" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-93" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Backup/Restore Management" vertex="1">
+          <mxGeometry height="70" width="120" x="2400" y="-320" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-94" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Netzwerkmodell" vertex="1">
+          <mxGeometry height="70" width="120" x="2130" y="-400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

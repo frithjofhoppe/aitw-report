@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="3360" dy="2132" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2030" dy="2167" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -279,8 +279,8 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-154" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.551;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;" target="Lzv2f7MgehNdQIw8qka4-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-184" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fragen/ToDo&lt;/h1&gt;&lt;p&gt;@Thierry. Sind mögliche Landingzones überlappend mit bestehenden Netzwerkzonen?&lt;/p&gt;&lt;p&gt;@ Thierry/Ben. Welche Architekturprinzipien werden berücksichtigt?&lt;/p&gt;&lt;p&gt;@Thierry. Welche gruppierungen/cluster von anwendungen gibt es? LZ Typen&lt;/p&gt;&lt;p&gt;@Thierry. Kann eine SGC-Foundation nur ein Environment in der Public Cloud darstellen oder auch bspw on prem?&lt;/p&gt;&lt;p&gt;@Thierry. Kann das Schutzniveau für die Foundation ebenfalls im Cockpit ausgewählt werden? Bzw wie soll die Unterscheidung gemacht werde können&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
-          <mxGeometry height="277.5" width="320" x="50" y="-807.5" as="geometry" />
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-184" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fragen/ToDo&lt;/h1&gt;&lt;p&gt;@Thierry. Sind mögliche Landingzones überlappend mit bestehenden Netzwerkzonen?&lt;/p&gt;&lt;p&gt;@ Thierry/Ben. Welche Architekturprinzipien werden berücksichtigt?&lt;/p&gt;&lt;p&gt;@Thierry. Welche gruppierungen/cluster von anwendungen gibt es? LZ Typen&lt;/p&gt;&lt;p&gt;@Thierry. Kann eine SGC-Foundation nur ein Environment in der Public Cloud darstellen oder auch bspw on prem?&lt;/p&gt;&lt;p&gt;@Thierry. Kann das Schutzniveau für die Foundation ebenfalls im Cockpit ausgewählt werden? Bzw wie soll die Unterscheidung gemacht werde können&lt;/p&gt;&lt;p&gt;Abgrenzung zwischen Blueprint und LZ&lt;/p&gt;" vertex="1">
+          <mxGeometry height="277.5" width="320" x="40" y="-850" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-194" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="710" width="1020" x="-40" y="910" as="geometry" />

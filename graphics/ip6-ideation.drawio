@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.0">
   <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="1704" dy="1426" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1905" dy="1651" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -438,7 +438,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-249" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="680" width="770" x="780" y="670" as="geometry" />
+          <mxGeometry height="760" width="770" x="870" y="680" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-250" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="40" width="770" as="geometry" />
@@ -731,17 +731,53 @@
         <mxCell id="M4ungtDmL2TPskDHLVFA-62" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="40" width="770" y="640" as="geometry" />
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-63" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-63" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Backup/Restore Management" vertex="1">
           <mxGeometry height="40" width="140" as="geometry">
             <mxRectangle height="40" width="140" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-64" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-64" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Pattern für Backup und Restore verhalten" vertex="1">
           <mxGeometry height="40" width="300" x="140" as="geometry">
             <mxRectangle height="40" width="300" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-65" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+        <mxCell id="M4ungtDmL2TPskDHLVFA-65" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Backuplocations sollen nach Bedarf LZ angepasst werden können (bspw georedundant, welche region). Out of the box konfig von RTO und RPO" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-74" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-75" parent="M4ungtDmL2TPskDHLVFA-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Netwerkmodell" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-76" parent="M4ungtDmL2TPskDHLVFA-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="LZ besitzt ein Modell für die Netzstruktur inkl Firewall Policies etc." vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-77" parent="M4ungtDmL2TPskDHLVFA-74" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Grundlage für Netzstruktur ist gegeben" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-70" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-71" parent="M4ungtDmL2TPskDHLVFA-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-72" parent="M4ungtDmL2TPskDHLVFA-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-73" parent="M4ungtDmL2TPskDHLVFA-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
           <mxGeometry height="40" width="330" x="440" as="geometry">
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>

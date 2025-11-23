@@ -438,7 +438,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-249" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="480" width="770" x="780" y="670" as="geometry" />
+          <mxGeometry height="680" width="770" x="780" y="670" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-250" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="40" width="770" as="geometry" />
@@ -652,6 +652,96 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-49" parent="M4ungtDmL2TPskDHLVFA-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vorgaben sollen gemäss dem Schutzniveau des Workloads enforced werde können" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-54" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-55" parent="M4ungtDmL2TPskDHLVFA-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Secret Management" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-56" parent="M4ungtDmL2TPskDHLVFA-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Pattern für die Speicherung von verschiedenen Arten von Secrets, Credentials, API-Keys etc" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-57" parent="M4ungtDmL2TPskDHLVFA-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vorgehen existiert welches mit den verschiedenen Schutzniveaus im Einklang ist" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-50" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-51" parent="M4ungtDmL2TPskDHLVFA-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Einheitliches Rollen/Gruppenmodell" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-52" parent="M4ungtDmL2TPskDHLVFA-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Rechtemodell erlaubt es Berechtigungen, Rollen etc abzubilden" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-53" parent="M4ungtDmL2TPskDHLVFA-50" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Granulare Steuerung von Zugriffen" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-58" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-59" parent="M4ungtDmL2TPskDHLVFA-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Drift Detection" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-60" parent="M4ungtDmL2TPskDHLVFA-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Abweichungen von Policies werden innerhalb eines Zeitraums erkannt" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-61" parent="M4ungtDmL2TPskDHLVFA-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Potentielle Lücken in der Policy Anwendung sollen so kurz wie möglich bestehen bzw unerkannt bleiben" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-66" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-67" parent="M4ungtDmL2TPskDHLVFA-66" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Dynamischer Servicekatalog" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-68" parent="M4ungtDmL2TPskDHLVFA-66" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Services können basierend auf LZ, Schutzniveau etc whitelisted / blacklisted ewrden" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-69" parent="M4ungtDmL2TPskDHLVFA-66" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Services sollen bei grundsätzlichen Konflikten mit Policies für gewisse LZ disabled werden können um Vorgaben einzuhalten (bspw Nutzung von gewission deployment regions etc.)" vertex="1">
+          <mxGeometry height="40" width="330" x="440" as="geometry">
+            <mxRectangle height="40" width="330" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-62" parent="Lzv2f7MgehNdQIw8qka4-249" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="40" width="770" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-63" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="40" width="140" as="geometry">
+            <mxRectangle height="40" width="140" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-64" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="40" width="300" x="140" as="geometry">
+            <mxRectangle height="40" width="300" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M4ungtDmL2TPskDHLVFA-65" parent="M4ungtDmL2TPskDHLVFA-62" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
           <mxGeometry height="40" width="330" x="440" as="geometry">
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>

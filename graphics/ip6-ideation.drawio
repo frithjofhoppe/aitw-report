@@ -1,11 +1,17 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="5549" dy="3930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2791" dy="1670" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="m_le3ZFZl4X5qLtvqEiL-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
+          <mxGeometry height="410" width="771.5" x="-1021.5" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="m_le3ZFZl4X5qLtvqEiL-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
+          <mxGeometry height="920" width="941" x="-1091" y="-450" as="geometry" />
+        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-129" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cloud Team Bundesverwaltung&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="210" width="270" x="-740" y="-130" as="geometry" />
+          <mxGeometry height="210" width="270" x="-921" y="-130" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-66" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;SOLL/IST&lt;/div&gt;" vertex="1">
           <mxGeometry height="280" width="340" x="960" y="270" as="geometry" />
@@ -94,8 +100,8 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-96" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-98" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Lzv2f7MgehNdQIw8qka4-111">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-210" y="170" />
-              <mxPoint x="-160" y="170" />
+              <mxPoint x="-391" y="170" />
+              <mxPoint x="-341" y="170" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -113,7 +119,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-98" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Cloud Plattform&lt;/span&gt;" vertex="1">
-          <mxGeometry height="140" width="320" x="-530" y="97" as="geometry" />
+          <mxGeometry height="140" width="320" x="-711" y="97" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-99" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-103" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-98">
           <mxGeometry relative="1" as="geometry" />
@@ -132,16 +138,16 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-103" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Landing Zone (LZ)" vertex="1">
-          <mxGeometry height="60" width="120" x="-430" y="-100" as="geometry" />
+          <mxGeometry height="60" width="120" x="-611" y="-100" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-104" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cloud Plattform&lt;div&gt;Public&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-500" y="142" as="geometry" />
+          <mxGeometry height="60" width="120" x="-681" y="142" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-105" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cloud Plattform&lt;div&gt;OnPremise&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-350" y="142" as="geometry" />
+          <mxGeometry height="60" width="120" x="-531" y="142" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-106" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="BIT verfolgt einen &lt;b&gt;partitioned multi-cloud Pattern&lt;/b&gt; Ansatz. Services werden nach best of breed-approach gewählt&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="110" width="180" x="-460" y="310" as="geometry" />
+          <mxGeometry height="110" width="180" x="-641" y="310" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-107" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-103">
           <mxGeometry relative="1" as="geometry" />
@@ -152,19 +158,19 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-109" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&quot;F&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;oundation&quot;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-430" y="-230" as="geometry" />
+          <mxGeometry height="60" width="120" x="-611" y="-230" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-110" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-106" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-98" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-700" y="90" as="sourcePoint" />
-            <mxPoint x="-650" y="40" as="targetPoint" />
+            <mxPoint x="-881" y="90" as="sourcePoint" />
+            <mxPoint x="-831" y="40" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-111" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="LZ&lt;div&gt;Components&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-220" y="-100" as="geometry" />
+          <mxGeometry height="60" width="120" x="-401" y="-100" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-112" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Metamodell&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="50" width="180" x="-780" y="-350" as="geometry" />
+          <mxGeometry height="50" width="180" x="-961" y="-350" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-153" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-61">
           <mxGeometry relative="1" as="geometry" />
@@ -175,8 +181,8 @@
         <mxCell id="Lzv2f7MgehNdQIw8qka4-137" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-119">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-710" y="-60" />
-              <mxPoint x="-710" y="-200" />
+              <mxPoint x="-891" y="-60" />
+              <mxPoint x="-891" y="-200" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -186,7 +192,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-115" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cloud Center of Excellence" vertex="1">
-          <mxGeometry height="60" width="120" x="-700" y="-90" as="geometry" />
+          <mxGeometry height="60" width="120" x="-881" y="-90" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-130" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-109">
           <mxGeometry relative="1" as="geometry" />
@@ -199,7 +205,7 @@
         <mxCell id="bkIMsVyfUaJifPXmQBw0-3" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="bkIMsVyfUaJifPXmQBw0-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="-580" y="-350" />
+              <mxPoint x="-761" y="-350" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -209,7 +215,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-119" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Customer" vertex="1">
-          <mxGeometry height="60" width="120" x="-640" y="-230" as="geometry" />
+          <mxGeometry height="60" width="120" x="-821" y="-230" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-135" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-134" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-103">
           <mxGeometry relative="1" as="geometry" />
@@ -220,31 +226,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-134" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cloud&lt;div&gt;Engineering&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-600" y="-10" as="geometry" />
+          <mxGeometry height="60" width="120" x="-781" y="-10" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-141" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Maintains shared Knowledgebase" vertex="1">
-          <mxGeometry height="84.5" width="150" x="-765" y="135.5" as="geometry" />
+          <mxGeometry height="84.5" width="150" x="-946" y="135.5" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-142" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-141" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="Lzv2f7MgehNdQIw8qka4-129" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="-630" y="240" as="sourcePoint" />
-            <mxPoint x="-580" y="190" as="targetPoint" />
+            <mxPoint x="-811" y="240" as="sourcePoint" />
+            <mxPoint x="-761" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-145" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Annahmen&lt;/h1&gt;&lt;p&gt;- Kundenvorhaben werden basierend auf ihren Anforderungen entsprechend Services / Cloud -Plattformen enmpfohlen&lt;/p&gt;&lt;p&gt;- Anwendungen lassen sich in Gruppen von ähnlichen NFRs clustern. Siehe dreieck. LZ lassen sich so gruppieren&lt;/p&gt;&lt;p&gt;- Abgrenzung arbeit: Blueprint sind vorlagen von ressourcen welche direkt in den cloud accounts deployed werden -&amp;gt; out of scope&lt;/p&gt;" vertex="1">
-          <mxGeometry height="237.25" width="260" x="650" y="-890" as="geometry" />
+          <mxGeometry height="237.25" width="260" x="1570" y="-281" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-147" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Metriken&lt;/h1&gt;&lt;p&gt;- Ausgaben für IKT-Plattformen&lt;/p&gt;&lt;p&gt;- Ausgaben für Verwaltung der Cloud-Plattformen&lt;/p&gt;&lt;p&gt;- Aufwand Onboarding Neukunde&lt;/p&gt;&lt;p&gt;- Aufwand Migration bestehende Kundenlösung (legacy plattform)&lt;/p&gt;" vertex="1">
           <mxGeometry height="160" width="330" x="-130" y="730" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-148" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Informatik Plattform" vertex="1">
-          <mxGeometry height="60" width="120" x="-650" y="290" as="geometry" />
+          <mxGeometry height="60" width="120" x="-831" y="290" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-154" edge="1" parent="1" source="Lzv2f7MgehNdQIw8qka4-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.551;entryY=0.993;entryDx=0;entryDy=0;entryPerimeter=0;" target="Lzv2f7MgehNdQIw8qka4-61">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-184" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Fragen/ToDo&lt;/h1&gt;&lt;p&gt;@Thierry. Sind mögliche Landingzones überlappend mit bestehenden Netzwerkzonen?&lt;/p&gt;&lt;p&gt;@ Thierry/Ben. Welche Architekturprinzipien werden berücksichtigt?&lt;/p&gt;&lt;p&gt;@Thierry. Welche gruppierungen/cluster von anwendungen gibt es? LZ Typen&lt;/p&gt;&lt;p&gt;@Thierry. Kann eine SGC-Foundation nur ein Environment in der Public Cloud darstellen oder auch bspw on prem?&lt;/p&gt;&lt;p&gt;@Thierry. Kann das Schutzniveau für die Foundation ebenfalls im Cockpit ausgewählt werden? Bzw wie soll die Unterscheidung gemacht werde können&lt;/p&gt;&lt;p&gt;@Thierry. Ist eine SGC-Foundation 1-1 an Cloud-Account gebunden (subscription etc.)&lt;/p&gt;&lt;p&gt;Wo ist die Abgrenzung zwischen Blueprint und LZ?&lt;/p&gt;" vertex="1">
-          <mxGeometry height="350" width="320" x="260" y="-900" as="geometry" />
+          <mxGeometry height="350" width="320" x="1180" y="-291" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-194" connectable="0" parent="1" style="group" value="" vertex="1">
           <mxGeometry height="710" width="1020" x="-40" y="910" as="geometry" />
@@ -784,7 +790,7 @@
           <mxGeometry height="70" width="120" x="1280" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-86" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Mandantenfähgiekt" vertex="1">
-          <mxGeometry height="70" width="120" x="1419" y="1501.5" as="geometry" />
+          <mxGeometry height="70" width="120" x="1419" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-5" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="Lzv2f7MgehNdQIw8qka4-109">
           <mxGeometry relative="1" as="geometry" />
@@ -795,7 +801,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Workload" vertex="1">
-          <mxGeometry height="60" width="120" x="-430" y="-380" as="geometry" />
+          <mxGeometry height="60" width="120" x="-611" y="-380" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-10" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="Lzv2f7MgehNdQIw8qka4-109">
           <mxGeometry relative="1" as="geometry" />
@@ -806,7 +812,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Blueprint" vertex="1">
-          <mxGeometry height="60" width="120" x="-220" y="-230" as="geometry" />
+          <mxGeometry height="60" width="120" x="-401" y="-230" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-9" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-8" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;" target="bkIMsVyfUaJifPXmQBw0-8">
           <mxGeometry relative="1" as="geometry" />
@@ -815,7 +821,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-13" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Entity named by BIT which describes the workload subscriptions / accounts ordered in the self-service portal" vertex="1">
-          <mxGeometry height="117.25" width="150" x="-180" y="-417.25" as="geometry" />
+          <mxGeometry height="117.25" width="150" x="-361" y="-417.25" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-18" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="bkIMsVyfUaJifPXmQBw0-17">
           <mxGeometry relative="1" as="geometry" />
@@ -831,7 +837,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Vereinbarung&lt;div&gt;(provider agnostisch)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-735" y="-750" as="geometry" />
+          <mxGeometry height="60" width="120" x="-961" y="800" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-21" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-17" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="bkIMsVyfUaJifPXmQBw0-20">
           <mxGeometry relative="1" as="geometry" />
@@ -847,7 +853,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Minitender / Abruf&lt;div&gt;(provider spezifisch)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-490" y="-750" as="geometry" />
+          <mxGeometry height="60" width="120" x="-716" y="800" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-26" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-20" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="bkIMsVyfUaJifPXmQBw0-25">
           <mxGeometry relative="1" as="geometry" />
@@ -863,13 +869,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="SGC-Foundation&lt;div&gt;(provider spezifisch)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="-250" y="-750" as="geometry" />
+          <mxGeometry height="60" width="120" x="-476" y="800" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Accout, Subscription, etc." vertex="1">
-          <mxGeometry height="60" width="120" x="-250" y="-910" as="geometry" />
+          <mxGeometry height="60" width="120" x="-476" y="640" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-30" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;SGC Modell&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="50" width="180" x="-720" y="-930" as="geometry" />
+          <mxGeometry height="50" width="180" x="-946" y="620" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

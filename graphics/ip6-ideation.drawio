@@ -240,7 +240,7 @@
             <mxPoint x="-761" y="190" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Lzv2f7MgehNdQIw8qka4-145" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Annahmen&lt;/h1&gt;&lt;p&gt;- Kundenvorhaben werden basierend auf ihren Anforderungen entsprechend Services / Cloud -Plattformen enmpfohlen&lt;/p&gt;&lt;p&gt;- Anwendungen lassen sich in Gruppen von ähnlichen NFRs clustern. Siehe dreieck. LZ lassen sich so gruppieren&lt;/p&gt;&lt;p&gt;- Abgrenzung arbeit: Blueprint sind vorlagen von ressourcen welche direkt in den cloud accounts deployed werden -&amp;gt; out of scope&lt;/p&gt;" vertex="1">
+        <mxCell id="Lzv2f7MgehNdQIw8qka4-145" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Annahmen&lt;/h1&gt;&lt;p&gt;- Kundenvorhaben werden basierend auf ihren Anforderungen entsprechend Services / Cloud -Plattformen enmpfohlen (-&amp;gt; teilweise bestätigt durch BIT-Info&lt;/p&gt;&lt;p&gt;- Anwendungen lassen sich in Gruppen von ähnlichen NFRs clustern. Siehe dreieck. LZ lassen sich so gruppieren.&lt;/p&gt;&lt;p&gt;- Abgrenzung arbeit: Blueprint sind vorlagen von ressourcen welche direkt in den cloud accounts deployed werden -&amp;gt; out of scope. Lediglich blue print für LZ in scope&lt;/p&gt;" vertex="1">
           <mxGeometry height="237.25" width="260" x="1530" y="-198" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-147" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Metriken&lt;/h1&gt;&lt;p&gt;- Ausgaben für IKT-Plattformen&lt;/p&gt;&lt;p&gt;- Ausgaben für Verwaltung der Cloud-Plattformen&lt;/p&gt;&lt;p&gt;- Aufwand Onboarding Neukunde&lt;/p&gt;&lt;p&gt;- Aufwand Migration bestehende Kundenlösung (legacy plattform)&lt;/p&gt;" vertex="1">
@@ -881,7 +881,7 @@
             <mxPoint x="900" y="-740" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="m_le3ZFZl4X5qLtvqEiL-24" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;18.12&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;Analyse Umsetzung Capability Multi-Cloud&lt;/p&gt;" vertex="1">
+        <mxCell id="m_le3ZFZl4X5qLtvqEiL-24" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;18.12&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;Umsetzung ausgewählte Capability in Multi-Cloud Ansatz ausgearbeitet&lt;/p&gt;" vertex="1">
           <mxGeometry height="100" width="140" x="880" y="-1010" as="geometry" />
         </mxCell>
         <mxCell id="zxjNHwOvcoLCDG71xlWq-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;08.12&lt;/font&gt;&lt;/h1&gt;&lt;p&gt;Definieren Use-Cases für Top Capabilities&lt;/p&gt;" vertex="1">
@@ -914,7 +914,7 @@
           <mxGeometry height="80" width="200" x="1370" y="-860" as="geometry" />
         </mxCell>
         <mxCell id="zxjNHwOvcoLCDG71xlWq-22" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Umsetzung priorisierter Capability&lt;div&gt;in LZ&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="340" x="860" y="-720" as="geometry" />
+          <mxGeometry height="80" width="310" x="890" y="-720" as="geometry" />
         </mxCell>
         <mxCell id="zxjNHwOvcoLCDG71xlWq-23" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="Capability Map erstellen" vertex="1">
           <mxGeometry height="80" width="220" x="555" y="-1150" as="geometry" />
@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="1288" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1220" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -970,7 +970,7 @@
           <mxGeometry height="70" width="120" x="1538" y="540" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Konsistenz des Deployments" vertex="1">
-          <mxGeometry height="70" width="120" x="2745.5" y="1900" as="geometry" />
+          <mxGeometry height="70" width="120" x="2621" y="1895" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bereitstellungszeit" vertex="1">
           <mxGeometry height="70" width="120" x="1200" y="1880" as="geometry" />
@@ -1337,6 +1337,18 @@
         </mxCell>
         <mxCell id="ZgiUbKQ7goLVh-A4rarz-3" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;p data-start=&quot;1092&quot; data-end=&quot;1285&quot;&gt;&lt;strong data-start=&quot;1092&quot; data-end=&quot;1125&quot;&gt;Methodik und Herangehensweise&lt;/strong&gt;&lt;br&gt;Die Capabilities wurden nach einem standardisierten Vorgehen gemäss BIZBOK- und Cloud-Governance-Prinzipien entwickelt.&lt;br&gt;Die Methodik umfasst drei Schritte:&lt;/p&gt;&lt;ol data-start=&quot;1287&quot; data-end=&quot;2078&quot;&gt;&lt;li data-start=&quot;1287&quot; data-end=&quot;1487&quot;&gt;&lt;p data-start=&quot;1290&quot; data-end=&quot;1487&quot;&gt;&lt;strong data-start=&quot;1290&quot; data-end=&quot;1327&quot;&gt;Analyse der Anforderungen (NFRs):&lt;/strong&gt;&lt;br&gt;Aus den nichtfunktionalen Anforderungen wurden thematische Schwerpunkte und Qualitätsanforderungen identifiziert, die für eine Landing Zone relevant sind&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1489&quot; data-end=&quot;1763&quot;&gt;&lt;p data-start=&quot;1492&quot; data-end=&quot;1763&quot;&gt;&lt;strong data-start=&quot;1492&quot; data-end=&quot;1526&quot;&gt;Ableitung der L1-Capabilities:&lt;/strong&gt;&lt;br&gt;Die Anforderungen wurden in übergeordnete, überschneidungsfreie Fähigkeitsbereiche gegliedert.&lt;br&gt;Diese L1-Capabilities beschreiben das &lt;em data-start=&quot;1670&quot; data-end=&quot;1676&quot;&gt;WHAT&lt;/em&gt; – also die notwendigen Fähigkeiten –, ohne das &lt;em data-start=&quot;1724&quot; data-end=&quot;1729&quot;&gt;HOW&lt;/em&gt; (Implementierung) vorwegzunehmen.&lt;/p&gt;&lt;/li&gt;&lt;li data-start=&quot;1765&quot; data-end=&quot;2078&quot;&gt;&lt;p data-start=&quot;1768&quot; data-end=&quot;2078&quot;&gt;&lt;strong data-start=&quot;1768&quot; data-end=&quot;1803&quot;&gt;Definition der L2-Capabilities:&lt;/strong&gt;&lt;br&gt;Für jede L1-Capability wurden konkretisierende Unterfähigkeiten abgeleitet, die deren Umfang, Steuerungslogik und funktionale Verantwortung klar abgrenzen.&lt;br&gt;Die L2s entsprechen den einzelnen Governance-Mechanismen, die zur Erfüllung der L1-Fähigkeit notwendig sind.&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;" vertex="1">
           <mxGeometry height="340" width="460" x="140" y="1197" as="geometry" />
+        </mxCell>
+        <mxCell id="wuTdeSk9KGYvlwryJnfh-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="LZ sind einheitlich, kompatiblen und konsistent aufgebtaut. Ohne: drift, manueller aufwand etc. Inhalt: logging standard, deployment / iac konvetionen.&lt;div&gt;Standards schaffen für verschiedenen abschitte. Logging baseline, iam konfig, backup vorgaben&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="233" x="2790" y="1895" as="geometry" />
+        </mxCell>
+        <mxCell id="wuTdeSk9KGYvlwryJnfh-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Lifecylce management von LZ versionen. Standardtisierten bereitstellen von LZ, Accoutnts, Baselines etc. IaC ausfühgung. Depracation mgmt" vertex="1">
+          <mxGeometry height="160" width="233" x="2210" y="1880" as="geometry" />
+        </mxCell>
+        <mxCell id="wuTdeSk9KGYvlwryJnfh-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="LZ auf den Betrieb vorbereiten. Definieren von Betriebsanforderungen. Was muss aktiv sein an settings etc. Kontinuierliche validierung&lt;div&gt;-&amp;gt; qualitativ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="233" x="1194" y="1755" as="geometry" />
+        </mxCell>
+        <mxCell id="wuTdeSk9KGYvlwryJnfh-4" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Alle aktvitäten sind prüfbar, nachvollziehbar und revisionssicher. audit, ereigbniss nachvollzihbear machen. evidence, sammeln, governance was rein muss wegen compliance gennüber vorgaben" vertex="1">
+          <mxGeometry height="140" width="233" x="1691" y="1780" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

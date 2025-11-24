@@ -1,30 +1,9 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1">
-  <diagram name="Seite-1" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="4298" dy="3280" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1" pages="2">
+  <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
+    <mxGraphModel dx="5549" dy="3930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="M4ungtDmL2TPskDHLVFA-112" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="Landing zone&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;capability map&lt;/span&gt;" vertex="1">
-          <mxGeometry height="1110" width="3020" x="1610" y="-625" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-99" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Identitiy and Access Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="1911" y="-543.5" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-101" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Security Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="2311" y="-544.5" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-103" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Network and Connectivity&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="3081" y="-544.5" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-105" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Data and Secret Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="3461" y="-544.5" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-107" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Observability and Opteraional Insight Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="3831" y="-544.5" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-109" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Cost Goverance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="4221" y="-543.5" as="geometry" />
-        </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-129" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Cloud Team Bundesverwaltung&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="210" width="270" x="-740" y="-130" as="geometry" />
         </mxCell>
@@ -801,62 +780,11 @@
             <mxRectangle height="40" width="330" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-85" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Zentrale Obsevability" vertex="1">
-          <mxGeometry height="70" width="120" x="3851" y="-760" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-95" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Portfolio Support&lt;/div&gt;" vertex="1">
-          <mxGeometry height="250" width="380" x="2930" y="41" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-98" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherstellen, dass Identitäten, Rollen und Zugriffe über alle Cloud-Umgebungen hinweg konsistent, kontrolliert und sicher verwaltet werden können." vertex="1">
-          <mxGeometry height="105" width="139" x="2101.5" y="-275" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-78" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IaC" vertex="1">
-          <mxGeometry height="70" width="120" x="2150" y="500" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-79" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Propagationsdauer&lt;div&gt;für Policies&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="2751" y="-830" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-80" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Automated Compliance Validation" vertex="1">
-          <mxGeometry height="70" width="120" x="2338" y="-840" as="geometry" />
-        </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-81" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Versioning / Change Management" vertex="1">
           <mxGeometry height="70" width="120" x="1280" y="1490" as="geometry" />
         </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-82" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Konsistenz des Deployments" vertex="1">
-          <mxGeometry height="70" width="120" x="3545.5" y="520" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-83" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bereitstellungszeit" vertex="1">
-          <mxGeometry height="70" width="120" x="2000" y="500" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Blueprint Kompatibiliät" vertex="1">
-          <mxGeometry height="70" width="120" x="2059.5" y="580" as="geometry" />
-        </mxCell>
         <mxCell id="M4ungtDmL2TPskDHLVFA-86" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Mandantenfähgiekt" vertex="1">
           <mxGeometry height="70" width="120" x="1419" y="1501.5" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-87" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verrechenbarkeit" vertex="1">
-          <mxGeometry height="70" width="120" x="4262" y="-750" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Security Baseline" vertex="1">
-          <mxGeometry height="70" width="120" x="2338" y="-755" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-89" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Secret Management" vertex="1">
-          <mxGeometry height="70" width="120" x="3501" y="-755" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-90" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rollen/&lt;div&gt;Gruppenmodell&amp;nbsp;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="120" x="1951" y="-740" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-91" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Drift Detection" vertex="1">
-          <mxGeometry height="70" width="120" x="2750" y="-755" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-92" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Dynamischer Servicekatalog" vertex="1">
-          <mxGeometry height="70" width="120" x="4041.5" y="515" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-93" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Backup/Restore Management" vertex="1">
-          <mxGeometry height="70" width="120" x="3501" y="-840" as="geometry" />
-        </mxCell>
-        <mxCell id="M4ungtDmL2TPskDHLVFA-94" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Netzwerkmodell" vertex="1">
-          <mxGeometry height="70" width="120" x="3110" y="-755" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-5" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="Lzv2f7MgehNdQIw8qka4-109">
           <mxGeometry relative="1" as="geometry" />
@@ -888,9 +816,6 @@
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-13" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Entity named by BIT which describes the workload subscriptions / accounts ordered in the self-service portal" vertex="1">
           <mxGeometry height="117.25" width="150" x="-180" y="-417.25" as="geometry" />
-        </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Version and Change Management" vertex="1">
-          <mxGeometry height="65" width="160" x="2950" y="91" as="geometry" />
         </mxCell>
         <mxCell id="bkIMsVyfUaJifPXmQBw0-18" edge="1" parent="1" source="bkIMsVyfUaJifPXmQBw0-16" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="bkIMsVyfUaJifPXmQBw0-17">
           <mxGeometry relative="1" as="geometry" />
@@ -946,332 +871,415 @@
         <mxCell id="bkIMsVyfUaJifPXmQBw0-30" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;SGC Modell&lt;/h1&gt;" vertex="1">
           <mxGeometry height="50" width="180" x="-720" y="-930" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="User identity management" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="-485" as="geometry" />
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
+    <mxGraphModel dx="5475" dy="2845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="Landing zone&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;capability map&lt;/span&gt;" vertex="1">
+          <mxGeometry height="1110" width="3020" x="810" y="755" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Provisioning exeuction" vertex="1">
-          <mxGeometry height="65" width="160" x="2950" y="173" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-2" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Identitiy and Access Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="1111" y="836.5" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-36" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-3" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Security Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="1511" y="835.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-4" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Network and Connectivity&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="2281" y="835.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-5" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Data and Secret Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="2661" y="835.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-6" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Observability and Opteraional Insight Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="3031" y="835.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-7" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Cost Goverance&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="3421" y="836.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Zentrale Obsevability" vertex="1">
+          <mxGeometry height="70" width="120" x="3051" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-9" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Portfolio Support&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="380" x="2130" y="1421" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-10" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherstellen, dass Identitäten, Rollen und Zugriffe über alle Cloud-Umgebungen hinweg konsistent, kontrolliert und sicher verwaltet werden können." vertex="1">
+          <mxGeometry height="105" width="139" x="1301.5" y="1105" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IaC" vertex="1">
+          <mxGeometry height="70" width="120" x="1350" y="1880" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Propagationsdauer&lt;div&gt;für Policies&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="1951" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-13" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Automated Compliance Validation" vertex="1">
+          <mxGeometry height="70" width="120" x="1538" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Konsistenz des Deployments" vertex="1">
+          <mxGeometry height="70" width="120" x="2745.5" y="1900" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bereitstellungszeit" vertex="1">
+          <mxGeometry height="70" width="120" x="1200" y="1880" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Blueprint Kompatibiliät" vertex="1">
+          <mxGeometry height="70" width="120" x="1259.5" y="1960" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verrechenbarkeit" vertex="1">
+          <mxGeometry height="70" width="120" x="3462" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-18" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Security Baseline" vertex="1">
+          <mxGeometry height="70" width="120" x="1538" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Secret Management" vertex="1">
+          <mxGeometry height="70" width="120" x="2701" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Rollen/&lt;div&gt;Gruppenmodell&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="1151" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Drift Detection" vertex="1">
+          <mxGeometry height="70" width="120" x="1950" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-22" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Dynamischer Servicekatalog" vertex="1">
+          <mxGeometry height="70" width="120" x="3241.5" y="1895" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Backup/Restore Management" vertex="1">
+          <mxGeometry height="70" width="120" x="2701" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Netzwerkmodell" vertex="1">
+          <mxGeometry height="70" width="120" x="2310" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Version and Change Management" vertex="1">
+          <mxGeometry height="65" width="160" x="2150" y="1471" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="User identity management" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="895" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Provisioning exeuction" vertex="1">
+          <mxGeometry height="65" width="160" x="2150" y="1553" as="geometry" />
+        </mxCell>
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-28" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2091" y="-670" as="sourcePoint" />
-            <mxPoint x="2091" y="-670" as="targetPoint" />
+            <mxPoint x="1291" y="710" as="sourcePoint" />
+            <mxPoint x="1291" y="710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Service account management" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="-408" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Service account management" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="972" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Access management" vertex="1">
-          <mxGeometry height="65" width="160" x="1951" y="-328" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Access management" vertex="1">
+          <mxGeometry height="65" width="160" x="1151" y="1052" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Baseline management" vertex="1">
-          <mxGeometry height="65" width="160" x="2331" y="-333" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Baseline management" vertex="1">
+          <mxGeometry height="65" width="160" x="1531" y="1047" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Vulnerability Monitoring" vertex="1">
-          <mxGeometry height="65" width="160" x="3851" y="-495" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Vulnerability Monitoring" vertex="1">
+          <mxGeometry height="65" width="160" x="3051" y="885" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Threat Assessment and Monitoring" vertex="1">
-          <mxGeometry height="65" width="160" x="3851" y="-413" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Threat Assessment and Monitoring" vertex="1">
+          <mxGeometry height="65" width="160" x="3051" y="967" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy management" vertex="1">
-          <mxGeometry height="65" width="160" x="2331" y="-248" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy management" vertex="1">
+          <mxGeometry height="65" width="160" x="1531" y="1132" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance execution governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2331" y="-495" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance execution governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1531" y="885" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance requirement governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2331" y="-413" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance requirement governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1531" y="967" as="geometry" />
         </mxCell>
-        <mxCell id="bkIMsVyfUaJifPXmQBw0-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Budget Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="4241" y="-495" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Budget Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="3441" y="885" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Lifecycle Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3131" y="91" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Lifecycle Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2331" y="1471" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-2" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Policy and Compliance Lifecycle Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="533.4635" width="200" x="2711" y="-544.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-39" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Policy and Compliance Lifecycle Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="533.4635" width="200" x="1911" y="835.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy lifecycle management" vertex="1">
-          <mxGeometry height="65" width="160" x="2731" y="-495" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy lifecycle management" vertex="1">
+          <mxGeometry height="65" width="160" x="1931" y="885" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tagging &amp;amp; naming governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2730" y="-343" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tagging &amp;amp; naming governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1930" y="1037" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Resource configiguration governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2730" y="-263" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Resource configiguration governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1930" y="1117" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Drift detection governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2731" y="-420" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Drift detection governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1931" y="960" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-9" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Configuration &amp;amp; Standards Governace&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="250" width="389" x="3401" y="41" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-44" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Configuration &amp;amp; Standards Governace&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="389" x="2601" y="1421" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Standardization of LZ components" vertex="1">
-          <mxGeometry height="65" width="160" x="3421" y="91" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Standardization of LZ components" vertex="1">
+          <mxGeometry height="65" width="160" x="2621" y="1471" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cross-Cloud configuration governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3421" y="171" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-46" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cross-Cloud configuration governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2621" y="1551" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Approved architecture patterns" vertex="1">
-          <mxGeometry height="65" width="160" x="3601" y="91" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Approved architecture patterns" vertex="1">
+          <mxGeometry height="65" width="160" x="2801" y="1471" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Version governance for standards" vertex="1">
-          <mxGeometry height="65" width="160" x="3601" y="173" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-48" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Version governance for standards" vertex="1">
+          <mxGeometry height="65" width="160" x="2801" y="1553" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-15" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Service Enablement &amp;amp; Integration Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="250" width="368" x="3904" y="41" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-49" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Service Enablement &amp;amp; Integration Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="368" x="3104" y="1421" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Service Catalog Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3924" y="81" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Service Catalog Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="3124" y="1461" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SaaS Integration Governacne" vertex="1">
-          <mxGeometry height="65" width="160" x="3924" y="161" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SaaS Integration Governacne" vertex="1">
+          <mxGeometry height="65" width="160" x="3124" y="1541" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Third-party service approval" vertex="1">
-          <mxGeometry height="65" width="160" x="4102" y="81" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Third-party service approval" vertex="1">
+          <mxGeometry height="65" width="160" x="3302" y="1461" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Access review &amp;amp; recertification governance" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="-248" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Access review &amp;amp; recertification governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="1132" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Priviliged access governance" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="-168" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Priviliged access governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="1212" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Federation &amp;amp; trust governance" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="-93" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Federation &amp;amp; trust governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="1287" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-24" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Operation Readiness &amp;amp; Incident Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="240" width="399" x="1911" y="41" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-56" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Operation Readiness &amp;amp; Incident Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="399" x="1111" y="1421" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Escalation governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2120" y="93" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-57" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Escalation governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1320" y="1473" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Operational readiness cheks" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="176" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Operational readiness cheks" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="1556" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data residency governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3481" y="-495" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data residency governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2681" y="885" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-31" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data loss prevention governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3481" y="-420" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data loss prevention governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2681" y="960" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-32" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data retention governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3481" y="-343" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data retention governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2681" y="1037" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data access governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3481" y="-263" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Data access governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2681" y="1117" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-34" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Insight reporting" vertex="1">
-          <mxGeometry height="65" width="160" x="3851" y="-333" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Insight reporting" vertex="1">
+          <mxGeometry height="65" width="160" x="3051" y="1047" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance posture visibility" vertex="1">
-          <mxGeometry height="65" width="160" x="3851" y="-253" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-64" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance posture visibility" vertex="1">
+          <mxGeometry height="65" width="160" x="3051" y="1127" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-36" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Plattform health visibility" vertex="1">
-          <mxGeometry height="65" width="160" x="3851" y="-173" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Plattform health visibility" vertex="1">
+          <mxGeometry height="65" width="160" x="3051" y="1207" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Incident governacne" vertex="1">
-          <mxGeometry height="65" width="160" x="1931" y="93" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Incident governacne" vertex="1">
+          <mxGeometry height="65" width="160" x="1131" y="1473" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-39" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Audit &amp;amp; Evidence Governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="240" width="374" x="2406" y="41" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-67" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Audit &amp;amp; Evidence Governance&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="374" x="1606" y="1421" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Evidence collection governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2426" y="91" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Evidence collection governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1626" y="1471" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Audit trail governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2426" y="173" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-69" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Audit trail governance" vertex="1">
+          <mxGeometry height="65" width="160" x="1626" y="1553" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance reporting" vertex="1">
-          <mxGeometry height="65" width="160" x="2600" y="91" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-70" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance reporting" vertex="1">
+          <mxGeometry height="65" width="160" x="1800" y="1471" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cost Allocation Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="4241" y="-413" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-71" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cost Allocation Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="3441" y="967" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-45" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Spending forecasting" vertex="1">
-          <mxGeometry height="65" width="160" x="4241" y="-333" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-72" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Spending forecasting" vertex="1">
+          <mxGeometry height="65" width="160" x="3441" y="1047" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-47" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;LZ Portolfio &amp;amp; Lifecyle Manageent&lt;/font&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="38" width="260" x="1630" y="133" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-73" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;LZ Portolfio &amp;amp; Lifecyle Manageent&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="38" width="260" x="830" y="1513" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-48" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Technical Governance Capabilities&lt;/font&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="38" width="260" x="1630" y="-328" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-74" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Technical Governance Capabilities&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="38" width="260" x="830" y="1052" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-49" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Network Architecture Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3101" y="-495" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-75" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Network Architecture Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2301" y="885" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Network Security Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3101" y="-413" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-76" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Network Security Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2301" y="967" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Connectivity &amp;amp; Routing Governacne" vertex="1">
-          <mxGeometry height="65" width="160" x="3101" y="-333" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-77" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Connectivity &amp;amp; Routing Governacne" vertex="1">
+          <mxGeometry height="65" width="160" x="2301" y="1047" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DNS &amp;amp; Naming Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3101" y="-248" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-78" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DNS &amp;amp; Naming Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2301" y="1132" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Traffic Inspection &amp;amp; Monitoring Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="3101" y="-168" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Traffic Inspection &amp;amp; Monitoring Governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2301" y="1212" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-55" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" value="Purpose" vertex="1">
-          <mxGeometry height="72.5" width="100" x="1465" y="-565" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-80" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" value="Purpose" vertex="1">
+          <mxGeometry height="72.5" width="100" x="665" y="815" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-56" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="Description" vertex="1">
-          <mxGeometry height="72.5" width="100" x="1465" y="-482.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-81" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="Description" vertex="1">
+          <mxGeometry height="72.5" width="100" x="665" y="897.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-57" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Value contribution" vertex="1">
-          <mxGeometry height="72.5" width="100" x="1465" y="-393.75" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-82" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Value contribution" vertex="1">
+          <mxGeometry height="72.5" width="100" x="665" y="986.25" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-58" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Identitäten (User, Service Accounts) und Zugriffsrechte in einer Multi-Cloud-Umgebung zentral zu definieren, zu steuern und deren Einsatz über alle Accounts hinweg zu überwachen." vertex="1">
-          <mxGeometry height="105" width="140.5" x="2100" y="-395" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-83" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Identitäten (User, Service Accounts) und Zugriffsrechte in einer Multi-Cloud-Umgebung zentral zu definieren, zu steuern und deren Einsatz über alle Accounts hinweg zu überwachen." vertex="1">
+          <mxGeometry height="105" width="140.5" x="1300" y="985" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-59" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Einheitliches Zugriffskonzept über Clouds&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion von Privilege Escalation &amp;amp; Insider-Risiken&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Zentrale Durchsetzung von Zero Trust&lt;/span&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="2100" y="-504" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-84" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Einheitliches Zugriffskonzept über Clouds&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion von Privilege Escalation &amp;amp; Insider-Risiken&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Zentrale Durchsetzung von Zero Trust&lt;/span&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="1300" y="876" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-60" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherheitsrichtlinien, Sicherheitsprozesse und Schutzmechanismen über alle Cloud-Platttformen konsistent durchsetzen." vertex="1">
-          <mxGeometry height="105" width="139" x="2501.5" y="-273" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-85" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherheitsrichtlinien, Sicherheitsprozesse und Schutzmechanismen über alle Cloud-Platttformen konsistent durchsetzen." vertex="1">
+          <mxGeometry height="105" width="139" x="1701.5" y="1107" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-61" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-86" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2661.5" y="-198" as="sourcePoint" />
-            <mxPoint x="2661.5" y="-198" as="targetPoint" />
+            <mxPoint x="1861.5" y="1182" as="sourcePoint" />
+            <mxPoint x="1861.5" y="1182" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-62" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Sicherheitsanforderungen, Baselines und Policies für Accounts und Ressourcen zu definieren, umzusetzen und deren Einhaltung sicherzustellen." vertex="1">
-          <mxGeometry height="105" width="140.5" x="2500" y="-393" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-87" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Sicherheitsanforderungen, Baselines und Policies für Accounts und Ressourcen zu definieren, umzusetzen und deren Einhaltung sicherzustellen." vertex="1">
+          <mxGeometry height="105" width="140.5" x="1700" y="987" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-63" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Konsistenter Schutz über Multi-Cloud&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion von Angriffsflächen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Durchsetzung regulatorischer Mindeststandards&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="2500" y="-502" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-88" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Konsistenter Schutz über Multi-Cloud&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion von Angriffsflächen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Durchsetzung regulatorischer Mindeststandards&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="1700" y="878" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-64" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Richtlinien über ihren gesamten Lebenszyklus hinweg definieren, verwalten und durchsetzen." vertex="1">
-          <mxGeometry height="105" width="139" x="2901.5" y="-275" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-89" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Richtlinien über ihren gesamten Lebenszyklus hinweg definieren, verwalten und durchsetzen." vertex="1">
+          <mxGeometry height="105" width="139" x="2101.5" y="1105" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-65" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-90" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3061.5" y="-200" as="sourcePoint" />
-            <mxPoint x="3061.5" y="-200" as="targetPoint" />
+            <mxPoint x="2261.5" y="1180" as="sourcePoint" />
+            <mxPoint x="2261.5" y="1180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-66" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Policies (Tagging, Naming, Netzwerk, Logging, Compliance) zentral zu definieren, zu versionieren, zu verbreiten und Abweichungen zu erkennen." vertex="1">
-          <mxGeometry height="105" width="140.5" x="2900" y="-395" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-91" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Policies (Tagging, Naming, Netzwerk, Logging, Compliance) zentral zu definieren, zu versionieren, zu verbreiten und Abweichungen zu erkennen." vertex="1">
+          <mxGeometry height="105" width="140.5" x="2100" y="985" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-67" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Konsistenz über hunderte Accounts&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Automatisierte Governance&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion operativer Risiken&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="2900" y="-504" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-92" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Konsistenz über hunderte Accounts&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Automatisierte Governance&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion operativer Risiken&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="2100" y="876" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-68" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Einheitliche, sichere und skalierbare Netzwerkarchitekturen und Verbindungen für alle Cloud-Accounts der Organisation sicherstellen." vertex="1">
-          <mxGeometry height="105" width="139" x="3271.5" y="-275" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-93" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Einheitliche, sichere und skalierbare Netzwerkarchitekturen und Verbindungen für alle Cloud-Accounts der Organisation sicherstellen." vertex="1">
+          <mxGeometry height="105" width="139" x="2471.5" y="1105" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-69" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-94" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3431.5" y="-200" as="sourcePoint" />
-            <mxPoint x="3431.5" y="-200" as="targetPoint" />
+            <mxPoint x="2631.5" y="1180" as="sourcePoint" />
+            <mxPoint x="2631.5" y="1180" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-70" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Netzwerk-Topologien, Segmentation, Firewalling und Verbindungswege zwischen Cloud-Accounts, Clouds und On-Prem zu definieren und zu steuern." vertex="1">
-          <mxGeometry height="105" width="140.5" x="3270" y="-395" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-95" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Netzwerk-Topologien, Segmentation, Firewalling und Verbindungswege zwischen Cloud-Accounts, Clouds und On-Prem zu definieren und zu steuern." vertex="1">
+          <mxGeometry height="105" width="140.5" x="2470" y="985" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-71" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1.Sichere Verbindungen zwischen Accounts&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2.Reduktion von Fehlkonfigurationen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3.Zero-Trust-Netzwerkmodell&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="3270" y="-504" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-96" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1.Sichere Verbindungen zwischen Accounts&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2.Reduktion von Fehlkonfigurationen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3.Zero-Trust-Netzwerkmodell&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="2470" y="876" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-72" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="&lt;br&gt;Sicherstellen, dass Daten, Klassifizierungen und Secrets über alle Cloud-Accounts hinweg geschützt, verwaltet und korrekt behandelt werden." vertex="1">
-          <mxGeometry height="105" width="139" x="3652.5" y="-273" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-97" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="&lt;br&gt;Sicherstellen, dass Daten, Klassifizierungen und Secrets über alle Cloud-Accounts hinweg geschützt, verwaltet und korrekt behandelt werden." vertex="1">
+          <mxGeometry height="105" width="139" x="2852.5" y="1107" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-73" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-98" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="3812.5" y="-198" as="sourcePoint" />
-            <mxPoint x="3812.5" y="-198" as="targetPoint" />
+            <mxPoint x="3012.5" y="1182" as="sourcePoint" />
+            <mxPoint x="3012.5" y="1182" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-74" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Datenkategorien, Secret-Handling, Verschlüsselung, Data Residency und Backup-Strategien zentral zu definieren und zu steuern." vertex="1">
-          <mxGeometry height="105" width="140.5" x="3651" y="-393" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-99" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Datenkategorien, Secret-Handling, Verschlüsselung, Data Residency und Backup-Strategien zentral zu definieren und zu steuern." vertex="1">
+          <mxGeometry height="105" width="140.5" x="2851" y="987" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-75" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Datenschutzkonforme Cloud-Nutzung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Einheitliche Data Protection Practices&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Minimierung von Data Leakage Risiken&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="3651" y="-502" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-100" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Datenschutzkonforme Cloud-Nutzung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Einheitliche Data Protection Practices&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Minimierung von Data Leakage Risiken&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="2851" y="878" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-76" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Einheitliche Vorgaben für Logging, Monitoring, Metrics und Ereignisbeobachtung sicherstellen." vertex="1">
-          <mxGeometry height="105" width="139" x="4022.5" y="-273" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-101" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Einheitliche Vorgaben für Logging, Monitoring, Metrics und Ereignisbeobachtung sicherstellen." vertex="1">
+          <mxGeometry height="105" width="139" x="3222.5" y="1107" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-77" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-102" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="4182.5" y="-198" as="sourcePoint" />
-            <mxPoint x="4182.5" y="-198" as="targetPoint" />
+            <mxPoint x="3382.5" y="1182" as="sourcePoint" />
+            <mxPoint x="3382.5" y="1182" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-78" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Observability-Standards cloudweit festzulegen, Telemetrie zu strukturieren und Sichtbarkeit über technische und Compliance-Zustände zu gewährleisten." vertex="1">
-          <mxGeometry height="105" width="140.5" x="4021" y="-393" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-103" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Observability-Standards cloudweit festzulegen, Telemetrie zu strukturieren und Sichtbarkeit über technische und Compliance-Zustände zu gewährleisten." vertex="1">
+          <mxGeometry height="105" width="140.5" x="3221" y="987" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-79" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Transparenz über Systemzustände&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Schnellere Erkennung von Fehlzuständen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Audit-/Compliance-Sichtbarkeit&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="4021" y="-502" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-104" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Transparenz über Systemzustände&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Schnellere Erkennung von Fehlzuständen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Audit-/Compliance-Sichtbarkeit&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="3221" y="878" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-80" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Finanzielle Steuerung von Cloud-Nutzung, Budget-Kontrolle und Abrechnung für alle Accounts sicherstellen." vertex="1">
-          <mxGeometry height="105" width="139" x="4411.5" y="-280.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-105" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Finanzielle Steuerung von Cloud-Nutzung, Budget-Kontrolle und Abrechnung für alle Accounts sicherstellen." vertex="1">
+          <mxGeometry height="105" width="139" x="3611.5" y="1099.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-81" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-106" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="4571.5" y="-205.5" as="sourcePoint" />
-            <mxPoint x="4571.5" y="-205.5" as="targetPoint" />
+            <mxPoint x="3771.5" y="1174.5" as="sourcePoint" />
+            <mxPoint x="3771.5" y="1174.5" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-82" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Kosten-Modelle, Budgets, Forecasting und Kosten-Zuweisung über Multi-Cloud-Accounts hinweg zu definieren." vertex="1">
-          <mxGeometry height="105" width="140.5" x="4410" y="-400.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-107" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Kosten-Modelle, Budgets, Forecasting und Kosten-Zuweisung über Multi-Cloud-Accounts hinweg zu definieren." vertex="1">
+          <mxGeometry height="105" width="140.5" x="3610" y="979.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-83" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Kostentransparenz&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Vorhersagbarkeit von Cloud-Ausgaben&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Minimierung von Verschwendung&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="94" width="140.5" x="4410" y="-509.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-108" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Kostentransparenz&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Vorhersagbarkeit von Cloud-Ausgaben&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Minimierung von Verschwendung&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="140.5" x="3610" y="870.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-84" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherstellen, dass Cloud-Teams und Accounts betrieblich bereit und auf Vorfälle vorbereitet sind." vertex="1">
-          <mxGeometry height="105" width="139" x="2050" y="260.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-109" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherstellen, dass Cloud-Teams und Accounts betrieblich bereit und auf Vorfälle vorbereitet sind." vertex="1">
+          <mxGeometry height="105" width="139" x="1250" y="1640.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-85" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-110" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1920" y="133" as="sourcePoint" />
-            <mxPoint x="1920" y="133" as="targetPoint" />
+            <mxPoint x="1120" y="1513" as="sourcePoint" />
+            <mxPoint x="1120" y="1513" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-86" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Betriebsbereitschaft, Eskalationen, Incident-Prozesse und Onboarding-Checks zu definieren." vertex="1">
-          <mxGeometry height="105" width="140.5" x="1900" y="260.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-111" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Betriebsbereitschaft, Eskalationen, Incident-Prozesse und Onboarding-Checks zu definieren." vertex="1">
+          <mxGeometry height="105" width="140.5" x="1100" y="1640.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-87" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Weniger Betrieb1sstörungen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Bessere Krisenbewältigung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Klare Governance bei Störungen&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="107" width="140.5" x="2197.5" y="260" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-112" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Weniger Betrieb1sstörungen&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Bessere Krisenbewältigung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Klare Governance bei Störungen&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="107" width="140.5" x="1397.5" y="1640" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-88" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Übergreifende Fähigkeit, Audit-Nachweise und Compliance-Berichte systematisch zu erzeugen und bereitzustellen." vertex="1">
-          <mxGeometry height="105" width="139" x="2531" y="261" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-113" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Übergreifende Fähigkeit, Audit-Nachweise und Compliance-Berichte systematisch zu erzeugen und bereitzustellen." vertex="1">
+          <mxGeometry height="105" width="139" x="1731" y="1641" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-89" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Audit-Trails zu definieren, Evidenzen zu sammeln und Compliance-Berichte für regulatorische Anforderungen bereitzustellen." vertex="1">
-          <mxGeometry height="105" width="140.5" x="2381" y="261" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-114" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Audit-Trails zu definieren, Evidenzen zu sammeln und Compliance-Berichte für regulatorische Anforderungen bereitzustellen." vertex="1">
+          <mxGeometry height="105" width="140.5" x="1581" y="1641" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-90" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Revisionssichere Nachweise&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Effiziente Audit-Vorbereitung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Reduktion regulatorischer Risiken&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="107" width="140.5" x="2678.5" y="260.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-115" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Revisionssichere Nachweise&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Effiziente Audit-Vorbereitung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Reduktion regulatorischer Risiken&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="107" width="140.5" x="1878.5" y="1640.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-91" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Unterstützung beim Bereitstellen von LZ-Blueprints, Versionierung und der Wiederverwendung standardisierter Komponenten." vertex="1">
-          <mxGeometry height="105" width="139" x="3040" y="259" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-116" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Unterstützung beim Bereitstellen von LZ-Blueprints, Versionierung und der Wiederverwendung standardisierter Komponenten." vertex="1">
+          <mxGeometry height="105" width="139" x="2240" y="1639" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-92" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Fähigkeit, Cloud-Umgebungen (Accounts, Projekte) auf Basis der LZ bereitzustellen und Änderungen über deren Lebenszyklus zu steuern." vertex="1">
-          <mxGeometry height="105" width="140.5" x="2890" y="259" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-117" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Fähigkeit, Cloud-Umgebungen (Accounts, Projekte) auf Basis der LZ bereitzustellen und Änderungen über deren Lebenszyklus zu steuern." vertex="1">
+          <mxGeometry height="105" width="140.5" x="2090" y="1639" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-93" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Schnelle &amp;amp; konsistente Bereitstellung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion manueller Aufwände&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Automatisierte Wiederverwendbarkeit&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="107" width="140.5" x="3187.5" y="258.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-118" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Schnelle &amp;amp; konsistente Bereitstellung&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Reduktion manueller Aufwände&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Automatisierte Wiederverwendbarkeit&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="107" width="140.5" x="2387.5" y="1638.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-94" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Standards für LZ-Komponenten definieren und sicherstellen, dass sie cross-cloud konsistent angewendet werden." vertex="1">
-          <mxGeometry height="105" width="139" x="3526.5" y="261.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-119" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Standards für LZ-Komponenten definieren und sicherstellen, dass sie cross-cloud konsistent angewendet werden." vertex="1">
+          <mxGeometry height="105" width="139" x="2726.5" y="1641.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-95" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, technische Architekturrichtlinien und Standardkomponenten zu definieren, versionieren und entwicklungsteamsübergreifend bereitzustellen." vertex="1">
-          <mxGeometry height="105" width="140.5" x="3376.5" y="261.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-120" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, technische Architekturrichtlinien und Standardkomponenten zu definieren, versionieren und entwicklungsteamsübergreifend bereitzustellen." vertex="1">
+          <mxGeometry height="105" width="140.5" x="2576.5" y="1641.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-96" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Technisch einheitliche Cloud-Landschaft&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Geringere Variabilität&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Weniger Fehlkonfigurationen&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="107" width="140.5" x="3674" y="261" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-121" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Technisch einheitliche Cloud-Landschaft&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Geringere Variabilität&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Weniger Fehlkonfigurationen&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="107" width="140.5" x="2874" y="1641" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-97" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherstellen, dass SaaS-Services, Marketplace-Produkte und Cloud-Services kontrolliert und sicher genutzt werden." vertex="1">
-          <mxGeometry height="105" width="139" x="4022.25" y="262" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-122" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=7;" value="Sicherstellen, dass SaaS-Services, Marketplace-Produkte und Cloud-Services kontrolliert und sicher genutzt werden." vertex="1">
+          <mxGeometry height="105" width="139" x="3222.25" y="1642" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-98" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Servicekataloge, SaaS-Integrationen und die Zulassung externer Services zu steuern." vertex="1">
-          <mxGeometry height="105" width="140.5" x="3872.25" y="262" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-123" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Servicekataloge, SaaS-Integrationen und die Zulassung externer Services zu steuern." vertex="1">
+          <mxGeometry height="105" width="140.5" x="3072.25" y="1642" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-99" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Reduktion von Schatten-IT&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Konsistente Service-Erlaubnisregeln&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Compliance-Sicherung bei Dritt-Services&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="107" width="140.5" x="4169.75" y="261.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-124" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=7;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;1. Reduktion von Schatten-IT&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Konsistente Service-Erlaubnisregeln&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Compliance-Sicherung bei Dritt-Services&lt;/span&gt;&lt;br/&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="107" width="140.5" x="3369.75" y="1641.5" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-100" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Legende&lt;/font&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="38" width="130" x="1450" y="-625" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-125" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Legende&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="38" width="130" x="650" y="755" as="geometry" />
         </mxCell>
-        <mxCell id="3FIVOLkIkCZl27nZO-ND-101" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NFR" vertex="1">
-          <mxGeometry height="70" width="120" x="1455" y="-295.5" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-126" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NFR" vertex="1">
+          <mxGeometry height="70" width="120" x="655" y="1084.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="5086" dy="3182" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="4895" dy="3930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -256,7 +256,7 @@
           <mxGeometry height="350" width="320" x="1140" y="-208" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-194" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="710" width="1020" x="-40" y="910" as="geometry" />
+          <mxGeometry height="710" width="1020" x="-110" y="900" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-158" parent="Lzv2f7MgehNdQIw8qka4-194" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" value="" vertex="1">
           <mxGeometry height="880" width="630" x="235" y="-90" as="geometry" />
@@ -313,7 +313,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-219" parent="1" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;" value="" vertex="1">
-          <mxGeometry height="260" width="490" x="420" y="-198" as="geometry" />
+          <mxGeometry height="260" width="490" x="390" y="-220.75" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-220" parent="Lzv2f7MgehNdQIw8qka4-219" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="44" width="490" as="geometry" />
@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="1220" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1035" dy="632" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -961,7 +961,7 @@
           <mxGeometry height="105" width="139" x="1301.5" y="1105" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IaC" vertex="1">
-          <mxGeometry height="70" width="120" x="1350" y="1880" as="geometry" />
+          <mxGeometry height="70" width="120" x="1334.5" y="1880" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Propagationsdauer&lt;div&gt;für Policies&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="120" x="1951" y="550" as="geometry" />
@@ -973,10 +973,10 @@
           <mxGeometry height="70" width="120" x="2621" y="1895" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Bereitstellungszeit" vertex="1">
-          <mxGeometry height="70" width="120" x="1200" y="1880" as="geometry" />
+          <mxGeometry height="70" width="120" x="1184.5" y="1880" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-16" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Blueprint Kompatibiliät" vertex="1">
-          <mxGeometry height="70" width="120" x="1259.5" y="1960" as="geometry" />
+          <mxGeometry height="70" width="120" x="1244" y="1960" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-17" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Verrechenbarkeit" vertex="1">
           <mxGeometry height="70" width="120" x="3462" y="630" as="geometry" />
@@ -1171,10 +1171,10 @@
           <mxGeometry height="72.5" width="100" x="665" y="815" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-81" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="Description" vertex="1">
-          <mxGeometry height="72.5" width="100" x="665" y="897.5" as="geometry" />
+          <mxGeometry height="72.5" width="100" x="665" y="899.5" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-82" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Value contribution" vertex="1">
-          <mxGeometry height="72.5" width="100" x="665" y="986.25" as="geometry" />
+          <mxGeometry height="72.5" width="100" x="665" y="985" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-83" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Identitäten (User, Service Accounts) und Zugriffsrechte in einer Multi-Cloud-Umgebung zentral zu definieren, zu steuern und deren Einsatz über alle Accounts hinweg zu überwachen." vertex="1">
           <mxGeometry height="105" width="140.5" x="1300" y="985" as="geometry" />
@@ -1324,10 +1324,10 @@
           <mxGeometry height="107" width="140.5" x="3369.75" y="1641.5" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-125" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;align=center;verticalAlign=middle;rotation=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Legende&lt;/font&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="38" width="130" x="650" y="755" as="geometry" />
+          <mxGeometry height="38" width="130" x="650" y="770" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-126" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NFR bezogen auf L1" vertex="1">
-          <mxGeometry height="70" width="120" x="655" y="1084.5" as="geometry" />
+          <mxGeometry height="70" width="120" x="655" y="1070" as="geometry" />
         </mxCell>
         <mxCell id="ZgiUbKQ7goLVh-A4rarz-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b&gt;Zweck und Ziel&lt;/b&gt;&lt;/div&gt;Die Landing Zone Technical Capability Map beschreibt alle organisatorischen und technischen Fähigkeiten, welche erforderlich sind, um eine Multi-Cloud-Landing-Zone konsistent, sicher und reproduzierbar zu betreiben. Sie dient als strukturiertes Modell, das definiert, &lt;em data-start=&quot;873&quot; data-end=&quot;881&quot;&gt;welche&lt;/em&gt; Fähigkeiten eine Organisation besitzen muss, um eine skalierbare, standardisierte und governance-konforme Cloud-Umgebung bereitzustellen – unabhängig von spezifischen Technologien, Tools oder Cloud-Anbietern." vertex="1">
           <mxGeometry height="110" width="460" x="140" y="770" as="geometry" />
@@ -1339,7 +1339,7 @@
           <mxGeometry height="340" width="460" x="140" y="1197" as="geometry" />
         </mxCell>
         <mxCell id="wuTdeSk9KGYvlwryJnfh-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="LZ sind einheitlich, kompatiblen und konsistent aufgebtaut. Ohne: drift, manueller aufwand etc. Inhalt: logging standard, deployment / iac konvetionen.&lt;div&gt;Standards schaffen für verschiedenen abschitte. Logging baseline, iam konfig, backup vorgaben&lt;/div&gt;" vertex="1">
-          <mxGeometry height="160" width="233" x="2790" y="1895" as="geometry" />
+          <mxGeometry height="160" width="233" x="2770" y="1820" as="geometry" />
         </mxCell>
         <mxCell id="wuTdeSk9KGYvlwryJnfh-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Lifecylce management von LZ versionen. Standardtisierten bereitstellen von LZ, Accoutnts, Baselines etc. IaC ausfühgung. Depracation mgmt" vertex="1">
           <mxGeometry height="160" width="233" x="2210" y="1880" as="geometry" />

@@ -926,11 +926,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="1961" dy="1198" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1331" dy="813" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ECLfqhmr15GOG7SCHCNk-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="Landing zone&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;capability map&lt;/span&gt;" vertex="1">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=23;strokeColor=light-dark(#000000, #6d5100);fontFamily=Helvetica;fontColor=default;fillColor=#FFFFFF;" value="Landing zone&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;capability map&lt;/span&gt;" vertex="1">
           <mxGeometry height="1110" width="3020" x="810" y="755" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-2" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Identitiy and Access Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
@@ -1083,7 +1083,7 @@
         <mxCell id="ECLfqhmr15GOG7SCHCNk-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="SaaS Integration Governacne" vertex="1">
           <mxGeometry height="65" width="160" x="3124" y="1541" as="geometry" />
         </mxCell>
-        <mxCell id="ECLfqhmr15GOG7SCHCNk-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Third-party service approval" vertex="1">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="3rd-party service approval" vertex="1">
           <mxGeometry height="65" width="160" x="3302" y="1461" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Access review &amp;amp; recertification governance" vertex="1">
@@ -1167,14 +1167,14 @@
         <mxCell id="ECLfqhmr15GOG7SCHCNk-79" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Traffic Inspection &amp;amp; Monitoring Governance" vertex="1">
           <mxGeometry height="65" width="160" x="2301" y="1212" as="geometry" />
         </mxCell>
-        <mxCell id="ECLfqhmr15GOG7SCHCNk-80" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" value="Purpose" vertex="1">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-80" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#d5e8d4;strokeColor=#82b366;" value="L1 Purpose" vertex="1">
           <mxGeometry height="72.5" width="100" x="665" y="815" as="geometry" />
         </mxCell>
-        <mxCell id="ECLfqhmr15GOG7SCHCNk-81" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="Description" vertex="1">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-81" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" value="L1 Description" vertex="1">
           <mxGeometry height="72.5" width="100" x="665" y="899.5" as="geometry" />
         </mxCell>
-        <mxCell id="ECLfqhmr15GOG7SCHCNk-82" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Value contribution" vertex="1">
-          <mxGeometry height="72.5" width="100" x="665" y="985" as="geometry" />
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-82" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="L1: Value contribution" vertex="1">
+          <mxGeometry height="72.5" width="100" x="665" y="1074.5" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-83" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=7;" value="Die Fähigkeit, Identitäten (User, Service Accounts) und Zugriffsrechte in einer Multi-Cloud-Umgebung zentral zu definieren, zu steuern und deren Einsatz über alle Accounts hinweg zu überwachen." vertex="1">
           <mxGeometry height="105" width="140.5" x="1300" y="985" as="geometry" />
@@ -1327,7 +1327,7 @@
           <mxGeometry height="38" width="130" x="650" y="770" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-126" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NFR bezogen auf L1" vertex="1">
-          <mxGeometry height="70" width="120" x="655" y="1070" as="geometry" />
+          <mxGeometry height="70" width="120" x="655" y="1159.5" as="geometry" />
         </mxCell>
         <mxCell id="ZgiUbKQ7goLVh-A4rarz-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;b&gt;Zweck und Ziel&lt;/b&gt;&lt;/div&gt;Die Landing Zone Technical Capability Map beschreibt alle organisatorischen und technischen Fähigkeiten, welche erforderlich sind, um eine Multi-Cloud-Landing-Zone konsistent, sicher und reproduzierbar zu betreiben. Sie dient als strukturiertes Modell, das definiert, &lt;em data-start=&quot;873&quot; data-end=&quot;881&quot;&gt;welche&lt;/em&gt; Fähigkeiten eine Organisation besitzen muss, um eine skalierbare, standardisierte und governance-konforme Cloud-Umgebung bereitzustellen – unabhängig von spezifischen Technologien, Tools oder Cloud-Anbietern." vertex="1">
           <mxGeometry height="110" width="460" x="140" y="770" as="geometry" />
@@ -1350,41 +1350,56 @@
         <mxCell id="wuTdeSk9KGYvlwryJnfh-4" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;font style=&quot;font-size: 7px;&quot;&gt;Alle aktvitäten sind prüfbar, nachvollziehbar und revisionssicher. audit, ereigbniss nachvollzihbear machen. evidence, sammeln, governance was rein muss wegen compliance gennüber vorgaben&lt;/font&gt;" vertex="1">
           <mxGeometry height="110" width="179" x="1691" y="1885" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;IncidentGovernance: Fähigkeit Prozess für Incidents zu haben. Lifecycle etc&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px; line-height: 100%;&quot;&gt;IncidentGovernance: Fähigkeit Prozess für&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px; line-height: 100%;&quot;&gt;Incidents zu haben. Lifecycle etc&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1100.5" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;EscalationGovernance: Fähigkeit&amp;nbsp; Entscheidungsprozesse zu haben bspw bei Kritikalität&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;EscalationGovernance: Fähigkeit&amp;nbsp; Entscheidungsprozesse zu haben bspw bei Kritikalität&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="85" width="140" x="1257.5" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Readiness Checks: Fähigkeit&amp;nbsp; Quality Gates zu haben für Workloads in der LZ&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Readiness Checks: Fähigkeit&amp;nbsp; Quality Gates zu haben für Workloads in der LZ&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="85" width="140" x="1410" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-4" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;VersionAndChangeMgmt:&amp;nbsp; Fähigkeit LZ als Produkt zu verwalten mit Versionen, Kompatibilität Cheks etc UND Fähigkeit Prozess für Anpassungen an LZ zu haben&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-4" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;VersionAndChangeMgmt:&amp;nbsp; Fähigkeit LZ als Produkt zu verwalten mit Versionen, Kompatibilität Cheks etc UND Fähigkeit Prozess für Anpassungen an LZ zu haben&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="140" x="2120" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-5" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;LifecycleGovernance: Fähigkeit zyklus&amp;nbsp; für LZ Nutzung zu haben. Welche Foundation kommt in welche LZ inkl ausrollen, deprovisionieren usw&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-5" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;LifecycleGovernance: Fähigkeit zyklus&amp;nbsp; für LZ Nutzung zu haben. Welche Foundation kommt in welche LZ inkl ausrollen, deprovisionieren usw&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="89" width="140" x="2269" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-6" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Provisioning exectution: Fähigkeit LZ Komponenten im IaC Sinne konsistent bereitzustellen&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-6" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Provisioning exectution: Fähigkeit LZ Komponenten im IaC Sinne konsistent bereitzustellen&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="89" width="140" x="2415.5" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-7" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Stanardization and Versioning :&amp;nbsp; Fähigkeit Teile der LZ zu definieren&amp;nbsp; (Zweck, Umfang, Parmeter, Prinzipien), dokumentieren, versionieren etc.&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-7" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Stanardization and Versioning :&amp;nbsp; Fähigkeit Teile der LZ zu definieren&amp;nbsp; (Zweck, Umfang, Parmeter, Prinzipien), dokumentieren, versionieren etc.&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="89" width="140" x="2600" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-10" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;CrossCloudConfig: Fähigkeit&amp;nbsp; Konfiguraitonen so zu definierne dass sie cloud übergreifend vergleichbar sind unabhängig vom hyperscaler. harmonisieren von unterschieden&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-10" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;CrossCloudConfig: Fähigkeit&amp;nbsp; Konfiguraitonen so zu definierne dass sie cloud übergreifend vergleichbar sind unabhängig vom hyperscaler. harmonisieren von unterschieden&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="140" x="2750" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-11" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Approved architeture : Fähigkeit Patterns für Foundations bereitzustellen welche konform mit der LZ sind bzw den gegebenheiten der LZ entsprechen&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-11" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Approved architeture : Fähigkeit Patterns für Foundations bereitzustellen welche konform mit der LZ sind bzw den gegebenheiten der LZ entsprechen&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="89" width="140" x="2900" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-12" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;ServiceCatalogGovernance: Fähigkeiten die Dienstleistungen welche bspw als Foundation in einer LZ genutzt werden können zu verbieten / erlauben&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-12" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;ServiceCatalogGovernance: Fähigkeiten die Dienstleistungen welche bspw als Foundation in einer LZ genutzt werden können zu verbieten / erlauben&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="140" x="3091" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-13" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Third-party service approval:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-13" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;3rd-party service approval: Fähigkeit zu evaluieren ob Services bpspw über Market-Place eingebunden werden können (bspw&amp;nbsp; Managed Grafana, Reddis etc.)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="90" width="140" x="3241.5" y="1760" as="geometry" />
         </mxCell>
         <mxCell id="VG0t3yS8pK_J1j8vOV7P-14" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;span style=&quot;font-size: 7px;&quot;&gt;Service Catalog Governance: definiert das Verbot&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Security Governance: begründet das Verbot&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Policy Lifecycle Governance: definiert Policy für das Verbot&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="120" width="233" x="3150" y="1985" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;SaaS Integration: Fähigkeit&amp;nbsp; 3rd party services einbinden zu können inkl identity, connection etc. mgmt&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="3390" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Evidence Collection Governance: Fähigkeit&amp;nbsp; sicherzustellen, dass alle relevanten Nachweise (reports, assessments etc.) dokumentiert sind&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="140" x="1581.5" y="1762.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-4" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;fillColor=light-dark(#ffffff, #281d00);strokeColor=#d6b656;" value="L2 Description" vertex="1">
+          <mxGeometry height="72.5" width="100" x="665" y="985" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-5" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Audit trail governance: Fähigkeit&amp;nbsp; Nachvollziehbarkeit von Aktivitäten / Ereignissen (bspw User-Actions, Role-Changes, Break-Glass nutzung etc.)&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="140" x="1731" y="1762.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-6" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Complliance reporting:&amp;nbsp; Fähigkeit basieren auf evidence darzulegen inwiefern die compliance erfüllt wird oder nicht&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="85" width="140" x="1879" y="1762" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

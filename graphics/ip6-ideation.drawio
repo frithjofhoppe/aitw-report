@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="351" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="435" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1059,7 +1059,7 @@
         <mxCell id="ECLfqhmr15GOG7SCHCNk-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tagging &amp;amp; naming governance" vertex="1">
           <mxGeometry height="65" width="160" x="2613" y="1195" as="geometry" />
         </mxCell>
-        <mxCell id="ECLfqhmr15GOG7SCHCNk-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Resource configiguration governance" vertex="1">
+        <mxCell id="ECLfqhmr15GOG7SCHCNk-42" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ressource configuration governance" vertex="1">
           <mxGeometry height="65" width="160" x="2613" y="1275" as="geometry" />
         </mxCell>
         <mxCell id="ECLfqhmr15GOG7SCHCNk-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Drift detection governance" vertex="1">
@@ -1512,7 +1512,7 @@
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Drift detection governance" vertex="1">
           <mxGeometry height="65" width="160" x="2221" y="505" as="geometry" />
         </mxCell>
-        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=default;align=center;verticalAlign=middle;arcSize=10;absoluteArcSize=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Security Governance&lt;/span&gt;" vertex="1">
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=default;align=center;verticalAlign=middle;arcSize=10;absoluteArcSize=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Policy and Compliance Lifecycle Governance&lt;/span&gt;" vertex="1">
           <mxGeometry height="65" width="160" x="2220" y="320" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-63" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Network Architecture Governance" vertex="1">
@@ -1596,20 +1596,26 @@
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-91" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit zu bestimmen in welchen Systemen die Personenidentitäten, Anwendungsidentitäten etc akzeptiert werden (bspw mapping claims, anmelde flows etc.)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1060" y="834" as="geometry" />
         </mxCell>
-        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-92" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Policies technisch und organisatorisch durchzusetzen und die Einhaltung zu gewährleisten&lt;/div&gt;" vertex="1">
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-92" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit&amp;nbsp; zu&amp;nbsp; definieren wie Baselines enforced, remidation gemacht werden, monitoring der compliance aussieht&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1735" y="419.5" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-93" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit zu erkennen ob Veränderungen an der Foundation vom SOLL-Zustand entstanden sind&lt;/div&gt;" vertex="1">
-          <mxGeometry height="79" width="140" x="2391" y="495" as="geometry" />
+          <mxGeometry height="79" width="140" x="2391" y="500.5" as="geometry" />
         </mxCell>
-        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-94" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Policies zu defineren welche eingefhlaten werden müssen (bspw Übsertzung der Anforderungen welche aus Regurlatorien für den Bund hervorgehen)&lt;/div&gt;" vertex="1">
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-94" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Regelwerke zu identifizieren welche Anforderungen beinhalten die potentiell für LZ oder Foundations relevant sind&amp;nbsp; (bspw SI001, ISO etc.)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1735" y="508.5" as="geometry" />
         </mxCell>
-        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-95" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit MIndestetstandards für Foundations und Workloads auf dieser innerhalb einer LZ zu definiernen welche eingefhalten werden müssen&lt;/div&gt;" vertex="1">
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-95" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Mindesttstandards basierend auf Polices zu definierne welche in den LZ eingehalten werden müssen&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1734.5" y="592" as="geometry" />
         </mxCell>
-        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-96" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Policies als Regelwerk zu defimieren und verwalten&lt;/div&gt;" vertex="1">
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-96" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Policies&amp;nbsp; aus Anforderungen abzuleiten und diese zu definieren (bspw operativ mapping auf existieren vendor spezfische Policies)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1735" y="685" as="geometry" />
+        </mxCell>
+        <mxCell id="pxIF99jQIkRb-W20V7F3-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit den Lifecylce einer Policy zu definieren (prozesse für entstehung, reviewen, updates, entfernung etc. definien -&amp;gt; EA levlel. Policy Management ist operativl)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="2390.75" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="pxIF99jQIkRb-W20V7F3-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit zu erkennen ob Veränderungen an der Foundation vom SOLL-Zustand entstanden sind&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="2391" y="585" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

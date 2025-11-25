@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="485" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1803" dy="1883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1522,13 +1522,13 @@
           <mxGeometry height="65" width="160" x="2851.5" y="512" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-65" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Connectivity &amp;amp; Routing Governacne" vertex="1">
-          <mxGeometry height="65" width="160" x="2851.5" y="592" as="geometry" />
+          <mxGeometry height="65" width="160" x="2851.5" y="612" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-66" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="DNS &amp;amp; Naming Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2851.5" y="677" as="geometry" />
+          <mxGeometry height="65" width="160" x="2851.5" y="697" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Traffic Inspection &amp;amp; Monitoring Governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2851.5" y="757" as="geometry" />
+          <mxGeometry height="65" width="160" x="2854" y="784" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-68" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=default;align=center;verticalAlign=middle;arcSize=10;absoluteArcSize=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Network and Connectivity&lt;/span&gt;" vertex="1">
           <mxGeometry height="65" width="160" x="2854" y="315.5" as="geometry" />
@@ -1617,8 +1617,23 @@
         <mxCell id="pxIF99jQIkRb-W20V7F3-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit konsistent und durchsetzbare Regeln für die Benennung und das Tagging von Ressourcen zu definieren&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="2391" y="595" as="geometry" />
         </mxCell>
-        <mxCell id="pxIF99jQIkRb-W20V7F3-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit technische Standards zu definieren wie einzelne Ressourcen konkret konfiguriert sein müsse (bspw welcher Parameter ist Vorgabe, welcher liegt im Ermessen von den einzelnen Vorhaben?)&lt;/div&gt;" vertex="1">
+        <mxCell id="pxIF99jQIkRb-W20V7F3-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit technische Standards zu definieren wie einzelne Ressourcen konkret konfiguriert sein müsse (bspw welcher Parameter bei resourcen sind wie zu wählen, damit sie einem standard entsprechen -&amp;gt; nur standard nicht enforcen)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="2391" y="681" as="geometry" />
+        </mxCell>
+        <mxCell id="4Z1l0a7JNxmqqxo_deVm-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit einheitliche Architekturprinzipien und Standards zu definieren welche LZ übergreifend anwendbar sind (bspw hub-and-spoke, mesh etc)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="3024" y="423" as="geometry" />
+        </mxCell>
+        <mxCell id="4Z1l0a7JNxmqqxo_deVm-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Regeln/Richtlinien zur Absicherung des Netzwerkverkehrs über alle LZ und Cloud-Plattformen definieren zu können (bspw Isolation zwischen LZ, Zero trust prinzipien etc.)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="3024" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="4Z1l0a7JNxmqqxo_deVm-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Routes, Traffic etc zwischen Cloud-Plattformen&amp;nbsp; und LZ zu standardisieren und deren Einhaltung sicherzustellen&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="3025.25" y="602" as="geometry" />
+        </mxCell>
+        <mxCell id="4Z1l0a7JNxmqqxo_deVm-4" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Standards für Domain-Namen, Namensräume, DNS Zonen etc zu definieren und die Einhaltung zu gewährleisten&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="3025" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="4Z1l0a7JNxmqqxo_deVm-5" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit&amp;nbsp; Regeln und Standards zu definieren wie der Netzwerkverkehr überwacht und analysiert werden soll&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="3025" y="777" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

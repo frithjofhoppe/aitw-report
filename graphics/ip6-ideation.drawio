@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.1.1" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="4895" dy="3930" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2943" dy="2738" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -256,7 +256,7 @@
           <mxGeometry height="350" width="320" x="1140" y="-208" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-194" connectable="0" parent="1" style="group" value="" vertex="1">
-          <mxGeometry height="710" width="1020" x="-110" y="900" as="geometry" />
+          <mxGeometry height="710" width="1020" x="-211" y="910" as="geometry" />
         </mxCell>
         <mxCell id="Lzv2f7MgehNdQIw8qka4-158" parent="Lzv2f7MgehNdQIw8qka4-194" style="triangle;whiteSpace=wrap;html=1;rotation=-90;" value="" vertex="1">
           <mxGeometry height="880" width="630" x="235" y="-90" as="geometry" />
@@ -1371,11 +1371,20 @@
         <mxCell id="VG0t3yS8pK_J1j8vOV7P-7" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Stanardization and Versioning :&amp;nbsp; Fähigkeit Teile der LZ zu definieren&amp;nbsp; (Zweck, Umfang, Parmeter, Prinzipien), dokumentieren, versionieren etc.&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="89" width="140" x="2600" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-10" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Approved patterns: Fähigkeit&amp;nbsp; Konfiguraitonen so zu definierne dass sie cloud übergreifend vergleichbar sind unabhängig vom hyperscaler&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="89" width="140" x="2750" y="1760" as="geometry" />
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-10" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;CrossCloudConfig: Fähigkeit&amp;nbsp; Konfiguraitonen so zu definierne dass sie cloud übergreifend vergleichbar sind unabhängig vom hyperscaler. harmonisieren von unterschieden&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="140" x="2750" y="1760" as="geometry" />
         </mxCell>
-        <mxCell id="VG0t3yS8pK_J1j8vOV7P-11" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Approved patterns: Fähigkeit&amp;nbsp; Konfiguraitonen so zu definierne dass sie cloud übergreifend vergleichbar sind unabhängig vom hyperscaler&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-11" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Approved architeture : Fähigkeit Patterns für Foundations bereitzustellen welche konform mit der LZ sind bzw den gegebenheiten der LZ entsprechen&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="89" width="140" x="2900" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-12" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;ServiceCatalogGovernance: Fähigkeiten die Dienstleistungen welche bspw als Foundation in einer LZ genutzt werden können zu verbieten / erlauben&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="3091" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-13" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Third-party service approval:&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="140" x="3241.5" y="1760" as="geometry" />
+        </mxCell>
+        <mxCell id="VG0t3yS8pK_J1j8vOV7P-14" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;span style=&quot;font-size: 7px;&quot;&gt;Service Catalog Governance: definiert das Verbot&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Security Governance: begründet das Verbot&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;Policy Lifecycle Governance: definiert Policy für das Verbot&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="233" x="3150" y="1985" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

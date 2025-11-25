@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="435" dy="454" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3013" dy="1665" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1504,13 +1504,13 @@
           <mxGeometry height="65" width="160" x="2221" y="430" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-59" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tagging &amp;amp; naming governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2220" y="582" as="geometry" />
+          <mxGeometry height="65" width="160" x="2219" y="587.5" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-60" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Resource configiguration governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2220" y="662" as="geometry" />
+          <mxGeometry height="65" width="160" x="2219" y="667" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-61" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Drift detection governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2221" y="505" as="geometry" />
+          <mxGeometry height="65" width="160" x="2220" y="510" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-62" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=default;align=center;verticalAlign=middle;arcSize=10;absoluteArcSize=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Policy and Compliance Lifecycle Governance&lt;/span&gt;" vertex="1">
           <mxGeometry height="65" width="160" x="2220" y="320" as="geometry" />
@@ -1600,7 +1600,7 @@
           <mxGeometry height="79" width="140" x="1735" y="419.5" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-93" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit zu erkennen ob Veränderungen an der Foundation vom SOLL-Zustand entstanden sind&lt;/div&gt;" vertex="1">
-          <mxGeometry height="79" width="140" x="2391" y="500.5" as="geometry" />
+          <mxGeometry height="79" width="140" x="2391" y="505" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-94" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Regelwerke zu identifizieren welche Anforderungen beinhalten die potentiell für LZ oder Foundations relevant sind&amp;nbsp; (bspw SI001, ISO etc.)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1735" y="508.5" as="geometry" />
@@ -1614,8 +1614,11 @@
         <mxCell id="pxIF99jQIkRb-W20V7F3-1" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit den Lifecylce einer Policy zu definieren (prozesse für entstehung, reviewen, updates, entfernung etc. definien -&amp;gt; EA levlel. Policy Management ist operativl)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="2390.75" y="416" as="geometry" />
         </mxCell>
-        <mxCell id="pxIF99jQIkRb-W20V7F3-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit zu erkennen ob Veränderungen an der Foundation vom SOLL-Zustand entstanden sind&lt;/div&gt;" vertex="1">
+        <mxCell id="pxIF99jQIkRb-W20V7F3-2" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit konsistent und durchsetzbare Regeln für die Benennung und das Tagging von Ressourcen zu definieren&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="2391" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="pxIF99jQIkRb-W20V7F3-3" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit konsistent und durchsetzbare Regeln für die Benennung und das Tagging von Ressourcen zu definieren&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="2391" y="671" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

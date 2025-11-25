@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="429" dy="507" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="351" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1486,10 +1486,10 @@
           <mxGeometry height="65" width="160" x="880" y="320" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Baseline management" vertex="1">
-          <mxGeometry height="65" width="160" x="1564" y="592" as="geometry" />
+          <mxGeometry height="65" width="160" x="1564" y="599" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-54" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy management" vertex="1">
-          <mxGeometry height="65" width="160" x="1564" y="677" as="geometry" />
+          <mxGeometry height="65" width="160" x="1564" y="692" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-55" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance execution governance" vertex="1">
           <mxGeometry height="65" width="160" x="1564" y="430" as="geometry" />
@@ -1604,6 +1604,12 @@
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-94" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Policies zu defineren welche eingefhlaten werden müssen (bspw Übsertzung der Anforderungen welche aus Regurlatorien für den Bund hervorgehen)&lt;/div&gt;" vertex="1">
           <mxGeometry height="79" width="140" x="1735" y="508.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-95" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit MIndestetstandards für Foundations und Workloads auf dieser innerhalb einer LZ zu definiernen welche eingefhalten werden müssen&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1734.5" y="592" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-96" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Policies als Regelwerk zu defimieren und verwalten&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1735" y="685" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

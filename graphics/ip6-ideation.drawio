@@ -926,7 +926,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="4658" dy="2845" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="867" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1450,10 +1450,10 @@
           <mxGeometry height="65" width="160" x="3980" y="2335" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="User identity management" vertex="1">
-          <mxGeometry height="65" width="160" x="880" y="430" as="geometry" />
+          <mxGeometry height="65" width="160" x="880" y="420" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-40" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Service account management" vertex="1">
-          <mxGeometry height="65" width="160" x="880" y="507" as="geometry" />
+          <mxGeometry height="65" width="160" x="880" y="502" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-41" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Access management" vertex="1">
           <mxGeometry height="65" width="160" x="880" y="587" as="geometry" />
@@ -1462,10 +1462,10 @@
           <mxGeometry height="65" width="160" x="880" y="667" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-43" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Priviliged access governance" vertex="1">
-          <mxGeometry height="65" width="160" x="880" y="747" as="geometry" />
+          <mxGeometry height="65" width="160" x="880" y="756.5" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-44" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Federation &amp;amp; trust governance" vertex="1">
-          <mxGeometry height="65" width="160" x="880" y="822" as="geometry" />
+          <mxGeometry height="65" width="160" x="880" y="841" as="geometry" />
         </mxCell>
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-47" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=default;align=center;verticalAlign=middle;arcSize=10;absoluteArcSize=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" value="&lt;span style=&quot;font-size: 15px; text-align: left;&quot;&gt;Operation Readiness &amp;amp; Incident Governance&lt;/span&gt;" vertex="1">
           <mxGeometry height="65" width="160" x="1294" y="2008" as="geometry" />
@@ -1578,8 +1578,23 @@
         <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-85" parent="1" style="rounded=1;whiteSpace=wrap;html=1;dashed=1;strokeColor=default;align=center;verticalAlign=middle;arcSize=10;absoluteArcSize=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Observability and Opteraional Insight Governance&lt;/span&gt;" vertex="1">
           <mxGeometry height="65" width="160" x="4850" y="315.5" as="geometry" />
         </mxCell>
-        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-86" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;asd&lt;/div&gt;" vertex="1">
-          <mxGeometry height="79" width="140" x="1060.5" y="430" as="geometry" />
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-86" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit digitale Personenidentitäen über&amp;nbsp; ihren Lifecycle hinweg in allen Cloud-Umgebungen zu verwalten&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1060.5" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-87" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit digitale Anwendungsidentitäen über ihren Lifecycle hinweg in allen Cloud-Umgebungen zu verwalten (bspw Managed Identities, Service Accounts usw)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1060.5" y="498.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-88" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Zugriff von Identitäten, Rollen, Gruppen auf Ressourcen zu zu vergeben, entziehen. Rollen definieren etc. (-&amp;gt; operativ)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1060.5" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-89" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit Rechtevergabe zu prüfen und sicherstellen, dass Identitäten nur die nötigen Rechte für die jeweiligen Aufgaben haben&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1060" y="668.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-90" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit besondere / priviligierte Rechtevergabe zu definieren, kontrollieren und auditierbar zu machen (Bspw. definieren von Admin-Rollen, JIT Zugriff etc.)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1060" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="ExnGLDjjqaEZx0Gqr_KJ-91" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;strokeColor=#d6b656;fontFamily=Helvetica;fontSize=7;fontColor=default;fillColor=#FFFFFF;" value="&lt;div style=&quot;line-height: 100%;&quot;&gt;Fähigkeit besondere / priviligierte Rechtevergabe zu definieren, kontrollieren und auditierbar zu machen (Bspw. definieren von Admin-Rollen, JIT Zugriff etc.)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="79" width="140" x="1060" y="834" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

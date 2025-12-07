@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="2812" dy="2644" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3530" dy="3077" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -922,26 +922,44 @@
         <mxCell id="zxjNHwOvcoLCDG71xlWq-25" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Zeitplan&lt;/h1&gt;" vertex="1">
           <mxGeometry height="50" width="180" x="1430" y="-1180" as="geometry" />
         </mxCell>
-        <mxCell id="FToHH90Hd881fiy44MfF-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Abbilden der Vorgaben (bspw aus si001) zu den einzelnen Capabilities. Nachvollziehbarkeit wie man vom rechtlichen dokument zur control kommt" vertex="1">
-          <mxGeometry height="110" width="145" x="2050" y="345" as="geometry" />
+        <mxCell id="FToHH90Hd881fiy44MfF-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Abbilden der Vorgaben (bspw aus si001) zu den einzelnen technical governance Capabilities. Nachvollziehbarkeit wie man vom rechtlichen dokument zur control kommt" vertex="1">
+          <mxGeometry height="130" width="145" x="2280" y="-55" as="geometry" />
         </mxCell>
         <mxCell id="FToHH90Hd881fiy44MfF-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Bereitstellen der Connectivity gem dem Netzwerkzonen Concept (BundBasic, BundBasic+ -&amp;gt; erhöhter bedarf)" vertex="1">
-          <mxGeometry height="80" width="145" x="2270" y="360" as="geometry" />
+          <mxGeometry height="80" width="145" x="2270" y="241" as="geometry" />
         </mxCell>
-        <mxCell id="FToHH90Hd881fiy44MfF-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Selling point: kunde hat bereits anbindung out of the box" vertex="1">
-          <mxGeometry height="60" width="120" x="2282.5" y="470" as="geometry" />
+        <mxCell id="696EZM2kDOvMzFpwea1o-1" edge="1" parent="1" source="FToHH90Hd881fiy44MfF-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="FToHH90Hd881fiy44MfF-1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="FToHH90Hd881fiy44MfF-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Selling point:&amp;nbsp;" vertex="1">
-          <mxGeometry height="60" width="120" x="2062.5" y="470" as="geometry" />
+        <mxCell id="FToHH90Hd881fiy44MfF-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Problematik/Motivation:&lt;/b&gt;&lt;div&gt;Governance die vorgaben aus den Regulatorien auf die einzelnen Aspekte der Landing Zone zu mappen&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="2030" y="-110" as="geometry" />
         </mxCell>
         <mxCell id="KMDuPJAnvAtTsuf9FIJh-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="&lt;br&gt;&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;&lt;strong&gt;#&lt;/strong&gt;&lt;/th&gt;&lt;th&gt;&lt;strong&gt;Use Case&lt;/strong&gt;&lt;/th&gt;&lt;th&gt;&lt;strong&gt;Relevante Capabilities (aus deiner Map, reduziert!)&lt;/strong&gt;&lt;/th&gt;&lt;th&gt;&lt;strong&gt;Warum ist dieser Use Case für Unternehmen wichtig?&lt;/strong&gt;&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;1&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Provisionierung einer neuen Landing Zone (Standard/Secure/Regulated)&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;LZ Portfolio Mgmt, Provisioning Execution, Baseline Mgmt, Policy Mgmt, Compliance Execution, Network Architecture, IAM Governance&lt;/td&gt;&lt;td&gt;Hohe Priorität, da jede neue LZ eine &lt;em&gt;kritische Grundlage&lt;/em&gt; bildet. Fehler hier multiplizieren sich über Jahre und viele Workloads.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;2&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Onboarding einer neuen Applikation in eine bestehende LZ&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Operational Readiness, Tagging &amp;amp; Naming, Access Mgmt, Resource Config Governance, Connectivity Governance, Observability Governance&lt;/td&gt;&lt;td&gt;Unternehmen wollen neue Apps schnell &amp;amp; sicher bereitstellen. Ein klarer Onboarding-Prozess vermeidet Drift, Risiko &amp;amp; Verzögerung.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;3&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Durchsetzung von Security- &amp;amp; Compliance-Regeln über mehrere Clouds hinweg&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Policy Mgmt, Baseline Mgmt, Compliance Execution, Drift Detection, Evidence Governance&lt;/td&gt;&lt;td&gt;Kritisch für regulierte Branchen → FINMA, DORA, ISO. Ohne schnittstellenübergreifende Policies entsteht Chaos.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;4&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Sichere Verbindung zwischen Cloud &amp;amp; On-Prem&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Connectivity &amp;amp; Routing Governance, Network Security Governance, DNS &amp;amp; Naming Governance, Traffic Inspection&lt;/td&gt;&lt;td&gt;Multi-Cloud ist fast immer Hybrid. Falsche Connectivity ist &lt;em&gt;Risiko #1&lt;/em&gt; für Performance, Security &amp;amp; Kosten.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;5&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Zero-Trust-Absicherung von internem Ost/West-Traffic&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Network Security Governance, Traffic Inspection Governance, Resource Config Governance&lt;/td&gt;&lt;td&gt;Moderne Angriffe verlaufen &lt;strong&gt;lateral&lt;/strong&gt;. Zero-Trust intern ist essenziell, um Kompromittierung zu verhindern.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;6&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Identitätsföderation &amp;amp; kontrollierte Verwaltung privilegierter Zugänge&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Federation &amp;amp; Trust Governance, Privileged Access Governance, User Identity Mgmt, Access Review&lt;/td&gt;&lt;td&gt;Identität ist der neue Perimeter. Multi-Cloud verstärkt IAM-Komplexität erheblich. Ein kritischer Erfolgsfaktor.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;7&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Sicherstellung der Observability &amp;amp; Auditfähigkeit&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Observability Governance, Audit Trail Governance, Evidence Collection, Compliance Execution&lt;/td&gt;&lt;td&gt;Ohne Logs/Monitoring kannst du keine Incidents untersuchen, kein Audit bestehen, kein Operate betreiben.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;8&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Kostenkontrolle &amp;amp; Verantwortlichkeitsklarheit durch Tagging/FinOps&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Tagging &amp;amp; Naming Governance, Cost Governance, Policy Mgmt&lt;/td&gt;&lt;td&gt;Cloud-Kosten können &lt;em&gt;unkontrolliert explodieren&lt;/em&gt;. Tags sind das Fundament für Chargeback/Showback &amp;amp; Kostentransparenz.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;9&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Freigabe &amp;amp; Governance von SaaS-Integrationen &amp;amp; Drittanbieter-Services&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;SaaS Integration Governance, Third-Party Service Approval, Connectivity Governance, Security Governance&lt;/td&gt;&lt;td&gt;SaaS macht heute &amp;gt;50% der Cloud-Integration aus. Ohne Governance entstehen Data-Leaks, Shadow IT &amp;amp; Compliance-Probleme.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;strong&gt;10&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;&lt;strong&gt;Standards &amp;amp; Wiederholbarkeit in Multi-Cloud durch Baseline- und Blueprint-Management&lt;/strong&gt;&lt;/td&gt;&lt;td&gt;Baseline Mgmt, Configuration Governance, Version &amp;amp; Change Mgmt, Policy Mgmt&lt;/td&gt;&lt;td&gt;Ohne Wiederholbarkeit entsteht jede Cloud-Umgebung als „Snowflake“. Hoher Aufwand, hohe Kosten, hohe Security-Risiken.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;" vertex="1">
           <mxGeometry height="390" width="1380" x="2030" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="696EZM2kDOvMzFpwea1o-3" edge="1" parent="1" source="696EZM2kDOvMzFpwea1o-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" target="FToHH90Hd881fiy44MfF-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="696EZM2kDOvMzFpwea1o-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Nutzenhypothese&lt;/b&gt;:&lt;div&gt;Nachvollziehbarkeit ist vorhanden wie Policies auf die Landingzone Aspekte gemapped werden können&lt;br&gt;&lt;div&gt;(e2e traceability)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="2030" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="696EZM2kDOvMzFpwea1o-5" edge="1" parent="1" source="696EZM2kDOvMzFpwea1o-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="FToHH90Hd881fiy44MfF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="696EZM2kDOvMzFpwea1o-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Problematik/Motivation:&lt;/b&gt;&lt;div&gt;Anbindung an On-Prem Netzwerk erfordert Aufwand&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="2030" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="696EZM2kDOvMzFpwea1o-8" edge="1" parent="1" source="696EZM2kDOvMzFpwea1o-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=classic;endFill=1;" target="FToHH90Hd881fiy44MfF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="696EZM2kDOvMzFpwea1o-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;Nutzenhypothese&lt;/b&gt;:&lt;div&gt;&lt;div&gt;Kunden haben out-of-the-box Anbindung ohne eigenen Aufwand&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="160" x="2030" y="315" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="gw1Wv7gNTXEU15QnArau" name="CapabilityMap">
-    <mxGraphModel dx="1399" dy="843" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="7556" dy="4552" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

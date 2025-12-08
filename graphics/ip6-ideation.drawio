@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="3094" dy="4196" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2689" dy="4009" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1055,7 +1055,7 @@
           <mxGeometry height="30" width="550" x="4820" y="-1185" as="geometry" />
         </mxCell>
         <mxCell id="fvj628QYoJhe80g_t_8c-25" parent="1" style="text;whiteSpace=wrap;fontStyle=0" value="Regulatorische Vorgabe (SI001, DSG, FINMA usw.)&#xa; ↓&#xa;Compliance Requirement Governance&#xa;↓  interpretiert Anforderungen&#xa;Policy Management&#xa;↓  formt interne Policies und Regeln&#xa;Configuration &amp; Standards Governance (Standardisierung, Versionierung, Cross-Cloud)&#xa;↓  übersetzt Policies in technische Standards&#xa;Baseline Management&#xa;↓  definiert Mindeststandards pro LZ Kategorie&#xa;Resource Configuration Governance&#xa;↓  legt exakte Konfigurationsanforderungen pro Ressource fest&#xa;Compliance Execution Governance&#xa;↓  setzt es technisch durch (Policies, SCPs, Org Policies)&#xa;Landing Zone Constraints (automatisch enforced)&#xa;↓&#xa;Evidence Collection &amp; Audit Trail Governance&#xa;(nachweisbare Compliance für Audits)" vertex="1">
-          <mxGeometry height="280" width="500" x="3160" y="-1280" as="geometry" />
+          <mxGeometry height="280" width="500" x="3800" y="-1364" as="geometry" />
         </mxCell>
         <mxCell id="fvj628QYoJhe80g_t_8c-26" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;Wie sieht eine geeignete technische Architektur einer Landingzone für eine Hybrid-Multi-Cloud-&lt;/div&gt;&lt;div&gt;Umgebung aus und was muss sie erfüllen?&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="380" x="1850" y="-2764.75" as="geometry" />
@@ -1362,6 +1362,12 @@
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-180" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Architektur für&amp;nbsp;" vertex="1">
           <mxGeometry height="60" width="120" x="1330" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="KJJtCOKEdyaC4exPuvu8-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Achieve traceability from guardrails in the landing zone the the target subscriptions to the regulations theres based of" vertex="1">
+          <mxGeometry height="130" width="145" x="3146" y="-1155.75" as="geometry" />
+        </mxCell>
+        <mxCell id="KJJtCOKEdyaC4exPuvu8-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="einschränke auf eine bsiepilhafte workload application&amp;nbsp;" vertex="1">
+          <mxGeometry height="30" width="60" x="3344" y="-1150" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

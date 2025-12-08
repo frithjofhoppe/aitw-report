@@ -1,20 +1,32 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="4779" dy="4973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="5295" dy="5211" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="XOaByyi2WHC7JeqZsVpU-157" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
-          <mxGeometry height="1569.5" width="2940" x="2500" y="-3180" as="geometry" />
+          <mxGeometry height="1569.5" width="2940" x="2390" y="-3180" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-163" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="630" width="1298" x="2561" y="-2346" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-162" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="630" width="1298" x="3912" y="-2370" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-161" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="630" width="1096" x="3941" y="-3040" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-160" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=4;" value="" vertex="1">
+          <mxGeometry height="630" width="1136" x="2740" y="-3030" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-82" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Compliance requirement governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="209" width="350" x="3960" y="-2909" as="geometry" />
+          <mxGeometry height="209" width="350" x="3997" y="-2959" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-83" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Baseline management&lt;/div&gt;" vertex="1">
-          <mxGeometry height="209" width="350" x="4350" y="-2909" as="geometry" />
+          <mxGeometry height="209" width="350" x="4387" y="-2959" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-81" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Policy lifecycle management&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="209" width="350" x="4350" y="-2672.5" as="geometry" />
+          <mxGeometry height="209" width="350" x="4387" y="-2722.5" as="geometry" />
         </mxCell>
         <mxCell id="zxjNHwOvcoLCDG71xlWq-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="830" width="1380" x="280" y="-1230" as="geometry" />
@@ -1052,271 +1064,280 @@
           <mxGeometry height="30" width="370" x="1405" y="-2900" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-3" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Security Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="380" width="200" x="4760" y="-2891.25" as="geometry" />
+          <mxGeometry height="380" width="200" x="4797" y="-2941.25" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Baseline management" vertex="1">
-          <mxGeometry height="65" width="160" x="4780" y="-2679.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Baseline management" vertex="1">
+          <mxGeometry height="65" width="160" x="4817" y="-2729.75" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy management" vertex="1">
-          <mxGeometry height="65" width="160" x="4780" y="-2594.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Policy management" vertex="1">
+          <mxGeometry height="65" width="160" x="4817" y="-2644.75" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance execution governance" vertex="1">
-          <mxGeometry height="65" width="160" x="4780" y="-2841.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Compliance execution governance" vertex="1">
+          <mxGeometry height="65" width="160" x="4817" y="-2891.75" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance requirement governance" vertex="1">
-          <mxGeometry height="65" width="160" x="4780" y="-2759.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Compliance requirement governance" vertex="1">
+          <mxGeometry height="65" width="160" x="4817" y="-2809.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-22" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Policy and Compliance Lifecycle Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="370" width="200" x="2820" y="-2892.25" as="geometry" />
+          <mxGeometry height="370" width="200" x="2796" y="-2924" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Policy lifecycle management" vertex="1">
-          <mxGeometry height="65" width="160" x="2840" y="-2842.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Policy lifecycle management" vertex="1">
+          <mxGeometry height="65" width="160" x="2816" y="-2874.5" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Tagging &amp;amp; naming governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2839" y="-2690.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-24" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Tagging &amp;amp; naming governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2815" y="-2722.5" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Ressource configuration governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2839" y="-2610.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Ressource configuration governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2815" y="-2642.5" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Drift detection governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2840" y="-2767.75" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Drift detection governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2816" y="-2799.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-27" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Configuration &amp;amp; Standards Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="250" width="389" x="4940" y="-2245.25" as="geometry" />
+          <mxGeometry height="250" width="389" x="4790" y="-2205.25" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Standardization and Versioning of LZ components" vertex="1">
-          <mxGeometry height="65" width="160" x="4960" y="-2195.25" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Standardization and Versioning of LZ components" vertex="1">
+          <mxGeometry height="65" width="160" x="4810" y="-2155.25" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cross-Cloud configuration governance" vertex="1">
-          <mxGeometry height="65" width="160" x="4960" y="-2115.25" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Cross-Cloud configuration governance" vertex="1">
+          <mxGeometry height="65" width="160" x="4810" y="-2075.25" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Approved architecture patterns" vertex="1">
-          <mxGeometry height="65" width="160" x="5140" y="-2195.25" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Approved architecture patterns" vertex="1">
+          <mxGeometry height="65" width="160" x="4990" y="-2155.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-49" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Audit &amp;amp; Evidence Governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="240" width="374" x="2690" y="-2339" as="geometry" />
+          <mxGeometry height="240" width="374" x="2605" y="-2151" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Evidence collection governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2710" y="-2289" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-50" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Evidence collection governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2625" y="-2101" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Audit trail governance" vertex="1">
-          <mxGeometry height="65" width="160" x="2710" y="-2207" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Audit trail governance" vertex="1">
+          <mxGeometry height="65" width="160" x="2625" y="-2019" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compliance reporting" vertex="1">
-          <mxGeometry height="65" width="160" x="2884" y="-2289" as="geometry" />
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-52" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="Compliance reporting" vertex="1">
+          <mxGeometry height="65" width="160" x="2799" y="-2101" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-62" edge="1" parent="1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=7;startSize=8;endSize=8;">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2680" y="-2600.5" as="sourcePoint" />
-            <mxPoint x="2680" y="-2600.5" as="targetPoint" />
+            <mxPoint x="2640" y="-2602.25" as="sourcePoint" />
+            <mxPoint x="2640" y="-2602.25" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-69" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Control Execution Engine" vertex="1">
-          <mxGeometry height="60" width="120" x="4392" y="-2631" as="geometry" />
+          <mxGeometry height="60" width="120" x="4429" y="-2681" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Compliance Evaluation API" vertex="1">
-          <mxGeometry height="60" width="120" x="4522" y="-2631" as="geometry" />
+          <mxGeometry height="60" width="120" x="4559" y="-2681" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Control Enforcement Layer" vertex="1">
-          <mxGeometry height="60" width="120" x="4392" y="-2559.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4429" y="-2609.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Exception Handling Workflow" vertex="1">
-          <mxGeometry height="60" width="120" x="4522" y="-2559.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4559" y="-2609.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Requirements Repository" vertex="1">
-          <mxGeometry height="60" width="120" x="4012" y="-2865.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4049" y="-2915.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-74" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Requirements Mapping Engine" vertex="1">
-          <mxGeometry height="60" width="120" x="4143" y="-2865.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4180" y="-2915.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-75" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Requirements Change Worfklow" vertex="1">
-          <mxGeometry height="60" width="120" x="4012" y="-2797" as="geometry" />
+          <mxGeometry height="60" width="120" x="4049" y="-2847" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-76" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Requirements-to-policy Graph" vertex="1">
-          <mxGeometry height="60" width="120" x="4143" y="-2797" as="geometry" />
+          <mxGeometry height="60" width="120" x="4180" y="-2847" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-77" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Security Baseline Catalog" vertex="1">
-          <mxGeometry height="60" width="120" x="4405" y="-2870.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="4442" y="-2920.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-78" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Baseline Versioning Service" vertex="1">
-          <mxGeometry height="60" width="120" x="4535" y="-2870.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="4572" y="-2920.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-79" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Baseline Valdation Engine" vertex="1">
-          <mxGeometry height="60" width="120" x="4405" y="-2798.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="4442" y="-2848.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-80" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Deviation Approval Service" vertex="1">
-          <mxGeometry height="60" width="120" x="4535" y="-2798.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="4572" y="-2848.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-84" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Policy Management&lt;/div&gt;" vertex="1">
-          <mxGeometry height="209" width="350" x="3960" y="-2678.5" as="geometry" />
+          <mxGeometry height="209" width="350" x="3997" y="-2728.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-85" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Definition Service" vertex="1">
-          <mxGeometry height="60" width="120" x="4012" y="-2635" as="geometry" />
+          <mxGeometry height="60" width="120" x="4049" y="-2685" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-86" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Taxonomy" vertex="1">
-          <mxGeometry height="60" width="120" x="4143" y="-2635" as="geometry" />
+          <mxGeometry height="60" width="120" x="4180" y="-2685" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-87" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Dependency Manager" vertex="1">
-          <mxGeometry height="60" width="120" x="4012" y="-2566.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4049" y="-2616.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-88" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Bundles / Sets" vertex="1">
-          <mxGeometry height="60" width="120" x="4143" y="-2566.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4180" y="-2616.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-99" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=0;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Policy lifecycle management&lt;/div&gt;" vertex="1">
-          <mxGeometry height="271" width="350" x="3090" y="-2920" as="geometry" />
+          <mxGeometry height="271" width="350" x="3106" y="-2950" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy repository" vertex="1">
-          <mxGeometry height="60" width="120" x="3145" y="-2881.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3161" y="-2911.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-101" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Versioning service" vertex="1">
-          <mxGeometry height="60" width="120" x="3275" y="-2881.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3291" y="-2911.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-102" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Promotion pipeline" vertex="1">
-          <mxGeometry height="60" width="120" x="3145" y="-2809.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3161" y="-2839.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-103" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Testing Framework für Policies" vertex="1">
-          <mxGeometry height="60" width="120" x="3275" y="-2809.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3291" y="-2839.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-104" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy Metadata Catalog" vertex="1">
-          <mxGeometry height="60" width="120" x="3145" y="-2742.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="3161" y="-2772.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-105" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Drift detection governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="3090" y="-2621" as="geometry" />
+          <mxGeometry height="202" width="350" x="3106" y="-2651" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-106" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Drift detection engine" vertex="1">
-          <mxGeometry height="60" width="120" x="3145" y="-2582.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3161" y="-2612.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-107" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="State snapshot store" vertex="1">
-          <mxGeometry height="60" width="120" x="3275" y="-2582.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3291" y="-2612.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-108" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Remediation orchestrator" vertex="1">
-          <mxGeometry height="60" width="120" x="3145" y="-2510.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3161" y="-2540.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-109" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Drift Event Bus" vertex="1">
-          <mxGeometry height="60" width="120" x="3275" y="-2510.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3291" y="-2540.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-111" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Tagging &amp;amp; naming governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="3485" y="-2909" as="geometry" />
+          <mxGeometry height="202" width="350" x="3501" y="-2939" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-112" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tagging Standard Catalog" vertex="1">
-          <mxGeometry height="60" width="120" x="3540" y="-2870.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3556" y="-2900.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-113" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Naming Conventions Service" vertex="1">
-          <mxGeometry height="60" width="120" x="3670" y="-2870.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3686" y="-2900.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-114" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Policy as Code Temaplates" vertex="1">
-          <mxGeometry height="60" width="120" x="3540" y="-2798.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3556" y="-2828.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Tag Compliance Checker" vertex="1">
-          <mxGeometry height="60" width="120" x="3670" y="-2798.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3686" y="-2828.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-116" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Resource configuration governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="3485" y="-2679" as="geometry" />
+          <mxGeometry height="202" width="350" x="3501" y="-2709" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-117" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Configuration Baseline catalog" vertex="1">
-          <mxGeometry height="60" width="120" x="3540" y="-2640.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3556" y="-2670.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-118" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Configuraton Policy Library" vertex="1">
-          <mxGeometry height="60" width="120" x="3670" y="-2640.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3686" y="-2670.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-119" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Target Configuration Registry" vertex="1">
-          <mxGeometry height="60" width="120" x="3540" y="-2568.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3556" y="-2598.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Continuous Compliance Engine" vertex="1">
-          <mxGeometry height="60" width="120" x="3670" y="-2568.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3686" y="-2598.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-123" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Evidence collection governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="3220" y="-2239" as="geometry" />
+          <mxGeometry height="202" width="350" x="3039" y="-2208" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-124" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Collector Service" vertex="1">
-          <mxGeometry height="60" width="120" x="3275" y="-2200.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3094" y="-2169.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-125" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Secure Store" vertex="1">
-          <mxGeometry height="60" width="120" x="3405" y="-2200.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3224" y="-2169.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-126" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Metadata Modle" vertex="1">
-          <mxGeometry height="60" width="120" x="3275" y="-2128.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3094" y="-2097.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Ingestion Pipeline" vertex="1">
-          <mxGeometry height="60" width="120" x="3405" y="-2128.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3224" y="-2097.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-128" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Compliance reporting&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="3640" y="-2239" as="geometry" />
+          <mxGeometry height="202" width="350" x="3459" y="-2208" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-129" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Compliance Dashboard" vertex="1">
-          <mxGeometry height="60" width="120" x="3695" y="-2200.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3514" y="-2169.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-130" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Control Status Aggregator" vertex="1">
-          <mxGeometry height="60" width="120" x="3825" y="-2200.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3644" y="-2169.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-131" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Compliance Report Generator" vertex="1">
-          <mxGeometry height="60" width="120" x="3695" y="-2128.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3514" y="-2097.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-132" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Regulator Mapping View" vertex="1">
-          <mxGeometry height="60" width="120" x="3825" y="-2128.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3644" y="-2097.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-135" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Audit Trail Governace&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="3420" y="-1999" as="geometry" />
+          <mxGeometry height="202" width="350" x="3239" y="-1968" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-136" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Audit Trail Store" vertex="1">
-          <mxGeometry height="60" width="120" x="3475" y="-1960.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3294" y="-1929.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-137" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Audit Event Normalizer" vertex="1">
-          <mxGeometry height="60" width="120" x="3605" y="-1960.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="3424" y="-1929.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-138" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Access Monitoring Engine" vertex="1">
-          <mxGeometry height="60" width="120" x="3475" y="-1888.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3294" y="-1857.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-139" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Audit Query API" vertex="1">
-          <mxGeometry height="60" width="120" x="3605" y="-1888.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="3424" y="-1857.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-140" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Stanrdardization ad vesioning of LZ components&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="4520" y="-2210.25" as="geometry" />
+          <mxGeometry height="202" width="350" x="4370" y="-2280.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-141" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LZ Component registry" vertex="1">
-          <mxGeometry height="60" width="120" x="4575" y="-2171.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4425" y="-2241.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-142" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Versioning Engine für LZ Module" vertex="1">
-          <mxGeometry height="60" width="120" x="4705" y="-2171.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4555" y="-2241.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-143" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LZ Architecture PAttern Library" vertex="1">
-          <mxGeometry height="60" width="120" x="4575" y="-2100" as="geometry" />
+          <mxGeometry height="60" width="120" x="4425" y="-2170" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-144" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="LZ Drift Detection" vertex="1">
-          <mxGeometry height="60" width="120" x="4705" y="-2100" as="geometry" />
+          <mxGeometry height="60" width="120" x="4555" y="-2170" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-145" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Cross cloud config governance&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="4490" y="-1960.25" as="geometry" />
+          <mxGeometry height="202" width="350" x="4340" y="-2030.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-146" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cross cloud policy abstraction layer" vertex="1">
-          <mxGeometry height="60" width="120" x="4545" y="-1921.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4395" y="-1991.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-147" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Unified Control Cata log" vertex="1">
-          <mxGeometry height="60" width="120" x="4675" y="-1921.5" as="geometry" />
+          <mxGeometry height="60" width="120" x="4525" y="-1991.5" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-148" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cross Cloud compliance engine" vertex="1">
-          <mxGeometry height="60" width="120" x="4545" y="-1850" as="geometry" />
+          <mxGeometry height="60" width="120" x="4395" y="-1920" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-149" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Cloud provider capability normalizer" vertex="1">
-          <mxGeometry height="60" width="120" x="4675" y="-1850" as="geometry" />
+          <mxGeometry height="60" width="120" x="4525" y="-1920" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-150" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;fillColor=none;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Approved architecture patterns&lt;/div&gt;" vertex="1">
-          <mxGeometry height="202" width="350" x="4100" y="-2142" as="geometry" />
+          <mxGeometry height="202" width="350" x="3950" y="-2212" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-151" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pattern catalog" vertex="1">
-          <mxGeometry height="60" width="120" x="4155" y="-2103.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="4005" y="-2173.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-152" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Architecture Review Workflow" vertex="1">
-          <mxGeometry height="60" width="120" x="4285" y="-2103.25" as="geometry" />
+          <mxGeometry height="60" width="120" x="4135" y="-2173.25" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-153" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Reference Architecture Library" vertex="1">
-          <mxGeometry height="60" width="120" x="4155" y="-2031.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="4005" y="-2101.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-154" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Pattern compliance validator" vertex="1">
-          <mxGeometry height="60" width="120" x="4285" y="-2031.75" as="geometry" />
+          <mxGeometry height="60" width="120" x="4135" y="-2101.75" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-158" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Building block view for capabilitties&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="50" width="650" x="3475" y="-3090" as="geometry" />
+          <mxGeometry height="50" width="650" x="3741" y="-3120" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-168" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Building Block" vertex="1">
+          <mxGeometry height="60" width="120" x="2470" y="-2860.25" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-169" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;L1 Capability&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="62.5" width="120" x="2470" y="-2774.25" as="geometry" />
+        </mxCell>
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-172" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#49B9FF;" value="L2 Capability" vertex="1">
+          <mxGeometry height="50.5" width="120" x="2470" y="-2681.25" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

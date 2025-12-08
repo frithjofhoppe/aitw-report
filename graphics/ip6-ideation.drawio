@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="1983" dy="3967" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2649" dy="4506" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1079,16 +1079,16 @@
           <mxGeometry height="65" width="160" x="3220" y="-2497" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-27" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Configuration &amp;amp; Standards Governance&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="250" width="389" x="4161" y="-1840" as="geometry" />
+          <mxGeometry height="250" width="389" x="4470" y="-2030" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-28" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Standardization and Versioning of LZ components" vertex="1">
-          <mxGeometry height="65" width="160" x="4181" y="-1790" as="geometry" />
+          <mxGeometry height="65" width="160" x="4490" y="-1980" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cross-Cloud configuration governance" vertex="1">
-          <mxGeometry height="65" width="160" x="4181" y="-1710" as="geometry" />
+          <mxGeometry height="65" width="160" x="4490" y="-1900" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-30" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Approved architecture patterns" vertex="1">
-          <mxGeometry height="65" width="160" x="4361" y="-1790" as="geometry" />
+          <mxGeometry height="65" width="160" x="4670" y="-1980" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-49" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Audit &amp;amp; Evidence Governance&lt;/div&gt;" vertex="1">
           <mxGeometry height="240" width="374" x="2980" y="-1870" as="geometry" />
@@ -1222,19 +1222,19 @@
         <mxCell id="XOaByyi2WHC7JeqZsVpU-120" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Continuous Compliance Engine" vertex="1">
           <mxGeometry height="60" width="120" x="3675" y="-1999.75" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-123" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Evidence&amp;nbsp;&lt;/div&gt;" vertex="1">
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-123" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: center;&quot;&gt;Evidence collection governance&lt;/div&gt;" vertex="1">
           <mxGeometry height="202" width="350" x="3510" y="-1770" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-124" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Configuration Baseline catalog" vertex="1">
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-124" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Collector Service" vertex="1">
           <mxGeometry height="60" width="120" x="3565" y="-1731.25" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-125" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Configuraton Policy Library" vertex="1">
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-125" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Secure Store" vertex="1">
           <mxGeometry height="60" width="120" x="3695" y="-1731.25" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-126" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Target Configuration Registry" vertex="1">
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-126" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Metadata Modle" vertex="1">
           <mxGeometry height="60" width="120" x="3565" y="-1659.75" as="geometry" />
         </mxCell>
-        <mxCell id="XOaByyi2WHC7JeqZsVpU-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Continuous Compliance Engine" vertex="1">
+        <mxCell id="XOaByyi2WHC7JeqZsVpU-127" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Evidence Ingestion Pipeline" vertex="1">
           <mxGeometry height="60" width="120" x="3695" y="-1659.75" as="geometry" />
         </mxCell>
       </root>

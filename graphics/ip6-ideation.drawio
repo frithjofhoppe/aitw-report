@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.6" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="3417" dy="3907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="5071" dy="4825" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,7 +8,7 @@
           <mxGeometry height="810" width="1440" x="580" y="-2460" as="geometry" />
         </mxCell>
         <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-6" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Regulatorien&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="463.5" width="200" x="18.5" y="-2367.54" as="geometry" />
+          <mxGeometry height="463.5" width="200" x="30" y="-2305" as="geometry" />
         </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-157" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="1569.5" width="2940" x="2380" y="-3180" as="geometry" />
@@ -1361,19 +1361,19 @@
           <mxGeometry height="30" width="60" x="3344" y="-1150" as="geometry" />
         </mxCell>
         <mxCell id="HGjFFHv3U7NDRDUCHxSk-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Si001" vertex="1">
-          <mxGeometry height="80" width="120" x="59.5" y="-2319.29" as="geometry" />
+          <mxGeometry height="80" width="120" x="71" y="-2256.75" as="geometry" />
         </mxCell>
         <mxCell id="HGjFFHv3U7NDRDUCHxSk-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="{anderes nicht gemapptes regulatorisches Dokument}" vertex="1">
-          <mxGeometry height="80" width="120" x="59.5" y="-2218.0299999999997" as="geometry" />
+          <mxGeometry height="80" width="120" x="71" y="-2155.49" as="geometry" />
         </mxCell>
         <mxCell id="HGjFFHv3U7NDRDUCHxSk-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NIST 800 xx" vertex="1">
-          <mxGeometry height="80" width="120" x="59.5" y="-2119.4100000000003" as="geometry" />
+          <mxGeometry height="80" width="120" x="71" y="-2056.8700000000003" as="geometry" />
         </mxCell>
         <mxCell id="HGjFFHv3U7NDRDUCHxSk-16" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Policy e2e UC Problem Statement&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Wie kann im multi cloud Umfeld eine Traceability Architecture aussehen welche von der Regulation bis hin zur Control auf den Plattform Components reicht?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Annahmen:&lt;/p&gt;&lt;p&gt;- Das Metamodel mit unter Anderem LZ Blueprint, LZ Component, Shared Solution Component sowie Plattform Component ist gegeben&lt;/p&gt;&lt;p&gt;- Es ist klar welche LZ Componenten Teil von den Blueprint sind -&amp;gt; LZ Blueprint Architektur&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="293.5" width="268" x="640" y="-2410" as="geometry" />
         </mxCell>
         <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="ISO 27001" vertex="1">
-          <mxGeometry height="80" width="120" x="59.5" y="-2022.66" as="geometry" />
+          <mxGeometry height="80" width="120" x="71" y="-1960.12" as="geometry" />
         </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Cloud compartement&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;(aws account, az subscription etc.)&lt;/font&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="-609" y="-391" as="geometry" />
@@ -1510,13 +1510,13 @@
           <mxGeometry height="73" width="120" x="1049" y="-2255.02" as="geometry" />
         </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-113" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="Which controls are relevant for which LZ Blueprint category?" vertex="1">
-          <mxGeometry height="113.5" width="231" x="269" y="-2395" as="geometry" />
+          <mxGeometry height="113.5" width="231" x="280.5" y="-2256.98" as="geometry" />
         </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-116" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="Which components do need to be contained in the blueprint?" vertex="1">
-          <mxGeometry height="109" width="229.5" x="269" y="-2108.04" as="geometry" />
+          <mxGeometry height="109" width="229.5" x="280.5" y="-1970.02" as="geometry" />
         </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-117" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="How do we determine which control are relevant for the shared solution components?" vertex="1">
-          <mxGeometry height="113.5" width="231" x="269" y="-2251.25" as="geometry" />
+          <mxGeometry height="113.5" width="231" x="280.5" y="-2113.23" as="geometry" />
         </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-130" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;" value="Evaluation Criteria" vertex="1">
           <mxGeometry height="431.75" width="440" x="640" y="-2120" as="geometry" />

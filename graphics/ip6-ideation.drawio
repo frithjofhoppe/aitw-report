@@ -1,9 +1,15 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.4" pages="2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.6" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="2345" dy="4121" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2305" dy="4093" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-6" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Regulations&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="509.25" width="200" x="1199" y="-1889.51" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-1" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;dashed=1;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;LZ Components&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="386.73" width="200" x="2000" y="-1833.25" as="geometry" />
+        </mxCell>
         <mxCell id="XOaByyi2WHC7JeqZsVpU-157" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="1569.5" width="2940" x="2390" y="-3180" as="geometry" />
         </mxCell>
@@ -1368,6 +1374,60 @@
         </mxCell>
         <mxCell id="KJJtCOKEdyaC4exPuvu8-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="einschränke auf eine bsiepilhafte workload application&amp;nbsp;" vertex="1">
           <mxGeometry height="30" width="60" x="3344" y="-1150" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-6" edge="1" parent="1" source="HGjFFHv3U7NDRDUCHxSk-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="HGjFFHv3U7NDRDUCHxSk-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-1" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Si001" vertex="1">
+          <mxGeometry height="80" width="120" x="1240" y="-1846" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-2" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IAM" vertex="1">
+          <mxGeometry height="80" width="120" x="2040" y="-1777.52" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Connecivity" vertex="1">
+          <mxGeometry height="80" width="120" x="2040" y="-1668.27" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="..." vertex="1">
+          <mxGeometry height="80" width="120" x="2040" y="-1564.27" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="mapping zu bestimmen durch ip6" vertex="1">
+          <mxGeometry height="60" width="120" x="1520" y="-1777.52" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-11" edge="1" parent="1" source="HGjFFHv3U7NDRDUCHxSk-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="HGjFFHv3U7NDRDUCHxSk-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="{anderes nicht gemapptes regulatorisches Dokument}" vertex="1">
+          <mxGeometry height="80" width="120" x="1240" y="-1740" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-3" edge="1" parent="1" source="HGjFFHv3U7NDRDUCHxSk-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="HGjFFHv3U7NDRDUCHxSk-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NIST" vertex="1">
+          <mxGeometry height="80" width="120" x="1240" y="-1596.75" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-16" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Was will BIT&lt;/h1&gt;&lt;p&gt;Wie können wir aus dem Si001 identifizieren welche Aspekte der Landing Zone / Workload es betrifft. Wie lassen sich daraus Policies ableiten&lt;/p&gt;" vertex="1">
+          <mxGeometry height="121.5" width="260" x="1500" y="-1990" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-9" edge="1" parent="1" source="HGjFFHv3U7NDRDUCHxSk-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="X2gyQ_SBUf2k1AJ_UF5P-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="HGjFFHv3U7NDRDUCHxSk-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Mapping defined by AWS, Azure" vertex="1">
+          <mxGeometry height="60" width="120" x="1520" y="-1539.27" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-5" edge="1" parent="1" source="X2gyQ_SBUf2k1AJ_UF5P-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="HGjFFHv3U7NDRDUCHxSk-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="ISO 27001" vertex="1">
+          <mxGeometry height="80" width="120" x="1240" y="-1500" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-8" edge="1" parent="1" source="X2gyQ_SBUf2k1AJ_UF5P-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="X2gyQ_SBUf2k1AJ_UF5P-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-7" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="Mapping of controls" vertex="1">
+          <mxGeometry height="140" width="230" x="1660" y="-1710" as="geometry" />
+        </mxCell>
+        <mxCell id="X2gyQ_SBUf2k1AJ_UF5P-10" edge="1" parent="1" source="HGjFFHv3U7NDRDUCHxSk-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.422;entryY=0.087;entryDx=0;entryDy=0;entryPerimeter=0;" target="X2gyQ_SBUf2k1AJ_UF5P-7">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

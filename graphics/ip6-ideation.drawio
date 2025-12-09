@@ -1532,8 +1532,8 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-116" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="Which components do need to be contained in the blueprint?" vertex="1">
           <mxGeometry height="113.5" width="191" x="1320" y="-2392" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-117" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="How do we determine which control are relevant among?" vertex="1">
-          <mxGeometry height="113.5" width="231" x="1048" y="-1759.02" as="geometry" />
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-117" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="How do we determine which control are relevant for the shared solution components?" vertex="1">
+          <mxGeometry height="113.5" width="231" x="1060" y="-1778.62" as="geometry" />
         </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-122" edge="1" parent="1" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="dWIQs9_eG_ivaGpYUmBC-113" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">

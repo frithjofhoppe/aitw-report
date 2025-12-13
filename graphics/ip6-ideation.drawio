@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.7" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="4116" dy="4772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3065" dy="3907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1537,12 +1537,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-134" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="61" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-135" parent="dWIQs9_eG_ivaGpYUmBC-134" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Ownership clarity" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-135" parent="dWIQs9_eG_ivaGpYUmBC-134" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Granularity of Traceability" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-136" parent="dWIQs9_eG_ivaGpYUmBC-134" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Sichtbarkeit der Verantwortung von Control Zuweisungen (Governance)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-136" parent="dWIQs9_eG_ivaGpYUmBC-134" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Degree to how granular the mapping between the control to policy is (like direct or indirect mapping)" vertex="1">
           <mxGeometry height="31" width="290" x="150" as="geometry">
             <mxRectangle height="31" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1550,12 +1550,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-167" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
           <mxGeometry height="31" width="440" y="92" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-168" parent="dWIQs9_eG_ivaGpYUmBC-167" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Auditablity" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-168" parent="dWIQs9_eG_ivaGpYUmBC-167" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Reversability" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-169" parent="dWIQs9_eG_ivaGpYUmBC-167" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Rückschliessen einer Control Zuweisung auf einen Aktor (Governance)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-169" parent="dWIQs9_eG_ivaGpYUmBC-167" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Degree to which the effect on the ressource can be traced back to regulation it originated from" vertex="1">
           <mxGeometry height="31" width="290" x="150" as="geometry">
             <mxRectangle height="31" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1563,12 +1563,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-137" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="29" width="440" y="123" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-138" parent="dWIQs9_eG_ivaGpYUmBC-137" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Automateability" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-138" parent="dWIQs9_eG_ivaGpYUmBC-137" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Composability" vertex="1">
           <mxGeometry height="29" width="150" as="geometry">
             <mxRectangle height="29" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-139" parent="dWIQs9_eG_ivaGpYUmBC-137" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Automatisierbarkeit des Tracings (Operational)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-139" parent="dWIQs9_eG_ivaGpYUmBC-137" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Degree to which artifacts / bundles can be resued across LZ" vertex="1">
           <mxGeometry height="29" width="290" x="150" as="geometry">
             <mxRectangle height="29" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1576,12 +1576,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-140" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="152" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-141" parent="dWIQs9_eG_ivaGpYUmBC-140" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Maintainablity" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-141" parent="dWIQs9_eG_ivaGpYUmBC-140" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Cross-cloud consistency" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-142" parent="dWIQs9_eG_ivaGpYUmBC-140" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Aufwand der zum Nutzen /Betreiben für die Organisation entsteht (Operational)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-142" parent="dWIQs9_eG_ivaGpYUmBC-140" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Degree to which the control causes the same effect on different cloud plattforms" vertex="1">
           <mxGeometry height="31" width="290" x="150" as="geometry">
             <mxRectangle height="31" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1589,12 +1589,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-143" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="183" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-144" parent="dWIQs9_eG_ivaGpYUmBC-143" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Extensibility" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-144" parent="dWIQs9_eG_ivaGpYUmBC-143" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Change propagation" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-145" parent="dWIQs9_eG_ivaGpYUmBC-143" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Erweiterbarkeit der Architektur auf neue Umstände (Architecture)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-145" parent="dWIQs9_eG_ivaGpYUmBC-143" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Ability to promote changes in a regulation down the chain to the application of policies -&amp;gt; no outdated stuff" vertex="1">
           <mxGeometry height="31" width="290" x="150" as="geometry">
             <mxRectangle height="31" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1602,12 +1602,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-146" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="214" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-147" parent="dWIQs9_eG_ivaGpYUmBC-146" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Multi-Cloud Applicability" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-147" parent="dWIQs9_eG_ivaGpYUmBC-146" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Automation readiness" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-148" parent="dWIQs9_eG_ivaGpYUmBC-146" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Architektur kann auf die Strukturen von mehreren Cloud Plattformen angewendet werden (Architecture)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-148" parent="dWIQs9_eG_ivaGpYUmBC-146" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Ability if the control artifcats can be generated in an automated fashion" vertex="1">
           <mxGeometry height="31" width="290" x="150" as="geometry">
             <mxRectangle height="31" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1615,12 +1615,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-149" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="245" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-150" parent="dWIQs9_eG_ivaGpYUmBC-149" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Evidence avilability" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-150" parent="dWIQs9_eG_ivaGpYUmBC-149" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Evidence quality" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-151" parent="dWIQs9_eG_ivaGpYUmBC-149" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Erzeugen von Nachweisen mit den eine Reports etc für Compliance erstellt werden können (Regulatory)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-151" parent="dWIQs9_eG_ivaGpYUmBC-149" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Ability if technical evidence for audit and creation of compliance reports can be gathered" vertex="1">
           <mxGeometry height="31" width="290" x="150" as="geometry">
             <mxRectangle height="31" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1628,12 +1628,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-152" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="34" width="440" y="276" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-153" parent="dWIQs9_eG_ivaGpYUmBC-152" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Complexity" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-153" parent="dWIQs9_eG_ivaGpYUmBC-152" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Provider fit" vertex="1">
           <mxGeometry height="34" width="150" as="geometry">
             <mxRectangle height="34" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-154" parent="dWIQs9_eG_ivaGpYUmBC-152" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vielschichtigkeit der Architektur (Architecture)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-154" parent="dWIQs9_eG_ivaGpYUmBC-152" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Degree to which the structure is fitting the one of the different cloud plattforms" vertex="1">
           <mxGeometry height="34" width="290" x="150" as="geometry">
             <mxRectangle height="34" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1641,12 +1641,12 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-155" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="30" width="440" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-156" parent="dWIQs9_eG_ivaGpYUmBC-155" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Traceability strenght" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-156" parent="dWIQs9_eG_ivaGpYUmBC-155" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
           <mxGeometry height="30" width="150" as="geometry">
             <mxRectangle height="30" width="150" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-157" parent="dWIQs9_eG_ivaGpYUmBC-155" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vollständigkeit in der ein Policy Trace erbracht werden kann (Regulatory)" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-157" parent="dWIQs9_eG_ivaGpYUmBC-155" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
           <mxGeometry height="30" width="290" x="150" as="geometry">
             <mxRectangle height="30" width="290" as="alternateBounds" />
           </mxGeometry>
@@ -1654,7 +1654,7 @@
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-158" parent="dWIQs9_eG_ivaGpYUmBC-130" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="dWIQs9_eG_ivaGpYUmBC-159" parent="dWIQs9_eG_ivaGpYUmBC-158" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Operational costs" vertex="1">
+        <mxCell id="dWIQs9_eG_ivaGpYUmBC-159" parent="dWIQs9_eG_ivaGpYUmBC-158" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
           <mxGeometry height="31" width="150" as="geometry">
             <mxRectangle height="31" width="150" as="alternateBounds" />
           </mxGeometry>
@@ -1779,6 +1779,181 @@
         </mxCell>
         <mxCell id="TjFQpRyWeT9rnatXDKqP-25" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="LZ Blueprint" vertex="1">
           <mxGeometry height="73" width="120" x="1009" y="-3114.4700000000003" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-26" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;" value="Evaluation Criteria" vertex="1">
+          <mxGeometry height="432.75" width="440" x="-550" y="-2255.02" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-27" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-28" parent="TjFQpRyWeT9rnatXDKqP-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Criteria" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-29" parent="TjFQpRyWeT9rnatXDKqP-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Description" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-30" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="61" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-31" parent="TjFQpRyWeT9rnatXDKqP-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Ownership clarity" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-32" parent="TjFQpRyWeT9rnatXDKqP-30" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Sichtbarkeit der Verantwortung von Control Zuweisungen (Governance)" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-33" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1">
+          <mxGeometry height="31" width="440" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-34" parent="TjFQpRyWeT9rnatXDKqP-33" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Auditablity" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-35" parent="TjFQpRyWeT9rnatXDKqP-33" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Rückschliessen einer Control Zuweisung auf einen Aktor (Governance)" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-36" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="29" width="440" y="123" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-37" parent="TjFQpRyWeT9rnatXDKqP-36" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Automateability" vertex="1">
+          <mxGeometry height="29" width="150" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-38" parent="TjFQpRyWeT9rnatXDKqP-36" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Automatisierbarkeit des Tracings (Operational)" vertex="1">
+          <mxGeometry height="29" width="290" x="150" as="geometry">
+            <mxRectangle height="29" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-39" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="152" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-40" parent="TjFQpRyWeT9rnatXDKqP-39" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Maintainablity" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-41" parent="TjFQpRyWeT9rnatXDKqP-39" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Aufwand der zum Nutzen /Betreiben für die Organisation entsteht (Operational)" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-42" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="183" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-43" parent="TjFQpRyWeT9rnatXDKqP-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Extensibility" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-44" parent="TjFQpRyWeT9rnatXDKqP-42" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Erweiterbarkeit der Architektur auf neue Umstände (Architecture)" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-45" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-46" parent="TjFQpRyWeT9rnatXDKqP-45" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Multi-Cloud Applicability" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-47" parent="TjFQpRyWeT9rnatXDKqP-45" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Architektur kann auf die Strukturen von mehreren Cloud Plattformen angewendet werden (Architecture)" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-48" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-49" parent="TjFQpRyWeT9rnatXDKqP-48" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Evidence avilability" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-50" parent="TjFQpRyWeT9rnatXDKqP-48" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Erzeugen von Nachweisen mit den eine Reports etc für Compliance erstellt werden können (Regulatory)" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-51" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="34" width="440" y="276" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-52" parent="TjFQpRyWeT9rnatXDKqP-51" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Complexity" vertex="1">
+          <mxGeometry height="34" width="150" as="geometry">
+            <mxRectangle height="34" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-53" parent="TjFQpRyWeT9rnatXDKqP-51" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vielschichtigkeit der Architektur (Architecture)" vertex="1">
+          <mxGeometry height="34" width="290" x="150" as="geometry">
+            <mxRectangle height="34" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-54" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="30" width="440" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-55" parent="TjFQpRyWeT9rnatXDKqP-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Traceability strenght" vertex="1">
+          <mxGeometry height="30" width="150" as="geometry">
+            <mxRectangle height="30" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-56" parent="TjFQpRyWeT9rnatXDKqP-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Vollständigkeit in der ein Policy Trace erbracht werden kann (Regulatory)" vertex="1">
+          <mxGeometry height="30" width="290" x="150" as="geometry">
+            <mxRectangle height="30" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-57" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-58" parent="TjFQpRyWeT9rnatXDKqP-57" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="Operational costs" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-59" parent="TjFQpRyWeT9rnatXDKqP-57" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-60" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="371" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-61" parent="TjFQpRyWeT9rnatXDKqP-60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-62" parent="TjFQpRyWeT9rnatXDKqP-60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-63" parent="TjFQpRyWeT9rnatXDKqP-26" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
+          <mxGeometry height="31" width="440" y="402" as="geometry" />
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-64" parent="TjFQpRyWeT9rnatXDKqP-63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="31" width="150" as="geometry">
+            <mxRectangle height="31" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-65" parent="TjFQpRyWeT9rnatXDKqP-63" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="" vertex="1">
+          <mxGeometry height="31" width="290" x="150" as="geometry">
+            <mxRectangle height="31" width="290" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="TjFQpRyWeT9rnatXDKqP-66" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="First iteration of evaluation criteria on organizational level&amp;nbsp;" vertex="1">
+          <mxGeometry height="90" width="140" x="-430" y="-2370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

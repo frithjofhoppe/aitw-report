@@ -2115,10 +2115,16 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="4143" dy="2923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2762" dy="1949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
+          <mxGeometry height="1290" width="1250" x="2976" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-217" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
+          <mxGeometry height="810" width="1440" x="67" y="40" as="geometry" />
+        </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-149" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="1290" width="1500" x="4310" y="1080" as="geometry" />
         </mxCell>
@@ -2158,22 +2164,22 @@
           <mxGeometry height="810" width="1440" x="1900" y="110" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-3" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Regulatorien&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="463.5" width="200" x="725.5" y="124.97" as="geometry" />
+          <mxGeometry height="463.5" width="200" x="790" y="306.14" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Si001" vertex="1">
-          <mxGeometry height="80" width="120" x="766.5" y="173.22" as="geometry" />
+          <mxGeometry height="80" width="120" x="831" y="354.39" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="{anderes nicht gemapptes regulatorisches Dokument}" vertex="1">
-          <mxGeometry height="80" width="120" x="766.5" y="274.48000000000025" as="geometry" />
+          <mxGeometry height="80" width="120" x="831" y="455.6500000000002" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="NIST 800 xx" vertex="1">
-          <mxGeometry height="80" width="120" x="766.5" y="373.0999999999997" as="geometry" />
+          <mxGeometry height="80" width="120" x="831" y="554.2699999999996" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-7" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Policy e2e UC Problem Statement&lt;/h1&gt;&lt;p&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Wie kann im multi cloud Umfeld eine Traceability Architecture aussehen welche von der Regulation bis hin zur Control auf den Plattform Components reicht?&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Annahmen:&lt;/p&gt;&lt;p&gt;- Das Metamodel mit unter Anderem LZ Blueprint, LZ Component, Shared Solution Component sowie Plattform Component ist gegeben&lt;/p&gt;&lt;p&gt;- Es ist klar welche LZ Componenten Teil von den Blueprint sind -&amp;gt; LZ Blueprint Architektur&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
           <mxGeometry height="293.5" width="268" x="1960" y="160" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="ISO 27001" vertex="1">
-          <mxGeometry height="80" width="120" x="766.5" y="469.85000000000014" as="geometry" />
+          <mxGeometry height="80" width="120" x="831" y="651.0200000000001" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-9" edge="1" parent="1" source="XkSTqM7eg7opSIsjtuqv-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.991;exitY=0.464;exitDx=0;exitDy=0;exitPerimeter=0;" target="XkSTqM7eg7opSIsjtuqv-25">
           <mxGeometry relative="1" as="geometry">
@@ -2266,13 +2272,13 @@
           <mxGeometry height="73" width="120" x="2369" y="314.98" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-34" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="Which controls are relevant for which LZ Blueprint category?" vertex="1">
-          <mxGeometry height="113.5" width="231" x="976" y="172.98999999999998" as="geometry" />
+          <mxGeometry height="113.5" width="231" x="1040.5" y="354.15999999999997" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-35" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="Which components do need to be contained in the blueprint?" vertex="1">
-          <mxGeometry height="109" width="229.5" x="976" y="459.95000000000005" as="geometry" />
+          <mxGeometry height="109" width="229.5" x="1040.5" y="641.12" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-36" parent="1" style="html=1;align=center;verticalAlign=center;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;dashed=1;strokeColor=#3399FF;fillColor=#3399FF80;" value="How do we determine which control are relevant for the shared solution components?" vertex="1">
-          <mxGeometry height="113.5" width="231" x="976" y="316.74" as="geometry" />
+          <mxGeometry height="113.5" width="231" x="1040.5" y="497.90999999999997" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-37" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;" value="Evaluation Criteria" vertex="1">
           <mxGeometry height="432.75" width="440" x="1960" y="450" as="geometry" />
@@ -2550,7 +2556,7 @@
           <mxGeometry height="73" width="120" x="366" y="1794.2799999999997" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-102" parent="1" style="shape=table;startSize=30;container=1;collapsible=0;childLayout=tableLayout;" value="Evaluation Criteria" vertex="1">
-          <mxGeometry height="432.75" width="440" x="145.5" y="174.95000000000002" as="geometry" />
+          <mxGeometry height="432.75" width="440" x="210" y="356.12" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-103" parent="XkSTqM7eg7opSIsjtuqv-102" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" value="" vertex="1">
           <mxGeometry height="31" width="440" y="30" as="geometry" />
@@ -2722,7 +2728,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-142" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="First iteration of evaluation criteria on organizational level&amp;nbsp;" vertex="1">
-          <mxGeometry height="90" width="140" x="265.5" y="59.97" as="geometry" />
+          <mxGeometry height="90" width="140" x="330" y="241.14" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-143" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Si001 (other regulation)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="163.75" width="200" x="517" y="1370" as="geometry" />
@@ -2969,9 +2975,6 @@
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=none;dashed=1;textAlign=top;verticalAlign=top;" value="Base Model" vertex="1">
           <mxGeometry height="700" width="1020" x="3060" y="1630" as="geometry" />
-        </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-68" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
-          <mxGeometry height="1290" width="1250" x="2976" y="1080" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-69" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-74" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.991;exitY=0.464;exitDx=0;exitDy=0;exitPerimeter=0;" target="wG__MCC0dGyOnwEGjAIM-85">
           <mxGeometry relative="1" as="geometry">
@@ -3396,6 +3399,9 @@
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-216" parent="1" style="text;whiteSpace=wrap;fontStyle=0;html=1;" value="&lt;div&gt;&lt;b&gt;Pros&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Operationally clean&lt;/div&gt;&lt;div&gt;- Best performance and provider alignment&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Cons&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Cross-cloud comparability becomes harder&lt;/div&gt;&lt;div&gt;- Traceability must be normalized across different provider evidence formats&lt;/div&gt;" vertex="1">
           <mxGeometry height="150" width="340" x="4770" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-218" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;For Later&lt;/h1&gt;" vertex="1">
+          <mxGeometry height="120" width="180" x="130" y="121.13999999999999" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

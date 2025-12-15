@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.7" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="4355" dy="5333" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="3707" dy="4948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1955,11 +1955,8 @@
         <mxCell id="TjFQpRyWeT9rnatXDKqP-66" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="First iteration of evaluation criteria on organizational level&amp;nbsp;" vertex="1">
           <mxGeometry height="90" width="140" x="-430" y="-2370" as="geometry" />
         </mxCell>
-        <mxCell id="hv_rUXgAOYW8t0CtbiYH-1" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Variant 1 control-centric bundling&lt;/h1&gt;&lt;p&gt;Approach: For each control in the regulation in question an mapping is made to a plattform bundle. Like one policy definition / set whith everything that is related to a specific control&lt;/p&gt;" vertex="1">
-          <mxGeometry height="160" width="268" x="585" y="-3508.72" as="geometry" />
-        </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-2" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Si001 (other regulation)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="163.75" width="200" x="950" y="-3890" as="geometry" />
+          <mxGeometry height="163.75" width="200" x="950" y="-3810" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-23" edge="1" parent="1" source="hv_rUXgAOYW8t0CtbiYH-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="hv_rUXgAOYW8t0CtbiYH-12">
           <mxGeometry relative="1" as="geometry" />
@@ -1968,16 +1965,16 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Control A" vertex="1">
-          <mxGeometry height="27.22" width="120" x="990" y="-3855.3099999999995" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="990" y="-3775.3099999999995" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Control B" vertex="1">
-          <mxGeometry height="27.22" width="120" x="990" y="-3817.0299999999997" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="990" y="-3737.0299999999997" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Control C" vertex="1">
-          <mxGeometry height="27.22" width="120" x="990" y="-3777.92" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="990" y="-3697.92" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Bundle Azure&lt;div&gt;Control A&lt;/div&gt;" vertex="1">
-          <mxGeometry height="27.22" width="120" x="1242" y="-3885.1399999999994" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="1242" y="-3805.1399999999994" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-13" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;AWS Policies&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="182.22" width="200" x="1480" y="-3750" as="geometry" />
@@ -2016,21 +2013,16 @@
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Azure3" vertex="1">
           <mxGeometry height="27.22" width="120" x="1520" y="-3825.51" as="geometry" />
         </mxCell>
-        <mxCell id="hv_rUXgAOYW8t0CtbiYH-28" edge="1" parent="1" source="hv_rUXgAOYW8t0CtbiYH-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="hv_rUXgAOYW8t0CtbiYH-15">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1380" y="-3806" />
-              <mxPoint x="1380" y="-3651" />
-            </Array>
-          </mxGeometry>
+        <mxCell id="hv_rUXgAOYW8t0CtbiYH-40" edge="1" parent="1" source="hv_rUXgAOYW8t0CtbiYH-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="hv_rUXgAOYW8t0CtbiYH-15">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="hv_rUXgAOYW8t0CtbiYH-33" connectable="0" parent="hv_rUXgAOYW8t0CtbiYH-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;contains&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.1887" as="geometry">
-            <mxPoint as="offset" />
+        <mxCell id="hv_rUXgAOYW8t0CtbiYH-41" connectable="0" parent="hv_rUXgAOYW8t0CtbiYH-40" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;contains&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0245" as="geometry">
+            <mxPoint x="-11" y="-6" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Bundle AWS&lt;div&gt;Control A&lt;/div&gt;" vertex="1">
-          <mxGeometry height="27.22" width="120" x="1242" y="-3820" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="1242" y="-3740" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-25" edge="1" parent="1" source="hv_rUXgAOYW8t0CtbiYH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="hv_rUXgAOYW8t0CtbiYH-19">
           <mxGeometry relative="1" as="geometry" />
@@ -2042,6 +2034,9 @@
           <mxGeometry relative="1" x="-0.5752" as="geometry">
             <mxPoint x="12" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="hv_rUXgAOYW8t0CtbiYH-38" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px; color: rgb(51, 153, 255);&quot;&gt;Control-Centric Bundling (variant 1)&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Approach: For each control in the regulation in question an mapping is made to a plattform bundle. Like one policy definition / set whith everything that is related to a specific control&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="349" x="950" y="-4080" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

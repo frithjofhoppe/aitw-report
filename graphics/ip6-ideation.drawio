@@ -2115,10 +2115,16 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="1647" dy="974" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1482" dy="877" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
+          <mxGeometry height="1290" width="1250" x="1652" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-123" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Baseline&lt;/div&gt;" vertex="1">
+          <mxGeometry height="182.22" width="200" x="2280" y="839.86" as="geometry" />
+        </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=none;dashed=1;textAlign=top;verticalAlign=top;" value="Base Model" vertex="1">
           <mxGeometry height="700" width="1020" x="1736" y="1170" as="geometry" />
         </mxCell>
@@ -2765,9 +2771,6 @@
         <mxCell id="XkSTqM7eg7opSIsjtuqv-166" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px; color: rgb(51, 153, 255);&quot;&gt;Control-Centric Bundling (variant 1)&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Approach: For each control in the regulation in question an mapping is made to a plattform bundle. Like one policy definition / set whith everything that is related to a specific control&lt;/div&gt;" vertex="1">
           <mxGeometry height="140" width="349" x="336" y="660.0000000000001" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
-          <mxGeometry height="1290" width="1250" x="1652" y="620" as="geometry" />
-        </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-2" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.991;exitY=0.464;exitDx=0;exitDy=0;exitPerimeter=0;" target="wG__MCC0dGyOnwEGjAIM-18">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2076" y="1286.7699999999995" as="sourcePoint" />
@@ -2884,10 +2887,10 @@
           <mxGeometry height="27.22" width="120" x="1836" y="1022.0799999999999" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-34" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;AWS Policies&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="182.22" width="200" x="2457" y="970" as="geometry" />
+          <mxGeometry height="182.22" width="200" x="2627" y="970" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-35" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="AWS1" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2497" y="1017.1000000000004" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2667" y="1017.1000000000004" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-36" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-19">
           <mxGeometry relative="1" as="geometry">
@@ -2903,41 +2906,31 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-38" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="AWS2" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2497" y="1055.38" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2667" y="1055.38" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-39" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="AWS3" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2497" y="1094.4899999999998" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2667" y="1094.4899999999998" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-40" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Azure Policies&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="182.22" width="200" x="2457" y="770" as="geometry" />
+          <mxGeometry height="182.22" width="200" x="2627" y="770" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-41" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Azure1" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2497" y="817.1000000000004" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2667" y="817.1000000000004" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-42" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Azure2" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2497" y="855.3800000000001" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2667" y="855.3800000000001" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Azure3" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2497" y="894.4899999999998" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2667" y="894.4899999999998" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-44" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-38">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="2338.999999724455" y="993.608695652174" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-45" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-44" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;contains&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.0245" as="geometry">
-            <mxPoint x="48" y="-130" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-48" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-41">
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-48" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-123">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2338.9999889476003" y="928.4782608695655" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-49" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;contains&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.5752" as="geometry">
-            <mxPoint x="48" y="-450" as="offset" />
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-129" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-48" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;has different&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.6028" y="-4" as="geometry">
+            <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-50" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px; color: rgb(51, 153, 255);&quot;&gt;Component-centriy Bundling (variant 2)&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Approach: Controls are bundle by landing zone component and map ideally existing skills of teams in BIT (network, security etc,). Eventually&amp;nbsp;&lt;/div&gt;" vertex="1">
@@ -2945,12 +2938,6 @@
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=none;dashed=1;textAlign=top;verticalAlign=top;" value="Base Model" vertex="1">
           <mxGeometry height="700" width="1020" x="346" y="1170" as="geometry" />
-        </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-65" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="wG__MCC0dGyOnwEGjAIM-9">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-64" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeColor=#3399FF;" value="Component Owner" vertex="1">
-          <mxGeometry height="60" width="30" x="2182" y="1073.75" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=none;dashed=1;textAlign=top;verticalAlign=top;" value="Base Model" vertex="1">
           <mxGeometry height="700" width="1020" x="3070" y="1170" as="geometry" />
@@ -3140,13 +3127,39 @@
           <mxGeometry height="60" width="30" x="3517" y="1060" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-118" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Secret Storage&lt;div&gt;&lt;b&gt;dev&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2200" y="770" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2320" y="883.91" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-120" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Secret Storage&lt;div&gt;&lt;b&gt;standard&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2200" y="805.84" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2320" y="919.75" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-121" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Secret Storage&lt;div&gt;&lt;b&gt;high-xyz&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="27.22" width="120" x="2200" y="841.84" as="geometry" />
+          <mxGeometry height="27.22" width="120" x="2320" y="955.75" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-125" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2390" y="1394" as="sourcePoint" />
+            <mxPoint x="2512" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-126" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-42">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2570" y="933" />
+              <mxPoint x="2570" y="869" />
+            </Array>
+            <mxPoint x="2500" y="947" as="sourcePoint" />
+            <mxPoint x="2727" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-128" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2570" y="933" />
+              <mxPoint x="2570" y="1031" />
+            </Array>
+            <mxPoint x="2530" y="967" as="sourcePoint" />
+            <mxPoint x="2757" y="900" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

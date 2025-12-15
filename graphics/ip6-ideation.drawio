@@ -2115,7 +2115,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="3293" dy="1949" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1560" dy="923" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3191,6 +3191,17 @@
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-142" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="&lt;div&gt;&lt;b&gt;high-xyz&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="27.22" width="120" x="3491" y="932.9899999999999" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-146" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-139">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3350" y="1193" as="sourcePoint" />
+            <mxPoint x="3491" y="1110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-147" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-146" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;decides usage of&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4001" y="-4" as="geometry">
+            <mxPoint x="138" y="-24" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,9 +1,12 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.7" pages="2">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
-    <mxGraphModel dx="3707" dy="4948" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="6170" dy="6411" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="hv_rUXgAOYW8t0CtbiYH-42" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
+          <mxGeometry height="1290" width="1250" x="780" y="-4069.75" as="geometry" />
+        </mxCell>
         <mxCell id="dWIQs9_eG_ivaGpYUmBC-71" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="810" width="1440" x="580" y="-2460" as="geometry" />
         </mxCell>
@@ -1973,7 +1976,7 @@
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Control C" vertex="1">
           <mxGeometry height="27.22" width="120" x="990" y="-3697.92" as="geometry" />
         </mxCell>
-        <mxCell id="hv_rUXgAOYW8t0CtbiYH-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Bundle Azure&lt;div&gt;Control A&lt;/div&gt;" vertex="1">
+        <mxCell id="hv_rUXgAOYW8t0CtbiYH-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Bundle Azure&lt;div&gt;&lt;b&gt;Control A&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="27.22" width="120" x="1242" y="-3805.1399999999994" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-13" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;AWS Policies&lt;/span&gt;&lt;/div&gt;" vertex="1">
@@ -2021,7 +2024,7 @@
             <mxPoint x="-11" y="-6" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="hv_rUXgAOYW8t0CtbiYH-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Bundle AWS&lt;div&gt;Control A&lt;/div&gt;" vertex="1">
+        <mxCell id="hv_rUXgAOYW8t0CtbiYH-26" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Bundle AWS&lt;div&gt;&lt;b&gt;Control A&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="27.22" width="120" x="1242" y="-3740" as="geometry" />
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-25" edge="1" parent="1" source="hv_rUXgAOYW8t0CtbiYH-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" target="hv_rUXgAOYW8t0CtbiYH-19">
@@ -2036,7 +2039,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="hv_rUXgAOYW8t0CtbiYH-38" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px; color: rgb(51, 153, 255);&quot;&gt;Control-Centric Bundling (variant 1)&lt;/h1&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Approach: For each control in the regulation in question an mapping is made to a plattform bundle. Like one policy definition / set whith everything that is related to a specific control&lt;/div&gt;" vertex="1">
-          <mxGeometry height="140" width="349" x="950" y="-4080" as="geometry" />
+          <mxGeometry height="140" width="349" x="950" y="-4015.68" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

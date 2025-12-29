@@ -1,6 +1,7 @@
 \section{Methodik und Vorgehen}
 \label{sec:methodik}
 
+In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepte in \fullref{sec:traceability-architecture} führt. Hierzu wird in \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufzgeigt welche auf die Methodiken in den Unterabschnitten Bezug nimmt.
 
 \subsection{Forschungsmethodischer Ansatz}
 \label{sec:methodik-intro}
@@ -14,7 +15,14 @@
 \end{itemize}
 \hl{structure end}
 
-Die Erkenntnisse aus dieser vorgegangenen Arbeit von den gleichen Autoren haben möglicherweise Implikationen auf Teilaspekte der Arbeit in dieser Bachelorthesis.
+In \fullref{sec:einleitung} wurde gezeigt dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategie bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konrekt die Übsertzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor
+
+Entsprechend ergibt sich die Kernidee des folgenden Vorgehen.
+
+
+
+
+
 
 \subsection{Vorgehen zur Identifikation von Landingzone Komponenten}
 \label{sec:methodik-landingzones}
@@ -25,7 +33,7 @@ Die Erkenntnisse aus dieser vorgegangenen Arbeit von den gleichen Autoren haben 
 \end{itemize}
 \hl{structure end}
 
-In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Das Ziel ist die Annahme, welche vom \ac{bit} gefasst wurde, zu hinterfragen. Das Vorgehen sieht vor mit einer allgemeinen Recherchefrage zu starten und basierend auf der in den Ergebnissen verwendeten Terminologie zu reformulieren. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Zur Literaturrecherche selbst werden unter Anderem KI basierte Tools verwendet, welche mittels semantischer Ähnlichkeit von Begriffe eine einfachere Suche erlauben (siehe Tools in \fullref{sec:hilfsmittel}).
+In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Das Ziel ist die Arbeitshypothese, welche vom \ac{bit} gefasst wurde, zu hinterfragen. Das Vorgehen sieht vor mit einer allgemeinen Recherchefrage zu starten und basierend auf der in den Ergebnissen verwendeten Terminologie zu reformulieren. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Zur Literaturrecherche selbst werden unter Anderem KI basierte Tools verwendet, welche mittels semantischer Ähnlichkeit von Begriffe eine einfachere Suche erlauben (siehe Tools in \fullref{sec:hilfsmittel}).
 
 Eine Suche auf traditionellen Plattformen \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} bestätigt diese Verwendung
 

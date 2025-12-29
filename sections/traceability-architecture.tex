@@ -8,14 +8,106 @@
 \end{itemize}
 \hl{structure end}
 
-\subsection{Variant 1: Control-centric bundling}
-\label{sec:variant1}
+\subsection{Variante 1: Control-centric bundling}
+\label{sec:trace-arch-variant1}
 
-\subsection{Variant 2: Component-centric bundling}
-\label{sec:variant2}
+\textbf{Ansatz}: Für jede Control in der jeweiligen Verordnung wird ein Mapping zu einem Plattform-Bundle gemacht. Also eine Control beinhaltet Plattform-Policies X, Y und Z. Beim deployen einer Landing Zone wählt das Blueprint aus welche Controls benötigt werden (z.B. keine Baseline, erhöhter Schutzbedarf, etc.)
 
-\subsection{Variant 3: LZ category centric bundling}
-\label{sec:variant3}
+\textbf{Fokus}: Traceability
 
-\subsection{Variant 4: LZ Provider Native Bundling}
-\label{sec:variant4}
+\textbf{Pros}
+\begin{itemize}
+    \item Rückverfolgbarkeit ist trivial: Das Ergebnis des Enforcements wird direkt einer Control-ID zugeordnet.
+    \item Ideal für Audits („Zeig mir alle implementierten Kontrollen“).
+\end{itemize}
+
+\textbf{Cons}
+\begin{itemize}
+    \item Viele kleine Artefakte → erfordern Automatisierung und eine Build-Pipeline
+    \item Einige Anbieter bevorzugen grössere Sets
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{ip6-ideation-Traceability-Architecture-control-centric.drawio.pdf}
+    \caption{Control-centric Traceability Architektur Variante}
+    \label{fig:traceability-architecture-control-centric}
+\end{figure}
+
+\subsection{Variante 2: LZ component-centric bundling}
+\label{sec:trace-arch-variant2}
+
+\textbf{Ansatz}: Die Kontrollen werden nach Landing-Zone-Komponenten in Komponenten-Baselines gebündelt. Diese Baselines werden den Plattformrichtlinien zugeordnet. Bei der Bereitstellung einer Landing Zone wählt der Blueprint die benötigten Komponenten und die Baselines der einzelnen Komponenten aus.
+
+\textbf{Fokus}: Engineering, Verteilung an Expertengruppen/Teams, aber mit Rückverfolgbarkeit
+
+\textbf{Pros}
+\begin{itemize}
+    \item Passt zur Implementierungspraxis von Teams: Netzwerkrichtlinien werden gemeinsam verwaltet
+    \item Weniger Bundles, einfachere Einführung
+\end{itemize}
+
+\textbf{Cons}
+\begin{itemize}
+    \item Die Rückverfolgbarkeit erfordert einen zusätzlichen Suchschritt: „Richtlinie X befindet sich im Bundle Netzwerk → enthält Kontrollen A, B, C“
+    \item Einige Richtlinien implementieren mehrere Kontrollen (1:n)
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{ip6-ideation-Traceability-Architecture-component-centric.drawio.pdf}
+    \caption{Component-centric Traceability Architektur Variante}
+    \label{fig:traceability-architecture-component-centric}
+\end{figure}
+
+\subsection{Variante 3: LZ category centric bundling}
+\label{sec:trace-arch-variant3}
+
+\textbf{Ansatz}: Kontrollen werden nach Baselines gebündelt, die alle Komponenten enthalten. Diese Baselines umfassen die entsprechenden Richtlinien. Beim deployen einer Landing Zone wählt der Blueprint nur die LZ-Baseline aus, der Rest wird abstrahiert.
+
+\textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Baseline alles umfasst, ohne dass viel ausgewählt werden muss.
+
+\textbf{Pros}
+\begin{itemize}
+    \item Extrem einfache Anwendung („regulierte Baseline anwenden“)
+    \item Klare Customer Story: Kategorien repräsentieren Risikoklassen
+\end{itemize}
+
+\textbf{Cons}
+\begin{itemize}
+    \item Hohe Duplizierung von Kontrollen über Kategorien hinweg
+    \item Rückverfolgbarkeit zu einzelnen Kontrollen ist gegeben, aber man muss ein Manifest „Kontrollen in der Baseline“ führen
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{ip6-ideation-Traceability-Architecture-category-centric.drawio.pdf}
+    \caption{LZ category centric Traceability Architektur Variante}
+    \label{fig:traceability-architecture-category-centric}
+\end{figure}
+
+\subsection{Variante 4: LZ provider-native bundling}
+\label{sec:trace-arch-variant4}
+
+\textbf{Ansatz}: Kontrollen werden direkt durch die native Richtlinienabstraktion des Anbieters dargestellt (wie Azure-Policies, AWS SCP usw.). Diese werden direkt auf die Komponenten angewendet.
+
+\textbf{Fokus}: Die Anwendung von Richtlinien auf Ressourcen, weniger auf die Nachvollziehbarkeit (à la MVP). Initiativen/Bundles existieren bereits von verschiedenen Cloud-Anbietern.
+
+\textbf{Pros}
+\begin{itemize}
+    \item Operativ sauber: Nutzung der nativen Mechanismen der Anbieter
+    \item Beste Leistung und Anbieterausrichtung
+\end{itemize}
+
+\textbf{Cons}
+\begin{itemize}
+    \item Cloud-übergreifende Vergleichbarkeit wird schlechter
+    \item Rückverfolgbarkeit muss über verschiedene Anbieter-Nachweisformate hinweg normalisiert werden
+\end{itemize}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{ip6-ideation-Traceability-Architecture-provider-native.drawio.pdf}
+    \caption{LZ Provider Native Traceability Architektur Variante}
+    \label{fig:traceability-architecture-provider-native}
+\end{figure}

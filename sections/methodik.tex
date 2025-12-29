@@ -1,7 +1,7 @@
 \section{Methodik und Vorgehen}
 \label{sec:methodik}
 
-In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepte in \fullref{sec:traceability-architecture} führt. Hierzu wird in \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufzgeigt welche auf die Methodiken in den Unterabschnitten Bezug nimmt.
+In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepte in \fullref{sec:traceability-architecture} führt. Hierzu wird in \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufgezeigt, welche auf die Methodiken in den Unterabschnitten Bezug nimmt.
 
 \subsection{Forschungsmethodischer Ansatz}
 \label{sec:methodik-intro}
@@ -15,12 +15,33 @@ In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorg
 \end{itemize}
 \hl{structure end}
 
-In \fullref{sec:einleitung} wurde gezeigt dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategie bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konrekt die Übsertzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor
+In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor.
 
-Entsprechend ergibt sich die Kernidee des folgenden Vorgehen.
+Diese Überlegung Business-Needs/Requirements anhand der 
 
 
-
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|l|X|X|}
+        \hline
+        \textbf{\#} & \textbf{Beschreibung} & \textbf{Begründung} \\
+        \hline
+        1 &
+        \textbf{Metamodell definieren}
+        \newline Definieren eines fachspezifischen Meta-Layers mit \ac{lz} als zentralen Punkt &
+        Beim Metamodell handelt es sich um einen etablierten Ansatz um Abstraktion abzubilden (bspw basieren TOGAF, ArchiMate etc auf Metamodellen)
+        \\
+        \hline
+        2 &
+        \textbf{Stakeholder map definieren}
+        \newline Definieren welche Akteure an dem Outcome beteitligt sind &
+        Die an einem Outome beteiligten Akeute abzuholen gehört zum grundlegenden Projekt-Mgmt und ist hier relevant um die wichtigsten Interessen abzuholen
+        \\
+        \hline
+    \end{tabularx}
+    \caption{Übergeordnete Vorgehensweise}
+    \label{tab:allg-vorgehensweise}
+\end{table}
 
 
 

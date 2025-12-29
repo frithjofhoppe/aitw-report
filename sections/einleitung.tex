@@ -21,9 +21,10 @@ Die konkrete Ausführung der Strategie wird im Rahmen einer öffentlichen Aussch
 
 Diese Arbeit strebt ebenfalls einen Inhalt unabhängig von Anbietern an sowohl in der Erarbeitung der Grundlagen wie auch der Ausarbeitung. Der Eindruck von etwaigen Präferenzen ist auf die Autoren zurückzuführen und hat keinen direkten Bezug zum \ac{bit}
 
-Im Rahmen des IP5 Projektes \textit{25fs imvs29} (siehe \autoref{appendix:ip5}) wurde sich bereits mit der plattformübergreifenden Governance auseinandergesetzt. Die vorgeschlagene Architektur war dort basierend auf der Sprache OSCAL. Mit einem PoC wurde gezeigt, dass eine agnostische Implementation grundsätzlich möglich ist. Die Erkenntnisse aus dieser vorgegangenen Arbeit von den gleichen Autoren haben möglicherweise Implikationen auf Teilaspekte der Arbeit in dieser Bachelorthesis.
+Im Rahmen des IP5 Projektes \textit{25fs imvs29} (siehe \autoref{appendix:ip5}) wurde sich bereits mit der plattformübergreifenden Governance auseinandergesetzt. Die vorgeschlagene Architektur war dort basierend auf der Sprache OSCAL. Mit einem PoC wurde gezeigt, dass eine agnostische Implementation grundsätzlich möglich ist.
 
 \subsection{Zielsetzung}
+\label{sec:zielsetzung}
 
 Eine Nutzung der verschiedenen Cloud-Plattformen bedingt, dass eine grundlegende Struktur existiert auf welche Anwender innerhalb der \ac{bv} aufbauen können. Das \ac{bit} strebt hierbei die Anwendung der Konzepte hinter dem Begriff \ac{lz} an. Die Annahme ist, dass eine \ac{lz} eine durch den Plattformprovider vordefinierten Struktur bezeichnet, in welcher die effektiven Angebote bezogen werden können.
 
@@ -35,12 +36,20 @@ Diese Arbeit beschäftigt sich im Rahmen der aufgezeigten Problematik mit folgen
 
 \textit{Wie sieht eine geeignete technische Architektur einer Landingzone für eine Hybrid-Multi-Cloud-Umgebung aus und was muss sie erfüllen?}
 
+die Fragestellung wird unter folgenden Problemdimensionen betrachtet
+
+\begin{itemize}
+    \item Anaylsieren wie der bestehende Kontext von \ac{lz} bei Cloud-Anbietern aussieht
+    \item Identifizieren von Komponenten einer \ac{lz} welche für das \ac{bit} relevant sind und somit Einschränkung des Architektur-Scopes
+    \item Definieren eines Architektur-Konzeptes welches agnostisch ist, jedoch die Gegebenheiten des \ac{bit} bestmöglich berücksichtigt
+\end{itemize}
 
 % Für den Betrieb von Cloud-Diensten nutzen die einzelnen Provider sogenannte Landingzones - vordefinierte Strukturen, die den Rahmen für die Nutzung der jeweiligen Plattform bilden. Die bisherigen Erfahrungen zeigen jedoch, dass sich diese Landingzones zwischen den Anbietern grundlegend unterscheiden und bisher keine übergreifende technische Lösung existiert, die eine einheitliche Nutzung und Steuerung über mehrere Plattformen hinweg ermöglicht.
 
 % Damit entsteht die Herausforderung, Anforderungen und zentrale Elemente einer Provider-agnostischen Landingzone zu identifizieren, die eine konsistente, sichere und Compliance-konforme Nutzung der verschiedenen Plattformen innerhalb der Bundesverwaltung sicherstellt.
 
-\hl{Beschreiben was in welchem abschnitt passiert - verknüpfen wie die abschnitte zusammenhängen}
+Hierzu betrachten wir im \fullref{sec:grundlagen} den Kontext rund um den Begriff der \ac{lz} bei verschiedenen Anbietern. In \fullref{sec:methodik} führen wir in das methodische Vorgehen und verwendete Modelle ein. Inbesondere wird hier ein \fullref{sec:methodik-capability} der Business-Kontext vom BIT eingeführt und in \fullref{sec:methodik-evaluation} die Evaluation des Architetur-Konzeptes beschrieben. Mit den detaillierten Beschreibungen von Varianten der Architektur in \fullref{sec:traceability-architecture} und der examplarischen Umsetzung einer ausgewählten Variante \fullref{sec:umsetzung} soll eine ideale Architektur gefunden werden. Mit der Überprüfung der umgesetzten Variante in \fullref{sec:evaluation} soll die Erfüllung der Anforderungen sichergestellt werden. In \fullref{sec:abschluss} wird über die anaylsierten Varianten der Architektur allgemein und spezifische für den Kontext des \ac{bit} resümiert
+
 
 \subsection{Erkenntnis}
 

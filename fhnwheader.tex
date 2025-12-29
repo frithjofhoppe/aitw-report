@@ -108,10 +108,12 @@
     {\gls{#1}\textsuperscript{*}}% If already used → add asterisk
     {\gls{#1}}% If first time → no asterisk
 }
-
 % Set caption labels for figures and their references
 \renewcaptionname{ngerman}{\figurename}{Abbildung}
 \addto\extrasngerman{\renewcommand{\figureautorefname}{Abbildung}}
 
 % Command for referencing sections with number and name
-\newcommand*{\fullref}[1]{\hyperref[{#1}]{\ref*{#1} \nameref*{#1}}}
+% \newcommand*{\fullref}[1]{\hyperref[{#1}]{\ref*{#1} \nameref*{#1}}}
+\newcommand*{\fullref}[1]{%
+  \autoref{#1} (\nameref{#1})%
+}

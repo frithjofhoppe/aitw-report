@@ -17,18 +17,13 @@ In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorg
 
 In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor. Dies wird in der das Gerüst einer \ac{ea} eingebettet.
 
-\cite{mulder_multi-cloud_2020-1} führt an, dass für eine \ac{ea} bereits diverse Frameworks existieren in welche der multi-cloud Kontext eingebettet werden kann, weshalb \ac{togaf} als etablierter Vertreter vorgeschlagen wird. \ac{togaf} sieht zum Erstellen einer \ac{ea} einen iterativen Cylce vor. Dies vor dem HIntergrund, dass sich die Grundlage für eine \ac{ea} durch ändernde Anforderungen aus dem Business ebenfalls ändert und entsprechend anpassen muss. 
+\cite{mulder_multi-cloud_2020-1} führt an, dass für eine \ac{ea} bereits diverse Frameworks existieren in welche der multi-cloud Kontext eingebettet werden kann, weshalb \ac{togaf} als etablierter Vertreter vorgeschlagen wird. \ac{togaf} sieht zum Erstellen einer \ac{ea} einen iterativen Cylce vor. Dies vor dem Hintergrund, dass sich die Grundlage für eine \ac{ea} durch ändernde Anforderungen aus dem Business ebenfalls ändert und entsprechend anpassen muss. 
 
-Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich an der Methodik von \cite{mulder_multi-cloud_2020-1} und \ac{togaf} an. Dies bedeutet dass die Schritte in der Methodik auf Phasen in \ac{togaf} zurückführbar sind 
-
-\begin{itemize}
-    \item Anforderungen für multi-cloud Strategie aus Business-/Technical-Strategie ableiten (Ziel: Identifizieren was die Business-Goals und objectives sind um darauf basierend eine Architektur zu entwerfen)
-    \item Architektur definieren (Ziel:)
-\end{itemize}
+Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich an der Methodik von \cite{mulder_multi-cloud_2020-1} und \ac{togaf} an. Dies bedeutet dass die Schritte in der erstellen Methodik auf Phasen in \ac{togaf} zurückführbar sind. Die Motivation dahinter ist, dass ein auf Business-Needs basierenden Ansatz gewählt wird, welcher vermeiden soll dass der durch die Methodik erarbeitetet Outcome losgelöst vom Bedarf des Auftraggebers / des \ac{bit} und potentiell weiteren Organisationen ist.
 
 \begin{table}[H]
     \centering
-    \begin{tabularx}{\textwidth}{|l|X|X|}
+    \begin{tabularx}{\textwidth}{|L{3cm}|X|X|}
         \hline
         \makecell[l]{\textbf{Phase}\\\textbf{\ac{togaf}}} & \textbf{Anwendung für Arbeit}  & \textbf{Begründung} \\
         \hline
@@ -37,44 +32,44 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         
         \\
         \hline
-        \makecell[l]{A\\ArchVision} &
+        \textbf{A} Architecture Vision &
         Definieren welche Akteure an dem Outcome beteiligt sind. Ableiten des Scopes sowie Zielen basierend auf Annahmen. Definieren von elementaren / Level 1 Technical capabilitties &
         Die Capability-Map erlaubt es die Annahmen welche Fähigkeiten das BIT mit dem multi-cloud Ansatz erreichen möchte zu visualisieren
         \\
         \hline
-        \makecell[l]{B\\BusinessArch} &
+        \textbf{B}Business Architecture &
         \multirow{3}{*}{\makecell[X]{Definien von granulareren Level 2 Capabilities und Use-Cases basierend auf der Priorisierung der L2 Capabilities durch die Stakeholder. Entwerfen von verschiedenen Architektur-Varianten für eine der priorisierten Capabilities}} &
-        Durch die Granularität wird eine bessere Bewert- und Anaylsierbarkeit ermöglicht. Die Use-Cases erlauben anschliessend den Scope zu setzen in welcher die gewählte Architektur-Variante definiert wird
+        Durch die Granularität wird eine bessere Bewert- und Anaylsierbarkeit ermöglicht. Die Use-Cases erlauben anschliessend den Scope zu setzen in welcher die gewählte Architektur-Variante definiert wird.
         \\
         \cline{1-1}
-        \makecell[l]{C\\InformationSyst\\Arch} & &
+        \textbf{C} Information Syststem Architectures & &
         
         \\
         \cline{1-1}
-        \makecell[l]{D\\TechnologArch} & &
+        \textbf{D} Technology Architecture & &
         \\
         \hline
-        \makecell[l]{E\\Opportunities\\and\\Solutions} &
+        \textbf{E} Opportunities and Solutions &
         \multirow{2}{*}{\makecell[X]{Implementation eines \ac{poc} basierend auf der gewählten Architektur-Variante}} &
         Der \ac{poc} ermöglicht die Evaluierung der Machbarkeit des gewählten Ansatzes und dient somit als Validierungsinstrument
         \\
         \cline{1-1}
-        \makecell[l]{F\\ArchVision} & &
+        \textbf{F} Migration Planning & &
         
         \\
         \hline
-        \makecell[l]{G\\ArchVision} &
+        \textbf{G} Implementation Governance &
         Auswahl einer Architketur welcher den Evaluationskriterien welche unter Anderem auf dem Use-Case des \ac{bit} basieren gerecht werden. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw Anforderungen an die LZ, Governance Regel etc) &
         
         \\
         \hline
-        \makecell[l]{H\\ArchChange\\Mgmt} &
+        \textbf{H} Architecture Change Management &
         - &
         Nicht anwendbar, da mit dem Output des \ac{adm} cycle kein produktiver Zustand, eine Übergabe an Betrieb oder Weiterentwicklung angestrebt wird
         \\
         \hline
     \end{tabularx}
-    \caption{Übergeordnete Vorgehensweise nach dem Phasen von \ac{adm} in \ac{togaf}}
+    \caption{Forschungsmethodik gegeliedert nach den Phasen von \ac{adm} in \ac{togaf}}
     \label{tab:allg-vorgehensweise}
 \end{table}
 

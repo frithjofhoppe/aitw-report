@@ -17,7 +17,7 @@ In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorg
 
 In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor. Dies wird in der das Gerüst einer \ac{ea} eingebettet.
 
-Der in der Arbeit konstruierte forschungsmethodischer Ansatz orientiert sich an den Ansatz zur Definition einer \ac{ea} welcher durch \cite{mulder_multi-cloud_2020-1} skiziert wird. Dieser verwendet wiederum die Methodologie von \ac{togaf}.
+Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich an jedem zum Erstellener einer \ac{ea} an, welcher durch \cite{mulder_multi-cloud_2020-1} skiziert wird. Dieser orientiert sich wiederum an der Methodologie von \ac{togaf}.
 
 \begin{itemize}
     \item Preliminary-Phase: Definieren der Architektur-Vision und der Architektur-Prinzipien mit Fokus auf die Prinzipien (Business, Sec and Compliance, Data principles, Application principles, Infrastructure and technology priniciples, Usability, Process)
@@ -29,25 +29,51 @@ Der in der Arbeit konstruierte forschungsmethodischer Ansatz orientiert sich an 
     \item Architektur definieren (Ziel:)
 \end{itemize}
 
-
-
-
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{|l|X|X|}
         \hline
-        \textbf{\#} & \textbf{Beschreibung} & \textbf{Begründung} \\
+        \makecell[l]{\textbf{Phase}\\\textbf{\ac{togaf}}} & \textbf{Ansatz für Arbeit}  & \textbf{Begründung} \\
         \hline
-        1 &
-        \textbf{Metamodell definieren}
-        \newline Definieren eines fachspezifischen Meta-Layers mit \ac{lz} als zentralen Punkt &
-        Beim Metamodell handelt es sich um einen etablierten Ansatz um Abstraktion abzubilden (bspw basieren TOGAF, ArchiMate etc auf Metamodellen)
+        Preliminary &
+        Übernahme von existierenden Architekturprinzipien vom \ac{bit} mit Ergänzung von etwaigen für den multi-cloud Kontext. Definieren eines fachspezifischen Meta-Modells mit \ac{lz} als zentralen Punkt &
+        
         \\
         \hline
-        2 &
-        \textbf{Stakeholder map definieren}
-        \newline Definieren welche Akteure an dem Outcome beteitligt sind &
-        Die an einem Outome beteiligten Akeute abzuholen gehört zum grundlegenden Projekt-Mgmt und ist hier relevant um die wichtigsten Interessen abzuholen
+        \makecell[l]{A\\ArchVision} &
+        Definieren welche Akteure an dem Outcome beteiligt sind. Ableiten des Scopes sowie Zielen basierend auf Annahmen. Definieren von elementaren / Level 1 Technical capabilitties &
+        Die Capability-Map erlaubt es die Annahmen welche Fähigkeiten das BIT mit dem multi-cloud Ansatz erreichen möchte zu visualisieren
+        \\
+        \hline
+        \makecell[l]{B\\BusinessArch} &
+        \multirow{3}{*}{\makecell[X]{Definien von granulareren Level 2 Capabilities und Use-Cases basierend auf der Priorisierung der L2 Capabilities durch die Stakeholder. Entwerfen von verschiedenen Architektur-Varianten für eine der priorisierten Capabilities}} &
+        Durch die Granularität wird eine bessere Bewert- und Anaylsierbarkeit ermöglicht. Die Use-Cases erlauben anschliessend den Scope zu setzen in welcher die gewählte Architektur-Variante definiert wird
+        \\
+        \cline{1-1}
+        \makecell[l]{C\\InformationSyst\\Arch} & &
+        
+        \\
+        \cline{1-1}
+        \makecell[l]{D\\TechnologArch} & &
+        \\
+        \hline
+        \makecell[l]{E\\Opportunities\\and\\Solutions} &
+        \multirow{2}{*}{\makecell[X]{Implementation eines \ac{poc} basierend auf der gewählten Architektur-Variante}} &
+        Der \ac{poc} ermöglicht die Evaluierung der Machbarkeit des gewählten Ansatzes und dient somit als Validierungsinstrument
+        \\
+        \cline{1-1}
+        \makecell[l]{F\\ArchVision} & &
+        
+        \\
+        \hline
+        \makecell[l]{G\\ArchVision} &
+        Auswahl einer Architketur welcher den Evaluationskriterien welche unter Anderem auf dem Use-Case des \ac{bit} basieren gerecht werden. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw Anforderungen an die LZ, Governance Regel etc) &
+        
+        \\
+        \hline
+        \makecell[l]{H\\ArchChange\\Mgmt} &
+        - &
+        Nicht anwendbar, da mit dem Output des \ac{adm} cycle kein produktiver Zustand, eine Übergabe an Betrieb oder Weiterentwicklung angestrebt wird
         \\
         \hline
     \end{tabularx}
@@ -55,6 +81,8 @@ Der in der Arbeit konstruierte forschungsmethodischer Ansatz orientiert sich an 
     \label{tab:allg-vorgehensweise}
 \end{table}
 
+
+\hl{Rückblickend hätte man bereits in der Preliminary den Fokus auf die Traceability legen müssen bzw zwischen welchen Komponenten man Traceability erreichen möchte. Effektiv wurde es quasi reverseenigeered.}
 
 
 \subsection{Vorgehen zur Identifikation von Landingzone Komponenten}

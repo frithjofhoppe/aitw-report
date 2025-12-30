@@ -17,9 +17,9 @@ In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorg
 
 In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor. Dies wird in der das Gerüst einer \ac{ea} eingebettet.
 
-\cite{mulder_multi-cloud_2020-1} führt an, dass für eine \ac{ea} bereits diverse Frameworks existieren in welche der multi-cloud Kontext eingebettet werden kann, weshalb \ac{togaf} als etablierter Vertreter vorgeschlagen wird. \ac{togaf} sieht zum Erstellen einer \ac{ea} einen iterativen Cylce vor. Dies vor dem Hintergrund, dass sich die Grundlage für eine \ac{ea} durch ändernde Anforderungen aus dem Business ebenfalls ändert und entsprechend anpassen muss. 
+\cite{mulder_multi-cloud_2020-1} führt an, dass für eine \ac{ea} bereits diverse Frameworks existieren in welche der multi-cloud Kontext eingebettet werden kann, weshalb \ac{togaf} als etablierter Vertreter vorgeschlagen wird. \ac{togaf} sieht zum Erstellen einer \ac{ea} einen iterativen Cylce namens \ac{adm} vor. Dies vor dem Hintergrund, dass sich die Grundlage für eine \ac{ea} durch ändernde Anforderungen aus dem Business ebenfalls ändert und entsprechend anpassen muss. 
 
-Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich an der Methodik von \cite{mulder_multi-cloud_2020-1} und \ac{togaf} an. Dies bedeutet dass die Schritte in der erstellen Methodik auf Phasen in \ac{togaf} zurückführbar sind. Die Motivation dahinter ist, dass ein auf Business-Needs basierenden Ansatz gewählt wird, welcher vermeiden soll dass der durch die Methodik erarbeitetet Outcome losgelöst vom Bedarf des Auftraggebers / des \ac{bit} und potentiell weiteren Organisationen ist.
+Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich an der Methodik von \cite{mulder_multi-cloud_2020-1} und \ac{togaf} an. Dies bedeutet dass die Schritte in der erstellen Methodik auf Phasen in \ac{togaf} zurückführbar sind (siehe \autoref{tab:forschungsmethodik}). Die Motivation dahinter ist, dass ein auf Business-Needs basierenden Ansatz gewählt wird. Dadurch soll vermieden werden, dass der durch die Methodik erarbeitetet Outcome losgelöst vom Bedarf des Auftraggebers / des \ac{bit} und potentiell weiteren Organisationen ist. Die \ac{ea} dient somit nur als Gerüst und es nicht angedacht eine komplette \ac{ea} zu definieren. Im Folgenden ist der angepasste Ansatz beschrieben, welcher verfolgt wird. Dieser zeigt welche Elemente mit welcher Begründung in der jeweiligen Phase des \ac{adm} Cycle zur Anwendung kommen.
 
 \begin{table}[H]
     \centering
@@ -29,7 +29,7 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \hline
         Preliminary &
         Übernahme von existierenden Architekturprinzipien vom \ac{bit} mit Ergänzung von etwaigen für den multi-cloud Kontext. Definieren eines fachspezifischen Meta-Modells mit \ac{lz} als zentralen Punkt &
-        
+        Die Entwicklung des Outcomes soll sich gedanklich bereits an den Prinzipien des \ac{bit} orientieren. Deshalb ist eine Verwendung von etablierte Architekturprinzipien essentiell. Das Meta-Modell erlaubt es wiederum eine gemeinsamen Verständnis zu schaffen welche Artefakte geschaffen werden sollen und wie Elemente welche out-of-scope sind mit dem Kontext der Arbeit zusammenhängern
         \\
         \hline
         \textbf{A} Architecture Vision &
@@ -60,7 +60,7 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \hline
         \textbf{G} Implementation Governance &
         Auswahl einer Architketur welcher den Evaluationskriterien welche unter Anderem auf dem Use-Case des \ac{bit} basieren gerecht werden. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw Anforderungen an die LZ, Governance Regel etc) &
-        
+        Der Outcome der Evaluation bildet unter Anderem die Antwort auf die initialen Forschungsfragen wieder und ist somit essentiel
         \\
         \hline
         \textbf{H} Architecture Change Management &
@@ -70,12 +70,8 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \hline
     \end{tabularx}
     \caption{Forschungsmethodik gegeliedert nach den Phasen von \ac{adm} in \ac{togaf}}
-    \label{tab:allg-vorgehensweise}
+    \label{tab:forschungsmethodik}
 \end{table}
-
-
-\hl{Rückblickend hätte man bereits in der Preliminary den Fokus auf die Traceability legen müssen bzw zwischen welchen Komponenten man Traceability erreichen möchte. Effektiv wurde es quasi reverseenigeered.}
-
 
 \subsection{Vorgehen zur Identifikation von Landingzone Komponenten}
 \label{sec:methodik-landingzones}

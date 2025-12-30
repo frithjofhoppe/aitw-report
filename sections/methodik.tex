@@ -1,7 +1,7 @@
 \section{Methodik und Vorgehen}
 \label{sec:methodik}
 
-In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepte in \fullref{sec:traceability-architecture} führt. Hierzu wird in \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufgezeigt, welche auf die Methodiken in den Unterabschnitten Bezug nimmt.
+In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepte in \fullref{sec:traceability-architecture} führt. Hierzu wird in \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufgezeigt, deren Anewndung sich in den den anderen Unterabschnitten zeigt.
 
 \subsection{Forschungsmethodischer Ansatz}
 \label{sec:methodik-intro}
@@ -35,7 +35,7 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \makecell[l]{\textbf{Phase}\\\textbf{\ac{togaf}}} & \textbf{Anwendung für Arbeit}  & \textbf{Begründung} \\
         \hline
         Preliminary &
-        Übernahme von existierenden Architekturprinzipien vom \ac{bit} mit Ergänzung von etwaigen für den multi-cloud Kontext. Definieren eines fachspezifischen Meta-Modells mit \ac{lz} als zentralen Punkt &
+        Übernahme von existierenden Architekturprinzipien vom \ac{bit} mit Ergänzung von etwaigen für den multi-cloud Kontext. Definieren eines fachspezifischen Meta-Modells mit \ac{lz} als zentralen Punkt. Recherche von den \ac{lz} Komponenten die bereits bei Anbietern existieren &
         Die Entwicklung des Outcomes soll sich gedanklich bereits an den Prinzipien des \ac{bit} orientieren. Deshalb ist eine Verwendung von etablierte Architekturprinzipien essentiell. Das Meta-Modell erlaubt es wiederum eine gemeinsamen Verständnis zu schaffen welche Artefakte geschaffen werden sollen und wie Elemente welche out-of-scope sind mit dem Kontext der Arbeit zusammenhängern
         \\
         \hline
@@ -89,11 +89,22 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
 \end{itemize}
 \hl{structure end}
 
-In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Das Ziel ist die Arbeitshypothese, welche vom \ac{bit} gefasst wurde, zu hinterfragen. Das Vorgehen sieht vor mit einer allgemeinen Recherchefrage zu starten und basierend auf der in den Ergebnissen verwendeten Terminologie zu reformulieren. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Zur Literaturrecherche selbst werden unter Anderem KI basierte Tools verwendet, welche mittels semantischer Ähnlichkeit von Begriffe eine einfachere Suche erlauben (siehe Tools in \fullref{sec:hilfsmittel}).
+Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln muss zuerst der Begriff der \ac{lz} selbst geklärt werden. Das Vorgehen besteht somit aus den folgenden Schritten
 
-Eine Suche auf traditionellen Plattformen \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} bestätigt diese Verwendung
+\begin{enumerate}
+    \item Recherche zur Etablierung des Begriffs \ac{lz} in der wissenschaftlichen Literatur
+    \item Unterschiede in der Beschreibung der \ac{lz} als Begriff und die technischen Komponenten der \ac{lz} bei relevanten Anbieter identifizieren
+    \item Abgrenzung der \ac{lz} zu anderen Ressourcen auf einer Cloud-Plattform
+\end{enumerate}
 
-Dies legt die Vermutung nahe, dass es sich bei \ac{lz} um einen Begriff handelt welcher durch Cloud-Provider selbst etabliert wurde.
+In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Diese Recherchefrage wird anschliessend an ein KI basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffe nach existierenden Wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticSchoolar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt \cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone}), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche wie bei \cite{mulder_multi-cloud_2020} indirekt auf die konkrete Implementierung von Cloud-Providern verweist. Eine Suche mit ähnlichen Schlüsselwörtern auf einer tradtionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
+
+Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff behandelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} wird \ac{lz} als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Befürfnissen gruppiert werden soll, um passenden Operation- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
+
+Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM, Alibaba und Oracle wegen Verträgen im Rahmen des Vorhabens "Public Clouds Bund" der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgendem weiter als Cloud-Provider verstanden.
+
+Zuerst wird die Begrifflichkeit der \ac{lz} angeschaut.
+
 
 \subsection{Synthese eines abstrahierten Metamodells}
 \label{sec:methodik-metamodell}

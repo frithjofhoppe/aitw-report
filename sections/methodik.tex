@@ -192,56 +192,119 @@ Die Kriterien vom BIT bilden sich aus zwei Teilen. Architektonischen Vorgaben we
     \label{fig:bit-architecture-principles}
 \end{figure}
 
-Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}. Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird die folgende Recherchefrage formuliert In der Literatur finden sich weiteren Prinzipien welche dediziert für \ac{ea} im multi-cloud Kontext angedacht sind. In \autoref{tab:architecture-principles} werden aus der Recherceh it
+Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}. Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird die folgende Recherchefrage formuliert \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone? \glqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} erstrecken sich über die Kategorien: Design and Abstraction Principles, Scalability and Resilience Principles, Security and Governance Principles, Deployment and Integration Principles, Cost and Flexibility Principles sowie weiteren Prinzipien welche sich keiner der vorher genannten Kategorien zuordnen lässt.
 
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{|X|X|X|}
         \hline
-        \textbf{Prinzip} & \textbf{Beschreibung}  & \textbf{Begründug} \\
+        \textbf{Kategorie}  & \textbf{Prinzip}  & \textbf{Beschreibung} \\
+        
+        % Kategorie: Design and Abstraction Principles
         \hline
-        We use the cloud &
-        Definition &
+        Design and Abstraction Principles &
+        Service abstraction & 
         Kommentar
         \\
         \hline
-        Data Governance &
-        Definition &
+        Design and Abstraction Principles &
+        Architectural abstraction &
         Kommentar
         \\
         \hline
-        Customer Oriented Architecture &
-        Definition &
+        Design and Abstraction Principles  &
+        API integration &
         Kommentar
         \\
         \hline
-        Zero Trust &
-        Definition &
+        Design and Abstraction Principles &
+        Modularization and separation of concerns &
+        Kommentar
+        \\
+
+        \hline
+        Scalability and Resilience Principles &
+        Auto-Scaling and Load-Balancing &
         Kommentar
         \\
         \hline
-        Compliance with Law and Policies &
-        Definition &
+        Scalability and Resilience Principles &
+        Fault tolerance and high availability &
         Kommentar
         \\
         \hline
-        Defence-in-Depth &
-        Definition &
+        Scalability and Resilience Principles &
+        Elasticity &
         Kommentar
         \\
         \hline
-        Simplify and Automate Operations &
-        Definition &
+        Scalability and Resilience Principles &
+        Resilience &
         Kommentar
         \\
         \hline
-        Federated Configuration Management &
-        Definition &
+        Security and Governance Principles &
+        Data encryption &
         Kommentar
         \\
         \hline
-        Product Neutrality &
-        Definition &
+        Security and Governance Principles &
+        Policy-based governance and initelligent automation &
+        Kommentar
+        \\
+        \hline
+        Security and Governance Principles &
+        Unified security policies and IAM &
+        Kommentar
+        \\
+        \hline
+        Deployment and Integration Principles &
+        Containerization and microservice Architecture &
+        Kommentar
+        \\
+        \hline
+        Deployment and Integration Principles &
+        Continuous delivery models &
+        Kommentar
+        \\
+        \hline
+        Deployment and Integration Principles &
+        Infrastructure as Code &
+        Kommentar
+        \\
+        \hline
+        Deployment and Integration Principles &
+        Cloud resource orchestration &
+        Kommentar
+        \\
+        \hline
+        Cost and Flexibility Principles &
+        Vendor independence and cost-effectiveness &
+        Kommentar
+        \\
+        \hline
+        Cost and Flexibility Principles &
+        Elasticity &
+        Kommentar
+        \\
+        \hline
+        Cost and Flexibility Principles &
+        Multi-Clouding &
+        Kommentar
+        \\
+        \hline
+        Varia &
+        AI-Driven orechstration and decentralized control planes &
+        Kommentar
+        \\
+        \hline
+        Varia &
+        Role-based design &
+        Kommentar
+        \\
+        \hline
+        Varia &
+        Reusability and Composability &
         Kommentar
         \\
         \hline

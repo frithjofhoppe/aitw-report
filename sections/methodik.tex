@@ -226,15 +226,13 @@ Die Architketurprinzipien vom BIT bilden sich aus den Vorgaben, welche durch die
     \label{fig:bit-architecture-principles}
 \end{figure}
 
-Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}. Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird initiale die folgenden Recherchefrage formuliert \glqq What are possible architecture princples for multi-cloud ready enterprise architecture and solution architecture? \glqq, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizieren Prinzipien zeigen, dass die Frage mit dem Begriff \glqq solution architecture \glqq bereits zu stark auf konkrete technische prinzipien fokussiert siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht den angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \glqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently? \glqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} enstand unter Anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
+Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}. Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird initiale die folgenden Recherchefrage formuliert \glqq What are possible architecture princples for multi-cloud ready enterprise architecture and solution architecture? \glqq, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizieren Prinzipien zeigen, dass die Frage mit dem Begriff \glqq solution architecture \glqq bereits zu stark auf konkrete technische prinzipien fokussiert siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht den angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \glqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently? \glqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} entstand unter Anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
 
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
         \hline
         \textbf{Prinzip}  & \textbf{Beschreibung}  & \textbf{Quellen} \\
-        
-        % Kategorie: Design and Abstraction Principles
         \hline
         Architectural Abtraction Principle &
         Architektur soll mitels Abstrakion businessspezifische Elemente von cloudspezifischen Implemetation loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interface kann somit eine Portability erreicht werden & 
@@ -264,4 +262,23 @@ Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten f
     \end{tabularx}
     \caption{Potentielle Architekturpirnzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
     \label{tab:architecture-principles}
+\end{table}
+
+Für die Qualitätsmerkmale werden sowohl eigene definierten Kriterien als auch jene aus der Recherche verwendet. Hierfür wird folgenden Fragestellung verwendet \glqq Which architecture-related quality attributes are suitable for the comparative evaluation of enterprise architectures in technology-agnostic multi-cloud environments? \glqq. Das Ergebnis glieder sich in die folgenden Tiers: Tier 1 Universable Applicable, Tier 2 Context-Dependent Critical, Tier 3 Multi-cloud Specific, Tier 4 Emerging Considerations.
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
+        \hline
+        \textbf{Tier}  & \textbf{Quality Attribute}  & \textbf{Description} \\
+        \hline
+        Architectural Abtraction Principle &
+        Architektur soll mitels Abstrakion businessspezifische Elemente von cloudspezifischen Implemetation loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interface kann somit eine Portability erreicht werden & 
+        \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
+        \\
+        \hline
+        \hline
+    \end{tabularx}
+    \caption{Quality-Attriute gem Report \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
+    \label{tab:quality-attributes}
 \end{table}

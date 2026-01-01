@@ -192,123 +192,44 @@ Die Kriterien vom BIT bilden sich aus zwei Teilen. Architektonischen Vorgaben we
     \label{fig:bit-architecture-principles}
 \end{figure}
 
-Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}. Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird die folgende Recherchefrage formuliert \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone? \glqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} erstrecken sich über die Kategorien: Design and Abstraction Principles, Scalability and Resilience Principles, Security and Governance Principles, Deployment and Integration Principles, Cost and Flexibility Principles sowie weiteren Prinzipien welche sich keiner der vorher genannten Kategorien zuordnen lässt.
+Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}. Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird initiale die folgenden Recherchefrage formuliert \glqq What are possible architecture princples for multi-cloud ready enterprise architecture and solution architecture? \glqq, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizieren Prinzipien zeigen, dass die Frage mit dem Begriff \glqq solution architecture \glqq bereits zu stark auf konkrete technische prinzipien fokussiert siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht den angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \glqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently? \glqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} enstand unter Anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
 
 \begin{table}[H]
     \centering
-    \begin{tabularx}{\textwidth}{|X|X|X|}
+    \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
         \hline
-        \textbf{Kategorie}  & \textbf{Prinzip}  & \textbf{Beschreibung} \\
+        \textbf{Prinzip}  & \textbf{Beschreibung}  & \textbf{Quellen} \\
         
         % Kategorie: Design and Abstraction Principles
         \hline
-        Design and Abstraction Principles &
-        Service abstraction & 
-        Kommentar
+        Architectural Abtraction Principle &
+        Architektur soll mitels Abstrakion businessspezifische Elemente von cloudspezifischen Implemetation loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interface kann somit eine Portability erreicht werden & 
+        \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
         \\
         \hline
-        Design and Abstraction Principles &
-        Architectural abstraction &
-        Kommentar
+        Modular Decomposition Prinicple &
+        Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern& 
+        \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
         \\
         \hline
-        Design and Abstraction Principles  &
-        API integration &
-        Kommentar
+        Reference Model Principle &
+        Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien & 
+        \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
         \\
         \hline
-        Design and Abstraction Principles &
-        Modularization and separation of concerns &
-        Kommentar
-        \\
-
-        \hline
-        Scalability and Resilience Principles &
-        Auto-Scaling and Load-Balancing &
-        Kommentar
+        Governance Primacy Principle &
+        Architektur soll klar auf Policies, Regulations und Unternehmensvorgaben aufbauen und nicht durch Technologie motiviert sein. Dies erreicht, dass trotz Unterschiede in den konkrenten Soltuiosn / Cloud-Plattformen die Governancen als Input für das Vorgehen im Bewusstsein bleibt& 
+        \cite{zhang_ccoa_2009}, \cite{gurram_multi-cloud_2025}
         \\
         \hline
-        Scalability and Resilience Principles &
-        Fault tolerance and high availability &
-        Kommentar
-        \\
-        \hline
-        Scalability and Resilience Principles &
-        Elasticity &
-        Kommentar
-        \\
-        \hline
-        Scalability and Resilience Principles &
-        Resilience &
-        Kommentar
-        \\
-        \hline
-        Security and Governance Principles &
-        Data encryption &
-        Kommentar
-        \\
-        \hline
-        Security and Governance Principles &
-        Policy-based governance and initelligent automation &
-        Kommentar
-        \\
-        \hline
-        Security and Governance Principles &
-        Unified security policies and IAM &
-        Kommentar
-        \\
-        \hline
-        Deployment and Integration Principles &
-        Containerization and microservice Architecture &
-        Kommentar
-        \\
-        \hline
-        Deployment and Integration Principles &
-        Continuous delivery models &
-        Kommentar
-        \\
-        \hline
-        Deployment and Integration Principles &
-        Infrastructure as Code &
-        Kommentar
-        \\
-        \hline
-        Deployment and Integration Principles &
-        Cloud resource orchestration &
-        Kommentar
-        \\
-        \hline
-        Cost and Flexibility Principles &
-        Vendor independence and cost-effectiveness &
-        Kommentar
-        \\
-        \hline
-        Cost and Flexibility Principles &
-        Elasticity &
-        Kommentar
-        \\
-        \hline
-        Cost and Flexibility Principles &
-        Multi-Clouding &
-        Kommentar
-        \\
-        \hline
-        Varia &
-        AI-Driven orechstration and decentralized control planes &
-        Kommentar
-        \\
-        \hline
-        Varia &
-        Role-based design &
-        Kommentar
-        \\
-        \hline
-        Varia &
-        Reusability and Composability &
-        Kommentar
+        Security Reconfigurability Principle &
+        Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslagen für konrekte Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models welche bereits zu stark auf einen Plattform fokussieren stellen das Risiko da, dass sie nicht auf eine anderen Cloud-Plattform answendbar sind & 
+        \cite{hajjat_cloudward_2010}
         \\
         \hline
     \end{tabularx}
-    \caption{Analyse des Begriff \ac{lz} entlang der verschiedenen Cloud-Anbieter}
+    \caption{Potentielle Architekturpirnzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
     \label{tab:architecture-principles}
 \end{table}
+
+Zusätzlich zu allgemeinen Architekturprinzipien werden die folgenden

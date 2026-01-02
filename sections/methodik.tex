@@ -413,8 +413,34 @@ Zu den externen Quality-Attributes kommen eigenen Kriterien hinzu welche basiern
     \\
     \hline
 
-    \caption{Dedizierte Quality-Attriute mit Fokus auf Traceability-Architecture }
+    \caption{Dedizierte Quality-Attriute mit Fokus auf Traceability-Architecture}
     \label{tab:quality-attributes}
 \end{longtable}
 
-Zu den Quality Attributes 
+Für die Dimension der Trade-Off Kriterien wird für die Recherche von Spannungsfelder folgenden Fragestellung verwendet \glqq Which architecture-level trade-offs shape the design and evaluation of enterprise architectures in technology-agnostic multi-cloud environments \glqq.
+
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2}|
+}
+    \hline
+    \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Quellen} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Quellen} \\
+    \hline
+    \endhead
+
+    Performance vs Portability &
+    Optimieren der Runtime-Effizienz steht im Konlikft mit der langfristigen architektonischen Mobilität, da die Runtime-Effizieren häufig durch Fokussierung auf eine bestimmte Umfeld erreicht wird.
+
+    Tendenz zu Performance führt zur bestmöglichen Ausnutzung von cloud-nativen Capabilities und low latency aber dafür verliert man an architektonischer Unabhängigkeit vom Provider und Vergleichbarkeit von Lösungen über Cloud-Plattformen hinweg.
+    \\
+    \hline
+
+    \caption{Trade-Off Dimensionen aus der Recherche}
+    \label{tab:tension-fields}
+\end{longtable}

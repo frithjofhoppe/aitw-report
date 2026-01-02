@@ -2,6 +2,7 @@
     "ltex.language": "de-CH",
     "markdown-preview-enhanced.useKroki": true,
     "markdown-preview-enhanced.plantumlServer": "https://kroki.io",
+    "latex-workshop.formatting.latex": "latexindent",
     "latex-workshop.latex.recipe.default": "latexmk",
     "latex-workshop.latex.recipes": [
         {
@@ -49,5 +50,8 @@
             ],
             "env": {}
         }
-    ]
+    ],
+    "[latex]": {
+        "editor.defaultFormatter": "James-Yu.latex-workshop"
+    }
 }

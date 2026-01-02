@@ -268,17 +268,64 @@ Für die Qualitätsmerkmale werden sowohl eigene definierten Kriterien als auch 
 
 \begin{table}[H]
     \centering
-    \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
+    \begin{tabularx}{\textwidth}{|l|L{3cm}|X|L{3cm}|}
         \hline
-        \textbf{Tier}  & \textbf{Quality Attribute}  & \textbf{Description} \\
+        \textbf{Tier}  & \textbf{Quality Attribute}  & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen}\\
         \hline
-        Architectural Abtraction Principle &
-        Architektur soll mitels Abstrakion businessspezifische Elemente von cloudspezifischen Implemetation loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interface kann somit eine Portability erreicht werden & 
-        \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
+        1 &
+        Performance & 
+        Fähigkeit gewisse Antwortszeit und Durchgangsrate zu gewärhleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren  &
+        \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
         \\
         \hline
+        1 &
+        Reliability & 
+        Fähigkeit ein beständiges Sericeverhalten zu haben sowie Service Level Objectives einzuhalten.Fokus liegt auf der allgemeinen Robustheist, statt nur Ausfallfähigkeit zu gewärleisten &
+        \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}
+        \\
         \hline
+        1 &
+        Cost-effectiveness & 
+        Fähigkeit Kosten transparent abzubilden um eine Vergeichbarkeit zu ermöglichen. Sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefsmöglichste Kosten&
+        \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011}
+        \\
+        \hline
+        2 &
+        Security & 
+        Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen&
+        \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
+        \\
+        \hline
+        2 &
+        Scalability & 
+        Fähigkeit mit Anpassungen in der Workload-, Daten, Nutzergrösse etc. umzugehen ohne strukturelle Änderungen vornehmen zu müssen &
+        \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
+        \\
+        \hline
+        2 &
+        Availability & 
+        Fähigkeit eine gewisse Verfügbarkeit zu geährleisten sowie Fähigkeit Redundanz-Strategien sowie High-Availability zu Unterstützen &
+        \cite{banijamali_software_2019}, \cite{ardagna_modaclouds_2012}
+        \\
+       \hline
+        3 &
+        Interoperability & 
+        Fähigkeit Interaktion und Integration zwischen Systen auf unterschiedlichen Plattformen zu erlauben &
+        \cite{banijamali_software_2019}, \cite{joukov_cloud_2013}
+        \\
+        \hline
+        3 &
+        Portability & 
+        Fähigkeit der Architektur eine Migration oder Redeployment zwischen versciedenen Plattformen zu erlauben ohne grundsätliches Redesign zu benötigen - bspw ermöglich durch Abstraktion &
+        \cite{mirsalari_model_2020}
+        \\
+       \hline
+        3 &
+        Vendor-Independence & 
+        Fähigkeit der Archiktetur strukturell von einem Anbieter und insbesonderen von proprietären Funktionen abhängig zu sein. &
+        \cite{bhargav_sai_pillati_leading_2025}
+        \\
     \end{tabularx}
-    \caption{Quality-Attriute gem Report \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
+    \caption{Quality-Attriute gem Report \ac{ea} siehe \fullref{appendix:quality-attriutes-external} }
     \label{tab:quality-attributes}
 \end{table}

@@ -463,7 +463,6 @@ Für die Dimension der Trade-Off Kriterien wird für die Recherche von Spannungs
     \\
     \hline
 
-
     Vendor Lock-In vs Scalability &
     Scalability bzw bzw provider-native Optimisierung führt zur Steigerung der Effizienz und Nutzung von Plattformspezifischer Skalierung, Verwaltung etc. Gleichzeitig erhöht sich jedoch die Abhängigkeit von bestimmten Anbieter. Vendor Lock-In Vermeidung hingegen bringt provider-neutrale Architetkturen mit sich, welche die strategische Unabhängigkeit steigern. Mit dieser Steigerung der Austauschbarkeit sinkt jedoch die Nutzug von provider-spezifischen Funktionen
     &
@@ -471,12 +470,11 @@ Für die Dimension der Trade-Off Kriterien wird für die Recherche von Spannungs
     \\
     \hline
 
-
     \caption{Trade-Off Dimensionen aus der Recherche}
     \label{tab:tension-fields-external}
 \end{longtable}
 
-Zusätzliche zu den Trade-Off Dimensionen aus der Literatur werden die folgenden spezifischen Dimensionen definiert welche die Limitierungen aus gewissen Architekturprinzipien bereits berücksichtigen
+Zusätzliche zu den Trade-Off Dimensionen aus der Literatur werden die folgenden spezifischen Dimensionen definiert welche die Limitierungen aus gewissen Architekturprinzipien bereits berücksichtigen und welche sich explizit auf die Traceability-Architecture beziehen.
 
 \begin{longtable}{|
   L{3cm}|
@@ -492,10 +490,34 @@ Zusätzliche zu den Trade-Off Dimensionen aus der Literatur werden die folgenden
     \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Begründung} \\
     \hline
     \endhead
+    
+    Traceability Depth vs Model Simplicity &
+    Mit einer tiefen Traceability Depth werden mehr Artefakte modelliert und tieferen Traceability-Ketten womit Zusammenhänge besser rekonstruriert werden können. Die Model Simplicity führt dazu, dass das Metamodell überschaubarer bleibt, jedoch mit Verlust von Detailinformationen &
+    Relevant basierend auf den Anforderungen was für Evidenz / Artefakte erstellt werden möchte
+    \\
+    \hline
 
-    Governance Enforceability vs Local Autonomny &
-    Transparente Abbildung der Kosten sorgt für die Möglichkeit der Zuordenbarkeit von Kosten zu Architekturelementen. Dies erlaubt eine Vergleichbarkeit und senken des Risikos unerwarteter Kosten. Architecture specilization ermöglicht es wiederum  spezialisierte / start inktegrierte Services einusetzen, welche die Kostenmodelle jedoch verkomplizieren. Eine Architektur die Kosten transparent hält vermeidet tendenziell stark gekoppelte oder schwer kalkulierbare Strukturen &
-    Begründung
+    Explicit trace modeling vs Implicit Derivation &
+    Mit Explicit tracing  werden Beziehungen zwischen den Objekten im Metamodell bewusst modelliert, womit auch der initiale Modellierungsaufwand steigt. Dies führt zu einer besseren Prüfbarkeit und Auditierarkeit Die implicit Derivation leitet Traceability-Beziehungen aus ggf bestehenden Regeln oder Strukturen ab, womit die Abhängigkeit von implizitem Wissen steigt.&
+    Relevant wegen der Abhängkeit die sich aus der Abhängigkeit zu Modellierung von Cloud-Providern aber auch dem Aufwand die sich aus einer eigenen Modellierung ergibt
+    \\
+    \hline
+
+    Central Traceability Model vs Federated Traceability Models &
+    Mit dem central Model wird ein einheitliches Model mit semantischer Vergleichbarkeit angestrebt, was eine einfachere domänenübegreifende Auswertung erlaubt. Mit dem federated Model existiert eine gewisse Vielfalt für eine Domäne, welche durch für eine Auswertung zentral gemapped werden muss. Die Konsistent entsteht durch ein zentrale Auswertung / Mapping &
+    Relevant je nach Hetereogenität der Domänen um keine künstlichen Modelle zu erhalten die ggf domänenspezifische Strukturen einschränken
+    \\
+    \hline
+
+    Governance centric Traceability vs Engineering centric Traceability &
+    Eine governance-centric Traceability setzt die Policies, Controls und Compliance in den Fokus. Die Traceability ist hierbei top-down angedacht. Der Fokus liegt hierbei hauptsächlich auf der Auditierbarkeit, was dem Fokus bspw. eines Compliace Officers entspricht. Die engineering-centric Traceability bringt die technische Nachvollziehbarkeit und die technische Implementierungen / Artefakte in den Fokus. Dies entspriche potentiell der Betrachtung eines Entwicklers&
+    Relevant für die Wahl der Betrachtungsrichtung welche gewählt wird.
+    \\
+    \hline
+
+    Static Traceability Structure vs Evolvable Traceability Structure &
+    Eine static Structure ist bewusst in stabilen Strukturen angedacht, bei der Änderungen nicht häufig passieren sollen. Dadurch wird auch langristige eine Vergleichbarkeit erreicht. Die evolvable Structure bezieht sich auf die bewusste Anpassung und Erweiterung von Artefakt-Typen. Es wird somit bewusst offen definiert um erweiterbar zu sein, was jedoch eine Vergleichbarkeit über die Zeit erschwert&
+    Relevant für die Vergleichbarkeit von auf der Architektur generierten Artfekaten wie Audits
     \\
     \hline
 

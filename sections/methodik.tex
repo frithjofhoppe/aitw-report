@@ -183,9 +183,61 @@ Die mit dem \ac{bit} identifizierte Herausforderungen ist die Nachvollziehbarkei
 
 Der zentrale Use-Case für die Traceability-Architecture aus \autoref{fig:traceability-use-cases} ist hierbei \glqq Verifiziert die Compliace via Traceability \glqq. Dieser wird sowohl aus Sicht des Cloud-Expert wie auch des Compliance-Officers beschrieben
 
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr\textwidth-3cm-4\tabcolsep-3\arrayrulewidth\relax}|
+}
+
+    \hline
+    \textbf{UC-Eigenschaft} & \textbf{Wert} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{UC-Eigenschaft} & \textbf{Wert} \\
+    \hline
+    \endhead
+
+    Name &
+    Verifizieren der Compliance
+    \\
+    \hline
+
+    Beschreibung / Ziel &
+    Ziel ist es die Cloud-Ressourcen eines Projektes nachvollziehbar gegenüber von regulatorischen Anforderungen aus dem \ac{si001} in Form eines Nachweises prüfen zu können. Auslöser ist die Vorbereitung eines Audits oder der Bedarf generell eine Übersicht über den aktuellen Compliance Status zu erhalten.
+    \\
+    \hline
+
+    Akteure &
+    Primär der Compliance-Officer und Cloud-Expert. Der Projektverantwortliche ist unterstützend 
+    \\
+    \hline
+    
+    Vorbedingung &
+    Regulatorische Anforderungen wurden interepretiert und in abstrakte Anforderungen und Contorls überführt. Schutzbedarfskateogir Eine Traceability-Architektur ist etabliert. Cloud-Ressourcen eines Projektes sind vorhanden
+    \\
+    \hline
+
+    Nachbedingung &
+    Der Compliance-Status eines Projekts inkl aller Ressourcen ist bestimmt basierend auf dem \ac{si001}. Ein Compliance-Artefakt kann mittels des Outputs erzeugt werden.
+    \\
+    \hline
+
+    Hauptablauf &
+    \begin{enumerate}
+        \item Projektverantwortlicher identifiziert den Schutzbedarf der Ressourcen in dem Projekt
+        \item 
+    \end{enumerate}
+    \\
+    \hline
+
+    \caption{UC5 Verifizieren der Compliance}
+    \label{tab:uc-verify-compliance}
+\end{longtable}
+
+
 \textbf{Use-Case zum Verifizieren der Compliance}
 
-Ziel ist es die Cloud-Ressourcen eines Projektes nachvollziehbar gegenüber von regulatorischen Anforderungen aus dem \ac{si001} in Form eines Nachweises prüfen zu können. Beteiligt sind primär der Compliance-Offie und Cloud-Expert. Der Projektverantwortliche ist unterstützend. Auslöser ist die Vorbereitung eines Audits du
 
 Ziel ist es dass der Compliace Officer sicherstellen kann, dass regulatorische Anforderungen korret umgesetzt sind. Die Ausgangslage ist, dass die Anforderungen für \ac{si001} aktiv sind, die Schutzbedarfkatrogie festegelegt wurde und die Cloud-Ressourcen via Traceability-Bezieheungen verknüpft sind:
 

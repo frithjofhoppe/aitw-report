@@ -181,7 +181,7 @@ Die mit dem \ac{bit} identifizierte Herausforderungen ist die Nachvollziehbarkei
     \label{fig:traceability-use-cases}
 \end{figure}
 
-Der zentrale Use-Case für die Traceability-Architecture aus \autoref{fig:traceability-use-cases} ist hierbei \glqq Verifiziert die Compliace via Traceability \glqq. Dieser wird sowohl aus Sicht des Cloud-Expert wie auch des Compliance-Officers beschrieben
+Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC4 \glqq Definiert technische Massnahmen für Schutzbedarf\glqq, um die Traceability-Struktur zu erzeugen und UC6 \glqq Verifiziert die Compliace via Traceability\glqq für die effektive Nutzung der Traceability-Struktur.
 
 \begin{longtable}{|
   L{3cm}|
@@ -189,67 +189,149 @@ Der zentrale Use-Case für die Traceability-Architecture aus \autoref{fig:tracea
 }
 
     \hline
-    \textbf{UC-Eigenschaft} & \textbf{Wert} \\
+    \multicolumn{2}{|c|}{\textbf{UC4 Definiert technische Massnahmen für Schutzbedarf}} \\
     \hline
     \endfirsthead
 
     \hline
-    \textbf{UC-Eigenschaft} & \textbf{Wert} \\
+    \multicolumn{2}{|c|}{\textbf{UC4 Definiert technische Massnahmen für Schutzbedarf}} \\
     \hline
     \endhead
 
     Name &
-    Verifizieren der Compliance
+    Definiert technischen Massnahmen für Schutzbedarf
     \\
     \hline
 
     Beschreibung / Ziel &
-    Ziel ist es die Cloud-Ressourcen eines Projektes nachvollziehbar gegenüber von regulatorischen Anforderungen aus dem \ac{si001} in Form eines Nachweises prüfen zu können. Auslöser ist die Vorbereitung eines Audits oder der Bedarf generell eine Übersicht über den aktuellen Compliance Status zu erhalten.
+    Der Use-Case beschreibt wie abstrakte Governance Controls in konkrete cloud-spezifische technischen Massnahmen übersetzt werden. Ziel ist es die Traceability-Beziehungen zwischen Controls und technischen Massnahmen zu modellieren, um ein prüfbare Grundlage für eine Compliance-Verifikation zu schaffen
     \\
     \hline
 
     Akteure &
-    Primär der Compliance-Officer und Cloud-Expert. Der Projektverantwortliche ist unterstützend 
+    Cloud-Expert, Compliance-Officer
     \\
     \hline
     
     Vorbedingung &
-    Regulatorische Anforderungen wurden interepretiert und in abstrakte Anforderungen und Contorls überführt. Schutzbedarfskateogir Eine Traceability-Architektur ist etabliert. Cloud-Ressourcen eines Projektes sind vorhanden
+    Regulatoriche Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Schutzbedarfkategorien sind definiert. Traceability-Architektur ist konzeptionell etabliert.
     \\
     \hline
 
     Nachbedingung &
-    Der Compliance-Status eines Projekts inkl aller Ressourcen ist bestimmt basierend auf dem \ac{si001}. Ein Compliance-Artefakt kann mittels des Outputs erzeugt werden.
+    Für einen Schutzbedarf sind technische Massnahmen definiert. Mit den Massnahmen sind eindeutig Controls und Schutzbedarfkategorien verknüpft. Die Traceability-Beziehungen sind explizit modelliert.
     \\
     \hline
 
     Hauptablauf &
     \begin{enumerate}
-        \item Projektverantwortlicher identifiziert den Schutzbedarf der Ressourcen in dem Projekt
-        \item 
+        \item Der Cloud-Expert analysiert den Schutzbedarf und zugehörigen Controls
+        \item Der Cloud-Expert definiert geeignete technischen Massnahmen basierend auf dem Schutzbedarf
+        \item Der Cloud-Experte ordnet die technischen Massnahmen Ressourcentypen auf Cloud-Plattformen zu
+        \item Der Cloud-Experte modelliert die Traceability-Beziehungen. Zuordnung Schutzbedarf zu Control, Control zu technischen Massnahmen und technische Massnahme zu Ressourcentyp
+        \item Der Compliance-Officer prüft situativ ob die definierten Massnahmen den regulatorischen Anforderungen entsprechen
+        \item Der Cloud-Experte gibt die definierten Traceability-Beziehungen frei
+        \item Das System speichert die technischen Massnahmen und die zugehörigen Traceability-Beziehungen als Artefakte
     \end{enumerate}
     \\
     \hline
 
-    \caption{UC5 Verifizieren der Compliance}
-    \label{tab:uc-verify-compliance}
+    Alternative Abläufe &
+
+    \textbf{Keine geeignete technische Massnahme identifizierbar}
+    \begin{enumerate}
+        \item Der Cloud-Experte identifiziert, dass keine geeignete technische Massnamen existiert
+        \item Der Cloud-Experte markiert den Schutzbedarf als nicht vollständig operationalisierbar
+        \item Das System kennzeichnet dies als Risiko / Lücke für die Compliace Verifikation
+        \item Der Compliance-Officer entscheidet über weitere Massnahmen bzw. Handling
+    \end{enumerate}
+
+    \\
+    \hline
+
+    Ergebnis &
+    Das System hält für einen Schutzbedarf mindestens eine technische Massnahmen. Das System verfügbt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahmen. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
+    \\
+    \hline
+
+    \caption{UC4 Definiert technische Massnahmen für Schutzbedarf}
+    \label{tab:uc4-define-technical-measures}
 \end{longtable}
 
 
-\textbf{Use-Case zum Verifizieren der Compliance}
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr\textwidth-3cm-4\tabcolsep-3\arrayrulewidth\relax}|
+}
 
+    \hline
+    \multicolumn{2}{|c|}{\textbf{UC6 Verifiziert die Compliace via Traceability}} \\
+    \hline
+    \endfirsthead
 
-Ziel ist es dass der Compliace Officer sicherstellen kann, dass regulatorische Anforderungen korret umgesetzt sind. Die Ausgangslage ist, dass die Anforderungen für \ac{si001} aktiv sind, die Schutzbedarfkatrogie festegelegt wurde und die Cloud-Ressourcen via Traceability-Bezieheungen verknüpft sind:
+    \hline
+    \multicolumn{2}{|c|}{\textbf{UC6 Verifiziert die Compliace via Traceability}} \\
+    \hline
+    \endhead
 
-\begin{enumerate}
-    \item Der Compliance Officer wählt eine Regulation oder eine Gruppe regulatorischer Anforderungen aus.
-    \item Das System wertet die zugehörigen Traceability-Beziehungen aus: Regulations auf Controls und Contorls auf Cloud-Ressoure eines Projektes
-    \item Der aktuelle Compliance-Status wird aggregiert dargestellt mit compliant, non-compliant
-    \item Der Compliance Officer kann nachvollziehen welce Controls erfüllt/verletzt sind, welche Projekte oder Ressourcen betroffen sind
-    \item Basierend auf dieser Auswertung werden Compliance-Nachweise erstellt und somit die Vorbereitung von Audit unterstützt
-\end{enumerate}
+    Name &
+    Verifiziert die Compliace via Traceability
+    \\
+    \hline
 
-Das Ergebnis ist, dass der Compliance Officer dem Umsetzungsgrade der regulatorischen Anforderungen Prüfen kann.
+    Beschreibung / Ziel &
+    Der Use-Case beschreibt wie der Compliance-Status von Projekten gegenüber regulatorischen Anforderungen mittel Traceability-Architektur überprüft wird. Ziel ist eine nachollziehbare Bestimmung des Compliance-Status.
+    \\
+    \hline
+
+    Akteure &
+    Compliance-Officer, Cloud-Expert, Projektverantwortlicher
+    \\
+    \hline
+    
+    Vorbedingung &
+    Regulatorische Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Projekt hat seinen Schutzbedarf identifiziert. Technischen Massnahmen für den Schutzbedarf eines Projektes sind definiert und modelliert gem \autoref{tab:uc4-define-technical-measures}. Traceability-Architektur ist etabliert
+    \\
+    \hline
+
+    Nachbedingung &
+    Der Compliance-Status ist in Form eines Artefaktes bestimmt. Die Traceability-Beziehungen sind einsehbar. Audit-fähiges Artefakt steht zur Verfügung.
+    \\
+    \hline
+
+    Hauptablauf &
+    \begin{enumerate}
+        \item Der Compliance-Officer wählt ein Projekt zur Überprüfung aus.
+        \item Das System ermittelt die relevanten Traceability-Beziehungen zwischen Regulationen, Conrols, technischen Massnahmen und Cloud-Ressourcen
+        \item Das System werdene den Erfüllungsgerade der zugehörigen Controls aus
+        \item Das System aggregiert die Ergebnisse zu einem Compliance-Status (compliant, non-compliant) aus Sicher der Regulation wie auch der Sicht des Projektes
+        \item Das System stellt den Compliance-Status und Artefakte dar
+        \item Der Compliance-Offier überprüft den Compliance-Status inkl. Trace / Artefakten. Der Cloud-Experte kann hierbei unterstützen
+    \end{enumerate}
+    \\
+    \hline
+
+    Alternative Abläufe &
+
+    \textbf{Unvollständige Traceability}
+    \begin{enumerate}
+        \item Das System identifiziert fehlende Traceability-Beziehungen
+        \item Das System kennzeichnet den Compliance-Status
+        \item Der Compliance-Officer identifiziert die Massnahmen
+    \end{enumerate}
+
+    \\
+    \hline
+
+    Ergebnis &
+    Das System hält für einen Schutzbedarf mindestens eine technische Massnahmen. Das System verfügbt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahmen. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
+    \\
+    \hline
+
+    \caption{UC6 Definiert technische Massnahmen für Schutzbedarf}
+    \label{tab:uc6-verify-compliance}
+\end{longtable}
+
 
 \subsection{Strukturierung der Evaluation der Architektur}
 \label{sec:methodik-evaluation}

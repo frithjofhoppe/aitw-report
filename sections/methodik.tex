@@ -709,7 +709,15 @@ Zusätzliche zu den Trade-Off Dimensionen aus der Literatur werden die folgenden
 \subsection{Proof-of-Concept zur Veranschaulichung}
 \label{sec:poc-methodology}
 
-Die technische Machbarkeit der angedachten Architektur-Varianten aus \fullref{sec:traceability-architecture} soll exemplarische mit einem \ac{poc} gezeigt werden. Die Wahl der Variante orientiert sich hierbei an didaktischen Kriterien und soll nicht die Evaluation der verschiedenen Architketuren aus \fullref{sec:evaluation} vorwegnehmen. Der Fokus liegt somit den grundlegenden Mechanismus der Traceability demonstrieren zu können und die Machbarkeit von zentralen Aspekten zu demonstrieren.
+Die technische Machbarkeit der angedachten Architektur-Varianten aus \fullref{sec:traceability-architecture} soll exemplarische mit einem \ac{poc} gezeigt werden. Es wird folgenden Vorgeehen angewendet.
+
+\begin{enumerate}
+    \item Definieren von didaktischen Kriterien
+    \item Bewerten der Architektur-Varianten mit den Kriterien
+    \item Beschreibung des Umfang des \ac{poc} basierend auf der Architektur-Variante
+\end{enumerate}
+
+Die Wahl der Variante orientiert sich hierbei an didaktischen Kriterien und soll nicht die Evaluation der verschiedenen Architketuren aus \fullref{sec:evaluation} vorwegnehmen. Der Fokus liegt somit den grundlegenden Mechanismus der Traceability demonstrieren zu können und die Machbarkeit von zentralen Aspekten zu demonstrieren.
 
 \begin{longtable}{|
   L{3cm}|
@@ -726,30 +734,69 @@ Die technische Machbarkeit der angedachten Architektur-Varianten aus \fullref{se
     \hline
     \endhead
 
-
     Darstellung von Traceability Relationships &
-    Die Architekturvariante erlaubt eine verständliche Darstellung der Traceability-Beziehungen zwischen den regulatorischen Anforderungen und den den architektonischen Artefakten des Metamodells&
+    Die Architekturvariante erlaubt eine verständliche Darstellung der Traceability-Beziehungen zwischen den regulatorischen Anforderungen und den den architektonischen Artefakten des Metamodells. Die Bewertung erfolgt von 1 als unverständliche Darstellung bis 4 als verständliche Darstellung. 4 gilt als erstrebenswerte Ausprägung&
     Zur Demonstration sollten die Beziehungen klar sichtbar sein. Implizite Beziehungen oder Zusammenhänge machen die Versinnbildlichung abastrakter
     \\
     \hline
 
     Explizite Abbildung von Verantwortlichkeiten &
-    Die Architekturvariante veranschaulicht die Zuordnung von Veranwortlichkeiten in der Architektur und den den beteiligten Rollen wie bspw Akteure aus dem Use-Case Diagramm in \fullref{fig:traceability-use-cases} &
+    Die Architekturvariante veranschaulicht die Zuordnung von Veranwortlichkeiten in der Architektur und den den beteiligten Rollen wie bspw Akteure aus dem Use-Case Diagramm in \fullref{fig:traceability-use-cases}. Die Bewertung erfolgt von 1 als implizite Abbildung bis 4 als explizite Abbildung. 4 gilt als erstrebenswerte Ausprägung&
     Der Use-Case der Traceability basiert auf der Interaktion zwischen den verschiedenen Rollen. Sprich Identifizieren der Regulation, derfinieren der technischen Umsetzung und der Anwendung. Deshalb ist eine Sichbarkeit von dieser Interaktion relevant zum demonstrieren
     \\
     \hline
 
     Reduzierte strukturelle Komplexität &
-    Die Architekturvariante soll eine begrenzte strukturelle Komplexität besitzen und sich auf wesentliche architektonische Konzepte der Traceability-Architectur / Metamodell beschränken &
+    Die Architekturvariante soll eine begrenzte strukturelle Komplexität besitzen und sich auf wesentliche architektonische Konzepte der Traceability-Architectur / Metamodell beschränken. Die Bewertung erfolgt von 1 als hohe Komplexität und 4 als geringe Komplexität. 4 gilt als erstrebenswerte Ausprägung &
     Der \ac{poc} soll zur Beleuchtung der zentralen Konzepte dienen und kein \ac{mvp} sein. Durch eine reduzierte Komplexität ist die Traceablity-Logik einfacher nachzuvollziehen
     \\
     \hline
 
     Alignment mit Traceability Use-Case &
-    Die Architekturvarianten deckt den Traceability Use-Case ab ohne für den Use-Case irrelvante Konzepte/Implementationen einzuführen&
+    Die Architekturvarianten deckt den Traceability Use-Case ab ohne für den Use-Case irrelvante Konzepte/Implementationen einzuführen. Die Bewertung erfolgt von 1 als aufwändige Abbildung bis 4 als pragmatische Abbildung. 4 gilt als erstrebenswerte Ausprägung&
     Der \ac{poc} soll durch die Fokussierung auf den Use-Case seinen Fokus behalten und somit nicht ausufern
     \\
     \hline
     \caption{Didaktischen Kriterien für Auswahl der Variante der Traceabilit-Architecture für den \ac{poc}}
     \label{tab:didactic-poc-criteria}
+\end{longtable}
+
+Basierend auf den Kriterien und der Bewertungskala wird die Bewertung der verschiedenen Architekturvarianten genommen. Die Skalen sind jeweils so definiert dass 4 als erstrebenswerte Ausprägung gilt, was jedoch nicht bedeutet, dass diese erreichbar ist.
+
+\begin{longtable}{|
+  L{3cm}|
+  L{2.5cm}|
+  p{\dimexpr\textwidth-5.5cm-6\tabcolsep-4\arrayrulewidth\relax}|
+}
+    \hline
+    \multicolumn{3}{|c|}{Bewertung Darstellung von Traceability Relationships} \\
+    \hline
+    \textbf{Kriterium} & \textbf{Bewertung} & \textbf{Begründng} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{3}{|c|}{Control-centric bundling} \\
+    \hline
+    \textbf{Kriterium} & \textbf{Bewertung} & \textbf{Begründng} \\
+    \hline
+    \endhead
+
+    Control-centric & 4 & Ideale Darstellung wegen dem Grundgedanken der Architektur-Variante die Anforderungen aus den Regulations nach Controls zu gruppieren
+    \\
+    \hline
+
+    Component-centric & 3 & Beziehungen sind darstellbar, aber leitet sich indirekt über die Strktur nach \ac{lz} Components ab. Sprich man muss erst die Components verstehen und dann ergibt sich die Traceability
+    \\
+    \hline
+
+    Category-centric & 2 & Beziehungen sind indirekt über die Kategorien und wiederum die \ac{lz} Components absehbar. Die schlechtere Sichtbarkeit ergibt sich direkt aus dem Design-Gedanken ein Bundling via \ac{lz} Kategorien zu machen. Dadurch dass der Fokus auf dem Labeling nach Kategorien liegt ist es jedoch aus Sicht Projektverantwortlichen einfach nachzuvollziehen.
+    \\
+    \hline
+
+    Provider-native & 1 & Die Nutzung von provider-nativen Tools ermöglich zwar theoretischen gesehen eine Darstellung der Traceability, jedoch nur wenn man die technischen Implementationen der Plattformen einbezieht. Dadurch ergibt sich eine hohe Implizität der Abbildung der Traceability-Beziehungen
+    \\
+    \hline
+    \caption{Bewertung Kriterium Darstellung von Traceability Relationships aus \fullref{tab:didactic-poc-criteria}}
+    \label{tab:evaluating-didactic-variant1}
 \end{longtable}

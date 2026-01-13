@@ -798,5 +798,83 @@ Basierend auf den Kriterien und der Bewertungskala wird die Bewertung der versch
     \\
     \hline
     \caption{Bewertung Kriterium Darstellung von Traceability Relationships aus \fullref{tab:didactic-poc-criteria}}
-    \label{tab:evaluating-didactic-variant1}
+    \label{tab:evaluating-didactic-criteria1}
+\end{longtable}
+
+
+\begin{longtable}{|
+  L{3cm}|
+  L{2.5cm}|
+  p{\dimexpr\textwidth-5.5cm-6\tabcolsep-4\arrayrulewidth\relax}|
+}
+    \hline
+    \multicolumn{3}{|c|}{Bewertung Explizite Abbildung von Verantwortlichkeiten} \\
+    \hline
+    \textbf{Kriterium} & \textbf{Bewertung} & \textbf{Begründng} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{3}{|c|}{Bewertung Explizite Abbildung von Verantwortlichkeiten} \\
+    \hline
+    \textbf{Kriterium} & \textbf{Bewertung} & \textbf{Begründng} \\
+    \hline
+    \endhead
+
+    Control-centric & 4 & Verantwortlichkeiten sind direkt an Akteure gebunden. Compliance-Officer mit Definition von Controls und Cloud-Expert mit technischer Umsetzung basierend auf den Controls
+    \\
+    \hline
+
+    Component-centric & 3 & Verantwortlichkeiten werden über die technischen \ac{lz} Components geregelt. Die Verantwortung für die Components ist jedoch nicht eindeutig
+    \\
+    \hline
+
+    Category-centric & 2 & Veranwortung ist abstrahiert über die \ac{lz} Kategorien. Die Akteure verschwinden somit hinter der Kategorie / Zuordnung ist nicht direkt ersichtlich
+    \\
+    \hline
+
+    Provider-native & 1 & Durch Nutzung von Plattformmechanismen ist die Rolle des Compliance-Officers in der Architektur quasi nicht mehr sichtbar. Bzw die Wahrnehmung ist dass eine Verschiebung hin zum Cloud-Expert stattfindet.
+    \\
+    \hline
+    \caption{Bewertung Kriterium Explizite Abbildungen von Verantwortlichkeiten aus \fullref{tab:didactic-poc-criteria}}
+    \label{tab:evaluating-didactic-criteria2}
+\end{longtable}
+
+
+\begin{longtable}{|
+  L{3cm}|
+  L{2.5cm}|
+  p{\dimexpr\textwidth-5.5cm-6\tabcolsep-4\arrayrulewidth\relax}|
+}
+    \hline
+    \multicolumn{3}{|c|}{Bewertung Reduzierte strukturelle Komplexität} \\
+    \hline
+    \textbf{Kriterium} & \textbf{Bewertung} & \textbf{Begründng} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \multicolumn{3}{|c|}{Bewertung Reduzierte strukturelle Komplexität} \\
+    \hline
+    \textbf{Kriterium} & \textbf{Bewertung} & \textbf{Begründng} \\
+    \hline
+    \endhead
+
+    Control-centric & 3 & Architektur hat klares Ordnungsprinzip mit den Controls. Gleichzeitig ist dadurch jedoch die Anzahl an Traceability-Beziehungen höher
+    \\
+    \hline
+
+    Component-centric & 3 & Struktur ist technische intuitiv wegen dem Fokus auf die \ac{lz} Components, womit aber die Traceability-Beziehungen auch über die Componentsn laufen. Für eine Verständnis der Traceability muss somit der die technische Beziehung verstanden werden.
+    \\
+    \hline
+
+    Category-centric & 4 & Die \ac{lz} Kategorien bündeln viele Details, wodurch die Architektur übersichtlich wirkt. Diese Übersichtlichkeit wird jedoch durch Abstraktion im Hintergrund gewonnen
+    \\
+    \hline
+
+    Provider-native & 2 & Strukturelle Komplexität der provider-spezifischen Services erwschären ein einheitliches Ordnungsprinzip zu etablieren. Somit schwerer nachzuvollziehen
+    \\
+    \hline
+    \caption{Bewertung Kriterium Reduzierte strukturelle Komplexität aus \fullref{tab:didactic-poc-criteria}}
+    \label{tab:evaluating-didactic-criteria3}
 \end{longtable}

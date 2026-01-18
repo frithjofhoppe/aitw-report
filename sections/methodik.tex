@@ -944,3 +944,128 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
     \caption{Komponentnen-Diagram für den \ac{poc}}
     \label{fig:methodology-poc-setup}
 \end{figure}
+
+
+% KOMPLETTES DIAGRAMM
+% @startuml
+% participant "LZ Provisioning Service" as lz
+% participant "IaC Engine" as cloud
+% actor "Projektverantwortlicher" as po
+% participant "Project Service" as project
+% participant "Traceability Service" as trace
+% participant "Evidence Service" as evidence
+% actor "Compliance Officer" as comp
+% participant "Governance Config Service" as gov
+% database "Governance Relationsship" as govdb
+% database "LZ Component IaC" as compiac
+% actor "Developer" as dev
+% database "Project Collection" as projectdb
+
+% == Static setup (Scope von UC 04) ==
+
+% dev --> govdb : Configure Traceability Relationsship
+% dev --> projectdb: Configure sample project
+% dev --> compiac : Configure IaC fore LZ Components (AWS Control Tower, Mgmt Group etc)
+
+
+% == Deploy new project (Scope von UC 06) ==
+% po --> project : Declare choice for LZ Component category
+% project --> trace : Get LZ Governance Assessment
+% activate trace
+% trace --> govdb: Check Relationships for Component category \n based on governance requirements
+% return LZ Governance Assessment
+% project --> lz: Create LZ based on Assessment
+% lz --> cloud: Create subscription with blueprint in Mgmt Group / OU etc
+
+% == Verify compliance (Scope von UC 06) ==
+
+% trace --> project: Get LZ accounts ids of project
+% trace --> govdb:  Get assessment for accounts of projects
+% trace --> cloud: Check compliance of account inside mgmt group /ao
+% trace --> evidence: Send evaluation result
+% comp --> evidence: Get evaluation result
+
+
+% @enduml
+
+
+% STATIC SETUP
+% @startuml
+% database "LZ Component IaC" as compiac
+% actor "Developer" as dev
+% database "Project Collection" as projectdb
+
+% == Static setup (Scope von UC 04) ==
+
+% dev --> govdb : Configure Traceability Relationsship
+% dev --> projectdb: Configure sample project
+% dev --> compiac : Configure IaC fore LZ Components (AWS Control Tower, Mgmt Group etc)
+
+% @enduml
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_static_setup.png}
+    \caption{Sequenz-Diagram für statische Setup des \ac{poc}}
+    \label{fig:methodology-poc-sequence-static-setup}
+\end{figure}
+
+
+% DEPLOY NEW PROJECT
+% @startuml
+% participant "LZ Provisioning Service" as lz
+% participant "IaC Engine" as cloud
+% actor "Projektverantwortlicher" as po
+% participant "Project Service" as project
+% participant "Traceability Service" as trace
+% database "Governance Relationsship" as govdb
+
+
+% == Deploy new project (Scope von UC 06) ==
+% po --> project : Declare choice for LZ Component category
+% project --> trace : Get LZ Governance Assessment
+% activate trace
+% trace --> govdb: Check Relationships for Component category \n based on governance requirements
+% return LZ Governance Assessment
+% project --> lz: Create LZ based on Assessment
+% lz --> cloud: Create subscription with blueprint in Mgmt Group / OU etc
+
+
+% @enduml
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_project_setup.png}
+    \caption{Sequenz-Diagram für Projektsetup des \ac{poc}}
+    \label{fig:methodology-poc-sequence-project-setup}
+\end{figure}
+
+
+
+
+% VERIFY COMPLIANCE
+% @startuml
+
+% participant "IaC Engine" as cloud
+% participant "Project Service" as project
+% participant "Traceability Service" as trace
+% participant "Evidence Service" as evidence
+% actor "Compliance Officer" as comp
+% actor "Projektverantwortlicher" as po
+% database "Governance Relationsship" as govdb
+
+
+% == Verify compliance (Scope von UC 06) ==
+
+% trace --> project: Get LZ accounts ids of project
+% trace --> govdb:  Get assessment for accounts of projects
+% trace --> cloud: Check compliance of account inside mgmt group /ao
+% trace --> evidence: Send evaluation result
+% comp --> evidence: Get evaluation result
+% po --> evidence: Sees compliance for project
+
+% @enduml
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_verify-compliance.png}
+    \caption{Sequenz-Diagram für Projekt Verificationn des \ac{poc}}
+    \label{fig:methodology-poc-sequence-verification}
+\end{figure}

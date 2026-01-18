@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0" pages="5">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.0 Chrome/140.0.7339.249 Electron/38.7.2 Safari/537.36" version="29.3.0" pages="6">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
     <mxGraphModel dx="8725" dy="7101" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -3550,7 +3550,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CsHJX8_E7Wl7F5OBhqNj" name="PoC">
-    <mxGraphModel dx="1623" dy="1255" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="3101" dy="1264" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3786,6 +3786,17 @@
         </mxCell>
         <mxCell id="XqqAlyDVmIzF_dEIu_bf-75" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="LZ Governance&amp;nbsp; Tier&lt;div&gt;API&lt;/div&gt;" vertex="1">
           <mxGeometry height="25" width="25" x="889" y="734" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="XtoMlfe1yHAEe3Qm4XES" name="SequenceDiagramm">
+    <mxGraphModel dx="2946" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9OkFmGZK0ekj5LooJ0vI-1" parent="1" style="text;whiteSpace=wrap;" value="@startuml&#xa;participant &quot;LZ Provisioning Service&quot; as lz&#xa;participant &quot;IaC Engine&quot; as cloud&#xa;actor &quot;Projektverantwortlicher&quot; as po&#xa;participant &quot;Project Service&quot; as project&#xa;participant &quot;Traceability Service&quot; as trace&#xa;participant &quot;Evidence Service&quot; as evidence&#xa;actor &quot;Compliance Officer&quot; as comp&#xa;participant &quot;Governance Config Service&quot; as gov&#xa;database &quot;Governance Relationsship&quot; as govdb&#xa;database &quot;LZ Component IaC&quot; as compiac&#xa;actor &quot;Developer&quot; as dev&#xa;database &quot;Project Collection&quot; as projectdb&#xa;&#xa;&#xa;== Static setup (Scope von UC 04) ==&#xa;&#xa;&#xa;dev --&gt; govdb : Configure Traceability Relationsship&#xa;dev --&gt; projectdb: Configure sample project&#xa;dev --&gt; compiac : Configure IaC fore LZ Components (AWS Control Tower, Mgmt Group etc)&#xa;&#xa;&#xa;&#xa;&#xa;== Deploy new project (Scope von UC 06) ==&#xa;po --&gt; project : Declare choice for LZ Component category&#xa;project --&gt; trace : Get LZ Governance Assessment&#xa;activate trace&#xa;trace --&gt; govdb: Check Relationships for Component category \n based on governance requirements&#xa;return LZ Governance Assessment&#xa;project --&gt; lz: Create LZ based on Assessment&#xa;lz --&gt; cloud: Create subscription with blueprint in Mgmt Group / OU etc&#xa;&#xa;&#xa;== Verify compliance (Scope von UC 06) ==&#xa;&#xa;&#xa;trace --&gt; project: Get LZ accounts ids of project&#xa;trace --&gt; govdb:  Get assessment for accounts of projects&#xa;trace --&gt; cloud: Check compliance of account inside mgmt group /ao&#xa;trace --&gt; evidence: Send evaluation result&#xa;comp --&gt; evidence: Get evaluation result&#xa;&#xa;&#xa;&#xa;&#xa;@enduml" vertex="1">
+          <mxGeometry height="730" width="560" x="120" y="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

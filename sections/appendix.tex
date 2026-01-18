@@ -1,8 +1,118 @@
 \begin{appendix}
 
 \section{Mock-Up zur Veranschaulichung des PoCs}
-\hl{Prompt welcher zur Generierung der base44 Seite verwendet wurde}
-\hl{Screenshots der Anwendung reinpacken}
+\label{appendix:ui-mockup}
+Zur Generierung des Base44 Mock-Up wurde folgender Prompt verwendet:
+
+Design a government cloud governance and compliance portal UI that supports traceability between regulations, governance controls, and cloud resources across multiple cloud platforms.
+
+The portal is used by two main actors:
+- Compliance Officers
+- Cloud Experts (Cloud Center of Excellence)
+
+The goal of the portal is to show which regulations are applied to which projects, how they are technically enforced via governance controls and cloud policies, and the current compliance status, based on tags applied to cloud resources.
+
+The UI should include the following features:
+
+1. Global Governance Dashboard
+- Overview of all regulations, projects, and cloud platforms
+- High-level compliance status indicators (compliant, at risk, non-compliant)
+- Filters for cloud platform (AWS, Azure), environment (dev, test, prod), and project
+
+2. Regulation-Centric View
+- Select a regulation to see:
+  - Regulation description
+  - Mapped governance controls
+  - Affected projects
+  - Compliance status per project and per cloud platform
+- Visual status indicators (green / yellow / red)
+
+3. Project-Centric View
+- Select a project to see:
+  - Project metadata (name, owner, environment)
+  - Applied regulations
+  - Associated governance controls
+  - Related cloud resources
+- Compliance status per regulation
+
+4. Multi-Cloud Platform View
+- Separate views or tabs for AWS and Azure
+- Show governed cloud resources per platform
+- Display applied tags (e.g. regulation ID, data classification, environment)
+- Show enforcement mechanism (policy, blueprint, landing zone control)
+
+5. Tag-Based Traceability
+- Visualize traceability from:
+  Regulation → Governance Control → Cloud Policy → Cloud Resource
+- Use tags on cloud resources as the technical basis for traceability
+- Clearly show how compliance status is derived from tags and policy evaluations
+
+6. Compliance Status and Evidence
+- Show current compliance state and last evaluation timestamp
+- Indicate evidence source (policy evaluation, tag scan)
+- Designed to support audit and reporting use cases
+
+Visual style:
+- Clean, professional, government-grade enterprise UI
+- Focus on clarity, traceability, and transparency
+- Table-based layouts, filters, status badges
+- Minimal animations, high readability
+
+Generate a multi-screen UI mock-up including dashboard, regulation detail view, project detail view, and cloud platform views, emphasizing governance, compliance, and traceability.
+
+Der Output ist der folgende
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_dashboards.png}
+    \caption{Ansicht Dashboard}
+    \label{fig:prototype-dashboard}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_projects.png}
+    \caption{Ansicht Projekte}
+    \label{fig:prototype-projects}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_regulations.png}
+    \caption{Ansicht Regulations}
+    \label{fig:prototype-regulations}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_project_healthcare.png}
+    \caption{Detailansicht des Beispielprojekts Healthcare}
+    \label{fig:prototype-project-healthcare-view}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_project_healthcare_view_controls.png}
+    \caption{Detailansicht der angewendeten Controls im Beispielprojekt Healthcare}
+    \label{fig:prototype-project-healthcare-view-controls}
+\end{figure}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_project_healthcare_view_resources.png}
+    \caption{Detailansicht der beinhalteten Resources im Beispielprojekt Healthcare}
+    \label{fig:prototype-project-healthcare-view-resources}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ui-prototyp_project_healthcare_view_evidence.png}
+    \caption{Detailansicht der beinhalteten Evidences im Beispielprojekt Healthcare}
+    \label{fig:prototype-project-healthcare-view-evidence}
+\end{figure}
+
 
 \section{Report zu Landing Zone Literaturrecherche}
 \label{appendix:elicit-report-landingzone}

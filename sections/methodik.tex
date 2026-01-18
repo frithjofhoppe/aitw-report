@@ -328,7 +328,7 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \\
     \hline
 
-    \caption{UC6 Definiert technische Massnahmen für Schutzbedarf}
+    \caption[UC6 Definiert technische Massnahmen für Schutzbedarf]{UC6 Definiert technische Massnahmen für Schutzbedarf}
     \label{tab:uc6-verify-compliance}
 \end{longtable}
 
@@ -919,5 +919,26 @@ Basierend auf den Kriterien und der Bewertungskala wird die Bewertung der versch
 
 Basierend auf der Evaluation der Kriterien wird sich für der \ac{poc} für die Variante der component-centric Architektur entschieden. Eine weitere Überlegung zu den bereits evalurierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-How Strukturierung im\ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbiildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
 
-\hl{Beschreibung der Traceablity-Architektur funktionsweise}
+Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototype generiert. Dieser Prototype (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akeute aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptalbauf des Use-Cases sind hierbei: Die Ausahl des Projektes durch den Compliance-Officers wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl Trace wie in \autoref{fig:methodology-project-healthcare-view-controls}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphics/ui-prototyp_project_healthcare.png}
+    \caption{Detailansicht des Beispielprojekts Healthcare}
+    \label{fig:methodology-project-healthcare-view}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphics/ui-prototyp_project_healthcare_view_controls.png}
+    \caption{Detailansicht der angewendeten Controls im Beispielprojekt Healthcare}
+    \label{fig:methodology-project-healthcare-view-controls}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{graphics/ui-prototyp_project_healthcare_view_evidence.png}
+    \caption{Detailansicht der beinhalteten Evidence im Beispielprojekt Healthcare}
+    \label{fig:methodology-project-healthcare-view-evidence}
+\end{figure}
 

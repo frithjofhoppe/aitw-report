@@ -984,20 +984,19 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 % trace --> cloud: Check compliance of account inside mgmt group /ao
 % trace --> evidence: Send evaluation result
 % comp --> evidence: Get evaluation result
-
-
 % @enduml
-
 
 % STATIC SETUP
 % @startuml
+
 % database "LZ Component IaC" as compiac
 % actor "Developer" as dev
 % database "Project Collection" as projectdb
+% database "Governance Configuration\nService" as config
 
 % == Static setup (Scope von UC 04) ==
 
-% dev --> govdb : Configure Traceability Relationsship
+% dev --> config : Configure Traceability Relationsship
 % dev --> projectdb: Configure sample project
 % dev --> compiac : Configure IaC fore LZ Components (AWS Control Tower, Mgmt Group etc)
 
@@ -1012,25 +1011,26 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 
 % DEPLOY NEW PROJECT
 % @startuml
-% participant "LZ Provisioning Service" as lz
+
 % participant "IaC Engine" as cloud
+% participant "LZ Provisioning Service" as lz
 % actor "Projektverantwortlicher" as po
 % participant "Project Service" as project
 % participant "Traceability Service" as trace
-% database "Governance Relationsship" as govdb
-
+% database "Governance Decision\nStore" as decision
+% database "Governance Configuration\nService" as config
 
 % == Deploy new project (Scope von UC 06) ==
 % po --> project : Declare choice for LZ Component category
 % project --> trace : Get LZ Governance Assessment
 % activate trace
-% trace --> govdb: Check Relationships for Component category \n based on governance requirements
+% trace --> config: Check Relationships for Component/Governance category \n based on governance requirements
+% trace --> decision: Store Component/Governance decision
 % return LZ Governance Assessment
 % project --> lz: Create LZ based on Assessment
 % lz --> cloud: Create subscription with blueprint in Mgmt Group / OU etc
-
-
 % @enduml
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_project_setup.png}
@@ -1049,18 +1049,17 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 % participant "Traceability Service" as trace
 % participant "Evidence Service" as evidence
 % actor "Compliance Officer" as comp
-% actor "Projektverantwortlicher" as po
-% database "Governance Relationsship" as govdb
-
+% database "Governance Decision\nStore" as decision
+% database "Governance Configuration\nService" as config
 
 % == Verify compliance (Scope von UC 06) ==
 
 % trace --> project: Get LZ accounts ids of project
-% trace --> govdb:  Get assessment for accounts of projects
+% trace --> decision:  Get category/governance\ndecision for accounts of projects
+% trace --> config: Get relationship from decision
 % trace --> cloud: Check compliance of account inside mgmt group /ao
 % trace --> evidence: Send evaluation result
 % comp --> evidence: Get evaluation result
-% po --> evidence: Sees compliance for project
 
 % @enduml
 \begin{figure}[H]

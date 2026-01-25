@@ -3550,10 +3550,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CsHJX8_E7Wl7F5OBhqNj" name="PoC">
-    <mxGraphModel dx="986" dy="1135" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="1256" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="t15DWVN361YdNmNhdzjt-23" parent="1" style="fontStyle=0;dashed=1;html=1;whiteSpace=wrap;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="490" width="800" x="430" y="1375" as="geometry" />
+        </mxCell>
         <mxCell id="XqqAlyDVmIzF_dEIu_bf-77" edge="1" parent="1" source="XqqAlyDVmIzF_dEIu_bf-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="XqqAlyDVmIzF_dEIu_bf-75">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -3793,6 +3796,87 @@
         <mxCell id="yvRR81dS3X-XkER0L93i-1" parent="1" style="shape=datastore;whiteSpace=wrap;html=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;fillColor=#d5e8d4;strokeColor=#82b366;" value="Governance&lt;div&gt;Decision Store&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="60" x="355" y="870" as="geometry" />
         </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Storage" vertex="1">
+          <mxGeometry height="60" width="120" x="455" y="1450" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-10" edge="1" parent="1" source="t15DWVN361YdNmNhdzjt-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="t15DWVN361YdNmNhdzjt-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="I2.1 - Vertraulichkeit und Integrität" vertex="1">
+          <mxGeometry height="60" width="120" x="179" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-11" edge="1" parent="1" source="t15DWVN361YdNmNhdzjt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t15DWVN361YdNmNhdzjt-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="I3.2 - Backup und Wiederherstellbarkeit" vertex="1">
+          <mxGeometry height="60" width="120" x="179" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Network" vertex="1">
+          <mxGeometry height="60" width="120" x="455" y="1610" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-9" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Compute" vertex="1">
+          <mxGeometry height="60" width="120" x="455" y="1770" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-13" edge="1" parent="1" source="t15DWVN361YdNmNhdzjt-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t15DWVN361YdNmNhdzjt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="S1 Zonenzugehörigkeit" vertex="1">
+          <mxGeometry height="60" width="120" x="179" y="1590" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-15" edge="1" parent="1" source="t15DWVN361YdNmNhdzjt-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t15DWVN361YdNmNhdzjt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Z1.2 Kommunikation gemäss Zonenpolicy" vertex="1">
+          <mxGeometry height="60" width="120" x="179" y="1683.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-17" edge="1" parent="1" source="t15DWVN361YdNmNhdzjt-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t15DWVN361YdNmNhdzjt-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="T2.1 Sichere Konfiguration &amp;amp; Logging" vertex="1">
+          <mxGeometry height="60" width="120" x="179" y="1770" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-18" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Isolierung, Segmentierung etc," vertex="1">
+          <mxGeometry height="60" width="120" x="-11" y="1684" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-19" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Zonen müssen definiert sein" vertex="1">
+          <mxGeometry height="60" width="120" x="-11" y="1590" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-20" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Verschlüsselung und Key Mmgmt / Key Valut" vertex="1">
+          <mxGeometry height="60" width="120" x="-11" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-21" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="Best practise gegeben, Gehärtet, Logging etc" vertex="1">
+          <mxGeometry height="60" width="120" x="-11" y="1770" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-27" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="standard" vertex="1">
+          <mxGeometry height="30" width="60" x="700" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-28" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="high" vertex="1">
+          <mxGeometry height="30" width="60" x="1011.5" y="1400" as="geometry" />
+        </mxCell>
+        <mxCell id="t15DWVN361YdNmNhdzjt-32" parent="1" style="text;whiteSpace=wrap;" value="storage.standard → [&#xa;  AZURE: Storage encryption enabled,&#xa;  AZURE: SQL TDE enabled&#xa;]" vertex="1">
+          <mxGeometry height="80" width="240" x="614" y="1440" as="geometry" />
+        </mxCell>
+        <UserObject label="storage.high → [&#xa;  AZURE: Storage encryption enabled,&#xa;  AZURE: SQL TDE enabled,&#xa;  AZURE: SQL long-term backup retention,&#xa;  AZURE: Storage soft delete enabled,&#xa;  AZURE: Storage network access restricted&#xa;]" link="storage.high → [&#xa;  AZURE: Storage encryption enabled,&#xa;  AZURE: SQL TDE enabled,&#xa;  AZURE: SQL long-term backup retention,&#xa;  AZURE: Storage soft delete enabled,&#xa;  AZURE: Storage network access restricted&#xa;]" id="t15DWVN361YdNmNhdzjt-33">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="120" width="270" x="906.5" y="1430" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="t15DWVN361YdNmNhdzjt-34" parent="1" style="text;whiteSpace=wrap;" value="network.standard → [&#xa;  AZURE: No public IP on NICs,&#xa;  AZURE: NSG required on subnets&#xa;]" vertex="1">
+          <mxGeometry height="80" width="220" x="614" y="1600" as="geometry" />
+        </mxCell>
+        <UserObject label="network.high → [&#xa;  AZURE: No public IP on NICs,&#xa;  AZURE: NSG required,&#xa;  AZURE: Restrict inbound internet traffic,&#xa;  AZURE: Azure Firewall required&#xa;]" link="network.high → [&#xa;  AZURE: No public IP on NICs,&#xa;  AZURE: NSG required,&#xa;  AZURE: Restrict inbound internet traffic,&#xa;  AZURE: Azure Firewall required&#xa;]" id="t15DWVN361YdNmNhdzjt-35">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="110" width="250" x="906.5" y="1585" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="t15DWVN361YdNmNhdzjt-36" parent="1" style="text;whiteSpace=wrap;" value="compute.standard → [&#xa;  AZURE: ACR HTTPS only,&#xa;  AZURE: AKS RBAC enabled,&#xa;  AZURE: Diagnostic logs enabled&#xa;]" vertex="1">
+          <mxGeometry height="100" width="210" x="605" y="1754" as="geometry" />
+        </mxCell>
+        <UserObject label="compute.high → [&#xa;  AZURE: Defender for Kubernetes,&#xa;  AZURE: No privileged containers,&#xa;  AZURE: Approved images only,&#xa;  AZURE: Mandatory diagnostic logging&#xa;]" link="compute.high → [&#xa;  AZURE: Defender for Kubernetes,&#xa;  AZURE: No privileged containers,&#xa;  AZURE: Approved images only,&#xa;  AZURE: Mandatory diagnostic logging&#xa;]" id="t15DWVN361YdNmNhdzjt-37">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="110" width="240" x="911.5" y="1743.5" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>

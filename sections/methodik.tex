@@ -98,7 +98,7 @@ In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt w
 
 Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} wird \ac{lz} als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Befürfnissen gruppiert werden soll, um passenden Operation- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
 
-Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens ''Public Clouds Bund'' der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
+Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
 
 Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg analysiert.
 
@@ -178,7 +178,7 @@ Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit 
     \label{fig:traceability-use-cases}
 \end{figure}
 
-Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC4 \glqq Definiert technische Massnahmen für Schutzbedarf\glqq, um die Traceability-Struktur zu erzeugen und UC6 \glqq Verifiziert die Compliace via Traceability\glqq für die effektive Nutzung der Traceability-Struktur.
+Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC4 \glqq Definiert technische Massnahmen für Schutzbedarf\grqq, um die Traceability-Struktur zu erzeugen und UC6 \glqq Verifiziert die compliance via Traceability\grqq für die effektive Nutzung der Traceability-Struktur.
 
 \begin{longtable}{|
   L{3cm}|
@@ -201,32 +201,32 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \hline
 
     Beschreibung / Ziel &
-    Der Use-Case beschreibt wie abstrakte Governance Controls in konkrete cloud-spezifische technischen Massnahmen übersetzt werden. Ziel ist es die Traceability-Beziehungen zwischen Controls und technischen Massnahmen zu modellieren, um ein prüfbare Grundlage für eine Compliance-Verifikation zu schaffen
+    Der Use-Case beschreibt wie abstrakte Governance Controls in konkrete cloud-spezifische technische Massnahmen übersetzt werden. Ziel ist es die Traceability-Beziehungen zwischen Controls und technischen Massnahmen zu modellieren, um eine prüfbare Grundlage für eine Compliance-Verifikation zu schaffen
     \\
     \hline
 
     Akteure &
-    Cloud-Expert, Compliance-Officer
+    Cloud-Experte, Compliance-Officer
     \\
     \hline
     
     Vorbedingung &
-    Regulatoriche Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Schutzbedarfkategorien sind definiert. Traceability-Architektur ist konzeptionell etabliert.
+    Regulatorische Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Schutzbedarfskategorien sind definiert. Die Traceability-Architektur ist konzeptionell etabliert.
     \\
     \hline
 
     Nachbedingung &
-    Für einen Schutzbedarf sind technische Massnahmen definiert. Mit den Massnahmen sind eindeutig Controls und Schutzbedarfkategorien verknüpft. Die Traceability-Beziehungen sind explizit modelliert.
+    Für einen Schutzbedarf sind technische Massnahmen definiert. Mit den Massnahmen sind eindeutig Controls und Schutzbedarfskategorien verknüpft. Die Traceability-Beziehungen sind explizit modelliert.
     \\
     \hline
 
     Hauptablauf &
     \begin{enumerate}
-        \item Der Cloud-Expert analysiert den Schutzbedarf und zugehörigen Controls
-        \item Der Cloud-Expert definiert geeignete technischen Massnahmen basierend auf dem Schutzbedarf
+        \item Der Cloud-Experte analysiert den Schutzbedarf und zugehörige Controls
+        \item Der Cloud-Experte definiert geeignete technische Massnahmen basierend auf dem Schutzbedarf
         \item Der Cloud-Experte ordnet die technischen Massnahmen Ressourcentypen auf Cloud-Plattformen zu
         \item Der Cloud-Experte modelliert die Traceability-Beziehungen. Zuordnung Schutzbedarf zu Control, Control zu technischen Massnahmen und technische Massnahme zu Ressourcentyp
-        \item Der Compliance-Officer prüft situativ ob die definierten Massnahmen den regulatorischen Anforderungen entsprechen
+        \item Der Compliance-Officer prüft situativ, ob die definierten Massnahmen den regulatorischen Anforderungen entsprechen
         \item Der Cloud-Experte gibt die definierten Traceability-Beziehungen frei
         \item Das System speichert die technischen Massnahmen und die zugehörigen Traceability-Beziehungen als Artefakte
     \end{enumerate}
@@ -237,17 +237,17 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
 
     \textbf{Keine geeignete technische Massnahme identifizierbar}
     \begin{enumerate}
-        \item Der Cloud-Experte identifiziert, dass keine geeignete technische Massnamen existiert
+        \item Der Cloud-Experte identifiziert, dass keine geeignete technische Massnahme existiert
         \item Der Cloud-Experte markiert den Schutzbedarf als nicht vollständig operationalisierbar
-        \item Das System kennzeichnet dies als Risiko / Lücke für die Compliace Verifikation
-        \item Der Compliance-Officer entscheidet über weitere Massnahmen bzw. Handling
+        \item Das System kennzeichnet dies als Risiko / Lücke für die Compliance Verifikation
+        \item Der Compliance-Officer entscheidet über weitere Massnahmen bzw. Vorgehen
     \end{enumerate}
 
     \\
     \hline
 
     Ergebnis &
-    Das System hält für einen Schutzbedarf mindestens eine technische Massnahmen. Das System verfügbt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahmen. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
+    Das System hält für einen Schutzbedarf mindestens eine technische Massnahme. Das System verfügt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahme. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
     \\
     \hline
 
@@ -262,32 +262,32 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
 }
 
     \hline
-    \multicolumn{2}{|c|}{\textbf{UC6 Verifiziert die Compliace via Traceability}} \\
+    \multicolumn{2}{|c|}{\textbf{UC6 Verifiziert die Compliance via Traceability}} \\
     \hline
     \endfirsthead
 
     \hline
-    \multicolumn{2}{|c|}{\textbf{UC6 Verifiziert die Compliace via Traceability}} \\
+    \multicolumn{2}{|c|}{\textbf{UC6 Verifiziert die Compliance via Traceability}} \\
     \hline
     \endhead
 
     Name &
-    Verifiziert die Compliace via Traceability
+    Verifiziert die compliance via Traceability
     \\
     \hline
 
     Beschreibung / Ziel &
-    Der Use-Case beschreibt wie der Compliance-Status von Projekten gegenüber regulatorischen Anforderungen mittel Traceability-Architektur überprüft wird. Ziel ist eine nachollziehbare Bestimmung des Compliance-Status.
+    Der Use-Case beschreibt wie der Compliance-Status von Projekten gegenüber regulatorischen Anforderungen mittels Traceability-Architektur überprüft wird. Ziel ist eine nachvollziehbare Bestimmung des Compliance-Status.
     \\
     \hline
 
     Akteure &
-    Compliance-Officer, Cloud-Expert, Projektverantwortlicher
+    Compliance-Officer, Cloud-Experte, Projektverantwortlicher
     \\
     \hline
     
     Vorbedingung &
-    Regulatorische Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Projekt hat seinen Schutzbedarf identifiziert. Technischen Massnahmen für den Schutzbedarf eines Projektes sind definiert und modelliert gem \autoref{tab:uc4-define-technical-measures}. Traceability-Architektur ist etabliert
+    Regulatorische Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Projekt hat seinen Schutzbedarf identifiziert. Technische Massnahmen für den Schutzbedarf eines Projektes sind definiert und modelliert gemäss \autoref{tab:uc4-define-technical-measures} . Traceability-Architektur ist etabliert
     \\
     \hline
 
@@ -299,11 +299,11 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     Hauptablauf &
     \begin{enumerate}
         \item Der Compliance-Officer wählt ein Projekt zur Überprüfung aus.
-        \item Das System ermittelt die relevanten Traceability-Beziehungen zwischen Regulationen, Conrols, technischen Massnahmen und Cloud-Ressourcen
-        \item Das System werdene den Erfüllungsgerade der zugehörigen Controls aus
-        \item Das System aggregiert die Ergebnisse zu einem Compliance-Status (compliant, non-compliant) aus Sicher der Regulation wie auch der Sicht des Projektes
+        \item Das System ermittelt die relevanten Traceability-Beziehungen zwischen Regulationen, Controls, technischen Massnahmen und Cloud-Ressourcen
+        \item Das System wertet den Erfüllungsgrad der zugehörigen Controls aus
+        \item Das System aggregiert die Ergebnisse zu einem Compliance-Status (compliant, non-compliant) aus Sicht der Regulation wie auch der Sicht des Projektes
         \item Das System stellt den Compliance-Status und Artefakte dar
-        \item Der Compliance-Offier überprüft den Compliance-Status inkl. Trace / Artefakten. Der Cloud-Experte kann hierbei unterstützen
+        \item Der Compliance-Officer überprüft den Compliance-Status inkl. Trace / Artefakten. Der Cloud-Experte kann hierbei unterstützen
     \end{enumerate}
     \\
     \hline
@@ -321,11 +321,11 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \hline
 
     Ergebnis &
-    Das System hält für einen Schutzbedarf mindestens eine technische Massnahmen. Das System verfügbt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahmen. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
+    Das System hält für einen Schutzbedarf mindestens eine technische Massnahme. Das System verfügt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahme. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
     \\
     \hline
 
-    \caption[UC6 Definiert technische Massnahmen für Schutzbedarf]{UC6 Definiert technische Massnahmen für Schutzbedarf}
+    \caption[UC6 Verifiziert die Compliance via Traceability]{UC6 Definiert technische Massnahmen für Schutzbedarf}
     \label{tab:uc6-verify-compliance}
 \end{longtable}
 
@@ -671,7 +671,7 @@ Zusätzliche zu den Trade-Off Dimensionen aus der Literatur werden die folgenden
     \hline
 
     Governance centric Traceability vs Engineering centric Traceability &
-    Eine governance-centric Traceability setzt die Policies, Controls und Compliance in den Fokus. Die Traceability ist hierbei top-down angedacht. Der Fokus liegt hierbei hauptsächlich auf der Auditierbarkeit, was dem Fokus bspw. eines Compliace Officers entspricht. Die engineering-centric Traceability bringt die technische Nachvollziehbarkeit und die technische Implementierungen / Artefakte in den Fokus. Dies entspriche potentiell der Betrachtung eines Entwicklers&
+    Eine governance-centric Traceability setzt die Policies, Controls und Compliance in den Fokus. Die Traceability ist hierbei top-down angedacht. Der Fokus liegt hierbei hauptsächlich auf der Auditierbarkeit, was dem Fokus bspw. eines compliance Officers entspricht. Die engineering-centric Traceability bringt die technische Nachvollziehbarkeit und die technische Implementierungen / Artefakte in den Fokus. Dies entspriche potentiell der Betrachtung eines Entwicklers&
     Relevant für die Wahl der Betrachtungsrichtung welche gewählt wird.
     \\
     \hline
@@ -818,7 +818,7 @@ Basierend auf den Kriterien und der Bewertungskala wird die Bewertung der versch
     \hline
     \endhead
 
-    Control-centric & 4 & Verantwortlichkeiten sind direkt an Akteure gebunden. Compliance-Officer mit Definition von Controls und Cloud-Expert mit technischer Umsetzung basierend auf den Controls
+    Control-centric & 4 & Verantwortlichkeiten sind direkt an Akteure gebunden. Compliance-Officer mit Definition von Controls und Cloud-Experte mit technischer Umsetzung basierend auf den Controls
     \\
     \hline
 
@@ -830,7 +830,7 @@ Basierend auf den Kriterien und der Bewertungskala wird die Bewertung der versch
     \\
     \hline
 
-    Provider-native & 1 & Durch Nutzung von Plattformmechanismen ist die Rolle des Compliance-Officers in der Architektur quasi nicht mehr sichtbar. Bzw die Wahrnehmung ist dass eine Verschiebung hin zum Cloud-Expert stattfindet.
+    Provider-native & 1 & Durch Nutzung von Plattformmechanismen ist die Rolle des Compliance-Officers in der Architektur quasi nicht mehr sichtbar. Bzw die Wahrnehmung ist dass eine Verschiebung hin zum Cloud-Experte stattfindet.
     \\
     \hline
     \caption{Bewertung Kriterium Explizite Abbildungen von Verantwortlichkeiten aus \fullref{tab:didactic-poc-criteria}}

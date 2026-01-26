@@ -77,7 +77,7 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
     \label{tab:forschungsmethodik}
 \end{table}
 
-\subsection{Vorgehen zur Identifikation von Landingzone Komponenten}
+\subsection{Vorgehen zur Identifikation von \ac{lz} Komponenten}
 \label{sec:methodik-landingzones}
 \hl{structure notes start}
 \begin{itemize}
@@ -86,7 +86,7 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
 \end{itemize}
 \hl{structure notes end}
 
-Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln muss zuerst der Begriff der \ac{lz} selbst geklärt werden. Das Vorgehen besteht somit aus den folgenden Schritten
+Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln, muss zuerst der Begriff der \ac{lz} selbst geklärt werden. Das Vorgehen besteht somit aus den folgenden Schritten
 
 \begin{enumerate}
     \item Recherche zur Etablierung des Begriffs \ac{lz} in der wissenschaftlichen Literatur
@@ -94,11 +94,11 @@ Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln muss zuerst der Begr
     \item Abgrenzung der \ac{lz} zu anderen Ressourcen auf einer Cloud-Plattform
 \end{enumerate}
 
-In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Diese Recherchefrage wird anschliessend an ein KI basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffe nach existierenden Wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticSchoolar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt \cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone}), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche wie bei \cite{mulder_multi-cloud_2020} indirekt auf die konkrete Implementierung von Cloud-Providern verweist. Eine Suche mit ähnlichen Schlüsselwörtern auf einer tradtionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
+In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Diese Recherchefrage wird anschliessend an ein KI basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffen nach existierenden wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticScholar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt (\cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone})), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche wie bei \cite{mulder_multi-cloud_2020} indirekt auf die konkrete Implementierung von Cloud-Providern verweist. Eine Suche mit ähnlichen Schlüsselwörtern auf einer traditionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
 
-Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff behandelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} wird \ac{lz} als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Befürfnissen gruppiert werden soll, um passenden Operation- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
+Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} wird \ac{lz} als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Befürfnissen gruppiert werden soll, um passenden Operation- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
 
-Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens "Public Clouds Bund" der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgendem weiter als Cloud-Provider verstanden.
+Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens ''Public Clouds Bund'' der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
 
 Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg analysiert.
 
@@ -109,28 +109,28 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
         \textbf{Cloud-Anbieter} & \textbf{Definition} & \textbf{Kommentar} \\
         \hline
         Azure                   &
-        Definition              &
-        Kommentar
+        \hl{Definition}              &
+        \hl{Kommentar}
         \\
         \hline
         AWS                     &
-        Definition              &
-        Kommentar
+        \hl{Definition}              &
+        \hl{Kommentar}
         \\
         \hline
         GCP                     &
-        Definition              &
-        Kommentar
+        \hl{Definition}              &
+        \hl{Kommentar}
         \\
         \hline
         IBM                     &
-        Definition              &
-        Kommentar
+        \hl{Definition}              &
+        \hl{Kommentar}
         \\
         \hline
         Alibaba                 &
-        Definition              &
-        Kommentar
+        \hl{Definition}              &
+        \hl{Kommentar}
         \\
         \hline
     \end{tabularx}
@@ -161,19 +161,19 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
 \end{itemize}
 \hl{structure notes end}
 
-Die mit dem \ac{bit} identifizierte Herausforderungen ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgenden als Traceability-Architecture bezeichnet. Es gibt bei dieser Architekutr verschiedenen Betrachtungen: Zum einem die Top-Down Betrachtung des Compliant-Officers und zum anderen die Bottom-Up Betrachtung des Projektveranwortlichen. Ein Compliance-Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Ein Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
+Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architecture bezeichnet. Es gibt bei dieser Architektur verschiedene Betrachtungen: zum einen die top-down Betrachtung des Compliant-Officers und zum anderen die bottom-up Betrachtung des Projektveranwortlichen. Ein Compliance-Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
 
 \hl{Todo beschreibung der verschiedenen Actor mit Tabelle machen}
 
 \begin{itemize}
     \item Der \textbf{Compliance Offier} interpretiert die regulatorischen Anforderungen und verantwortet den Compliance-Status
-    \item Der \textbf{Cloud-Expert} übersetzt die regulatorischen Anforderunden in die technischen Massnahmen
-    \item Der \textbf{Projektverantwortliche} identifizierte den Schutzbedarf für die Cloud-Ressourcen
+    \item Der \textbf{Cloud-Experte} übersetzt die regulatorischen Anforderungen in die technischen Massnahmen
+    \item Der \textbf{Projektverantwortliche} identifiziert den Schutzbedarf für die Cloud-Ressourcen
 \end{itemize}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{graphics/ip6-ideation-Use-Case.drawio.png}
+    \includegraphics[width=0.9\textwidth]{graphics/ip6-ideation-use-cases.drawio.pdf}
     \caption{Use-Cases basierend auf Traceability-Architecture}
     \label{fig:traceability-use-cases}
 \end{figure}
@@ -916,7 +916,7 @@ Basierend auf den Kriterien und der Bewertungskala wird die Bewertung der versch
 
 Basierend auf der Evaluation der Kriterien wird sich für der \ac{poc} für die Variante der component-centric Architektur entschieden. Eine weitere Überlegung zu den bereits evalurierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-How Strukturierung im\ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbiildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
 
-Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototype generiert. Dieser Prototype (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akeute aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptalbauf des Use-Cases sind hierbei: Die Ausahl des Projektes durch den Compliance-Officers wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl Trace wie in \autoref{fig:methodology-project-healthcare-view-controls}
+Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototype generiert. Dieser Prototype (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akeute aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptalbauf des Use-Cases sind hierbei: Die Ausahl des Projektes durch den Compliance-Officers wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}
 
 \begin{figure}[H]
     \centering

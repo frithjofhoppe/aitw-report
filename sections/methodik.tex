@@ -1,11 +1,11 @@
 \section{Methodik und Vorgehen}
 \label{sec:methodik}
 
-In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepte in \fullref{sec:traceability-architecture} führt. Hierzu wird in \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufgezeigt, deren Anewndung sich in den den anderen Unterabschnitten zeigt.
+In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorgeschlagenen Konzepten in \fullref{sec:traceability-architecture} führt. Hierzu wird im \fullref{sec:methodik-intro} zuerst die allgemeine Vorgehensweise aufgezeigt, deren Anwendung sich in den anderen Unterabschnitten zeigt.
 
 \subsection{Forschungsmethodischer Ansatz}
 \label{sec:methodik-intro}
-\hl{stucture start}
+\hl{structure notes start}
 \begin{itemize}
     \item Annahmen aufzeigen auf welchen die Arbeit aufbaut
     \item Strukturierung des Vorgehen gem Drawio Prozess → Grundlage basierend auf Enterprise Architektur-Buch. Quasi von Business hinzu Anforderungen kommen, deshalb haben wir das mittel der capability map gewählt etc.
@@ -13,7 +13,7 @@ In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorg
     \item Verständnis Landing zone | Wie wird der Begriff der Landing zone bei verschiedenen Plattformen aufgegriffen. Beschreibung Recherche auf den verschiedenen Plattformen. Zusammenfassung der Suche
     \item Welche bedeuetung haben die Cloud Adaption Frameworks der verschiedenen Plattformen
 \end{itemize}
-\hl{structure end}
+\hl{structure notes end}
 
 In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierte 7R's für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde \cite{orban_four_2017}. Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hyptohese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-cloud strategie und schlussendliche zu der Strukturierung einer \ac{lz} vor. Dies wird in der das Gerüst einer \ac{ea} eingebettet.
 
@@ -82,12 +82,12 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
 
 \subsection{Vorgehen zur Identifikation von Landingzone Komponenten}
 \label{sec:methodik-landingzones}
-\hl{stucture start}
+\hl{structure notes start}
 \begin{itemize}
     \item Kriterien beschreiben mit welchen die verschiedenen Provider analysiert wurden, bspw Aspekte und so
     \item Detaillierte Beschreibung der Erkenntnis bzw Tabelle
 \end{itemize}
-\hl{structure end}
+\hl{structure notes end}
 
 Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln muss zuerst der Begriff der \ac{lz} selbst geklärt werden. Das Vorgehen besteht somit aus den folgenden Schritten
 
@@ -146,15 +146,15 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
 
 \subsection{Synthese eines abstrahierten Metamodells}
 \label{sec:methodik-metamodell}
-\hl{stucture start}
+\hl{structure notes start}
 \begin{itemize}
     \item Metamodell definieren basierend auf Fachbegriffen und Domänenbegriffen
 \end{itemize}
-\hl{structure end}
+\hl{structure notes end}
 
 \subsection{Erhebung von Landing-Zone Fähigkeiten}
 \label{sec:methodik-capability}
-\hl{stucture start}
+\hl{structure notes start}
 \begin{itemize}
     \item Quasi als Folge → Erstellen Capability Map inkl Auswahl durch den Auftraggeber (Iteration mit L1/L2 Strukturierung)
     \item Priorisierung der Capabilities mit Auftraggeber
@@ -162,7 +162,7 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
     \item Use-Cases definieren / Ausprägung
     \item WICHTIG Outcome ist hier, dass Traceability gewählt wird, damit dann in Abschnitt Strukturierung der Evaluation der Architektur darauf referenziert werden kann.
 \end{itemize}
-\hl{structure end}
+\hl{structure notes end}
 
 Die mit dem \ac{bit} identifizierte Herausforderungen ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgenden als Traceability-Architecture bezeichnet. Es gibt bei dieser Architekutr verschiedenen Betrachtungen: Zum einem die Top-Down Betrachtung des Compliant-Officers und zum anderen die Bottom-Up Betrachtung des Projektveranwortlichen. Ein Compliance-Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Ein Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
 

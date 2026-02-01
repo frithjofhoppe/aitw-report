@@ -64,8 +64,8 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \\
         \hline
         \textbf{G} Implementation Governance &
-        Auswahl einer Architketur, welcher den Evaluationskriterien welche unter Anderem auf dem Use-Case des \ac{bit} basieren gerecht wird. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw Anforderungen an die LZ, Governance Regel etc.) &
-        Der Outcome der Evaluation bildet unter Anderem die Antwort auf die initialen Forschungsfragen wieder und ist somit essenziell
+        Auswahl einer Architketur, welcher den Evaluationskriterien welche unter anderem auf dem Use-Case des \ac{bit} basieren gerecht wird. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw Anforderungen an die LZ, Governance Regel etc.) &
+        Der Outcome der Evaluation bildet unter anderem die Antwort auf die initialen Forschungsfragen wieder und ist somit essenziell
         \\
         \hline
         \textbf{H} Architecture Change Management & - &
@@ -94,11 +94,11 @@ Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln, muss zuerst der Beg
     \item Abgrenzung der \ac{lz} zu anderen Ressourcen auf einer Cloud-Plattform
 \end{enumerate}
 
-In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \glqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\glqq. Diese Recherchefrage wird anschliessend an ein KI basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffen nach existierenden wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticScholar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt (\cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone})), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche wie bei \cite{mulder_multi-cloud_2020} indirekt auf die konkrete Implementierung von Cloud-Providern verweist. Eine Suche mit ähnlichen Schlüsselwörtern auf einer traditionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
+In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \flqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\frqq\hspace{0.05cm}. Diese Recherchefrage wird anschliessend an ein KI basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffen nach existierenden wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticScholar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt (\cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone})), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche wie bei \cite{mulder_multi-cloud_2020} indirekt auf die konkrete Implementierung von Cloud-Providern verweist. Eine Suche mit ähnlichen Schlüsselwörtern auf einer traditionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
 
 Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} wird \ac{lz} als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Befürfnissen gruppiert werden soll, um passenden Operation- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
 
-Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
+Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq\hspace{0.05cm} der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
 
 Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg analysiert.
 
@@ -178,7 +178,7 @@ Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit 
     \label{fig:traceability-use-cases}
 \end{figure}
 
-Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC4 \glqq Definiert technische Massnahmen für Schutzbedarf\grqq, um die Traceability-Struktur zu erzeugen und UC6 \glqq Verifiziert die compliance via Traceability\grqq für die effektive Nutzung der Traceability-Struktur.
+Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC4 \flqq Definiert technische Massnahmen für Schutzbedarf\frqq\hspace{0.05cm}, um die Traceability-Struktur zu erzeugen und UC6 \flqq Verifiziert die compliance via Traceability\frqq\hspace{0.05cm} für die effektive Nutzung der Traceability-Struktur.
 
 \begin{longtable}{|
   L{3cm}|
@@ -351,23 +351,23 @@ Basierend auf der Orientierung an \ac{togaf} wird sich bei der Suche an Dimensio
         \textbf{Dimension} & \textbf{Beschreibung} & \textbf{Begründung} \\
         \hline
         Architekturprinzipien &
-        Prinzipien oder grundlegenden Eigenschaften einer Architektur. Architekturprinzipien können eingehalten oder nicht eingehalten sein &
-        Ergibt sich aus der Preliminary Phase im \ac{adm} Cycle in welcher die allg. Rahmenbedinungen gesetzt werden, von der Architekturprinzipien teil sind. Die Architekturprinzipien sind als Gatekeeper für Varianten gedacht
+        Prinzipien oder grundlegende Eigenschaften einer Architektur. Architekturprinzipien können eingehalten oder nicht eingehalten sein &
+        Ergeben sich aus der Preliminary Phase im \ac{adm} Cycle in welcher die allg. Rahmenbedingungen gesetzt werden, von der Architekturprinzipien teil sind. Die Architekturprinzipien sind als Gatekeeper für Varianten gedacht
         \\
         \hline
         Qualitätsmerkmale &
         Qualitative Eigenschaften der Architektur analog zu klassischen \ac{nfr}. Qualitätsmerkmale können basierend auf einer Skala zu einem gewissen Mass erfüllt sein &
-        Ergibt sich gedanklich aus den Phasen A-D im \ac{adm} Cycle und dienen als vergeleichende Kriterien zwischen verschiedenen Varianten
+        Ergeben sich gedanklich aus den Phasen A-D im \ac{adm} Cycle und dienen als vergleichende Kriterien zwischen verschiedenen Varianten
         \\
         \hline
         Entscheidung und Trade-Off &
-        Spannungsfelder unterschiedlicher Architekturrichtungen welche nicht per se richtig oder falsch sind. Trade-Off Kriterien werden zum Labeling / zur Charakterisierug verwendet &
-        Ergibt sich gedanklich aus den Phasen E-F im \ac{adm} Cycle. Sollen die Eigenschaften der unterschiedlichen Varianten hervorheben ohne wertend zu wirken, da die durch das Kriterium verglichenden Eigenschaften  grundsätzlich keine negative/positive Konotation besitzen sollen
+        Spannungsfelder unterschiedlicher Architekturrichtungen welche nicht per se richtig oder falsch sind. Trade-Off Kriterien werden zum Labeling / zur Charakterisierung verwendet &
+        Ergibt sich gedanklich aus den Phasen E-F im \ac{adm} Cycle. Sollen die Eigenschaften der unterschiedlichen Varianten hervorheben, ohne wertend zu wirken, da die durch das Kriterium vergleichenden Eigenschaften  grundsätzlich keine negative/positive Konotation besitzen sollen
         \\
         \hline
         Kontext und Anwendung &
-        Konkreter Rahmenbeindungen aus dem \ac{bit} Use-Case, welche die Gewichtung der Evaluationskriterien beeinflussen &
-        Ergibt sich aus der Festlegung des Kontext in der Preliminary Phase und Ausarbeitung in den Phasen B-D im \ac{adm} Cycle. Dient dazu im Rahmen des definierten Use-Cases zu beurteilen. Im Gegensatz zu den Arcihtekturprinzipien des \ac{bit} ist der Use-Case flexibler
+        Konkrete Rahmenbedingungen aus dem \ac{bit} Use-Case, welche die Gewichtung der Evaluationskriterien beeinflussen &
+        Ergibt sich aus der Festlegung des Kontext in der Preliminary Phase und Ausarbeitung in den Phasen B-D im \ac{adm} Cycle. Dient dazu im Rahmen des definierten Use-Cases zu beurteilen. Im Gegensatz zu den Architekturprinzipien des \ac{bit} ist der Use-Case flexibler
         \\
         \hline
     \end{tabularx}
@@ -375,9 +375,8 @@ Basierend auf der Orientierung an \ac{togaf} wird sich bei der Suche an Dimensio
     \label{tab:evaluation-dimensions}
 \end{table}
 
-Die Architketurprinzipien vom BIT bilden sich aus den Vorgaben, welche durch die Organisation selbst vorgegeben sind. Von weiteren Kriterien vom \ac{bit} für die Arbeit wird verzichetet. Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}.
+Die Architekturprinzipien vom ac{bit} bilden sich aus den Vorgaben, welche durch die Organisation selbst vorgegeben sind. Von weiteren Kriterien vom \ac{bit} für die Arbeit wird abgesehen. Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}.
 
-\hl{Hier muss noch abgeklärt werden ob die Grafik verwendet werden darf, wegen intranet}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/bit-architektur-prinzipien.png}
@@ -385,134 +384,131 @@ Die Architketurprinzipien vom BIT bilden sich aus den Vorgaben, welche durch die
     \label{fig:bit-architecture-principles}
 \end{figure}
 
-Für diese Arbeit werden die Prinzipien je nach gewählten Use-Case selektiv berücksichtigt. Zu den Kritierien des \ac{bit} sollen weiteren identifiziert werden welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür wird initiale die folgenden Recherchefrage formuliert \glqq What are possible architecture princples for multi-cloud ready enterprise architecture and solution architecture? \glqq, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizieren Prinzipien zeigen, dass die Frage mit dem Begriff \glqq solution architecture \glqq bereits zu stark auf konkrete technische prinzipien fokussiert siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht den angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \glqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently? \glqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} entstand unter Anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
+Für diese Arbeit werden die Prinzipien je nach gewähltem Use-Case selektiv berücksichtigt. Zu den Kriterien des \ac{bit} sollen weitere identifiziert werden, welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür werden initial die folgenden Recherchefragen formuliert:
+
+\flqq What are possible architecture princples for multi-cloud ready enterprise architectures and solution architectures?\frqq\hspace{0.05cm}, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizierten Prinzipien zeigen, dass die Frage mit dem Begriff \flqq solution architecture\frqq\hspace{0.05cm} bereits zu stark auf konkrete technische Prinzipien fokussiert, siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht dem angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \flqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently?\frqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} entstanden unter anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw. multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
 
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
         \hline
-        \textbf{Prinzip}                                                                                                                                                                                                                                                                                                                                                                 & \textbf{Beschreibung} & \textbf{Quellen} \\
+        \textbf{Prinzip} & \textbf{Beschreibung} & \textbf{Quellen} \\
         \hline
-        Architectural Abtraction Principle                                                                                                                                                                                                                                                                                                                                               &
-        Architektur soll mitels Abstrakion businessspezifische Elemente von cloudspezifischen Implemetation loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interface kann somit eine Portability erreicht werden                                                                                                                       &
+        Architectural Abtraction Principle &
+        Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden &
         \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
         \\
         \hline
-        Modular Decomposition Prinicple                                                                                                                                                                                                                                                                                                                                                  &
-        Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern                                                                                                                                                                         &
+        Modular Decomposition Prinicple &
+        Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern &
         \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
         \\
         \hline
-        Reference Model Principle                                                                                                                                                                                                                                                                                                                                                        &
-        Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien                                                                                                                                               &
+        Reference Model Principle &
+        Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien &
         \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
         \\
         \hline
-        Governance Primacy Principle                                                                                                                                                                                                                                                                                                                                                     &
-        Architektur soll klar auf Policies, Regulations und Unternehmensvorgaben aufbauen und nicht durch Technologie motiviert sein. Dies erreicht, dass trotz Unterschiede in den konkrenten Soltuiosn / Cloud-Plattformen die Governancen als Input für das Vorgehen im Bewusstsein bleibt                                                                                            &
+        Governance Primacy Principle &
+        Architektur soll klar auf Policies, Regulations und Unternehmensvorgaben aufbauen und nicht durch Technologie motiviert sein. Dies erreicht, dass trotz Unterschieden in den konkreten Lösungen / Cloud-Plattformen die Governancen als Input für das Vorgehen im Vordergrund bleibt &
         \cite{zhang_ccoa_2009}, \cite{gurram_multi-cloud_2025}
         \\
         \hline
-        Security Reconfigurability Principle                                                                                                                                                                                                                                                                                                                                             &
-        Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslagen für konrekte Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models welche bereits zu stark auf einen Plattform fokussieren stellen das Risiko da, dass sie nicht auf eine anderen Cloud-Plattform answendbar sind &
+        Security Reconfigurability Principle &
+        Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind &
         \cite{hajjat_cloudward_2010}
         \\
         \hline
     \end{tabularx}
-    \caption{Potentielle Architekturpirnzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
+    \caption{Potenzielle Architekturprinzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
     \label{tab:architecture-principles}
 \end{table}
 
-Für die Qualitätsmerkmale werden sowohl eigene definierten Kriterien als auch jene aus der Recherche verwendet. Hierfür wird folgenden Fragestellung verwendet \glqq Which architecture-related quality attributes are suitable for the comparative evaluation of enterprise architectures in technology-agnostic multi-cloud environments? \glqq. Das Ergebnis glieder sich in die folgenden Tiers: Tier 1 Universable Applicable, Tier 2 Context-Dependent Critical, Tier 3 Multi-cloud Specific, Tier 4 Emerging Considerations.Von Interesse sind hierbei vor allem die Kritierien, welche sich explizit auf den multi-cloud Aspekt beziehen, sprich dem Tier 3.
-
+Für die Qualitätsmerkmale werden sowohl eigens definierte Kriterien als auch jene aus der Recherche verwendet. Hierfür wird folgende Fragestellung verwendet: \flqq Which architecture-related quality attributes are suitable for the comparative evaluation of enterprise architectures in technology-agnostic multi-cloud environments?\frqq. Das Ergebnis gliedert sich in die folgenden Tiers: Tier 1 Universable Applicable, Tier 2 Context-Dependent Critical, Tier 3 Multi-cloud Specific, Tier 4 Emerging Considerations. Von Interesse sind hierbei vor allem die Kriterien, welche sich explizit auf den multi-cloud Aspekt beziehen, sprich dem Tier 3.
 
 \begin{longtable}{|L{1cm}|L{3cm}|p{\dimexpr\textwidth-8cm-6\tabcolsep-4\arrayrulewidth}|L{4cm}|}
     \hline
 
-    \textbf{Tier}                                                                                                                                                                                   & \textbf{Quality Attribute} & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen} \\
+    \textbf{Tier} & \textbf{Quality Attribute} & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen} \\
     \hline
     \endfirsthead
 
     \hline
-    \textbf{Tier}                                                                                                                                                                                   & \textbf{Quality Attribute} & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen} \\
+    \textbf{Tier} & \textbf{Quality Attribute} & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen} \\
     \hline
     \endhead
 
-
-    1                                                                                                                                                                                               &
-    Performance                                                                                                                                                                                     &
-    Fähigkeit gewisse Antwortszeit und Durchgangsrate zu gewärhleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren                                                                        &
+    1 &
+    Performance &
+    Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &
     \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
     \\
     \hline
-    1                                                                                                                                                                                               &
-    Reliability                                                                                                                                                                                     &
-    Fähigkeit ein beständiges Sericeverhalten zu haben sowie Service Level Objectives einzuhalten.Fokus liegt auf der allgemeinen Robustheist, statt nur Ausfallfähigkeit zu gewärleisten           &
+    1 &
+    Reliability &
+    Fähigkeit ein beständiges Sericeverhalten zu haben sowie Service Level Objectives einzuhalten. Fokus liegt auf der allgemeinen Robustheit, statt nur Ausfallsicherheit zu gewährleisten &
     \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}
     \\
     \hline
-    1                                                                                                                                                                                               &
-    Cost-effectiveness                                                                                                                                                                              &
-    Fähigkeit Kosten transparent abzubilden um eine Vergeichbarkeit zu ermöglichen. Sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefsmöglichste Kosten &
+    1 &
+    Cost-effectiveness &
+    Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &
     \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011}
     \\
     \hline
-    2                                                                                                                                                                                               &
-    Security                                                                                                                                                                                        &
-    Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen                                                                        &
+    2 &
+    Security &
+    Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen &
     \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
     \\
     \hline
-    2                                                                                                                                                                                               &
-    Scalability                                                                                                                                                                                     &
-    Fähigkeit mit Anpassungen in der Workload-, Daten, Nutzergrösse etc. umzugehen ohne strukturelle Änderungen vornehmen zu müssen                                                                 &
+    2 &
+    Scalability &
+    Fähigkeit mit Anpassungen in der Workload-, Daten, Nutzergrösse etc. umzugehen ohne strukturelle Änderungen vornehmen zu müssen &
     \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
     \\
     \hline
-    2                                                                                                                                                                                               &
-    Availability                                                                                                                                                                                    &
-    Fähigkeit eine gewisse Verfügbarkeit zu geährleisten sowie Fähigkeit Redundanz-Strategien sowie High-Availability zu Unterstützen                                                               &
+    2 &
+    Availability &
+    Fähigkeit eine gewisse Verfügbarkeit zu gewährleisten sowie Fähigkeit Redundanz-Strategien sowie High-Availability zu unterstützen &
     \cite{banijamali_software_2019}, \cite{ardagna_modaclouds_2012}
     \\
     \hline
-    3                                                                                                                                                                                               &
-    Interoperability                                                                                                                                                                                &
-    Fähigkeit Interaktion und Integration zwischen Systen auf unterschiedlichen Plattformen zu erlauben                                                                                             &
+    3 &
+    Interoperability &
+    Fähigkeit Interaktion und Integration zwischen Systemen auf unterschiedlichen Plattformen zu erlauben &
     \cite{banijamali_software_2019}, \cite{joukov_cloud_2013}
     \\
     \hline
-    3                                                                                                                                                                                               &
-    Portability                                                                                                                                                                                     &
-    Fähigkeit der Architektur eine Migration oder Redeployment zwischen versciedenen Plattformen zu erlauben ohne grundsätliches Redesign zu benötigen - bspw ermöglich durch Abstraktion           &
+    3 &
+    Portability &
+    Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &
     \cite{mirsalari_model_2020}
     \\
     \hline
-    3                                                                                                                                                                                               &
-    Vendor-Independence                                                                                                                                                                             &
-    Fähigkeit der Archiktetur strukturell von einem Anbieter und insbesonderen von proprietären Funktionen abhängig zu sein.                                                                        &
+    3 &
+    Vendor-Neutrality &
+    Fähigkeit der Architektur strukturell von einem Anbieter und insbesondere von proprietären Funktionen abhängig zu sein. &
     \cite{bhargav_sai_pillati_leading_2025}
     \\
     \hline
-
-        4 &
-    Service Adaptibility &
-    Fähigkeit der Architektur Änderungen der Anforderunden, Interfaces, dem Integrations Context unterzubringen ohne die Architektur fundamental zu verändern. Service sind hierbei im Sinne der Capability zu verstehen, nicht ein konkreter technische Service Implementation &
+    4 &
+    Service Adaptability &
+    Fähigkeit der Architektur Änderungen von Anforderungen, Interfaces oder dem Integrations Context unterzubringen ohne die Architektur fundamental zu verändern. Service sind hierbei im Sinne der Capability zu verstehen, nicht ein konkreter technische Service Implementation &
     \cite{bhargav_sai_pillati_leading_2025}
     \\
     \hline
-
     4 &
     Architectural Sustainability &
-    Fähigkeit der Archiktetur sich langfristig an ändernde technologische wir organisatorische Gegebenheiten anpassen zu können. Die Differnzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrecht erhalten werden können &
+    Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
     \cite{bhargav_sai_pillati_leading_2025}
     \\
     \hline
-
     \caption{Quality-Attriute aus Recherche nach \fullref{appendix:quality-attributes-research} }
     \label{tab:quality-attributes-external}
 \end{longtable}
 
-Zu den externen Quality-Attributes kommen eigenen Kriterien hinzu welche basiernd auf der Traceability-Architecture definiert werden.
+Zu den externen Quality-Attributes kommen eigene Kriterien hinzu welche basierend auf der Traceability-Architecture definiert werden.
 
 \begin{longtable}{|
   L{3cm}|
@@ -531,18 +527,18 @@ Zu den externen Quality-Attributes kommen eigenen Kriterien hinzu welche basiern
     \endhead
 
     Auditability &
-    Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben. &
-    Für die Generierung von Evidence für Governance und Compliance ist eine Auditability essentiell
+    Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben. &
+    Für die Generierung von Evidence für Governance und Compliance ist eine Auditierbarkeit essenziell
     \\
     \hline
 
-    Automateability &
-    Fähigkeit die dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls &
-    Automatisierung soll den manuellen Aufwand und die Feheleranfälligkeit der Architektur reduzieren. Bei hoher Komplexität und Anzahl Artefakte gewinnt dies umso mehr Relevanz
+    Automatability &
+    Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls &
+    Automatisierung soll den manuellen Aufwand und die Fehleranfälligkeit der Architektur reduzieren. Bei hoher Komplexität und Anzahl Artefakte gewinnt dies umso mehr Relevanz
     \\
     \hline
 
-    Maintaineability &
+    Maintainability &
     Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten &
     Policies auf den Plattformen und damit Zuweisungen zu entsprechenden Controls ändern sich regelmässig.
     \\
@@ -555,20 +551,20 @@ Zu den externen Quality-Attributes kommen eigenen Kriterien hinzu welche basiern
     \hline
 
     Multi-Cloud Applicability &
-    Grad der Fähigkeit in der Architektur über verschiedenen Cloud-Plattormen konstient anwendbar ist, ohne das strukturelle Änderungen notwendig sind.&
+    Grad der Fähigkeit in der die Architektur über verschiedene Cloud-Plattormen konsistent anwendbar ist, ohne das strukturelle Änderungen notwendig sind. &
     Es wird bereits vorausgesetzt, dass eine grundsätzliche Multi-Cloud Fähigkeit besteht. Mit diesem Kriterium wird eine Vergleichbarkeit erreicht.
     \\
     \hline
 
     Complexity &
-    Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Kompleität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll &
-    Bei der Traceability handelt es sich bereits von Nautr aus um eine vielschichtige Thematik. Entsprechend sollte vermieden werden das durch zu hohe Abstraktionen die Komplexität unverhältnismässig ist.
+    Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll &
+    Bei der Traceability handelt es sich bereits von Natur aus um eine vielschichtige Thematik. Entsprechend sollte vermieden werden das durch zu hohe Abstraktionen die Komplexität unverhältnismässig ist.
     \\
     \hline
 
     Traceability Strength &
-    Grad in der der die Beziehung zwischen Anwendung auf eine Cloud-Ressource zu der ausgehen Kontrol hergestellt werden kann &
-    Es wird bereits vorausgesetzt, dass eine grundsätliche Traceability besteht. Mit diesem Krieterium wird eine Vergleichbarkeit erreicht.
+    Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann &
+    Es wird bereits vorausgesetzt, dass eine grundsätzliche Traceability besteht. Mit diesem Kriterium wird eine Vergleichbarkeit erreicht.
     \\
     \hline
 
@@ -576,7 +572,7 @@ Zu den externen Quality-Attributes kommen eigenen Kriterien hinzu welche basiern
     \label{tab:quality-attributes}
 \end{longtable}
 
-Für die Dimension der Trade-Off Kriterien wird für die Recherche von Spannungsfelder folgenden Fragestellung verwendet \glqq Which architecture-level trade-offs shape the design and evaluation of enterprise architectures in technology-agnostic multi-cloud environments \glqq.
+Für die Dimension der Trade-Off Kriterien wird für die Recherche von Spannungsfelder folgenden Fragestellung verwendet \flqq Which architecture-level trade-offs shape the design and evaluation of enterprise architectures in technology-agnostic multi-cloud environments\frqq.
 
 \begin{longtable}{|
   L{3cm}|

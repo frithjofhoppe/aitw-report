@@ -1,0 +1,2 @@
+{"rule":"DE_AGREEMENT","sentence":"^\\QZu den externen Quality-Attributes kommen eigenen Kriterien hinzu welche basiernd auf der Traceability-Architecture definiert werden.\\E$"}
+{"rule":"DE_AGREEMENT","sentence":"^\\QZu den externen Quality-Attributes kommen eigene Kriterien hinzu welche basierend auf der Traceability-Architecture definiert werden.\\E$"}

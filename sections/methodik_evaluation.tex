@@ -1,0 +1,366 @@
+\subsection{Strukturierung der Evaluation der Architektur}
+\label{sec:methodik-evaluation}
+
+Damit über die Varianten Traceability-Architektur aus \fullref{sec:traceability-architecture} eine Aussage ob einer optimalen Architektur (im Sinne der leitenden Fragestellung) gemacht werden kann ist folgende Methodik vorgesehen:
+
+\begin{enumerate}
+    \item Identifikation relevanter Bewertungsdimensionen
+    \item Recherche und Ableitung von Kriterien innerhalb der Bewertungsdimensionen (sowohl vom \ac{bit} als auch aus der Literatur)
+    \item Ableitung eines strukturierten Bewertungs- und Validierungsprozesses
+    \item Einordnung, Gewichtung der Evaluationskriterien im Validierungsprozess
+\end{enumerate}
+
+Basierend auf der Orientierung an \ac{togaf} wird sich bei der Suche an Dimensionen an dem \ac{adm} Cycle orientiert. Folgende Dimensionen werden ausgewählt:
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|L{3cm}|X|X|}
+        \hline
+        \textbf{Dimension} & \textbf{Beschreibung} & \textbf{Begründung} \\
+        \hline
+        Architekturprinzipien &
+        Prinzipien oder grundlegende Eigenschaften einer Architektur. Architekturprinzipien können eingehalten oder nicht eingehalten sein &
+        Ergeben sich aus der Preliminary Phase im \ac{adm} Cycle in welcher die allg. Rahmenbedingungen gesetzt werden, von der Architekturprinzipien teil sind. Die Architekturprinzipien sind als Gatekeeper für Varianten gedacht
+        \\
+        \hline
+        Qualitätsmerkmale &
+        Qualitative Eigenschaften der Architektur analog zu klassischen \ac{nfr}. Qualitätsmerkmale können basierend auf einer Skala zu einem gewissen Mass erfüllt sein &
+        Ergeben sich gedanklich aus den Phasen A-D im \ac{adm} Cycle und dienen als vergleichende Kriterien zwischen verschiedenen Varianten
+        \\
+        \hline
+        Entscheidung und Trade-Off &
+        Spannungsfelder unterschiedlicher Architekturrichtungen welche nicht per se richtig oder falsch sind. Trade-Off Kriterien werden zum Labeling / zur Charakterisierung verwendet &
+        Ergibt sich gedanklich aus den Phasen E-F im \ac{adm} Cycle. Sollen die Eigenschaften der unterschiedlichen Varianten hervorheben, ohne wertend zu wirken, da die durch das Kriterium vergleichenden Eigenschaften  grundsätzlich keine negative/positive Konotation besitzen sollen
+        \\
+        \hline
+        Kontext und Anwendung &
+        Konkrete Rahmenbedingungen aus dem \ac{bit} Use-Case, welche die Gewichtung der Evaluationskriterien beeinflussen &
+        Ergibt sich aus der Festlegung des Kontext in der Preliminary Phase und Ausarbeitung in den Phasen B-D im \ac{adm} Cycle. Dient dazu im Rahmen des definierten Use-Cases zu beurteilen. Im Gegensatz zu den Architekturprinzipien des \ac{bit} ist der Use-Case flexibler
+        \\
+        \hline
+    \end{tabularx}
+    \caption{Identifizierte Bewertungsdimensionen}
+    \label{tab:evaluation-dimensions}
+\end{table}
+
+Die Architekturprinzipien vom ac{bit} bilden sich aus den Vorgaben, welche durch die Organisation selbst vorgegeben sind. Von weiteren Kriterien vom \ac{bit} für die Arbeit wird abgesehen. Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/bit-architektur-prinzipien.png}
+    \caption{Architekturprinzipien des \ac{bit} \parencite{noauthor_vorgabenportal_2025}}
+    \label{fig:bit-architecture-principles}
+\end{figure}
+
+Für diese Arbeit werden die Prinzipien je nach gewähltem Use-Case selektiv berücksichtigt. Zu den Kriterien des \ac{bit} sollen weitere identifiziert werden, welche explizit für den Umstand der multi-cloud ready \ac{ea} vorgesehen sind. Hierfür werden initial die folgenden Recherchefragen formuliert:
+
+\flqq What are possible architecture princples for multi-cloud ready enterprise architectures and solution architectures?\frqq\hspace{0.05cm}, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizierten Prinzipien zeigen, dass die Frage mit dem Begriff \flqq solution architecture\frqq\hspace{0.05cm} bereits zu stark auf konkrete technische Prinzipien fokussiert, siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht dem angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \flqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently?\frqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} entstanden unter anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw. multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
+
+\begin{table}[H]
+    \centering
+    \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
+        \hline
+        \textbf{Prinzip} & \textbf{Beschreibung} & \textbf{Quellen} \\
+        \hline
+        Architectural Abtraction Principle &
+        Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden &
+        \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
+        \\
+        \hline
+        Modular Decomposition Prinicple &
+        Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern &
+        \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
+        \\
+        \hline
+        Reference Model Principle &
+        Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien &
+        \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
+        \\
+        \hline
+        Governance Primacy Principle &
+        Architektur soll klar auf Policies, Regulations und Unternehmensvorgaben aufbauen und nicht durch Technologie motiviert sein. Dies erreicht, dass trotz Unterschieden in den konkreten Lösungen / Cloud-Plattformen die Governancen als Input für das Vorgehen im Vordergrund bleibt &
+        \cite{zhang_ccoa_2009}, \cite{gurram_multi-cloud_2025}
+        \\
+        \hline
+        Security Reconfigurability Principle &
+        Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind &
+        \cite{hajjat_cloudward_2010}
+        \\
+        \hline
+    \end{tabularx}
+    \caption{Potenzielle Architekturprinzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
+    \label{tab:architecture-principles}
+\end{table}
+
+Für die Qualitätsmerkmale werden sowohl eigens definierte Kriterien als auch jene aus der Recherche verwendet. Hierfür wird folgende Fragestellung verwendet: \flqq Which architecture-related quality attributes are suitable for the comparative evaluation of enterprise architectures in technology-agnostic multi-cloud environments?\frqq. Das Ergebnis gliedert sich in die folgenden Tiers: Tier 1 Universable Applicable, Tier 2 Context-Dependent Critical, Tier 3 Multi-cloud Specific, Tier 4 Emerging Considerations. Von Interesse sind hierbei vor allem die Kriterien, welche sich explizit auf den multi-cloud Aspekt beziehen, sprich dem Tier 3.
+
+\begin{longtable}{|L{1cm}|L{3cm}|p{\dimexpr\textwidth-8cm-6\tabcolsep-4\arrayrulewidth}|L{4cm}|}
+    \hline
+
+    \textbf{Tier} & \textbf{Quality Attribute} & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Tier} & \textbf{Quality Attribute} & \textbf{Beschreibung im \ac{ea} Kontext} & \textbf{Quellen} \\
+    \hline
+    \endhead
+
+    1 &
+    Performance &
+    Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &
+    \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
+    \\
+    \hline
+    1 &
+    Reliability &
+    Fähigkeit ein beständiges Sericeverhalten zu haben sowie Service Level Objectives einzuhalten. Fokus liegt auf der allgemeinen Robustheit, statt nur Ausfallsicherheit zu gewährleisten &
+    \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}
+    \\
+    \hline
+    1 &
+    Cost-effectiveness &
+    Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &
+    \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011}
+    \\
+    \hline
+    2 &
+    Security &
+    Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen &
+    \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
+    \\
+    \hline
+    2 &
+    Scalability &
+    Fähigkeit mit Anpassungen in der Workload-, Daten, Nutzergrösse etc. umzugehen ohne strukturelle Änderungen vornehmen zu müssen &
+    \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
+    \\
+    \hline
+    2 &
+    Availability &
+    Fähigkeit eine gewisse Verfügbarkeit zu gewährleisten sowie Fähigkeit Redundanz-Strategien sowie High-Availability zu unterstützen &
+    \cite{banijamali_software_2019}, \cite{ardagna_modaclouds_2012}
+    \\
+    \hline
+    3 &
+    Interoperability &
+    Fähigkeit Interaktion und Integration zwischen Systemen auf unterschiedlichen Plattformen zu erlauben &
+    \cite{banijamali_software_2019}, \cite{joukov_cloud_2013}
+    \\
+    \hline
+    3 &
+    Portability &
+    Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &
+    \cite{mirsalari_model_2020}
+    \\
+    \hline
+    3 &
+    Vendor-Neutrality &
+    Fähigkeit der Architektur strukturell von einem Anbieter und insbesondere von proprietären Funktionen abhängig zu sein. &
+    \cite{bhargav_sai_pillati_leading_2025}
+    \\
+    \hline
+    4 &
+    Service Adaptability &
+    Fähigkeit der Architektur Änderungen von Anforderungen, Interfaces oder dem Integrations Context unterzubringen ohne die Architektur fundamental zu verändern. Service sind hierbei im Sinne der Capability zu verstehen, nicht ein konkreter technische Service Implementation &
+    \cite{bhargav_sai_pillati_leading_2025}
+    \\
+    \hline
+    4 &
+    Architectural Sustainability &
+    Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
+    \cite{bhargav_sai_pillati_leading_2025}
+    \\
+    \hline
+    \caption{Quality-Attriute aus Recherche nach \fullref{appendix:quality-attributes-research} }
+    \label{tab:quality-attributes-external}
+\end{longtable}
+
+Zu den externen Quality-Attributes kommen eigene Kriterien hinzu welche basierend auf der Traceability-Architecture definiert werden.
+
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2}|
+}
+    \hline
+
+    \textbf{Quality Attribute} & \textbf{Beschreibung im Kontext der Traceability-Architecture} & \textbf{Begründung} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Quality Attribute} & \textbf{Beschreibung im Kontext der Traceability-Architecture} & \textbf{Begründung} \\
+    \hline
+    \endhead
+
+    Auditability &
+    Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben. &
+    Für die Generierung von Evidence für Governance und Compliance ist eine Auditierbarkeit essenziell
+    \\
+    \hline
+
+    Automatability &
+    Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls &
+    Automatisierung soll den manuellen Aufwand und die Fehleranfälligkeit der Architektur reduzieren. Bei hoher Komplexität und Anzahl Artefakte gewinnt dies umso mehr Relevanz
+    \\
+    \hline
+
+    Maintainability &
+    Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten &
+    Policies auf den Plattformen und damit Zuweisungen zu entsprechenden Controls ändern sich regelmässig.
+    \\
+    \hline
+
+    Extensibility &
+    Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen &
+    Cloud-Plattformen sowie relevante Regulatorien können sich ändern.
+    \\
+    \hline
+
+    Multi-Cloud Applicability &
+    Grad der Fähigkeit in der die Architektur über verschiedene Cloud-Plattormen konsistent anwendbar ist, ohne das strukturelle Änderungen notwendig sind. &
+    Es wird bereits vorausgesetzt, dass eine grundsätzliche Multi-Cloud Fähigkeit besteht. Mit diesem Kriterium wird eine Vergleichbarkeit erreicht.
+    \\
+    \hline
+
+    Complexity &
+    Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll &
+    Bei der Traceability handelt es sich bereits von Natur aus um eine vielschichtige Thematik. Entsprechend sollte vermieden werden das durch zu hohe Abstraktionen die Komplexität unverhältnismässig ist.
+    \\
+    \hline
+
+    Traceability Strength &
+    Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann &
+    Es wird bereits vorausgesetzt, dass eine grundsätzliche Traceability besteht. Mit diesem Kriterium wird eine Vergleichbarkeit erreicht.
+    \\
+    \hline
+
+    \caption{Dedizierte Quality-Attriute mit Fokus auf Traceability-Architecture}
+    \label{tab:quality-attributes}
+\end{longtable}
+
+Für die Dimension der Trade-Off Kriterien wird für die Recherche von Spannungsfeldern folgende Fragestellung verwendet: \flqq Which architecture-level trade-offs shape the design and evaluation of enterprise architectures in technology-agnostic multi-cloud environments\frqq.
+
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr\textwidth-6cm-6\tabcolsep-4\arrayrulewidth\relax}|
+  L{3cm}|
+}
+    \hline
+    \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Quellen} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Quellen} \\
+    \hline
+    \endhead
+
+    Performance vs Portability &
+    Optimieren der Runtime-Effizienz steht in Konflikt mit der langfristigen architektonischen Mobilität, da die Runtime-Effizienz häufig durch Optimierung auf ein bestimmtes Umfeld erreicht wird.
+
+    Tendenz zu Performance führt zur bestmöglichen Ausnutzung von cloud-nativen Capabilities und tiefen Latenzen aber dafür verliert man an architektonischer Unabhängigkeit vom Provider und Vergleichbarkeit von Lösungen über Cloud-Plattformen hinweg. &
+    \cite{gibilisco_methodology_2016}, \cite{emmanni_architecting_2020}, \cite{papaioannou_architecture_2013-1}
+    \\
+    \hline
+
+    Cost effectiveness vs Architectural specialization &
+    Transparente Abbildung der Kosten sorgt für die Möglichkeit der Zuweisbarkeit von Kosten zu Architekturelementen. Dies erlaubt eine Vergleichbarkeit und das Senken des Risikos unerwarteter Kosten. Architecture specialization ermöglicht es wiederum  spezialisierte / stark integrierte Services einzusetzen, welche die Kostenmodelle jedoch verkomplizieren. Eine Architektur die Kosten transparent hält, vermeidet tendenziell stark gekoppelte oder schwer kalkulierbare Strukturen &
+    \cite{arul_data_2022}, \cite{sai_leading_2025}, \cite{emmanni_architecting_2020}
+    \\
+    \hline
+
+    Flexibility vs Structural simplicity &
+    Flexibilität sorgt dafür, dass auf neue Requirements eingegangen werden kann und entsprechend eine bessere Anpassungsfähigkeit besteht. Gleichzeitig sinkt mit der steigenden Anzahl an architektonischen Konzepten und Optionen die Einfachheit der Architektur. Durch die Structural simplcity gibt es weniger Konzepte welche dafür klar definiert sind was zu einer besseren Verständlichkeit führt. Änderungen an Requirements manifestieren sich somit aber auch mehr in strukturellen Änderungen.
+    
+    Die genannten Quellen fokussieren vor allem auf Flexibility vs Complexity. Da Complexity jedoch in \autoref{tab:quality-attributes} jedoch als zusätzlicher Abstraktion beschrieben wurde, wurde hier Structural simplicity als Dimension gewählt&
+    \cite{gibilisco_methodology_2016}, \cite{papaioannou_architecture_2013}, \cite{arul_data_2022}
+    \\
+    \hline
+
+    Security vs Usability &
+    Security führt zu mehr Sicherheitsmechanismen, welche den Schutzgrad erhöhen sollen aber auch gleichzeitig zu operativen höheren Hürden führt. Mit der Usability wird die Architektur hingegen einfacher nutzbar und integrierbar. Es vereinfacht sich jedoch auch das Sicherheitsmodell bzw. Kontrollinstanzen
+    &
+    \cite{berlato_exploring_2020}, \cite{casola_security-by-design_2018}
+    \\
+    \hline
+
+    Vendor Lock-In vs Scalability &
+    Scalability bzw. provider-native Optimierung führt zur Steigerung der Effizienz und Nutzung von Plattformspezifischer Skalierung, Verwaltung etc. Gleichzeitig erhöht sich jedoch die Abhängigkeit von bestimmten Anbieter. Vendor Lock-In Vermeidung hingegen bringt provider-neutrale Architekturen mit sich, welche die strategische Unabhängigkeit steigern. Mit dieser Steigerung der Austauschbarkeit sinkt jedoch die Nutzung von Provider-spezifischen Funktionen
+    &
+    \cite{berlato_exploring_2020}, \cite{quint_towards_2018}, \cite{zhao_supporting_2022}
+    \\
+    \hline
+
+    \caption{Trade-Off Dimensionen aus der Recherche}
+    \label{tab:tension-fields-external}
+\end{longtable}
+
+Zusätzlich zu den Trade-Off Dimensionen aus der Literatur werden die folgenden spezifischen Dimensionen definiert welche die Limitationen aus gewissen Architekturprinzipien bereits berücksichtigen und welche sich explizit auf die Traceability-Architecture beziehen.
+
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr\textwidth-6cm-6\tabcolsep-4\arrayrulewidth\relax}|
+  L{3cm}|
+}
+    \hline
+    \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Begründung} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Trade-Off Dimension} & \textbf{Spannungsfeld} & \textbf{Begründung} \\
+    \hline
+    \endhead
+    
+    Traceability Depth vs. Model Simplicity &
+    Mit einer tiefen Traceability Depth werden mehr Artefakte modelliert und tiefere Traceability-Ketten generiert, womit Zusammenhänge besser rekonstruiert werden können. Die Model Simplicity führt dazu, dass das Metamodell überschaubarer bleibt, jedoch auch zu Verlust von Detailinformationen &
+    Relevant basierend auf den Anforderungen was für Evidenz / Artefakte erstellt werden möchte
+    \\
+    \hline
+
+    Explicit Trace Modeling vs. Implicit Derivation &
+    Mit explicit Tracing werden Beziehungen zwischen den Objekten im Metamodell bewusst modelliert, womit auch der initiale Modellierungsaufwand steigt. Dies führt zu einer besseren Prüfbarkeit und Auditierarkeit. Die implicit Derivation leitet Traceability-Beziehungen aus ggf. bestehenden Regeln oder Strukturen ab, womit die Abhängigkeit von implizitem Wissen steigt. &
+    Relevant wegen der Abhängigkeit die sich aus der Abhängigkeit zu Modellierung von Cloud-Providern aber auch dem Aufwand die sich aus einer eigenen Modellierung ergibt
+    \\
+    \hline
+
+    Central Traceability Model vs. Federated Traceability Models &
+    Mit dem central Model wird ein einheitliches Model mit semantischer Vergleichbarkeit angestrebt, was eine einfachere domänenübergreifende Auswertung erlaubt. Mit dem federated Model existiert eine gewisse Vielfalt für eine Domäne, welche durch für eine Auswertung zentral gemapped werden muss. Die Konsistenz entsteht durch eine zentrale Auswertung / Mapping &
+    Relevant je nach Heterogenität der Domänen, um keine künstlichen Modelle zu erhalten die ggf. domänenspezifische Strukturen einschränken
+    \\
+    \hline
+
+    Governance centric Traceability vs. Engineering centric Traceability &
+    Eine governance-centric Traceability setzt die Policies, Controls und Compliance in den Fokus. Die Traceability ist hierbei top-down angedacht. Der Fokus liegt hierbei hauptsächlich auf der Auditierbarkeit, was dem Fokus bspw. eines Compliance Officers entspricht. Die engineering-centric Traceability bringt die technische Nachvollziehbarkeit und die technische Implementierungen / Artefakte in den Fokus. Dies entspricht potenziell der Betrachtung eines Entwicklers &
+    Relevant für die Wahl der Betrachtungsrichtung welche gewählt wird.
+    \\
+    \hline
+
+    Static Traceability Structure vs. Evolvable Traceability Structure &
+    Eine static Structure ist bewusst in stabilen Strukturen angedacht, bei der Änderungen nicht häufig passieren sollen. Dadurch wird auch langfristig eine Vergleichbarkeit erreicht. Die evolvable Structure bezieht sich auf die bewusste Anpassung und Erweiterung von Artefakt-Typen. Es wird somit bewusst offen definiert, um erweiterbar zu sein, was jedoch eine Vergleichbarkeit über die Zeit erschwert &
+    Relevant für die Vergleichbarkeit von auf der Architektur generierten Artefakten wie Audits
+    \\
+    \hline
+
+    High Formalization vs. Interpretative Flexibility &
+    In einer Architektur mit high Formalization sind die Traceability-Konzepte oder Regeln klar definiert und maschinenlesbar. Hierdurch wird eine Automatisierbarkeit und Vergleichbarkeit erreicht, verliert jedoch man pragmatische Anpassungen an Domänen mit unscharfer Semantik oder Informationen. In einer Architektur mit interpretive Flexibility können Traceability Beziehungen nicht vollständig formalisiert sein und semantische Lücken bewusst toleriert werden. Die Interpretation erfolgt manuell oder teil-automatisiert durch Menschen mit Kontextwissen &
+    Relevant basierend auf dem Prozess der angestrebt wird. Soll der Mensch aktiv in the loop sein oder wird eine volle Automatisierung angestrebt
+    \\
+    \hline
+
+    Traceability Coverage vs. Traceability Precision &
+    Bei Architekturen mit hoher Traceability Coverage zielen darauf ab, möglichst viele Artefakte, Beziehungen und Prozesse abzubilden. Dies führt zu hoher Transparenz und Vollständigkeit. Jedoch kann hierbei auch Overhead oder ein Rauschen entstehen welches die Interpretation erschwert. Bei Traceability Precision wird Wert darauf gelegt, die Beziehungen so präzise wie möglich darzustellen, um eine bessere Aussagekraft, klarere Prüfbarkeit und bessere Nachvollziehbarkeit zu erreichen. &
+    Relevant für das Setzen des Fokus auf breite oder tiefe der Traceability je nach Anwendungsfall (z.B. Audit vs. Incident Investigation)
+    \\
+    \hline
+
+    Policy-driven Traceability vs. Control-driven Traceability &
+    Bei der Policy-driven Traceability wird von den Richtlinien, Standards und Governance-Vorgaben aus gearbeitet: \textit{was} muss nachgewiesen werden? Dies führt zu einheitlicher Auditierbarkeit jedoch potenziell auch zu Überdokumentation und fehlender technischer Relevanz. Bei Control-driven wird von den verfügbaren Controls aus die Auditierbarkeit einer Anwendung aufgebaut. Dies bringt hohe technische Relevanz und im Engineering verankerte Auditierbarkeit aber auch die Gefahr mit sich, nicht alle übergeordneten Regulatorien abzudecken. Eine Kombination der beiden Ansätze wäre möglich, muss jedoch im Voraus festgelegt werden. &
+    Relevant für die Entscheidung von welcher Sicht aus die Traceability aufgebaut werden soll
+    \\
+    \hline
+    \caption{Selbst definierte Trade-Off Dimensionen}
+    \label{tab:tension-fields}
+\end{longtable}

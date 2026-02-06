@@ -208,7 +208,7 @@ Basierend auf den Kriterien und der Bewertungsskala wird die Bewertung der versc
     \label{tab:evaluating-didactic-criteria4}
 \end{longtable}
 
-Basierend auf der Evaluation der Kriterien wird sich für der \ac{poc} für die Variante der Component-centric Architektur entschieden. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-how Strukturierung im \ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc. gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
+Basierend auf der Evaluation der Kriterien wird im \ac{poc} für die Variante der Component-centric Architektur entschieden. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-how Strukturierung im \ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc. gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
 
 Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung, sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototyp generiert. Dieser Prototyp (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akteure aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptablauf des Use-Cases sind hierbei: die Auswahl des Projektes durch den Compliance-Officer wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl. Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}
 
@@ -239,27 +239,30 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 
 % KOMPLETTES DIAGRAMM
 % @startuml
-% participant "LZ Provisioning Service" as lz
-% participant "IaC Engine" as cloud
-% actor "Projektverantwortlicher" as po
-% participant "Project Service" as project
-% participant "Traceability Service" as trace
-% participant "Evidence Service" as evidence
-% actor "Compliance Officer" as comp
-% participant "Governance Config Service" as gov
-% database "Governance Relationsship" as govdb
+
+% participant "LZ\nProvisioning\nService" as lz
+% participant "IaC\nEngine" as cloud
+% actor "Projekt-\nverantwortlicher" as po
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% database "Governance\nDecision\nStore" as decision
+% participant "Evidence\nService" as evidence
+% actor "Compliance\nOfficer" as comp
+% participant "Governance\nConfig\nService" as gov
+% database "Governance\nRelationsship" as govdb
 % database "LZ Component IaC" as compiac
 % actor "Developer" as dev
-% database "Project Collection" as projectdb
+% database "Project\nCollection" as projectdb
+% database "Governance\nConfiguration\nService" as config
 
-% == Static setup (Scope von UC 04) ==
+% == Static Setup (Scope von UC 04) ==
 
-% dev --> govdb : Configure Traceability Relationsship
+% dev --> config : Configure Traceability Relationship
 % dev --> projectdb: Configure sample project
-% dev --> compiac : Configure IaC fore LZ Components (AWS Control Tower, Mgmt Group etc)
+% dev --> compiac : Configure IaC for LZ Components (AWS Control Tower, Mgmt Group, etc.)
 
+% == Deploy new Project (Scope von UC 06) ==
 
-% == Deploy new project (Scope von UC 06) ==
 % po --> project : Declare choice for LZ Component category
 % project --> trace : Get LZ Governance Assessment
 % activate trace
@@ -270,32 +273,36 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 
 % == Verify compliance (Scope von UC 06) ==
 
-% trace --> project: Get LZ accounts ids of project
-% trace --> govdb:  Get assessment for accounts of projects
-% trace --> cloud: Check compliance of account inside mgmt group /ao
+% trace --> project: Get LZ account IDs\nof project
+% trace --> decision:  Get category/governance decision for accounts of projects
+% trace --> config: Get relationship from decision
+% trace --> cloud: Check compliance of account\ninside mgmt group / AO
 % trace --> evidence: Send evaluation result
 % comp --> evidence: Get evaluation result
+
 % @enduml
+
 
 % STATIC SETUP
 % @startuml
 
 % database "LZ Component IaC" as compiac
 % actor "Developer" as dev
-% database "Project Collection" as projectdb
-% database "Governance Configuration\nService" as config
+% database "Project\nCollection" as projectdb
+% database "Governance\nConfiguration\nService" as config
 
-% == Static setup (Scope von UC 04) ==
+% == Static Setup (Scope von UC 04) ==
 
-% dev --> config : Configure Traceability Relationsship
+% dev --> config : Configure Traceability Relationship
 % dev --> projectdb: Configure sample project
-% dev --> compiac : Configure IaC fore LZ Components (AWS Control Tower, Mgmt Group etc)
+% dev --> compiac : Configure IaC for LZ Components (AWS Control Tower, Mgmt Group, etc.)
 
 % @enduml
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_static_setup.png}
-    \caption{Sequenz-Diagramm für statische Setup des \ac{poc}}
+    \caption{Sequenz-Diagramm für statisches Setup des \ac{poc}}
     \label{fig:methodology-poc-sequence-static-setup}
 \end{figure}
 
@@ -303,23 +310,25 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 % DEPLOY NEW PROJECT
 % @startuml
 
-% participant "IaC Engine" as cloud
-% participant "LZ Provisioning Service" as lz
-% actor "Projektverantwortlicher" as po
-% participant "Project Service" as project
-% participant "Traceability Service" as trace
-% database "Governance Decision\nStore" as decision
-% database "Governance Configuration\nService" as config
+% participant "IaC\nEngine" as cloud
+% participant "LZ\nProvisioning\nService" as lz
+% actor "Projekt-\nverantwortlicher" as po
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% database "Governance\nDecision\nStore" as decision
+% database "Governance\nConfiguration\nService" as config
 
 % == Deploy new project (Scope von UC 06) ==
-% po --> project : Declare choice for LZ Component category
-% project --> trace : Get LZ Governance Assessment
+
+% po --> project : Declare choice for\nLZ Component category
+% project --> trace : Get LZ Governance\nAssessment
 % activate trace
-% trace --> config: Check Relationships for Component/Governance category \n based on governance requirements
+% trace --> config: Check Relationships for\nComponent/Governance category\nbased on governance requirements
 % trace --> decision: Store Component/Governance decision
 % return LZ Governance Assessment
-% project --> lz: Create LZ based on Assessment
-% lz --> cloud: Create subscription with blueprint in Mgmt Group / OU etc
+% project --> lz: Create LZ based\non Assessment
+% lz --> cloud: Create subscription with blueprint\nin Mgmt Group, OU, etc.
+
 % @enduml
 
 \begin{figure}[H]
@@ -329,30 +338,28 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
     \label{fig:methodology-poc-sequence-project-setup}
 \end{figure}
 
-
-
-
 % VERIFY COMPLIANCE
 % @startuml
 
-% participant "IaC Engine" as cloud
-% participant "Project Service" as project
-% participant "Traceability Service" as trace
-% participant "Evidence Service" as evidence
-% actor "Compliance Officer" as comp
-% database "Governance Decision\nStore" as decision
-% database "Governance Configuration\nService" as config
+% participant "IaC\nEngine" as cloud
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Evidence\nService" as evidence
+% actor "Compliance\nOfficer" as comp
+% database "Governance\nDecision\nStore" as decision
+% database "Governance\nConfiguration\nService" as config
 
 % == Verify compliance (Scope von UC 06) ==
 
-% trace --> project: Get LZ accounts ids of project
-% trace --> decision:  Get category/governance\ndecision for accounts of projects
+% trace --> project: Get LZ account IDs\nof project
+% trace --> decision:  Get category/governance decision for accounts of projects
 % trace --> config: Get relationship from decision
-% trace --> cloud: Check compliance of account inside mgmt group /ao
+% trace --> cloud: Check compliance of account\ninside mgmt group / AO
 % trace --> evidence: Send evaluation result
 % comp --> evidence: Get evaluation result
 
 % @enduml
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_verify-compliance.png}

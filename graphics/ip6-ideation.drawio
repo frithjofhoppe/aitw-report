@@ -2115,7 +2115,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="2066" dy="1158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2431" dy="1362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2146,10 +2146,10 @@
           <mxGeometry height="162.9" width="200" x="4990" y="1251.79" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
-          <mxGeometry height="1150" width="1250" x="266" y="1170" as="geometry" />
+          <mxGeometry height="1120" width="1250" x="266" y="1170" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-51" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=none;dashed=1;textAlign=top;verticalAlign=top;" value="Base Model" vertex="1">
-          <mxGeometry height="640" width="1020" x="350" y="1630" as="geometry" />
+          <mxGeometry height="610" width="1020" x="350" y="1630" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="1200" width="1250" x="1642" y="1170" as="geometry" />
@@ -2481,7 +2481,7 @@
           <mxGeometry height="240.5" width="200" x="702" y="1670.5299999999997" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-83" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Shared Solution Component&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="306.5" width="200" x="572" y="1930" as="geometry" />
+          <mxGeometry height="306.5" width="200" x="447" y="1893.31" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-84" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Secret Storage" vertex="1">
           <mxGeometry height="51" width="120" x="742" y="1710.0299999999997" as="geometry" />
@@ -2493,22 +2493,22 @@
           <mxGeometry height="51" width="120" x="742" y="1772.5299999999997" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-87" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="IAM" vertex="1">
-          <mxGeometry height="51" width="120" x="612" y="1962.5" as="geometry" />
+          <mxGeometry height="51" width="120" x="487" y="1925.81" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-88" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Logging" vertex="1">
-          <mxGeometry height="51" width="120" x="612" y="2024" as="geometry" />
+          <mxGeometry height="51" width="120" x="487" y="1987.31" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-89" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Billing" vertex="1">
-          <mxGeometry height="51" width="120" x="612" y="2088.25" as="geometry" />
+          <mxGeometry height="51" width="120" x="487" y="2051.56" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-90" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Site Connectivity" vertex="1">
-          <mxGeometry height="51" width="120" x="612" y="2149.5" as="geometry" />
+          <mxGeometry height="51" width="120" x="487" y="2112.8100000000004" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-91" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="..." vertex="1">
           <mxGeometry height="30" width="60" x="772" y="1878.7799999999997" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-92" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="..." vertex="1">
-          <mxGeometry height="30" width="60" x="642" y="2200.5" as="geometry" />
+          <mxGeometry height="30" width="60" x="517" y="2163.8100000000004" as="geometry" />
         </mxCell>
         <mxCell id="XkSTqM7eg7opSIsjtuqv-93" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;text-align: center;&quot;&gt;Plattform&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;text-align: center; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Component&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="325.87" width="200" x="1071" y="1783.37" as="geometry" />

@@ -1,0 +1,97 @@
+@startuml Workflow_Traceability_Control_Centric
+!define CONTROL_COLOR #E1F5E1
+!define POLICY_COLOR #E3F2FD
+!define DECISION_COLOR #FFF3E0
+!define VERIFY_COLOR #F3E5F5
+
+title Control-Centric Bundling - Traceability Workflow
+
+start
+:Regulation Definition;
+note right
+  Regulatory framework
+  (e.g., ISO 27001, SOC2)
+end note
+
+:Extract Controls;
+note right
+  Identify all controls
+  from regulation
+end note
+
+partition "Control Mapping Phase" #CONTROL_COLOR {
+  :For each Control;
+  :Map Control to Platform Policies\n(X, Y, Z, ...);
+  note right
+    1:1 or 1:n mapping
+    Control → Policy Bundle
+  end note
+  
+  :Create Control-Policy Bundle;
+  :Store mapping in\nGovernance Configuration;
+}
+
+partition "LZ Blueprint Selection" #DECISION_COLOR {
+  :Project Team selects\nrequired Controls;
+  note right
+    Based on workload
+    requirements and risk
+  end note
+  
+  :Create Blueprint with\nselected Controls;
+}
+
+partition "Deployment Phase" #POLICY_COLOR {
+  :Resolve selected Controls;
+  
+  :For each Control in Blueprint;
+  :Retrieve associated Platform Policies;
+  :Deploy Policies to Cloud Platform;
+  note right
+    Direct 1:1 mapping
+    Control → Enforcement
+  end note
+  
+  :Assign Control ID to\ndeployed resources;
+}
+
+partition "Traceability & Audit Phase" #VERIFY_COLOR {
+  :Query: "Show all implemented Controls";
+  
+  :Retrieve all resource-to-Control\nmappings;
+  note right
+    Trivial lookup:
+    Resource → Control ID
+  end note
+  
+  :Generate Audit Report;
+  note right
+    - Which Controls are deployed
+    - Where they are deployed
+    - Compliance status per Control
+  end note
+  
+  :Verify Compliance;
+  note right
+    Simple verification:
+    Does deployed policy match
+    Control requirement?
+  end note
+}
+
+:Audit Complete;
+note right
+  Clear traceability chain:
+  Regulation → Control → Policy → Resource
+end note
+
+stop
+
+legend right
+  |<#CONTROL_COLOR> Control Mapping |
+  |<#DECISION_COLOR> Decision Making |
+  |<#POLICY_COLOR> Deployment |
+  |<#VERIFY_COLOR> Verification |
+endlegend
+
+@enduml

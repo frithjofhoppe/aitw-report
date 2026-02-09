@@ -1,0 +1,134 @@
+@startuml Workflow_Traceability_Control_Centric_Swimlane
+title Control-Centric Bundling - Traceability Workflow (Swimlane)
+
+participant "Compliance Officer" as CO
+participant "Developer" as DEV
+participant "Governance\nConfiguration" as GC
+participant "Traceability\nService" as TS
+participant "Cloud\nPlatform" as CP
+database "Control\nMapping Store" as CMS
+
+== Control Mapping Phase ==
+activate CO
+CO -> DEV: Define Controls from Regulation
+deactivate CO
+
+activate DEV
+DEV -> DEV: Extract Controls\n(e.g., C-001, C-002, etc.)
+note right of DEV
+  For each control:
+  - Control ID
+  - Description
+  - Regulatory requirement
+end note
+
+DEV -> GC: Map Control → Platform Policies\n(1:1 or 1:n)
+activate GC
+GC -> CMS: Store Control-Policy Mappings
+note right of CMS
+  Example:
+  C-001 → [Policy-A, Policy-B]
+  C-002 → [Policy-C]
+end note
+deactivate GC
+deactivate DEV
+
+== LZ Blueprint Selection ==
+activate CO
+CO -> CO: Select required Controls\nbased on workload
+note right of CO
+  Decision: Baseline Level
+  - No protection
+  - Standard protection
+  - High protection
+end note
+deactivate CO
+
+== Deployment Phase ==
+activate DEV
+DEV -> TS: Deploy LZ with selected Controls\n[C-001, C-003, C-005]
+deactivate DEV
+
+activate TS
+TS -> CMS: Lookup Platform Policies\nfor each Control
+activate CMS
+CMS --> TS: Return Policy bundles
+deactivate CMS
+
+TS -> CP: Apply Policies to resources
+activate CP
+CP -> CP: Deploy Policy-A, Policy-B, Policy-C
+CP -> CP: Tag resources with\nControl IDs
+note right of CP
+  Resource metadata:
+  - Control-ID: C-001
+  - Resource-ID: res-123
+  - Timestamp
+  - Enforcement status
+end note
+deactivate CP
+
+TS -> TS: Record traceability mapping:\nControl → Resource\n(bidirectional index)
+deactivate TS
+
+== Audit & Verification ==
+activate CO
+CO -> TS: "Audit: Show all\nimplemented Controls"
+note right of CO
+  Compliance verification query
+end note
+deactivate CO
+
+activate TS
+TS -> TS: Query traceability index:\nFetch all Control→Resource mappings
+note right of TS
+  **Index Structure:**
+  - Bidirectional mapping stored at deployment
+  - Control ID → [Resource IDs, Policy IDs]
+  - Resource ID → Control ID (reverse lookup)
+  
+  **Query Operation:**
+  1. Retrieve all stored Control→Resource edges
+  2. Group resources by Control ID
+  3. Aggregate policy enforcement status
+  
+  **Trivial Lookup Rationale:**
+  - Direct 1:1 index (not search)
+  - Pre-computed at deployment time
+  - Time Complexity: O(1) or O(log n)
+  - No need to traverse policies or components
+end note
+
+TS -> CP: Verify compliance:\nCheck if resources\nstill comply with Controls
+activate CP
+CP -> CP: Verify policy enforcement
+CP -> CP: Get compliance status\nper Control per Resource
+deactivate CP
+
+TS -> TS: Generate audit report:\n- Control ID\n- Associated Policies\n- Deployed Resources\n- Compliance Status
+note right of TS
+  **Report Structure (per Control):**
+  
+  Control: C-001 (Encryption at Rest)
+  ├─ Policies: [Policy-A, Policy-B]
+  ├─ Resources: [res-123, res-456]
+  └─ Status: ✓ Compliant
+  
+  Control: C-003 (MFA Enforcement)
+  ├─ Policies: [Policy-C]
+  ├─ Resources: [res-789]
+  └─ Status: ✓ Compliant
+  
+  **Key Advantage:**
+  Clear 1:1 traceability from Regulation
+  → Control → Policies → Resources
+end note
+TS --> CO: Audit Report
+note right of TS
+  Complete traceability:
+  Regulation → Control → Policies → Resources
+  Status: ✓ Compliant
+end note
+deactivate TS
+
+@enduml

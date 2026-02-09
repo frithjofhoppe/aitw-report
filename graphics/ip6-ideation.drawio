@@ -2115,7 +2115,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="2431" dy="1362" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="2857" dy="1609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2761,7 +2761,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="1426" y="1529" />
-              <mxPoint x="1426" y="1893" />
+              <mxPoint x="1426" y="1853" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -3072,14 +3072,6 @@
         <mxCell id="wG__MCC0dGyOnwEGjAIM-97" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Control A" vertex="1">
           <mxGeometry height="27.22" width="120" x="3140" y="1394.6900000000005" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-98" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-139">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-143" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-98" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;included in&amp;gt;&amp;gt;" vertex="1">
-          <mxGeometry relative="1" x="-0.4001" y="-4" as="geometry">
-            <mxPoint x="9" y="-24" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-99" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Control B" vertex="1">
           <mxGeometry height="27.22" width="120" x="3140" y="1432.9700000000003" as="geometry" />
         </mxCell>
@@ -3195,8 +3187,10 @@
             <mxPoint x="-28" y="-5" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-144" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" target="wG__MCC0dGyOnwEGjAIM-74">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-144" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-139" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" target="wG__MCC0dGyOnwEGjAIM-74">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3590" y="1430" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-145" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-144" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;defines rules for&amp;gt;&amp;gt;" vertex="1">
           <mxGeometry relative="1" x="-0.2217" y="2" as="geometry">
@@ -3215,8 +3209,12 @@
         <mxCell id="wG__MCC0dGyOnwEGjAIM-142" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="&lt;div&gt;&lt;b&gt;high-xyz&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="27.22" width="120" x="3481" y="1392.9899999999998" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-146" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-139">
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-146" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-139">
           <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3160" y="1600" />
+              <mxPoint x="3491" y="1600" />
+            </Array>
             <mxPoint x="3340" y="1653" as="sourcePoint" />
             <mxPoint x="3481" y="1570" as="targetPoint" />
           </mxGeometry>
@@ -3426,6 +3424,14 @@
         </mxCell>
         <mxCell id="WW1retzY9SQGR_83PhoP-8" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;Approach: Controls are represented directly by provider native policy abstraction ( like azure initiatives, aws scp etc). Those are directly applied to the components&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fokus auf anwendung von policies auf ressourcen weniger die nachvollziehbarkeit à la get shit done. Initiatives/Bundles exisiteren bereits von diversen cloud providern&lt;/div&gt;" vertex="1">
           <mxGeometry height="125" width="349" x="4366" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-98" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-141">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-143" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-98" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;included in&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.4001" y="-4" as="geometry">
+            <mxPoint x="9" y="-24" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

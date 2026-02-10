@@ -2115,7 +2115,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="1943" dy="1266" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1943" dy="1207" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3401,7 +3401,7 @@
         <mxCell id="WW1retzY9SQGR_83PhoP-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="140" width="1251" x="1640" y="980" as="geometry" />
         </mxCell>
-        <mxCell id="WW1retzY9SQGR_83PhoP-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;Approach: Controls are bundle by landing zone componet into component baselines. Those baselines are mapped to the plattorm policies. When deploying a landing zone the blue print selects the components and the baselines of the individual components which are needed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fokus auf Engegneering, Verteilung an Experten Gruppen/Teams aber mit Traceability&lt;/div&gt;" vertex="1">
+        <mxCell id="WW1retzY9SQGR_83PhoP-4" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;div&gt;Approach: Controls are bundle by landing zone component into component profiles. Those profiles are mapped to the plattorm policies. When deploying a landing zone the blue print selects the components and the profiles of the individual components which are needed.&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Fokus auf Engegneering, Verteilung an Experten Gruppen/Teams aber mit Traceability&lt;/div&gt;" vertex="1">
           <mxGeometry height="130" width="349" x="1660" y="985" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-214" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;div&gt;&lt;b&gt;Pros&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Fits how teams implement: network policies live together&lt;/div&gt;&lt;div&gt;- Fewer bundles, simpler rollout&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Cons&lt;/b&gt;&lt;/div&gt;&lt;div&gt;- Traceability requires one extra lookup step:&lt;/div&gt;&lt;div&gt;“policy X is in bundle Network → contains controls A,B,C”&lt;/div&gt;&lt;div&gt;- Some policies implement multiple controls (1:n)&lt;/div&gt;" vertex="1">

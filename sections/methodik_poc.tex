@@ -1,7 +1,7 @@
 \subsection{Proof-of-Concept zur Veranschaulichung}
 \label{sec:poc-methodology}
 
-Die technische Machbarkeit der angedachten Architektur-Varianten aus \fullref{sec:traceability-architecture} soll exemplarisch mit einem \ac{poc} gezeigt werden. Es wird folgenden Vorgehen angewendet.
+Die technische Machbarkeit der angedachten Architektur-Varianten aus \fullref{sec:traceability-architecture} soll exemplarisch mit einem \ac{poc} gezeigt werden. Es wird folgendesVorgehen angewendet.
 
 \begin{enumerate}
     \item Definieren von didaktischen Kriterien
@@ -208,7 +208,7 @@ Basierend auf den Kriterien und der Bewertungsskala wird die Bewertung der versc
     \label{tab:evaluating-didactic-criteria4}
 \end{longtable}
 
-Basierend auf der Evaluation der Kriterien wird im \ac{poc} für die Variante der Component-centric Architektur entschieden. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-how Strukturierung im \ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc. gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
+Basierend auf der Evaluation der Kriterien wird im \ac{poc} die Variante der Component-centric Architektur (Variante 2) verwendet. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-how Strukturierung im \ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc. gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
 
 Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung, sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototyp generiert. Dieser Prototyp (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akteure aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptablauf des Use-Cases sind hierbei: die Auswahl des Projektes durch den Compliance-Officer wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl. Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}
 
@@ -241,7 +241,7 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 % @startuml
 
 % participant "LZ\nProvisioning\nService" as lz
-% participant "IaC\nEngine" as cloud
+% participant "Cloud\nProvider\nAPI" as cloud
 % actor "Projekt-\nverantwortlicher" as po
 % participant "Project\nService" as project
 % participant "Traceability\nService" as trace
@@ -308,7 +308,7 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 % DEPLOY NEW PROJECT
 % @startuml
 
-% participant "IaC\nEngine" as cloud
+% participant "Cloud\nProvider\nAPI" as cloud
 % participant "LZ\nProvisioning\nService" as lz
 % actor "Projekt-\nverantwortlicher" as po
 % participant "Project\nService" as project
@@ -339,20 +339,25 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 % VERIFY COMPLIANCE
 % @startuml
 
-% participant "IaC\nEngine" as cloud
+% participant "Cloud\nProvider\nAPI" as cloud
 % participant "Project\nService" as project
 % participant "Traceability\nService" as trace
 % participant "Evidence\nService" as evidence
 % actor "Compliance\nOfficer" as comp
 % database "Governance\nDecision\nStore" as decision
-% database "Governance\nConfiguration\nService" as config
+% participant "Governance\nConfiguration\nService" as config
 
 % == Verify compliance (Scope von UC 06) ==
 
 % trace --> project: Get LZ account IDs\nof project
 % trace --> decision:  Get category/governance decision for accounts of projects
-% trace --> config: Get relationship from decision
-% trace --> cloud: Check compliance of account\ninside mgmt group / AO
+% decision --> trace : decision
+% trace --> config : get component profile
+% config --> trace : component profile
+% trace --> config : get policies
+% config --> trace : policies
+% trace --> cloud : Get policy result
+% cloud --> trace : response compliant/uncompliant
 % trace --> evidence: Send evaluation result
 % comp --> evidence: Get evaluation result
 

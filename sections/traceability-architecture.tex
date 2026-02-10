@@ -11,11 +11,9 @@
 \subsection{Variante 1: Control-centric Bundling}
 \label{sec:trace-arch-variant1}
 
-\textbf{Ansatz}: Für jede Control in der jeweiligen Verordnung wird ein Mapping zu einem Plattform-Bundle gemacht. Also eine Control beinhaltet Plattform-Policies X, Y und Z. Beim Deployment einer \ac{lz} wählt das Blueprint aus welche Controls benötigt werden (z.B. keine Baseline, erhöhter Schutzbedarf, etc.)
+\textbf{Ansatz}: Für jede Control in der jeweiligen Verordnung wird ein Mapping zu einem Plattform-Bundle gemacht. Also eine Control beinhaltet Plattform-Policies X, Y und Z. Beim Deployment einer \ac{lz} wählt das Blueprint aus welche Controls benötigt werden (z.B. keine Profile, erhöhter Schutzbedarf, etc.)
 
 \textbf{Fokus}: Traceability
-
-\textbf{Detailbeschreibung}: In dieser Architektur-Variante wird jede Control als eigenständige Einheit betrachtet, die direkt mit den entsprechenden Plattform-Policies verknüpft ist. Das bedeutet, dass für jede Control spezifische Implementierungen existieren, welche auf die Anforderungen der jeweiligen Verordnung zugeschnitten sind. Beim Deployen einer \ac{lz} wählt das Blueprint die benötigten Controls aus, basierend auf den Anforderungen der Anwendung oder des Workloads. Diese Controls werden dann direkt auf die Ressourcen angewendet, was eine klare Rückverfolgbarkeit ermöglicht. Audits können einfach durchgeführt werden, da jede implementierte Control direkt identifiziert und überprüft werden kann. Allerdings erfordert diese granularere Herangehensweise eine umfangreiche Automatisierung und eine gut strukturierte Build-Pipeline, um die Vielzahl von Artefakten effizient zu verwalten.
 
 \textbf{Pros}
 \begin{itemize}
@@ -41,11 +39,20 @@
 \subsection{Variante 2: LZ component-centric Bundling}
 \label{sec:trace-arch-variant2}
 
-\textbf{Ansatz}: Die Controls werden nach \ac{lz}-Komponenten in Komponenten-Baselines gebündelt. Diese Baselines werden den Plattformrichtlinien zugeordnet. Bei der Bereitstellung einer \ac{lz} wählt der Blueprint die benötigten Komponenten und die Baselines der einzelnen Komponenten aus.
+\textbf{Ansatz}: Die Controls werden nach \ac{lz}-Komponenten in Komponenten-Profiles gebündelt. Diese Profiles werden den Plattformrichtlinien zugeordnet. Bei der Bereitstellung einer \ac{lz} wählt der Blueprint die benötigten Komponenten und die Profiles der einzelnen Komponenten aus.
 
 \textbf{Fokus}: Engineering, Verteilung an Expertengruppen/Teams, aber mit Rückverfolgbarkeit
 
-\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls basierend auf den \ac{lz}-Komponenten gebündelt. Jede Komponente hat eine zugeordnete Baseline, welche die relevanten Policies enthält. Beim Deployen einer \ac{lz} wählt das Blueprint die benötigten Komponenten aus, und die entsprechenden Baselines werden angewendet. Diese Herangehensweise ermöglicht es den Teams, sich auf spezifische Bereiche wie Netzwerk, Identität oder Überwachung zu konzentrieren, was der üblichen Implementierungspraxis entspricht. Allerdings erfordert die Rückverfolgbarkeit einen zusätzlichen Schritt, da die Controls nicht direkt, sondern über die Komponenten-Baselines identifiziert werden müssen. Es ist möglich, dass einige Policies mehrere Controls abdecken, was die Nachverfolgung weiter erschwert.
+Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschiedenen Controls enthält. Eine Control ist je eine Anforderung welche eingehalten werden muss damit die Control als eingehalten gilt.
+
+\textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant2_verify-compliance.png}
+    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 2}
+    \label{fig:methodology-poc-variant2-sequence-verification}
+\end{figure}
 
 \textbf{Pros}
 \begin{itemize}
@@ -71,22 +78,22 @@
 \subsection{Variante 3: LZ category centric Bundling}
 \label{sec:trace-arch-variant3}
 
-\textbf{Ansatz}: Controls werden nach Baselines gebündelt, welche die Rules für alle Komponenten enthalten. Diese Baselines umfassen die entsprechenden Policies. Beim deployen einer \ac{lz} wählt der Blueprint nur die \ac{lz}-Baseline aus, der Rest wird abstrahiert.
+\textbf{Ansatz}: Controls werden nach Profiles gebündelt, welche die Rules für alle Komponenten enthalten. Diese Profiles umfassen die entsprechenden Policies. Beim deployen einer \ac{lz} wählt der Blueprint nur die \ac{lz}-Profiles aus, der Rest wird abstrahiert.
 
-\textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Baseline alles umfasst, ohne dass viel ausgewählt werden muss.
+\textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Profile alles umfasst, ohne dass viel ausgewählt werden muss.
 
-\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls in Baselines gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Baseline repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Blueprint einfach die entsprechende Baseline aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine extrem einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welcher Baseline enthalten sind.
+\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls in Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Blueprint einfach die entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine extrem einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welcher Profile enthalten sind.
 
 \textbf{Pros}
 \begin{itemize}
-    \item Extrem einfache Anwendung (\flqq regulierte Baseline anwenden\frqq)
+    \item Extrem einfache Anwendung (\flqq regulierte Profile anwenden\frqq)
     \item Klare Customer Story: Kategorien repräsentieren Risikoklassen
 \end{itemize}
 
 \textbf{Cons}
 \begin{itemize}
     \item Hohe Duplikation von Controls über Kategorien hinweg
-    \item Rückverfolgbarkeit zu einzelnen Controls ist gegeben, aber man muss ein Manifest \flqq Controls in der Baseline\frqq\ führen
+    \item Rückverfolgbarkeit zu einzelnen Controls ist gegeben, aber man muss ein Manifest \flqq Controls in der Profile\frqq\ führen
 \end{itemize}
 
 \textbf{Fazit}: Diese Variante bietet die einfachste Anwendung für den Endnutzer, da sie die Komplexität der Auswahl von Controls und Policies abstrahiert. Es könnte als \flqq Bronze-Standard\frqq\ für die Traceability Architektur angesehen werden, da es eine benutzerfreundliche Lösung darstellt, aber mit erheblichen Nachteilen in Bezug auf Duplikation und Rückverfolgbarkeit einhergeht.
@@ -105,7 +112,7 @@
 
 \textbf{Fokus}: Die Anwendung von Richtlinien auf Ressourcen, weniger auf die Nachvollziehbarkeit (à la MVP). Initiativen/Bundles existieren bereits von verschiedenen Cloud-Providern.
 
-\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls direkt durch die nativen Richtlinienabstraktionen der Cloud-Provider dargestellt. Das bedeutet, dass die Implementierung der Controls direkt auf den Ressourcen erfolgt, ohne dass eine zusätzliche Abstraktionsschicht wie Bundles oder Baselines erforderlich ist. Diese Herangehensweise ermöglicht eine optimale Leistung und eine enge Ausrichtung an den Mechanismen der Provider, da sie die nativen Funktionen und Tools nutzt. Allerdings führt dies zu einer schlechteren Vergleichbarkeit über verschiedene Cloud-Provider hinweg, da jeder Provider unterschiedliche Formate und Strukturen für seine Richtlinien hat. Die Rückverfolgbarkeit erfordert daher eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
+\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls direkt durch die nativen Richtlinienabstraktionen der Cloud-Provider dargestellt. Das bedeutet, dass die Implementierung der Controls direkt auf den Ressourcen erfolgt, ohne dass eine zusätzliche Abstraktionsschicht wie Bundles oder Profiles erforderlich ist. Diese Herangehensweise ermöglicht eine optimale Leistung und eine enge Ausrichtung an den Mechanismen der Provider, da sie die nativen Funktionen und Tools nutzt. Allerdings führt dies zu einer schlechteren Vergleichbarkeit über verschiedene Cloud-Provider hinweg, da jeder Provider unterschiedliche Formate und Strukturen für seine Richtlinien hat. Die Rückverfolgbarkeit erfordert daher eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
 
 \textbf{Fazit}: Diese Variante bietet die beste Leistung und Providerausrichtung, da sie die nativen Mechanismen der Cloud-Provider nutzt. Es könnte als \flqq Performance-Standard\frqq\ für die Traceability Architektur angesehen werden, da sie die effizienteste Nutzung der Ressourcen ermöglicht, aber mit erheblichen Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit einhergeht.
 

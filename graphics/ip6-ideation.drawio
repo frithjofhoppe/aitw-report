@@ -2903,7 +2903,7 @@
         <mxCell id="wG__MCC0dGyOnwEGjAIM-26" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="LZ Blueprint" vertex="1">
           <mxGeometry height="73" width="120" x="1766" y="1794.2799999999997" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-137" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#3399FF;dashed=1;" target="wG__MCC0dGyOnwEGjAIM-9">
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-137" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;strokeColor=#3399FF;dashed=1;" target="wG__MCC0dGyOnwEGjAIM-7">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-138" connectable="0" parent="wG__MCC0dGyOnwEGjAIM-137" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&amp;lt;&amp;lt;assigned to&amp;gt;&amp;gt;" vertex="1">
@@ -2960,7 +2960,7 @@
         <mxCell id="wG__MCC0dGyOnwEGjAIM-43" parent="1" style="ellipse;whiteSpace=wrap;html=1;strokeColor=#3399FF;" value="Azure3" vertex="1">
           <mxGeometry height="27.22" width="120" x="2657" y="1354.4899999999998" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-48" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-123">
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-48" edge="1" parent="1" source="wG__MCC0dGyOnwEGjAIM-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeColor=#3399FF;" target="wG__MCC0dGyOnwEGjAIM-123">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="2328.9999889476003" y="1388.4782608695655" as="sourcePoint" />
           </mxGeometry>

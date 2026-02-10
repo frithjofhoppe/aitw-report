@@ -2115,7 +2115,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="OKHV5Pdw0hhP4XDJ950X" name="Traceability-Architecture">
-    <mxGraphModel dx="2857" dy="1609" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1600" dy="1042" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2154,7 +2154,7 @@
         <mxCell id="wG__MCC0dGyOnwEGjAIM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=center;fontSize=25" value="" vertex="1">
           <mxGeometry height="1200" width="1250" x="1642" y="1170" as="geometry" />
         </mxCell>
-        <mxCell id="wG__MCC0dGyOnwEGjAIM-123" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Component Baseline&lt;/div&gt;" vertex="1">
+        <mxCell id="wG__MCC0dGyOnwEGjAIM-123" parent="1" style="html=1;align=center;verticalAlign=top;rounded=1;absoluteArcSize=1;arcSize=10;whiteSpace=wrap;strokeColor=#3399FF;" value="&lt;div style=&quot;text-align: left;&quot;&gt;Component Profiles&lt;/div&gt;" vertex="1">
           <mxGeometry height="182.22" width="200" x="2270" y="1299.8600000000001" as="geometry" />
         </mxCell>
         <mxCell id="wG__MCC0dGyOnwEGjAIM-53" parent="1" style="rounded=1;whiteSpace=wrap;html=1;arcSize=0;fillColor=none;dashed=1;textAlign=top;verticalAlign=top;" value="Base Model" vertex="1">

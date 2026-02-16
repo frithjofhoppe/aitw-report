@@ -8,12 +8,66 @@
 % \end{itemize}
 % \hl{structure notes end}
 
+Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschiedenen Controls enthält. Eine Control ist je eine Anforderung welche eingehalten werden muss damit die Control als eingehalten gilt. Eine Control kann durch eine oder mehrere Policies implementiert werden, welche die konkrete Umsetzung der Control darstellen. Diese Policies können entweder selbst definiert oder von den Cloud-Providern bereitgestellt werden. Die Traceability Architektur beschreibt, wie diese Controls und Policies organisiert und gebündelt werden, um die Anforderungen der Regulationen zu erfüllen und gleichzeitig eine effiziente Implementierung und Rückverfolgbarkeit zu gewährleisten.
+
+\hl{Maintainability Punkte und Prozess beschreiben}
+
 \subsection{Variante 1: Control-centric Bundling}
 \label{sec:trace-arch-variant1}
 
 \textbf{Ansatz}: Für jede Control in der jeweiligen Verordnung wird ein Mapping zu einem Plattform-Bundle gemacht. Also eine Control beinhaltet Plattform-Policies X, Y und Z. Beim Deployment einer \ac{lz} wählt das Blueprint aus welche Controls benötigt werden (z.B. keine Profile, erhöhter Schutzbedarf, etc.)
 
 \textbf{Fokus}: Traceability
+
+% DEPLOY NEW FOUNDATION
+% @startuml
+
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "LZ\nProvisioning\nService" as lz
+% actor "Projekt-\nverantwortlicher" as po
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Governance\nConfiguration\nService" as config
+% database "Governance\nDecision\nStore" as decision
+% database "Governance\nIntent\nRepository" as intent
+
+% == Deploy new LZ (Scope of UC 06 -  Variant 1: Control-centric) ==
+
+% po --> project : Declare choice for\nLZ Component category
+% project --> trace : Get Foundation\nPlacement Decision
+% activate trace
+% note right of trace
+% generic input:
+% - cloud provider
+% - environment
+% - data requirements
+% - RPO, backup strategy, availability requirements, ...
+% end note
+% trace --> config : get Control IDs\nbased on Input
+% activate config
+% loop Foundation Requirement Aspects
+%     config --> intent : Check if Control\nBundles are available
+% end
+% alt matching LZ(s) found
+%     config --> trace : Control IDs
+% else no matching LZ found
+%     config --> trace : empty List
+% end
+% deactivate config
+% trace --> decision: Store Control IDs
+% return LZ Foundation\nPlacement Decision
+% project --> decision : get required Policies
+% project --> lz : Create LZ with required Policies
+% lz --> cloud: Create Foundation\nbased on Blueprint
+
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant1_deploy-foundation.png}
+    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
+    \label{fig:methodology-poc-variant1-sequence-deployment}
+\end{figure}
 
 \textbf{Pros}
 \begin{itemize}
@@ -43,15 +97,90 @@
 
 \textbf{Fokus}: Engineering, Verteilung an Expertengruppen/Teams, aber mit Rückverfolgbarkeit
 
-Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschiedenen Controls enthält. Eine Control ist je eine Anforderung welche eingehalten werden muss damit die Control als eingehalten gilt.
-
 \textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein.
+
+% VERIFY COMPLIANCE
+% @startuml
+
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Evidence\nService" as evidence
+% actor "Compliance\nOfficer" as comp
+% database "Governance\nDecision\nStore" as decision
+% participant "Governance\nConfiguration\nService" as config
+
+% == Verify compliance (Scope von UC 06) ==
+
+% trace --> project: Get LZ account IDs\nof project
+% trace --> decision:  Get category/governance decision for accounts of projects
+% decision --> trace : decision
+% trace --> config : get component profile
+% config --> trace : component profile
+% trace --> config : get policies
+% config --> trace : policies
+% trace --> cloud : Get policy result
+% cloud --> trace : response compliant/uncompliant
+% trace --> evidence: Send evaluation result
+% comp --> evidence: Get evaluation result
+
+% @enduml
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant2_verify-compliance.png}
     \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant2-sequence-verification}
+\end{figure}
+
+% DEPLOY NEW FOUNDATION
+% @startuml
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "LZ\nProvisioning\nService" as lz
+% actor "Projekt-\nverantwortlicher" as po
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Governance\nConfiguration\nService" as config
+% database "Governance\nDecision\nStore" as decision
+% database "Governance\nIntent\nRepository" as intent
+
+% == Deploy new LZ (Scope of UC 06 - Variant 2: Component-centric) ==
+
+% po --> project : Declare choice for\nLZ Component category
+% project --> trace : Get Foundation\nPlacement Decision
+% activate trace
+% note right of trace
+% generic input:
+% - cloud provider
+% - environment
+% - data requirements
+% - RPO, backup strategy, availability requirements, ...
+% end note
+% trace --> config : Get LZ Governance\nDomain ID
+% activate config
+% loop Foundation Requirement Aspects
+%     config --> config : Identify specific\nComponent Profile
+% end
+% config --> config : Determine minimal Required\nComponent Profile Set
+% config --> config : Collect Component Profiles
+% alt matching LZ(s) found
+%     config --> trace : List of\nComponent Profiles
+% else no matching LZ found
+%     config --> trace : empty List
+% end
+% deactivate config
+% trace --> decision: Store Foundation Placement Decision
+% return LZ Foundation\nPlacement Decision
+% project --> decision : get required Policies
+% project --> lz : Create LZ with required Policies
+% lz --> cloud: Create Foundation\nbased on Blueprint
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant2_deploy-foundation.png}
+    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
+    \label{fig:methodology-poc-variant2-sequence-deployment}
 \end{figure}
 
 \textbf{Pros}
@@ -84,6 +213,55 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls in Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Blueprint einfach die entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine extrem einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welcher Profile enthalten sind.
 
+% DEPLOY NEW FOUNDATION
+% @startuml
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "LZ\nProvisioning\nService" as lz
+% actor "Projekt-\nverantwortlicher" as po
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Governance\nConfiguration\nService" as config
+% database "Governance\nDecision\nStore" as decision
+% database "Governance\nIntent\nRepository" as intent
+
+% == Deploy new LZ (Scope of UC 06 - Variant 3: Category-centric) ==
+
+% po --> project : Declare choice for\nLZ Component category
+% project --> trace : Get Foundation\nPlacement Decision
+% activate trace
+% note right of trace
+% generic input:
+% - cloud provider
+% - environment
+% - data requirements
+% - RPO, backup strategy, availability requirements, ...
+% end note
+% trace --> config : Get LZ Governance\nDomain ID
+% activate config
+% loop Foundation Requirement Aspects
+%     config --> config : Aggregate to\nCategory Decision
+% end
+% config --> config : Determine Category
+% alt matching LZ(s) found
+%     config --> trace : Foundation Category
+% else no matching LZ found
+%     config --> trace : no Category matched
+% end
+% deactivate config
+% trace --> decision: Store Foundation Placement Decision
+% return Foundation\nCategory
+% project --> decision : get required Policies
+% project --> lz : Create LZ with required Policies
+% lz --> cloud: Create Foundation\nbased on Blueprint
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant3_deploy-foundation.png}
+    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 3}
+    \label{fig:methodology-poc-variant3-sequence-deployment}
+\end{figure}
+
 \textbf{Pros}
 \begin{itemize}
     \item Extrem einfache Anwendung (\flqq regulierte Profile anwenden\frqq)
@@ -115,6 +293,55 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 \textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls direkt durch die nativen Richtlinienabstraktionen der Cloud-Provider dargestellt. Das bedeutet, dass die Implementierung der Controls direkt auf den Ressourcen erfolgt, ohne dass eine zusätzliche Abstraktionsschicht wie Bundles oder Profiles erforderlich ist. Diese Herangehensweise ermöglicht eine optimale Leistung und eine enge Ausrichtung an den Mechanismen der Provider, da sie die nativen Funktionen und Tools nutzt. Allerdings führt dies zu einer schlechteren Vergleichbarkeit über verschiedene Cloud-Provider hinweg, da jeder Provider unterschiedliche Formate und Strukturen für seine Richtlinien hat. Die Rückverfolgbarkeit erfordert daher eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
 
 \textbf{Fazit}: Diese Variante bietet die beste Leistung und Providerausrichtung, da sie die nativen Mechanismen der Cloud-Provider nutzt. Es könnte als \flqq Performance-Standard\frqq\ für die Traceability Architektur angesehen werden, da sie die effizienteste Nutzung der Ressourcen ermöglicht, aber mit erheblichen Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit einhergeht.
+
+% DEPLOY NEW FOUNDATION
+% @startuml
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "LZ\nProvisioning\nService" as lz
+% actor "Projekt-\nverantwortlicher" as po
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Governance\nConfiguration\nService" as config
+% database "Governance\nDecision\nStore" as decision
+% database "Governance\nIntent\nRepository" as intent
+
+% == Deploy new LZ (Scope of UC 06 - Variant 4: Provider-native) ==
+
+% po --> project : Declare choice for\nLZ Component category
+% project --> trace : Get Foundation\nPlacement Decision
+% activate trace
+% note right of trace
+% generic input:
+% - cloud provider
+% - environment
+% - data requirements
+% - RPO, backup strategy, availability requirements, ...
+% end note
+% trace --> config : Get LZ Governance\nDomain ID
+% activate config
+% config --> config : Determine Cloud Provider
+% loop Foundation Requirement Aspects
+%     config --> config : Aggregate to Governance Domain
+% end
+% config --> config : Determine Governance Domain
+% alt matching LZ(s) found
+%     config --> trace : Governance Domain
+% else no matching LZ found
+%     config --> trace : empty List
+% end
+% deactivate config
+% trace --> decision: Store Foundation Placement Decision
+% return Governance\nDomain
+% project --> lz : Create LZ in Governance Domain
+% lz --> cloud: Create Foundation\nbased on Blueprint
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant4_deploy-foundation.png}
+    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 4}
+    \label{fig:methodology-poc-variant4-sequence-deployment}
+\end{figure}
 
 \textbf{Pros}
 \begin{itemize}

@@ -11,6 +11,7 @@
 Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschiedenen Controls enthält. Eine Control ist je eine Anforderung welche eingehalten werden muss damit die Control als eingehalten gilt. Eine Control kann durch eine oder mehrere Policies implementiert werden, welche die konkrete Umsetzung der Control darstellen. Diese Policies können entweder selbst definiert oder von den Cloud-Providern bereitgestellt werden. Die Traceability Architektur beschreibt, wie diese Controls und Policies organisiert und gebündelt werden, um die Anforderungen der Regulationen zu erfüllen und gleichzeitig eine effiziente Implementierung und Rückverfolgbarkeit zu gewährleisten.
 
 \hl{Maintainability Punkte und Prozess beschreiben}
+\hl{Detailbeschreibung Kapitel mit Funktionsweise ersetzen und fehlende ergänzen}
 
 \subsection{Variante 1: Control-centric Bundling}
 \label{sec:trace-arch-variant1}
@@ -18,6 +19,48 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 \textbf{Ansatz}: Für jede Control in der jeweiligen Verordnung wird ein Mapping zu einem Plattform-Bundle gemacht. Also eine Control beinhaltet Plattform-Policies X, Y und Z. Beim Deployment einer \ac{lz} wählt das Blueprint aus welche Controls benötigt werden (z.B. keine Profile, erhöhter Schutzbedarf, etc.)
 
 \textbf{Fokus}: Traceability
+
+% VERIFY COMPLIANCE
+% @startuml
+
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Evidence\nService" as evidence
+% actor "Compliance\nOfficer" as comp
+% database "Governance\nDecision\nStore" as decision
+% participant "Governance\nConfiguration\nService" as config
+
+% == Verify compliance (Scope of UC 06 - Variant 1: Control-centric) ==
+
+% trace --> project : Get LZ account IDs\nof Foundation
+% activate trace
+% trace --> decision : get Decision for Foundation
+% trace --> trace: Get control IDs\nfrom Decision
+% loop Control IDs
+% trace --> config : get policies for\ncontrol ID
+% config --> trace : policies
+% trace --> cloud : get compliance state for Foundation
+% cloud --> trace : compliant/uncompliant
+% trace --> trace : create evidence for control ID
+% trace --> evidence : store evidence
+% end
+% trace --> project: created evaluation snapshot
+% deactivate trace
+% project --> trace : get compliance for controls of project
+% activate trace
+% trace --> trace : aggregate latest evidence
+% trace --> project : compliance result
+% deactivate trace
+
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant1_verify-compliance.png}
+    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 1}
+    \label{fig:methodology-poc-variant1-sequence-verification}
+\end{figure}
 
 % DEPLOY NEW FOUNDATION
 % @startuml
@@ -31,7 +74,7 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 % database "Governance\nDecision\nStore" as decision
 % database "Governance\nIntent\nRepository" as intent
 
-% == Deploy new LZ (Scope of UC 06 -  Variant 1: Control-centric) ==
+% == Deploy new LZ (Scope of UC 06 - Variant 1: Control-centric) ==
 
 % po --> project : Declare choice for\nLZ Component category
 % project --> trace : Get Foundation\nPlacement Decision
@@ -110,19 +153,29 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 % database "Governance\nDecision\nStore" as decision
 % participant "Governance\nConfiguration\nService" as config
 
-% == Verify compliance (Scope von UC 06) ==
+% == Verify compliance (Scope of UC 06 - Variant 2: Component-centric) ==
 
-% trace --> project: Get LZ account IDs\nof project
-% trace --> decision:  Get category/governance decision for accounts of projects
-% decision --> trace : decision
+% trace --> project : Get LZ account IDs\nof Foundation
+% activate trace
+% trace --> decision : get Decision for Foundation
+% trace --> trace: Get control IDs\nfrom Decision
+% loop Component Profile IDs
 % trace --> config : get component profile
 % config --> trace : component profile
-% trace --> config : get policies
+% trace --> config : get policies for component profile
 % config --> trace : policies
-% trace --> cloud : Get policy result
-% cloud --> trace : response compliant/uncompliant
-% trace --> evidence: Send evaluation result
-% comp --> evidence: Get evaluation result
+% trace --> cloud : get compliance state for Foundation
+% cloud --> trace : compliant/uncompliant
+% trace --> trace : create evidence for control ID
+% trace --> evidence : store evidence
+% end
+% trace --> project: created evaluation snapshot
+% deactivate trace
+% project --> trace : get compliance for controls of project
+% activate trace
+% trace --> trace : aggregate latest evidence
+% trace --> project : compliance result
+% deactivate trace
 
 % @enduml
 
@@ -211,7 +264,49 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Profile alles umfasst, ohne dass viel ausgewählt werden muss.
 
-\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls in Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Blueprint einfach die entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine extrem einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welcher Profile enthalten sind.
+\textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls in Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Blueprint einfach die entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine extrem einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen Profilen enthalten sind.
+
+% VERIFY COMPLIANCE
+% @startuml
+
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Evidence\nService" as evidence
+% actor "Compliance\nOfficer" as comp
+% database "Governance\nDecision\nStore" as decision
+% participant "Governance\nConfiguration\nService" as config
+
+% == Verify compliance (Scope of UC 06 - Variant 3: Category-centric) ==
+
+% trace --> project : Get LZ account IDs\nof Foundation
+% activate trace
+% trace --> decision : get Decision for Foundation
+% trace --> trace: Get category ID\nfrom Decision
+% trace --> config : Get policies for category
+% config --> trace : policies
+% loop Policies
+% trace --> cloud : get compliance state for Foundation
+% cloud --> trace : compliant/uncompliant
+% trace --> trace : create evidence for control ID
+% trace --> evidence : store evidence for policy
+% end
+% trace --> project : created evaluation snapshot
+% deactivate trace
+% project --> trace : get compliance for project
+% activate trace
+% trace --> trace : aggregate latest evidence
+% trace --> project : compliance result
+% deactivate trace
+
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant3_verify-compliance.png}
+    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 3}
+    \label{fig:methodology-poc-variant3-sequence-verification}
+\end{figure}
 
 % DEPLOY NEW FOUNDATION
 % @startuml
@@ -292,7 +387,43 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Detailbeschreibung}: In dieser Architektur-Variante werden die Controls direkt durch die nativen Richtlinienabstraktionen der Cloud-Provider dargestellt. Das bedeutet, dass die Implementierung der Controls direkt auf den Ressourcen erfolgt, ohne dass eine zusätzliche Abstraktionsschicht wie Bundles oder Profiles erforderlich ist. Diese Herangehensweise ermöglicht eine optimale Leistung und eine enge Ausrichtung an den Mechanismen der Provider, da sie die nativen Funktionen und Tools nutzt. Allerdings führt dies zu einer schlechteren Vergleichbarkeit über verschiedene Cloud-Provider hinweg, da jeder Provider unterschiedliche Formate und Strukturen für seine Richtlinien hat. Die Rückverfolgbarkeit erfordert daher eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
 
-\textbf{Fazit}: Diese Variante bietet die beste Leistung und Providerausrichtung, da sie die nativen Mechanismen der Cloud-Provider nutzt. Es könnte als \flqq Performance-Standard\frqq\ für die Traceability Architektur angesehen werden, da sie die effizienteste Nutzung der Ressourcen ermöglicht, aber mit erheblichen Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit einhergeht.
+% VERIFY COMPLIANCE
+% @startuml
+
+% participant "Cloud\nProvider\nAPI" as cloud
+% participant "Project\nService" as project
+% participant "Traceability\nService" as trace
+% participant "Evidence\nService" as evidence
+% actor "Compliance\nOfficer" as comp
+% database "Governance\nDecision\nStore" as decision
+% participant "Governance\nConfiguration\nService" as config
+
+% == Verify compliance (Scope of UC 06 - Variant 4: Provider-native) ==
+
+% trace --> project : Get LZ account IDs\nof Foundation
+% activate trace
+% trace --> decision : get Decision for Foundation
+% trace --> trace: Get governance domain\nfrom Decision
+% trace --> cloud : get compliance state for Foundation
+% cloud --> trace : compliant/uncompliant
+% trace --> trace : create evidence for Foundation
+% trace --> evidence : store evidence
+% trace --> project: created evaluation snapshot
+% deactivate trace
+% project --> trace : get compliance for project
+% activate trace
+% trace --> trace : aggregate latest evidence
+% trace --> project : compliance result
+% deactivate trace
+
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant4_verify-compliance.png}
+    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 4}
+    \label{fig:methodology-poc-variant4-sequence-verification}
+\end{figure}
 
 % DEPLOY NEW FOUNDATION
 % @startuml
@@ -354,6 +485,8 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
     \item Cloud-übergreifende Vergleichbarkeit wird schlechter
     \item Traceability muss über verschiedene Evidenceformate der Provider hinweg normalisiert werden
 \end{itemize}
+
+\textbf{Fazit}: Diese Variante bietet die beste Leistung und Providerausrichtung, da sie die nativen Mechanismen der Cloud-Provider nutzt. Es könnte als \flqq Performance-Standard\frqq\ für die Traceability Architektur angesehen werden, da sie die effizienteste Nutzung der Ressourcen ermöglicht, aber mit erheblichen Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit einhergeht.
 
 \begin{figure}[H]
     \centering

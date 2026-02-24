@@ -210,7 +210,7 @@ Basierend auf den Kriterien und der Bewertungsskala wird die Bewertung der versc
 
 Basierend auf der Evaluation der Kriterien wird im \ac{poc} die Variante der Component-centric Architektur (Variante 2) verwendet. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-how Strukturierung im \ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc. gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
 
-Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung, sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototyp generiert. Dieser Prototyp (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akteure aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptablauf des Use-Cases sind hierbei: die Auswahl des Projektes durch den Compliance-Officer wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl. Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}
+Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung, sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototyp generiert. Dieser Prototyp (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akteure aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptablauf des Use-Cases sind hierbei: die Auswahl des Projektes durch den Compliance-Officer wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl. Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}. 
 
 \begin{figure}[H]
     \centering
@@ -227,7 +227,7 @@ Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. 
     \label{fig:methodology-project-healthcare-view-evidence}
 \end{figure}
 
-Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}. Um den Fokus auf dem Use-Case zu behalten wurde eine Auswahl getroffen welche Komponenten detailliert implementiert werden. Die grünen Komponenten werden detailliert umgesetzt um die Funktionalität zu zeigen, die blauen Komponenten werden statisch implementiert da sie sich keinen direkten Bezug zur Funktionsweise der Traceability-Architecture aufweisen.
+Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}. Um den Fokus auf den genannten Use-Cases zu behalten wird eine Auswahl getroffen welche Komponenten detailliert implementiert werden. Die grünen Komponenten werden detailliert umgesetzt, um die Funktionalität zu zeigen, die blauen Komponenten werden statisch implementiert da sie sich keinen direkten Bezug zur Funktionsweise der Traceability-Architecture aufweisen.
 
 \begin{figure}[H]
     \centering
@@ -236,6 +236,13 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
     \label{fig:methodology-poc-setup}
 \end{figure}
 
+Technisch werden das 360°-Cockpit wie das Governance-Cockpit mittels einer Python Anwendung mit Fast-API implementiert. Die Nutzung des Python Setups begründet sich damit, dass die CLIs von Anbietern wie Azure und AWS auf Pyhton basieren. Des Weiteren ermöglicht Fast-API mit vergleichbaren geringen Aufwand eine restful Service zu erstellen. Um die Trennung der beiden Cockpit Komponenten zu betonen passieren gegenseite Aufrufe jeweils via HTTP Inteface. Zur Persistierung verwenden die Komponenten Project Collection, Evidence Collection sowie es Governance Decision Store wie Governance Intent Repository eine Mongo No-Sql Document Database. Die Wahl einer Document Database begründet sich mit der Abbildung der Traceability-Beziehung als JSON-Objekte, was eine Handhabung aus implementatorischer Sicht vereinfacht. Für den Landing Zone Plattform Configuration Service wird ein statisches IaC Setup mit Terraform verwendet. Die modellierten Traceability-Beziehungen werden hierbei als statischer Inhalt geteilt. Über das Setup hinaus werden weitere Cloud-Ressourcen  erzeugt welche in einem funktionalen Setup bereits als gegeben angenommen werden:
+
+\begin{itemize}
+    \item Techinsche Benutzer / Service Accounts für die automatisierte wie manuelle Provisionerung von Cloud-Ressourcen
+    \item Verrechnungsstruktur als Vorraussetzung zur Erzeugung von Subscriptions/Accounts
+    \item Initiale Subcriptions/Accounts für Komponentn welche über verschiedenen Landing-Zones hinweg verwendet werden (bspw. Analytics Workspace)
+\end{itemize}
 
 % KOMPLETTES DIAGRAMM
 % @startuml
@@ -298,12 +305,76 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 
 % @enduml
 
+Die Traceability-Beziehungen werden basierend auf dem Basismodell in \autoref{sec:trace-arch-variant2} modelliert und im Rahmen der Umsetzung adaptiert
+
+% @startuml
+% entity "Regulation" as regulation {
+%   *id : UUID
+%   name : string
+%   authority : string
+%   version : string
+%   description : string
+%   control_ids : string[]
+% }
+
+% entity "Control" as control {
+%   *id : UUID
+%   regulation_id : UUID <<FK>>
+%   component_ids : string[]
+%   statement : string
+%   rationale : string^
+% }
+
+% entity "Policy" as policy {
+%   *id : str
+%   plattform: aws|azure
+%   origin: builtin | custom
+%   name : string
+%   description : string
+%   artifact : object
+% }
+
+% entity "Component_Profile" as component_profile {
+%   *id : str
+%   component_id : string
+%   description : string
+%   controls_ids : string[]
+%   policy_ids : string[]
+% }
+
+% entity "Component" as component {
+%   *id : string
+%   profile_id : string 
+%   name : string
+%   description : string 
+%   profile_names: string[]
+% }
+
+
+% regulation ||-right-o{ control
+% component_profile ||--o{ component
+% control }o-right-o{ component_profile
+% policy }o-left-o{ component_profile
+% @enduml
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/poc_data_model.png}
+    \caption{Datenmodell für Traceability-Beziehung im \ac{poc}}
+    \label{fig:data-model-poc}
+\end{figure}
+
+
+
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_static_setup.png}
     \caption{Sequenz-Diagramm für statisches Setup des \ac{poc}}
     \label{fig:methodology-poc-sequence-static-setup}
 \end{figure}
+
+Im Sinne der didaktischen Veranschaulichung einer Traceability-Architektur wir der PoC aus Sicht der verschiedenen Use-Cases beschrieb
 
 % DEPLOY NEW PROJECT
 % @startuml

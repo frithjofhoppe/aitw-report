@@ -236,7 +236,7 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
     \label{fig:methodology-poc-setup}
 \end{figure}
 
-Technisch werden das 360°-Cockpit wie das Governance-Cockpit mittels einer Python Anwendung mit Fast-API implementiert. Die Nutzung des Python Setups begründet sich damit, dass die CLIs von Anbietern wie Azure und AWS auf Pyhton basieren. Des Weiteren ermöglicht Fast-API mit vergleichbaren geringen Aufwand eine restful Service zu erstellen. Um die Trennung der beiden Cockpit Komponenten zu betonen passieren gegenseite Aufrufe jeweils via HTTP Inteface. Zur Persistierung verwenden die Komponenten Project Collection, Evidence Collection sowie es Governance Decision Store wie Governance Intent Repository eine Mongo No-Sql Document Database. Die Wahl einer Document Database begründet sich mit der Abbildung der Traceability-Beziehung als JSON-Objekte, was eine Handhabung aus implementatorischer Sicht vereinfacht. Für den Landing Zone Plattform Configuration Service wird ein statisches IaC Setup mit Terraform verwendet. Die modellierten Traceability-Beziehungen werden hierbei als statischer Inhalt geteilt. Über das Setup hinaus werden weitere Cloud-Ressourcen  erzeugt welche in einem funktionalen Setup bereits als gegeben angenommen werden:
+Technisch werden das 360°-Cockpit sowie das Governance-Cockpit mittels einer Python Anwendung mit FastAPI implementiert. Die Nutzung des Python Setups begründet sich damit, dass die CLIs von Anbietern wie Azure und AWS auf Python basieren. Des Weiteren ermöglicht FastAPI mit vergleichbar geringem Aufwand einen RESTful Service zu erstellen. Um die Trennung der beiden Cockpit Komponenten zu betonen, passieren gegenseitige Aufrufe jeweils via HTTP Interface. Zur Persistierung verwenden die Komponenten Project Collection, Evidence Collection, Governance Decision Store und Governance Intent Repository eine MongoDB Document Database. Die Wahl einer Document Database begründet sich mit der Abbildung der Traceability-Beziehung als JSON-Objekte, was eine Handhabung aus implementatorischer Sicht vereinfacht. Für den Landing Zone Plattform Configuration Service wird ein statisches IaC Setup mit Terraform verwendet. Die modellierten Traceability-Beziehungen werden hierbei als statischer Inhalt geteilt. Über das Setup hinaus werden weitere Cloud-Ressourcen erzeugt welche in einem funktionalen Setup bereits als gegeben angenommen werden:
 
 \begin{itemize}
     \item Techinsche Benutzer / Service Accounts für die automatisierte wie manuelle Provisionerung von Cloud-Ressourcen
@@ -305,7 +305,7 @@ Technisch werden das 360°-Cockpit wie das Governance-Cockpit mittels einer Pyth
 
 % @enduml
 
-Die Traceability-Beziehungen werden basierend auf dem Basismodell in \autoref{sec:trace-arch-variant2} modelliert und im Rahmen der Umsetzung adaptiert
+Die Traceability-Beziehungen werden basierend auf dem Basismodell in \autoref{sec:trace-arch-variant2} modelliert und im Rahmen der Umsetzung adaptiert.
 
 % @startuml
 % entity "Regulation" as regulation {
@@ -368,6 +368,7 @@ Die Traceability-Beziehungen werden basierend auf dem Basismodell in \autoref{se
 
 
 \begin{figure}[H]
+    \centering
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_static_setup.png}
     \caption{Sequenz-Diagramm für statisches Setup des \ac{poc}}

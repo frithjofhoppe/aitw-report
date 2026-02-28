@@ -9,7 +9,7 @@ Technisch werden das 360°-Cockpit sowie das Governance-Cockpit (siehe \autoref{
     \item Initiale Strukturen für Komponenten welche über verschiedenen Landing-Zones hinweg verwendet werden (bspw. Analytics Workspace, Organization Unit, Mangement Groups etc.)
 \end{itemize}
 
-Zur Veranschaulichung der technischen Machbarkeit der Traceability-Architektur werden nachfolgend wesentlichen Aspekte der Implementation erläutert
+Zur Veranschaulichung der technischen Machbarkeit der Traceability-Architektur werden nachfolgend wesentlichen Aspekte der Implementation erläutert. Die Implementierung des \ac{poc} hat sich iherbei auf die Nutzung von Azure und AWS beschränkt umf die Anwendbarkeit auf mehrere cloud-Plattformen zu zeigen
 
 \subsection{UC4 Import der Traceability-Beziehungen}
 
@@ -30,7 +30,7 @@ Im UC4 (siehe \fullref{tab:uc4-define-technical-measures}) werden die verschiede
     \label{fig:data-model-poc}
 \end{figure}
 
-Das Regulation Model bildet zusammen mit den Controls den semantischen Inhalt ab, welche für gewöhnlich bereits durch die Strukturierung in den verschiedenen Frameworks existiert. Die Zuordnung kann häufig durch ein deterministisches Script erreicht werden. Im \ac{poc} wird dieser Tasks der Einfachheit halber mittels KI umgesetzt.
+Das Regulation Model bildet zusammen mit den Controls den semantischen Inhalt ab, welche für gewöhnlich bereits durch die Strukturierung in den verschiedenen Frameworks existiert. Die Zuordnung kann häufig durch ein deterministisches Script erreicht werden. Im \ac{poc} wird dieser Tasks der Einfachheit halber mittels KI umgesetzt. Die Auswahl der Controls selbst wird manuell ausgeführt und erhebt keinen Anspruch auf Vollständigkeit
 
 \begin{figure}[H]
 \centering
@@ -77,8 +77,78 @@ Das Regulation Model bildet zusammen mit den Controls den semantischen Inhalt ab
 \label{fig:control-sample} 
 \end{figure}
 
+Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibung aus den Regeulationen der ausgewählten Controls I2.1 und I3.2 passende Policies für die unterstützten Cloud-Provider identifiziert und den Profiles pro Plattform zugeordnet (siehe \autoref{fig:component-profile-sample}). Für eine erste Identifkation wird hierbei KI verwendet mit einenm anschliessenden Backing durch manuelle Recherche in den jeweiligen Dokumentationen der Cloud-Provider. Azure bietet mit der zentralisierten Policy-Engine einen direkten Weg die Korrektheit der Policies mittels name oder policy definition id zu überprüfen \footnote{Siehe Policy Definitions in \href{https://portal.azure.com/\#view/Microsoft_Azure_Policy/PolicyMenuBlade.MenuView/\~/Definitions}{Azure Policy Definition Portal}}. AWS hat mit den verschiedenen Services welche eigenen Policy-Engines besitzten einen dezentralisierten Ansatz. Entsprechend muss in der Dokumentation der einzelnen Services die Existenz geprüft werden. Um den unterschiedlichen Ebenen auf denen die Policies angewendet werden gerecht zu werden, wird das Attribut enforcement\_layer auf dem Policy Model eingeführt.
 
+\begin{figure}[H]
+\centering
+\begin{verbatim}
+{
+  "id": "storage.standard",
+  "type": "component_profile",
+  "component_id": "storage",
+  "profile": "standard",
+  "description": "Standard-Storage-Profil mit Basis-Datenschutz",
+  "control_ids": [
+    "SI001-I2.1"
+  ],
+  "policies": [
+    { "platform": "azure", "policy_id": "AZ-STORAGE-ACCOUNT-ENCRYPTION-ENABLED" },
+    { "platform": "azure", "policy_id": "AZ-SQL-TDE-ENABLED" },
+    { "platform": "azure", "policy_id": "AZ-STORAGE-SECURE-TRANSFER-REQUIRED" },
+    { "platform": "azure", "policy_id": "AZ-STORAGE-PUBLIC-ACCESS-RESTRICTED" },
+    { "platform": "aws","policy_id": "AWS-STORAGE-ENCRYPTION-ENABLED" },
+    { "platform": "aws","policy_id": "AWS-RDS-ENCRYPTION-ENABLED" },
+    { "platform": "aws", "policy_id": "AWS-S3-PUBLIC-READ-PROHIBITED" },
+    { "platform": "aws", "policy_id": "AWS-S3-PUBLIC-WRITE-PROHIBITED" }
+  ]
+}
+\end{verbatim}
+\caption{Beispiel für das Storage Component-Profile Storage mit der Baseline Standard und den zueordneten Policies für Azure und AWS}
+\label{fig:component-profile-sample} 
+\end{figure}
 
+Die einzelnen Policies können sowohl Referenzen auf existierenden Policies von Providern als auch eigenen Definitionen beinhalten. Für die Component Storage existiert eine Service Control Policy welche präventiv angewendet werden kann.
+
+\begin{figure}[H]
+\centering
+\begin{verbatim}
+{
+  "id": "AWS-STORAGE-ENCRYPTION-ENABLED",
+  "type": "policy",
+  "platform": "aws",
+  "origin": "custom",
+  "name": "Storage services must have encryption at rest enabled",
+  "description": "Prevents creation of unencrypted storage resources.",
+  "artifact": {
+    "type": "aws_scp",
+    "content": {
+      "Version": "2012-10-17",
+      "Statement": [
+        {
+          "Effect": "Deny",
+          "Action": [
+            "ec2:CreateVolume",
+            "rds:CreateDBInstance",
+            "s3:CreateBucket"
+          ],
+          "Resource": "*",
+          "Condition": {
+            "BoolIfExists": {
+              "rds:StorageEncrypted": "false",
+              "ec2:Encrypted": "false"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "enforcement_layer": "preventive",
+  "scope_hint": "organizational"
+}
+\end{verbatim}
+\caption{Beispiel für eine Policy für AWS}
+\label{fig:policy-sample-aws} 
+\end{figure}
 
 
 \autoref{tab:uc6-verify-compliance}

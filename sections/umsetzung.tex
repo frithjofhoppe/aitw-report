@@ -423,7 +423,7 @@ Das Assessment ob des geeigneten Component-Profiles wird schlussendlich zusammen
 
 \subsection{UC6 Prüfung der Compliance}
 
-Der Stand der Compliance einer Foundation kann geprüft werden, sobald die Provisionierung durch das 360-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, damit schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtbar ist.
+Der Stand der Compliance einer Foundation kann geprüft werden, sobald die Provisionierung durch das 360-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, damit schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtbar ist. Der Prozess den Compliance-State zu prüfen sollte idealerweise in regelmässigen Abständen durchgeführt werden, damit schlussendlich Akteure wie der Compliance-Officer ein möglichst aktuelles Lagebild im Governance-Cockpit haben, welches auf den Evidences aufbaut.
 
 \begin{figure}[H]
 \centering
@@ -483,10 +483,73 @@ for control_id in control_ids:
 \label{fig:evidence-generation-flow} 
 \end{figure}
 
-Im nächsten Schritt soll gezeigt werden wie der Evidence Output, welcher basierend auf der Traceability-Architektur generiert wurde dem Compliance-Officer im 360 Cockpit für den UC6 hilft. Hierfür werden zuerst die verschiedenen Ansichten betrachtet welche im Mockup (siehe \autoref{appendix:ui-mockup}) gedraftet wurden:
+Im nächsten Schritt soll gezeigt werden wie der Evidence Output, welcher basierend auf der Traceability-Architektur generiert wurde dem Compliance-Officer im 360 Cockpit dien um im Rahmen vom UC6 die Compliance prüfen zu können. Hierfür werden zuerst die verschiedenen Ansichten betrachtet welche im Mockup (siehe \autoref{appendix:ui-mockup}) gedrafted wurden:
 
 \begin{itemize}
-  \item 
+  \item Evidence View nach \autoref{fig:prototype-project-healthcare-view-evidence} Controls aller Foundation mit dem individuellen Compliance-State, Zeitpukt der Prüfung, Prüfende Entität, Beschreibung der Control
+  \item Control View nach \autoref{fig:prototype-project-healthcare-view-controls} Controls aller Foundations in einem Projekt aggregiert mit dem Compliance-State, Titel der Control, Beschreibung der Control
 \end{itemize}
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{graphics/Swaggger_Governance_Cockpit.png}
+    \caption{Endpoints für den Abruf der Compliance States, welche das Mockup theoretisch verwendet}
+    \label{fig:swagger-governance-cockpit}
+\end{figure}
+
+Die Evidence View basiert auf dem \textit{GET /project/{project\_id}/evidence endpoint}. Dieser Endpoint sucht für alle Foundations welche dem Projekt mit der id \textit{project\_id} zugeordnet sind den letzten verfügbaren Compliance State pro control. Diese Auswertung findet zur Reduktion der Datenmenge welche zur Laufzeit geladen wir in \autoref{fig:query-lates-foundation-compliance-state} gezeigt wenn möglich direkt in mongo db statt. Selber Gedanke wurde auch bei den Auswertungen der anderen Endpoint im Tag \textit{Governance Evaluation} angewandt. 
+
+\begin{figure}[H]
+\centering
+\begin{lstlisting}
+pipeline = [
+    # Match documents for this project
+    {"$match": {"project_id": project_id}},   
+    # Sort by created_at descending (latest first)
+    {"$sort": {"created_at": -1}},
+    # Group by (foundation_id, control_id), keep first (latest) document
+    {
+        "$group": {
+            "_id": {"foundation_id": "$foundation_id","control_id": "$control_id"},
+            "latest": {"$first": "$$ROOT"}
+        }
+    },
+    # Replace root with the latest evidence document
+    {"$replaceRoot": {"newRoot": "$latest"}}
+]
+cursor = db[evidence_collection].aggregate(pipeline)
+evidence_docs = await cursor.to_list(length=None)
+\end{lstlisting}
+\caption{MongoDB Abfrage für den letzten Compliance State pro Control je Foundation}
+\label{fig:query-lates-foundation-compliance-state} 
+\end{figure}
+
+Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \textit{foundation\_id} beginnen mit b97 die Foundation den status \glqq compliance \glqq gegenüber der control T2.1 aus der Regulation Si001 hat
+
+\begin{figure}[H]
+\centering
+\begin{lstlisting}
+[
+  ...
+  {
+    "id": "b5c0ea60-8375-4886-bc41-f07c5230fd06",
+    "control_id": "SI001-T2.1",
+    "compliance_status": "compliant",
+    "cloud": "azure",
+    "description": "All policies compliant",
+    "performed_by": "system",
+    "project_id": "e72fb364-e689-49f6-96bc-9c66d74ff714",
+    "foundation_name": "ref",
+    "foundation_id": "b97fd9c6-43dd-4c68-90c8-8aa77b96825f"
+  },
+  ...
+]
+\end{lstlisting}
+\caption{Evidence für eine Foundation}
+\label{fig:evidence-response-for-fondation} 
+\end{figure}
+
+
 
 \hl{beschrieben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}

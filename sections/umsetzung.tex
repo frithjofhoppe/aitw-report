@@ -423,6 +423,70 @@ Das Assessment ob des geeigneten Component-Profiles wird schlussendlich zusammen
 
 \subsection{UC6 Prüfung der Compliance}
 
-Der Stand der Compliance einer Foundation kann geprüft werden, sobald die Provisionierung durch das 360-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. 
+Der Stand der Compliance einer Foundation kann geprüft werden, sobald die Provisionierung durch das 360-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, damit schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtbar ist.
 
-\hl{beschrieben wie der evidence generierungs algo funktioniert. detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}
+\begin{figure}[H]
+\centering
+\begin{lstlisting}
+evidence_collection = MongoDBCollections.EVIDENCE.value
+evidence_ids = []
+for control_id in control_ids:
+    policy_evidences = []
+    for policy_id in control_policies.get(control_id, []):
+        policy_doc = await db[policy_collection].find_one({"_id": policy_id})
+        ....
+        policy = Policy.model_validate(policy_doc)
+        ....
+        azure_policy_def_id = policy.builtin.policy_definition_id if policy.builtin else None
+        ....
+        compliance_status_str, description = _get_policy_compliance_status(
+            subscription_id, azure_policy_def_id
+        )
+        
+        # Convert string status to enum
+        if compliance_status_str == "COMPLIANT":
+            compliance_status = EvidenceComplianceStatus.COMPLIANT
+        elif compliance_status_str == "AT_RISK":
+            compliance_status = EvidenceComplianceStatus.AT_RISK
+        else:
+            compliance_status = EvidenceComplianceStatus.NOT_EVALUATED
+        
+        policy_evidences.append(
+            PolicyEnvidence(
+                id=str(uuid4()),
+                policy_id=policy_id,
+                cloud=CloudPlatform.AZURE,
+                compliance_status=compliance_status,
+                description=description,
+            )
+        )
+    # Compute overall compliance status from policy evidences
+    overall_compliance_status = _compute_evidence_compliance_status(policy_evidences)
+    
+    # Set description based on overall status
+    if overall_compliance_status == EvidenceComplianceStatus.COMPLIANT:
+        description = "All policies compliant"
+    elif overall_compliance_status == EvidenceComplianceStatus.AT_RISK:
+        description = "One or more policies at risk"
+    else:
+        description = "Evaluation in progress or incomplete"
+    
+    evidence = Evidence(
+        id=str(uuid4()),
+        control_id=control_id,
+        compliance_status=overall_compliance_status,
+        ...
+    )
+    ...
+\end{lstlisting}
+\caption{Generierung von Evidences für die Controls des angewendeten Component-Profiles}
+\label{fig:evidence-generation-flow} 
+\end{figure}
+
+Im nächsten Schritt soll gezeigt werden wie der Evidence Output, welcher basierend auf der Traceability-Architektur generiert wurde dem Compliance-Officer im 360 Cockpit für den UC6 hilft. Hierfür werden zuerst die verschiedenen Ansichten betrachtet welche im Mockup (siehe \autoref{appendix:ui-mockup}) gedraftet wurden:
+
+\begin{itemize}
+  \item 
+\end{itemize}
+
+\hl{beschrieben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}

@@ -27,6 +27,8 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
     \label{fig:traceability-architecture-control-centric}
 \end{figure}
 
+\hl{wegen Ansatz: das mit dem Blueprint wählt aus welche Controls angewendet werden stimmt so nicht. die passiert eigentlich durch das Governance Cockpit}
+
 \textbf{Ansatz}: Für jede Control in der jeweiligen Verordnung wird ein Mapping zu einem Plattform-Bundle gemacht. Also eine Control beinhaltet Plattform-Policies X, Y und Z. Beim Deployment einer \ac{lz} wählt das Blueprint aus welche Controls benötigt werden (z.B. keine Profile, erhöhter Schutzbedarf, etc.)
 
 \textbf{Fokus}: Traceability, da die Controls direkt mit den Bundles verknüpft sind.
@@ -158,6 +160,8 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 \textbf{Fokus}: Engineering, Verteilung an Expertengruppen/Teams, aber mit Rückverfolgbarkeit
 
 \textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein.
+
+\hl{Bez Wartung und Provisioierung. Der Versionierungsprozess selbst sollte bereits hier beschrieben werden. Vlt weniger dass git verwendet wird, da das überall passiert. Denkbare wäre ein Text wie folgt: Die Componetn-Profiles Modelle sind versionierbar. Damit kann der Compliance-Officer iterative neue Versionen erstellen ohne das bisherigen Foundation davon direkt betroffen sind. Ist eine neue Component-Profile Version freigegeben worden können dann die Foundation sowie die übergreifende Landing-Zone-Component Provisionierung migriert werden. Für den Compliance Officer ist enstprechen in den Evidences nachollziebar gegen welche Component-Profile Version eine Foundation compliant ist}
 
 \textbf{Wartung und Versionierung}: In dieser Architektur-Variante werden die Controls in Component Profiles gebündelt, folgend erfordern Änderungen an einer Control nur die Aktualisierung des entsprechenden Profiles. Es ist wichtig, einen klaren Versionierungsprozess für die Profiles zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Profiles zu ermöglichen.
 

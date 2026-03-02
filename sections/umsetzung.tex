@@ -16,10 +16,10 @@ Zur Veranschaulichung der technischen Machbarkeit der Traceability-Architektur w
 Im UC4 (siehe \fullref{tab:uc4-define-technical-measures}) werden die verschiedenen Artefakte erzeugt, welche für die Nachvollziehbarkeit der Traceability-Beziehung benötigt werden. Als Grundlage dient das Basismodell für die im \ac{poc} implementiert Variante der Traceability-Architektur \fullref{sec:trace-arch-variant2}, welches in \autoref{fig:data-model-poc} für die technische Implementation erweitert wurde. Als Kontext für die Code-Beispiele wird folgenden Beziehung genommen. Diese Beziehung wird dann in den nachfolgenden Schritten mittels Code-Beispielen dargestellt:
 
 \begin{itemize}
-    \item Die Component \glqq Storage \glqq bildet den \ac{lz} Aspekt von Cloud-Ressourcen ab welche zur Datenspeicherung dienen. Hierbei kann es sich Datenbanken, Object-Storage etc. handeln.
-    \item Die Regulation \ac{si001} repräsentiert einer der Regelwerke, welche in der \ac{bv} angewendet werden. Für die Storage Component werden hieraus die Abschnitte I2.1 \glqq Vertraulichkeit und Integrität \glqq und I3.2 \glqq Verfügbarkeit \glqq verwendet
-    \item Für die Component werden die Compnent-Profiles \glqq standard \glqq und \glqq high \glqq definiert, welche als Baselines zu verstehen sind. High baut hierbei inhaltlich auf Standard auf und verfolgen jeweils 
-    \item Die Component-Profiles sind verschiedenen Policies zu geordnet welche mit der durch sie definierten Einschränkungen / Validierung der Absicht der Controls entsprechen sollen. 
+    \item Die Component \flqq Storage\frqq\ bildet den \ac{lz} Aspekt von Cloud-Ressourcen ab welche zur Datenspeicherung dienen. Hierbei kann es sich Datenbanken, Object-Storage etc. handeln.
+    \item Die Regulation \ac{si001} repräsentiert einer der Regelwerke, welche in der \ac{bv} angewendet werden. Für die Storage Component werden hieraus die Abschnitte I2.1 \flqq Vertraulichkeit und Integrität\frqq\ und I3.2 \flqq Verfügbarkeit\frqq\ verwendet
+    \item Für die Component werden die Compnent-Profiles \flqq standard\frqq\ und \flqq high\frqq\ definiert, welche als Baselines zu verstehen sind. High baut hierbei inhaltlich auf Standard auf und verfolgen jeweils 
+    \item Die Component-Profiles sind verschiedenen Policies zu geordnet welche mit der durch sie definierten Einschränkungen / Validierung der Absicht der Controls entsprechen sollen.
 \end{itemize}
 
 
@@ -525,7 +525,7 @@ evidence_docs = await cursor.to_list(length=None)
 \label{fig:query-lates-foundation-compliance-state} 
 \end{figure}
 
-Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \textit{foundation\_id} beginnend mit b97 die Foundation den status \glqq compliance \glqq gegenüber der control T2.1 aus der Regulation Si001 hat. Der compliance-state ergibt sich aus dem Minimalwert der Evaluierung aller betroffenen Policies welche für die Control evaluiert werden. Dies bedeutet, dass wenn mindestens eine Policy zum gegebene Zeitpunkt nicht erfüllt wurde, der Gesamtstatus entsprechend auch non compliant bzw \glqq at\_risk \glqq ist.
+Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \textit{foundation\_id} beginnend mit b97 die Foundation den status \flqq compliance\frqq\ gegenüber der control T2.1 aus der Regulation Si001 hat. Der compliance-state ergibt sich aus dem Minimalwert der Evaluierung aller betroffenen Policies welche für die Control evaluiert werden. Dies bedeutet, dass wenn mindestens eine Policy zum gegebene Zeitpunkt nicht erfüllt wurde, der Gesamtstatus entsprechend auch non compliant bzw \flqq at\_risk\frqq\ ist.
 
 \begin{figure}[H]
 \centering

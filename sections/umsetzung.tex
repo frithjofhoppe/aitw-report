@@ -525,7 +525,7 @@ evidence_docs = await cursor.to_list(length=None)
 \label{fig:query-lates-foundation-compliance-state} 
 \end{figure}
 
-Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \textit{foundation\_id} beginnen mit b97 die Foundation den status \glqq compliance \glqq gegenüber der control T2.1 aus der Regulation Si001 hat
+Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \textit{foundation\_id} beginnend mit b97 die Foundation den status \glqq compliance \glqq gegenüber der control T2.1 aus der Regulation Si001 hat. Der compliance-state ergibt sich aus dem Minimalwert der Evaluierung aller betroffenen Policies welche für die Control evaluiert werden. Dies bedeutet, dass wenn mindestens eine Policy zum gegebene Zeitpunkt nicht erfüllt wurde, der Gesamtstatus entsprechend auch non compliant bzw \glqq at\_risk \glqq ist.
 
 \begin{figure}[H]
 \centering
@@ -550,6 +550,105 @@ Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt
 \label{fig:evidence-response-for-fondation} 
 \end{figure}
 
+Im Falle einer negativen Evaulierung können Details zur einer Evidence über den Endpoint \textit{GET /project/{project\_id}/evidence/{evidence\_id}} bezogen werden. In dieser ist der Compliance Stand für alle Policies aufgelistet welche evaluiert wurde. Somit lässt sich der summierte Compliance State besser nachvollziehen und man kann mit bestimmten Policy Ids beim entsprechenden Cloud-Provider investigieren.
 
+
+\begin{figure}[H]
+\centering
+\begin{lstlisting}
+{
+  "id": "b5c0ea60-8375-4886-bc41-f07c5230fd06",
+  "control_id": "SI001-T2.1",
+  "compliance_status": "at_risk",
+  "cloud": "azure",
+  "deployment_resource": {
+    "subscription_id": "bb749eb1-38d3-4e6d-ad5a-f42258bd0e12",
+    "region": "switzerlandnorth",
+    "deployed_at": "2026-02-22T13:17:38.647000"
+  },
+  "description": "All policies compliant",
+  "performed_by": "system",
+  "policy_evidences": [
+    {
+      "policy_id": "AZ-AKS-DIAGNOSTIC-SETTINGS-TO-LA",
+      "cloud": "azure",
+      "compliance_status": "at_risk",
+      "description": "Not compliant due to reason xyz"
+    },
+    {
+      "policy_id": "AZ-AKS-ENTRA-ID-INTEGRATION-ENABLED",
+      "cloud": "azure",
+      "compliance_status": "compliant",
+      "description": "Policy assignemnt found and compliant"
+    },
+    ....
+  ],
+  "foundation_id": "b97fd9c6-43dd-4c68-90c8-8aa77b96825f",
+  "project_id": "e72fb364-e689-49f6-96bc-9c66d74ff714"
+}
+\end{lstlisting}
+\caption{Detailansicht einer bestimmten Evidence}
+\label{fig:evidence-detail-response-for-foundation} 
+\end{figure}
+
+Die Policy welche intern durch AZ-AKS-DIAGNOSTICS-SETTINGS-TO-LA identifiziert wird löst sich so einer Policy auf Azure auf. Die Aussage der Policy ist, dass Ressourcen einem bestimmten Loganayltics Workspace zugeordnet sein müssen. Des Weiteren geht hervor, dass es sich um eine präventive Policy handelt, welche bereits vor dem Deployment der Landing Zone Ressourcen angewendet werden kann. Für Azure erfolgt dies im Rahmen vom \ac{poc} direkt über ein Assignment an die Management-Group.
+
+\begin{figure}[H]
+\centering
+\begin{lstlisting}
+{
+  "id": "AZ-AKS-DIAGNOSTIC-SETTINGS-TO-LA",
+  "type": "policy",
+  "platform": "azure",
+  "origin": "builtin",
+  "name": "Deploy - Configure diagnostic settings for Azure Kubernetes Service to Log Analytics workspace",
+  "description": "Deploys/ensures diagnostic settings for AKS are configured to send logs to a Log Analytics workspace.",
+  "builtin": {
+    "policy_definition_id": "/providers/Microsoft.Authorization/policyDefinitions/6c66c325-74c8-42fd-a286-a74b0e2939d8",
+    "parameters": {
+      "logAnalytics": {
+        "value": "324840a1-dd59-4dec-a255-a48f1dae3d1b"
+      }
+    }
+  },
+  "enforcement_layer": "preventive",
+  "scope_hint": "landing-zone"
+}
+\end{lstlisting}
+\caption{Detailansicht einer Policy}
+\label{fig:policy-detail-respnse} 
+\end{figure}
+
+Für die Control View werden die Ergebnisse welche bereits für die Evidence View zusammengestellt werden genommen und nochmals pro Projekt zusammengefasst. Somit liefert der Endpoint \textit{GET /project/{project\_id}/controls} eine Aussage über den Compliance Stand von den jeweiligen Controls über alle Foundations hinweg. Dies bedeutet (analog zur vorherigen Auswertung), dass wenn eine Foundation gegenüber einer Control nicht compliant bzw at\_risk ist, entsprechend das gesamte Projekt als at\_risk gegenüber der Control dargestellt wird.
+
+\begin{figure}[H]
+\centering
+\begin{lstlisting}
+[
+  {
+    "id": "SI001-I2.1",
+    "statement": "Die Vertraulichkeit und Integritaet von geschaeftsrelevanten Informationen muessen ihrem Schutzbedarf entsprechend mit Hilfe kryptografischer Verfahren geschuetzt sein.",
+    "rationale": "Schutz vor unbefugtem Zugriff und Manipulation von Informationen.",
+    "latest_evidence": {
+      "id": "dd8d26af-6b5f-48af-8776-3692e330f5d6",
+      "control_id": "SI001-I2.1",
+      "compliance_status": "at_risk",
+      "cloud": "azure",
+      "description": "One or more policies at risk",
+      "performed_by": "system",
+      "project_id": "e72fb364-e689-49f6-96bc-9c66d74ff714",
+      "foundation_name": "ref",
+      "foundation_id": "b97fd9c6-43dd-4c68-90c8-8aa77b96825f"
+    }
+  },
+  {
+    "id": "SI001-S1",
+    ...
+  }
+]
+\end{lstlisting}
+\caption{Compliance State der Controls in einem Projekt}
+\label{fig:response-control-evlauation-for-project} 
+\end{figure}
 
 \hl{beschrieben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}

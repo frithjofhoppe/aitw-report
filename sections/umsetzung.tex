@@ -16,10 +16,10 @@ Zur Veranschaulichung der technischen Machbarkeit der Traceability-Architektur w
 Im UC4 (siehe \fullref{tab:uc4-define-technical-measures}) werden die verschiedenen Artefakte erzeugt, welche für die Nachvollziehbarkeit der Traceability-Beziehung benötigt werden. Als Grundlage dient das Basismodell für die im \ac{poc} implementierte Variante der Traceability-Architektur \fullref{sec:trace-arch-variant2}, welches in \autoref{fig:data-model-poc} für die technische Implementation erweitert wurde. Als Kontext für die Code-Beispiele werden folgende Beziehungen genommen, welche dann in den nachfolgenden Schritten mittels Code-Beispielen dargestellt werden:
 
 \begin{itemize}
-    \item Die Component \flqq Storage\frqq\ bildet den \ac{lz} Aspekt von Cloud-Ressourcen ab welche zur Datenspeicherung dienen. Hierbei kann es sich um Datenbanken, Object-Storage, usw. handeln.
-    \item Die Regulation \ac{si001} repräsentiert eines der Regelwerke, welche in der \ac{bv} angewendet werden. Für die Storage Component werden hieraus die Abschnitte I2.1 \flqq Vertraulichkeit und Integrität\frqq\ und I3.2 \flqq Verfügbarkeit\frqq\ verwendet
-    \item Es werden die Component-Profiles \flqq standard\frqq\ und \flqq high\frqq\ definiert, welche als Baselines zu verstehen sind. \flqq high\frqq\ baut hierbei inhaltlich auf \flqq standard\frqq\ auf und vererbt jeweils dessen Eigenschaften.
-    \item Den Component-Profiles sind verschiedene Policies zugeordnet, welche durch die definierten Einschränkungen / Validierung der Absicht der Controls entsprechen sollen.
+    \item Die \texttt{Component} \flqq Storage\frqq\ bildet den \ac{lz} Aspekt von Cloud-Ressourcen ab welche zur Datenspeicherung dienen. Hierbei kann es sich um Datenbanken, Object-Storage, usw. handeln.
+    \item Die \texttt{Regulation} \ac{si001} repräsentiert eines der Regelwerke, welche in der \ac{bv} angewendet werden. Für die Storage Component werden hieraus die Abschnitte I2.1 \flqq Vertraulichkeit und Integrität\frqq\ und I3.2 \flqq Verfügbarkeit\frqq\ verwendet.
+    \item Es werden die \texttt{Component\_Profile}s \flqq standard\frqq\ und \flqq high\frqq\ definiert, welche als Baselines zu verstehen sind. \flqq high\frqq\ baut hierbei inhaltlich auf \flqq standard\frqq\ auf und vererbt jeweils dessen Eigenschaften.
+    \item Den \texttt{Component\_Profile}s sind verschiedene \texttt{Policy}s zugeordnet, welche durch die definierten Einschränkungen / Validierung der Absicht der Controls entsprechen sollen.
 \end{itemize}
 
 
@@ -74,14 +74,11 @@ Im UC4 (siehe \fullref{tab:uc4-define-technical-measures}) werden die verschiede
 %   profile_names: string[]
 % }
 
-
-
 % entity "Landing Zone" as lz #line.dashed:black {
 %   *id: string
 %   cloud: string
 %   component_profiles: string[]
 % }
-
 
 % regulation ||-right-o{ control
 % component_profile ||--o{ component
@@ -91,28 +88,27 @@ Im UC4 (siehe \fullref{tab:uc4-define-technical-measures}) werden die verschiede
 
 % @enduml
 
-Das Regulation Model bildet zusammen mit den Controls den semantischen Inhalt ab, welche für gewöhnlich bereits durch die Strukturierung in den verschiedenen Frameworks existiert. Die Zuordnung kann häufig durch ein deterministisches Script erreicht werden. Im \ac{poc} wird dieser Tasks der Einfachheit halber mittels KI umgesetzt. Die Auswahl der Controls selbst wird manuell ausgeführt und erhebt keinen Anspruch auf Vollständigkeit
+Das \texttt{Regulation} Model bildet zusammen mit den Controls den semantischen Inhalt ab, welche gewöhnlich bereits durch die Strukturierung in den verschiedenen Frameworks existiert. Die Zuordnung kann häufig durch ein deterministisches Script erreicht werden. Im \ac{poc} wird dieser Tasks der Einfachheit halber mittels KI umgesetzt. Die Auswahl der Controls selbst wird manuell ausgeführt und erhebt keinen Anspruch auf Vollständigkeit.
 
 \begin{figure}[H]
 \centering
-\begin{verbatim}
+\begin{lstlisting}
 {
   "id": "SI001",
   "type": "regulation",
   "name": "Sicherheitsanforderungen IT-Grundschutz (Si001)",
   "authority": "Bundesverwaltung",
   "version": "2022-03-01",
-  "description": "Minimale Sicherheitsanforderungen gemäss Si001 für IT-Systeme und Anwendungen",
+  "description": "Minimale Sicherheitsanforderungen gemaess Si001 fuer IT-Systeme und Anwendungen",
   "control_ids": [
     "SI001-I2.1",
     "SI001-I3.2",
   ]
-}    
-\end{verbatim}
-\caption{Beispiel für Regulation, der verschiedene Controls zugeordnet sind}
+}
+\end{lstlisting}
+\caption{Beispiel für ein Objekt des Typs \texttt{Regulation}, dem verschiedene \texttt{Control}s zugeordnet sind}
 \label{fig:regulation-sample} 
 \end{figure}
-
 
 \begin{figure}[H]
 \centering
@@ -124,7 +120,7 @@ Das Regulation Model bildet zusammen mit den Controls den semantischen Inhalt ab
   "statement":"Die Vertraulichkeit und Integritaet geschaeftsbezogener Informationen muss durch kryptografische Verfahren entsprechend ihren Schutzanforderungen gewaehrleistet werden.",
   "regulation_ids": ["SI001"],
   "component_ids": ["storage"]
-}
+},
 {
   "id": "SI001-I3.2",
   "type": "control",
@@ -132,13 +128,13 @@ Das Regulation Model bildet zusammen mit den Controls den semantischen Inhalt ab
   "statement": "Fuer geschaeftskritische Informationen muss eine Backup-Strategie auf Basis des Multi-Generation-Prinzips und Offline-Backups vorhanden sein und umgesetzt werden.",
   "regulation_ids": ["SI001"],
   "component_ids": ["storage"]
-}   
+
 \end{lstlisting}
-\caption{Beispiel für Regulation, der verschiedene Controls zugeordnet sind}
+\caption{Beispiel für Objekte des Typs \texttt{Control}, die hier einer \texttt{Regulation} und einer \texttt{Component} zugeordnet sind}
 \label{fig:control-sample} 
 \end{figure}
 
-Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibung aus den Regeulationen der ausgewählten Controls I2.1 und I3.2 passende Policies für die unterstützten Cloud-Provider identifiziert und den Profiles pro Plattform zugeordnet (siehe \autoref{fig:component-profile-sample}). Für eine erste Identifkation wird hierbei KI verwendet mit einenm anschliessenden Backing durch manuelle Recherche in den jeweiligen Dokumentationen der Cloud-Provider. Azure bietet mit der zentralisierten Policy-Engine einen direkten Weg die Korrektheit der Policies mittels name oder policy definition id zu überprüfen \footnote{Siehe Policy Definitions in \href{https://portal.azure.com/\#view/Microsoft_Azure_Policy/PolicyMenuBlade.MenuView/\~/Definitions}{Azure Policy Definition Portal}}. AWS hat mit den verschiedenen Services welche eigenen Policy-Engines besitzten einen dezentralisierten Ansatz. Entsprechend muss in der Dokumentation der einzelnen Services die Existenz geprüft werden. Um den unterschiedlichen Ebenen auf denen die Policies angewendet werden gerecht zu werden, wird das Attribut enforcement\_layer auf dem Policy Model eingeführt welches die Arten preventive, detective und runtime kennt.
+Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibung aus den Regulationen der ausgewählten Controls I2.1 und I3.2 passende Policies für die unterstützten Cloud-Provider identifiziert und den Profiles pro Plattform zugeordnet (siehe \autoref{fig:component-profile-sample}). Für eine erste Identifkation wird hierbei KI verwendet mit einem anschliessenden Backing durch manuelle Recherche in den jeweiligen Dokumentationen der Cloud-Provider. Azure bietet mit der zentralisierten Policy-Engine einen direkten Weg die Korrektheit der Policies mittels name oder policy definition id zu überprüfen \footnote{Siehe Policy Definitions in \href{https://portal.azure.com/\#view/Microsoft_Azure_Policy/PolicyMenuBlade.MenuView/\~/Definitions}{Azure Policy Definition Portal}}. AWS hat mit den verschiedenen Services welche eigenen Policy-Engines besitzten einen dezentralisierten Ansatz. Entsprechend muss in der Dokumentation der einzelnen Services die Existenz geprüft werden. Um den unterschiedlichen Ebenen auf denen die Policies angewendet werden gerecht zu werden, wird das Attribut enforcement\_layer auf dem Policy Model eingeführt welches die Arten preventive, detective und runtime kennt.
 
 \begin{figure}[H]
 \centering
@@ -164,8 +160,8 @@ Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibun
   ]
 }
 \end{lstlisting}
-\caption{Beispiel für das Storage Component-Profile Storage mit der Baseline Standard und den zueordneten Policies für Azure und AWS}
-\label{fig:component-profile-sample} 
+\caption{Beispiel für das Storage Component-Profile Storage mit der Baseline Standard und den zugeordneten Policies für Azure und AWS}
+\label{fig:component-profile-sample}
 \end{figure}
 
 Diese Unterschiede beeinflussen auch wie die einzelnen Policies selbst definier und zugewiesen werden. Policies können deshalb sowohl Referenzen auf existierenden Policies von Providern als auch eigenen Definitionen beinhalten. Dies ist insbesondere für AWS erforderlich, da bei einem Assignment häufig eine JSON Strutktur der Zuweisung mitgegeben werden muss. 

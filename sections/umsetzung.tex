@@ -107,7 +107,7 @@ Das \texttt{Regulation} Model bildet zusammen mit den Controls den semantischen 
 }
 \end{lstlisting}
 \caption{Beispiel für ein Objekt des Typs \texttt{Regulation}, dem verschiedene \texttt{Control}s zugeordnet sind}
-\label{fig:regulation-sample} 
+\label{fig:regulation-sample}
 \end{figure}
 
 \begin{figure}[H]
@@ -131,10 +131,10 @@ Das \texttt{Regulation} Model bildet zusammen mit den Controls den semantischen 
 
 \end{lstlisting}
 \caption{Beispiel für Objekte des Typs \texttt{Control}, die hier einer \texttt{Regulation} und einer \texttt{Component} zugeordnet sind}
-\label{fig:control-sample} 
+\label{fig:control-sample}
 \end{figure}
 
-Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibung aus den Regulationen der ausgewählten Controls I2.1 und I3.2 passende Policies für die unterstützten Cloud-Provider identifiziert und den Profiles pro Plattform zugeordnet (siehe \autoref{fig:component-profile-sample}). Für eine erste Identifkation wird hierbei KI verwendet mit einem anschliessenden Backing durch manuelle Recherche in den jeweiligen Dokumentationen der Cloud-Provider. Azure bietet mit der zentralisierten Policy-Engine einen direkten Weg die Korrektheit der Policies mittels name oder policy definition id zu überprüfen \footnote{Siehe Policy Definitions in \href{https://portal.azure.com/\#view/Microsoft_Azure_Policy/PolicyMenuBlade.MenuView/\~/Definitions}{Azure Policy Definition Portal}}. AWS hat mit den verschiedenen Services welche eigenen Policy-Engines besitzten einen dezentralisierten Ansatz. Entsprechend muss in der Dokumentation der einzelnen Services die Existenz geprüft werden. Um den unterschiedlichen Ebenen auf denen die Policies angewendet werden gerecht zu werden, wird das Attribut enforcement\_layer auf dem Policy Model eingeführt welches die Arten preventive, detective und runtime kennt.
+Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibung aus den Regulationen der ausgewählten Controls I2.1 und I3.2 passende Policies für die unterstützten Cloud-Provider identifiziert und den Profiles pro Plattform zugeordnet (siehe \autoref{fig:component-profile-sample}). Für eine erste Identifkation wird hierbei KI verwendet mit einem anschliessenden Backing durch manuelle Recherche in den jeweiligen Dokumentationen der Cloud-Provider. Azure bietet mit der zentralisierten Policy-Engine einen direkten Weg die Korrektheit der Policies mittels \texttt{name} oder \texttt{policy definition id} zu überprüfen\footnote{Siehe Policy Definitions in \href{https://portal.azure.com/\#view/Microsoft_Azure_Policy/PolicyMenuBlade.MenuView/\~/Definitions}{Azure Policy Definition Portal}}. AWS hat mit den verschiedenen Services welche eigene Policy-Engines besitzen einen dezentralisierten Ansatz. Entsprechend muss in der Dokumentation der einzelnen Services dessen Existenz geprüft werden. Um den unterschiedlichen Ebenen auf denen die Policies angewendet werden gerecht zu werden, wird das Attribut \texttt{enforcement\_layer} auf dem Policy Model eingeführt welches die Werte \texttt{preventive}, \texttt{detective} und \texttt{runtime} kennt.
 
 \begin{figure}[H]
 \centering
@@ -160,11 +160,11 @@ Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibun
   ]
 }
 \end{lstlisting}
-\caption{Beispiel für das Storage Component-Profile Storage mit der Baseline Standard und den zugeordneten Policies für Azure und AWS}
+\caption{Beispiel für das Storage Component-Profile mit der Baseline Standard und den zugeordneten Policies für Azure und AWS}
 \label{fig:component-profile-sample}
 \end{figure}
 
-Diese Unterschiede beeinflussen auch wie die einzelnen Policies selbst definier und zugewiesen werden. Policies können deshalb sowohl Referenzen auf existierenden Policies von Providern als auch eigenen Definitionen beinhalten. Dies ist insbesondere für AWS erforderlich, da bei einem Assignment häufig eine JSON Strutktur der Zuweisung mitgegeben werden muss. 
+Diese Unterschiede beeinflussen auch wie die einzelnen Policies selbst definiert und zugewiesen werden. Policies können deshalb sowohl Referenzen auf existierenden Policies von Providern als auch eigene Definitionen beinhalten. Dies ist insbesondere für AWS erforderlich, da bei einem Assignment häufig eine JSON Struktur der Zuweisung mitgegeben werden muss. 
 
 \begin{figure}[H]
 \centering
@@ -196,15 +196,15 @@ Diese Unterschiede beeinflussen auch wie die einzelnen Policies selbst definier 
   "scope_hint": "organizational"
 }
 \end{lstlisting}
-\caption{Beispiel für eine Policy für AWS, welche präventiv auf der Organization Unit dierekt zugewiesen wird}
-\label{fig:policy-sample-aws} 
+\caption{Beispiel für eine Policy für AWS, welche präventiv auf der Organization Unit direkt zugewiesen wird}
+\label{fig:policy-sample-aws}
 \end{figure}
 
-Die Zuweisungen von Policies zu den Foundations / \ac{lz} erfolgt theorethisch über die Component-Profiles bzw den Policies welche den Component-Profiles zugeordnet ist. Auf welcher Ebene die Zuweisung erfolgt ist hierbei offen bzw kann durch die 360-Cockpit Komponenten definiert werden. Für den \ac{poc} wird an dieser Stelle eine vereinfachung vorgenommen in dem für Azure Management-Groups und für AWS Organization Units definiert werden. Diese providerspezifischen Ressourcen werden bereits vor dem Provisionieren von konkreten Foundations Policies zugewiesen. Damit diese Zuweisung möglich ist werden zwei "Landing-Zones" (siehe \autoref{fig:data-model-poc}) definiert, welche eine statisches Set an Component-Profiles besitzen. Die Vereinfachung wird vorgenommen, da eine Provsionierung von Ressourcen in eine Management-Group oder Organization Unit hinein, einfacher zu implementieren ist, aber die Überprüfung der Architektur-Variante nicht untergräbt. 
+Die Zuweisungen von Policies zu den Foundations bzw. \ac{lz}s erfolgt theoretisch über die Component Profiles bzw. den Policies welche den Component-Profiles zugeordnet ist. Auf welcher Ebene die Zuweisung erfolgt ist hierbei offen bzw. kann durch die 360°-Cockpit Komponenten definiert werden. Für den \ac{poc} wird an dieser Stelle eine Vereinfachung vorgenommen in dem für Azure Management-Groups und für AWS Organization Units definiert werden. Diesen providerspezifischen Ressourcen werden bereits vor dem Provisionieren von konkreten Foundations Policies zugewiesen. Damit diese Zuweisung möglich ist, werden zwei "Landing-Zones" (siehe \autoref{fig:data-model-poc}) definiert, welche ein statisches Set an Component-Profiles besitzen. Die Vereinfachung wird vorgenommen, da eine Provsionierung von Ressourcen in eine Management-Group oder Organization Unit hinein einfacher zu implementieren ist, aber die Überprüfung der Architektur-Variante nicht untergräbt.
 
 \begin{figure}[H]
 \centering
-\begin{verbatim}
+\begin{lstlisting}
 {
   "id": "lz-aws-001",
   "cloud": "aws",
@@ -224,20 +224,22 @@ Die Zuweisungen von Policies zu den Foundations / \ac{lz} erfolgt theorethisch �
     "storage": "standard"
   }
 }
-\end{verbatim}
-\caption{Beispiel der zur Vereinfachung verwendeten Governance-Domains / Landing-Zone Profile mit statischen Component-Profiles für Azure und AWS}
-\label{fig:governance-domains-example} 
+\end{lstlisting}
+\caption{Beispiel der zur Vereinfachung verwendeten Governance-Domains / \ac{lz} Profiles mit statischen Component-Profiles für Azure und AWS}
+\label{fig:governance-domains-example}
 \end{figure}
 
 \subsection{UC6 Erstellung der Foundation}
 
-Die Evaluierung und die Provisionierung sind in der \ac{poc} Architektur bewusst in das 360-Cokcpit und das Governancen-Cockpit separiert. Das Governance-Cockpit soll vor allem mit den Elementen arbeiten, welche Teil der Traceability-Architektur sind und möglichst nicht mit Spezifika von Cloud-Providern in Berührung kommen. Das 360-Cockpit hingegen ist für die Ressourcenverwaltung (sprich Foundations) verantwortlich, welche basierend auf den Requests der Projektveranwortlichen erstelle wurden. Entsprechend wird hier auch die Provisionierung verantwortet und Spezifika pro Provider sind bekannt.
+\hl{TODO reference label}
 
-Als Grundlage für die Zuweisung von Component-Profiles (und schlussendliche Policies) zu einer Foundation wird eine FoundationDecisionRequestDto verwendet. In dieser formuliert der Projektverantwortliche die Anforderungen welche die Foundation aus Sicher der Governance erfüllen muss.
+Die Evaluierung und die Provisionierung (siehe TODO) sind in der \ac{poc} Architektur bewusst separiert worden in das 360°-Cockpit und das Governance-Cockpit. Das Governance-Cockpit soll vor allem mit den Elementen arbeiten, welche Teil der Traceability-Architektur sind und möglichst nicht mit Spezifika von Cloud-Providern in Berührung kommen. Das 360°-Cockpit hingegen ist für die Ressourcenverwaltung (z.B. innerhalb der Foundations) verantwortlich, welche basierend auf den Requests der Projektveranwortlichen erstellt wurden. Entsprechend wird hier auch die Provisionierung verantwortet und Spezifika pro Provider sind bekannt.
+
+Als Grundlage für die Zuweisung von Component-Profiles (und schlussendlich Policies) zu einer Foundation wird eine \texttt{FoundationDecisionRequestDto} verwendet. In dieser formuliert der Projektverantwortliche die Anforderungen, welche die Foundation aus Sicht der Governance erfüllen muss.
 
 \begin{figure}[H]
 \centering
-\begin{verbatim}
+\begin{lstlisting}
 {
   "name": "myFoundation",
   "environment": "development",
@@ -258,16 +260,16 @@ Als Grundlage für die Zuweisung von Component-Profiles (und schlussendliche Pol
     }
   }
 }
-\end{verbatim}
+\end{lstlisting}
 \caption{Request zum Evaluieren einer Foundation für eine nicht-produktive Umgebung}
-\label{fig:foundation-decision-request} 
+\label{fig:foundation-decision-request}
 \end{figure}
 
-Basierend auf der den Parametern wird je nach Traceability-Architektur Variante ein unterschiedliches Mapping vorgenommen. Für die component-zentrierte Variante im \ac{poc} ist dies ein Mapping auf Component-Profiles. Zuerst werden hierbei die Profiles für die Anforderungen je Component identifiziert. Die Auswertung erfolgt basiend auf Treshold für die verschiedenen Parameter. Exemplarisch wird die für die Storage Component gezeigt.
+Basierend auf den Parametern wird je nach Variante der Traceability-Architektur ein unterschiedliches Mapping vorgenommen. Für die Component-zentrierte Variante im \ac{poc} ist dies ein Mapping auf Component-Profiles. Zuerst werden hierbei die Profiles für die Anforderungen je Component identifiziert. Die Auswertung erfolgt basierend auf Threshold für die verschiedenen Parameter. Exemplarisch wird die für die Storage Component gezeigt.
 
 \begin{figure}[H]
 \centering
-\begin{verbatim}
+\begin{lstlisting}
 STORAGE_PROFILE_LIMITS = {
 "standard": {
     "min_rpo_minutes": 1440,   # daily
@@ -293,16 +295,17 @@ STORAGE_PROFILE_LIMITS = {
   }
 }
 }
-\end{verbatim}
+\end{lstlisting}
 \caption{Simplifizierte Struktur zur Auswertung der Storage Component}
-\label{fig:storage-profile-limits} 
+\label{fig:storage-profile-limits}
 \end{figure}
 
-Den Component Profiles aufsteigend werden die statisch konfigurierten Tresholds mit den Mindestanforderungen der Foundation verglichen. Stimmen diese in allen Werten überein, wurde ein passende Component Profile gefunden. Im Falle eines negativen Matching wird entsprechend ein Leerwert zurückgegeben, welcher oberhalb abgefangen wird
+In den Component Profiles werden aufsteigend die statisch konfigurierten Thresholds mit den Mindestanforderungen der Foundation verglichen. Stimmen diese in allen Werten überein, wurde ein passende Component Profile gefunden. Im Falle eines negativen Matching wird entsprechend ein Leerwert zurückgegeben, welcher oberhalb abgefangen wird.
 
 \begin{figure}[H]
 \centering
-\begin{lstlisting}
+% \begin{lstlisting}[language=python]
+\begin{python}
 def _derive_storage_profile(req: StorageRequirementDto) -> ComponentProfileNameDto:
     for profile in ["standard", "high", "very_high"]:
         limits = STORAGE_PROFILE_LIMITS[profile]
@@ -320,16 +323,18 @@ def _derive_storage_profile(req: StorageRequirementDto) -> ComponentProfileNameD
         return ComponentProfileNameDto(profile)
 
     return None
-\end{lstlisting}
-\caption{Vereinfachte Identifikation von passendem Component-Profile Level, assessment\_service.py\#Z495ff}
-\label{fig:storage-component-profile-identification} 
+\end{python}
+% \end{lstlisting}
+\caption{Vereinfachte Identifikation von passendem Component-Profile Level (Source-Code: assessment\_service.py\#Z495ff)}
+\label{fig:storage-component-profile-identification}
 \end{figure}
 
-Basierend auf dem identifizierten Component-Profile der datenbezogenen Anforderungen wird nachträglich eine Korrektur vorgenommen. Diese soll sicherstellen, dass die Sensitivität der bearbeitenden Daten berücksichtigt wird, da diese einen Einfluss auf alle Components hat. Für den \ac{poc} wird anschliessend die Governance-Domain identifiziert, welche den Anforderungen der Foundation genau oder mindestens entsprechen. Dies geschieht mittels eines Scoring pro Governance-Domain / \ac{lz}. Bei diesem Scoring wird gemessen wie gross die Abstände zwischen den für die Foundation identifizierten Component-Profiles zu jenen der vordefinierten Governance-Domain sind. Governance-Domain mit zu tiefen Component-Profile werden bereits vorher verworfen.
+Basierend auf dem identifizierten Component-Profile der datenbezogenen Anforderungen wird nachträglich eine Korrektur vorgenommen. Diese soll sicherstellen, dass die Sensitivität der bearbeitenden Daten berücksichtigt wird, da diese einen Einfluss auf alle Components hat. Für den \ac{poc} wird anschliessend die Governance-Domain identifiziert, welche den Anforderungen der Foundation genau oder mindestens entsprechen. Dies geschieht mittels eines Scorings pro Governance-Domain bzw. \ac{lz}. Bei diesem Scoring wird gemessen wie gross die Abstände sind zwischen den für die Foundation identifizierten Component-Profiles und jenen der vordefinierten Governance-Domain. Governance-Domains mit zu tiefen Component-Profiles werden bereits vorher verworfen.
 
 \begin{figure}[H]
 \centering
-\begin{lstlisting}
+% \begin{lstlisting}[language=python]
+\begin{python}
 ....
 req_compute = effective_compute
 req_network = effective_network
@@ -379,12 +384,13 @@ if not candidates:
 candidates.sort(key=lambda x: (x[0], x[1].id))
 chosen = candidates[0][1]
 ...
-\end{lstlisting}
+\end{python}
+% \end{lstlisting}
 \caption{Identifikation des passenden Governancne Containers im \ac{poc}, assessment\_service.py\#Z525ff}
-\label{fig:landing-zone-algorithm} 
+\label{fig:landing-zone-algorithm}
 \end{figure}
 
-Das Assessment ob des geeigneten Component-Profiles wird schlussendlich zusammen mit dem Placement (für die spezifische Implementation im \ac{poc}) persistiert und der Foundation zugeordnet. Mittels dieser Zuordnung können zu einem späteren Zeitpunkt während dem Deployment die konkret relevanten Policies ermittelt werden.
+Das Assessment des geeigneten Component-Profiles wird schlussendlich zusammen mit dem Placement (für die spezifische Implementation im \ac{poc}) persistiert und der Foundation zugeordnet. Mittels dieser Zuordnung können zu einem späteren Zeitpunkt während dem Deployment die konkret relevanten Policies ermittelt werden.
 
 \begin{figure}[H]
 \centering
@@ -412,18 +418,17 @@ Das Assessment ob des geeigneten Component-Profiles wird schlussendlich zusammen
 }
 \end{lstlisting}
 \caption{Beispiel einer Governance-Decision für eine Foundation}
-\label{fig:example-governance-decision} 
+\label{fig:example-governance-decision}
 \end{figure}
-
-\autoref{tab:uc6-verify-compliance}
 
 \subsection{UC6 Prüfung der Compliance}
 
-Der Stand der Compliance einer Foundation kann geprüft werden, sobald die Provisionierung durch das 360-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, damit schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtbar ist. Der Prozess den Compliance-State zu prüfen sollte idealerweise in regelmässigen Abständen durchgeführt werden, damit schlussendlich Akteure wie der Compliance-Officer ein möglichst aktuelles Lagebild im Governance-Cockpit haben, welches auf den Evidences aufbaut.
+Der Stand der Compliance einer Foundation kann geprüft werden (siehe \autoref{tab:uc6-verify-compliance}), sobald die Provisionierung durch das 360°-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, dass schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtlich ist. Der Prozess den Compliance-State zu prüfen sollte idealerweise in regelmässigen Abständen durchgeführt werden, damit schlussendlich Akteure wie der Compliance-Officer ein möglichst aktuelles Lagebild im Governance-Cockpit haben, welches auf den Evidences aufbaut.
 
 \begin{figure}[H]
 \centering
-\begin{lstlisting}
+% \begin{lstlisting}[language=python]
+\begin{python}
 evidence_collection = MongoDBCollections.EVIDENCE.value
 evidence_ids = []
 for control_id in control_ids:
@@ -474,31 +479,32 @@ for control_id in control_ids:
         ...
     )
     ...
-\end{lstlisting}
+\end{python}
+% \end{lstlisting}
 \caption{Generierung von Evidences für die Controls des angewendeten Component-Profiles}
-\label{fig:evidence-generation-flow} 
+\label{fig:evidence-generation-flow}
 \end{figure}
 
-Im nächsten Schritt soll gezeigt werden wie der Evidence Output, welcher basierend auf der Traceability-Architektur generiert wurde dem Compliance-Officer im 360 Cockpit dien um im Rahmen vom UC6 die Compliance prüfen zu können. Hierfür werden zuerst die verschiedenen Ansichten betrachtet welche im Mockup (siehe \autoref{appendix:ui-mockup}) gedrafted wurden:
+Im nächsten Schritt soll gezeigt werden wie der Evidence Output, welcher basierend auf der Traceability-Architektur generiert wurde dem Compliance-Officer im 360°-Cockpit dient um im Rahmen vom UC6 die Compliance prüfen zu können. Hierfür werden zuerst die verschiedenen Ansichten betrachtet welche im Mockup (siehe \autoref{appendix:ui-mockup}) gedrafted wurden:
 
 \begin{itemize}
-  \item Evidence View nach \autoref{fig:prototype-project-healthcare-view-evidence} Controls aller Foundation mit dem individuellen Compliance-State, Zeitpukt der Prüfung, Prüfende Entität, Beschreibung der Control
-  \item Control View nach \autoref{fig:prototype-project-healthcare-view-controls} Controls aller Foundations in einem Projekt aggregiert mit dem Compliance-State, Titel der Control, Beschreibung der Control
+  \item Evidence View nach \autoref{fig:prototype-project-healthcare-view-evidence} Controls aller Foundations mit dem individuellen Compliance State, Zeitpukt der Prüfung, prüfende Entität, Beschreibung der Control
+  \item Control View nach \autoref{fig:prototype-project-healthcare-view-controls} Controls aller Foundations in einem Projekt aggregiert mit dem Compliance State, Titel der Control, Beschreibung der Control
 \end{itemize}
-
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{graphics/Swaggger_Governance_Cockpit.png}
-    \caption{Endpoints für den Abruf der Compliance States, welche das Mockup theoretisch verwendet}
+    \caption{Endpoints für den Abruf der Compliance States, welche das Mockup theoretisch verwenden könnte}
     \label{fig:swagger-governance-cockpit}
 \end{figure}
 
-Die Evidence View basiert auf dem \textit{GET /project/{project\_id}/evidence endpoint}. Dieser Endpoint sucht für alle Foundations welche dem Projekt mit der id \textit{project\_id} zugeordnet sind den letzten verfügbaren Compliance State pro control. Diese Auswertung findet zur Reduktion der Datenmenge welche zur Laufzeit geladen wir in \autoref{fig:query-lates-foundation-compliance-state} gezeigt wenn möglich direkt in mongo db statt. Selber Gedanke wurde auch bei den Auswertungen der anderen Endpoint im Tag \textit{Governance Evaluation} angewandt. 
+Die Evidence View basiert auf dem \texttt{GET /project/\{project\_id\}/evidence} Endpoint. Dieser Endpoint sucht für alle Foundations welche dem Projekt mit der id \texttt{project\_id} zugeordnet sind den letzten verfügbaren Compliance State pro Control. Diese Auswertung findet wenn möglich direkt in MongoDB statt zur Reduktion der Datenmenge welche zur Laufzeit geladen wird (in \autoref{fig:query-lates-foundation-compliance-state} gezeigt). Derselbe Ansatz wurde auch bei den Auswertungen der anderen Endpoint im Tag \textit{Governance Evaluation} angewandt.
 
 \begin{figure}[H]
 \centering
-\begin{lstlisting}
+% \begin{lstlisting}[language=python]
+\begin{python}
 pipeline = [
     # Match documents for this project
     {"$match": {"project_id": project_id}},   
@@ -516,12 +522,13 @@ pipeline = [
 ]
 cursor = db[evidence_collection].aggregate(pipeline)
 evidence_docs = await cursor.to_list(length=None)
-\end{lstlisting}
+\end{python}
+% \end{lstlisting}
 \caption{MongoDB Abfrage für den letzten Compliance State pro Control je Foundation}
 \label{fig:query-lates-foundation-compliance-state} 
 \end{figure}
 
-Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \textit{foundation\_id} beginnend mit b97 die Foundation den status \flqq compliance\frqq\ gegenüber der control T2.1 aus der Regulation Si001 hat. Der compliance-state ergibt sich aus dem Minimalwert der Evaluierung aller betroffenen Policies welche für die Control evaluiert werden. Dies bedeutet, dass wenn mindestens eine Policy zum gegebene Zeitpunkt nicht erfüllt wurde, der Gesamtstatus entsprechend auch non compliant bzw \flqq at\_risk\frqq\ ist.
+Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt aus, dass für die Foundation mit der \texttt{foundation\_id} beginnend mit \texttt{b97fd9c6-...} die Foundation den Status \texttt{compliant} gegenüber der Control T2.1 aus der Regulation Si001 hat. Der \texttt{compliance\_status} ergibt sich aus dem Minimalwert der Evaluierung aller betroffenen Policies welche für die Control evaluiert werden. Dies bedeutet, dass wenn mindestens eine Policy zum gegebenen Zeitpunkt nicht erfüllt wurde der Gesamtstatus entsprechend auch noncompliant bzw. \texttt{at\_risk} ist.
 
 \begin{figure}[H]
 \centering
@@ -546,8 +553,7 @@ Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt
 \label{fig:evidence-response-for-fondation} 
 \end{figure}
 
-Im Falle einer negativen Evaulierung können Details zur einer Evidence über den Endpoint \textit{GET /project/{project\_id}/evidence/{evidence\_id}} bezogen werden. In dieser ist der Compliance Stand für alle Policies aufgelistet welche evaluiert wurde. Somit lässt sich der summierte Compliance State besser nachvollziehen und man kann mit bestimmten Policy Ids beim entsprechenden Cloud-Provider investigieren.
-
+Im Falle einer negativen Evaulierung können Details zur einer Evidence über den Endpoint \texttt{GET /project/\{project\_id\}/evidence/\{evidence\_id\}} bezogen werden. In dieser ist der Compliance State für alle Policies aufgelistet welche evaluiert wurden. Somit lässt sich der summierte Compliance State besser nachvollziehen und man kann mit bestimmten Policy Ids beim entsprechenden Cloud-Provider investigieren.
 
 \begin{figure}[H]
 \centering
@@ -587,7 +593,7 @@ Im Falle einer negativen Evaulierung können Details zur einer Evidence über de
 \label{fig:evidence-detail-response-for-foundation} 
 \end{figure}
 
-Die Policy welche intern durch AZ-AKS-DIAGNOSTICS-SETTINGS-TO-LA identifiziert wird löst sich so einer Policy auf Azure auf. Die Aussage der Policy ist, dass Ressourcen einem bestimmten Loganayltics Workspace zugeordnet sein müssen. Des Weiteren geht hervor, dass es sich um eine präventive Policy handelt, welche bereits vor dem Deployment der Landing Zone Ressourcen angewendet werden kann. Für Azure erfolgt dies im Rahmen vom \ac{poc} direkt über ein Assignment an die Management-Group.
+Die Policy welche intern durch \texttt{AZ-AKS-DIAGNOSTIC-SETTINGS-TO-LA} identifiziert wird löst sich so zu einer Policy auf Azure auf. Die Aussage der Policy ist, dass Ressourcen einem bestimmten Loganalytics Workspace zugeordnet sein müssen. Desweiteren geht hervor, dass es sich um eine präventive Policy handelt, welche bereits vor dem Deployment der Landing Zone Ressourcen angewendet werden kann. Für Azure erfolgt dies im Rahmen vom \ac{poc} direkt über ein Assignment an die Management-Group.
 
 \begin{figure}[H]
 \centering
@@ -615,7 +621,7 @@ Die Policy welche intern durch AZ-AKS-DIAGNOSTICS-SETTINGS-TO-LA identifiziert w
 \label{fig:policy-detail-respnse} 
 \end{figure}
 
-Für die Control View werden die Ergebnisse welche bereits für die Evidence View zusammengestellt werden genommen und nochmals pro Projekt zusammengefasst. Somit liefert der Endpoint \textit{GET /project/{project\_id}/controls} eine Aussage über den Compliance Stand von den jeweiligen Controls über alle Foundations hinweg. Dies bedeutet (analog zur vorherigen Auswertung), dass wenn eine Foundation gegenüber einer Control nicht compliant bzw at\_risk ist, entsprechend das gesamte Projekt als at\_risk gegenüber der Control dargestellt wird.
+Für die Control View werden die Ergebnisse welche bereits für die Evidence View zusammengestellt werden genommen und nochmals pro Projekt zusammengefasst. Somit liefert der Endpoint \texttt{GET /project/\{project\_id\}/controls} eine Aussage über den Compliance Stand von den jeweiligen Controls über alle Foundations hinweg. Dies bedeutet (analog zur vorherigen Auswertung), dass wenn eine Foundation gegenüber einer Control nicht compliant bzw. \texttt{at\_risk} ist, entsprechend das gesamte Projekt als \texttt{at\_risk} gegenüber der Control dargestellt wird.
 
 \begin{figure}[H]
 \centering
@@ -647,4 +653,4 @@ Für die Control View werden die Ergebnisse welche bereits für die Evidence Vie
 \label{fig:response-control-evlauation-for-project} 
 \end{figure}
 
-\hl{beschrieben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}
+\hl{beschreiben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}

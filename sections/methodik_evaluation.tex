@@ -367,14 +367,32 @@ Zusätzlich zu den Trade-Off Dimensionen aus der Literatur werden die folgenden 
 
 Die Dimension des Kontextes und der Anwendung wie beschrieben in \autoref{tab:evaluation-dimensions} stellt keine eigentliche Bewertungsdimension, sondern eine Gewichtungsdimension dar. Dies bedeutet, dass diese Dimensionen keinen Anspruch auf Objektivität erhebt und sich nicht zwangsläufig mit bestehender Literatur deckt. In dieser Arbeit stellt dieser Kontext die definierten Use-Cases für das \ac{bit} in \autoref{sec:methodik-capability} dar.
 
-Mittels der verschiedenen Dimensionen wird ein Bewertungs-/Validierungsprozess definiert. Das Ziel dieses Prozesses ist es die Dimensionen in eine Beziehung zueinander zu setzen und schlussendlich einen punkte-/notenbasierten Output zu bekommen. Mit diesem Output soll schlussendlich eine Aussage getroffen werden können für den Kontext.
+\subsubsection{Evaluationsprozess}
 
-Der Prozess bestehe aus den folgenden Teilen:
+Mittels der verschiedenen Dimensionen wird ein Evaluationsprozess definiert. Der Evaluationsprozesse wendet die verschiedenen Dimensionen an um einen bewertenden Output generieren zu können. Durch den Output welcher durch Anwendung des Prozesses auf die verschiedenen Traceability-Architekturen soll eine Vergleichbarkeit ermöglicht werden. Schlussendlich kann somit eine Empfehlung im Anwendungskontext gegeben werden. Gedanklich orientiert sich dieser Prozess somit an einer \ac{MCDA} in der verschiedene Konfliktbereiche zueinander ins Verhältnis gesetzt werden.
+
+Der Output des Prozesses ist der $ Score_{total} $. Dieser Score ergibt sich aus teils quantitativen wie auch qualitativen Scores, weshalb er hier als semi-quantitativ bezeichnet wird. Als Score wird hierbei eine bewertende Grösse verstanden.:
+\begin{itemize}
+    \item $Score_{principles}$ als quantitativer Score basierend auf den Architekturprinzipien
+    \item $Score_{quality}$ als quantitativer Score basierend auf den Qualitätsmerkmalen
+    \item $Score_{tradeoff}$ als qualitativer Score basierend auf den Trade-Off Kriterien
+\end{itemize}
+
+\begin{align}
+Score_{principles} &= \sum_{i=1}^{n} w_i \cdot p_i \\
+Score_{quality} &= \sum_{j=1}^{m} v_j \cdot q_j \\
+\end{align}
+
+\[
+Score_{total} = Score_{principles} + Score_{quality} + Score_{tradeoff}
+\]
+\subsubsection{Anwendung des Evaluationsprozesses}
 
 \begin{enumerate}
-    \item Definieren von Bewertungskontexten und darauf aufbauend Gewichtungsleitgedanken, mit welchen die Gewichtungsfaktoren bestimmt werden
-    \item Kategorisieren der Architekturprinzipien nach MUSS und KANN
-    \item Bestimmen der Gewichtungsfaktoren der Qualitätsmerkmale 
+    \item Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann
+    \item Bestimmen der Architekturprinzipien nach MUSS und KANN
+    \item Bestimmen der Gewichte der Qualitätsmerkmale
+    \item Bestimmen der Präferenz der Trade-Off Dimensionen
     \item Gewichten der Trade-Off Kriterien 
 \end{enumerate}
 

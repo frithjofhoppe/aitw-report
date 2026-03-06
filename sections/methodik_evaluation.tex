@@ -371,24 +371,128 @@ Die Dimension des Kontextes und der Anwendung wie beschrieben in \autoref{tab:ev
 
 Mittels der verschiedenen Dimensionen wird ein Evaluationsprozess definiert. Der Evaluationsprozess wendet die verschiedenen Dimensionen an um einen bewertenden Output generieren zu können. Durch Anwendung des Prozesses auf die verschiedenen Traceability-Architekturen soll eine Vergleichbarkeit ermöglicht werden. Schlussendlich kann somit eine Empfehlung im Anwendungskontext gegeben werden. Gedanklich orientiert sich dieser Prozess somit an einer \ac{MCDA} in der verschiedene Konfliktbereiche zueinander ins Verhältnis gesetzt werden.
 
-Der Output des Prozesses ist der $ Score_{total} $. Dieser Score ergibt sich aus teils quantitativen wie auch qualitativen Scores, weshalb er hier als semi-quantitativ bezeichnet wird. Als Score wird hierbei eine bewertende Grösse verstanden:
-
-\begin{itemize}
-    \item $Score_{principles}$ als quantitativer Score basierend auf den Architekturprinzipien
-    \item $Score_{quality}$ als quantitativer Score basierend auf den Qualitätsmerkmalen
-    \item $Score_{tradeoff}$ als qualitativer Score basierend auf den Trade-Off Kriterien
-\end{itemize}
+Der Output des Prozesses ist der $Score_{\text{base}}$ kombiniert mit einer textuellen Einordnung mittels der Trade-Off Kriterien. Diese Trennung ergibt sich daraus, dass sich die Architekturprinzipien wie Qualitätsattributen quantitativ, jedoch die Trade-Off Kriterien nur qualitativ bewerten lassen. Mit dieser Trennung soll die Verständlichkeit der Bewertung erhöht werden. Des Weiteren soll betont werden, dass die Trade-Off Kriterien zur Einordnung des  $Score_{\text{base}}$ dienen. Als Score wird generell eine bewertende Grösse verstanden. Der $Score_{\text{base}}$ setzt sich aus mehreren Scores zusammen. $Score_{\text{principles}}$ als Score basierend auf den Architekturprinzipien und $Score_{\text{quality}}$ als Score basierend auf den Qualitätsattributen. Um zu vermeiden, dass die Scores wegen der unterschiedlichen Anzahl nicht bevorzugt werden, wird entsprechend durch die Anzahl Punkte $w_i$ und $v_j$ geteilt.
 
 \begin{align}
-Score_{principles} &= \sum_{i=1}^{n} w_i \cdot p_i \\
-Score_{quality} &= \sum_{j=1}^{m} v_j \cdot q_j \\
+P &= \{p_1, \dots, p_n\}  \\
+P_{\text{selection}} &= \{\, p \in P \mid p \text{ ist Teil der Auswahl } \,\} \\ \\
+Q &= \{q_1, \dots,q_n\} \\
+Q_{\text{selection}} &= \{\, q \in Q \mid q \text{ ist Teil der Auswahl } \,\} \\ \\
+T &= \{q_1, \dots,q_n\} \\
+T_{\text{selection}} &= \{\, t \in T \mid t \text{ ist Teil der Auswahl } \,\} \\ \\
+Score_{\text{principles}} &= \frac{\sum_{p \in P_{\text{selection}}} w_{\text{principles}}(p)\,s_{\text{principles}}(p)} {\sum_{p \in P_{\text{selection}}} w_{\text{principles}}(p)} \\
+Score_{\text{quality}} &= \frac{\sum_{p \in Q_{\text{selection}}} w_{\text{quality}}\,s_{\text{quality}}(q)} {\sum_{q \in Q_{\text{selection}}} w_{\text{quality}}} \\
+Score_{\text{base}} &= Score_{\text{principles}} + Score_{\text{quality}}
 \end{align}
 
+Der $Score_{\text{principles}}$ ergibt sich aus einer Auswahls an MUSS- und den SOLL-Architekturprinzipien $P$ (siehe \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles}), welche als $P_{\text{selection}}$ bezeichnet werden. Um diese abzubilden sind für $w$ die Werte eingeschränkt.
+
+\begin{align}
+w_{\text{principles}} &: P \rightarrow \{0.5, 1.0\} \\
+s_{\text{principles}} &: P \rightarrow \{1, 2, 3, 4\}
+\end{align}
+
+MUSS Kriterien, welche nicht von einer Variante erfüllt werden, führen automatisch zum Ausschluss der Variante. Die Anzahl an Architekturprinzipien ist durch $|P_{\text{selection}}|$ gegeben.
+
 \[
-Score_{total} = Score_{principles} + Score_{quality} + Score_{tradeoff}
+w_{\text{principles}}(p) =
+\begin{cases}
+1.0, & \text{falls Prinzip } p \text{ ein MUSS-Prinzip ist} \\
+0.5, & \text{falls Prinzip } p \text{ ein SOLL-Prinzip ist}
+\end{cases}
 \]
 
+Der $Score_{quality}$ ergibt sich aus einer Auswahl an den Qualitätsattributen $Q$ (siehe \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}), welche als $Q_{\text{selection}}$ bezeichnet wird. Die Anzahl an Qualitätsattributen ist durch $|Q_{\text{selection}}|$ gegeben. Zur Gewichtung der einzelnen Merkmale wird $w_{\text{quality}}(p)$ verwendet.
+
+\begin{align}
+w_{\text{quality}} &: P \rightarrow \{0.1, 0.3, 0.4, 0.4, 0.6, 0.7, 0.8, 0.9, 1.0\} \\
+s_{\text{quality}} &: P \rightarrow \{1, 2, 3, 4\}
+\end{align}
+
+Die Bewertung des $Score_{\text{base}}$ erfolgt basierend auf einer Auswahl der Trade-Off Kriterien $T$ (siehe \autoref{tab:tension-fields-external} und \autoref{tab:tension-fields}), welche als $T_{\text{selection}}$ bezeichnet wird.
+
+\begin{align}
+s_{\text{tradeoff}} &: P \rightarrow \{-2 ,-1, 0, 1, 2\}
+\end{align}
+
+Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
+
+\begin{longtable}{|
+  L{1cm}|
+  p{\dimexpr\textwidth-4cm-6\tabcolsep-4\arrayrulewidth\relax}|
+  L{3cm}|
+}
+    \hline
+    \textbf{Nr} & \textbf{Beschreibung} & \textbf{Output} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Nr} & \textbf{Beschreibung} & \textbf{Output} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Initialisierung}} \\
+    \hline
+
+    1 & Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann. Dies können bspw. auf Use-Cases aufbauen &
+    Beschreibung des Kontextes
+    \\
+    \hline
+
+    2 & Auswahl der Architekturprinzipien vornehmen aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles}. Anschliessend jedem Prinzip ein Gewicht $w_i$ entsprechend der Unterteilung in MUSS- und SOLL Prinzipien zuweisen  &
+    Liste der Auswahl an Architekturprinzipien $P_{\text{selection}}$ mit Gewichten $w_{\text{principles}}(p)$
+    \\
+    \hline
+
+    3 & Auswahl der Qualitätsattribute vornehmen aus \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}. Anschliessend jedem Qualitätsattribut ein Gewicht $v_i$ entsprechend dem Definitionsbereich zuweisen &
+    Liste der Auswahl an Qualitätsattributen mit $Q_{\text{selection}}$ mit Gewichten $w_{\text{quality}}(p)$
+    \\
+    \hline
+
+    4 & Auswahl der Trade-Off Kriterien vornehmen aus \autoref{tab:tension-fields-external} und \autoref{tab:tension-fields}. Diese werden nicht gewichtet. &
+    Liste der Auswahl an Trade-Off Kriterien mit  $T_{\text{selection}}$
+    \\
+    \hline
+
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Anwendung auf Traceability-Variante}} \\
+    \hline
+
+    5 & Bewerten Variante basierend auf aller Architekturprinzipien in $P_{\text{selection}}$ mit den Punkten aus  $s_{\text{principles}}$  &
+    Bewertung $s_{\text{principles}}(p)$
+    \\
+    \hline
+
+    6 & Bewerten Variante basierend auf aller Qualitätsattribute in $Q_{\text{selection}}$ mit den Punkten aus  $s_{\text{quality}}$  &
+    Bewertung $s_{\text{quality}}(p)$
+    \\
+    \hline
+
+    7 & Berechnen des $Score_{\text{base}}$ &
+    Berechneter Score $Score_{\text{base}}$
+    \\
+
+    8 & Bewerten der Variante basierend auf den Trade-Off Kriterien $T_{\text{selection}}$ mittels Punkten aus $s_{\text{tradeoff}}$&
+    Bewertung $s_{\text{quality}}(p)$ mit der textuellen Begründung
+    \\
+    \hline
+
+    9 & Verfassen einer Gesamtbewertung basierend auf den vorherigen Ergebnissen & Gesamtbewertung der Variante
+    \\
+    \hline
+
+    \caption{Evaluationsprozess mit den einzelnen nummerierten Schritten}
+    \label{tab:evaluation-process-steps}
+\end{longtable}
+
+
 \subsubsection{Anwendung des Evaluationsprozesses}
+
+Für di
+
+Für Evaluation wird eine Auswahl an Architekturprinzipien aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles} vorgenommen, um sich auf wesentliche Aspekte für den Kontext zu Beschränken
 
 \begin{enumerate}
     \item Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann

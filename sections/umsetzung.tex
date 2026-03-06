@@ -305,7 +305,7 @@ In den Component Profiles werden aufsteigend die statisch konfigurierten Thresho
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{minted}{python}
+\begin{minted}[breaklines]{python}
 def _derive_storage_profile(req: StorageRequirementDto) -> ComponentProfileNameDto:
     for profile in ["standard", "high", "very_high"]:
         limits = STORAGE_PROFILE_LIMITS[profile]
@@ -334,7 +334,7 @@ Basierend auf dem identifizierten Component-Profile der datenbezogenen Anforderu
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{minted}{python}
+\begin{minted}[breaklines]{python}
 ....
 req_compute = effective_compute
 req_network = effective_network
@@ -428,7 +428,7 @@ Der Stand der Compliance einer Foundation kann geprüft werden (siehe \autoref{t
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{minted}{python}
+\begin{minted}[breaklines]{python}
 evidence_collection = MongoDBCollections.EVIDENCE.value
 evidence_ids = []
 for control_id in control_ids:
@@ -504,7 +504,7 @@ Die Evidence View basiert auf dem \texttt{GET /project/\{project\_id\}/evidence}
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{minted}{python}
+\begin{minted}[breaklines]{python}
 pipeline = [
     # Match documents for this project
     {"$match": {"project_id": project_id}},   

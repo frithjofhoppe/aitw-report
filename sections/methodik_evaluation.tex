@@ -108,7 +108,7 @@ Für die Qualitätsmerkmale werden sowohl eigens definierte Kriterien als auch j
 
     1 &
     Performance &
-    Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &
+    Fähigkeit gewisse Antwortzeiten und Durchsatzraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &
     \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
     \\
     \hline
@@ -162,7 +162,7 @@ Für die Qualitätsmerkmale werden sowohl eigens definierte Kriterien als auch j
     \hline
     4 &
     Service Adaptability &
-    Fähigkeit der Architektur Änderungen von Anforderungen, Interfaces oder dem Integrations Context unterzubringen ohne die Architektur fundamental zu verändern. Service sind hierbei im Sinne der Capability zu verstehen, nicht ein konkreter technische Service Implementation &
+    Fähigkeit der Architektur Änderungen von Anforderungen, Interfaces oder dem Integrations-Kontext unterzubringen ohne die Architektur fundamental zu verändern. Service sind hierbei im Sinne der Capability zu verstehen, nicht ein konkreter technische Service Implementation &
     \cite{bhargav_sai_pillati_leading_2025}
     \\
     \hline
@@ -212,7 +212,7 @@ Zu den externen Quality-Attributes kommen eigene Kriterien hinzu welche basieren
     \\
     \hline
 
-    Extensibility &
+    Adaptability &
     Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen &
     Cloud-Plattformen sowie relevante Regulatorien können sich ändern.
     \\
@@ -569,3 +569,56 @@ Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien 
 
 \hl{Begründen wie die Bewertungskala bzw Idee mit Gewichten und art der bestimmung basically einer Zahl pro Dimension so definiert wurde. Nur Muss und kann ums einfach zu halten}
 \hl{begründungn warum welche gewichtung vorgenommen wurde im Framework}
+
+\begin{longtable}{|
+  L{1cm}|
+  L{3cm}|
+  L{3cm}|
+  p{\dimexpr\textwidth-7cm-8\tabcolsep-4\arrayrulewidth\relax}|
+}
+    \hline
+    \textbf{ID} & \textbf{Qualitätsattribut} & \textbf{Quelle} & \textbf{Begründung} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{ID} & \textbf{Qualitätsattribut} & \textbf{Quelle} & \textbf{Begründung} \\
+    \hline
+    \endhead
+
+    Q1 & \textbf{Performance} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &     \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    % Nicht relevant für Traceability Architecture aber für Landing Zon Arch per se
+    Q2 & \textbf{Cost-effectiveness} Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &    \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    % Traceability Architektur ist quasi das architektonische Mittels im EA kontext eine Governance zu enabled durch das ganze traceability zeugs
+    Q3 & \textbf{Security} Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen & \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    Q4 & \textbf{Portability}Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &     \cite{mirsalari_model_2020} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    Q5 & \textbf{Architectural Sustainability} Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
+    \cite{bhargav_sai_pillati_leading_2025} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    Q6 & \textbf{Auditability} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben & Keine & Beschreibung des Kontextes
+    \\
+    \hline
+
+    % Automatibility
+    % Maintainability
+    % Adaptability
+    % Complexity
+    % Traceability Strength
+    
+    \caption{Auswahl an Qualityattributes}
+    \label{tab:selection-quality-attributes}
+\end{longtable}

@@ -503,8 +503,7 @@ Die Evidence View basiert auf dem \texttt{GET /project/\{project\_id\}/evidence}
 
 \begin{figure}[H]
 \centering
-% \begin{lstlisting}[language=python]
-\begin{minted}[breaklines]{python}
+\begin{lstlisting}
 pipeline = [
     # Match documents for this project
     {"$match": {"project_id": project_id}},   
@@ -522,8 +521,7 @@ pipeline = [
 ]
 cursor = db[evidence_collection].aggregate(pipeline)
 evidence_docs = await cursor.to_list(length=None)
-\end{minted}
-% \end{lstlisting}
+\end{lstlisting}
 \caption{MongoDB Abfrage für den letzten Compliance State pro Control je Foundation}
 \label{fig:query-lates-foundation-compliance-state} 
 \end{figure}

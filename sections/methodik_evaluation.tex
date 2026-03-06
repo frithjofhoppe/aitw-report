@@ -473,6 +473,7 @@ Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
     7 & Berechnen des $Score_{\text{base}}$ &
     Berechneter Score $Score_{\text{base}}$
     \\
+    \hline
 
     8 & Bewerten der Variante basierend auf den Trade-Off Kriterien $T_{\text{selection}}$ mittels Punkten aus $s_{\text{tradeoff}}$&
     Bewertung $s_{\text{quality}}(p)$ mit der textuellen Begründung
@@ -487,20 +488,84 @@ Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
     \label{tab:evaluation-process-steps}
 \end{longtable}
 
-
 \subsubsection{Anwendung des Evaluationsprozesses}
 
-Für di
+Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien und Trade-Off Kriterien vorgenommen, um sich auf wesentliche Aspekte für den Kontext zu Beschränken
 
-Für Evaluation wird eine Auswahl an Architekturprinzipien aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles} vorgenommen, um sich auf wesentliche Aspekte für den Kontext zu Beschränken
+\begin{longtable}{|
+  L{1cm}|
+  L{3cm}|
+  L{3cm}|
+  p{\dimexpr\textwidth-7cm-8\tabcolsep-4\arrayrulewidth\relax}|
+}
+    \hline
+    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Quelle} & \textbf{Begründung} \\
+    \hline
+    \endfirsthead
 
-\begin{enumerate}
-    \item Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann
-    \item Bestimmen der Architekturprinzipien nach MUSS und KANN
-    \item Bestimmen der Gewichte der Qualitätsmerkmale
-    \item Bestimmen der Präferenz der Trade-Off Dimensionen
-    \item Gewichten der Trade-Off Kriterien 
-\end{enumerate}
+    \hline
+    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Quelle} & \textbf{Begründung} \\
+    \hline
+    \endhead
+
+    A1 &  \textbf{Stanardisation Automaisation} Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A2 &  \textbf{Flexible Architecture} Wir entwerfen und implementieren Architekturen, die Echtzeit Geschäftsprozesse ermöglichen und sich flexibel an die Geschäftsanforderungen anpassen können.
+    & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A3 &  \textbf{Data Governance} Wir stellen sicher, dass wir als Leistungsbezüger BIT-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A4 &  \textbf{Compliance with Law and Policies} Wir bei BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschließlich der Bundes-, Departements-, und Amts-Prinzipien & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A5 &  \textbf{Serviceorientation} Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    % Varianten spezifisch
+    A6 &  \textbf{Defense-In-Depth} Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A7 &  \textbf{Cloud Native by Default} Wir entwickeln und betreiben Cloud Native Anwendungen. \textbf{Architectural Abstraction Principle} siehe  \autoref{tab:architecture-principles} & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A8 &  \textbf{Security by Design} Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A9  &  \textbf{Simplify and Automte Operations} Wir bei BIT stellen sicher, dass die IT-Prozesse und der Betrieb der Infrastruktur soweit wie möglich automatisiert werden, um die von den Nutzer/innen definierten Anforderungen an Funktionalität, Servicelevel und Lieferzeiten zu den tiefst möglichen Kosten und mit der besten Effizienz zu erfüllen. Wir beziehen und bieten Fully Managed Services an. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A10  &  \textbf{Product Neutrality} Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte. \textbf{Modular Decomposition Principle} siehe \autoref{tab:architecture-principles} & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}  & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A11  &  \textbf{Reference Model Principle} Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles}  & \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}  & Beschreibung des Kontextes
+    \\
+    \hline
+
+    A12  &  \textbf{Security Reconfigurability Principle}  Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles}  & \cite{hajjat_cloudward_2010}  & Beschreibung des Kontextes
+    \\
+    \hline
+
+    % Optional 
+    % A8 &  \textbf{Cloud Native by Default} Benutzern (Menschen, Services, Applikationen, etc.) wird nur das Minimum an Privilegien oder Zugriffsrechten gewährt, das für die Ausführung ihrer Aufgabe erforderlich ist. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    % \\
+    % \hline
+
+    \caption{Auswahl an Architekturprinzipien}
+    \label{tab:selection-architecture-principles}
+\end{longtable}
 
 \hl{Begründen wie die Bewertungskala bzw Idee mit Gewichten und art der bestimmung basically einer Zahl pro Dimension so definiert wurde. Nur Muss und kann ums einfach zu halten}
 \hl{begründungn warum welche gewichtung vorgenommen wurde im Framework}

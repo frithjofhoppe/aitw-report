@@ -29,6 +29,7 @@
             "name": "pdflatex",
             "command": "pdflatex",
             "args": [
+                "-shell-escape",
                 "%DOC%.tex"
             ],
             "env": {}
@@ -46,6 +47,7 @@
             "command": "latexmk",
             "args": [
                 "-synctex=1",
+                "-shell-escape",
                 "-interaction=nonstopmode",
                 "-file-line-error",
                 "-pdf",

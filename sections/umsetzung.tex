@@ -305,7 +305,7 @@ In den Component Profiles werden aufsteigend die statisch konfigurierten Thresho
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{python}
+\begin{minted}{python}
 def _derive_storage_profile(req: StorageRequirementDto) -> ComponentProfileNameDto:
     for profile in ["standard", "high", "very_high"]:
         limits = STORAGE_PROFILE_LIMITS[profile]
@@ -323,7 +323,7 @@ def _derive_storage_profile(req: StorageRequirementDto) -> ComponentProfileNameD
         return ComponentProfileNameDto(profile)
 
     return None
-\end{python}
+\end{minted}
 % \end{lstlisting}
 \caption{Vereinfachte Identifikation von passendem Component-Profile Level (Source-Code: assessment\_service.py\#Z495ff)}
 \label{fig:storage-component-profile-identification}
@@ -334,7 +334,7 @@ Basierend auf dem identifizierten Component-Profile der datenbezogenen Anforderu
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{python}
+\begin{minted}{python}
 ....
 req_compute = effective_compute
 req_network = effective_network
@@ -384,7 +384,7 @@ if not candidates:
 candidates.sort(key=lambda x: (x[0], x[1].id))
 chosen = candidates[0][1]
 ...
-\end{python}
+\end{minted}
 % \end{lstlisting}
 \caption{Identifikation des passenden Governancne Containers im \ac{poc}, assessment\_service.py\#Z525ff}
 \label{fig:landing-zone-algorithm}
@@ -428,7 +428,7 @@ Der Stand der Compliance einer Foundation kann geprüft werden (siehe \autoref{t
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{python}
+\begin{minted}{python}
 evidence_collection = MongoDBCollections.EVIDENCE.value
 evidence_ids = []
 for control_id in control_ids:
@@ -479,7 +479,7 @@ for control_id in control_ids:
         ...
     )
     ...
-\end{python}
+\end{minted}
 % \end{lstlisting}
 \caption{Generierung von Evidences für die Controls des angewendeten Component-Profiles}
 \label{fig:evidence-generation-flow}
@@ -504,7 +504,7 @@ Die Evidence View basiert auf dem \texttt{GET /project/\{project\_id\}/evidence}
 \begin{figure}[H]
 \centering
 % \begin{lstlisting}[language=python]
-\begin{python}
+\begin{minted}{python}
 pipeline = [
     # Match documents for this project
     {"$match": {"project_id": project_id}},   
@@ -522,7 +522,7 @@ pipeline = [
 ]
 cursor = db[evidence_collection].aggregate(pipeline)
 evidence_docs = await cursor.to_list(length=None)
-\end{python}
+\end{minted}
 % \end{lstlisting}
 \caption{MongoDB Abfrage für den letzten Compliance State pro Control je Foundation}
 \label{fig:query-lates-foundation-compliance-state} 

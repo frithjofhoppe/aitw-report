@@ -27,7 +27,7 @@ jobs:
       - name: Install Minimal TeX Live with Required Packages
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-science texlive-lang-german biber latexmk
+          sudo apt-get install -y texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra texlive-science texlive-lang-german biber latexmk inkscape
 
       - name: Compile LaTeX Document
         run: |

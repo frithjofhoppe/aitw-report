@@ -387,6 +387,7 @@ Die Dimension des Kontextes und der Anwendung wie beschrieben in \autoref{tab:ev
 Für die Bewertung der 
 
 \subsubsection{Konformitätsprozess für die Traceability-Architektur}
+\label{sec:conformityprocess-architecture}
 
 Mittels der Dimension \glqq Architekturprinzipien\glqq wird ein Konformitätsprozess definiert. Der Prozess wendet die verschiedenen Prinzipien auf die Traceability-Architektur an um eine Aussage über die Konformität machen zu können. Diese Aussage soll aufzeigen, dass die Struktur der Traceability-Architektur an sich den Anforderungen aus der Dimension \glqq Kontext und Anwendung \glqq entspricht.
 
@@ -541,6 +542,7 @@ Für die Anwendung des Konformitätsprozess wird in der Initialisierung folgende
 
 
 \subsubsection{Evaluationsprozess für die Varianten der Traceability-Architektur}
+\label{sec:evaluationprocess-traceability-variants}
 
 Mittels der Dimensionen \glqq Qualitätsmerkmale \glqq und \glqq Entscheidung und Trade-Off \glqq wird ein Evaluationsprozess definiert. Der Evaluationsprozess wendet die verschiedenen Dimensionen an um einen bewertenden Output generieren zu können. Durch Anwendung des Prozesses auf die verschiedenen Traceability-Architektur-Varianten soll eine Vergleichbarkeit ermöglicht werden. Schlussendlich kann somit eine Empfehlung im Anwendungskontext gegeben werden. Gedanklich orientiert sich dieser Prozess somit an einer \ac{MCDA} in der verschiedene Konfliktbereiche zueinander ins Verhältnis gesetzt werden.
 
@@ -652,50 +654,50 @@ Für die Anwendung des Evaluationsprozesses wird in der Initialisierung folgende
     \hline
     \endhead
 
-    Q1 & 1 & \textbf{Performance} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &      & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
+    Q1 & 1 & \textbf{Performance} \hypertarget{quality-q1}{} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &      & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
     \\
     \hline
 
     % Nicht relevant für Traceability Architecture aber für Landing Zon Arch per se
-    Q2 & 1  & \textbf{Cost-effectiveness} Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &     & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011}
+    Q2 & 1  & \textbf{Cost-effectiveness} \hypertarget{quality-q2}{} Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &     & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011}
     \\
     \hline
 
     % Traceability Architektur ist quasi das architektonische Mittels im EA kontext eine Governance zu enabled durch das ganze traceability zeugs
-    Q3 & 1 & \textbf{Security} Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen &  & \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
+    Q3 & 1 & \textbf{Security} \hypertarget{quality-q3}{} Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen &  & \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
     \\
     \hline
 
-    Q4 & 1  & \textbf{Portability}Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &      & \cite{mirsalari_model_2020}
+    Q4 & 1  & \textbf{Portability} \hypertarget{quality-q4}{} Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &      & \cite{mirsalari_model_2020}
     \\
     \hline
 
-    Q5 & 1  & \textbf{Architectural Sustainability} Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
+    Q5 & 1  & \textbf{Architectural Sustainability} \hypertarget{quality-q5}{} Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
      & \cite{bhargav_sai_pillati_leading_2025}
     \\
     \hline
 
-    Q6 & 1 & \textbf{Auditability} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben & Keine & Beschreibung des Kontextes
+    Q6 & 1 & \textbf{Auditability} \hypertarget{quality-q6}{} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben & Keine & Beschreibung des Kontextes
     \\
     \hline
 
-    Q7 & 1 & \textbf{Automatibility} Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls & Keine & Beschreibung des Kontextes
+    Q7 & 1 & \textbf{Automatibility} \hypertarget{quality-q7}{} Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls & Keine & Beschreibung des Kontextes
     \\
     \hline
 
-    Q8 & 1 & \textbf{Maintainability} Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten & Keine & Beschreibung des Kontextes
+    Q8 & 1 & \textbf{Maintainability} \hypertarget{quality-q8}{} Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten & Keine & Beschreibung des Kontextes
     \\
     \hline
 
-    Q9 & 1 & \textbf{Adaptability}     Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen & Keine & Beschreibung des Kontextes
+    Q9 & 1 & \textbf{Adaptability} \hypertarget{quality-q9}{} Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen & Keine & Beschreibung des Kontextes
     \\
     \hline
 
-    Q10 & 1 & \textbf{Complexity} Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll & Keine & Beschreibung des Kontextes
+    Q10 & 1 & \textbf{Complexity} \hypertarget{quality-q10}{} Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll & Keine & Beschreibung des Kontextes
     \\
     \hline    
 
-    Q11 & 1 & \textbf{Traceability Strength} Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann & Keine & Beschreibung des Kontextes
+    Q11 & 1 & \textbf{Traceability Strength} \hypertarget{quality-q11}{} Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann & Keine & Beschreibung des Kontextes
     \\
     \hline
 

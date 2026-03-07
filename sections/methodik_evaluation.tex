@@ -1,47 +1,56 @@
 \subsection{Strukturierung der Evaluation der Architektur}
 \label{sec:methodik-evaluation}
 
-Damit über die Varianten Traceability-Architektur aus \fullref{sec:traceability-architecture} eine Aussage ob einer optimalen Architektur (im Sinne der leitenden Fragestellung) gemacht werden kann ist folgende Methodik vorgesehen:
+Damit über die Einordnung der Traceability-Architektur selbst und den Varianten der Traceability-Architektur aus \fullref{sec:traceability-architecture} eine Aussage ob einer optimalen Architektur (im Sinne der leitenden Fragestellung) gemacht werden kann ist folgende Methodik vorgesehen:
 
 \begin{enumerate}
-    \item Identifikation relevanter Bewertungsdimensionen
+    \item Identifikation relevanter Bewertungsdimensionen für die Architektur selbst wie die Varianten
     \item Recherche und Ableitung von Kriterien innerhalb der Bewertungsdimensionen (sowohl vom \ac{bit} als auch aus der Literatur)
-    \item Ableitung eines strukturierten Bewertungs- und Validierungsprozesses
-    \item Einordnung, Gewichtung der Evaluationskriterien im Validierungsprozess
+    \item Ableitung eines Konformitätschecks der Traceability-Architektur an sich
+    \item Ableitung Bewertungsprozesses für die Traceability-Architektur Varianten
+    
 \end{enumerate}
 
 Basierend auf der Orientierung an \ac{togaf} wird sich bei der Suche an Dimensionen an dem \ac{adm} Cycle orientiert. Folgende Dimensionen werden ausgewählt:
 
-\begin{table}[H]
-    \centering
-    \begin{tabularx}{\textwidth}{|L{3cm}|X|X|}
-        \hline
-        \textbf{Dimension} & \textbf{Beschreibung} & \textbf{Begründung} \\
-        \hline
-        Architekturprinzipien &
-        Prinzipien oder grundlegende Eigenschaften einer Architektur. Architekturprinzipien können eingehalten oder nicht eingehalten sein. Dies ist eine Evaluationsdimension &
-        Ergeben sich aus der Preliminary Phase im \ac{adm} Cycle in welcher die allg. Rahmenbedingungen gesetzt werden, von der Architekturprinzipien teil sind. Die Architekturprinzipien sind als Gatekeeper für Varianten gedacht
-        \\
-        \hline
-        Qualitätsmerkmale &
-        Qualitative Eigenschaften der Architektur analog zu klassischen \ac{nfr}. Qualitätsmerkmale können basierend auf einer Skala zu einem gewissen Mass erfüllt sein. Dies ist eine Evaluationsdimension &
-        Ergeben sich gedanklich aus den Phasen A-D im \ac{adm} Cycle und dienen als vergleichende Kriterien zwischen verschiedenen Varianten
-        \\
-        \hline
-        Entscheidung und Trade-Off &
-        Spannungsfelder unterschiedlicher Architekturrichtungen welche nicht per se richtig oder falsch sind. Trade-Off Kriterien werden zum Labeling / zur Charakterisierung verwendet. Dies ist eine Evaluationsdimension &
-        Ergibt sich gedanklich aus den Phasen E-F im \ac{adm} Cycle. Sollen die Eigenschaften der unterschiedlichen Varianten hervorheben, ohne wertend zu wirken, da die durch das Kriterium vergleichenden Eigenschaften  grundsätzlich keine negative/positive Konnotation besitzen sollen
-        \\
-        \hline
-        Kontext und Anwendung &
-        Konkrete Rahmenbedingungen aus dem \ac{bit} Use-Case, welche die Gewichtung der Evaluationskriterien bzw. Evaluationsdimensionen beeinflusst. &
-        Ergibt sich aus der Festlegung des Kontextes in der Preliminary Phase und Ausarbeitung in den Phasen B-D im \ac{adm} Cycle. Dient dazu im Rahmen des definierten Use-Cases zu beurteilen. Im Gegensatz zu den Architekturprinzipien des \ac{bit} ist der Use-Case flexibler
-        \\
-        \hline
-    \end{tabularx}
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2\relax}|
+}
+    \hline
+    \textbf{Dimension} & \textbf{Beschreibung} & \textbf{Begründung} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Dimension} & \textbf{Beschreibung} & \textbf{Begründung} \\
+    \hline
+    \endhead
+
+    Architekturprinzipien &
+    Prinzipien oder grundlegende Eigenschaften einer Architektur. Architekturprinzipien können eingehalten oder nicht eingehalten sein. Dies ist eine Evaluationsdimension, welche auf die Traceability-Architektur als angewendet wird &
+    Ergeben sich aus der Preliminary Phase im \ac{adm} Cycle in welcher die allg. Rahmenbedingungen gesetzt werden, von der Architekturprinzipien teil sind. Die Architekturprinzipien sind als Gatekeeper für Varianten gedacht
+    \\
+    \hline
+    Qualitätsmerkmale &
+    Qualitative Eigenschaften der Architektur analog zu klassischen \ac{nfr}. Qualitätsmerkmale können basierend auf einer Skala zu einem gewissen Mass erfüllt sein. Dies ist eine Evaluationsdimension, welche auf die verschiedenen Varianten der Architektur angewendet wird &
+    Ergeben sich gedanklich aus den Phasen A-D im \ac{adm} Cycle und dienen als vergleichende Kriterien zwischen verschiedenen Varianten
+    \\
+    \hline
+    Entscheidung und Trade-Off &
+    Spannungsfelder unterschiedlicher Architekturrichtungen welche nicht per se richtig oder falsch sind. Trade-Off Kriterien werden zum Labeling / zur Charakterisierung verwendet. Dies ist eine Evaluationsdimension, welche auf die verschiedenen Varianten der Architektur angewendet wird &
+    Ergibt sich gedanklich aus den Phasen E-F im \ac{adm} Cycle. Sollen die Eigenschaften der unterschiedlichen Varianten hervorheben, ohne wertend zu wirken, da die durch das Kriterium vergleichenden Eigenschaften  grundsätzlich keine negative/positive Konnotation besitzen sollen
+    \\
+    \hline
+    Kontext und Anwendung &
+    Konkrete Rahmenbedingungen aus dem \ac{bit} Use-Case, welche den Bewertungskontext der Evaluationskriterien bzw. Evaluationsdimensionen beeinflusst. &
+    Ergibt sich aus der Festlegung des Kontextes in der Preliminary Phase und Ausarbeitung in den Phasen B-D im \ac{adm} Cycle. Dient dazu im Rahmen des definierten Use-Cases zu beurteilen. Im Gegensatz zu den Architekturprinzipien des \ac{bit} ist der Use-Case flexibler
+    \\
+    \hline
     \caption{Identifizierte Dimensionen des Evaluationsframeworks}
     \label{tab:evaluation-dimensions}
-\end{table}
+\end{longtable}
 
 Die Architekturprinzipien vom ac{bit} bilden sich aus den Vorgaben, welche durch die Organisation selbst vorgegeben sind. Von weiteren Kriterien vom \ac{bit} für die Arbeit wird abgesehen. Die Architekturprinzipien aus \autoref{fig:bit-architecture-principles} gelten für das gesamte \ac{bit}.
 
@@ -56,41 +65,49 @@ Für diese Arbeit werden die Prinzipien je nach gewähltem Use-Case selektiv ber
 
 \flqq What are possible architecture princples for multi-cloud ready enterprise architectures and solution architectures?\frqq\hspace{0.05cm}, welche mit Elicit AI recherchiert wurde (siehe Tools in \fullref{sec:hilfsmittel}). Die identifizierten Prinzipien zeigen, dass die Frage mit dem Begriff \flqq solution architecture\frqq\hspace{0.05cm} bereits zu stark auf konkrete technische Prinzipien fokussiert, siehe \fullref{appendix:architecture-principles-v1}. Dies entspricht nicht dem angedachten Abstraktionsniveau für Prinzipien einer \ac{ea}, weshalb die adaptierte Recherchefrage wie folgt lautet: \flqq Which normative, technology-agnostic enterprise architecture principles must hold so that multiple cloud-specific solution architectures can be derived consistently?\frqq. Die identifizierten Architekturprinzipien in \autoref{tab:architecture-principles} entstanden unter anderem basierend auf dem Screening von Abstracts nach Enterprise Architecture Priniples und dem Bezug von Cloud Computing Architecture bzw. multi-cloud Environments siehe \fullref{appendix:architecture-principles-v2}.
 
-\begin{table}[H]
-    \centering
-    \begin{tabularx}{\textwidth}{|L{3cm}|X|L{3cm}|}
-        \hline
-        \textbf{Prinzip} & \textbf{Beschreibung} & \textbf{Quellen} \\
-        \hline
-        Architectural Abtraction Principle &
-        Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden &
-        \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
-        \\
-        \hline
-        Modular Decomposition Prinicple &
-        Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern &
-        \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
-        \\
-        \hline
-        Reference Model Principle &
-        Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien &
-        \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
-        \\
-        \hline
-        Governance Primacy Principle &
-        Architektur soll klar auf Policies, Regulations und Unternehmensvorgaben aufbauen und nicht durch Technologie motiviert sein. Dies erreicht, dass trotz Unterschieden in den konkreten Lösungen / Cloud-Plattformen die Governancen als Input für das Vorgehen im Vordergrund bleibt &
-        \cite{zhang_ccoa_2009}, \cite{gurram_multi-cloud_2025}
-        \\
-        \hline
-        Security Reconfigurability Principle &
-        Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind &
-        \cite{hajjat_cloudward_2010}
-        \\
-        \hline
-    \end{tabularx}
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr\textwidth-6cm-6\tabcolsep-4\arrayrulewidth\relax}|
+  L{3cm}|
+}
+    \hline
+    \textbf{Prinzip} & \textbf{Beschreibung} & \textbf{Quellen} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Prinzip} & \textbf{Beschreibung} & \textbf{Quellen} \\
+    \hline
+    \endhead
+
+    Architectural Abtraction Principle &
+    Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden &
+    \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
+    \\
+    \hline
+    Modular Decomposition Prinicple &
+    Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern &
+    \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
+    \\
+    \hline
+    Reference Model Principle &
+    Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien &
+    \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
+    \\
+    \hline
+    Governance Primacy Principle &
+    Architektur soll klar auf Policies, Regulations und Unternehmensvorgaben aufbauen und nicht durch Technologie motiviert sein. Dies erreicht, dass trotz Unterschieden in den konkreten Lösungen / Cloud-Plattformen die Governancen als Input für das Vorgehen im Vordergrund bleibt &
+    \cite{zhang_ccoa_2009}, \cite{gurram_multi-cloud_2025}
+    \\
+    \hline
+    Security Reconfigurability Principle &
+    Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind &
+    \cite{hajjat_cloudward_2010}
+    \\
+    \hline
     \caption{Potenzielle Architekturprinzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
     \label{tab:architecture-principles}
-\end{table}
+\end{longtable}
 
 Für die Qualitätsmerkmale werden sowohl eigens definierte Kriterien als auch jene aus der Recherche verwendet. Hierfür wird folgende Fragestellung verwendet: \flqq Which architecture-related quality attributes are suitable for the comparative evaluation of enterprise architectures in technology-agnostic multi-cloud environments?\frqq. Das Ergebnis gliedert sich in die folgenden Tiers: Tier 1 Universable Applicable, Tier 2 Context-Dependent Critical, Tier 3 Multi-cloud Specific, Tier 4 Emerging Considerations. Von Interesse sind hierbei vor allem die Kriterien, welche sich explizit auf den multi-cloud Aspekt beziehen, sprich dem Tier 3.
 
@@ -367,55 +384,40 @@ Zusätzlich zu den Trade-Off Dimensionen aus der Literatur werden die folgenden 
 
 Die Dimension des Kontextes und der Anwendung wie beschrieben in \autoref{tab:evaluation-dimensions} stellt keine eigentliche Bewertungsdimension, sondern eine Gewichtungsdimension dar. Dies bedeutet, dass diese Dimensionen keinen Anspruch auf Objektivität erhebt und sich nicht zwangsläufig mit bestehender Literatur deckt. In dieser Arbeit stellt dieser Kontext die definierten Use-Cases für das \ac{bit} in \autoref{sec:methodik-capability} dar.
 
-\subsubsection{Evaluationsprozess}
+Für die Bewertung der 
 
-Mittels der verschiedenen Dimensionen wird ein Evaluationsprozess definiert. Der Evaluationsprozess wendet die verschiedenen Dimensionen an um einen bewertenden Output generieren zu können. Durch Anwendung des Prozesses auf die verschiedenen Traceability-Architekturen soll eine Vergleichbarkeit ermöglicht werden. Schlussendlich kann somit eine Empfehlung im Anwendungskontext gegeben werden. Gedanklich orientiert sich dieser Prozess somit an einer \ac{MCDA} in der verschiedene Konfliktbereiche zueinander ins Verhältnis gesetzt werden.
+\subsubsection{Konformitätsprozess für die Traceability-Architektur}
 
-Der Output des Prozesses ist der $Score_{\text{base}}$ kombiniert mit einer textuellen Einordnung mittels der Trade-Off Kriterien. Diese Trennung ergibt sich daraus, dass sich die Architekturprinzipien wie Qualitätsattributen quantitativ, jedoch die Trade-Off Kriterien nur qualitativ bewerten lassen. Mit dieser Trennung soll die Verständlichkeit der Bewertung erhöht werden. Des Weiteren soll betont werden, dass die Trade-Off Kriterien zur Einordnung des  $Score_{\text{base}}$ dienen. Als Score wird generell eine bewertende Grösse verstanden. Der $Score_{\text{base}}$ setzt sich aus mehreren Scores zusammen. $Score_{\text{principles}}$ als Score basierend auf den Architekturprinzipien und $Score_{\text{quality}}$ als Score basierend auf den Qualitätsattributen. Um zu vermeiden, dass die Scores wegen der unterschiedlichen Anzahl nicht bevorzugt werden, wird entsprechend durch die Anzahl Punkte $w_i$ und $v_j$ geteilt.
+Mittels der Dimension \glqq Architekturprinzipien\glqq wird ein Konformitätsprozess definiert. Der Prozess wendet die verschiedenen Prinzipien auf die Traceability-Architektur an um eine Aussage über die Konformität machen zu können. Diese Aussage soll aufzeigen, dass die Struktur der Traceability-Architektur an sich den Anforderungen aus der Dimension \glqq Kontext und Anwendung \glqq entspricht.
 
 \begin{align}
 P &= \{p_1, \dots, p_n\}  \\
 P_{\text{selection}} &= \{\, p \in P \mid p \text{ ist Teil der Auswahl } \,\} \\ \\
-Q &= \{q_1, \dots,q_n\} \\
-Q_{\text{selection}} &= \{\, q \in Q \mid q \text{ ist Teil der Auswahl } \,\} \\ \\
-T &= \{q_1, \dots,q_n\} \\
-T_{\text{selection}} &= \{\, t \in T \mid t \text{ ist Teil der Auswahl } \,\} \\ \\
-Score_{\text{principles}} &= \frac{\sum_{p \in P_{\text{selection}}} w_{\text{principles}}(p)\,s_{\text{principles}}(p)} {\sum_{p \in P_{\text{selection}}} w_{\text{principles}}(p)} \\
-Score_{\text{quality}} &= \frac{\sum_{p \in Q_{\text{selection}}} w_{\text{quality}}\,s_{\text{quality}}(q)} {\sum_{q \in Q_{\text{selection}}} w_{\text{quality}}} \\
-Score_{\text{base}} &= Score_{\text{principles}} + Score_{\text{quality}}
 \end{align}
 
-Der $Score_{\text{principles}}$ ergibt sich aus einer Auswahls an MUSS- und den SOLL-Architekturprinzipien $P$ (siehe \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles}), welche als $P_{\text{selection}}$ bezeichnet werden. Um diese abzubilden sind für $w$ die Werte eingeschränkt.
+Zur Fokussierung auf den Kontext, in welchem die Konformität gezeigt werden soll, wird eine Ausahl der Architekturprinzipien aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles} vorgenommen. Diese Auswahl wird als $P_{\text{selection}}$ bezeichnet.
 
 \begin{align}
-w_{\text{principles}} &: P \rightarrow \{0.5, 1.0\} \\
-s_{\text{principles}} &: P \rightarrow \{1, 2, 3, 4\}
+s_{\text{principles}} &: P \rightarrow \{0, 1, 2, 3, 4\}
 \end{align}
 
-MUSS Kriterien, welche nicht von einer Variante erfüllt werden, führen automatisch zum Ausschluss der Variante. Die Anzahl an Architekturprinzipien ist durch $|P_{\text{selection}}|$ gegeben.
+Das Mass der Erfüllung eines Architekturprinzips wird mit $s_{\text{principles}}(p)$ ermittelt.
 
-\[
-w_{\text{principles}}(p) =
+\begin{align}
+s_{\text{principles}}(p) =
 \begin{cases}
-1.0, & \text{falls Prinzip } p \text{ ein MUSS-Prinzip ist} \\
-0.5, & \text{falls Prinzip } p \text{ ein SOLL-Prinzip ist}
+< 1, & \text{falls Prinzip } p \text{ Prinzip nicht erfüllt } \\
+>= 1 & \text{falls Prinzip } p \text{ Prinzip erfüllt }
 \end{cases}
-\]
-
-Der $Score_{quality}$ ergibt sich aus einer Auswahl an den Qualitätsattributen $Q$ (siehe \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}), welche als $Q_{\text{selection}}$ bezeichnet wird. Die Anzahl an Qualitätsattributen ist durch $|Q_{\text{selection}}|$ gegeben. Zur Gewichtung der einzelnen Merkmale wird $w_{\text{quality}}(p)$ verwendet.
-
-\begin{align}
-w_{\text{quality}} &: P \rightarrow \{0.1, 0.3, 0.4, 0.4, 0.6, 0.7, 0.8, 0.9, 1.0\} \\
-s_{\text{quality}} &: P \rightarrow \{1, 2, 3, 4\}
 \end{align}
 
-Die Bewertung des $Score_{\text{base}}$ erfolgt basierend auf einer Auswahl der Trade-Off Kriterien $T$ (siehe \autoref{tab:tension-fields-external} und \autoref{tab:tension-fields}), welche als $T_{\text{selection}}$ bezeichnet wird.
+Ein Architekturprinzip, welches mit $w_{\text{principles}}(p) = 0$ resultiert, gilt als nicht erfüllt und bedeutet, dass die Architektur den Konformitätschecks nicht bestanden hat.
 
 \begin{align}
-s_{\text{tradeoff}} &: P \rightarrow \{-2 ,-1, 0, 1, 2\}
+passed = \forall p \in P_{\text{selection}} \; ( s_{\text{principles}}(p) > 0 )
 \end{align}
 
-Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
+Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzipien in einem Mindestmass in $passed$ erfüllt werden.
 
 \begin{longtable}{|
   L{1cm}|
@@ -441,56 +443,28 @@ Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
     \\
     \hline
 
-    2 & Auswahl der Architekturprinzipien vornehmen aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles}. Anschliessend jedem Prinzip ein Gewicht $w_i$ entsprechend der Unterteilung in MUSS- und SOLL Prinzipien zuweisen  &
-    Liste der Auswahl an Architekturprinzipien $P_{\text{selection}}$ mit Gewichten $w_{\text{principles}}(p)$
+    2 & Auswahl der Architekturprinzipien vornehmen aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles}  &
+    Liste der Auswahl an Architekturprinzipien $P_{\text{selection}}$
     \\
     \hline
 
-    3 & Auswahl der Qualitätsattribute vornehmen aus \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}. Anschliessend jedem Qualitätsattribut ein Gewicht $v_i$ entsprechend dem Definitionsbereich zuweisen &
-    Liste der Auswahl an Qualitätsattributen mit $Q_{\text{selection}}$ mit Gewichten $w_{\text{quality}}(p)$
-    \\
+    \multicolumn{3}{|c|}{\textbf{Anwendung auf Traceability-Architektur}} \\
     \hline
 
-    4 & Auswahl der Trade-Off Kriterien vornehmen aus \autoref{tab:tension-fields-external} und \autoref{tab:tension-fields}. Diese werden nicht gewichtet. &
-    Liste der Auswahl an Trade-Off Kriterien mit  $T_{\text{selection}}$
-    \\
-    \hline
-
-    \hline
-    \multicolumn{3}{|c|}{\textbf{Anwendung auf Traceability-Variante}} \\
-    \hline
-
-    5 & Bewerten Variante basierend auf aller Architekturprinzipien in $P_{\text{selection}}$ mit den Punkten aus  $s_{\text{principles}}$  &
+    3 & Bewerten der Traceability-Architektur basierend auf aller Architekturprinzipien in $P_{\text{selection}}$ mit den Punkten aus  $s_{\text{principles}}$  &
     Bewertung $s_{\text{principles}}(p)$
     \\
     \hline
 
-    6 & Bewerten Variante basierend auf aller Qualitätsattribute in $Q_{\text{selection}}$ mit den Punkten aus  $s_{\text{quality}}$  &
-    Bewertung $s_{\text{quality}}(p)$
+    4 & Verfassen einer Gesamtbewertung basierend auf den vorherigen Ergebnissen & Gesamtbewertung der Variante
     \\
     \hline
 
-    7 & Berechnen des $Score_{\text{base}}$ &
-    Berechneter Score $Score_{\text{base}}$
-    \\
-    \hline
-
-    8 & Bewerten der Variante basierend auf den Trade-Off Kriterien $T_{\text{selection}}$ mittels Punkten aus $s_{\text{tradeoff}}$&
-    Bewertung $s_{\text{quality}}(p)$ mit der textuellen Begründung
-    \\
-    \hline
-
-    9 & Verfassen einer Gesamtbewertung basierend auf den vorherigen Ergebnissen & Gesamtbewertung der Variante
-    \\
-    \hline
-
-    \caption{Evaluationsprozess mit den einzelnen nummerierten Schritten}
-    \label{tab:evaluation-process-steps}
+    \caption{Konformitätscheck mit den einzelnen nummerierten Schritten}
+    \label{tab:archicture-conformity-process}
 \end{longtable}
 
-\subsubsection{Anwendung des Evaluationsprozesses}
-
-Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien und Trade-Off Kriterien vorgenommen, um sich auf wesentliche Aspekte für den Kontext zu Beschränken
+Für die Anwendung des Konformitätsprozess wird in der Initialisierung folgenden Auswahl $P_{\text{selection}}$ vorgenommen.
 
 \begin{longtable}{|
   L{1cm}|
@@ -565,63 +539,171 @@ Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien 
     \label{tab:selection-architecture-principles}
 \end{longtable}
 
+
+\subsubsection{Evaluationsprozess für die Varianten der Traceability-Architektur}
+
+Mittels der Dimensionen \glqq Qualitätsmerkmale \glqq und \glqq Entscheidung und Trade-Off \glqq wird ein Evaluationsprozess definiert. Der Evaluationsprozess wendet die verschiedenen Dimensionen an um einen bewertenden Output generieren zu können. Durch Anwendung des Prozesses auf die verschiedenen Traceability-Architektur-Varianten soll eine Vergleichbarkeit ermöglicht werden. Schlussendlich kann somit eine Empfehlung im Anwendungskontext gegeben werden. Gedanklich orientiert sich dieser Prozess somit an einer \ac{MCDA} in der verschiedene Konfliktbereiche zueinander ins Verhältnis gesetzt werden.
+
+Der Output des Prozesses ist der $Score_{\text{quality}}$ kombiniert mit einer textuellen Einordnung mittels der Trade-Off Kriterien. Diese Trennung ergibt sich daraus, dass sich die Qualitätsattribute  quantitativ, jedoch die Trade-Off Kriterien nur qualitativ bewerten lassen. Mit dieser Trennung soll die Verständlichkeit der Bewertung erhöht werden. Des Weiteren soll betont werden, dass die Trade-Off Kriterien zur Einordnung des  $Score_{\text{quality}}$ dienen. Als Score wird generell eine bewertende Grösse verstanden.
+
+\begin{align}
+Q &= \{q_1, \dots,q_n\} \\
+Q_{\text{selection}} &= \{\, q \in Q \mid q \text{ ist Teil der Auswahl } \,\} \\ \\
+T &= \{t_1, \dots,t_n\} \\
+T_{\text{selection}} &= \{\, t \in T \mid t \text{ ist Teil der Auswahl } \,\} \\ \\
+Score_{\text{quality}} &= \frac{\sum_{q \in Q_{\text{selection}}} w_{\text{quality}}(q)\,s_{\text{quality}}(q)} {\sum_{q \in Q_{\text{selection}}} w_{\text{quality}}(q)} \\
+\end{align}
+
+Der $Score_{quality}$ ergibt sich aus einer Auswahl an den Qualitätsattributen $Q$ (siehe \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}), welche als $Q_{\text{selection}}$ bezeichnet wird. Die Anzahl an Qualitätsattributen ist durch $|Q_{\text{selection}}|$ gegeben. Zur Gewichtung der einzelnen Merkmale wird $w_{\text{quality}}(p)$ verwendet.
+
+\begin{align}
+w_{\text{quality}} &: Q \rightarrow \{0.1, 0.3, 0.4, 0.4, 0.6, 0.7, 0.8, 0.9, 1.0\} \\
+s_{\text{quality}} &: Q \rightarrow \{1, 2, 3, 4\}
+\end{align}
+
+Die Bewertung des $Score_{\text{quality}}$ erfolgt basierend auf einer Auswahl der Trade-Off Kriterien $T$ (siehe \autoref{tab:tension-fields-external} und \autoref{tab:tension-fields}), welche als $T_{\text{selection}}$ bezeichnet wird.
+
+\begin{align}
+s_{\text{tradeoff}} &: T \rightarrow \{-2 ,-1, 0, 1, 2\}
+\end{align}
+
+Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
+
+\begin{longtable}{|
+  L{1cm}|
+  p{\dimexpr\textwidth-4cm-6\tabcolsep-4\arrayrulewidth\relax}|
+  L{3cm}|
+}
+    \hline
+    \textbf{Nr} & \textbf{Beschreibung} & \textbf{Output} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Nr} & \textbf{Beschreibung} & \textbf{Output} \\
+    \hline
+    \endhead
+
+    \hline
+    \multicolumn{3}{|c|}{\textbf{Initialisierung}} \\
+    \hline
+
+    1 & Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann. Dies können bspw. auf Use-Cases aufbauen &
+    Beschreibung des Kontextes
+    \\
+    \hline
+
+    2 & Auswahl der Qualitätsattribute vornehmen aus \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}. Anschliessend jedem Qualitätsattribut ein Gewicht $v_i$ entsprechend dem Definitionsbereich zuweisen &
+    Liste der Auswahl an Qualitätsattributen mit $Q_{\text{selection}}$ mit Gewichten $w_{\text{quality}}(q)$
+    \\
+    \hline
+
+    3 & Auswahl der Trade-Off Kriterien vornehmen aus \autoref{tab:tension-fields-external} und \autoref{tab:tension-fields}. Diese werden nicht gewichtet. &
+    Liste der Auswahl an Trade-Off Kriterien mit  $T_{\text{selection}}$
+    \\
+    \hline
+
+    \multicolumn{3}{|c|}{\textbf{Anwendung auf Traceability-Architektur-Variante}} \\
+    \hline
+
+    4 & Bewerten Variante basierend auf aller Qualitätsattribute in $Q_{\text{selection}}$ mit den Punkten aus  $s_{\text{quality}}$  &
+    Bewertung $s_{\text{quality}}(q)$
+    \\
+    \hline
+
+    5 & Berechnen des $Score_{\text{quality}}$ &
+    Berechneter Score $Score_{\text{quality}}$
+    \\
+    \hline
+
+    6 & Bewerten der Variante basierend auf den Trade-Off Kriterien $T_{\text{selection}}$ mittels Punkten aus $s_{\text{tradeoff}}$&
+    Bewertung $s_{\text{quality}}(q)$ mit der textuellen Begründung
+    \\
+    \hline
+
+    7 & Verfassen einer Gesamtbewertung basierend auf den vorherigen Ergebnissen & Gesamtbewertung der Variante
+    \\
+    \hline
+
+    \caption{Evaluationsprozess mit den einzelnen nummerierten Schritten}
+    \label{tab:evaluation-process-steps}
+\end{longtable}
+
+
+Für die Anwendung des Evaluationsprozesses wird in der Initialisierung folgende Auswahl für die Qualitätsattribute $Q_{\text{selection}}$ mit den Gewichten $w_{\text{quality}}(q)$ getreoffen.
+
 \hl{Begründen wie die Bewertungskala bzw Idee mit Gewichten und art der bestimmung basically einer Zahl pro Dimension so definiert wurde. Nur Muss und kann ums einfach zu halten}
 \hl{begründungn warum welche gewichtung vorgenommen wurde im Framework}
 
 \begin{longtable}{|
   L{1cm}|
-  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
-  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
+  L{1cm}|
+  p{\dimexpr(\textwidth-5cm-10\tabcolsep-6\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-5cm-10\tabcolsep-6\arrayrulewidth)/2\relax}|
   L{3cm}|
 }
     \hline
-    \textbf{ID} & \textbf{Qualitätsattribut} & \textbf{Quelle} & \textbf{Begründung} \\
+    \textbf{ID} & \textbf{$w(q)$} & \textbf{Qualitätsattribut} & \textbf{Begründung} & \textbf{Quelle} \\
     \hline
     \endfirsthead
 
     \hline
-    \textbf{ID} & \textbf{Qualitätsattribut} & \textbf{Quelle} & \textbf{Begründung} \\
+    \textbf{ID} & \textbf{$w(q)$} & \textbf{Qualitätsattribut} & \textbf{Begründung} & \textbf{Quelle} \\
     \hline
     \endhead
 
-    Q1 & \textbf{Performance} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &     \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025} & Beschreibung des Kontextes
+    Q1 & 1 & \textbf{Performance} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &      & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
     \\
     \hline
 
     % Nicht relevant für Traceability Architecture aber für Landing Zon Arch per se
-    Q2 & \textbf{Cost-effectiveness} Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &    \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011} & Beschreibung des Kontextes
+    Q2 & 1  & \textbf{Cost-effectiveness} Fähigkeit Kosten transparent abzubilden um eine Vergleichbarkeit zu ermöglichen sowie Fähigkeit Möglichkeit zur Optimierung der Kosten zu geben - nicht nur zwangsläufig tiefstmögliche Kosten &     & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{menzel_cloudgenius_2011}
     \\
     \hline
 
     % Traceability Architektur ist quasi das architektonische Mittels im EA kontext eine Governance zu enabled durch das ganze traceability zeugs
-    Q3 & \textbf{Security} Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen & \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025} & Beschreibung des Kontextes
+    Q3 & 1 & \textbf{Security} Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen &  & \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
     \\
     \hline
 
-    Q4 & \textbf{Portability}Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &     \cite{mirsalari_model_2020} & Beschreibung des Kontextes
+    Q4 & 1  & \textbf{Portability}Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &      & \cite{mirsalari_model_2020}
     \\
     \hline
 
-    Q5 & \textbf{Architectural Sustainability} Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
-    \cite{bhargav_sai_pillati_leading_2025} & Beschreibung des Kontextes
+    Q5 & 1  & \textbf{Architectural Sustainability} Fähigkeit der Architektur sich langfristig an ändernde technologische sowie organisatorische Gegebenheiten anpassen zu können. Die Differenzierung zur Portability und Interoperability ist, dass diese auch längerfristig aufrechterhalten werden können &
+     & \cite{bhargav_sai_pillati_leading_2025}
     \\
     \hline
 
-    Q6 & \textbf{Auditability} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben & Keine & Beschreibung des Kontextes
+    Q6 & 1 & \textbf{Auditability} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben & Keine & Beschreibung des Kontextes
     \\
     \hline
 
-    % Automatibility
-    % Maintainability
-    % Adaptability
-    % Complexity
-    % Traceability Strength
-    
+    Q7 & 1 & \textbf{Automatibility} Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls & Keine & Beschreibung des Kontextes
+    \\
+    \hline
+
+    Q8 & 1 & \textbf{Maintainability} Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten & Keine & Beschreibung des Kontextes
+    \\
+    \hline
+
+    Q9 & 1 & \textbf{Adaptability}     Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen & Keine & Beschreibung des Kontextes
+    \\
+    \hline
+
+    Q10 & 1 & \textbf{Complexity} Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll & Keine & Beschreibung des Kontextes
+    \\
+    \hline    
+
+    Q11 & 1 & \textbf{Traceability Strength} Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann & Keine & Beschreibung des Kontextes
+    \\
+    \hline
+
     \caption{Auswahl an Qualityattributes}
     \label{tab:selection-quality-attributes}
 \end{longtable}
 
-\hl{Ausformulieren von automatibiliy, Maintainability, adaptibility, complexity, traceability strength}
+Ebenfalls wird eine Auswahl and Trade-Off-Kriterien $T_{\text{selection}}$ vorgenommen.
 
 \begin{longtable}{|
   L{1cm}|

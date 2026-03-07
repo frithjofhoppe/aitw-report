@@ -327,7 +327,7 @@ Zusätzlich zu den Trade-Off Dimensionen aus der Literatur werden die folgenden 
     \hline
 
     Central Traceability Model vs. Federated Traceability Models &
-    Mit dem central Model wird ein einheitliches Model mit semantischer Vergleichbarkeit angestrebt, was eine einfachere domänenübergreifende Auswertung erlaubt. Mit dem federated Model existiert eine gewisse Vielfalt für eine Domäne, welche durch für eine Auswertung zentral gemapped werden muss. Die Konsistenz entsteht durch eine zentrale Auswertung / Mapping &
+    Mit dem central Model wird ein einheitliches Model mit semantischer Vergleichbarkeit angestrebt, was eine einfachere domänenübergreifende Auswertung erlaubt. Mit dem federated Model existiert eine gewisse Vielfalt für eine Domäne, welche durch eine Auswertung zentral gemapped werden muss. Die Konsistenz entsteht durch eine zentrale Auswertung / Mapping &
     Relevant je nach Heterogenität der Domänen, um keine künstlichen Modelle zu erhalten die ggf. domänenspezifische Strukturen einschränken
     \\
     \hline
@@ -494,67 +494,65 @@ Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien 
 
 \begin{longtable}{|
   L{1cm}|
+  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
   L{3cm}|
-  L{3cm}|
-  p{\dimexpr\textwidth-7cm-8\tabcolsep-4\arrayrulewidth\relax}|
 }
     \hline
-    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Quelle} & \textbf{Begründung} \\
+    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
     \hline
     \endfirsthead
 
     \hline
-    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Quelle} & \textbf{Begründung} \\
+    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
     \hline
     \endhead
 
-    A1 &  \textbf{Stanardisation Automaisation} Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A1 & \textbf{Stanardisation Automaisation} Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A2 &  \textbf{Flexible Architecture} Wir entwerfen und implementieren Architekturen, die Echtzeit Geschäftsprozesse ermöglichen und sich flexibel an die Geschäftsanforderungen anpassen können.
-    & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A2 & \textbf{Flexible Architecture} Wir entwerfen und implementieren Architekturen, die Echtzeit Geschäftsprozesse ermöglichen und sich flexibel an die Geschäftsanforderungen anpassen können. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A3 &  \textbf{Data Governance} Wir stellen sicher, dass wir als Leistungsbezüger BIT-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A3 & \textbf{Data Governance} Wir stellen sicher, dass wir als Leistungsbezüger BIT-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A4 &  \textbf{Compliance with Law and Policies} Wir bei BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschließlich der Bundes-, Departements-, und Amts-Prinzipien & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A4 & \textbf{Compliance with Law and Policies} Wir bei BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschliesslich der Bundes-, Departements-, und Amts-Prinzipien & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A5 &  \textbf{Serviceorientation} Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A5 & \textbf{Serviceorientation} Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    % Varianten spezifisch
-    A6 &  \textbf{Defense-In-Depth} Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A6 & \textbf{Defense-In-Depth} Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A7 &  \textbf{Cloud Native by Default} Wir entwickeln und betreiben Cloud Native Anwendungen. \textbf{Architectural Abstraction Principle} siehe  \autoref{tab:architecture-principles} & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013} & Beschreibung des Kontextes
+    A7 & \textbf{Cloud Native by Default} Wir entwickeln und betreiben Cloud Native Anwendungen. \textbf{Architectural Abstraction Principle} siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
     \\
     \hline
 
-    A8 &  \textbf{Security by Design} Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A8 & \textbf{Security by Design} Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A9  &  \textbf{Simplify and Automte Operations} Wir bei BIT stellen sicher, dass die IT-Prozesse und der Betrieb der Infrastruktur soweit wie möglich automatisiert werden, um die von den Nutzer/innen definierten Anforderungen an Funktionalität, Servicelevel und Lieferzeiten zu den tiefst möglichen Kosten und mit der besten Effizienz zu erfüllen. Wir beziehen und bieten Fully Managed Services an. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
+    A9 & \textbf{Simplify and Automte Operations} Wir bei BIT stellen sicher, dass die IT-Prozesse und der Betrieb der Infrastruktur soweit wie möglich automatisiert werden, um die von den Nutzer/innen definierten Anforderungen an Funktionalität, Servicelevel und Lieferzeiten zu den tiefst möglichen Kosten und mit der besten Effizienz zu erfüllen. Wir beziehen und bieten Fully Managed Services an. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A10  &  \textbf{Product Neutrality} Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte. \textbf{Modular Decomposition Principle} siehe \autoref{tab:architecture-principles} & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}  & Beschreibung des Kontextes
+    A10 & \textbf{Product Neutrality} Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte. \textbf{Modular Decomposition Principle} siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
     \\
     \hline
 
-    A11  &  \textbf{Reference Model Principle} Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles}  & \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}  & Beschreibung des Kontextes
+    A11 & \textbf{Reference Model Principle} Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
     \\
     \hline
 
-    A12  &  \textbf{Security Reconfigurability Principle}  Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles}  & \cite{hajjat_cloudward_2010}  & Beschreibung des Kontextes
+    A12 & \textbf{Security Reconfigurability Principle} Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & \cite{hajjat_cloudward_2010}
     \\
     \hline
 
@@ -572,9 +570,9 @@ Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien 
 
 \begin{longtable}{|
   L{1cm}|
+  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
   L{3cm}|
-  L{3cm}|
-  p{\dimexpr\textwidth-7cm-8\tabcolsep-4\arrayrulewidth\relax}|
 }
     \hline
     \textbf{ID} & \textbf{Qualitätsattribut} & \textbf{Quelle} & \textbf{Begründung} \\
@@ -621,4 +619,65 @@ Für Evaluation wird eine Auswahl an Architekturprinzipien, Qualitätskriterien 
     
     \caption{Auswahl an Qualityattributes}
     \label{tab:selection-quality-attributes}
+\end{longtable}
+
+\hl{Ausformulieren von automatibiliy, Maintainability, adaptibility, complexity, traceability strength}
+
+\begin{longtable}{|
+  L{1cm}|
+  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
+  L{3cm}|
+}
+    \hline
+    \textbf{ID} & \textbf{Trade-Off Dimension} & \textbf{Begründung} & \textbf{Quelle} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{ID} & \textbf{Trade-Off Dimension} & \textbf{Begründung} & \textbf{Quelle} \\
+    \hline
+    \endhead
+
+    T1 & Performance vs Portability  & Beschreibung des Kontextes & 
+    \cite{gibilisco_methodology_2016}, \cite{emmanni_architecting_2020}, \cite{papaioannou_architecture_2013-1}
+    \\
+    \hline
+
+    T2 & Flexibility vs Structural simplicity  & Beschreibung des Kontextes & \cite{gibilisco_methodology_2016}, \cite{papaioannou_architecture_2013}, \cite{arul_data_2022}
+    \\
+    \hline
+
+    T3 & Security vs Usability  & Beschreibung des Kontextes &  \cite{berlato_exploring_2020}, \cite{casola_security-by-design_2018}
+    \\
+    \hline
+
+    % In favor of cost effectiveness vc architecture specialization, because more applicable
+    T4 & Vendor Lock-In vs Scalability  & Beschreibung des Kontextes &  \cite{berlato_exploring_2020}, \cite{quint_towards_2018}, \cite{zhao_supporting_2022}
+    \\
+    \hline
+
+    T5 & Explicit Trace Modeling vs. Implicit Derivation  & Beschreibung des Kontextes & \autoref{tab:tension-fields}
+    \\
+    \hline
+
+    T6 & Central Traceability Model vs. Federated Traceability Models  & Beschreibung des Kontextes &  \autoref{tab:tension-fields}
+    \\
+    \hline
+    
+    T7 & Governance centric Traceability vs. Engineering centric Traceability  & Beschreibung des Kontextes &  \autoref{tab:tension-fields}
+    \\
+    \hline
+
+    % MAYBE kind of having pretty tight defined models vs open models which cant directly be processed by machines
+    T8 & High Formalization vs. Interpretative Flexibility  & Beschreibung des Kontextes &  \autoref{tab:tension-fields}
+    \\
+    \hline
+
+    T9 & Traceability Coverage vs. Traceability Precision & Beschreibung des Kontextes &  \autoref{tab:tension-fields}
+    \\
+    \hline
+
+    \caption{Auswahl an Trade-Off Kriterien}
+    \label{tab:selection-tradeoff}
 \end{longtable}

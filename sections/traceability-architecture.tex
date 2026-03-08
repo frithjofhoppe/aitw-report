@@ -175,6 +175,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \label{fig:methodology-poc-variant1-sequence-verification}
 \end{figure}
 
+Bei der Prüfung der Compliance einer Foundation wird in dieser Variante direkt über die Control IDs iteriert, da die Controls direkt mit den Bundles verknüpft sind. Es ist somit einfach zu verfolgen, welche Bundles welche Controls implementieren, was eine klare Rückverfolgung ermöglicht.
+
 % DEPLOY NEW FOUNDATION
 % @startuml
 
@@ -224,6 +226,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant1-sequence-deployment}
 \end{figure}
+
+Beim Deployment einer neuen \ac{lz} wird in Variante 1 zur Ermittlung der Governance Domain im Intent Repository nach verfügbaren Control-Bundles geschaut, welche die relevanten Controls enthalten. Es wird also direkt nach den Controls geschaut, da diese direkt mit den Bundles verknüpft sind. Es ist somit einfach zu verfolgen, welche Bundles welche Controls implementieren, was eine klare Rückverfolgung ermöglicht.
 
 \textbf{Pros}
 \begin{itemize}
@@ -313,6 +317,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \label{fig:methodology-poc-variant2-sequence-verification}
 \end{figure}
 
+In der Loop wird über die Component Profile IDs iteriert, da die Controls in Component-zentrierte Profiles gebündelt sind. Es muss also zuerst das Profil identifiziert werden, welches die relevanten Controls enthält, bevor die Compliance der Foundation überprüft werden kann.
+
 % DEPLOY NEW FOUNDATION
 % @startuml
 % participant "Cloud\nProvider\nAPI" as cloud
@@ -362,6 +368,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant2-sequence-deployment}
 \end{figure}
+
+Beim Deployment einer neuen \ac{lz} wird in dieser Variante zunächst die Governance Domain der \ac{lz} ermittelt, um daraus die relevanten Component Profiles zu identifizieren. Es wird also nicht direkt nach den Controls geschaut, sondern es wird über die Komponente gebündelt, welche die Controls implementiert. Es muss also zuerst das Profil identifiziert werden, welches die relevanten Controls enthält, bevor die Foundation bereitgestellt werden kann.
 
 \textbf{Pros}
 \begin{itemize}
@@ -449,6 +457,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \label{fig:methodology-poc-variant3-sequence-verification}
 \end{figure}
 
+In der Loop wird über die jeweiligen Policies iteriert, da die Rückverfolgbarkeit zu einzelnen Controls in dieser Variante nicht direkt gegeben ist. Diese erfolgt nämlich über die Policies, welche die Controls implementieren. Es ist notwendig, die Compliance-Überprüfung auf der Ebene der Policies durchzuführen, um eine Rückverfolgung zu den zugrunde liegenden Controls zu ermöglichen.
+
 % DEPLOY NEW FOUNDATION
 % @startuml
 % participant "Cloud\nProvider\nAPI" as cloud
@@ -498,6 +508,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \label{fig:methodology-poc-variant3-sequence-deployment}
 \end{figure}
 
+Hier wird die Kategorie als Ergebnis der Foundation Placement Decision zurückgegeben, welche dann die Auswahl der \ac{lz}-Profiles bestimmt, welche die entsprechenden Controls und Policies enthalten. Die Rückverfolgbarkeit zu den einzelnen Controls erfolgt über die Policies, welche die Controls implementieren, und erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Profiles enthalten sind.
+
 \textbf{Pros}
 \begin{itemize}
     \item Extrem einfache Anwendung (\flqq regulierte Profile anwenden\frqq)
@@ -538,7 +550,7 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
 
 \textbf{Abgrenzung zu anderen Varianten}: Im Vergleich zu den anderen Varianten, welche die Controls in Bundles oder Profiles bündeln, bündelt diese Variante die Controls nicht in einer zusätzlichen Abstraktionsschicht, sondern implementiert sie direkt auf den Ressourcen. Dies führt zu einer engeren Ausrichtung an den Mechanismen der Provider, aber auch zu Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit.
 
-\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante vergleichsweise schlecht, da die Controls direkt auf den Ressourcen implementiert werden und es keine zusätzliche Abstraktionsschicht gibt, die die Controls organisiert. Es erfordert eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
+\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante vergleichsweise schlecht, da die Controls direkt auf den Ressourcen implementiert werden und es keine zusätzliche Abstraktionsschicht gibt, die die Controls organisiert. Die Rückverfolgbarkeit zu einzelnen Controls erfordert jedoch eine Normalisierung der Evidence über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
 
 \textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(1) bis O(n)
 
@@ -579,6 +591,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 4}
     \label{fig:methodology-poc-variant4-sequence-verification}
 \end{figure}
+
+In dieser Variante wird die Compliance-Überprüfung direkt über die nativen Mechanismen der Cloud-Provider durchgeführt. Somit kann je nach Provider die Compliance-Überprüfung entweder direkt über die nativen APIs erfolgen, was eine O(1) Komplexität ermöglicht, oder es könnte notwendig sein, über die Ressourcen zu iterieren, um die Compliance zu überprüfen, was eine O(n) Komplexität zur Folge hätte. Die Rückverfolgbarkeit zu den einzelnen Controls erfolgt über die nativen Mechanismen der Provider.
 
 % DEPLOY NEW FOUNDATION
 % @startuml
@@ -628,6 +642,8 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
     \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 4}
     \label{fig:methodology-poc-variant4-sequence-deployment}
 \end{figure}
+
+Beim Deployment einer neuen \ac{lz} wird in dieser Variante die Governance Domain ermittelt, um die entsprechenden nativen Richtlinien des Cloud-Providers zu identifizieren, welche die Controls implementieren. Es wird also nicht direkt nach den Controls oder Bundles geschaut, sondern es wird über die Governance Domain gebündelt, welche die relevanten Richtlinien enthält.
 
 \textbf{Pros}
 \begin{itemize}

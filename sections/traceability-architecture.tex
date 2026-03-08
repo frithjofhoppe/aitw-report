@@ -1,12 +1,7 @@
 \section{Traceability Architektur}
 \label{sec:traceability-architecture}
 
-
-\hl{Beschreibung der Traceability Architektur als solche}
-
-
 \subsection{Grundarchitektur}
-
 
 % \hl{structure notes start}
 % \begin{itemize}
@@ -16,15 +11,6 @@
 % \hl{structure notes end}
 
 Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschiedenen Controls enthält. Eine Control ist je eine Anforderung welche eingehalten werden muss damit die Control als eingehalten gilt. Eine Control kann durch eine oder mehrere Policies implementiert werden, welche die konkrete Umsetzung der Control darstellen. Diese Policies können entweder selbst definiert oder von den Cloud-Providern bereitgestellt werden. Die Traceability Architektur beschreibt, wie diese Controls und Policies organisiert und gebündelt werden, um die Anforderungen der Regulationen zu erfüllen und gleichzeitig eine effiziente Implementierung und Rückverfolgbarkeit zu gewährleisten.
-
-\hl{
-    - Adaptability: Wie gut kann die Architektur an neue Anforderungen, neue Regulationen, neue Cloud-Provider, etc. angepasst werden? Wie flexibel ist die Architektur in Bezug auf Änderungen und Erweiterungen?    
-    - Maintainability Punkte und Versionierungsprozess: Lifecycle von Controls, Bundles, (Component) Profiles, etc. beschreiben: Wie werden Änderungen gehandhabt, wie wird die Historie gepflegt, wie wird die Versionierung gehandhabt, etc. --> IaC in Git
-    - Performance, Laufzeitkomplexität anhand der Sequenzdiagramme beschreiben: Wie wirkt sich die Architektur auf die Performance der Compliance-Verifikation aus, wie komplex ist die Laufzeit, etc. Ev. basierend auf der Anzahl der Controls, Bundles, Profiles, etc. abschätzen.
-    - Kosteneffienz: primär basierend auf Maintainability
-}
-
-\hl{Forschungsfraen aufgreifen wie eine ideale traceability architectur aussieht jetzt konkret auf den fall für die traceability architecutr. sprich für den scope der traceability archtecut was braucht es alles an zeugs in dem landing zone blueprint .. bspw aufbauen auf dem was im ip6 poc verwendet wurde als template}
 
 \subsection{Variante 1: Control-centric Bundling}
 \label{sec:trace-arch-variant1}
@@ -36,17 +22,25 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
     \label{fig:traceability-architecture-control-centric}
 \end{figure}
 
-\hl{wegen Ansatz: das mit dem Blueprint wählt aus welche Controls angewendet werden stimmt so nicht, die passiert eigentlich durch das Governance Cockpit}
-
 \textbf{Ansatz}: Für jede Control in der jeweiligen Regulation wird ein Mapping zu einem Plattform-Bundle gemacht.
 
 \textbf{Fokus}: Traceability, da die Controls direkt mit den Bundles verknüpft sind.
 
-\textbf{Funktionsweise}: In dieser Architektur-Variante werden die Controls direkt mit den Plattform-Bundles verknüpft. Das bedeutet, dass für jede Control in der Regulation ein spezifisches Mapping zu einem oder mehreren Bundles besteht, die die entsprechenden Policies enthalten. Beim Deployment einer \ac{lz} wählt das Governance Cockpit die benötigten Controls aus, basierend auf den Anforderungen der \ac{lz} (z.B. Schutzbedarf, Compliance-Anforderungen, etc.). Diese Herangehensweise ermöglicht eine klare Rückverfolgbarkeit von den Controls zu den implementierten Policies, da jedes Control direkt mit den Bundles verknüpft ist. Allerdings kann dies zu einer komplexeren Anwendung führen, da der Benutzer sich mit den einzelnen Controls auseinandersetzen muss, um die richtigen Bundles auszuwählen.
+\textbf{Artefakte}: versionierte Bundles z.B. in Git, Governance Decisions und Evidence als Datenobjekte
 
-\textbf{Wartung und Versionierung}: Da jedes Control direkt mit einem Bundle verknüpft ist, erfordert die Pflege und Aktualisierung der Controls eine sorgfältige Verwaltung der Bundles. Änderungen an einem Control können Auswirkungen auf mehrere Bundles haben, was eine Versionierung und koordinierte Aktualisierung erfordert. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls und Bundles gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Controls und Bundles zu ermöglichen.
+\textbf{Funktionsweise}: In dieser Architektur-Variante werden die Controls direkt mit den Plattform-Bundles verknüpft. Das bedeutet, dass für jede Control in der Regulation ein spezifisches Mapping zu einem oder mehreren Bundles besteht, die die entsprechenden Policies enthalten. Beim Deployment einer \ac{lz} wählt das Governance Cockpit die benötigten Controls aus, basierend auf den Anforderungen der \ac{lz} (z.B. Schutzbedarf, Compliance-Anforderungen, etc.).
 
-\textbf{Anpassungsfähigkeit}: Neue Controls können durch die Erstellung und Verknüpfung neuer Bundles hinzugefügt werden. Dies setzt jedoch einen soliden Lifecycle-Prozess voraus, sowohl auf Seite des \ac{iac} sowohl auch des Cloud-Providers. Die Komplexität der Auswahl der richtigen Bundles für eine \ac{lz} nimmt zu, wenn die Anzahl der Controls und Bundles wächst.
+\textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem das Mapping der Bundles durch den Cloud-Experten sowie die Zuweisung der Bundles zu den Foundations.
+
+\textbf{Maintenance}: Da jedes Control direkt mit einem Bundle verknüpft ist, erfordert die Pflege und Aktualisierung der Controls eine sorgfältige Verwaltung der Bundles. Änderungen an einem Control können Auswirkungen auf mehrere Bundles haben, was eine Versionierung und koordinierte Aktualisierung erfordert.
+
+\textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Bundles hinzugefügt werden. Dies setzt jedoch einen soliden Lifecycle-Prozess voraus, sowohl auf Seite des \ac{iac} sowohl auch des Cloud-Providers. Die Komplexität der Auswahl der richtigen Bundles für eine \ac{lz} nimmt zu, wenn die Anzahl der Controls und Bundles wächst.
+
+\textbf{Abgrenzung zu anderen Varianten}: Im Vergleich zu Variante 2, welche die Controls in Component-zentrierte Profiles bündelt, ist diese Variante stärker auf die direkte Verknüpfung von Controls mit Bundles fokussiert, was eine klarere Rückverfolgbarkeit ermöglicht. Variante 3 hingegen bündelt die Controls auf einer höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien, was zu einer stärkeren Abstraktion führt und die Rückverfolgbarkeit eher kompliziert.
+
+\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante am stärksten, da die Controls direkt mit den Bundles verknüpft sind. Es ist einfach zu verfolgen, welche Bundles welche Controls implementieren, was eine klare Rückverfolgung ermöglicht.
+
+\textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(n)
 
 % VERIFY COMPLIANCE
 % @startuml
@@ -180,6 +174,8 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Abgrenzung zu anderen Varianten}: Änhlich wie in Variante 1 werden hier Controls \flqq gebundelt\frqq\ aber anstatt in Control-zentrierte Bundles, werden sie in Component-zentrierte Profiles gebündelt. Die Profiles sind somit eher nach technischen Komponenten organisiert, welche von Expertengruppen/Teams implementiert werden, anstatt direkt nach Controls. Variante 3 im Gegenzug bündelt die Controls auf einer noch höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien, was zu einer stärkeren Abstraktion führt.
 
+\textbf{Tracebility-Strength}: Die Traceability ist durch die Verknüpfung der Controls mit den Component Profiles gegeben, da jedes Profile die spezifischen Controls enthält, die es implementiert. Allerdings erfordert die Rückverfolgbarkeit zu einzelnen Controls einen zusätzlichen Suchschritt, da die Controls in den Profiles gebündelt sind. Es ist notwendig, ein Manifest zu führen, das auflistet, welche Controls in welchen Component-Profilen enthalten sind, um eine klare Rückverfolgung zu ermöglichen.
+
 \textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(n)
 
 % VERIFY COMPLIANCE
@@ -225,10 +221,6 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
     \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant2-sequence-verification}
 \end{figure}
-
-\hl{Tracebility-Strength beschreiben, wie detailliert kann man nachvollziehen welche Regulation/Control/Policies auf welche Cloud-Resource angewendet wurden}
-
-\hl{Beschreiben bei welchem Schritt die Calls gegen aussen passieren und deswegen mit Latenzen zu rechnen ist.}
 
 % DEPLOY NEW FOUNDATION
 % @startuml
@@ -308,11 +300,21 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Profile alles umfasst, ohne dass viel ausgewählt werden muss.
 
-\textbf{Funktionsweise}: Die Controls werden in \ac{lz}-Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Governance Cockpit einfach die entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine extrem einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen Profilen enthalten sind.
+\textbf{Artefakte}: versionierte \ac{lz}-Profiles z.B. in Git, Governance Decisions und Evidence als Datenobjekte
 
-\textbf{Wartung und Versionierung}: Änderungen an einer Control erfordern die Aktualisierung aller \ac{lz}-Profiles, die diese Control enthalten, was den Wartungsaufwand erhöht. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls und \ac{lz}-Profiles gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Controls und Profiles zu ermöglichen.
+\textbf{Funktionsweise}: Die Controls werden in \ac{lz}-Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jedes Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Governance Cockpit das entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen Profilen enthalten sind.
 
-\textbf{Anpassungsfähigkeit}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von \ac{lz}-Profiles hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Duplikation von Controls über verschiedene Kategorien hinweg die Verwaltung und Aktualisierung der \ac{lz}-Profiles erschwert.
+\textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem das Mapping der \ac{lz}-Profiles durch den Cloud-Experten sowie die Zuweisung der \ac{lz}-Profiles zu den Foundations.
+
+\textbf{Maintenance}: Änderungen an einer Control erfordern die Aktualisierung aller \ac{lz}-Profiles, die diese Control enthalten, was den Wartungsaufwand erhöht. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls und \ac{lz}-Profiles gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Controls und Profiles zu ermöglichen.
+
+\textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von \ac{lz}-Profiles hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Duplikation von Controls über verschiedene Kategorien hinweg die Verwaltung und Aktualisierung der \ac{lz}-Profiles erschwert.
+
+\textbf{Abgrenzung zu anderen Varianten}: Im Vergleich zu Variante 1 und 2, welche die Controls in Bundles oder Component-zentrierte Profiles bündeln, bündelt diese Variante die Controls auf einer höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien.
+
+\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante am schwierigsten, da die Controls in den \ac{lz}-Profiles gebündelt sind und es eine hohe Duplikation von Controls über verschiedene Kategorien hinweg gibt. Es erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Profiles enthalten sind, um eine klare Rückverfolgung zu ermöglichen.
+
+\textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(n)
 
 % VERIFY COMPLIANCE
 % @startuml
@@ -433,11 +435,19 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Fokus}: Die Anwendung von Richtlinien auf Ressourcen, weniger auf die Nachvollziehbarkeit (à la MVP). Initiatives/Bundles existieren bereits von verschiedenen Cloud-Providern.
 
-\textbf{Funktionsweise}: In dieser Architektur-Variante werden die Controls direkt durch die nativen Richtlinienabstraktionen der Cloud-Provider dargestellt. Das bedeutet, dass die Implementierung der Controls direkt auf den Ressourcen erfolgt, ohne dass eine zusätzliche Abstraktionsschicht wie Bundles oder Profiles erforderlich ist. Diese Herangehensweise ermöglicht eine optimale Leistung und eine enge Ausrichtung an den Mechanismen der Provider, da sie die nativen Funktionen und Tools nutzt. Allerdings führt dies zu einer schlechteren Vergleichbarkeit über verschiedene Cloud-Provider hinweg, da jeder Provider unterschiedliche Formate und Strukturen für seine Richtlinien hat. Die Rückverfolgbarkeit erfordert daher eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
+\textbf{Artefakte}: versionierte Richtlinien in Git, Governance Decisions und Evidence als Datenobjekte
 
-\textbf{Wartung und Versionierung}: Da die Controls direkt auf den Ressourcen implementiert werden, erfordert die Wartung und Aktualisierung der Controls eine sorgfältige Verwaltung der Ressourcen und ihrer zugehörigen Richtlinien. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Ressourcen und Richtlinien zu ermöglichen.
+\textbf{Funktionsweise}: In dieser Architektur-Variante werden die Controls direkt durch die nativen Richtlinienabstraktionen der Cloud-Provider dargestellt. Das bedeutet, dass die Implementierung der Controls direkt auf den Ressourcen erfolgt, ohne dass eine zusätzliche Abstraktionsschicht wie Bundles oder Profiles erforderlich ist. Diese Herangehensweise ermöglicht eine optimale Leistung und eine enge Ausrichtung an den Mechanismen der Provider, da sie die nativen Funktionen und Tools nutzt. Allerdings führt dies zu einer schlechteren Vergleichbarkeit über verschiedene Cloud-Provider hinweg, da jeder Provider unterschiedliche Formate und Strukturen für seine Richtlinien hat.
 
-\textbf{Anpassungsfähigkeit}: Neue Controls können durch die Erstellung und Verknüpfung neuer Ressourcen und Richtlinien hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Verwaltung der Ressourcen und ihrer zugehörigen Richtlinien über verschiedene Cloud-Provider hinweg eine Herausforderung darstellen kann.
+\textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem die Implementierung der Controls durch den Cloud-Provider bzw. den Cloud-Experten, welcher direkt die nativen Richtlinien des Providers auf die Ressourcen anwendet.
+
+\textbf{Maintenance}: Da die Controls direkt auf den Ressourcen implementiert werden, erfordert die Wartung und Aktualisierung der Controls eine sorgfältige Verwaltung der Ressourcen und ihrer zugehörigen Richtlinien. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Ressourcen und Richtlinien zu ermöglichen.
+
+\textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Ressourcen und Richtlinien hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Verwaltung der Ressourcen und ihrer zugehörigen Richtlinien über verschiedene Cloud-Provider hinweg eine Herausforderung darstellen kann.
+
+\textbf{Abgrenzung zu anderen Varianten}: Im Vergleich zu den anderen Varianten, welche die Controls in Bundles oder Profiles bündeln, bündelt diese Variante die Controls nicht in einer zusätzlichen Abstraktionsschicht, sondern implementiert sie direkt auf den Ressourcen. Dies führt zu einer engeren Ausrichtung an den Mechanismen der Provider, aber auch zu Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit.
+
+\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante vergleichsweise schlecht, da die Controls direkt auf den Ressourcen implementiert werden und es keine zusätzliche Abstraktionsschicht gibt, die die Controls organisiert. Es erfordert eine Normalisierung über die verschiedenen Evidenceformate der Provider hinweg, um sicherzustellen, dass die Controls konsistent identifiziert und verfolgt werden können.
 
 \textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(1) bis O(n)
 

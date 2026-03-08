@@ -32,44 +32,43 @@ Die Evaluation der Variante zeigt dass  ... \hl{hier quasi wie eine zusammenfass
     \hline
     \endhead
 
-    \hyperlink{quality-q1}{Q1} & 1 & Performance 
+    \hyperlink{quality-q1}{Q1} & 2 & Performance 
     \\
     \hline
 
-    % Traceability Architektur ist quasi das architektonische Mittels im EA kontext eine Governance zu enabled durch das ganze traceability zeugs
-    \hyperlink{quality-q2}{Q2} & 1 &  Security
+    \hyperlink{quality-q2}{Q2} & 2 &  Security
     \\
     \hline
 
-    \hyperlink{quality-q3}{Q3} & 1  & Portability
+    \hyperlink{quality-q3}{Q3} & 3  & Portability
     \\
     \hline
 
-    \hyperlink{quality-q4}{Q4} & 1  & Architectural Sustainability
+    \hyperlink{quality-q4}{Q4} & 3  & Architectural Sustainability
     \\
     \hline
 
-    \hyperlink{quality-q5}{Q5} & 1 & Auditability
+    \hyperlink{quality-q5}{Q5} & 3 & Auditability
     \\
     \hline
 
-    \hyperlink{quality-q6}{Q6} & 1 & Automatibility
+    \hyperlink{quality-q6}{Q6} & 3 & Automatibility
     \\
     \hline
 
-    \hyperlink{quality-q7}{Q7} & 1 & Maintainability
+    \hyperlink{quality-q7}{Q7} & 3 & Maintainability
     \\
     \hline
 
-    \hyperlink{quality-q8}{Q8} & 1 & Adaptability
+    \hyperlink{quality-q8}{Q8} & 2 & Adaptability
     \\
     \hline
 
-    \hyperlink{quality-q9}{Q9} & 1 & Complexity
+    \hyperlink{quality-q9}{Q9} & 4 & Complexity
     \\
     \hline    
 
-    \hyperlink{quality-q10}{Q10} & 1 & Traceability Strength
+    \hyperlink{quality-q10}{Q10} & 4 & Traceability Strength
     \\
     \hline
 
@@ -78,28 +77,34 @@ Die Evaluation der Variante zeigt dass  ... \hl{hier quasi wie eine zusammenfass
 \end{longtable}
 
 \textbf{Performance}
-Der wichtigste Aspekt für die Performance ist die Prüfung der Compliance. Bei dieser wird für jede Policy, welcher einem Component-Profile zugeordnet wird eine Abfrage gegenüber dem Cloud Provider API getätigt. Daraus entsteht eine hohe Netzwerklatenz da eine Batch-Abfrage nicht als gegeben angenommen werden kann.
+Der wichtigste Aspekt für die Performance ist die Prüfung der Compliance. Bei dieser wird für jede Policy, welcher einem Component-Profile zugeordnet wird eine Abfrage gegenüber dem Cloud Provider API getätigt. Daraus entsteht eine hohe Netzwerklatenz da eine Batch-Abfrage nicht als gegeben angenommen werden kann. Entsprechend fällt die erwartet Performance geringer aus.
 
 \textbf{Security}
-Security Ziele können implizit durch die Definition von Controls, Regulations und Policies abgebildet und erforced werden.
+Security Ziele können implizit durch die Definition von Controls, Regulations und Policies abgebildet werden. Da ein Enforcement jedoch plattform abhängig ist und lediglich durch die Traceability enabled wird, fällt die Bewertung geringer aus.
 
 \textbf{Portability}
-Die Controls und Regulations selbst sind nicht plattformspezifisch formuliert und können deshalb auf weitere Cloud-Plattformen übertragen werden. Eine Verknüpfung von plattformspezifischen Policies ist zum Enforcment erforderlich.
+Die Controls und Regulations selbst sind nicht plattformspezifisch formuliert und können deshalb auf weitere Cloud-Plattformen übertragen werden. Eine Verknüpfung von plattformspezifischen Policies ist zum Enforcment erforderlich. Es ist somit ein hohes Mass an Nutzung on weiteren Plattformen möglich.
 
 \textbf{Architectural Sustainability}
-Die Abbildung mit Controls lässt es bspw zu bei Änderungen einer Regulation wie \ac{si001} weitere Controls abzubilden. Voraussetzug für die Erweiterbarkeit ist jedoch dass weitere Regulations jeweils eine ähnliche control-basierte Strktur aufweisen, sprich sich in Abschnitte an Security Statements unterteilen lassen.
+Die Abbildung mit Controls lässt es bspw zu bei Änderungen einer Regulation wie \ac{si001} weitere Controls abzubilden. Voraussetzug für die Erweiterbarkeit ist jedoch, dass weitere Regulations jeweils eine ähnliche control-basierte Strktur aufweisen, sprich sich in Abschnitte an Security Statements unterteilen lassen. Ist diese gleiche Struktur gegeben weiss die Variante eine hohe Sustainability auf.
 
 \textbf{Auditability}
-Für eine Zuweisung einer Foundation lässt sich via die Metainformationen der Controls und Regulation ein Kontext ableiten. Aus diesen Kontext geht hervor wer ein Objekt der Traceability-Relationsship definiert oder zu welchem Zeitpunkt geändert hat.
+Für eine Zuweisung einer Foundation lässt sich via die Metainformationen der Controls und Regulation ein Kontext ableiten. Aus diesen Kontext geht hervor wer ein Objekt der Traceability-Relationsship definiert oder zu welchem Zeitpunkt geändert hat. Entsprechend fällt das Mass an Auditability gut aus.
 
 \textbf{Automatibility}
-Das Deployment von Traceability-Beziehungen und die Nachvollziehbarkeit von Beziehungen ist durch die explizite Abbildung zu einem hohen gerade automatisierbar. Die Abbildungen von Policies der einzelnen Plattformen zu den Controls kann ebenfalls automatisiert via Ki erfolgen.
+Das Deployment von Traceability-Beziehungen und die Nachvollziehbarkeit von Beziehungen ist durch die explizite Abbildung zu einem hohen gerade automatisierbar. Die Abbildungen von Policies der einzelnen Plattformen zu den Controls kann ebenfalls automatisiert via Ki erfolgen. Daraus resultiert eine höhere Bewertung.
 
 \textbf{Maintainabiliy}
-Regulations wie Controls sind versionierbar. Entsprechend ist eine Erweiterung bzw Update von Objekten der Traceability-Beziehung möglich ohne bestehenden Deployment zu beeinflussen.
+Regulations wie Controls sind versionierbar. Entsprechend ist eine Erweiterung bzw Update von Objekten der Traceability-Beziehung mit geringem Aufwand möglich ohne bestehenden Deployment zu beeinflussen.
 
 \textbf{Adaptability}
+Die Erweiterung um neuen Traceability-Objekten oder strukturelle Änderung an bestehenden erfordert ggf. eine Anpassung des Evaluation-Algorithmus. Dies bedeutet, dass eine Adaptability nur in einem beschränkten Mass möglich ist.
 
+\textbf{Complexity}
+Die Modellierung führt lediglich dort Objekte ein wo dies erforderliche ist. Bspw Controls, Regulation für die Abbildung der Traceability-Beziehung und die Policies für die plattformspezifische Anbindung. Entsprechend existiert nur ein geringes Mass an Komplexität.
+
+\textbf{Traceability Strength}
+Die Beziehungen zwischen Regulation und der konrekten Cloud ist direkt nachvollziehbar und kann direkt evaluiert werden. Die zeigt eine hohes Mass an Traceability Strength
 
 \subsection{Evaluation Variante 3}
 

@@ -168,19 +168,19 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 
 \textbf{Fokus}: Engineering, Verteilung an Expertengruppen/Teams, aber mit Rückverfolgbarkeit
 
-\textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein.
+\textbf{Artefakte}: versionierte Component-Profiles z.B. in Git, Governance Decisions und Evidence als Datenobjekte
 
-\textbf{Wartung und Versionierung}: In dieser Architektur-Variante werden die Controls in Component Profiles gebündelt, folgend erfordern Änderungen an einer Control nur die Aktualisierung des entsprechenden Profiles, welche versionierbar sind. Durch die Versionierbarkeit kann z.B. ein Compliance-Officer neue Versionen der Component-Profiles erstellen, ohne dass die bestehenden Foundations direkt betroffen sind. Sobald eine neue Version eines Component-Profils freigegeben ist, können die entsprechenden Foundations und die übergreifende Landing-Zone-Components per Provisionierung migriert werden. 
+\textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein. Der Cloud-Experte ist zuständig für das Mapping der Component-Profiles auf die Controls.
 
-\hl{Für Eval: Dies ermöglicht eine iterative Verbesserung der Profiles, während gleichzeitig die Stabilität der bestehenden Implementierungen gewährleistet wird. Für den Compliance Officer ist es entsprechend in den Evidences nachvollziehbar, gegen welche Version eines Component-Profils eine Foundation compliant ist, was die Rückverfolgbarkeit und Transparenz erhöht.}
+\textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem das Mapping der Component-Profiles durch den Cloud-Experten sowie die Zuweisung der Component-Profiles zu den Foundations.
 
-\hl{Für Eval bei allen Varianten: Es ist wichtig, einen klaren Versionierungsprozess für die Profiles zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind. Dies könnte durch die Verwendung von IaC in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Profiles zu ermöglichen.}
+\textbf{Maintenance}: In dieser Architektur-Variante werden die Controls in Component Profiles gebündelt, folgend erfordern Änderungen an einer Control nur die Aktualisierung des entsprechenden Profiles, welche versionierbar sind. Durch die Versionierbarkeit kann z.B. ein Compliance-Officer neue Versionen der Component-Profiles erstellen, ohne dass die bestehenden Foundations direkt betroffen sind. Sobald eine neue Version eines Component-Profils freigegeben ist, können die entsprechenden Foundations und die übergreifende Landing-Zone-Components per Provisionierung migriert werden.
 
-\textbf{Anpassungsfähigkeit}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von Profiles hinzugefügt werden. Dies ermöglicht eine flexible Anpassung an neue Anforderungen, da die Profiles auf Komponentenebene organisiert sind und Änderungen an einer Control nicht zwangsläufig Auswirkungen auf andere Controls oder Bundles haben.
+\textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von Profiles hinzugefügt werden. Dies ermöglicht eine flexible Anpassung an neue Anforderungen, da die Profiles auf Komponentenebene organisiert sind und Änderungen an einer Control nicht zwangsläufig Auswirkungen auf andere Controls oder Bundles haben.
 
 \textbf{Abgrenzung zu anderen Varianten}: Änhlich wie in Variante 1 werden hier Controls \flqq gebundelt\frqq\ aber anstatt in Control-zentrierte Bundles, werden sie in Component-zentrierte Profiles gebündelt. Die Profiles sind somit eher nach technischen Komponenten organisiert, welche von Expertengruppen/Teams implementiert werden, anstatt direkt nach Controls. Variante 3 im Gegenzug bündelt die Controls auf einer noch höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien, was zu einer stärkeren Abstraktion führt.
 
-\textbf{Artefakte}: versionierte Component-Profiles z.B. in Git, Governance Decisions und Evidence als Datenobjekte
+\textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(n)
 
 % VERIFY COMPLIANCE
 % @startuml
@@ -225,6 +225,10 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
     \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant2-sequence-verification}
 \end{figure}
+
+\hl{Tracebility-Strength beschreiben, wie detailliert kann man nachvollziehen welche Regulation/Control/Policies auf welche Cloud-Resource angewendet wurden}
+
+\hl{Beschreiben bei welchem Schritt die Calls gegen aussen passieren und deswegen mit Latenzen zu rechnen ist.}
 
 % DEPLOY NEW FOUNDATION
 % @startuml
@@ -434,6 +438,8 @@ Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschi
 \textbf{Wartung und Versionierung}: Da die Controls direkt auf den Ressourcen implementiert werden, erfordert die Wartung und Aktualisierung der Controls eine sorgfältige Verwaltung der Ressourcen und ihrer zugehörigen Richtlinien. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Ressourcen und Richtlinien zu ermöglichen.
 
 \textbf{Anpassungsfähigkeit}: Neue Controls können durch die Erstellung und Verknüpfung neuer Ressourcen und Richtlinien hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Verwaltung der Ressourcen und ihrer zugehörigen Richtlinien über verschiedene Cloud-Provider hinweg eine Herausforderung darstellen kann.
+
+\textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(1) bis O(n)
 
 % VERIFY COMPLIANCE
 % @startuml

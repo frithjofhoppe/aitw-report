@@ -10,6 +10,16 @@
 \end{itemize}
 \hl{structure notes end}
 
+Es ist wichtig, einen klaren Versionierungsprozess für die Profiles zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind. Dies könnte durch die Verwendung von IaC in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Profiles zu ermöglichen.
+
+\textbf{Security}
+
+Sicherheitsziele können in dieser Variante über Regulations, Controls und die zugehörigen Policies modelliert werden. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt jedoch weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion. Daher ist der direkte Beitrag dieser Architektur zur Security moderat.
+
+\textbf{Architectural Sustainability}
+
+Die Verwendung von Controls als Zwischenebene zwischen Regulations und Policies ermöglicht eine flexible Erweiterung der Architektur. Beispielsweise können bei Änderungen einer Regulation – etwa bei der Anpassung einer Vorgabe wie \ac{si001} – zusätzliche Controls ergänzt werden, ohne bestehende Zuordnungen vollständig neu modellieren zu müssen. Voraussetzung ist jedoch, dass sich neue regulatorische Anforderungen ebenfalls in Form einzelner Security Statements strukturieren lassen. Unter dieser Annahme bietet die Architektur eine gute langfristige Erweiterbarkeit.
+
 \subsection{Evaluation Variante 1}
 
 \subsection{Evaluation Variante 2}
@@ -40,39 +50,31 @@ Insgesamt weist die Variante eine geringe strukturelle Komplexität bei gleichze
     \\
     \hline
 
-    \hyperlink{quality-q2}{Q2} & 2 &  Security
+    \hyperlink{quality-q2}{Q2} & 3  & Portability
     \\
     \hline
 
-    \hyperlink{quality-q3}{Q3} & 3  & Portability
+    \hyperlink{quality-q3}{Q3} & 3 & Auditability
     \\
     \hline
 
-    \hyperlink{quality-q4}{Q4} & 3  & Architectural Sustainability
+    \hyperlink{quality-q4}{Q4} & 3 & Automatibility
     \\
     \hline
 
-    \hyperlink{quality-q5}{Q5} & 3 & Auditability
+    \hyperlink{quality-q5}{Q5} & 3 & Maintainability
     \\
     \hline
 
-    \hyperlink{quality-q6}{Q6} & 3 & Automatibility
+    \hyperlink{quality-q6}{Q6} & 2 & Adaptability
     \\
     \hline
 
-    \hyperlink{quality-q7}{Q7} & 3 & Maintainability
-    \\
-    \hline
-
-    \hyperlink{quality-q8}{Q8} & 2 & Adaptability
-    \\
-    \hline
-
-    \hyperlink{quality-q9}{Q9} & 4 & Complexity
+    \hyperlink{quality-q7}{Q7} & 4 & Complexity
     \\
     \hline    
 
-    \hyperlink{quality-q10}{Q10} & 4 & Traceability Strength
+    \hyperlink{quality-q8}{Q8} & 4 & Traceability Strength
     \\
     \hline
 
@@ -84,33 +86,25 @@ Insgesamt weist die Variante eine geringe strukturelle Komplexität bei gleichze
 
 Der wichtigste Einflussfaktor auf die Performance ist die Durchführung der Compliance-Prüfung. Für jede Policy, die einem Component-Profile zugeordnet ist, muss eine Anfrage an die API des jeweiligen Cloud Providers gestellt werden. Da nicht davon ausgegangen werden kann, dass die Provider aggregierte Batch-Abfragen für mehrere Policies unterstützen, entstehen viele einzelne Netzwerkanfragen. Dies führt zu erhöhter Netzwerklatenz und damit zu einer insgesamt geringeren Performance der Evaluation.
 
-\textbf{Security}
-
-Sicherheitsziele können in dieser Variante über Regulations, Controls und die zugehörigen Policies modelliert werden. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt jedoch weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion. Daher ist der direkte Beitrag dieser Architektur zur Security moderat.
-
 \textbf{Portability}
 
-Die Regulations und Controls sind plattformunabhängig formuliert und enthalten keine provider-spezifischen Konzepte. Dadurch können dieselben regulatorischen Anforderungen auch auf andere Cloud-Plattformen übertragen werden. Lediglich die Zuordnung zu konkreten Policies muss plattformspezifisch erfolgen. Durch diese Trennung zwischen regulatorischer Ebene und provider-spezifischem Enforcement wird eine hohe Portability erreicht.
-
-\textbf{Architectural Sustainability}
-
-Die Verwendung von Controls als Zwischenebene zwischen Regulations und Policies ermöglicht eine flexible Erweiterung der Architektur. Beispielsweise können bei Änderungen einer Regulation – etwa bei der Anpassung einer Vorgabe wie \ac{si001} – zusätzliche Controls ergänzt werden, ohne bestehende Zuordnungen vollständig neu modellieren zu müssen. Voraussetzung ist jedoch, dass sich neue regulatorische Anforderungen ebenfalls in Form einzelner Security Statements strukturieren lassen. Unter dieser Annahme bietet die Architektur eine gute langfristige Erweiterbarkeit.
+Die Regulations, Controls wie Component-Profiles sind plattformunabhängig formuliert und enthalten keine provider-spezifischen Konzepte. Dadurch können dieselben regulatorischen Anforderungen auch auf andere Cloud-Plattformen übertragen werden. Lediglich die Zuordnung zu konkreten Policieszu den Component-Profiles muss plattformspezifisch erfolgen. Durch diese Trennung zwischen regulatorischer Ebene und provider-spezifischem Enforcement wird eine hohe Portability erreicht.
 
 \textbf{Auditability}
 
-Die Traceability-Beziehungen enthalten Metainformationen zu Controls und Regulations, wodurch der Kontext einer Zuordnung nachvollziehbar bleibt. Für eine konkrete Foundation kann somit jederzeit ermittelt werden, welche regulatorischen Anforderungen relevant sind und durch welche Policies diese umgesetzt werden. Werden zusätzlich Änderungsinformationen versioniert, lässt sich auch nachvollziehen, wann und von wem Anpassungen vorgenommen wurden. Dies führt zu einem hohen Grad an Auditability.
+Die Traceability-Beziehungen enthalten Metainformationen zu Controls und Component-Profiles, wodurch der Kontext einer Zuordnung nachvollziehbar bleibt. Für eine konkrete Foundation kann somit jederzeit ermittelt werden, welche regulatorischen Anforderungen relevant sind und durch welche Policies diese umgesetzt werden. Mittels der verschiedenen modellierten Objekte, lässt sich auch nachvollziehen, wann und von wem Anpassungen vorgenommen wurden. Dies führt zu einem hohen Grad an Auditability.
 
 \textbf{Automatibility}
 
-Die explizite Modellierung der Traceability-Beziehungen ermöglicht eine weitgehende Automatisierung sowohl bei der Erstellung als auch bei der Evaluation der Beziehungen. Policies können automatisiert mit Controls verknüpft werden und die Compliance-Prüfung kann automatisiert über entsprechende API-Abfragen erfolgen. Auch die initiale Zuordnung von provider-spezifischen Policies zu Controls kann teilweise automatisiert erfolgen, beispielsweise durch semantische Analyse oder KI-basierte Zuordnungen. Dadurch ergibt sich ein hoher Automatisierungsgrad.
+Die explizite Modellierung der Traceability-Beziehungen ermöglicht eine weitgehende Automatisierung sowohl bei der Erstellung als auch bei der Evaluation der Beziehungen. Policies können automatisiert mit Component-Profiles verknüpft werden und die Compliance-Prüfung kann automatisiert über entsprechende API-Abfragen erfolgen. Auch die initiale Zuordnung von provider-spezifischen Policies zu Controls kann teilweise automatisiert erfolgen, beispielsweise durch semantische Analyse oder KI-basierte Zuordnungen. Dadurch ergibt sich ein hoher Automatisierungsgrad.
 
 \textbf{Maintainability}
 
-Regulations und Controls können versioniert und unabhängig voneinander weiterentwickelt werden. Änderungen an einzelnen Controls oder Policies erfordern daher in der Regel keine Anpassung der gesamten Modellstruktur. Erweiterungen oder Aktualisierungen können somit mit vergleichsweise geringem Aufwand vorgenommen werden, ohne bestehende Deployments wesentlich zu beeinflussen. Dies führt zu einer guten Maintainability.
+Alle Objekte des Metamodells können versioniert und unabhängig voneinander weiterentwickelt werden. Änderungen an den Component-Profiles, Controls oder Policies erfordern daher in der Regel keine Anpassung der gesamten Modellstruktur. Erweiterungen oder Aktualisierungen können somit mit vergleichsweise geringem Aufwand vorgenommen werden und Änderungen an bestehenden Deployments kann durch Migrationen erreicht werden. Dies führt zu einer guten Maintainability.
 
 \textbf{Adaptability}
 
-Strukturelle Änderungen an der Modellierung der Traceability-Beziehungen – beispielsweise die Einführung zusätzlicher Objekttypen oder neuer Beziehungsebenen – können Anpassungen am Evaluationsalgorithmus erforderlich machen. Da der Algorithmus direkt auf der bestehenden Struktur der Beziehungen aufbaut, ist eine Anpassung zwar möglich, jedoch mit zusätzlichem Implementierungsaufwand verbunden. Daher ist die Adaptability nur eingeschränkt gegeben.
+Strukturelle Änderungen an der Modellierung der Traceability-Beziehungen, wie die Einführung zusätzlicher Beziehungsebenen, können Anpassungen am Evaluationsalgorithmus erforderlich machen. Da der Algorithmus direkt auf der bestehenden Struktur der Beziehungen aufbaut, ist eine Anpassung zwar möglich, jedoch mit zusätzlichem Implementierungsaufwand verbunden. Daher ist die Adaptability nur eingeschränkt gegeben.
 
 \textbf{Complexity}
 
@@ -118,7 +112,7 @@ Die Architektur führt nur jene Objekttypen ein, die für die Modellierung der T
 
 \textbf{Traceability Strength}
 
-Die Beziehungen zwischen Regulations, Controls, Component-Profiles und den entsprechenden Cloud-Policies sind explizit modelliert und eindeutig nachvollziehbar. Dadurch lässt sich für jede regulatorische Anforderung bestimmen, welche Policies zu ihrer Umsetzung beitragen. Ebenso kann für eine konkrete Cloud-Policy nachvollzogen werden, welche regulatorischen Anforderungen sie adressiert. Diese bidirektionale Nachvollziehbarkeit führt zu einer hohen Traceability Strength.
+Die Beziehungen zwischen Regulations, Controls, Component-Profiles und den entsprechenden Cloud-Policies sind explizit modelliert und eindeutig nachvollziehbar. Dadurch lässt sich für jede regulatorische Anforderung bestimmen, welche Policies zu ihrer Umsetzung beitragen. Ebenso kann für eine konkrete Cloud-Policy nachvollzogen werden, welche regulatorischen Anforderungen sie adressiert. Diese  Nachvollziehbarkeit in beide Richtungen führt zu einer hohen Traceability Strength. 
 
 \subsection{Evaluation Variante 3}
 

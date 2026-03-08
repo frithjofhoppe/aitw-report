@@ -102,35 +102,27 @@ Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden
 
 Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg analysiert.
 
+\hl{TODO: Ausformulieren der Landing Zone Deifnitionen}
+
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{|l|X|X|}
         \hline
         \textbf{Cloud-Anbieter} & \textbf{Definition} & \textbf{Kommentar} \\
         \hline
-        Azure                   &
-        \hl{Definition}              &
-        \hl{Kommentar}
+        Azure & & 
         \\
         \hline
-        AWS                     &
-        \hl{Definition}              &
-        \hl{Kommentar}
+        AWS & &
         \\
         \hline
-        GCP                     &
-        \hl{Definition}              &
-        \hl{Kommentar}
+        GCP  &  &
         \\
         \hline
-        IBM                     &
-        \hl{Definition}              &
-        \hl{Kommentar}
+        IBM  & & 
         \\
         \hline
-        Alibaba                 &
-        \hl{Definition}              &
-        \hl{Kommentar}
+        Alibaba & & 
         \\
         \hline
     \end{tabularx}
@@ -138,8 +130,80 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
     \label{tab:term-landingzone}
 \end{table}
 
-\hl{hier weiterfahren mit der Übersicht der verschiedenen Landing Zone Aspekte}
 
+\begin{landscape}
+\hl{TODO: Landing Zone auf verschiedenen Cloud-Plattformen beschreiben mit Quelle}
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+}
+\hline
+\textbf{Aspect / Cloud} & \textbf{AWS} & \textbf{Azure} & \textbf{GCP} & \textbf{AliBaba} & \textbf{IBM} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Aspect / Cloud} & \textbf{AWS} & \textbf{Azure} & \textbf{GCP} & \textbf{AliBaba} & \textbf{IBM} \\
+\hline
+\endhead
+
+IAM / Account Management &
+ergibt sich aus accounts und roles and permissions in AWS Control Tower &
+Identity and Access Management im Azure Cloud Adoption Framework. Umfasst Authentication, Access auf Ressourcen, Separation of Duties sowie Hybrid Identities mit Entra &
+vorhanden sowohl mit Google als IdP wie auch mit 3rd Party Identity Providern &
+Role Authorization über Alibaba Cloud RAM, Integration mit Enterprise SSO zur einheitlichen Authentifizierung und Umsetzung des Least-Privilege-Prinzips &
+Läuft unter dem Aspekt Security \\
+\hline
+
+Network &
+Networking in AWS Control Tower mit Unterstützung von VPCs &
+Network topology and connectivity. Unterscheidung zwischen corp (interne Anwendungen) und online (Internet-exponierte Anwendungen) &
+nutzt ebenfalls VPCs und typischerweise eine Hub-and-Spoke Architektur &
+Planung von Enterprise-Netzwerken inkl. IP-Segmentierung, Network Control Policies und VPC-Zuweisung für verschiedene Accounts &
+vorhanden \\
+\hline
+
+Resource Management &
+über AWS Organizations mit Organisationseinheiten (OU) und Accounts &
+Resource organization mit Naming, Tagging, Subscription Design und Management Group Hierarchie &
+Strukturierung über Folders und Projects, gebunden an einen Root-Node &
+Ressource management über Labels und Directory Permissions zur Integration mit Enterprise Account Systemen &
+läuft unter Service Management \\
+\hline
+
+Compliance &
+indirekt über Baselines und Guardrails in AWS Control Tower &
+Azure Governance stellt sicher, dass Designentscheidungen in Identity, Network, Security und Management eingehalten werden &
+vorhanden über das Compliance Resource Center &
+Cloud-Compliance Lösungen für Industry Norms und interne Policies (z.B. Encryption, Port Restrictions) &
+läuft ebenfalls unter Security \\
+\hline
+
+Financial Management &
+nicht als eigener Aspekt, sondern implizit über Billing der AWS Organization &
+Azure Billing und Microsoft Entra Tenant. Betrachtung verschiedener Angebotsmodelle wie Pay-As-You-Go &
+Cost efficiency and control über Google Cloud Billing &
+Kostenübersicht pro Branch / Department / Project über Account Labels zur Unterstützung von Cost Optimization &
+läuft unter Service Management \\
+\hline
+
+Security &
+eigener Security-Aspekt mit Compliance Validation, Data Protection, Resilience und Infrastructure Security &
+Security Design Area mit Fokus auf Security Operations Tooling und Zero Trust &
+eigener Security-Blueprint mit Best Practices &
+Enterprise Security Lösungen für Data, Storage, Host und Network Security &
+vorhanden \\
+\hline
+
+\caption{Vergleich zentraler Landing-Zone Aspekte zwischen Cloud Providern}
+\label{tab:cloud-landing-zone-comparison}
+
+\end{longtable}
+\end{landscape}
 
 \subsection{Synthese eines abstrahierten Metamodells}
 \label{sec:methodik-metamodell}

@@ -31,6 +31,10 @@ Gleichzeitig ergeben sich gewisse Einschränkungen in Bezug auf Performance und 
 Insgesamt weist die Variante eine geringe strukturelle Komplexität bei gleichzeitig hoher Traceability Strength auf. Regulatorische Anforderungen können über Controls und Component-Profiles nachvollziehbar mit konkreten Cloud-Policies verknüpft werden, wodurch eine transparente Abbildung der Compliance-Beziehungen ermöglicht wird.
 
 
+\subsubsection{Bewertung der Quality Attributes}
+
+Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von xx \hl{score der variante} und wird nachfolgenden textuell erläutert.
+
 \begin{longtable}{|
   L{1cm}|
   L{1cm}|
@@ -113,6 +117,24 @@ Die Architektur führt nur jene Objekttypen ein, die für die Modellierung der T
 \textbf{Traceability Strength}
 
 Die Beziehungen zwischen Regulations, Controls, Component-Profiles und den entsprechenden Cloud-Policies sind explizit modelliert und eindeutig nachvollziehbar. Dadurch lässt sich für jede regulatorische Anforderung bestimmen, welche Policies zu ihrer Umsetzung beitragen. Ebenso kann für eine konkrete Cloud-Policy nachvollzogen werden, welche regulatorischen Anforderungen sie adressiert. Diese  Nachvollziehbarkeit in beide Richtungen führt zu einer hohen Traceability Strength. 
+
+\subsubsection{Trade-Offs}
+
+\textbf{Explicit Trace Modeling vs. Implicit Derivation}
+
+Die Modellierung an den Regulation wie \ac{si001} ist mit den Component-Profiles ziemlich explizit. Die Compnent-Profiles sind dabei gedanklich an einen möglichen Beschaffungsschritt angelehnt im 360-Cockpit (siehe \autoref{sec:umsetzung}) in welchem ebenfalls der Bedarf nach Component wie Storage, Network etc angegeben wird. Durch die Verknüpfung in dieser Variante zwischen Compnent-Profiles und Controls erhält werden bestehenden Modellierung bereits integriert.
+
+\textbf{Governancen centric Traceability vs Engineering centric Traceability}
+
+Component-Profiles orientieren sich eher an dem Akteur des Cloud-Expert und Projekterantwortlichen statt dem Compliance-Expert. Betrachtet man den Projektverantwortlichen als Kunden entspricht dies einer besseren nutzerzentrierung, auch der der Projektverantwortliche selbst bspw. nicht für das Audit veratnwortlich ist.
+
+\textbf{Traceability Depth vs Model Simplicity}
+
+Das Mapping über Component-Profiles erlaubt trotz Fokus auf Component gleichwohl eine Erzeugung von Evidenc pro Control. Dies ist möglich da die Controls im Component-Profile vermerkt sind. Die Component-Profiles erlauben somit zum einem ein Tracing von Foundation und deren Ressourcen zu den Controls zu ermöglich als auch Requirements vom Projektverantwortlichen für die Foundation gut zu mappen. Der Requirements-Aspekt ist relevant, da häufig in eben genau solchen Abstraktionsgruppen wie Datenbanken / Storage, Netzwerk etc sprich Components gedacht wird
+
+\textbf{Central Traceability Model vs Federated Traceability Models}
+
+Das Modell ist recht geschlossen und erlaubt bei den Compnent-Profile keine Definition von eigenen Attributen. Lediglich bei der Deklaration oder Referenzierung von Policies von Cloud-Plattformen ist eine Offenheit vorgesehen. Dies bedeutet, dass bei eoner Nutzung dieses Modells von Grund auf bereits vorausgedacht werden muss, um anderen Stakeholder die Nutzung zu ermöglich. Denkbar sind hier anderen Regulation welche nicht zwangsläufig Component / Control basiert denken wie \ac{si001}
 
 \subsection{Evaluation Variante 3}
 

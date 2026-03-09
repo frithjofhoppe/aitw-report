@@ -5,14 +5,14 @@
 # score  = s_quality(q)
 
 quality_attributes = {
-    "Q1_performance": (1, 5),
-    "Q2_cost_effectiveness": (1, 5),
-    "Q3_security": (1, 5),
-    "Q4_portability": (1, 5),
-    "Q5_architectural_sustainability": (1, 5),
-    "Q6_auditability": (1, 5),
-    "Q7_automatibility": (1, 5),
-    "Q8_maintainability": (1, 5),
+    "Performance": (0.3, 2),
+    "Portability": (1, 3),
+    "Auditability": (0.6, 3),
+    "Automatibility": (1, 3),
+    "Maintainability": (0.8, 3),
+    "Adaptability": (0.6, 2),
+    "Complexity": (0.8, 3),
+    "Traceability Strength": (1, 4),
 }
 
 weighted_sum = 0

@@ -634,9 +634,6 @@ Mit den beschriebenen Elementen wird folgender Evaluationsprozess definiert:
 
 Für die Anwendung des Evaluationsprozesses wird in der Initialisierung folgende Auswahl für die Qualitätsattribute $Q_{\text{selection}}$ mit den Gewichten $w_{\text{quality}}(q)$ getreoffen.
 
-\hl{Begründen wie die Bewertungskala bzw Idee mit Gewichten und art der bestimmung basically einer Zahl pro Dimension so definiert wurde. Nur Muss und kann ums einfach zu halten}
-\hl{begründungn warum welche gewichtung vorgenommen wurde im Framework}
-
 \begin{longtable}{|
   L{1cm}|
   L{1cm}|
@@ -660,31 +657,37 @@ Für die Anwendung des Evaluationsprozesses wird in der Initialisierung folgende
     \hline
 
     Q2 & 1 & \textbf{Portability} \hypertarget{quality-q2}{} Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &
-    Sehr relevant, da die Cloud-Plattformen im \ac{uc} des BIT noch nicht feststehen. Die betrachteten Plattformen Azure und AWS werden lediglich als Beispieke verwedet. Eine Anwendbarkeit auf weitere Cloud-Plattformen ist jedoch essentiel & \cite{mirsalari_model_2020}
+    Sehr relevant, da die Cloud-Plattformen im \ac{uc} des BIT noch nicht feststehen. Die betrachteten Plattformen Azure und AWS werden lediglich als Beispieke verwedet. Eine Anwendbarkeit auf weitere Cloud-Plattformen ist jedoch essenziell & \cite{mirsalari_model_2020}
     \\
     \hline
 
-    Q3 & 1 & \textbf{Auditability} \hypertarget{quality-q3}{} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben & Keine & Beschreibung des Kontextes
+    Q3 & 0.6 & \textbf{Auditability} \hypertarget{quality-q3}{} Fähigkeit die beschreibt wie nachvollziehbar die Zuweisung von Control und Assignment sind. Dies beinhaltet ebenfalls die verantwortlichen Akteure und Entscheidungspfade welche zum Assignment geführt haben &
+    Die Nachvollziehbarkeit ist relevant, jedoch hauptsächlich für die Traceability selbst und weniger, wann die Beziehungen geändert / angepasst wurden. Die Gewichtung ist deshalb tiefer & Beschreibung des Kontextes
     \\
     \hline
 
-    Q4 & 1 & \textbf{Automatibility} \hypertarget{quality-q4}{} Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls & Keine & Beschreibung des Kontextes
+    Q4 & 1 & \textbf{Automatibility} \hypertarget{quality-q4}{} Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls &
+    Die Fähigkeit zum Automatisieren ist einer der Hauptgründe für die Relevanz der Traceability & Beschreibung des Kontextes
     \\
     \hline
 
-    Q5 & 1 & \textbf{Maintainability} \hypertarget{quality-q5}{} Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten & Keine & Beschreibung des Kontextes
+    Q5 & 0.8 & \textbf{Maintainability} \hypertarget{quality-q5}{} Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten &
+    Um eine langfristige Nutzung der Traceability-Architektur zu erlauben ist ein geringer Maintenance Aufwand wichtig. Durch diese wird bspw die Aktualität der Traceability-Beziehungen ermöglicht & Beschreibung des Kontextes
     \\
     \hline
 
-    Q6 & 1 & \textbf{Adaptability} \hypertarget{quality-q6}{} Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen & Keine & Beschreibung des Kontextes
+    Q6 & 0.6 & \textbf{Adaptability} \hypertarget{quality-q6}{} Fähigkeit in der Architektur neue Traceability-Beziehungen, Artefakt-Typen, Controls etc. hinzuzufügen ohne die Architektur grundlegend überarbeiten zu müssen &
+    Die Architektur selbst soll zwar um weitere Traceability Artefakte erweiterbar sein, kann sich aber möglicherweise nicht beliebig allen Eigenheiten von Cloud-Plattform beugen & Beschreibung des Kontextes
     \\
     \hline
 
-    Q7 & 1 & \textbf{Complexity} \hypertarget{quality-q7}{} Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll & Keine & Beschreibung des Kontextes
+    Q7 & 0.8 & \textbf{Complexity} \hypertarget{quality-q7}{} Grad der zusätzlichen Vielschichtigkeit und Tiefe der Architektur. Es ist nicht die grundsätzlich Komplexität einer Architektur gemeint, sondern ein etwaiges Übermass an Komplexität in Anbetracht des Problems welches gelöst werden soll &
+    Der Inhalt von der Modellierung ist möglicherweise komplex, jedoch sollte die Abstraktion gering bleiben um eine Anwendung zu erleichtern. Entsprechend die höhere Gewichtung & Beschreibung des Kontextes
     \\
     \hline    
 
-    Q8 & 1 & \textbf{Traceability Strength} \hypertarget{quality-q8}{} Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann & Keine & Beschreibung des Kontextes
+    Q8 & 1 & \textbf{Traceability Strength} \hypertarget{quality-q8}{} Grad in der die Beziehung zwischen Anwendung auf einer Cloud-Ressource zu der ausgehen Control hergestellt werden kann &
+    Der Informationsgehalt welcher aus der Traceability-Beziehungen gezogen werden kann ist der treibende Faktor für eine Traceability-Architektur. Deshalb ist dieses Attribut hoch gewichtet & Beschreibung des Kontextes
     \\
     \hline
 

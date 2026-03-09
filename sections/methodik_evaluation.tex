@@ -105,7 +105,7 @@ Für diese Arbeit werden die Prinzipien je nach gewähltem Use-Case selektiv ber
     \cite{hajjat_cloudward_2010}
     \\
     \hline
-    \caption{Potenzielle Architekturprinzipien für eine multi-cloud enabled \ac{ea} siehe \fullref{appendix:architecture-principles-v2} }
+    \caption{Potenzielle Architekturprinzipien für eine multi-cloud enabled \ac{ea} siehe \autoref{appendix:architecture-principles-v2} }
     \label{tab:architecture-principles}
 \end{longtable}
 
@@ -654,16 +654,13 @@ Für die Anwendung des Evaluationsprozesses wird in der Initialisierung folgende
     \hline
     \endhead
 
-    Q1 & 1 & \textbf{Performance} \hypertarget{quality-q1}{} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren &      & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
+    Q1 & 0.3 & \textbf{Performance} \hypertarget{quality-q1}{} Fähigkeit gewisse Antwortzeiten und Durchgangsraten zu gewährleisten sowie Fähigkeit auf Workload-Anpassungen zu reagieren & 
+    Die Performance ist weniger relevant, da die APIs und Service der Cloud-Provider selbst eine gewisse Durchlaufzeit für die verschiedenen Aktionen haben. Beispiel sind hierbei die Zeitdauer von der Anwendung einer Policy bis zum Erhalt des ersten Resultats  & \cite{papaioannou_architecture_2013}, \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{mohammad_asad_hussain_comparative_2025}
     \\
     \hline
 
-    % Traceability Architektur ist quasi das architektonische Mittels im EA kontext eine Governance zu enabled durch das ganze traceability zeugs
-    % Q2 & 1 & \textbf{Security} \hypertarget{quality-q2}{} Fähigkeit Security-Ziele konsistent enforcen zu können sowie Fähigkeit Governancen und Policy-Enforcement zu ermöglichen &  & \cite{bhargav_sai_pillati_leading_2025}, \cite{banijamali_software_2019}, \cite{ghazaryan_comparative_2025}
-    % \\
-    % \hline
-
-    Q2 & 1  & \textbf{Portability} \hypertarget{quality-q2}{} Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &      & \cite{mirsalari_model_2020}
+    Q2 & 1 & \textbf{Portability} \hypertarget{quality-q2}{} Fähigkeit der Architektur eine Migration oder Redeployment zwischen verschiedenen Plattformen zu erlauben, ohne grundsätzliches Redesign zu benötigen - bspw. ermöglicht durch Abstraktion &
+    Sehr relevant, da die Cloud-Plattformen im \ac{uc} des BIT noch nicht feststehen. Die betrachteten Plattformen Azure und AWS werden lediglich als Beispieke verwedet. Eine Anwendbarkeit auf weitere Cloud-Plattformen ist jedoch essentiel & \cite{mirsalari_model_2020}
     \\
     \hline
 

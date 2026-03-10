@@ -21,3 +21,5 @@ Use-Case
 Traceability
 Policies
 Capabilities
+Architecture
+Officer

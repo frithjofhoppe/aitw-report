@@ -15,9 +15,9 @@ In diesen Abschnitt wird die Struktur aufgezeigt welche letztendlich zu den vorg
 \end{itemize}
 \hl{structure notes end}
 
-In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierten 7R's für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde (\cite{orban_four_2017}). Es wird deshalb die Hyptothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf  Business-Needs zurückzuführen sind. Diese Hypothese lässt sich mit diverser Fachliteratur in den Themen multi-cloud Strategie sowie multi-cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-cloud strategie und schlussendlich zu der Strukturierung einer \ac{lz} vor. Dies wird in der das Gerüst einer \ac{ea} eingebettet.
+In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zwischen Cloud-Migrationsstrategie und \ac{lz} hergestellt wird. Für Cloud-Migrationsstrategien wird als Annahme betrachtet, dass diese bereits businesszentriert sind. Dies wird begründet da der Ansatz der etablierten \textit{7R}s für Cloud-Migrationstrategien bereits mit diesen Gedanken des Fokus auf Business-Needs entworfen wurde (\cite{orban_four_2017}). Es wird deshalb die Hypothese aufgestellt, dass die verschiedenen Komponenten der \ac{lz} auf Business-Needs zurückzuführen sind. Diese Hypothese lässt sich mit diverser Fachliteratur in den Themen multi-Cloud Strategie sowie multi-Cloud Architektur untermauern (siehe \cite{sathya_ag_enterprise-grade_2024}, \cite{mulder_multi-cloud_2020-1}, \cite{mccabe_fundamentals_2024}). \cite{mulder_multi-cloud_2020-1} sieht konkret die Übersetzung von Business-Requirements zu einer multi-Cloud Strategie und schlussendlich zu der Strukturierung einer \ac{lz} vor. Dies wird in der das Gerüst einer \ac{ea} eingebettet.
 
-\cite{mulder_multi-cloud_2020-1} führt an, dass für eine \ac{ea} bereits diverse Frameworks existieren in welche der multi-cloud Kontext eingebettet werden kann, weshalb \ac{togaf} als etablierter Vertreter vorgeschlagen wird. \ac{togaf} sieht zum Erstellen einer \ac{ea} einen iterativen Cylce namens \ac{adm} vor. Dies vor dem Hintergrund, dass sich die Grundlage für eine \ac{ea} durch ändernde Anforderungen aus dem Business ebenfalls ändert und entsprechend anpassen muss.
+\cite{mulder_multi-cloud_2020-1} führt an, dass für eine \ac{ea} bereits diverse Frameworks existieren in welche der multi-Cloud Kontext eingebettet werden kann, weshalb \ac{togaf} als etablierter Vertreter vorgeschlagen wird. \ac{togaf} sieht zum Erstellen einer \ac{ea} einen iterativen Zyklus namens \ac{adm} vor. Dies vor dem Hintergrund, dass sich die Grundlage für eine \ac{ea} durch ändernde Anforderungen aus dem Business ebenfalls ändert und entsprechend anpassen muss.
 
 \begin{figure}[H]
     \centering
@@ -26,7 +26,7 @@ In \fullref{sec:einleitung} wurde gezeigt, dass bei Cloud-Providern ein Bezug zw
     \label{fig:amd-cycle-togaf}
 \end{figure}
 
-Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich an der Methodik von \cite{mulder_multi-cloud_2020-1} und \ac{togaf} an. Dies bedeutet dass die Schritte in der erstellen Methodik auf Phasen in \ac{togaf} zurückführbar sind (siehe \autoref{tab:forschungsmethodik}). Die Motivation dahinter ist, dass ein auf Business-Needs basierender Ansatz gewählt wird. Dadurch soll vermieden werden, dass der durch die Methodik erarbeitetet Outcome losgelöst vom Bedarf des Auftraggebers / des \ac{bit} und potenziell weiteren Organisationen ist. Die \ac{ea} dient somit nur als Gerüst und es nicht angedacht eine komplette \ac{ea} zu definieren. Im Folgenden ist der angepasste Ansatz beschrieben, welcher verfolgt wird. Dieser zeigt welche Elemente mit welcher Begründung in der jeweiligen Phase des \ac{adm} Cycle zur Anwendung kommen.
+Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich an der Methodik von \cite{mulder_multi-cloud_2020-1} und \ac{togaf} an. Dies bedeutet, dass die Schritte in der erstellten Methodik auf Phasen in \ac{togaf} zurückführbar sind (siehe \autoref{tab:forschungsmethodik}). Die Motivation dahinter ist, dass ein auf Business-Needs basierender Ansatz gewählt wird. Dadurch soll vermieden werden, dass der durch die Methodik erarbeitetet Outcome losgelöst vom Bedarf des Auftraggebers / des \ac{bit} und potenziell weiteren Organisationen ist. Die \ac{ea} dient somit nur als Gerüst und es ist nicht angedacht eine komplette \ac{ea} zu definieren. Im Folgenden ist der angepasste Ansatz beschrieben, welcher verfolgt wird. Dieser zeigt welche Elemente mit welcher Begründung in der jeweiligen Phase des \ac{adm} Cycle zur Anwendung kommen.
 
 \begin{table}[H]
     \centering
@@ -35,21 +35,21 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \makecell[l]{\textbf{Phase} \\\textbf{\ac{togaf}}} & \textbf{Anwendung für Arbeit}  & \textbf{Begründung} \\
         \hline
         Preliminary &
-        Übernahme von existierenden Architekturprinzipien vom \ac{bit} mit Ergänzung von etwaigen für den multi-cloud Kontext. Definieren eines fachspezifischen Meta-Modells mit \ac{lz} als zentralen Punkt. Recherche von den \ac{lz} Komponenten die bereits bei Anbietern existieren &
-        Die Entwicklung des Outcomes soll sich gedanklich bereits an den Prinzipien des \ac{bit} orientieren. Deshalb ist eine Verwendung von etablierten Architekturprinzipien essenziell. Das Meta-Modell erlaubt es wiederum ein gemeinsamen Verständnis zu schaffen welche Artefakte geschaffen werden sollen und wie Elemente welche out-of-scope sind mit dem Kontext der Arbeit zusammenhängen
+        Übernahme von existierenden Architekturprinzipien vom \ac{bit} mit Ergänzung von etwaigen Solchen für den multi-Cloud Kontext. Definieren eines fachspezifischen Metmodells mit \ac{lz} als zentralen Punkt. Recherche von den \ac{lz} Komponenten die bereits bei Anbietern existieren &
+        Die Entwicklung des Outcomes soll sich gedanklich bereits an den Prinzipien des \ac{bit} orientieren. Deshalb ist eine Verwendung von etablierten Architekturprinzipien essenziell. Das Metamodell erlaubt es wiederum ein gemeinsames Verständnis zu schaffen welche Artefakte geschaffen werden sollen und wie Elemente welche out-of-scope sind mit dem Kontext der Arbeit zusammenhängen.
         \\
         \hline
         \textbf{A} Architecture Vision &
         Definieren welche Akteure an dem Outcome beteiligt sind. Ableiten von Scopes und Zielen basierend auf Annahmen. Definieren von elementaren / Level 1 Technical Capabilities &
-        Die Capability-Map erlaubt es die Annahmen welche Fähigkeiten das BIT mit dem multi-cloud Ansatz erreichen möchte zu visualisieren
+        Die Capability-Map erlaubt es die Annahmen zu visualisieren welche Fähigkeiten das BIT mit dem multi-Cloud Ansatz erreichen möchte.
         \\
         \hline
         \textbf{B}Business Architecture &
-        \multirow{3}{*}{\makecell[X]{Definien von granulareren Level 2 Capabilities und Use-Cases basierend auf der Priorisierung der L2 Capabilities durch die Stakeholder. Entwerfen von verschiedenen Architektur-Varianten für eine der priorisierten Capabilities}} &
+        \multirow{3}{*}{\makecell[X]{Definieren von granulareren Level 2 Capabilities und Use-Cases basierend auf der Priorisierung der L2 Capabilities durch die Stakeholder. Entwerfen von verschiedenen Architektur-Varianten für eine der priorisierten Capabilities}} &
         Durch die Granularität wird eine bessere Bewert- und Anaylsierbarkeit ermöglicht. Die Use-Cases erlauben anschliessend den Scope zu setzen in welcher die gewählte Architektur-Variante definiert wird.
         \\
         \cline{1-1}
-        \textbf{C} Information Syststem Architectures & &
+        \textbf{C} Information System Architectures & &
         \\
         \cline{1-1}
         \textbf{D} Technology Architecture & &
@@ -64,12 +64,12 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \\
         \hline
         \textbf{G} Implementation Governance &
-        Auswahl einer Architketur, welcher den Evaluationskriterien welche unter anderem auf dem Use-Case des \ac{bit} basieren gerecht wird. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw.Anforderungen an die LZ, Governance Regel etc.) &
-        Der Outcome der Evaluation bildet unter anderem die Antwort auf die initialen Forschungsfragen wieder und ist somit essenziell
+        Auswahl einer Architektur, welcher den Evaluationskriterien gerecht wird, welche unter anderem auf dem Use-Case des \ac{bit} basieren. Definieren der Artefakte welche aus der Wahl für die Variante hervorgehen (bspw. Anforderungen an die \ac{lz}, Governance Regeln, etc.) &
+        Der Outcome der Evaluation bildet unter anderem die Antwort auf die initialen Forschungsfragen ab und ist somit essenziell
         \\
         \hline
         \textbf{H} Architecture Change Management & - &
-        Nicht anwendbar, da mit dem Output des \ac{adm} cycle kein produktiver Zustand, eine Übergabe an Betrieb oder Weiterentwicklung angestrebt wird
+        Nicht anwendbar, da mit dem Output des \ac{adm} Cycles kein produktiver Zustand, eine Übergabe an Betrieb oder Weiterentwicklung angestrebt wird
         \\
         \hline
     \end{tabularx}
@@ -81,45 +81,45 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
 \label{sec:methodik-landingzones}
 \hl{structure notes start}
 \begin{itemize}
-    \item Kriterien beschreiben mit welchen die verschiedenen Provider analysiert wurden, bspw.Aspekte und so
+    \item Kriterien beschreiben mit welchen die verschiedenen Provider analysiert wurden, bspw. Aspekte und so
     \item Detaillierte Beschreibung der Erkenntnis bzw Tabelle
 \end{itemize}
 \hl{structure notes end}
 
-Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln, muss zuerst der Begriff der \ac{lz} selbst geklärt werden. Das Vorgehen besteht somit aus den folgenden Schritten
+Um die verschiedenen Komponenten einer \ac{lz} zu ermitteln, muss zuerst der Begriff der \ac{lz} selbst geklärt werden. Das Vorgehen besteht somit aus den folgenden Schritten:
 
 \begin{enumerate}
     \item Recherche zur Etablierung des Begriffs \ac{lz} in der wissenschaftlichen Literatur
-    \item Unterschiede in der Beschreibung der \ac{lz} als Begriff und die technischen Komponenten der \ac{lz} bei relevanten Anbieter identifizieren
+    \item Unterschiede in der Beschreibung der \ac{lz}s als Begriff und die technischen Komponenten der \ac{lz} bei relevanten Anbieter identifizieren
     \item Abgrenzung der \ac{lz} zu anderen Ressourcen auf einer Cloud-Plattform
 \end{enumerate}
 
-In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \flqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\frqq. Diese Recherchefrage wird anschliessend an ein KI basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffen nach existierenden wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticScholar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt (\cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone})), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche wie bei \cite{mulder_multi-cloud_2020} indirekt auf die konkrete Implementierung von Cloud-Providern verweist. Eine Suche mit ähnlichen Schlüsselwörtern auf einer traditionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
+In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese über was eine \ac{lz} ist (siehe \fullref{sec:zielsetzung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \flqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\frqq. Diese Recherchefrage wird anschliessend an ein KI-basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffen nach existierenden wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei SemanticScholar und OpenAlex \parencite{noauthor_elicits_2025} welche etabliert sind. Der dadurch generierte Report zeigt (\cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone})), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Viel mehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen welche den Begriff verwenden sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur welche indirekt auf die konkrete Implementierung von Cloud-Providern verweist, wie bei \cite{mulder_multi-cloud_2020}. Eine Suche mit ähnlichen Schlüsselwörtern auf einer traditionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
 
-Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} wird \ac{lz} als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Befürfnissen gruppiert werden soll, um passenden Operation- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
+Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} werden \ac{lz}s als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Bedürfnissen gruppiert werden soll, um passenden Operations- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
 
-Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei marktstärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq\ der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
+Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei Markt-stärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq\ der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
 
 Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg analysiert.
 
-\hl{TODO: Ausformulieren der Landing Zone Deifnitionen}
+\hl{TODO: Ausformulieren der Landing Zone Definitionen}
 
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{|l|X|X|}
         \hline
-        \textbf{Cloud-Anbieter} & \textbf{Definition} & \textbf{Kommentar} \\
+        \textbf{Cloud-Anbieter} & \textbf{Definition \ac{lz}} & \textbf{Kommentar} \\
         \hline
         Azure & & 
         \\
         \hline
-        AWS & &
+        AWS & & 
         \\
         \hline
-        GCP  &  &
+        GCP & & 
         \\
         \hline
-        IBM  & & 
+        IBM & & 
         \\
         \hline
         Alibaba & & 
@@ -130,9 +130,7 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
     \label{tab:term-landingzone}
 \end{table}
 
-
 \begin{landscape}
-\hl{TODO: Landing Zone auf verschiedenen Cloud-Plattformen beschreiben mit Quelle}
 \begin{longtable}{|
   L{3cm}|
   p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
@@ -142,7 +140,7 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
   p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
 }
 \hline
-\textbf{Aspect / Cloud} & \textbf{AWS} & \textbf{Azure} & \textbf{GCP} & \textbf{AliBaba} & \textbf{IBM} \\
+\textbf{Aspekt / Anbieter} & \textbf{AWS} & \textbf{Azure} & \textbf{GCP} & \textbf{AliBaba} & \textbf{IBM} \\
 \hline
 \endfirsthead
 
@@ -154,7 +152,7 @@ Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg anal
 IAM / Account Management &
 ergibt sich aus accounts und roles and permissions in AWS Control Tower &
 Identity and Access Management im Azure Cloud Adoption Framework. Umfasst Authentication, Access auf Ressourcen, Separation of Duties sowie Hybrid Identities mit Entra &
-vorhanden sowohl mit Google als IdP wie auch mit 3rd Party Identity Providern &
+vorhanden sowohl mit Google als Identity Provider wie auch mit 3rd Party Identity Providern &
 Role Authorization über Alibaba Cloud RAM, Integration mit Enterprise SSO zur einheitlichen Authentifizierung und Umsetzung des Least-Privilege-Prinzips &
 Läuft unter dem Aspekt Security \\
 \hline
@@ -217,7 +215,6 @@ vorhanden \\
     \label{fig:base-meta-modell}
 \end{figure}
 
-
 \subsection{Erhebung von Landing-Zone Fähigkeiten}
 \label{sec:methodik-capability}
 \hl{structure notes start}
@@ -231,10 +228,10 @@ vorhanden \\
 \end{itemize}
 \hl{structure notes end}
 
-Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architecture bezeichnet. Es gibt bei dieser Architektur verschiedene Betrachtungen: zum einen die top-down Betrachtung des Compliant-Officers und zum anderen die bottom-up Betrachtung des Projektveranwortlichen. Ein Compliance-Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
+Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architecture bezeichnet. Es gibt bei dieser Architektur verschiedene Betrachtungen: zum einen die top-down Betrachtung des Compliant-Officers und zum anderen die bottom-up Betrachtung des Projektveranwortlichen. Ein Compliance Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
 
 \begin{landscape}
-\hl{TODO Beschreibe Inhalte von Capability map und Auswahl von Traceability L1 Capability für Use-Case / PoC}
+\hl{TODO Beschreibe Inhalte von Capability Map und Auswahl von Traceability L1 Capability für Use-Case / PoC}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\linewidth]{graphics/ip6-ideation-CapabilityMap.drawio.pdf}
@@ -243,7 +240,7 @@ Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit 
 \end{figure}
 \end{landscape}
 
-\hl{Todo beschreibung der verschiedenen Actor mit Tabelle machen}
+\hl{Todo beschreibung der verschiedenen Actors mit Tabelle machen}
 
 \begin{itemize}
     \item Der \textbf{Compliance Officer} interpretiert die regulatorischen Anforderungen und verantwortet den Compliance-Status
@@ -282,12 +279,12 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \hline
 
     Beschreibung / Ziel &
-    Der Use-Case beschreibt wie abstrakte Governance Controls in konkrete cloud-spezifische technische Massnahmen übersetzt werden. Ziel ist es die Traceability-Beziehungen zwischen Controls und technischen Massnahmen zu modellieren, um eine prüfbare Grundlage für eine Compliance-Verifikation zu schaffen
+    Der Use-Case beschreibt wie abstrakte Governance Controls in konkrete Cloud-spezifische technische Massnahmen übersetzt werden. Ziel ist es die Traceability-Beziehungen zwischen Controls und technischen Massnahmen zu modellieren, um eine prüfbare Grundlage für eine Compliance-Verifikation zu schaffen
     \\
     \hline
 
     Akteure &
-    Cloud-Experte, Compliance-Officer
+    Cloud-Experte, Compliance Officer
     \\
     \hline
     
@@ -307,7 +304,7 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
         \item Der Cloud-Experte definiert geeignete technische Massnahmen basierend auf dem Schutzbedarf
         \item Der Cloud-Experte ordnet die technischen Massnahmen Ressourcentypen auf Cloud-Plattformen zu
         \item Der Cloud-Experte modelliert die Traceability-Beziehungen. Zuordnung Schutzbedarf zu Control, Control zu technischen Massnahmen und technische Massnahme zu Ressourcentyp
-        \item Der Compliance-Officer prüft situativ, ob die definierten Massnahmen den regulatorischen Anforderungen entsprechen
+        \item Der Compliance Officer prüft situativ, ob die definierten Massnahmen den regulatorischen Anforderungen entsprechen
         \item Der Cloud-Experte gibt die definierten Traceability-Beziehungen frei
         \item Das System speichert die technischen Massnahmen und die zugehörigen Traceability-Beziehungen als Artefakte
     \end{enumerate}
@@ -321,14 +318,14 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
         \item Der Cloud-Experte identifiziert, dass keine geeignete technische Massnahme existiert
         \item Der Cloud-Experte markiert den Schutzbedarf als nicht vollständig operationalisierbar
         \item Das System kennzeichnet dies als Risiko / Lücke für die Compliance Verifikation
-        \item Der Compliance-Officer entscheidet über weitere Massnahmen bzw. Vorgehen
+        \item Der Compliance Officer entscheidet über weitere Massnahmen bzw. Vorgehen
     \end{enumerate}
 
     \\
     \hline
 
     Ergebnis &
-    Das System hält für einen Schutzbedarf mindestens eine technische Massnahme. Das System verfügt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahme. Der Compliance-Officer ist enabled eine Compliance-Verifikation durchzuführen.
+    Das System hält für einen Schutzbedarf mindestens eine technische Massnahme. Das System verfügt über Traceability-Beziehungen zwischen Schutzbedarf - Control - technischer Massnahme. Der Compliance Officer ist enabled eine Compliance-Verifikation durchzuführen.
     \\
     \hline
 
@@ -355,7 +352,7 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \endhead
 
     Name &
-    Verifiziert die compliance via Traceability
+    Verifiziert die Compliance via Traceability
     \\
     \hline
 
@@ -365,12 +362,12 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \hline
 
     Akteure &
-    Compliance-Officer, Cloud-Experte, Projektverantwortlicher
+    Compliance Officer, Cloud-Experte, Projektverantwortlicher
     \\
     \hline
     
     Vorbedingung &
-    Regulatorische Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Projekt hat seinen Schutzbedarf identifiziert. Technische Massnahmen für den Schutzbedarf eines Projektes sind definiert und modelliert gemäss \autoref{tab:uc4-define-technical-measures} . Traceability-Architektur ist etabliert
+    Regulatorische Anforderungen wurden interpretiert und in Schutzbedarfe und Controls überführt. Projekt hat seinen Schutzbedarf identifiziert. Technische Massnahmen für den Schutzbedarf eines Projektes sind definiert und modelliert gemäss \autoref{tab:uc4-define-technical-measures}. Traceability-Architektur ist etabliert
     \\
     \hline
 
@@ -381,12 +378,12 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
 
     Hauptablauf &
     \begin{enumerate}
-        \item Der Compliance-Officer wählt ein Projekt zur Überprüfung aus.
+        \item Der Compliance Officer wählt ein Projekt zur Überprüfung aus.
         \item Das System ermittelt die relevanten Traceability-Beziehungen zwischen Regulationen, Controls, technischen Massnahmen und Cloud-Ressourcen
         \item Das System wertet den Erfüllungsgrad der zugehörigen Controls aus
         \item Das System aggregiert die Ergebnisse zu einem Compliance-Status (compliant, non-compliant) aus Sicht der Regulation wie auch der Sicht des Projektes
         \item Das System stellt den Compliance-Status und Artefakte dar
-        \item Der Compliance-Officer überprüft den Compliance-Status inkl. Trace / Artefakten. Der Cloud-Experte kann hierbei unterstützen
+        \item Der Compliance Officer überprüft den Compliance-Status inkl. Trace / Artefakten. Der Cloud-Experte kann hierbei unterstützen
     \end{enumerate}
     \\
     \hline
@@ -397,14 +394,14 @@ Die zentralen Use-Cases aus \autoref{fig:traceability-use-cases} sind hierbei UC
     \begin{enumerate}
         \item Das System identifiziert fehlende Traceability-Beziehungen
         \item Das System kennzeichnet den Compliance-Status
-        \item Der Compliance-Officer identifiziert die Massnahmen
+        \item Der Compliance Officer identifiziert die Massnahmen
     \end{enumerate}
 
     \\
     \hline
 
     Ergebnis &
-    Der Compliance-Status eines Projektes ist bestimmt und Evidenzartefakt besteht. Traceability-Beziehungen sind einsehbar und audit-fähig.
+    Der Compliance-Status eines Projektes ist bestimmt und Evidenz-Artefakt besteht. Traceability-Beziehungen sind einsehbar und auditfähig.
     \\
     \hline
 

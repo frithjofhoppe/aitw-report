@@ -236,7 +236,6 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
     \label{fig:methodology-poc-setup}
 \end{figure}
 
-
 % KOMPLETTES DIAGRAMM
 % @startuml
 
@@ -298,8 +297,7 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 
 % @enduml
 
-
-
+\hl{TODO prüfen ob Sequenzdiagramm für static Setup ausreicheung oder noch benötigt und sonst umschreiben}
 
 \begin{figure}[H]
     \centering
@@ -310,68 +308,3 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
 \end{figure}
 
 \hl{Im Sinne der didaktischen Veranschaulichung einer Traceability-Architektur wir der PoC aus Sicht der verschiedenen Use-Cases beschrieb}
-
-% DEPLOY NEW PROJECT
-% @startuml
-
-% participant "Cloud\nProvider\nAPI" as cloud
-% participant "LZ\nProvisioning\nService" as lz
-% actor "Projekt-\nverantwortlicher" as po
-% participant "Project\nService" as project
-% participant "Traceability\nService" as trace
-% database "Governance\nDecision\nStore" as decision
-% database "Governance\nConfiguration\nService" as config
-
-% == Deploy new project (Scope von UC 06) ==
-
-% po --> project : Declare choice for\nLZ Component category
-% project --> trace : Get LZ Governance\nAssessment
-% activate trace
-% trace --> config: Check Relationships for\nComponent/Governance category\nbased on governance requirements
-% trace --> decision: Store Component/Governance decision
-% return LZ Governance Assessment
-% project --> lz: Create LZ based\non Assessment
-% lz --> cloud: Create subscription with blueprint\nin Mgmt Group, OU, etc.
-
-% @enduml
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_project_setup.png}
-    \caption{Sequenzdiagramm für Projektsetup des \ac{poc}}
-    \label{fig:methodology-poc-sequence-project-setup}
-\end{figure}
-
-% VERIFY COMPLIANCE
-% @startuml
-
-% participant "Cloud\nProvider\nAPI" as cloud
-% participant "Project\nService" as project
-% participant "Traceability\nService" as trace
-% participant "Evidence\nService" as evidence
-% actor "Compliance\nOfficer" as comp
-% database "Governance\nDecision\nStore" as decision
-% participant "Governance\nConfiguration\nService" as config
-
-% == Verify compliance (Scope von UC 06) ==
-
-% trace --> project: Get LZ account IDs\nof project
-% trace --> decision:  Get category/governance decision for accounts of projects
-% decision --> trace : decision
-% trace --> config : get component profile
-% config --> trace : component profile
-% trace --> config : get policies
-% config --> trace : policies
-% trace --> cloud : Get policy result
-% cloud --> trace : response compliant/uncompliant
-% trace --> evidence: Send evaluation result
-% comp --> evidence: Get evaluation result
-
-% @enduml
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_verify-compliance.png}
-    \caption{Sequenzdiagramm für Projektverifikation des \ac{poc}}
-    \label{fig:methodology-poc-sequence-verification}
-\end{figure}

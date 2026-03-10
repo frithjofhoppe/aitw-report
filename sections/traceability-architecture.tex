@@ -3,29 +3,29 @@
 
 \subsection{Grundarchitektur}
 
-Die Traceability-Architektur stellt eine Implementation aus den Capabilities des Level 1 \glqq Security Governance \glqq wie auch \glqq Audit and Evidence Governance \glqq für eine \ac{lz} da. Die Traceablity-Architektur ist somit eine Teilarchitektur im grösseren \ac{ea} Kontext. Traceability wird hierbei als Fähigkeit den Weg von einer Anforderungen aus einer Regulation wie \ac{si001} hin bis zu einer Cloud-Ressource nachvollziehen zu können. Dies umfasst sowohl die Aussage, dass eine Objekt wie eine Controls aus der Regulation für die Cloud-Ressource relevant ist, als auch den Comliance-Status. Der Compliance-Status sagt wiederum aus, ob die Anforderungen aus der Control gegenüber der Cloud-Ressource erfüllt sind. Summiert man dies auf alle Controls für eine Foundation auf, kann somit mittels der Traceability-Architektur eine Aussage gesagt werden über die Compliance von Foundations oder Projekten als Ganze. Die Traceability soll somit folgenden Probleme lösen:
+Die Traceability-Architektur stellt eine Implementation aus den Capabilities des Level 1 \flqq Security Governance\frqq\ wie auch \flqq Audit and Evidence Governance\frqq\ für eine \ac{lz} dar. Die Traceablity-Architektur ist somit eine Teilarchitektur im grösseren \ac{ea} Kontext. Traceability wird hierbei als Fähigkeit den Weg von Anforderungen aus einer Regulation wie \ac{si001} hin bis zu einer Cloud-Ressource nachvollziehen zu können. Dies umfasst sowohl die Aussage, dass ein Objekt wie eine Control aus der Regulation für die Cloud-Ressource relevant ist, als auch den Compliance-Status. Der Compliance-Status sagt wiederum aus, ob die Anforderungen aus der Control gegenüber der Cloud-Ressource erfüllt sind. Summiert man dies auf alle Controls für eine Foundation auf, kann somit mittels der Traceability-Architektur eine Aussage gemacht werden über die Compliance von Foundations oder Projekten als Ganzes. Die Traceability soll somit folgenden Probleme lösen:
 
 \begin{itemize}
-    \item Wie weist man die relevanten Controls aus einer Regulation zu einer Foundation zu? Workload von Projekten in der Cloud muss Vorgaben einhalten entsprechend muss ein Bezug hergestellt werden können zwischen Anforderung und Workload
-    \item Wie kann ein Audit für eine Foundation erstellt werden? Eine Organisation wie das \ac{bit} muss eine Aussage machen können ob der Workload von Projekten konform läuft
+    \item Wie weist man die relevanten Controls aus einer Regulation zu einer Foundation zu? Der Workload von Projekten in der Cloud muss Vorgaben einhalten, entsprechend muss ein Bezug zwischen Anforderung und Workload hergestellt werden können.
+    \item Wie kann ein Audit für eine Foundation erstellt werden? Eine Organisation wie das \ac{bit} muss eine Aussage machen können ob der Workload von Projekten konform läuft.
 \end{itemize}
 
-Die Kernidee der Traceability-Architektur ist es diese Probleme mittels einer Traceability-Beziehung/Relation zu lösen. Als Relation wird jene zwischen den Controls aus einer Regulation zu den Cloud-Ressourcen bezeichnet, welche in einer Foundation laufen. Diese Beziehung soll explizit modelliert werden, um transparent nachvollziehen zu können welche Controls angewendet werden. Diese Beziehung kann dann verwendet werden um unter anderem Audits durchführen zu können.
+Die Kernidee der Traceability-Architektur ist es diese Probleme mittels einer Traceability-Beziehung / -Relation zu lösen. Als Relation wird jene zwischen den Controls aus einer Regulation zu den Cloud-Ressourcen bezeichnet, welche in einer Foundation laufen. Diese Beziehung soll explizit modelliert werden, um transparent nachvollziehen zu können welche Controls angewendet werden. Diese Beziehung kann dann verwendet werden um unter anderem Audits durchführen zu können.
 
 Die zentralen Artefakte in der Architektur bauen auf einem Basismodell auf, welche als Grundlage für die Capabilities erstellt wurde. Eine Regulation bildet ein Regelwerk wie z.B. \ac{si001} ab, welches die verschiedenen Controls enthält. Eine Control ist je eine Anforderung welche eingehalten werden muss damit die Control als eingehalten gilt. Eine Control kann durch eine oder mehrere Policies implementiert werden, welche die konkrete Umsetzung der Control darstellen. Diese Policies können entweder selbst definiert oder von den Cloud-Providern bereitgestellt werden.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{graphics/traceability-architecture-base-model.png}
+    \includegraphics[width=0.8\textwidth]{graphics/traceability-architecture-base-model.pdf}
     \caption{Artefakte der Traceability-Architektur}
     \label{fig:traceability-architecure-artifacts}
 \end{figure}
 
-Die formulierte Idee der Traceability-Architektur auf \ac{ea} Ebene kann unterschiedlich in der Ebene der Lösungsarchitektur umgesetzt werden. Um verschiedene Aspekte der Traceability besser beschreiben zu können wird deshalb im Rahmen eines \ac{poc} ein Beispiel für eine Lösungsarchitektur gegebenen (siehe \fullref{sec:poc-methodology}). Diese Architektur wird nachfolgend sowie in den verschiedenen Varianten / Ansätzen der Lösungsarchitektur verwendet
+Die formulierte Idee der Traceability-Architektur auf \ac{ea} Ebene kann unterschiedlich in der Ebene der Lösungsarchitektur umgesetzt werden. Um verschiedene Aspekte der Traceability besser beschreiben zu können wird deshalb im Rahmen eines \ac{poc} ein Beispiel für eine Lösungsarchitektur gegebenen (siehe \fullref{sec:poc-methodology}). Diese Architektur wird nachfolgend sowie in den verschiedenen Varianten / Ansätzen der Lösungsarchitektur verwendet.
 
-Für eine Prüfung der Compliance von einem Workload ist initial eine Bereitstellung einer Foundation erforderlich (siehe \hyperlink{usecase-uc6}{UC-6}). Dazu werden die Requirements an die Governance der Foundation durch den Projektverantwortlichen generell formuliert (siehe \autoref{fig:deploy-sequence-base-structure}). Basierend auf diesen Requirements nimmt eine Komponenten in der Lösungsarchitektur eine Placement-Decision vor. Als Placement wird hierbei eine Beurteilung der Compliance verstanden. Diese Beurteilung enthält unter anderen welche Teile einer Regulation relevant sind. Schlussendlich wird die Decision persistiert und basierend auf ihr eine Foundation provisioniert. Diese Foundation enthält den Workload.
+Für eine Prüfung der Compliance von einem Workload ist initial ein Deployment einer Foundation erforderlich (siehe \hyperlink{usecase-uc6}{UC-6}). Dazu werden die Anforderungen an die Governance der Foundation durch den Projektverantwortlichen generell formuliert (siehe \autoref{fig:deploy-sequence-base-structure}). Basierend auf diesen Anforderungen wird pro Komponente in der Lösungsarchitektur eine Placement-Decision getroffen. Als Placement wird hierbei eine Beurteilung der Compliance verstanden. Diese Beurteilung enthält unter anderen welche Teile einer Regulation relevant sind. Schlussendlich wird die Decision persistiert und basierend auf ihr eine Foundation provisioniert, welche den Workload enthält.
 
-% DEPLYO SEQUENCE BASE STRUCTURE
+% DEPLOY SEQUENCE BASE STRUCTURE
 % @startuml
 % participant "Cloud\nProvider\nAPI" as cloud
 % participant "LZ\nProvisioning\nService" as lz
@@ -64,7 +64,7 @@ Für eine Prüfung der Compliance von einem Workload ist initial eine Bereitstel
     \label{fig:deploy-sequence-base-structure}
 \end{figure}
 
-Nach erfolgreichem Bereitstellen der Foundation kann die Compliance des Workloads innerhalb dieser überprüft werden (siehe \autoref{fig:verify-sequence-base-structure}). Hierfür wird mittels der Decision und der jeweiligen Traceability-Relationship eine Rekonstruierung vorgenommen. Basierend auf der Relationsship erfolgt anschliessend die Prüfung der Compliance der individuellen Cloud-Ressourcen. Schlussendlich kann somit die Evidence generiert werden, welche für ein Audit benötigt wird.
+Nach erfolgreichem Bereitstellen der Foundation kann die Compliance des Workloads innerhalb dieser überprüft werden (siehe \autoref{fig:verify-sequence-base-structure}). Hierfür wird mittels der Decision und des jeweiligen Traceability-Relationships eine Rekonstruierung vorgenommen. Basierend auf dem Relationsship erfolgt anschliessend die Prüfung der Compliance der individuellen Cloud-Ressourcen. Schlussendlich kann somit die Evidence generiert werden, welche für ein Audit benötigt wird.
 
 % @startuml
 
@@ -93,7 +93,6 @@ Nach erfolgreichem Bereitstellen der Foundation kann die Compliance des Workload
 
 % @enduml
 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{graphics/sequence-diagramm-verify-compliance_base.png}
@@ -101,7 +100,9 @@ Nach erfolgreichem Bereitstellen der Foundation kann die Compliance des Workload
     \label{fig:verify-sequence-base-structure}
 \end{figure}
 
-Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der Traceability-Architektur (siehe \autoref{fig:traceability-architecure-artifacts}) kann unterschiedlich implementiert werden. Die Varianten mit denen die Relationsship konrekt modelliert und die aufgezeigten Use-Cases implementiert werden können wird in den nachfolgenden Unterabschnitten gezeigt. Jede Variante umfasst die Abbildung der Artefakte ergänz mit den Modellen für die Traceability-Relationship Variante in blau sowie die detaillierten Sequenz-Diagramme für das Deployment und die Verification.
+\definecolor{tracearchblue}{HTML}{3399FF}
+
+Die Darstellung des Traceability-Relationsships basierend auf den Artefakten der Traceability-Architektur (siehe \autoref{fig:traceability-architecure-artifacts}) kann unterschiedlich implementiert werden. Die Varianten, mit denen der Relationsship konkret modelliert und die aufgezeigten Use-Cases implementiert werden können wird in den nachfolgenden Unterkapiteln gezeigt. Jede Variante umfasst die Abbildung der Artefakte ergänzt mit den Modellen für die Traceability-Relationship Variante in \textcolor{tracearchblue}{Blau} sowie die detaillierten Sequenzdiagramme für das Deployment und die Verification.
 
 \subsection{Variante 1: Control-centric Bundling}
 \label{sec:trace-arch-variant1}
@@ -171,7 +172,7 @@ Die Darstellung der Traceability-Relationsship basierend auf den Artefakten der 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant1_verify-compliance.png}
-    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 1}
+    \caption{Sequenzdiagramm für Verifikation der Compliance nach Traceability Architektur Variante 1}
     \label{fig:methodology-poc-variant1-sequence-verification}
 \end{figure}
 
@@ -223,7 +224,7 @@ Bei der Prüfung der Compliance einer Foundation wird in dieser Variante direkt 
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant1_deploy-foundation.png}
-    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
+    \caption{Sequenzdiagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant1-sequence-deployment}
 \end{figure}
 
@@ -313,7 +314,7 @@ Beim Deployment einer neuen \ac{lz} wird in Variante 1 zur Ermittlung der Govern
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant2_verify-compliance.png}
-    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 2}
+    \caption{Sequenzdiagramm für Verifikation der Compliance nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant2-sequence-verification}
 \end{figure}
 
@@ -365,7 +366,7 @@ In der Loop wird über die Component Profile IDs iteriert, da die Controls in Co
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant2_deploy-foundation.png}
-    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
+    \caption{Sequenzdiagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 2}
     \label{fig:methodology-poc-variant2-sequence-deployment}
 \end{figure}
 
@@ -453,7 +454,7 @@ Beim Deployment einer neuen \ac{lz} wird in dieser Variante zunächst die Govern
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant3_verify-compliance.png}
-    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 3}
+    \caption{Sequenzdiagramm für Verifikation der Compliance nach Traceability Architektur Variante 3}
     \label{fig:methodology-poc-variant3-sequence-verification}
 \end{figure}
 
@@ -504,7 +505,7 @@ In der Loop wird über die jeweiligen Policies iteriert, da die Rückverfolgbark
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant3_deploy-foundation.png}
-    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 3}
+    \caption{Sequenzdiagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 3}
     \label{fig:methodology-poc-variant3-sequence-deployment}
 \end{figure}
 
@@ -588,7 +589,7 @@ Hier wird die Kategorie als Ergebnis der Foundation Placement Decision zurückge
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant4_verify-compliance.png}
-    \caption{Sequenz-Diagramm für Verifikation der Compliance nach Traceability Architektur Variante 4}
+    \caption{Sequenzdiagramm für Verifikation der Compliance nach Traceability Architektur Variante 4}
     \label{fig:methodology-poc-variant4-sequence-verification}
 \end{figure}
 
@@ -639,7 +640,7 @@ In dieser Variante wird die Compliance-Überprüfung direkt über die nativen Me
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_variant4_deploy-foundation.png}
-    \caption{Sequenz-Diagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 4}
+    \caption{Sequenzdiagramm für das Deployment einer neuen LZ nach Traceability Architektur Variante 4}
     \label{fig:methodology-poc-variant4-sequence-deployment}
 \end{figure}
 

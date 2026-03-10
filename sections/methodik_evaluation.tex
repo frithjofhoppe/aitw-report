@@ -465,76 +465,96 @@ Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzip
     \label{tab:archicture-conformity-process}
 \end{longtable}
 
-Für die Anwendung des Konformitätsprozess wird in der Initialisierung folgenden Auswahl $P_{\text{selection}}$ vorgenommen.
+Für die Anwendung des Konformitätsprozess wird in der Initialisierung folgenden Auswahl $P_{\text{selection}}$ vorgenommen. Diese werden in folgende Cluster gruppiert um bei der Beurteilung der Konformität verschiedenen Themen kombinieren zu können:
+
+\begin{itemize}
+  \item Group 1: Governance-Driven Architecture
+  \item Group 2: Abstraction and Plattform Independence
+  \item Group 3: Structural Architecture
+  \item Group 4: Security Architecture
+\end{itemize}
 
 \begin{longtable}{|
   L{1cm}|
-  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
-  p{\dimexpr(\textwidth-4cm-8\tabcolsep-5\arrayrulewidth)/2\relax}|
+  L{1.5cm}|
+  p{\dimexpr(\textwidth-5.5cm-10\tabcolsep-6\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-5.5cm-10\tabcolsep-6\arrayrulewidth)/2\relax}|
   L{3cm}|
 }
     \hline
-    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
+    \textbf{ID} & \textbf{Group} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
     \hline
     \endfirsthead
 
     \hline
-    \textbf{ID} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
+    \textbf{ID} & \textbf{Group} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
     \hline
     \endhead
 
-    A1 & \textbf{Stanardisation Automaisation} Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    % Cluster 1 Governance driven architecture
+    A1 & 1 & \textbf{Compliance with Law and Policies} \hypertarget{architecture-a1}{} Wir bei BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschliesslich der Bundes-, Departements-, und Amts-Prinzipien &
+    Die Nachvollziehbarkeit und das Enforcement von Regulation ist einer der Beweggründe im Use-Case für die Traceability da & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A2 & \textbf{Flexible Architecture} Wir entwerfen und implementieren Architekturen, die Echtzeit Geschäftsprozesse ermöglichen und sich flexibel an die Geschäftsanforderungen anpassen können. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    A2 & 1 & \textbf{Data Governance} \hypertarget{architecture-a2}{} Wir stellen sicher, dass wir als Leistungsbezüger \ac{bit}-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. & Für das Placement der Foundation ist die Berücksichtigung der Datenklassifizerung ausschlaggebend & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A3 & \textbf{Data Governance} Wir stellen sicher, dass wir als Leistungsbezüger BIT-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    % Cluster 2 Abstraction and Platform indeendence
+    A3 & 2 & \textbf{Cloud Native by Default} \hypertarget{architecture-a3}{} Wir entwickeln und betreiben Cloud Native Anwendungen &
+    Der Lösungsansatz welcher durch Traceability-Architektur vorgeschlagen wird soll sich bereits möglichst nah am Umfeld orientieren in welchem es eingesetzt wird & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
     \\
     \hline
 
-    A4 & \textbf{Compliance with Law and Policies} Wir bei BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschliesslich der Bundes-, Departements-, und Amts-Prinzipien & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    A4 & 2 & \textbf{Architectural Abstraction Principle}  \hypertarget{architecture-a4}{} Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden & 
+    Um den unterschiedlichen Implementationen der Cloud-Provider gerecht zu werden ist eine Abstraktion für die Traceability unerlässlich
+    & \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
     \\
     \hline
 
-    A5 & \textbf{Serviceorientation} Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    A5 & 2 & \textbf{Product Neutrality} \hypertarget{architecture-a5}{} Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte. \textbf{Modular Decomposition Principle} siehe \autoref{tab:architecture-principles} &
+    Herstellerspezifische Konzepte sollten bereits auf der Ebene der Architektur ausgeschlossen werden und höchstens konzeptionell betrachtet werden & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
     \\
     \hline
 
-    A6 & \textbf{Defense-In-Depth} Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    % Cluster 3 Structural Architecture Design
+    A6 & 3 & \textbf{Serviceorientation} \hypertarget{architecture-a6}{} Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen. &
+    Die Traceability-Architektur soll sich an den verschiedenen Akteuren aus dem Use-Case ausrichten um bereits eine optimale Ausrichtung auf potentielle Anwender zu gewährleisten & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A7 & \textbf{Cloud Native by Default} Wir entwickeln und betreiben Cloud Native Anwendungen. \textbf{Architectural Abstraction Principle} siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
+    A7 & 3 & \textbf{Modular Decomposition Principle} \hypertarget{architecture-a7}{} Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern &
+    Analog wie die Product Neutrality sollen nicht nur Konzepte sondern auch die Komponenten der Architektur agnostisch gedacht werden. & \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
     \\
     \hline
 
-    A8 & \textbf{Security by Design} Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    A8 & 3 & \textbf{Reference Model Principle}\hypertarget{architecture-a8}{} Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles} &
+    Traceability selbst ist beriets ein abstrakter Begriff. Ein Metamodell welche ein Mapping auf Cloud-Plattform spezifische Namings / Konzepte erlaubt ist deshalb relevant & \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
     \\
     \hline
 
-    A9 & \textbf{Simplify and Automte Operations} Wir bei BIT stellen sicher, dass die IT-Prozesse und der Betrieb der Infrastruktur soweit wie möglich automatisiert werden, um die von den Nutzer/innen definierten Anforderungen an Funktionalität, Servicelevel und Lieferzeiten zu den tiefst möglichen Kosten und mit der besten Effizienz zu erfüllen. Wir beziehen und bieten Fully Managed Services an. & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}
+    A9 & 3 & \textbf{Stanardisation Automaisation} \hypertarget{architecture-a9}{} Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten. &
+    Die Automatisierung der Compliance-Prüfung ist einer der Hauptversprechen der Traceability-Architektur. Der Aufbau einer möglichst standardisierten Struktur für die Abbildung der Traceability und Evidences ist deshalb relevant & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A10 & \textbf{Product Neutrality} Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte. \textbf{Modular Decomposition Principle} siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
+    % Cluster 4 Security Architecture
+    
+    A10 & 4 & \textbf{Security by Design} \hypertarget{architecture-a10}{} Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern. &
+    Mit der Traceability selbst soll die Durchsetzbarkeit der Regulation wie \ac{si001} erhöht werden. Dies gilt auch für die Konzeption der Traceability-Architekur als solche & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A11 & \textbf{Reference Model Principle} Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
+    A11 & 4 & \textbf{Defense-In-Depth} \hypertarget{architecture-a11}{} Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen. &
+    Weil es sich bei der Traceability-Architektur selbst um ein Werkzeug für Audits der Foundation handelt, sind Sicherheitsüberlegung noch wichtiger & Auszug aus \autoref{fig:bit-architecture-principles}
     \\
     \hline
 
-    A12 & \textbf{Security Reconfigurability Principle} Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles} & Beschreibung des Kontextes & \cite{hajjat_cloudward_2010}
+    A12 & 4 & \textbf{Security Reconfigurability Principle} \hypertarget{architecture-a12}{} Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles} & 
+    Die Annahme auf welcher die Traceability-Architektur strukturiert sowie weitere Konzepte erarbeitet werden sollte plattform-übergreifend anwendbar sein & \cite{hajjat_cloudward_2010}
     \\
     \hline
-
-    % Optional 
-    % A8 &  \textbf{Cloud Native by Default} Benutzern (Menschen, Services, Applikationen, etc.) wird nur das Minimum an Privilegien oder Zugriffsrechten gewährt, das für die Ausführung ihrer Aufgabe erforderlich ist. & Auszug aus \autoref{fig:bit-architecture-principles} & Beschreibung des Kontextes
-    % \\
-    % \hline
 
     \caption{Auswahl an Architekturprinzipien}
     \label{tab:selection-architecture-principles}

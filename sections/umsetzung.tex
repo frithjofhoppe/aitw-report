@@ -11,9 +11,9 @@ Technisch werden das 360°-Cockpit sowie das Governance-Cockpit (siehe \autoref{
 
 Zur Veranschaulichung der technischen Machbarkeit der Traceability-Architektur werden nachfolgend wesentliche Aspekte der Implementation erläutert. Die Implementierung des \ac{poc} hat sich hierbei auf die Nutzung von Azure und AWS beschränkt u die Anwendbarkeit auf mehrere Cloud-Plattformen zu zeigen.
 
-\subsection{UC4 Import der Traceability-Beziehungen}
+\subsection{UC4: Import der Traceability-Beziehungen}
 
-Im UC4 (siehe \fullref{tab:uc4-define-technical-measures}) werden die verschiedenen Artefakte erzeugt, welche für die Nachvollziehbarkeit der Traceability-Beziehung benötigt werden. Als Grundlage dient das Basismodell für die im \ac{poc} implementierte Variante der Traceability-Architektur \fullref{sec:trace-arch-variant2}, welches in \autoref{fig:data-model-poc} für die technische Implementation erweitert wurde. Als Kontext für die Code-Beispiele werden folgende Beziehungen genommen, welche dann in den nachfolgenden Schritten mittels Code-Beispielen dargestellt werden:
+Im UC4 (siehe \hyperlink{usecase-uc4}{Beschrieb UC4}) werden die verschiedenen Artefakte erzeugt, welche für die Nachvollziehbarkeit der Traceability-Beziehung benötigt werden. Als Grundlage dient das Basismodell für die im \ac{poc} implementierte Variante der Traceability-Architektur \fullref{sec:trace-arch-variant2}, welches in \autoref{fig:data-model-poc} für die technische Implementation erweitert wurde. Als Kontext für die Code-Beispiele werden folgende Beziehungen genommen, welche dann in den nachfolgenden Schritten mittels Code-Beispielen dargestellt werden:
 
 \begin{itemize}
     \item Die \texttt{Component} \flqq Storage\frqq\ bildet den \ac{lz} Aspekt von Cloud-Ressourcen ab welche zur Datenspeicherung dienen. Hierbei kann es sich um Datenbanken, Object-Storage, usw. handeln.
@@ -229,11 +229,9 @@ Die Zuweisungen von Policies zu den Foundations bzw. \ac{lz}s erfolgt theoretisc
 \label{fig:governance-domains-example}
 \end{figure}
 
-\subsection{UC6 Erstellung der Foundation}
+\subsection{Vorbedingung von UC6: Erstellung der Foundation}
 
-\hl{TODO reference label}
-
-Die Evaluierung und die Provisionierung (siehe TODO) sind in der \ac{poc} Architektur bewusst separiert worden in das 360°-Cockpit und das Governance-Cockpit. Das Governance-Cockpit soll vor allem mit den Elementen arbeiten, welche Teil der Traceability-Architektur sind und möglichst nicht mit Spezifika von Cloud-Providern in Berührung kommen. Das 360°-Cockpit hingegen ist für die Ressourcenverwaltung (z.B. innerhalb der Foundations) verantwortlich, welche basierend auf den Requests der Projektveranwortlichen erstellt wurden. Entsprechend wird hier auch die Provisionierung verantwortet und Spezifika pro Provider sind bekannt.
+Die Evaluierung und die Provisionierung (siehe Vorbedingung \hyperlink{usecase-uc6}{Beschrieb UC6}) sind in der \ac{poc} Architektur bewusst separiert worden in das 360°-Cockpit und das Governance-Cockpit. Das Governance-Cockpit soll vor allem mit den Elementen arbeiten, welche Teil der Traceability-Architektur sind und möglichst nicht mit Spezifika von Cloud-Providern in Berührung kommen. Das 360°-Cockpit hingegen ist für die Ressourcenverwaltung (z.B. innerhalb der Foundations) verantwortlich, welche basierend auf den Requests der Projektveranwortlichen erstellt wurden. Entsprechend wird hier auch die Provisionierung verantwortet und Spezifika pro Provider sind bekannt.
 
 Als Grundlage für die Zuweisung von Component-Profiles (und schlussendlich Policies) zu einer Foundation wird eine \texttt{FoundationDecisionRequestDto} verwendet. In dieser formuliert der Projektverantwortliche die Anforderungen, welche die Foundation aus Sicht der Governance erfüllen muss.
 
@@ -421,9 +419,9 @@ Das Assessment des geeigneten Component-Profiles wird schlussendlich zusammen mi
 \label{fig:example-governance-decision}
 \end{figure}
 
-\subsection{UC6 Prüfung der Compliance}
+\subsection{UC6: Prüfung der Compliance}
 
-Der Stand der Compliance einer Foundation kann geprüft werden (siehe \autoref{tab:uc6-verify-compliance}), sobald die Provisionierung durch das 360°-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, dass schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtlich ist. Der Prozess den Compliance-State zu prüfen sollte idealerweise in regelmässigen Abständen durchgeführt werden, damit schlussendlich Akteure wie der Compliance Officer ein möglichst aktuelles Lagebild im Governance-Cockpit haben, welches auf den Evidences aufbaut.
+Der Stand der Compliance einer Foundation kann geprüft werden (siehe \hyperlink{usecase-uc6}{Beschrieb UC6}), sobald die Provisionierung durch das 360°-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, dass schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtlich ist. Der Prozess den Compliance-State zu prüfen sollte idealerweise in regelmässigen Abständen durchgeführt werden, damit schlussendlich Akteure wie der Compliance Officer ein möglichst aktuelles Lagebild im Governance-Cockpit haben, welches auf den Evidences aufbaut.
 
 \begin{figure}[H]
 \centering
@@ -651,4 +649,4 @@ Für die Control View werden die Ergebnisse welche bereits für die Evidence Vie
 \label{fig:response-control-evlauation-for-project} 
 \end{figure}
 
-\hl{beschreiben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}
+\hl{Maybe TODO beschreiben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}

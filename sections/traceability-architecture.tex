@@ -1,7 +1,29 @@
-\section{Traceability Architektur}
-\label{sec:traceability-architecture}
+\section{Landing Zone Architektur}
+\label{sec:landingzone-architecture}
 
-\subsection{Grundarchitektur}
+Eine \ac{lz} stellt das konzeptionelle Grundgerüst da in welchem der Workload für ein Projekt existiert (siehe \fullref{sec:methodik-landingzones}). Dieses Grundgerüst wird hier ebenfalls als Foundation bezeichnet und kann als Synonym zu \ac{lz} verstanden werden. Der Begriff Foundation ergibt sich aus den Use-Cases, welche den Scope der Arbeit setzen und sich auf das \ac{bit} beziehen.
+
+Die \ac{lz} bildet trotz der schlussendlichen technischen Implementation bei distanzierter Betrachtung verschiedene Themengebiete ab. So ist der Nutzen der \ac{lz} die verschiedenen Gebiete so zu modellieren, dass sie dem Interesse des Unternehmens / der Organisation entsprechen. Hiermit ist gemeint, dass bspw. technische, strukturelle wie regulatorischen Vorgaben der Organisation in Bezug auf den Workload angewendet werden. Die Anwendung passiert hierbei implizit oder explizit durch die Platzierung des Workloads in der \ac{lz} bzw Foundation. Die Themengebiete, welche relevant für die \ac{lz} sind, lassen sich aus sich der \ac{ea} auf technische Capabilities zurückführen (siehe \fullref{sec:methodik-capability}). Die technischen Capabilities stellen somit das technischen \textit{Was} da, welche eine Organisation in Bezug auf die Workloads können möchte. Die \ac{lz} auf der Gegenseite stellt das \textit{Wie} bzw. einen Teil der Implementation da. Diese verschiedenen Themengebiete, in welchem die technischen Capabilities resultieren, werden nachfolgenden als \ac{lz}-Component bzw Component bezeichnet. Bei einer vollständigen Implementierung sollten somit theoretisch alle Capabilities in mindestens einer \ac{lz}-Component vertreten sein. Repräsentativ für die diversen identifizierten high-level / Level 1 Capabilities in \autoref{fig:reduced-capabiliy-map} wird für die Arbeit basierend auf dem Traceabilty-Use-Case eine Auswahl vorgenommen. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ip6-ideation-capability-map-reduced.drawio.pdf}
+    \caption{Reduzierte technische Capability Map mit Level 1 Capabilities. Vollständige Map in \autoref{fig:capability-map-overview}}
+    \label{fig:reduced-capabiliy-map}
+\end{figure}
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{graphics/ip6-ideation-LandingZone-Architecture-v2.drawio.png}
+    \caption{Vereinfachte \ac{lz} Architektur}
+    \label{fig:landing-zone-architecture}
+\end{figure}
+
+
+\subsection{Traceability Architektur}
+\label{sec:traceability-architecture}
 
 Die Traceability-Architektur stellt eine Implementation aus den Capabilities des Level 1 \flqq Security Governance\frqq\ wie auch \flqq Audit and Evidence Governance\frqq\ für eine \ac{lz} dar. Die Traceablity-Architektur ist somit eine Teilarchitektur im grösseren \ac{ea} Kontext. Traceability wird hierbei als Fähigkeit den Weg von Anforderungen aus einer Regulation wie \ac{si001} hin bis zu einer Cloud-Ressource nachvollziehen zu können. Dies umfasst sowohl die Aussage, dass ein Objekt wie eine Control aus der Regulation für die Cloud-Ressource relevant ist, als auch den Compliance-Status. Der Compliance-Status sagt wiederum aus, ob die Anforderungen aus der Control gegenüber der Cloud-Ressource erfüllt sind. Summiert man dies auf alle Controls für eine Foundation auf, kann somit mittels der Traceability-Architektur eine Aussage gemacht werden über die Compliance von Foundations oder Projekten als Ganzes. Die Traceability soll somit folgenden Probleme lösen:
 
@@ -17,7 +39,7 @@ Die zentralen Artefakte in der Architektur bauen auf einem Basismodell auf, welc
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/ip6-ideation-Traceability-Architecture-v2.drawio.png}
-    \caption{Artefakte der Traceability-Architektur}
+    \caption{Traceability-Architektur mit dem Flow der Traceability von der Regulation bis zur technologie-spezifischen Component}
     \label{fig:traceability-architecure-artifacts}
 \end{figure}
 

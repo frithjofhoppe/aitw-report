@@ -98,40 +98,53 @@ In einer initialen systematischen Literatur-Recherche wird zunächst ermittelt w
 
 Dies wirft somit die Frage auf ob, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} werden \ac{lz}s als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R} handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Bedürfnissen gruppiert werden soll, um passenden Operations- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}.
 
+\subsection{Definition von \ac{lz} bei Cloud-Providern}
+
 Mit dieser Einleitung sollen nun die relevanten Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei Markt-stärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq\ der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
 
 Zuerst wird die Begrifflichkeit der \ac{lz} über die Cloud-Anbieter hinweg analysiert.
 
-\begin{table}[H]
-    \centering
-    \begin{tabularx}{\textwidth}{|l|X|X|}
-        \hline
-        \textbf{Cloud-Anbieter} & \textbf{implizierte Definition \ac{lz}} & \textbf{Kommentar} \\
-        \hline
-        Azure & Ein Azure \ac{lz} [...] bietet eine einheitliche Möglichkeit, Ihre Azure-Umgebung in grossem Massstab einzurichten und zu verwalten. Es gewährleistet Konsistenz in Ihrem gesamten Unternehmen, indem es wichtige Anforderungen an Sicherheit, Compliance und betriebliche Effizienz [...] erfüllt. Diese bieten eine [...] Grundlage, die mit den zentralen Designprinzipien in acht Designbereichen übereinstimmt. & Microsoft bietet eine Referenzarchitektur und unterteilt diese in Plattform- und Anwendungs-\ac{lz}s. Es werden Designprinzipien definiert, welche die Grundlage für die Architektur bilden sollen. \cite{microsoft_what_2025}
-        \\
-        \hline
-        AWS & Eine landing zone ist eine gut strukturierte AWS Umgebung mit mehreren Konten, die skalierbar und sicher ist. Dies ist ein Ausgangspunkt, von dem aus Ihr Unternehmen schnell Workloads und Anwendungen starten und bereitstellen kann, ohne auf Ihre Sicherheits- und Infrastrukturumgebung verzichten zu müssen. & AWS bietet die Möglichkeit \ac{lz}s von AWS Control Tower oder eine eigene Implementation zu nutzen. Das \ac{lz}-Feature von AWS Control Tower wird beschrieben als \textit{unternehmensweiter Container, der all Ihre Organisationseinheiten (OUs), Konten, Benutzer und andere Ressourcen enthält, für die Sie Compliance-Vorschriften gelten möchten}. \cite{aws_was_2026}, \cite{aws_was_2026-1}
-        \\
-        \hline
-        GCP & [...] Eine \ac{lz} ist eine modulare und skalierbare Konfiguration, die es Organisationen ermöglicht, Google Cloud für ihre Geschäftsanforderungen zu übernehmen. Eine \ac{lz} ist oft eine Voraussetzung für die Bereitstellung von Unternehmens-Arbeitslasten in einer Cloud-Umgebung. Eine \ac{lz} ist keine Zone oder zonale Ressourcen. & Google beschreibt die primären Elemente eine \ac{lz} und bietet eine Beispielarchitektur. Es wird dem Kunden überlassen die \ac{lz} zu gestalten. \cite{google_design_2026}
-        \\
-        \hline
-        IBM & Die \textit{einsetzbaren Architekturen} sind ein vorkonfigurierter Satz von Infrastructure-as-Code-Assets (IaC) & IBM sieht \ac{lz}s als \textit{einsetzbare Architekturen} und stellt konkrete Assets für Partnertechnologien bereit. \cite{ibm_overview_2026}
-        \\
-        \hline
-        Alibaba & Alibaba Cloud Landing Zone ist eine Reihe von IT-Governance-Frameworks, die Unternehmen dabei unterstützen sollen, Alibaba Cloud sicher zu implementieren und dorthin zu migrieren. & Alibaba sieht \ac{lz}s als Frameworks, welche Unternehmen bei der Migration zu Alibaba Cloud unterstützen sollen. \cite{alibaba_landing_2026}
-        \\
-        \hline
-    \end{tabularx}
-    \caption{Analyse des Begriff \ac{lz} entlang der verschiedenen Cloud-Anbieter}
-    \label{tab:term-landingzone}
-\end{table}
+\paragraph{Microsoft Azure}
 
-\hl{ODO Text bla nicht einheitlich usw.}
+ \textbf{Implizierte Definition \ac{lz}}: Ein Azure \ac{lz} [...] bietet eine einheitliche Möglichkeit, Ihre Azure-Umgebung in grossem Massstab einzurichten und zu verwalten. Es gewährleistet Konsistenz in Ihrem gesamten Unternehmen, indem es wichtige Anforderungen an Sicherheit, Compliance und betriebliche Effizienz [...] erfüllt. Diese bieten eine [...] Grundlage, die mit den zentralen Designprinzipien in acht Designbereichen übereinstimmt.
+ 
+ \textbf{Kommentar}: Microsoft bietet eine Referenzarchitektur und unterteilt diese in Plattform- und Anwendungs-\ac{lz}s. Es werden Designprinzipien definiert, welche die Grundlage für die Architektur bilden sollen. \cite{microsoft_what_2025}
+
+\paragraph{Amazon Web Services (AWS)}
+
+\textbf{Implizierte Definition \ac{lz}}: Eine landing zone ist eine gut strukturierte AWS Umgebung mit mehreren Konten, die skalierbar und sicher ist. Dies ist ein Ausgangspunkt, von dem aus Ihr Unternehmen schnell Workloads und Anwendungen starten und bereitstellen kann, ohne auf Ihre Sicherheits- und Infrastrukturumgebung verzichten zu müssen. 
+
+\textbf{Kommentar}: AWS bietet die Möglichkeit \ac{lz}s von AWS Control Tower oder eine eigene Implementation zu nutzen. Das \ac{lz}-Feature von AWS Control Tower wird beschrieben als \textit{unternehmensweiter Container, der all Ihre Organisationseinheiten (OUs), Konten, Benutzer und andere Ressourcen enthält, für die Sie Compliance-Vorschriften gelten möchten}. \cite{aws_was_2026}, \cite{aws_was_2026-1}
+
+\paragraph{Google Cloud Platform (GCP)}
+
+\textbf{Implizierte Definition \ac{lz}}: [...] Eine \ac{lz} ist eine modulare und skalierbare Konfiguration, die es Organisationen ermöglicht, Google Cloud für ihre Geschäftsanforderungen zu übernehmen. Eine \ac{lz} ist oft eine Voraussetzung für die Bereitstellung von Unternehmens-Arbeitslasten in einer Cloud-Umgebung. Eine \ac{lz} ist keine Zone oder zonale Ressourcen.
+
+\textbf{Kommentar}: Google beschreibt die primären Elemente eine \ac{lz} und bietet eine Beispielarchitektur. Es wird dem Kunden überlassen die \ac{lz} zu gestalten. \cite{google_design_2026}
+
+\paragraph{IBM Cloud}
+
+\textbf{Implizierte Definition \ac{lz}}: Die \textit{einsetzbaren Architekturen} sind ein vorkonfigurierter Satz von Infrastructure-as-Code-Assets (IaC)
+
+\textbf{Kommentar}: IBM sieht \ac{lz}s als \textit{einsetzbare Architekturen} und stellt konkrete Assets für Partnertechnologien bereit. \cite{ibm_overview_2026}
+
+\paragraph{Alibaba Cloud}
+
+\textbf{Implizierte Definition \ac{lz}}: Alibaba Cloud Landing Zone ist eine Reihe von IT-Governance-Frameworks, die Unternehmen dabei unterstützen sollen, Alibaba Cloud sicher zu implementieren und dorthin zu migrieren.
+
+\textbf{Kommentar}: Alibaba sieht \ac{lz}s als Frameworks, welche Unternehmen bei der Migration zu Alibaba Cloud unterstützen sollen. \cite{alibaba_landing_2026}
+
+\label{tab:term-landingzone}
+
+\paragraph{Fazit Definitionen \ac{lz}}
+
+Die Analyse der verschiedenen Cloud-Provider zeigt, dass der Begriff \ac{lz} nicht komplett einheitlich verwendet wird. Es gibt teilweise Überschneidungen mit anderen Begriffen wie \textit{Foundation}, \textit{Architecture} oder \textit{Framework}. Es wird jedoch deutlich, dass die verschiedenen Anbieter ähnliche Konzepte und Komponenten beschreiben, welche in der Literatur teilweise als Teil einer \ac{lz} beschrieben werden. Es wird deshalb die Annahme getroffen, dass es sich bei der \ac{lz} um ein Konzept handelt, welches von den Anbietern selbst etabliert wurde und nicht aus der Forschung stammt.
+
+\subsection{Vergleich von Landing-Zone Komponenten bei Cloud-Providern}
+
+Obwohl die Definitionen der \ac{lz} bei den verschiedenen Anbietern teilweise unterschiedlich sind, gibt es dennoch Überschneidungen in den beschriebenen Komponenten. Es werden deshalb folgend die Komponenten der \ac{lz} bei den verschiedenen Anbietern verglichen, um Gemeinsamkeiten und Unterschiede zu identifizieren. Hierzu werden die folgenden Aspekte betrachtet: IAM / Account Management, Network, Resource Management, Compliance, Financial Management und Security. Diese Aspekte wurden basierend auf der Analyse der Dokumentation der verschiedenen Anbieter ausgewählt, da sie als zentrale Elemente einer \ac{lz} identifiziert wurden.
 
 \begin{landscape}
-\hl{TODO: Quellen zitieren für Landing Zone auf verschiedenen Cloud-Plattformen}
 \begin{longtable}{|
   L{3cm}|
   p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
@@ -195,13 +208,24 @@ eigener Security-Aspekt mit Compliance Validation, Data Protection, Resilience u
 Security Design Area mit Fokus auf Security Operations Tooling und Zero Trust &
 eigener Security-Blueprint mit Best Practices &
 Enterprise Security Lösungen für Data, Storage, Host und Network Security &
-vorhanden \\
+IAM, App-Security, Datensicherheit, Infra \& Endpunkte, IDS, Governance \\
+\hline
+
+Quellen &
+\cite{aws_was_2026}, \cite{aws_was_2026-1} &
+\cite{microsoft_what_2025} &
+\cite{google_design_2026} &
+\cite{alibaba_landing_2026} &
+\cite{ibm_overview_2026} \\
 \hline
 
 \caption{Vergleich zentraler Landing-Zone Aspekte zwischen Cloud Providern}
 \label{tab:cloud-landing-zone-comparison}
 
 \end{longtable}
+
+Auch hier wird festgestellt, dass es durchaus Überschneidungen gibt bei den Komponenten welche die verschiedenen Anbieter als Teil einer \ac{lz} beschreiben. Es gibt jedoch auch Unterschiede in der Terminologie und der Art und Weise wie die Komponenten beschrieben werden.
+
 \end{landscape}
 
 \subsection{Synthese eines abstrahierten Metamodells}

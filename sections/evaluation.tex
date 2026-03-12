@@ -18,6 +18,8 @@ Einer der Hauptnutzen der Architektur ist es den Stand der regulatorischen Vorga
 
 Konkret werden Beziehungen zwischen den Controls und den Cloud-Ressourcen erstellt. Dafür werden zuerst die Controls und Polices identifiziert welche für eine \ac{lz}-Component wie auch eine Shared-Solution-Component relevant sind. Basierend auf diesem Mapping ist es anschliessend beim Provisionieren einer \ac{lz} möglich zu bestimmen welche Controls relevant sind. Mit diesem Schritt wird ebenfalls das Prinzip der Data Governance unterstützt, da die Aussage welche Art von Daten in der Foundation verarbeitet werden ebenfalls in das Asssessment einfliesst. Durch den Aufbau der Traceability-Relationship beim erstellen der Foundation kann letzlendlich nachvollzogen werden ob Controls welche an der Relation hängen umgsetzt werden.
 
+\hl{TODO Beurteilen der einzelnen Aspekte mit den Architekturprinzipien}
+
 \textbf{Abstraction and Plattform Independence}
 
 Die Foschungsfragen
@@ -27,18 +29,17 @@ Die Foschungsfragen
 \textbf{Security Architecture}
 
 
-
 % vvv Old stuff here vvvv
 
-Es ist wichtig, einen klaren Versionierungsprozess für die Profiles zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind. Dies könnte durch die Verwendung von IaC in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Profiles zu ermöglichen.
+% Es ist wichtig, einen klaren Versionierungsprozess für die Profiles zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind. Dies könnte durch die Verwendung von IaC in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Profiles zu ermöglichen.
 
-\textbf{Security}
+% \textbf{Security}
 
-Sicherheitsziele können in dieser Variante über Regulations, Controls und die zugehörigen Policies modelliert werden. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt jedoch weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion. Daher ist der direkte Beitrag dieser Architektur zur Security moderat.
+% Sicherheitsziele können in dieser Variante über Regulations, Controls und die zugehörigen Policies modelliert werden. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt jedoch weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion. Daher ist der direkte Beitrag dieser Architektur zur Security moderat.
 
-\textbf{Architectural Sustainability}
+% \textbf{Architectural Sustainability}
 
-Die Verwendung von Controls als Zwischenebene zwischen Regulations und Policies ermöglicht eine flexible Erweiterung der Architektur. Beispielsweise können bei Änderungen einer Regulation – etwa bei der Anpassung einer Vorgabe wie \ac{si001} – zusätzliche Controls ergänzt werden, ohne bestehende Zuordnungen vollständig neu modellieren zu müssen. Voraussetzung ist jedoch, dass sich neue regulatorische Anforderungen ebenfalls in Form einzelner Security Statements strukturieren lassen. Unter dieser Annahme bietet die Architektur eine gute langfristige Erweiterbarkeit.
+% Die Verwendung von Controls als Zwischenebene zwischen Regulations und Policies ermöglicht eine flexible Erweiterung der Architektur. Beispielsweise können bei Änderungen einer Regulation – etwa bei der Anpassung einer Vorgabe wie \ac{si001} – zusätzliche Controls ergänzt werden, ohne bestehende Zuordnungen vollständig neu modellieren zu müssen. Voraussetzung ist jedoch, dass sich neue regulatorische Anforderungen ebenfalls in Form einzelner Security Statements strukturieren lassen. Unter dieser Annahme bietet die Architektur eine gute langfristige Erweiterbarkeit.
 
 
 Für die verschiedenen Lösungsarchitekturen bzw Varianten in den Unterabschnitten werden hingegen Qualitäts-Attribute angeschaut, um eine Vergleichbarkeit zwischen den Varianten in den Unterabschnitten zu ermöglichen.

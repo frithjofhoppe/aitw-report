@@ -1,16 +1,7 @@
 \section{Evaluation der Traceability Architektur}
 \label{sec:evaluation}
 
-\hl{structure notes start}
-\begin{itemize}
-    \item WICHTIG Evaluation ob die verwendet Methodik und insbesonder der beschrieben forschungsmethodische Ansatz effektiv funkioniert haben oder nicht
-    \item Evaluation ob sich die Bewertung der Variante bewahrheitet hat. Wurden die Kriterien wie erwartet erfüllt? Findings?
-    \item Evaluation der nicht implementierten Varianten mit der Erfahrung von den implementierten Varianten
-    \item Zusammenfassung welche Variante am optimalsten ist für den Use-Case vom BIT
-\end{itemize}
-\hl{structure notes end}
-
-Die Evaluation der Traceability-Architektur soll aufzeigen, ob zum einem die vorgeschlagene Struktur der Traceability-Architektur (siehe \autoref{fig:traceability-architecure-artifacts}) selbst und zum anderem die Anwendung auf die \ac{lz}-Architektur (siehe \autoref{fig:landing-zone-architecture}) den Anforderungen gerecht wird. Die Überlegung hier ist, dass da die Traceability- an der \ac{lz}-Architektur anknüpft diese transitiv evaluiert werden kann. Für die Evaluation der Traceability-Architektur als solche werden Architekturprinzipien verwendet (siehe \autoref{sec:conformityprocess-architecture}). Da sich die Traceability-Architektur als Mittel auf \ac{ea} Ebene versteht soll durch die Konformität mit den Architekturprinzipien gezeigt werden, dass diese Architektur den Vorgaben des Kontext / der Anwendung entspricht. Die Prinzipien basieren teilweise auf dem Kontext vom \ac{bit}.
+Die Evaluation der Traceability-Architektur soll aufzeigen, ob zum einem die vorgeschlagene Struktur der Traceability-Architektur (siehe \autoref{fig:traceability-architecure-artifacts}) selbst und zum anderem die Anwendung auf die \ac{lz}-Architektur (siehe \autoref{fig:landing-zone-architecture}) den Anforderungen gerecht wird. Die Überlegung hier ist, dass da die Traceability- an der \ac{lz}-Architektur anknüpft diese transitiv evaluiert werden kann. Für die Evaluation der Traceability-Architektur als solche werden Architekturprinzipien verwendet (siehe \autoref{sec:conformityprocess-architecture}). Da sich die Traceability-Architektur als Mittel auf \ac{ea} Ebene versteht soll durch die Konformität mit den Architekturprinzipien gezeigt werden, dass diese Architektur den Vorgaben des Kontext / der Anwendung entspricht. Die Prinzipien basieren teilweise auf dem Kontext vom \ac{bit}. Für die verschiedenen Lösungsarchitekturen bzw Varianten in den Unterabschnitten werden hingegen Qualitäts-Attribute (siehe \autoref{sec:evaluationprocess-traceability-variants}) angeschaut. Qualitäts-Attribute erlaueben eine bessere Vergleichbarkeit zwischen den Varianten.
 
 \textbf{Governance}
 
@@ -24,25 +15,11 @@ Einer der Hauptvorraussetzungen welche bereits aus den Forschungsfragen hervorge
 
 \textbf{Structural Architecture}
 
-
+Eine Orientierung an den verschiedenen Akteuren aus den Use-Cases ist erforderlich um eine Orientierung an den Abläufen im Anwendungskontext zu gewährleisten. Die Architektur unterstützt das Prinzip der Serviceorientation in dem die Traceabilit-Architektur bereits nutzerzentriert gedacht wird. Die Betrachtung der Traceability-Relationsship ist aus der Sich des Compliance-Officer. Entsprechend sind auch die Informationen welche abgeleitet werden können governance-zentriert, um eine Auditierbarkeit zu erlauben. Die Nutzung einer einheitlichen Terminiologie ist vor allem beim Einführen von einer neuen Architektur wichtig, um unklare Verwendung von Begriffen zu vermeiden. Sowohl die Traceability- wie auch Landing-Zone Architektur bauen auf einem gemeinsamen Metamodell auf (siehe \autoref{fig:base-meta-modell}) und unterstützen dammit das Prinzip des Reference Model Principles. Um die genannte Auditierbarkeit den Nutzern verfügbar zu machen ist jedoch auch eine Automatisierung erforderlichen. Die Architektur unterstützt das Prinzip der Standardisation Automisation dadurch, dass die Traceability-Relationship maschinell lesbar ist und ausgewertet werden kann. Hierfür wird zwar kein bestehender Standard genutzt, durch dem Aufbau auf der Metamodell aber ein definiertes Vorgehen verwendet.
 
 \textbf{Security Architecture}
 
-
-% vvv Old stuff here vvvv
-
-% Es ist wichtig, einen klaren Versionierungsprozess für die Profiles zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind. Dies könnte durch die Verwendung von IaC in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Profiles zu ermöglichen.
-
-% \textbf{Security}
-
-% Sicherheitsziele können in dieser Variante über Regulations, Controls und die zugehörigen Policies modelliert werden. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt jedoch weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion. Daher ist der direkte Beitrag dieser Architektur zur Security moderat.
-
-% \textbf{Architectural Sustainability}
-
-% Die Verwendung von Controls als Zwischenebene zwischen Regulations und Policies ermöglicht eine flexible Erweiterung der Architektur. Beispielsweise können bei Änderungen einer Regulation – etwa bei der Anpassung einer Vorgabe wie \ac{si001} – zusätzliche Controls ergänzt werden, ohne bestehende Zuordnungen vollständig neu modellieren zu müssen. Voraussetzung ist jedoch, dass sich neue regulatorische Anforderungen ebenfalls in Form einzelner Security Statements strukturieren lassen. Unter dieser Annahme bietet die Architektur eine gute langfristige Erweiterbarkeit.
-
-
-Für die verschiedenen Lösungsarchitekturen bzw Varianten in den Unterabschnitten werden hingegen Qualitäts-Attribute angeschaut, um eine Vergleichbarkeit zwischen den Varianten in den Unterabschnitten zu ermöglichen.
+Minimale Berechtigungen für die Prüfung der Traceability-Relationship sind ideal, damit einzelne Akteure keine Administratorenprivilegien besitzen müssen um verschiedenen Ressourcen zu prüfen. Die Traceability-Architektur unterstützt das Prinzip des Security by Design, da unpersönliche managed identities verwendet werden können um potentielle Evidences über den Compliance-Stand generieren zu können. Architekturen selbst soll eine klaren Security-Intent besitzen um darauf basierend Security-Models aufbauen zu können. Die Traceability-Architektur unterstützt diese Prinzip des Security Reconfigurability Principle dadurch, dass der Scope von der Architektur selbst lediglich die Rekonstruktion von Beziehungen zwischen Ressourcen ist. Die Anwendung von schreibende Operationen ist von der Traceability-Architektur getrennt. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion.
 
 \subsection{Evaluation Variante 1}
 

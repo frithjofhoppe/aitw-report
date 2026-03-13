@@ -384,12 +384,12 @@ Zusätzlich zu den Trade-Off Dimensionen aus der Literatur werden die folgenden 
 
 Die Dimension des Kontextes und der Anwendung wie beschrieben in \autoref{tab:evaluation-dimensions} stellt keine eigentliche Bewertungsdimension, sondern eine Gewichtungsdimension dar. Dies bedeutet, dass diese Dimensionen keinen Anspruch auf Objektivität erhebt und sich nicht zwangsläufig mit bestehender Literatur deckt. In dieser Arbeit stellt dieser Kontext die definierten Use-Cases für das \ac{bit} in \autoref{sec:methodik-capability} dar.
 
-Für die Bewertung der 
+Für die Bewertung der \hl{(Ab-)Satz fertig schreiben)}
 
 \subsubsection{Konformitätsprozess für die Traceability-Architektur}
 \label{sec:conformityprocess-architecture}
 
-Mittels der Dimension \flqq Architekturprinzipien\frqq\ wird ein Konformitätsprozess definiert. Der Prozess wendet die verschiedenen Prinzipien auf die Traceability-Architektur an um eine Aussage über die Konformität machen zu können. Diese Aussage soll aufzeigen, dass die Struktur der Traceability-Architektur an sich den Anforderungen aus der Dimension \flqq Kontext und Anwendung\frqq\ entspricht.
+Mittels der Dimension \flqq Architekturprinzipien\frqq\ wird ein Konformitätsprozess definiert. Der Prozess wendet die verschiedenen Prinzipien auf die Traceability-Architektur an um eine Aussage über die Konformität machen zu können. Diese Aussage soll aufzeigen, dass die Struktur der Traceability-Architektur den Anforderungen aus der Dimension \flqq Kontext und Anwendung\frqq\ entspricht.
 
 \begin{align}
 P &= \{p_1, \dots, p_n\}  \\
@@ -418,7 +418,7 @@ Ein Architekturprinzip, welches mit $w_{\text{principles}}(p) = 0$ resultiert, g
 passed = \forall p \in P_{\text{selection}} \; ( s_{\text{principles}}(p) > 0 )
 \end{align}
 
-Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzipien in einem Mindestmass in $passed$ erfüllt werden.
+Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzipien in einem Mindestmass mit $passed$ erfüllt werden.
 
 \begin{longtable}{|
   L{1cm}|
@@ -439,7 +439,7 @@ Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzip
     \multicolumn{3}{|c|}{\textbf{Initialisierung}} \\
     \hline
 
-    1 & Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann. Dies können bspw. auf Use-Cases aufbauen &
+    1 & Definieren vom Kontext und darauf aufbauend Leitgedanken, mit welchen die Bestimmung von Parametern hergeleitet werden kann. Diese können bspw. auf Use-Cases aufbauen &
     Beschreibung des Kontextes
     \\
     \hline
@@ -452,7 +452,7 @@ Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzip
     \multicolumn{3}{|c|}{\textbf{Anwendung auf Traceability-Architektur}} \\
     \hline
 
-    3 & Bewerten der Traceability-Architektur basierend auf aller Architekturprinzipien in $P_{\text{selection}}$ mit den Punkten aus  $s_{\text{principles}}$  &
+    3 & Bewerten der Traceability-Architektur basierend auf allen Architekturprinzipien in $P_{\text{selection}}$ mit den Punkten aus  $s_{\text{principles}}$  &
     Bewertung $s_{\text{principles}}(p)$
     \\
     \hline
@@ -465,101 +465,95 @@ Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzip
     \label{tab:archicture-conformity-process}
 \end{longtable}
 
-Für die Anwendung des Konformitätsprozess wird in der Initialisierung folgenden Auswahl $P_{\text{selection}}$ vorgenommen. Diese werden in folgende Cluster gruppiert um bei der Beurteilung der Konformität verschiedenen Themen kombinieren zu können:
+Für die Anwendung des Konformitätsprozess wird in der Initialisierung nachfolgende Auswahl $P_{\text{selection}}$ vorgenommen. Diese werden in folgende Gruppen eingeordnet um bei der Beurteilung der Konformität verschiedene Themen kombinieren zu können:
 
 \begin{itemize}
-  \item Group 1: Governance-Driven Architecture
-  \item Group 2: Abstraction and Plattform Independence
-  \item Group 3: Structural Architecture
-  \item Group 4: Security Architecture
+  \item Gruppe 1: Governance-Driven Architecture
+  \item Gruppe 2: Abstraction and Plattform Independence
+  \item Gruppe 3: Structural Architecture
+  \item Gruppe 4: Security Architecture
 \end{itemize}
+\label{tab:selection-architecture-principles}
 
-\begin{longtable}{|
-  L{1cm}|
-  L{1.5cm}|
-  p{\dimexpr(\textwidth-5.5cm-10\tabcolsep-6\arrayrulewidth)/2\relax}|
-  p{\dimexpr(\textwidth-5.5cm-10\tabcolsep-6\arrayrulewidth)/2\relax}|
-  L{3cm}|
-}
-    \hline
-    \textbf{ID} & \textbf{Group} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
-    \hline
-    \endfirsthead
+\paragraph{Gruppe 1: Governance-Driven Architecture}
 
-    \hline
-    \textbf{ID} & \textbf{Group} & \textbf{Architekturprinzip} & \textbf{Begründung} & \textbf{Quelle} \\
-    \hline
-    \endhead
+\textbf{A1}: \textbf{Compliance with Law and Policies} \hypertarget{architecture-a1}{}
 
-    % Cluster 1 Governance driven architecture
-    A1 & 1 & \textbf{Compliance with Law and Policies} \hypertarget{architecture-a1}{} Wir bei BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschliesslich der Bundes-, Departements-, und Amts-Prinzipien &
-    Die Nachvollziehbarkeit und das Enforcement von Regulation ist einer der Beweggründe im Use-Case für die Traceability da & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+Wir beim BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschliesslich der Bundes-, Departements- und Amts-Prinzipien.
+\textbf{Begründung}: Die Nachvollziehbarkeit und das Enforcement von Regulationen ist einer der Beweggründe im Use-Case für die Traceability da
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
-    A2 & 1 & \textbf{Data Governance} \hypertarget{architecture-a2}{} Wir stellen sicher, dass wir als Leistungsbezüger \ac{bit}-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. & Für das Placement der Foundation ist die Berücksichtigung der Datenklassifizerung ausschlaggebend & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+\textbf{A2}: \textbf{Data Governance} \hypertarget{architecture-a2}{}
 
-    % Cluster 2 Abstraction and Platform indeendence
-    A3 & 2 & \textbf{Cloud Native by Default} \hypertarget{architecture-a3}{} Wir entwickeln und betreiben Cloud Native Anwendungen &
-    Der Lösungsansatz welcher durch Traceability-Architektur vorgeschlagen wird soll sich bereits möglichst nah am Umfeld orientieren in welchem es eingesetzt wird & Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
-    \\
-    \hline
+Wir stellen sicher, dass wir als Leistungsbezüger \ac{bit}-Daten mit klar definierten Regeln, Richtlinien und Praktiken verwalten, die die Qualität, Zugänglichkeit und Konsistenz der Daten gewährleisten. 
+\textbf{Begründung}: Für das Placement der Foundation ist die Berücksichtigung der Datenklassifizierung ausschlaggebend.
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
-    A4 & 2 & \textbf{Architectural Abstraction Principle}  \hypertarget{architecture-a4}{} Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden & 
-    Um den unterschiedlichen Implementationen der Cloud-Provider gerecht zu werden ist eine Abstraktion für die Traceability unerlässlich
-    & \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
-    \\
-    \hline
+\paragraph{Gruppe 2: Abstraction and Plattform Independence}
 
-    A5 & 2 & \textbf{Product Neutrality} \hypertarget{architecture-a5}{} Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte &
-    Herstellerspezifische Konzepte sollten bereits auf der Ebene der Architektur ausgeschlossen werden und höchstens konzeptionell betrachtet werden & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+\textbf{A3}: \textbf{Cloud Native by Default} \hypertarget{architecture-a3}{}
 
-    % Cluster 3 Structural Architecture Design
-    A6 & 3 & \textbf{Serviceorientation} \hypertarget{architecture-a6}{} Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen. &
-    Die Traceability-Architektur soll sich an den verschiedenen Akteuren aus dem Use-Case ausrichten um bereits eine optimale Ausrichtung auf potentielle Anwender zu gewährleisten & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+Wir entwickeln und betreiben Cloud Native Anwendungen
+\textbf{Begründung}: Der Lösungsansatz welcher durch Traceability-Architektur vorgeschlagen wird soll sich bereits möglichst nah am Umfeld orientieren in welchem es eingesetzt wird.
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
 
-    A7 & 3 & \textbf{Modular Decomposition Principle} \hypertarget{architecture-a7}{} Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern &
-    Analog wie die Product Neutrality sollen nicht nur Konzepte sondern auch die Komponenten der Architektur agnostisch gedacht werden. & \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
-    \\
-    \hline
+\textbf{A4}: \textbf{Architectural Abstraction Principle} \hypertarget{architecture-a4}{}
 
-    A8 & 3 & \textbf{Reference Model Principle}\hypertarget{architecture-a8}{} Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles} &
-    Traceability selbst ist beriets ein abstrakter Begriff. Ein Metamodell welche ein Mapping auf Cloud-Plattform spezifische Namings / Konzepte erlaubt ist deshalb relevant & \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
-    \\
-    \hline
+Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden.
+\textbf{Begründung}: Um den unterschiedlichen Implementationen der Cloud-Provider gerecht zu werden ist eine Abstraktion für die Traceability unerlässlich
+\textbf{Quelle}: \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
 
-    A9 & 3 & \textbf{Stanardisation Automaisation} \hypertarget{architecture-a9}{} Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten. &
-    Die Automatisierung der Compliance-Prüfung ist einer der Hauptversprechen der Traceability-Architektur. Der Aufbau einer möglichst standardisierten Struktur für die Abbildung der Traceability und Evidences ist deshalb relevant & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+\textbf{A5}: \textbf{Product Neutrality} \hypertarget{architecture-a5}{}
 
-    % Cluster 4 Security Architecture
-    
-    A10 & 4 & \textbf{Security by Design} \hypertarget{architecture-a10}{} Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern. &
-    Mit der Traceability selbst soll die Durchsetzbarkeit der Regulation wie \ac{si001} erhöht werden. Dies gilt auch für die Konzeption der Traceability-Architekur als solche & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte
+\textbf{Begründung}: Herstellerspezifische Konzepte sollten bereits auf der Ebene der Architektur ausgeschlossen werden und höchstens konzeptionell betrachtet werden
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
-    A11 & 4 & \textbf{Defense-In-Depth} \hypertarget{architecture-a11}{} Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen. &
-    Weil es sich bei der Traceability-Architektur selbst um ein Werkzeug für Audits der Foundation handelt, sind Sicherheitsüberlegung noch wichtiger & Auszug aus \autoref{fig:bit-architecture-principles}
-    \\
-    \hline
+\paragraph{Gruppe 3: Structural Architecture}
 
-    A12 & 4 & \textbf{Security Reconfigurability Principle} \hypertarget{architecture-a12}{} Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles} & 
-    Die Annahme auf welcher die Traceability-Architektur strukturiert sowie weitere Konzepte erarbeitet werden sollte plattform-übergreifend anwendbar sein & \cite{hajjat_cloudward_2010}
-    \\
-    \hline
+\textbf{A6}: \textbf{Serviceorientation} \hypertarget{architecture-a6}{}
 
-    \caption{Auswahl an Architekturprinzipien}
-    \label{tab:selection-architecture-principles}
-\end{longtable}
+Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstleistungen basieren, welche die realen Geschäftsaktivitäten widerspiegeln und die Geschäftsprozesse des Unternehmens (oder zwischen Unternehmen) umfassen.
+\textbf{Begründung}: Die Traceability-Architektur soll sich an den verschiedenen Akteuren aus dem Use-Case ausrichten, um bereits eine optimale Ausrichtung auf potenzielle Anwender zu gewährleisten.
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
+\textbf{A7}: \textbf{Modular Decomposition Principle} \hypertarget{architecture-a7}{}
+
+Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern.
+\textbf{Begründung}: Analog wie die Product Neutrality sollen nicht nur Konzepte sondern auch die Komponenten der Architektur agnostisch gedacht werden.
+\textbf{Quelle}: \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
+
+\textbf{A8}: \textbf{Reference Model Principle}\hypertarget{architecture-a8}{}
+
+Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles}.
+\textbf{Begründung}: Traceability selbst ist beriets ein abstrakter Begriff. Ein Metamodell welche ein Mapping auf Cloud-Plattform spezifische Namings / Konzepte erlaubt ist deshalb relevant.
+\textbf{Quelle}: \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
+
+\textbf{A9}: \textbf{Standardisation Automation} \hypertarget{architecture-a9}{}
+
+Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu standardisieren und die Prozesse so weit wie möglich zu automatisieren. Dieser Ansatz gilt für Geschäftsprozesse, Datenstrukturen, Daten, Anwendungen, Anwendungskomponenten und Infrastrukturkomponenten.
+\textbf{Begründung}: Die Automatisierung der Compliance-Prüfung ist einer der Hauptversprechen der Traceability-Architektur. Der Aufbau einer möglichst standardisierten Struktur für die Abbildung der Traceability und Evidences ist deshalb relevant.
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
+
+\paragraph{Gruppe 4: Security Architecture}
+
+\textbf{A10}: \textbf{Security by Design} \hypertarget{architecture-a10}{}
+
+Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern.
+\textbf{Begründung}: Mit der Traceability selbst soll die Durchsetzbarkeit der Regulation wie \ac{si001} erhöht werden. Dies gilt auch für die Konzeption der Traceability-Architekur als solche
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
+
+\textbf{A11}: \textbf{Defense-In-Depth} \hypertarget{architecture-a11}{}
+
+Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen.
+\textbf{Begründung}: Weil es sich bei der Traceability-Architektur selbst um ein Werkzeug für Audits der Foundation handelt, sind Sicherheitsüberlegung noch wichtiger
+\textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
+
+\textbf{A12}: \textbf{Security Reconfigurability Principle} \hypertarget{architecture-a12}{}
+
+Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles}
+\textbf{Begründung}: Die Annahme auf welcher die Traceability-Architektur strukturiert sowie weitere Konzepte erarbeitet werden sollte plattform-übergreifend anwendbar sein
+\textbf{Quelle}: \cite{hajjat_cloudward_2010}
 
 \subsubsection{Evaluationsprozess für die Varianten der Traceability-Architektur}
 \label{sec:evaluationprocess-traceability-variants}
@@ -687,12 +681,12 @@ Für die Anwendung des Evaluationsprozesses wird in der Initialisierung folgende
     \hline
 
     Q4 & 1 & \textbf{Automatibility} \hypertarget{quality-q4}{} Fähigkeit, dass Traceability-Beziehungen, Prüfungen und Nachweise automatisch erzeugt werden können. Dies beinhaltet ebenfalls die Zuweisung der Controls &
-    Die Fähigkeit zum Automatisieren ist einer der Hauptgründe für die Relevanz der Traceability & \hl{Quellen ergänzen} Beschreibung des Kontextes
+    Die Fähigkeit der Automatisierung ist einer der Hauptgründe für die Relevanz der Traceability & \hl{Quellen ergänzen} Beschreibung des Kontextes
     \\
     \hline
 
     Q5 & 0.8 & \textbf{Maintainability} \hypertarget{quality-q5}{} Aufwand die Traceability-Modelle, Beziehungen und Controls aktuell zu halten &
-    Um eine langfristige Nutzung der Traceability-Architektur zu erlauben ist ein geringer Maintenance Aufwand wichtig. Durch diese wird bspw die Aktualität der Traceability-Beziehungen ermöglicht & Beschreibung des Kontextes
+    Um eine langfristige Nutzung der Traceability-Architektur zu erlauben ist ein geringer Maintenance Aufwand wichtig. Durch diese wird bspw. die Aktualität der Traceability-Beziehungen ermöglicht & Beschreibung des Kontextes
     \\
     \hline
 
@@ -752,3 +746,4 @@ Ebenfalls wird eine Auswahl and Trade-Off-Kriterien $T_{\text{selection}}$ vorge
     \caption{Auswahl an Trade-Off Kriterien}
     \label{tab:selection-tradeoff}
 \end{longtable}
+ \hl{ggf hier info}

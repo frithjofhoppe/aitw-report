@@ -5,12 +5,12 @@
 # score  = s_quality(q)
 
 quality_attributes = {
-    "Performance": (0.3, 1),
-    "Portability": (1, 3),
+    "Performance": (0.3, 4),
+    "Portability": (1, 1),
     "Auditability": (0.6, 2),
-    "Automatibility": (1, 2),
-    "Maintainability": (0.8, 1),
-    "Adaptability": (0.6, 3),
+    "Automatibility": (1, 4),
+    "Maintainability": (0.8, 2),
+    "Adaptability": (0.6, 1),
     "Complexity": (0.8, 4),
     "Traceability Strength": (1, 3),
 }

@@ -1,54 +1,68 @@
 \section{Diskussion}
 \label{sec:discussion}
 
-
+Die Diskussion setzt die Ergebnisse der Traceabililty-Architektur Evaluation ins Verhältnis und gibt anschliessend eine Empfehlung für den Use-Case Kontext vom \ac{bit} eine Empfehlung ab. Mit der Reflexion des Architektur-Ansatzes wird angeschaut, ob die Architektur auch ausserhalb vom Kontext angewendet werden. Die Reflexion der Methodik betrachtet, ob der Evaluationsansatz welcher vorgeschlagen wird generell anwendbar ist. Die Limitationen der Arbeit sollen die vorhergehenden Kapitel bewusst transparent beurteilen.
 
 \subsection{Interpretation der Evaluationsergebnisse}
 
-\begin{itemize}
-    \item Einordnung der erzielten Scores und deren Bedeutung für Architekturentscheidungen im Landing-Zone-Kontext
-    \item Identifikation zentraler Trade-offs zwischen den Varianten (z. B. Traceability-Klarheit vs. Engineering-Nähe)
-    \item Bewertung, ob sich theoretische Erwartungen im Proof of Concept bestätigt haben
-    \item Diskussion überraschender Ergebnisse oder Abweichungen zwischen konzeptioneller Bewertung und praktischer Umsetzung
-    \item Reflexion der Unterschiede zwischen implementierten und nicht implementierten Varianten basierend auf PoC-Erfahrungen
-    \item Einordnung der Ergebnisse im Hinblick auf das übergeordnete Ziel der Arbeit
-\end{itemize}
+% \begin{itemize}
+%     \item Einordnung der erzielten Scores und deren Bedeutung für Architekturentscheidungen im Landing-Zone-Kontext
+%     \item Identifikation zentraler Trade-offs zwischen den Varianten (z. B. Traceability-Klarheit vs. Engineering-Nähe)
+%     \item Bewertung, ob sich theoretische Erwartungen im Proof of Concept bestätigt haben
+%     \item Diskussion überraschender Ergebnisse oder Abweichungen zwischen konzeptioneller Bewertung und praktischer Umsetzung
+%     \item Reflexion der Unterschiede zwischen implementierten und nicht implementierten Varianten basierend auf PoC-Erfahrungen
+%     \item Einordnung der Ergebnisse im Hinblick auf das übergeordnete Ziel der Arbeit
+% \end{itemize}
+
+Die Scores der verschiedenen Traceability-Architektur Varianten mit control centric: 3.18, component profiles: 3.016, category centric: 2.508 und provider native: 2.59 zeigen auf, dass eine zusätzliche Ebene der Abstraktion nicht zwangsläufig zu einem besseren Ergebnis führt. Dies erstaunt auf den ersten Blick, da einer der Grundideen der Traceabililty-Architektur als solche ist eine von den Cloud-Plattformen unabhängigen Vorschlage zu haben. Gleichwohl schneidet die provider-native Variante besser ab. Eine Begründung hier könnte sein, dass die Wahl der Abstraktion bewusst gewählt werden muss, um einen effektiven Mehrwert zu generieren. Man denke hier an die sogenannte premature generalization in der Programmierung welche in Antizipation von anderen Anforderungen Strukturen einführt, welche sich womöglich am Ende nicht bewahrtheiten. Die Evaluation der provider-native mit den anderen Varianten zeigt, dass vor allem der negative Einfluss auf die Performance und die Tatsache dass die relative Complexity bewertet werden für einen provider-nahen Ansatz sprechen. Anderseits führt ein provider-native Ansatz zu einer schlechten Maintainability in Bezug auf die Aufrechterhaltung einer Vergleichbarkeit zwischen den Cloud-Plattformen. Es zeigt sich somit, dass es relevant ist die Qualitäts-Attribute im Kontext aufzuwiegen für den sie relevant sind.
+
+Die bewerteten Trade-Off Dimensionen zeigen ein ähnliches Bild. Beim Vergleich der expliziten vs impliziten Modellierung der Traceability zusammen mit der Traceability Depth vs Simplicity kommt ein ähnliches Bild hervor. Die implizit Ableitung welche häufig mit einer Model Simplicity der Traceability-Relationship selbst einher geht ist ausreichend wenn bspw leidlich eine einfache Aussage ob der Compliance gemacht werden soll. Denkbar sind hier die bestehenden Compliance Frameworks und Rule-Sets welche bspw. im Azure Defener zur Verfügung stehen. Bei einer Anwendung dieser vordefinierten Sets ist vielleicht weniger das Verständnis der Anwendung als mehr die Anwendung ans sicht relevant, da das wie von der Cloud-Plattform selbst garantiert wird. Auf der Andere Seite der ist die Ausprägung der expliziten Trace Modellierung relevant, wenn bspw eigene Regulation modelliert werden. Bei dieser Modellierung muss der Compliance-Officer detaillierter nachvollziehen werden können wie ein Assessment zu stande kommt.
+
+Für eine Beurteilung der Bewertung selbst der verschiedenen Varianten wird jene der Variante component centric genommen, da sich der \ac{poc} an dieser Variante ortientiert. Die Bewrtung der Performance zeigt, dass die Prüfung vom Compliance-Status von einzelnen Policies möglich ist, aber bei hoher Anzahl an Policies ein spürbarer Delay entsteht, da einzelne API Calls erforderlich sind. Basierend auf dieser Erfahrung scheinen die Bewertnug bei den anderen Varianten, welche eine Abstraktion verwenden, ebenfalls realistisch. Für die Maintainability hingegen ist der Wert vom \ac{poc} mit Vorsicht zu betrachten, da der gesamte Aspekt der Modellierung nicht auf einem production-ready Niveau betrachtet werden. Konrekt werden im \ac{poc} nur manuell Policies zu den Component-Profiles gemapped. An der Stelle fehlt jedoch die Bewertung darüber wie dies large-scale funktioieren würde. Der vorgeschlagende Ansatz der KI-basiereten Zuweisung scheint realisitisch, muss jedoch separat betrachtet werden. Diese Art der Zuweisung kann wiederum Implikationen auf die Maintainability haben.
+
+Aussagen über eine konrekte \ac{lz} Architektur selbst sind basierend auf der Traceability- Architektur Bewertung nur beschränkt möglich. Ausführung zur Architektur selbst werden in \autoref{sec:discussion-architecture} gemacht
 
 \subsection{Empfehlung für den BIT Use-Case}
+\label{sec:discussion-bit}
 
-\begin{itemize}
-    \item Begründete Empfehlung einer Architekturvariante unter Berücksichtigung spezifischer BIT-Rahmenbedingungen
-    \item Diskussion der Kontextabhängigkeit der Empfehlung (z. B. Governance-Reifegrad, organisatorische Struktur, Skalierungsbedarf)
-    \item Einordnung möglicher Risiken und Herausforderungen bei praktischer Einführung
-    \item Darstellung von Szenarien, in denen alternative Varianten vorzuziehen sein könnten
-\end{itemize}
+% \begin{itemize}
+%     \item Begründete Empfehlung einer Architekturvariante unter Berücksichtigung spezifischer BIT-Rahmenbedingungen
+%     \item Diskussion der Kontextabhängigkeit der Empfehlung (z. B. Governance-Reifegrad, organisatorische Struktur, Skalierungsbedarf)
+%     \item Einordnung möglicher Risiken und Herausforderungen bei praktischer Einführung
+%     \item Darstellung von Szenarien, in denen alternative Varianten vorzuziehen sein könnten
+% \end{itemize}
+
+
 
 \subsection{Reflexion des Architektur-Ansatzes}
+\label{sec:discussion-architecture}
 
-\begin{itemize}
-    \item Diskussion der Generalisierbarkeit auf andere Organisationen, Cloud-Provider oder Governance-Modelle
-    \item Übertragbarkeit der Strukturierungsprinzipien auf weitere Landing-Zone-Capabilities
-    \item Bewertung des Verhältnisses zwischen architektonischer Klarheit und zusätzlicher struktureller Komplexität
-    \item Reflexion impliziter Annahmen (z. B. zentrale Governance-Strukturen, standardisierte Landing Zones)
-    \item Betrachtung der Skalierbarkeit und Evolvierbarkeit bei wachsender Architekturkomplexität
-    \item Diskussion praktischer Umsetzbarkeit und organisatorischer Auswirkungen
-\end{itemize}
+% \begin{itemize}
+%     \item Diskussion der Generalisierbarkeit auf andere Organisationen, Cloud-Provider oder Governance-Modelle
+%     \item Übertragbarkeit der Strukturierungsprinzipien auf weitere Landing-Zone-Capabilities
+%     \item Bewertung des Verhältnisses zwischen architektonischer Klarheit und zusätzlicher struktureller Komplexität
+%     \item Reflexion impliziter Annahmen (z. B. zentrale Governance-Strukturen, standardisierte Landing Zones)
+%     \item Betrachtung der Skalierbarkeit und Evolvierbarkeit bei wachsender Architekturkomplexität
+%     \item Diskussion praktischer Umsetzbarkeit und organisatorischer Auswirkungen
+% \end{itemize}
 
 \subsection{Reflexion der Evaluationsmethodik}
+\label{sec:discussion-methodik}
 
-\begin{itemize}
-    \item Bewertung der Eignung des Bewertungsmodells zur strukturierten Gegenüberstellung von Architekturvarianten
-    \item Diskussion der Subjektivität bei Auswahl und Gewichtung von Qualitätsattributen und Architekturprinzipien
-    \item Sensitivität der Ergebnisse gegenüber alternativen Gewichtungen
-    \item Aussagekraft der Ergebnisse aufgrund begrenzter empirischer Validierung
-    \item Einordnung des methodischen Beitrags der Arbeit im EA-Kontext
-\end{itemize}
+% \begin{itemize}
+%     \item Bewertung der Eignung des Bewertungsmodells zur strukturierten Gegenüberstellung von Architekturvarianten
+%     \item Diskussion der Subjektivität bei Auswahl und Gewichtung von Qualitätsattributen und Architekturprinzipien
+%     \item Sensitivität der Ergebnisse gegenüber alternativen Gewichtungen
+%     \item Aussagekraft der Ergebnisse aufgrund begrenzter empirischer Validierung
+%     \item Einordnung des methodischen Beitrags der Arbeit im EA-Kontext
+% \end{itemize}
 
 \subsection{Limitationen der Arbeit}
+\label{sec:discussion-limitation}
 
-\begin{itemize}
-    \item Fokus auf eine exemplarische Capability innerhalb der Landing-Zone-Architektur
-    \item Evaluation nur im Rahmen eines begrenzten Proof of Concept
-    \item Fehlende Betrachtung langfristiger Betriebs-, Kosten- und Organisationsaspekte
-    \item Eingeschränkte empirische Validierung
-\end{itemize}
+% \begin{itemize}
+%     \item Fokus auf eine exemplarische Capability innerhalb der Landing-Zone-Architektur
+%     \item Evaluation nur im Rahmen eines begrenzten Proof of Concept
+%     \item Fehlende Betrachtung langfristiger Betriebs-, Kosten- und Organisationsaspekte
+%     \item Eingeschränkte empirische Validierung
+% \end{itemize}

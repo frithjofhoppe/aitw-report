@@ -1,34 +1,49 @@
 \section{Abschluss}
 \label{sec:abschluss}
 
-\subsection{Zusammenfassung der Ergebnisse}
+% \begin{itemize}
+%     \item Rekapitulation der Zielsetzung der Arbeit
+%     \item Synthese der zentralen Erkenntnisse aus Architekturkonzeption, Proof of Concept und Evaluation
+%     \item Gesamtbewertung der untersuchten Architekturvarianten
+% \end{itemize}
 
-\begin{itemize}
-    \item Rekapitulation der Zielsetzung der Arbeit
-    \item Synthese der zentralen Erkenntnisse aus Architekturkonzeption, Proof of Concept und Evaluation
-    \item Gesamtbewertung der untersuchten Architekturvarianten
-\end{itemize}
+
+Das Ziel dieser Arbeit ist es die relevanten Komponenten sowie eine beispielhafte Struktur einer ac{lz} aufzuzeigen. Die Ableitung von einer groben \ac{lz}-Architektur zeigen, dass eine Orientierung an dem Business-Need ein wichtiger Faktor ist, um nutzbare Architekturen zu erhalten. Dafür wird in dieser Arbeit innerhalb des Konzepts einer \ac{ea} eine Capability-Map erstellt. Mit einem Teil der Capabilities wird anschlissend eine Traceability-Architektur als mögliche Ausprägung einer \ac{lz}-Architektur formuliert und evaluiert. Die Evaluation zeigt, dass basierend auf Kriterien wie Architekturprinzipien, Qualitäts-Atribute sowie Trade-Off Dimensionen sich die Variante der Comomponent-centric Traceability-Architektur Variante für den Use-Case des \ac{bit} behauptet.
 
 \subsection{Beantwortung der Forschungsfragen}
 
-\begin{itemize}
-    \item Explizite Beantwortung der Forschungsfragen auf Basis der erzielten Ergebnisse
-    \item Einordnung der wichtigsten Architekturprinzipien für strukturierte Landing-Zone-Architekturen
-\end{itemize}
+% \begin{itemize}
+%     \item Explizite Beantwortung der Forschungsfragen auf Basis der erzielten Ergebnisse
+%     \item Einordnung der wichtigsten Architekturprinzipien für strukturierte Landing-Zone-Architekturen
+% \end{itemize}
+
+Als Zusammenfassung der Evaluation wie Diskussion werden die relevanten Inhalte für die anfängliche definierten Forschungsfragen formuliert.
+
+\textit{Welche Komponenten machen eine Landingzone für eine Hybrid-Multi-Cloud-Umgebung aus?}
+
+Die \ac{lz} wird in dieser Arbeit als technischen Gerüst verstanden, welches die verschiedenen Bedürfnisse des Business hinsichtlihch einer einheitlichen Governance implementiert. Die Komponenten und der Scope dieser in der \ac{lz} werden somit durch das Business definiert. Diese Arbeit verwendet dafür eine Capapbility-Map (siehe \fullref{fig:reduced-capabiliy-map}) und definierte folgende Komponenten: Identify and Access Governance, Security Governacne, Policy and Compliance Lifecylce Governance, Network and Connectivity, Data and Secret Governacne, Observabiliy and Operational Insight Goverance sowie Cost Governance. Basierend auf diese Komponenten lässt sich eine \ac{lz}-Architektur und somit \ac{lz} modellieren.
+
+\textit{Wie sieht eine geeignete technische Architektur einer Landingzone für eine Hybrid-Multi-Cloud-Umgebung aus und was muss sie erfüllen?}
+
+Eine \ac{lz}-Architektur auf \ac{ea}-Ebene muss für die multi-Cloud Umgebung gewisse Architekturprinzipien erfüllen. Diese fokussieren sich vom Charakter her auf eine plattformunabhängig und vor allem auf eine Konformität mit der \ac{ea} der Organisation für welche die \ac{lz}-Architektur entworfen wird. In dieser Arbeit werden die Prinzipen für den Use-Case des \ac{bit} in die folgenden Kategorien unerteil: Governacne (mit Compliance with Law and Policies, Data Governance), Abstraction and Plattform Independency (mit Cloud Native by Default, Architectural Abstraction Prinipal, Product Neutrality), Structural Architecture (mit Serviceorientation, Modular Decomposition Principle, Reference Model Principle, Standardisation Automation) und Security-Architecture (Security by Design, Defense-In-Deth, Security Reconfigurability Principle) unterteilt. Basierend auf diesen Prinzipen wird die Grundarchitektur für eine \ac{lz} definiert (siehe Modellierung mit ArchiMate in \autoref{fig:landing-zone-architecture}). In dieser Architektur wird der \ac{lz} Service als Technology Services modelliert, welche thematisch einer der Capabilities zusammenfasst. Die Ausprägungen hiervon sind die \ac{lz}-Components wie in der ersten Forschungsfrage beschrieben. \ac{lz}-Components können dabei ebenfalls als shared component vorkommen. Die Implementation auf den Plattformen wird durch die jeweiligen Plattform Components dargestellt.
 
 \subsection{Beitrag der Arbeit}
 
-\begin{itemize}
-    \item Konzeptioneller Beitrag zur Strukturierung von Landing-Zone-Architekturen im EA-Kontext
-    \item Methodischer Beitrag zur Bewertung von Architekturvarianten
-    \item Praktischer Beitrag durch Umsetzung eines Proof of Concept
-\end{itemize}
+% \begin{itemize}
+%     \item Konzeptioneller Beitrag zur Strukturierung von Landing-Zone-Architekturen im EA-Kontext
+%     \item Methodischer Beitrag zur Bewertung von Architekturvarianten
+%     \item Praktischer Beitrag durch Umsetzung eines Proof of Concept
+% \end{itemize}
+
+Diese Arbeit schlägt eine \ac{lz}-Architektur auf \ac{ea}-Ebene vor und zeigt mit einer Traceability-Architecture auf, wie eine Teil-Implementaiton einer \ac{lz} aussehen könnten. Für die allgemeine Ausarbeitung einer \ac{lz} propagiert diese Arbeit einen business-driven Ansatz bei dem mittels einer Capability-Map einzelnen \ac{lz} Komponenten abgeleitet werden.
 
 \subsection{Ausblick}
 
-\begin{itemize}
-    \item Weiterführende Evaluation weiterer Capabilities
-    \item Anwendung des Ansatzes in realen Transformationsprojekten
-    \item Untersuchung organisatorischer und wirtschaftlicher Auswirkungen
-    \item Weiterentwicklung von Tooling zur Architektur-Governance
-\end{itemize}
+% \begin{itemize}
+%     \item Weiterführende Evaluation weiterer Capabilities
+%     \item Anwendung des Ansatzes in realen Transformationsprojekten
+%     \item Untersuchung organisatorischer und wirtschaftlicher Auswirkungen
+%     \item Weiterentwicklung von Tooling zur Architektur-Governance
+% \end{itemize}
+
+In dieser Arbeit wird sich auf die Architektur einer \ac{lz} auf der Ebene der \ac{ea} auseinandergesetzt. Für eine direkte Anwendung ist jedoch eine detaillierte Ausarbeitung in Form von Lösungsarchitekturen und Implementation nötig. Analog zu der Traceability-Architektur könnte man somit mit den verbleibenden Capabilites neue Artefakte ableiten um implementieren. Insbsondere durch die Anwendung in einer Unternehmensungebung liessen sich somit Erkennntnisse sammeln, wie und ob der vorgeschlagenen Ansatz in der Realität funktioniert. Des Weiteren kann die Auswahl von geeigneten Architekturprinzipien für die \ac{lz} durch einen eher empirischen Ansatz gehärtet werden.

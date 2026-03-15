@@ -480,7 +480,7 @@ Für die Anwendung des Konformitätsprozess wird in der Initialisierung nachfolg
 \textbf{A1}: \textbf{Compliance with Law and Policies} \hypertarget{architecture-a1}{}
 
 Wir beim BIT stellen sicher, dass wir die Gesetze, Vorschriften und Richtlinien einhalten, einschliesslich der Bundes-, Departements- und Amts-Prinzipien.
-\textbf{Begründung}: Die Nachvollziehbarkeit und das Enforcement von Regulationen ist einer der Beweggründe im Use-Case für die Traceability da
+\textbf{Begründung}: Die Nachvollziehbarkeit und das Enforcement von Regulationen ist einer der Beweggründe im Use-Case für die Traceability.
 \textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
 \textbf{A2}: \textbf{Data Governance} \hypertarget{architecture-a2}{}
@@ -491,22 +491,22 @@ Wir stellen sicher, dass wir als Leistungsbezüger \ac{bit}-Daten mit klar defin
 
 \paragraph{Gruppe 2: Abstraction and Plattform Independence}
 
-\textbf{A3}: \textbf{Cloud Native by Default} \hypertarget{architecture-a3}{}
+\textbf{A3}: \textbf{Cloud-native by Default} \hypertarget{architecture-a3}{}
 
-Wir entwickeln und betreiben Cloud Native Anwendungen
+Wir entwickeln und betreiben Cloud-native Anwendungen.
 \textbf{Begründung}: Der Lösungsansatz welcher durch Traceability-Architektur vorgeschlagen wird soll sich bereits möglichst nah am Umfeld orientieren in welchem es eingesetzt wird.
 \textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}, sowie \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
 
 \textbf{A4}: \textbf{Architectural Abstraction Principle} \hypertarget{architecture-a4}{}
 
-Architektur soll mittels Abstraktion businessspezifische Elemente von cloudspezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie Containerisierung und plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden.
-\textbf{Begründung}: Um den unterschiedlichen Implementationen der Cloud-Provider gerecht zu werden ist eine Abstraktion für die Traceability unerlässlich
+Architektur soll mittels Abstraktion Business-spezifische Elemente von Cloud-spezifischen Implementationen loslösen. Durch konkrete technologische Elemente wie bspw. Containerisierung und Plattform-agnostische Interfaces kann somit eine Portabilität erreicht werden.
+\textbf{Begründung}: Um den unterschiedlichen Implementationen der Cloud-Provider gerecht zu werden ist eine Abstraktion für die Traceability unerlässlich.
 \textbf{Quelle}: \cite{srikanth_gurram_multi-cloud_2025}, \cite{erl_cloud_2013}
 
 \textbf{A5}: \textbf{Product Neutrality} \hypertarget{architecture-a5}{}
 
-Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte
-\textbf{Begründung}: Herstellerspezifische Konzepte sollten bereits auf der Ebene der Architektur ausgeschlossen werden und höchstens konzeptionell betrachtet werden
+Die Sicherheitsvorgaben im BIT adressieren Anforderungen und keine Herstellerprodukte.
+\textbf{Begründung}: Herstellerspezifische Konzepte sollten bereits auf der Ebene der Architektur ausgeschlossen werden und höchstens konzeptionell betrachtet werden.
 \textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
 \paragraph{Gruppe 3: Structural Architecture}
@@ -520,13 +520,13 @@ Wir beim BIT stellen sicher, dass unsere Lösungen auf einem Design von Dienstle
 \textbf{A7}: \textbf{Modular Decomposition Principle} \hypertarget{architecture-a7}{}
 
 Architektur soll Zerlegung von Cloud-Stacks in Komponenten gewährleisten. Dies soll eine Nutzung von Funktionen über Cloud-Tiers hinweg ermöglichen und eine starre Bindung an einen Anbieter verhindern.
-\textbf{Begründung}: Analog wie die Product Neutrality sollen nicht nur Konzepte sondern auch die Komponenten der Architektur agnostisch gedacht werden.
+\textbf{Begründung}: Analog wie die Product Neutrality sollen nicht nur Konzepte, sondern auch die Komponenten der Architektur agnostisch gedacht werden.
 \textbf{Quelle}: \cite{papazoglou_cloud_2012}, \cite{tritsiniotis_get_2016}
 
 \textbf{A8}: \textbf{Reference Model Principle}\hypertarget{architecture-a8}{}
 
-Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien siehe \autoref{tab:architecture-principles}.
-\textbf{Begründung}: Traceability selbst ist beriets ein abstrakter Begriff. Ein Metamodell welche ein Mapping auf Cloud-Plattform spezifische Namings / Konzepte erlaubt ist deshalb relevant.
+Architektur soll auf Referenzmodellen aufbauen. Diese Modelle bilden eine gemeinsame Sprache für die architektonische Integrität und dienen als Leitfaden für die Identifizierung, Klassifizierung und Einführung von Technologien, siehe \autoref{tab:architecture-principles}.
+\textbf{Begründung}: Traceability selbst ist bereits ein abstrakter Begriff. Ein Metamodell welche ein Mapping auf Cloud-Plattform spezifische Namen und Konzepte ermöglicht ist deshalb relevant.
 \textbf{Quelle}: \cite{kratzke_clouns_2016}, \cite{zhang_ccoa_2009}
 
 \textbf{A9}: \textbf{Standardisation Automation} \hypertarget{architecture-a9}{}
@@ -539,20 +539,20 @@ Wir streben danach, alle Bausteine unserer Architekturen so weit wie möglich zu
 
 \textbf{A10}: \textbf{Security by Design} \hypertarget{architecture-a10}{}
 
-Sicherheitsanforderungen an Software und Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern.
-\textbf{Begründung}: Mit der Traceability selbst soll die Durchsetzbarkeit der Regulation wie \ac{si001} erhöht werden. Dies gilt auch für die Konzeption der Traceability-Architekur als solche
+Sicherheitsanforderungen an Software sowie Hardware werden bereits in der Entwicklung berücksichtigt, um spätere Schwachstellen in der Sicherheit zu verhindern.
+\textbf{Begründung}: Mit der Traceability selbst soll die Durchsetzbarkeit der Regulation wie \ac{si001} erhöht werden. Dies gilt auch für die Konzeption der Traceability-Architekur als solche.
 \textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
 \textbf{A11}: \textbf{Defense-In-Depth} \hypertarget{architecture-a11}{}
 
 Es braucht mehrere komplementäre Massnahmen aus den Bereichen Personal, Technologie und Betrieb um eine Information effektiv zu schützen.
-\textbf{Begründung}: Weil es sich bei der Traceability-Architektur selbst um ein Werkzeug für Audits der Foundation handelt, sind Sicherheitsüberlegung noch wichtiger
+\textbf{Begründung}: Da es sich bei der Traceability-Architektur selbst um ein Werkzeug für Audits der Foundations handelt, sind Sicherheitsüberlegung noch wichtiger.
 \textbf{Quelle}: Auszug aus \autoref{fig:bit-architecture-principles}
 
 \textbf{A12}: \textbf{Security Reconfigurability Principle} \hypertarget{architecture-a12}{}
 
-Security Architektur soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung pro Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren, stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind siehe \autoref{tab:architecture-principles}
-\textbf{Begründung}: Die Annahme auf welcher die Traceability-Architektur strukturiert sowie weitere Konzepte erarbeitet werden sollte plattform-übergreifend anwendbar sein
+Security soll auf einer allgemeingültigen Security-Absicht aufbauen. Dieses dient wiederum als Ausgangslage für konkrete Security Models und deren spezifische Umsetzung auf den Cloud-Plattformen. Absichten und Models, welche bereits zu stark auf eine Plattform fokussieren stellen das Risiko dar, dass sie nicht auf einer anderen Cloud-Plattform anwendbar sind, siehe \autoref{tab:architecture-principles}.
+\textbf{Begründung}: Die Annahmen auf welcher die Traceability-Architektur strukturiert sowie weitere Konzepte erarbeitet werden sollte Plattform-übergreifend anwendbar sein.
 \textbf{Quelle}: \cite{hajjat_cloudward_2010}
 
 \subsubsection{Evaluationsprozess für die Varianten der Traceability-Architektur}

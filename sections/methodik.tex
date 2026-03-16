@@ -232,9 +232,6 @@ Auch hier wird festgestellt, dass es durchaus Überschneidungen gibt bei den Kom
 \subsection{Synthese eines abstrahierten Metamodells}
 \label{sec:methodik-metamodell}
 
-\hl{TODO: Metamodell definieren basierend auf Fachbegriffen und Domänenbegriffen. Da nicht einheitlich wird für Arbeit ein eigenes Metamodell definiert um eine klare Grundlage zu schaffen bla usw.}
-\hl{Definition der Landing zone hier muss übereinstimmen mit der Formulierung im Abschluss} siehe \autoref{sec:answer-research-question}
-
 Da die Definition von \ac{lz} bei den verschiedenen Anbietern teilweise unterschiedlich ist, fehlt als Grundlage noch immer eine definitive einheitliche Terminologie und Struktur, um die verschiedenen Komponenten einer \ac{lz} zu beschreiben. Es wird dazu ein eigenes Metamodell erstellt, um eine klare Grundlage für die Arbeit zu schaffen. Dieses Metamodell soll zumindest im Rahmen dieser Arbeit und im Kontext des Vorhabens eine \ac{lz} sowie deren Beziehungen zueinander darstellen.
  
 \begin{figure}[H]
@@ -244,7 +241,9 @@ Da die Definition von \ac{lz} bei den verschiedenen Anbietern teilweise untersch
     \label{fig:base-meta-modell}
 \end{figure}
 
-\autoref{fig:base-meta-modell} zeigt das erstellte Metamodell, dieses stellt dar die verschiedenen Elemente einer \ac{lz} wie sie im Kontext dieser Thesis als \textit{Foundation} verstanden wird. Das Metamodell dient als Grundlage für die weitere Analyse und Entwicklung der Architektur-Varianten im Rahmen der Arbeit.
+\autoref{fig:base-meta-modell} zeigt das erstellte Metamodell, dieses stellt dar die verschiedenen Elemente einer \ac{lz} wie sie im Kontext dieser Thesis als \textit{Foundation} verstanden wird. Diese wird auch zentral abgebildet, da sie direkt vom Kunden bestellt wird. Eine Foundation kann mehrere \textit{Cloud Resource Containers} enthalten, welche die Cloud Ressourcen und somit den Workload des Kunden beinhalten. Der \textit{\ac{lz} Blueprint} ist ein Provider-spezifisches Template, welches die Cloud Resource Container mit den entsprechenden Konfigurationen und Governance Regeln definiert. Im \ac{lz} Blueprint sind ebenfalls die \textit{Shared Solution Components} enthalten, welche geteilte Komponenten darstellen, welche in der \ac{lz} bereitgestellt werden. Diese können beispielsweise IAM, zentrale Logsammlung, Netzwerkkonnektivität etc. sein, welche von mehreren Cloud Resource Containern geteilt werden.
+
+Das Metamodell dient als Grundlage für die weitere Analyse und Entwicklung der Architektur-Varianten im Rahmen der Arbeit.
 
 \subsection{Erhebung von Landing-Zone Fähigkeiten}
 \label{sec:methodik-capability}

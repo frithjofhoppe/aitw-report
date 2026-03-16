@@ -258,6 +258,81 @@ Da die Definition von \ac{lz} bei den verschiedenen Anbietern teilweise untersch
 \end{itemize}
 \hl{structure notes end}
 
+Der Vergleiche von den \ac{lz} Komponenten auf den verschiedenen Cloud-Plattformen zeigt, dass eine strukturelle Überlappung auf technischer Ebene existiert. Im Sinne des forschungsmethodischen Ansatzes wird angenommen, dass sich diese technische Ebene auf Bedürfnisse der Organisation zurückführen lassen, welche diese mit der \ac{lz} erfüllen möchte. \ac{togaf} hat für dieses verknüpfen die Methodik des Capability Mapping definiert. Capability Mapping dient dazu die Fähigkeiten einer Organisation mit der technischen Implementation zu verknüpfen, um sicherzustellen, dass die Technologie die Capabilities der Organisation unterstützt \parencite{vpadmin_comprehensive_2025}. Für die Anwendung auf das \ac{bit} werden deshalb Annahmen über die Capabilities getroffen, welche mit der \ac{lz} erreicht werden sollen. Als Ausgangslage dient eine grobe Übersicht mit Erwartungen an einer \ac{lz}, welche vom \ac{bit} basierend auf den Anforderungen der Stakeholder erstellt wurde.
+
+
+\hypertarget{usecase-uc6}{}
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr\textwidth-3cm-4\tabcolsep-3\arrayrulewidth\relax}|
+}
+
+    \hline
+    \textbf{Aspekt} & \textbf{Beschreibung} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Dimension} & \textbf{Beschreibung} \\
+    \hline
+    \endhead
+
+    Bestellportal / Account Vending &
+    Bestellung von Accounts / Landingzones
+    \\
+    \hline
+
+    Konfiguration für Laufzeitumgebung &
+    Bereitstellung und konfigurierbare Integration von Monitoring-, Logging-, Metrik- und Alerting-Funktionen auf Ebene der Landingzone zur laufenden Überwachung von Betrieb und Sicherheit inkl. automatischer Alarmierung und Kundentrennung.
+    \\
+    \hline    
+
+    Konfiguration für Verrechnungsstruktur &
+    Konfigurationen für die Verrechnungselemente und Alerts zur Kostenkontrolle und Verrechnung. Zu jeder Landingzone wird ein Abrechnungselement konfiguriert, damit eine nachvollziehbare Leistungsabrechnung (Kostenisolation) aller verwendeten Ressourcen innerhalb einer Landingzone gemacht werden kann.
+    \\
+    \hline    
+
+    Sicherheitskonfigurationen &
+    Sicherheitskonfigurationen, Einhaltung Grundschutz, Vulnerability Management, Zero Trust Architektur, Compliance Assessments, Netzwerksicherheit und regelmässige Sicherheitsaudits und Penetrationstests auf Ebene der Landingzone.
+    \\
+    \hline
+
+    Identity \& Access Management (IAM) &
+    Rollen, Identitäten, Berechtigungen und Authentisierung-Verfahren. Zu jeder Landingzone gehört ein Administrator-Account. Dieser privilegierte Account definiert die Grenzen Landingzone, indem er Zugriff auf alle innerhalb der Landingzone vorgesehenen Konfigurations- und Verwaltungsmöglichkeiten bietet. Der Zugriff über diesen Account ist hoch privilegiert und ermöglicht die Verwaltung und Anpassung der gesamten Landingzone gemäss den definierten Governance- und Sicherheitsvorgaben.
+    \\
+    \hline
+
+    Policy Management &
+    Definition von Governance-Regeln, Tagging Policies, Ressourcenkonfigurationen und einheitliche Benennung und Klassifizierung aller Ressourcen für Auffindbarkeit, Compliance und Kostenmanagement für die Landingzones.
+    \\
+    \hline
+
+    Nutzung von Services &
+    Konfiguration, wie externe SaaS-Dienste oder Services sicher angebunden werden. Möglichkeit zur Einschränkung des Servicekatalogs auf Ebene der Landingzones.
+    \\
+    \hline
+
+    Backup- und Recovery-Strategien &
+    Vorkonfiguration von Backup-Lösungen und Notfallwiederherstellungskonzepten.
+    \\
+    \hline
+
+    Netzwerk-Konnektivität &
+    Einrichtung von Netzwerken (VPC, Subnets), Routing, VPNs oder Direct Connect/ExpressRoute, sowie Firewalls und Sicherheitsgruppen für sicheren Datenverkehr.
+    \\
+    \hline
+
+    Verwendung des Anbieter-Marktplatzes &
+    Der Marktplatz der Anbieter soll über alternative Beschaffungsgrundlagen genutzt werden können.
+    \\
+    \hline
+
+    \caption{Vereinfachte Erwartungen der Stakeholder des \ac{bit} an eine \ac{lz}}
+    \label{tab:bit-stakeholder-requirements}
+\end{longtable}
+
+Zur Darstellung selbst wird dazu die ArchiMate Capability-Map Notation verwendet. 
+
 Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architecture bezeichnet. Es gibt bei dieser Architektur verschiedene Betrachtungen: zum einen die top-down Betrachtung des Compliant-Officers und zum anderen die bottom-up Betrachtung des Projektveranwortlichen. Ein Compliance Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
 
 \begin{landscape}

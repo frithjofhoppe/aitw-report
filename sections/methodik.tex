@@ -247,19 +247,19 @@ Das Metamodell dient als Grundlage für die weitere Analyse und Entwicklung der 
 
 \subsection{Erhebung von Landing-Zone Fähigkeiten}
 \label{sec:methodik-capability}
-\hl{structure notes start}
-\begin{itemize}
-    \item Quasi als Folge → Erstellen Capability Map inkl Auswahl durch den Auftraggeber (Iteration mit L1/L2 Strukturierung)
-    \item Priorisierung der Capabilities mit Auftraggeber
-    \item Erwähnen dass als Ergebnis der Hauptabschnitt mit Traceability erstellt wird
-    \item Use-Cases definieren / Ausprägung
-    \item WICHTIG Outcome ist hier, dass Traceability gewählt wird, damit dann in Abschnitt Strukturierung der Evaluation der Architektur darauf referenziert werden kann.
-    \item einarbeiten dass es eine evaluation sowohl für die traceability architektur variante als eine möglich ausprägung der EA gibt aber auf die vereinfache landing zone blueprint struktur selbst evaluiert wird
-    \item Auszug aus Capability Map mit Ovalen für die Use-Cases (konkret: e2e-Tracing)
-\end{itemize}
-\hl{structure notes end}
+% \hl{structure notes start}
+% \begin{itemize}
+%     \item Quasi als Folge → Erstellen Capability Map inkl Auswahl durch den Auftraggeber (Iteration mit L1/L2 Strukturierung)
+%     \item Priorisierung der Capabilities mit Auftraggeber
+%     \item Erwähnen dass als Ergebnis der Hauptabschnitt mit Traceability erstellt wird
+%     \item Use-Cases definieren / Ausprägung
+%     \item WICHTIG Outcome ist hier, dass Traceability gewählt wird, damit dann in Abschnitt Strukturierung der Evaluation der Architektur darauf referenziert werden kann.
+%     \item einarbeiten dass es eine evaluation sowohl für die traceability architektur variante als eine möglich ausprägung der EA gibt aber auf die vereinfache landing zone blueprint struktur selbst evaluiert wird
+%     \item Auszug aus Capability Map mit Ovalen für die Use-Cases (konkret: e2e-Tracing)
+% \end{itemize}
+% \hl{structure notes end}
 
-Der Vergleiche von den \ac{lz} Komponenten auf den verschiedenen Cloud-Plattformen zeigt, dass eine strukturelle Überlappung auf technischer Ebene existiert. Im Sinne des forschungsmethodischen Ansatzes wird angenommen, dass sich diese technische Ebene auf Bedürfnisse der Organisation zurückführen lassen, welche diese mit der \ac{lz} erfüllen möchte. \ac{togaf} hat für dieses verknüpfen die Methodik des Capability Mapping definiert. Capability Mapping dient dazu die Fähigkeiten einer Organisation mit der technischen Implementation zu verknüpfen, um sicherzustellen, dass die Technologie die Capabilities der Organisation unterstützt \parencite{vpadmin_comprehensive_2025}. Für die Anwendung auf das \ac{bit} werden deshalb Annahmen über die Capabilities getroffen, welche mit der \ac{lz} erreicht werden sollen. Als Ausgangslage dient eine grobe Übersicht mit Erwartungen an einer \ac{lz}, welche vom \ac{bit} basierend auf den Anforderungen der Stakeholder erstellt wurde.
+Der Vergleiche von den \ac{lz} Komponenten auf den verschiedenen Cloud-Plattformen zeigt, dass eine strukturelle Überlappung auf technischer Ebene existiert. Im Sinne des forschungsmethodischen Ansatzes wird angenommen, dass sich diese technische Ebene auf Bedürfnisse der Organisation zurückführen lassen, welche diese mit der \ac{lz} erfüllen möchte. \ac{togaf} hat für dieses verknüpfen die Methodik des Capability Mapping definiert. Capability Mapping dient dazu die Fähigkeiten einer Organisation mit der technischen Implementation zu verknüpfen, um sicherzustellen, dass die Technologie die Capabilities der Organisation unterstützt \parencite{vpadmin_comprehensive_2025}. Für die Anwendung auf das \ac{bit} werden deshalb Annahmen über die Capabilities getroffen, welche mit der \ac{lz} erreicht werden sollen. Als Ausgangslage dient eine grobe Übersicht in \autoref{tab:bit-stakeholder-requirements} mit Erwartungen an einer \ac{lz}, welche vom \ac{bit} basierend auf den Anforderungen der Stakeholder erstellt wurde.
 
 
 \hypertarget{usecase-uc6}{}
@@ -328,22 +328,32 @@ Der Vergleiche von den \ac{lz} Komponenten auf den verschiedenen Cloud-Plattform
     \\
     \hline
 
-    \caption{Vereinfachte Erwartungen der Stakeholder des \ac{bit} an eine \ac{lz}}
+    \caption{Stichwortartige Anforderungen der Stakeholder des \ac{bit} an eine \ac{lz}}
     \label{tab:bit-stakeholder-requirements}
 \end{longtable}
 
-Zur Darstellung selbst wird dazu die ArchiMate Capability-Map Notation verwendet. 
+Basierend auf den Anforderungen er Stakeholder werden mittels Prompt-Chaining zuerst \ac{nfr} abgeleitet mit denen die qualitativen Anforderungen für eine \ac{lz} identifiziert werden sollen. Diese werden mit eigenen definierten \ac{nfr} für den multi-cloud Kontext ergänzt. Anschliessend werden Level 1 Capabilities ermittelt, konsoliert und darauf aufbauen Level 2 Capabilities abgeleitet. Nach anschliessender Gegeprüfung erhalten wir in \autoref{fig:capability-map-overview} die Capability-Map. Zur Darstellung selbst wird hierbei die ArchiMate Capability-Map Notation verwendet. 
 
 Die mit dem \ac{bit} identifizierte Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulatorien auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architecture bezeichnet. Es gibt bei dieser Architektur verschiedene Betrachtungen: zum einen die top-down Betrachtung des Compliant-Officers und zum anderen die bottom-up Betrachtung des Projektveranwortlichen. Ein Compliance Officer möchte nachvollziehen können ob Regulatorien und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im klaren noch die Gesamtheit der regulatorischen Anforderungen welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
+\hl{TODO Beschreibe Inhalte von Capability Map und Auswahl von Traceability L1 Capability für Use-Case / PoC}
 
 \begin{landscape}
-\hl{TODO Beschreibe Inhalte von Capability Map und Auswahl von Traceability L1 Capability für Use-Case / PoC}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\linewidth]{graphics/ip6-ideation-CapabilityMap.drawio.pdf}
-    \caption{Capability Map für den \ac{poc}}
+    \includegraphics[width=0.9\linewidth]{graphics/ip6-ideation-CapabilityMap-Overview.drawio.pdf}
+    \caption{Capability Map mit Level 1 und Level 2}
     \label{fig:capability-map-overview}
 \end{figure}
+\end{landscape}
+
+\begin{landscape}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\linewidth]{graphics/ip6-ideation-CapabilityMap-Detail.drawio.pdf}
+    \caption{Capability Map mit Level 2}
+    \label{fig:capability-map-detail}
+\end{figure}
+
 \end{landscape}
 
 \hl{Todo Beschreibung der verschiedenen Actors machen (ev. Tabelle). Z.B. mit potenzieller Ansässigkeit in der Organisation, Verantwortlichkeiten/Tätigkeiten, usw.}

@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6" pages="6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.6.3" pages="6">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
     <mxGraphModel dx="6266" dy="4909" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -4883,7 +4883,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_ZhfmwORhlkMJHHNNUev" name="Use-Case">
-    <mxGraphModel dx="906" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4893,7 +4893,7 @@
         <mxCell id="dmqziooqcO0Foqw3riru-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Compliance&lt;div&gt;Officer&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="30" x="60" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="dmqziooqcO0Foqw3riru-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Projektveranwortlichen" vertex="1">
+        <mxCell id="dmqziooqcO0Foqw3riru-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Projektveranwortlicher" vertex="1">
           <mxGeometry height="60" width="30" x="740" y="570" as="geometry" />
         </mxCell>
         <mxCell id="dmqziooqcO0Foqw3riru-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="UC7: Erstellt Audit-Evidenz (à la reports etc)" vertex="1">

@@ -136,12 +136,11 @@ Das Modell in dieser Variante ist offen bzw. unterliegt denselben Einschränkung
 
 \subsection{Evaluation Variante 2}
 
-Die Evaluation der component-spezifischen Variante zeigt insgesamt eine ausgewogene Architektur mit guten Eigenschaften hinsichtlich Portability, Maintainability und Auditability. Die klare Zuordnung von Policies zu Component-Profiles ermöglicht eine strukturierte Modellierung der Traceability-Beziehungen und unterstützt sowohl Automatisierung als auch langfristige Wartbarkeit der Architektur.
+Die Evaluation der Component-spezifischen Variante zeigt insgesamt eine ausgewogene Architektur mit guten Eigenschaften hinsichtlich Portability, Maintainability und Auditability. Die klare Zuordnung von Policies zu Component-Profiles ermöglicht eine strukturierte Modellierung der Traceability-Beziehungen und unterstützt sowohl Automatisierung als auch langfristige Wartbarkeit der Architektur.
 
-Gleichzeitig ergeben sich gewisse Einschränkungen in Bezug auf Performance und Adaptability. Insbesondere bei der Compliance-Prüfung müssen für jede Policy einzelne Abfragen gegenüber den APIs der Cloud Provider durchgeführt werden, wodurch eine erhöhte Netzwerklatenz entstehen kann. Zudem können strukturelle Änderungen an den Traceability-Objekten Anpassungen am Evaluationsalgorithmus erforderlich machen.
+Gleichzeitig ergeben sich gewisse Einschränkungen in Bezug auf Performance und Adaptability. Insbesondere bei der Compliance-Prüfung müssen für jede Policy einzelne Abfragen gegenüber den APIs der Cloud Provider durchgeführt werden, wodurch eine erhöhte Netzwerklast entstehen kann. Zudem können strukturelle Änderungen an den Traceability-Objekten Anpassungen am Evaluationsalgorithmus erforderlich machen.
 
 Insgesamt weist die Variante eine geringe strukturelle Komplexität bei gleichzeitig hoher Traceability Strength auf. Regulatorische Anforderungen können über Controls und Component-Profiles nachvollziehbar mit konkreten Cloud-Policies verknüpft werden, wodurch eine transparente Abbildung der Compliance-Beziehungen ermöglicht wird.
-
 
 \subsubsection{Bewertung der Quality Attributes}
 
@@ -200,23 +199,23 @@ Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \tex
 
 \textbf{Performance}
 
-Der wichtigste Einflussfaktor auf die Performance ist die Durchführung der Compliance-Prüfung. Für jede Policy, die einem Component-Profile zugeordnet ist, muss eine Anfrage an die API des jeweiligen Cloud ders gestellt werden. Da nicht davon ausgegangen werden kann, dass die Provider aggregierte Batch-Abfragen für mehrere Policies unterstützen, entstehen viele einzelne Netzwerkanfragen. Dies führt zu erhöhter Netzwerklatenz und damit zu einer insgesamt geringeren Performance der Evaluation.
+Der wichtigste Einflussfaktor auf die Performance ist die Durchführung der Compliance-Prüfung. Für jede Policy, die einem Component-Profile zugeordnet ist, muss eine Anfrage an die API des jeweiligen Cloud Providers gestellt werden. Da nicht davon ausgegangen werden kann, dass die Provider aggregierte Batch-Abfragen für mehrere Policies unterstützen, entstehen viele einzelne Netzwerkanfragen. Dies führt zu erhöhter Netzwerklast und damit zu einer insgesamt geringeren Performance bei der Evaluation.
 
 \textbf{Portability}
 
-Die Regulations, Controls wie Component-Profiles sind plattformunabhängig formuliert und enthalten keine provider-spezifischen Konzepte. Dadurch können dieselben regulatorischen Anforderungen auch auf andere Cloud-Plattformen übertragen werden. Lediglich die Zuordnung zu konkreten Policieszu den Component-Profiles muss plattformspezifisch erfolgen. Durch diese Trennung zwischen regulatorischer Ebene und provider-spezifischem Enforcement wird eine hohe Portability erreicht.
+Die Regulations, Controls sowie Component-Profiles sind plattformunabhängig formuliert und enthalten keine Provider-spezifischen Konzepte. Dadurch können dieselben regulatorischen Anforderungen auch auf andere Cloud-Plattformen übertragen werden. Lediglich die Zuordnung von konkreten Policies zu den Component-Profiles muss plattformspezifisch erfolgen. Durch diese Trennung zwischen regulatorischer Ebene und Provider-spezifischem Enforcement wird eine hohe Portability erreicht.
 
 \textbf{Auditability}
 
-Die Traceability-Beziehungen enthalten Metainformationen zu Controls und Component-Profiles, wodurch der Kontext einer Zuordnung nachvollziehbar bleibt. Für eine konkrete Foundation kann somit jederzeit ermittelt werden, welche regulatorischen Anforderungen relevant sind und durch welche Policies diese umgesetzt werden. Mittels der verschiedenen modellierten Objekte, lässt sich auch nachvollziehen, wann und von wem Anpassungen vorgenommen wurden. Dies führt zu einem hohen Grad an Auditability.
+Die Traceability-Beziehungen enthalten Metainformationen zu Controls und Component Profiles, wodurch der Kontext einer Zuordnung nachvollziehbar bleibt. Für eine konkrete Foundation kann somit jederzeit ermittelt werden, welche regulatorischen Anforderungen relevant sind und durch welche Policies diese umgesetzt werden. Mittels der verschiedenen modellierten Objekte, lässt sich auch nachvollziehen, wann und von wem Anpassungen vorgenommen wurden. Dies führt zu einem hohen Grad an Auditability.
 
 \textbf{Automatability}
 
-Die explizite Modellierung der Traceability-Beziehungen ermöglicht eine weitgehende Automatisierung sowohl bei der Erstellung als auch bei der Evaluation der Beziehungen. Policies können automatisiert mit Component-Profiles verknüpft werden und die Compliance-Prüfung kann automatisiert über entsprechende API-Abfragen erfolgen. Auch die initiale Zuordnung von provider-spezifischen Policies zu Controls kann teilweise automatisiert erfolgen, beispielsweise durch semantische Analyse oder KI-basierte Zuordnungen. Dadurch ergibt sich ein hoher Automatisierungsgrad.
+Die explizite Modellierung der Traceability-Beziehungen ermöglicht eine weitgehende Automatisierung sowohl bei der Erstellung als auch bei der Evaluation der Beziehungen. Policies können automatisiert mit Component-Profiles verknüpft werden und die Compliance-Prüfung kann automatisiert über entsprechende API-Abfragen erfolgen. Auch die initiale Zuordnung von Provider-spezifischen Policies zu Controls kann teilweise automatisiert erfolgen, beispielsweise durch semantische Analyse oder KI-basierte Zuordnungen. Dadurch ergibt sich ein hoher Automatisierungsgrad.
 
 \textbf{Maintainability}
 
-Alle Objekte des Metamodells können versioniert und unabhängig voneinander weiterentwickelt werden. Änderungen an den Component-Profiles, Controls oder Policies erfordern daher in der Regel keine Anpassung der gesamten Modellstruktur. Erweiterungen oder Aktualisierungen können somit mit vergleichsweise geringem Aufwand vorgenommen werden und Änderungen an bestehenden Deployments kann durch Migrationen erreicht werden. Dies führt zu einer guten Maintainability.
+Alle Objekte des Metamodells können versioniert und unabhängig voneinander weiterentwickelt werden. Änderungen an den Component-Profiles, Controls oder Policies erfordern daher in der Regel keine Anpassung der gesamten Modellstruktur. Erweiterungen oder Aktualisierungen können somit mit vergleichsweise geringem Aufwand vorgenommen werden und Änderungen an bestehenden Deployments können durch Migrationen erreicht werden. Dies führt zu einer guten Maintainability.
 
 \textbf{Adaptability}
 
@@ -224,29 +223,29 @@ Strukturelle Änderungen an der Modellierung der Traceability-Beziehungen, wie d
 
 \textbf{Complexity}
 
-Die Architektur führt nur jene Objekttypen ein, die für die Modellierung der Traceability-Beziehungen erforderlich sind. Dazu gehören insbesondere Regulations, Controls, Component-Profiles sowie provider-spezifische Policies. Durch diese begrenzte Anzahl an Konzepten bleibt das Modell übersichtlich und vermeidet unnötige Abstraktionsebenen. Die resultierende Komplexität der Architektur ist daher vergleichsweise gering.
+Die Architektur führt nur jene Objekttypen ein, die für die Modellierung der Traceability-Beziehungen erforderlich sind. Dazu gehören insbesondere Regulations, Controls, Component-Profiles sowie Provider-spezifische Policies. Durch diese begrenzte Anzahl an Konzepten bleibt das Modell übersichtlich und vermeidet unnötige Abstraktionsebenen. Die resultierende Komplexität der Architektur ist daher vergleichsweise gering.
 
 \textbf{Traceability Strength}
 
-Die Beziehungen zwischen Regulations, Controls, Component-Profiles und den entsprechenden Cloud-Policies sind explizit modelliert und eindeutig nachvollziehbar. Dadurch lässt sich für jede regulatorische Anforderung bestimmen, welche Policies zu ihrer Umsetzung beitragen. Ebenso kann für eine konkrete Cloud-Policy nachvollzogen werden, welche regulatorischen Anforderungen sie adressiert. Diese  Nachvollziehbarkeit in beide Richtungen führt zu einer hohen Traceability Strength. 
+Die Beziehungen zwischen Regulations, Controls, Component-Profiles und den entsprechenden Cloud-Policies sind explizit modelliert und eindeutig nachvollziehbar. Dadurch lässt sich für jede regulatorische Anforderung bestimmen, welche Policies zu ihrer Umsetzung beitragen. Ebenso kann für eine konkrete Cloud-Policy nachvollzogen werden, welche regulatorischen Anforderungen sie adressiert. Diese Nachvollziehbarkeit in beide Richtungen führt zu einer hohen Traceability Strength. 
 
 \subsubsection{Trade-Offs}
 
 \textbf{Explicit Trace Modeling vs. Implicit Derivation}
 
-Die Modellierung an den Regulation wie \ac{si001} ist mit den Component-Profiles ziemlich explizit. Die Compnent-Profiles sind dabei gedanklich an einen möglichen Beschaffungsschritt angelehnt im 360-Cockpit (siehe \autoref{sec:umsetzung}) in welchem ebenfalls der Bedarf nach Component wie Storage, Network etc angegeben wird. Durch die Verknüpfung in dieser Variante zwischen Compnent-Profiles und Controls erhält werden bestehenden Modellierung bereits integriert.
+Die Modellierung an den Regulations wie \ac{si001} ist mit den Component-Profiles ziemlich explizit. Die Compnent-Profiles sind dabei gedanklich an einen möglichen Beschaffungsschritt angelehnt im 360°-Cockpit (siehe \autoref{sec:umsetzung}) in welchem ebenfalls der Bedarf nach Komponenten wie Storage, Network, etc. angegeben wird. Durch die Verknüpfung in dieser Variante zwischen Component-Profiles und Controls erhält werden bestehenden Modellierung bereits integriert. \hl{TODO: letzter Satz macht noch keinen Sinn}
 
 \textbf{Governance centric Traceability vs. Engineering centric Traceability}
 
-Component-Profiles orientieren sich eher an dem Akteur des Cloud-Expert und Projekterantwortlichen statt dem Compliance-Expert. Betrachtet man den Projektverantwortlichen als Kunden entspricht dies einer besseren nutzerzentrierung, auch der der Projektverantwortliche selbst bspw. nicht für das Audit veratnwortlich ist.
+Component-Profiles orientieren sich eher an den Akteuren des Cloud-Experten und Projektverantwortlichen statt dem Compliance-Experten. Betrachtet man den Projektverantwortlichen als Kunden, entspricht dies einer besseren Nutzerzentrierung, auch wenn der Projektverantwortliche selbst bspw. nicht für das Audit verantwortlich ist.
 
 \textbf{Traceability Depth vs. Model Simplicity}
 
-Das Mapping über Component-Profiles erlaubt trotz Fokus auf Component gleichwohl eine Erzeugung von Evidenc pro Control. Dies ist möglich da die Controls im Component-Profile vermerkt sind. Die Component-Profiles erlauben somit zum einem ein Tracing von Foundation und deren Ressourcen zu den Controls zu ermöglich als auch Requirements vom Projektverantwortlichen für die Foundation gut zu mappen. Der Requirements-Aspekt ist relevant, da häufig in eben genau solchen Abstraktionsgruppen wie Datenbanken / Storage, Netzwerk etc. sprich Components gedacht wird
+Das Mapping über Component-Profiles erlaubt trotz Fokus auf Components gleichwohl eine Erzeugung von Evidences pro Control. Dies ist möglich da die Controls im Component-Profile vermerkt sind. Die Component-Profiles erlauben somit zum einen ein Tracing von Foundation und deren Ressourcen zu den Controls, als auch Requirements vom Projektverantwortlichen für die Foundation gut zu mappen. Der Requirements-Aspekt ist relevant, da häufig in eben genau solchen Abstraktionsgruppen wie Datenbanken / Storage, Netzwerk, etc. sprich Components gedacht wird.
 
 \textbf{Central Traceability Model vs. Federated Traceability Models}
 
-Das Modell ist recht geschlossen und erlaubt bei den Compnent-Profile keine Definition von eigenen Attributen. Lediglich bei der Deklaration oder Referenzierung von Policies von Cloud-Plattformen ist eine Offenheit vorgesehen. Dies bedeutet, dass bei einer Nutzung dieses Modells von Grund auf bereits vorausgedacht werden muss, um anderen Stakeholder die Nutzung zu ermöglichen. Denkbar sind hier anderen Regulation welche nicht zwangsläufig Component / Control basiert denken wie \ac{si001}
+Das Modell ist recht geschlossen und erlaubt bei den Component-Profiles keine Definition von eigenen Attributen. Lediglich bei der Deklaration oder Referenzierung von Policies von Cloud-Plattformen ist eine Offenheit vorgesehen. Dies bedeutet, dass bei einer Nutzung dieses Modells von Grund auf bereits vorausgedacht werden muss, um anderen Stakeholder die Nutzung zu ermöglichen. Denkbar sind hier andere Regulations, welche nicht zwangsläufig Component- / Control-basiert denken wie \ac{si001}.
 
 \subsection{Evaluation Variante 3}
 

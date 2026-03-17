@@ -8,7 +8,7 @@ quality_attributes = {
     "Performance": (0.3, 4),
     "Portability": (1, 1),
     "Auditability": (0.6, 2),
-    "Automatibility": (1, 4),
+    "Automatability": (1, 4),
     "Maintainability": (0.8, 2),
     "Adaptability": (0.6, 1),
     "Complexity": (0.8, 4),

@@ -1,9 +1,9 @@
 \section{Umsetzung des Proof of Concept}
 \label{sec:umsetzung}
 
-\hl{TODO: Beschreibe wie der Landing Zone Blueprint aussieht im PoC aus dem ip6 iac repo}
+Technisch werden das 360°-Cockpit sowie das Governance-Cockpit (siehe \autoref{fig:methodology-poc-setup}) mittels einer Python Anwendung mit FastAPI implementiert. Die Nutzung des Python Setups begründet sich damit, dass die CLIs von Anbietern wie Azure und AWS auf Python basieren. Des Weiteren ermöglicht FastAPI mit vergleichbar geringem Aufwand einen RESTful Service zu erstellen. Um die Trennung der beiden Komponenten 360°-Cockpit und Governance-Cockpit zu betonen, passieren gegenseitige Aufrufe jeweils via HTTP Interface. Zur Persistierung verwenden die Komponenten Project Collection, Evidence Collection, Governance Decision Store und Governance Intent Repository eine MongoDB Document Database. Die Wahl einer Document Database begründet sich mit der Abbildung der Traceability-Beziehung als JSON-Objekte, was eine Handhabung aus Sicht der Implementation vereinfacht. Für den Landing Zone Plattform Configuration Service wird ein statisches \ac{iac} Setup mit Terraform verwendet. Für AWS stellt dies eine Organization Unit mit zugewiesenen Service Control Policies da. Für Azure wird eine Management Group mit Policy Assignment auf dieser verwendet.
 
-Technisch werden das 360°-Cockpit sowie das Governance-Cockpit (siehe \autoref{fig:methodology-poc-setup}) mittels einer Python Anwendung mit FastAPI implementiert. Die Nutzung des Python Setups begründet sich damit, dass die CLIs von Anbietern wie Azure und AWS auf Python basieren. Des Weiteren ermöglicht FastAPI mit vergleichbar geringem Aufwand einen RESTful Service zu erstellen. Um die Trennung der beiden Komponenten 360°-Cockpit und Governance-Cockpit zu betonen, passieren gegenseitige Aufrufe jeweils via HTTP Interface. Zur Persistierung verwenden die Komponenten Project Collection, Evidence Collection, Governance Decision Store und Governance Intent Repository eine MongoDB Document Database. Die Wahl einer Document Database begründet sich mit der Abbildung der Traceability-Beziehung als JSON-Objekte, was eine Handhabung aus Sicht der Implementation vereinfacht. Für den Landing Zone Plattform Configuration Service wird ein statisches \ac{iac} Setup mit Terraform verwendet. Die modellierten Traceability-Beziehungen werden hierbei als statischer Inhalt geteilt. Über das Setup hinaus werden weitere Cloud-Ressourcen erzeugt welche in einem funktionalen Setup bereits als gegeben angenommen werden:
+Die modellierten Traceability-Beziehungen werden hierbei als statischer Inhalt geteilt. Über das Setup hinaus werden weitere Cloud-Ressourcen erzeugt welche in einem funktionalen Setup bereits als gegeben angenommen werden:
 
 \begin{itemize}
     \item Technische Benutzer / Service Accounts für die automatisierte wie manuelle Provisionierung von Cloud-Ressourcen
@@ -421,6 +421,75 @@ Das Assessment des geeigneten Component-Profiles wird schlussendlich zusammen mi
 \label{fig:example-governance-decision}
 \end{figure}
 
+Das Deployment der Foundation selbst passiert mittels \ac{lz}-Blueprint. Der Blueprint für Azure gliedert sich wegen Terraform systembedingt in zwei Teile. In \autoref{fig:example-lz-blueprint-base} wird die Subscription selbst und die Verknüpfung zur Management-Group provisioniert. Gedanklich entspricht die Subsription an dieser Stellen dem Cloud Resource Container.
+
+\begin{figure}[H]
+\centering
+\begin{minted}[breaklines]{hcl}
+resource "azurerm_subscription" "foundation" {
+  provider          = azurerm.tenant
+  subscription_name = var.subscription_name
+  billing_scope_id  = var.billing_profile_scope
+}
+
+resource "azurerm_management_group_subscription_association" "mgmt_assoc" {
+  provider            = azurerm.tenant
+  management_group_id = var.management_group_id
+  subscription_id     = azurerm_subscription.foundation.id
+}
+
+output "subscription_id" {
+  value = azurerm_subscription.foundation.subscription_id
+  description = "ID of the newly created subscription"
+}
+
+output "subscription_name" {
+  value = azurerm_subscription.foundation.subscription_name
+  description = "Name of the newly created subscription"
+}
+\end{minted}
+\caption{Base Setup für die Blueprint im \ac{poc} auf Azure}
+\label{fig:example-lz-blueprint-base}
+\end{figure}
+
+In \autoref{fig:example-lz-blueprint-content} wird anschliessend der effektive Inhalt des Blueprints ersichtlich. Der Einfachheit halber ist dies eine Resource-Group, ein virtuelles Netzwerk und eine Storage Solution
+
+\begin{figure}[H]
+\centering
+\begin{minted}[breaklines]{hcl}
+# Content of LZ Blueprint
+resource "azurerm_resource_group" "rg_core" {
+  name     = "${var.subscription_name}-rg-core"
+  location = var.location
+}
+
+resource "azurerm_virtual_network" "vnet" {
+  name                = "${var.subscription_name}-vnet"
+  location            = azurerm_resource_group.rg_core.location
+  resource_group_name = azurerm_resource_group.rg_core.name
+  address_space       = ["10.10.0.0/16"]
+}
+
+resource "azurerm_subnet" "default" {
+  name                 = "default"
+  resource_group_name  = azurerm_resource_group.rg_core.name
+  virtual_network_name = azurerm_virtual_network.vnet.name
+  address_prefixes     = ["10.10.1.0/24"]
+}
+
+resource "azurerm_storage_account" "storage" {
+  name                     = var.storage_account_name
+  resource_group_name      = azurerm_resource_group.rg_core.name
+  location                 = azurerm_resource_group.rg_core.location
+  account_tier             = "Standard"
+  account_replication_type = "LRS"
+  min_tls_version          = "TLS1_2"
+}
+\end{minted}
+\caption{Blueprint im \ac{poc} auf Azure}
+\label{fig:example-lz-blueprint-content}
+\end{figure}
+
 \subsection{UC6: Prüfung der Compliance}
 
 Der Stand der Compliance einer Foundation kann geprüft werden (siehe \hyperlink{usecase-uc6}{Beschrieb UC6}), sobald die Provisionierung durch das 360°-Cockpit stattgefunden hat. Im Rahmen vom \ac{poc} wurde lediglich die Compliance Prüfung auf Azure vollständig umgesetzt. Ausgangspunkt der Prüfung ist die Governance Decision, aus welcher die Component-Profiles abgelesen werden. Basierend auf den Component-Profiles werden alle Policies zu einer jeweiligen Control-Id aggregiert. Die Auswertung mit Fokus auf die Control begründet sich damit, dass schlussendlich mit allen evaluierten Controls einer Regulation der Compliance Stand der Regulation abgeleitet werden kann. Der Compliance Stand einer Control zum Zeitpunkt der Durchführung wird dann als Evidence im Governance Decision Store abgespeichert wie in \autoref{fig:evidence-generation-flow} ersichtlich ist. Der Prozess den Compliance-State zu prüfen sollte idealerweise in regelmässigen Abständen durchgeführt werden, damit schlussendlich Akteure wie der Compliance Officer ein möglichst aktuelles Lagebild im Governance-Cockpit haben, welches auf den Evidences aufbaut.
@@ -650,5 +719,3 @@ Für die Control View werden die Ergebnisse welche bereits für die Evidence Vie
 \caption{Compliance State der Controls in einem Projekt}
 \label{fig:response-control-evlauation-for-project} 
 \end{figure}
-
-\hl{Maybe TODO beschreiben wie der evidence generierungs algo funktioniert. Detail noch von den verschiedenen mongo scripten für die auswertung um die velrinkung auf die screns zu machen welche man im ui sieht, base 44 und so}

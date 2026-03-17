@@ -208,9 +208,9 @@ Basierend auf den Kriterien und der Bewertungsskala wird die Bewertung der versc
     \label{tab:evaluating-didactic-criteria4}
 \end{longtable}
 
-Basierend auf der Evaluation der Kriterien wird im \ac{poc} die Variante der Component-centric Architektur (Variante 2) verwendet. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch der Know-how Strukturierung im \ac{bit}. Hiermit ist konkrete die Aufteilung auf bspw. Networking, Storage, \ac{iam} etc. gedacht, welche heute teilweise von verschiedene Abteilungen verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
+Basierend auf der Evaluation der Kriterien wird im \ac{poc} die Variante der Component-centric Architektur (Variante 2) verwendet. Eine weitere Überlegung zu den bereits evaluierten Kriterien ist, dass die Aufteilung in die \ac{lz} Komponenten gewissermassen auch einer Know-how Strukturierung bspw im \ac{bit} entsprechen könnte. Gemeint ist die Aufteilung bspw. in Networking, Storage, \ac{iam} etc, welche so die Annahme teilweise von verschiedene Abteilungen im \ac{bit} verantwortet werden. Der \ac{poc} soll somit zu der Funktionsweise der Traceability-Architecture zugleich die Abbildungen auf die verschiedenen Ausprägungen des Cloud-Experte (durch die verschiedenen Abteilungen) gerecht werden.
 
-Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung, sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototyp generiert. Dieser Prototyp (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akteure aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit der Traceability-Architecture aufbaut. Die wesentlichen Schritte aus dem Hauptablauf des Use-Cases sind hierbei: die Auswahl des Projektes durch den Compliance Officer wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl. Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}. 
+Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. Der Scope erhebt somit nicht den Anspruch einer ganzheitlichen Implementierung, sondern dedizierte Aspekte hervorzuheben. Um gleichwohl im Sinne der didaktischen Ziele eine gute Veranschaulichung zu erhalten, wird ein GUI-Prototyp für die Komponente namens Governacne-Cockpit generiert. Dieser Prototyp (siehe \fullref{appendix:ui-mockup}) soll aufzeigen wie sich ein Tool für die Akteure aus \fullref{tab:uc6-verify-compliance} verhalten würde, welche auf einem System mit der Traceability-Architecture aufbaut. Das Ziel ist somit die Nutzerzentrierung, sprich den Fokus auf die Use-Cases der Organisation sicherzustellen. Die wesentlichen Schritte aus dem Hauptablauf des Use-Cases sind hierbei: die Auswahl des Projektes durch den Compliance Officer wie in \autoref{fig:methodology-project-healthcare-view} und die Überprüfung des Compliance-Status inkl. Trace wie in \autoref{fig:methodology-project-healthcare-view-evidence}. 
 
 \begin{figure}[H]
     \centering
@@ -219,7 +219,6 @@ Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. 
     \label{fig:methodology-project-healthcare-view}
 \end{figure}
 
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{graphics/ui-prototyp_project_healthcare_view_evidence.png}
@@ -227,7 +226,9 @@ Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. 
     \label{fig:methodology-project-healthcare-view-evidence}
 \end{figure}
 
-Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}. Um den Fokus auf den genannten Use-Cases zu behalten wird eine Auswahl getroffen welche Komponenten detailliert implementiert werden. Die grünen Komponenten werden detailliert umgesetzt, um die Funktionalität zu zeigen, die blauen Komponenten werden statisch implementiert da sie sich keinen direkten Bezug zur Funktionsweise der Traceability-Architecture aufweisen.
+Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}. Das 360-Grad-Cockpit verwaltet mit dem Project Service die Projekte inklusive der zugehörigen Foundations. Der \ac{lz} Provisioning Service provisioniert die Foundations auf den Cloud-Plattformen und hält Referenzen auf die erstellten Cloud Resource Container. Der Hauptanwender des 360-Grad-Cockpit ist der Projektverantwortliche. Das Governance Cockpit verawaltet mit dem Governance Configuration Service die Traceability-Relationship auf welcher Basis der Traceability Service Assessment vornimmt. Der Evidence Sevice speichert die Artefakte, welche den Stand der Compliance zu einem gewissen Zeitpunkt abbilden. Die Cloud Administration Komponenten provisioniert mit dem \ac{lz} Plattform Configuration Service die Grundinfrastruktur der \ac{lz}.
+
+Um den Fokus auf den genannten Use-Cases zu behalten wird in \autoref{fig:methodology-poc-setup} eine Auswahl getroffen welche Komponenten detailliert implementiert werden. Die grünen Komponenten werden detailliert umgesetzt, um die Funktionalität zu zeigen, die blauen Komponenten werden statisch implementiert da sie sich keinen direkten Bezug zur Funktionsweise der Traceability-Architecture aufweisen.
 
 \begin{figure}[H]
     \centering
@@ -236,75 +237,14 @@ Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}.
     \label{fig:methodology-poc-setup}
 \end{figure}
 
-% KOMPLETTES DIAGRAMM
-% @startuml
-
-% participant "LZ\nProvisioning\nService" as lz
-% participant "Cloud\nProvider\nAPI" as cloud
-% actor "Projekt-\nverantwortlicher" as po
-% participant "Project\nService" as project
-% participant "Traceability\nService" as trace
-% database "Governance\nDecision\nStore" as decision
-% participant "Evidence\nService" as evidence
-% actor "Compliance\nOfficer" as comp
-% participant "Governance\nConfig\nService" as gov
-% database "Governance\nRelationsship" as govdb
-% database "LZ Component IaC" as compiac
-% actor "Developer" as dev
-% database "Project\nCollection" as projectdb
-% database "Governance\nConfiguration\nService" as config
-
-% == Static Setup (Scope von UC 04) ==
-
-% dev --> config : Configure Traceability Relationship
-% dev --> projectdb: Configure sample project
-% dev --> compiac : Configure IaC for LZ Components (AWS Control Tower, Mgmt Group, etc.)
-
-% == Deploy new Project (Scope von UC 06) ==
-
-% po --> project : Declare choice for LZ Component category
-% project --> trace : Get LZ Governance Assessment
-% activate trace
-% trace --> govdb: Check Relationships for Component category \n based on governance requirements
-% return LZ Governance Assessment
-% project --> lz: Create LZ based on Assessment
-% lz --> cloud: Create subscription with blueprint in Mgmt Group / OU etc
-
-% == Verify compliance (Scope von UC 06) ==
-
-% trace --> project: Get LZ account IDs\nof project
-% trace --> decision:  Get category/governance decision for accounts of projects
-% trace --> config: Get relationship from decision
-% trace --> cloud: Check compliance of account\ninside mgmt group / AO
-% trace --> evidence: Send evaluation result
-% comp --> evidence: Get evaluation result
-
-% @enduml
-
-% STATIC SETUP
-% @startuml
-
-% database "LZ Component IaC" as compiac
-% actor "Developer" as dev
-% database "Project\nCollection" as projectdb
-% database "Governance\nConfiguration\nService" as config
-
-% == Static Setup (Scope von UC 04) ==
-
-% dev --> config : Configure Traceability Relationship
-% dev --> projectdb: Configure sample project
-% dev --> compiac : Configure IaC for LZ Components (AWS Control Tower, Mgmt Group, etc.)
-
-% @enduml
-
-\hl{TODO prüfen ob Sequenzdiagramm für static Setup ausreicheung oder noch benötigt und sonst umschreiben}
+Im \ac{poc} ist für die Traceability der statisch konfigurierte Inhalte des Governance Configuration Service am relevantesten. Für die implementierte component-cenctric Variante werden dafür zuerst exemplarische Controls aus der Regulation \ac{si001}. Die verwendeten Controls in \autoref{fig:methodology-poc-traceability-relationship-components} sind dabei \hl{hier weiter machen}
 
 \begin{figure}[H]
     \centering
     \centering
-    \includegraphics[width=\textwidth]{graphics/sequence-diagramm-poc_static_setup.png}
-    \caption{Sequenzdiagramm für statisches Setup des \ac{poc}}
-    \label{fig:methodology-poc-sequence-static-setup}
+    \includegraphics[width=\textwidth]{graphics/ip6-ideation-poc-traceability-components.drawio.pdf}
+    \caption{Statische Traceability-Relationship Komponenten für den \ac{poc}}
+    \label{fig:methodology-poc-traceability-relationship-components}
 \end{figure}
 
 \hl{Im Sinne der didaktischen Veranschaulichung einer Traceability-Architektur wir der PoC aus Sicht der verschiedenen Use-Cases beschrieb}

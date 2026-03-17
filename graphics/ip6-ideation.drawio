@@ -6225,7 +6225,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CsHJX8_E7Wl7F5OBhqNj" name="PoC">
-    <mxGraphModel dx="2693" dy="1111" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2343" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6552,6 +6552,111 @@
             <mxGeometry height="110" width="240" x="911.5" y="1743.5" as="geometry" />
           </mxCell>
         </UserObject>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-1" parent="1" style="fontStyle=0;dashed=1;html=1;whiteSpace=wrap;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="490" width="800" x="422" y="2010" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-2" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#ffff99;shape=mxgraph.archimate3.application;appType=passive;archiType=square;verticalAlign=middle;" value="Storage" vertex="1">
+          <mxGeometry height="60" width="120" x="447" y="2085" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-3" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="9-fNwfukzKMy_RRjIrC5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-4" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#CCCCFF;shape=mxgraph.archimate3.application;appType=principle;archiType=oct;" value="I2.1 - Vertraulichkeit und Integrität" vertex="1">
+          <mxGeometry height="60" width="120" x="171" y="2035" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-5" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="9-fNwfukzKMy_RRjIrC5-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-6" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#CCCCFF;shape=mxgraph.archimate3.application;appType=principle;archiType=oct;" value="I3.2 - Backup und Wiederherstellbarkeit" vertex="1">
+          <mxGeometry height="60" width="120" x="171" y="2135" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-7" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#ffff99;shape=mxgraph.archimate3.application;appType=passive;archiType=square;verticalAlign=middle;" value="Network" vertex="1">
+          <mxGeometry height="60" width="120" x="447" y="2245" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-8" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#ffff99;shape=mxgraph.archimate3.application;appType=passive;archiType=square;verticalAlign=middle;" value="Compute" vertex="1">
+          <mxGeometry height="60" width="120" x="447" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-9" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="9-fNwfukzKMy_RRjIrC5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-10" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#CCCCFF;shape=mxgraph.archimate3.application;appType=principle;archiType=oct;" value="S1 Zonenzugehörigkeit" vertex="1">
+          <mxGeometry height="60" width="120" x="171" y="2225" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-11" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="9-fNwfukzKMy_RRjIrC5-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-12" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#CCCCFF;shape=mxgraph.archimate3.application;appType=principle;archiType=oct;" value="Z1.2 Kommunikation gemäss Zonenpolicy" vertex="1">
+          <mxGeometry height="60" width="120" x="171" y="2318.5" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-13" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="9-fNwfukzKMy_RRjIrC5-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-14" parent="1" style="html=1;outlineConnect=0;whiteSpace=wrap;fillColor=#CCCCFF;shape=mxgraph.archimate3.application;appType=principle;archiType=oct;" value="T2.1 Sichere Konfiguration &amp;amp; Logging" vertex="1">
+          <mxGeometry height="60" width="120" x="171" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-30" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-15" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;" target="9-fNwfukzKMy_RRjIrC5-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-15" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=13;verticalAlign=top;align=center;" value="Isolierung, Segmentierung etc," vertex="1">
+          <mxGeometry height="60" width="120" x="-19" y="2319" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-29" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-16" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;" target="9-fNwfukzKMy_RRjIrC5-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-16" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=12;verticalAlign=top;align=center;" value="Zonen müssen definiert sein" vertex="1">
+          <mxGeometry height="60" width="120" x="-19" y="2225" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-17" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=15;verticalAlign=top;align=center;" value="Verschlüsselung und Key Mmgmt / Key Vault" vertex="1">
+          <mxGeometry height="80" width="120" x="-19" y="2015" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-31" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-18" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;" target="9-fNwfukzKMy_RRjIrC5-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-18" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=15;verticalAlign=top;align=center;" value="Best practise gegeben, Gehärtet, Logging etc" vertex="1">
+          <mxGeometry height="80" width="120" x="-19" y="2405" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="Component profile standard&lt;div&gt;(example for policy content)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="194" x="627" y="2030" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-21" parent="1" style="text;whiteSpace=wrap;" value="storage.standard → [&#xa;  AZURE: Storage encryption enabled,&#xa;  AZURE: SQL TDE enabled,&#xa;  AWS-STORAGE-ENCRYPTION-ENABLED,&#xa;  AWS-RDS-ENCRYPTION-ENABLED&#xa;]" vertex="1">
+          <mxGeometry height="80" width="264" x="606" y="2075" as="geometry" />
+        </mxCell>
+        <UserObject label="storage.high → [&#xa;  &lt;e.g. storage.standard policies&gt;&#xa;  AZURE: SQL long-term backup retention,&#xa;  AZURE: Storage soft delete enabled,&#xa;  AZURE: Storage network access restricted&#xa;  AWS-S3-PUBLIC-WRITE-PROHIBITED,&#xa;  AWS-S3-VERSIONING-ENABLED&#xa;]" link="storage.high → [&#xa;  AZURE: Storage encryption enabled,&#xa;  AZURE: SQL TDE enabled,&#xa;  AZURE: SQL long-term backup retention,&#xa;  AZURE: Storage soft delete enabled,&#xa;  AZURE: Storage network access restricted&#xa;]" id="9-fNwfukzKMy_RRjIrC5-22">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="120" width="270" x="898.5" y="2065" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-23" parent="1" style="text;whiteSpace=wrap;" value="network.standard → [&#xa;    ...&#xa;]" vertex="1">
+          <mxGeometry height="80" width="220" x="606" y="2235" as="geometry" />
+        </mxCell>
+        <UserObject label="network.high → [&#xa;    ...&#xa;]" link="network.high → [&#xa;  AZURE: No public IP on NICs,&#xa;  AZURE: NSG required,&#xa;  AZURE: Restrict inbound internet traffic,&#xa;  AZURE: Azure Firewall required&#xa;]" id="9-fNwfukzKMy_RRjIrC5-24">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="110" width="250" x="898.5" y="2231" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-25" parent="1" style="text;whiteSpace=wrap;" value="compute.standard → [&#xa;    ...&#xa;]" vertex="1">
+          <mxGeometry height="100" width="210" x="597" y="2389" as="geometry" />
+        </mxCell>
+        <UserObject label="compute.high → [&#xa;    ...&#xa;]" link="compute.high → [&#xa;  AZURE: Defender for Kubernetes,&#xa;  AZURE: No privileged containers,&#xa;  AZURE: Approved images only,&#xa;  AZURE: Mandatory diagnostic logging&#xa;]" id="9-fNwfukzKMy_RRjIrC5-26">
+          <mxCell parent="1" style="text;whiteSpace=wrap;" vertex="1">
+            <mxGeometry height="110" width="240" x="903.5" y="2386.5" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-28" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-17" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0;exitDx=120;exitDy=47.5;exitPerimeter=0;" target="9-fNwfukzKMy_RRjIrC5-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="70" y="2180" as="sourcePoint" />
+            <mxPoint x="120" y="2130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-33" edge="1" parent="1" source="9-fNwfukzKMy_RRjIrC5-32" style="edgeStyle=none;shape=connector;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;strokeColor=default;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;endArrow=none;" target="9-fNwfukzKMy_RRjIrC5-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9-fNwfukzKMy_RRjIrC5-32" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=15;verticalAlign=top;align=center;" value="RPO, RTO etc." vertex="1">
+          <mxGeometry height="55" width="120" x="-19" y="2130" as="geometry" />
+        </mxCell>
+        <mxCell id="IAmOTUILh4cgjzOGNwsl-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;fontStyle=1" value="Component profile high&lt;div&gt;(example for policy content)&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="194" x="920" y="2030" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>

@@ -1,7 +1,7 @@
 \section{Landing Zone Architektur}
 \label{sec:landingzone-architecture}
 
-Eine \ac{lz} stellt das konzeptionelle Grundgerüst da in welchem der Workload für ein Projekt existiert (siehe \fullref{sec:methodik-landingzones}). Dieses Grundgerüst wird hier ebenfalls als Foundation bezeichnet und kann als Synonym zu \ac{lz} verstanden werden. Der Begriff Foundation ergibt sich aus den Use-Cases, welche den Scope der Arbeit setzen und sich auf das \ac{bit} beziehen.
+Eine \ac{lz} stellt das konzeptionelle Grundgerüst dar in welchem der Workload für ein Projekt existiert (siehe \fullref{sec:methodik-landingzones}). Der Begriff Foundation ergibt sich aus den Use-Cases, welche den Scope der Arbeit setzen und sich auf das \ac{bit} beziehen.
 
 Die \ac{lz} bildet trotz der schlussendlichen technischen Implementation bei distanzierter Betrachtung verschiedene Themengebiete ab. So ist der Nutzen der \ac{lz} die verschiedenen Gebiete so zu modellieren, dass sie dem Interesse des Unternehmens / der Organisation entsprechen. Hiermit ist gemeint, dass bspw. technische, strukturelle wie regulatorischen Vorgaben der Organisation in Bezug auf den Workload angewendet werden. Die Anwendung passiert hierbei implizit oder explizit durch die Platzierung des Workloads in der \ac{lz} bzw Foundation. Die Themengebiete, welche relevant für die \ac{lz} sind, lassen sich aus sich der \ac{ea} auf technische Capabilities zurückführen (siehe \fullref{sec:methodik-capability}). Die technischen Capabilities stellen somit das technischen \textit{Was} da, welche eine Organisation in Bezug auf die Workloads können möchte. Die \ac{lz} auf der Gegenseite stellt das \textit{Wie} bzw. einen Teil der Implementation da. Diese verschiedenen Themengebiete, in welchem die technischen Capabilities resultieren, werden nachfolgenden als \ac{lz}-Component bzw Component bezeichnet. Bei einer vollständigen Implementierung sollten somit theoretisch alle Capabilities in mindestens einer \ac{lz}-Component vertreten sein. Repräsentativ für die diversen identifizierten high-level / Level 1 Capabilities in \autoref{fig:reduced-capabiliy-map} wird für die Arbeit passend für den Use-Case (siehe \autoref{fig:traceability-use-cases}) eine Auswahl vorgenommen. Die Use-Cases (siehe \autoref{fig:traceability-use-cases}) basierend auf der Fähigkeit der Traceability welche im \autoref{sec:traceability-architecture} eingehender beschrieben wird. 
 
@@ -282,7 +282,7 @@ Beim Deployment einer neuen \ac{lz} wird in Variante 1 zur Ermittlung der Govern
 
 \textbf{Artefakte}: versionierte Component-Profiles z.B. in Git, Governance Decisions und Evidence als Datenobjekte
 
-\textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein. Der Cloud-Experte ist zuständig für das Mapping der Component-Profiles auf die Controls.
+\textbf{Funktionsweise}: Die Controls haben mind. eine Beziehung zu mind. einer \ac{lz}-Komponente, welche die Control implementiert. Für jede \ac{lz}-Komponente existieren verschiedene Profiles, diese Profiles bauen aufeinander auf, heisst die Nächsthöhere enthält Vorherige auch. Die Component Profiles repräsentieren die jeweiligen Abstufungen in den Regulations, z.B. bei \ac{si001} könnte die Sicherheitsstufe \flqq hoch\frqq\ das Component Profile \flqq storage high\frqq\ enthalten. Bei mehreren angewendeten Regulations gewinnt jeweils das mit den höheren Anforderungen. Ein Profile kann jeweils mehrere Controls implementieren und bildet das Mapping zwischen Controls und konkreten Policies auf der jeweiligen Zielplattform. Policies können sowohl selbst definiert als auch vom Provider bereitgestellt sein. Der Cloud-Experte ist zuständig für das Mapping der Component-Profiles auf die Controls.
 
 \textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem das Mapping der Component-Profiles durch den Cloud-Experten sowie die Zuweisung der Component-Profiles zu den Foundations.
 
@@ -290,7 +290,7 @@ Beim Deployment einer neuen \ac{lz} wird in Variante 1 zur Ermittlung der Govern
 
 \textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von Profiles hinzugefügt werden. Dies ermöglicht eine flexible Anpassung an neue Anforderungen, da die Profiles auf Komponentenebene organisiert sind und Änderungen an einer Control nicht zwangsläufig Auswirkungen auf andere Controls oder Bundles haben.
 
-\textbf{Abgrenzung zu anderen Varianten}: Änhlich wie in Variante 1 werden hier Controls \flqq gebundelt\frqq\ aber anstatt in Control-zentrierte Bundles, werden sie in Component-zentrierte Profiles gebündelt. Die Profiles sind somit eher nach technischen Komponenten organisiert, welche von Expertengruppen/Teams implementiert werden, anstatt direkt nach Controls. Variante 3 im Gegenzug bündelt die Controls auf einer noch höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien, was zu einer stärkeren Abstraktion führt.
+\textbf{Abgrenzung zu anderen Varianten}: Ähnlich wie in Variante 1 werden hier Controls \flqq gebundelt\frqq\ aber anstatt in Control-zentrierte Bundles, werden sie in Component-zentrierte Profiles gebündelt. Die Profiles sind somit eher nach technischen Komponenten organisiert, welche von Expertengruppen/Teams implementiert werden, anstatt direkt nach Controls. Variante 3 im Gegenzug bündelt die Controls auf einer noch höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien, was zu einer stärkeren Abstraktion führt.
 
 \textbf{Tracebility-Strength}: Die Traceability ist durch die Verknüpfung der Controls mit den Component Profiles gegeben, da jedes Profile die spezifischen Controls enthält, die es implementiert. Allerdings erfordert die Rückverfolgbarkeit zu einzelnen Controls einen zusätzlichen Suchschritt, da die Controls in den Profiles gebündelt sind. Es ist notwendig, ein Manifest zu führen, das auflistet, welche Controls in welchen Component-Profilen enthalten sind, um eine klare Rückverfolgung zu ermöglichen.
 
@@ -418,23 +418,23 @@ Beim Deployment einer neuen \ac{lz} wird in dieser Variante zunächst die Govern
     \label{fig:traceability-architecture-category-centric}
 \end{figure}
 
-\textbf{Ansatz}: Controls werden nach \ac{lz}-Profiles gebündelt, welche die Rules für alle Komponenten enthalten. Diese \ac{lz}-Profiles umfassen die entsprechenden Policies. Beim deployen einer \ac{lz} wählt das Governance Cockpit nur die \ac{lz}-Profiles aus, der Rest wird abstrahiert.
+\textbf{Ansatz}: Controls werden nach \ac{lz}-Categories gebündelt, welche die Rules für alle Komponenten enthalten. Diese \ac{lz}-Categories umfassen die entsprechenden Policies. Beim deployen einer \ac{lz} wählt das Governance Cockpit nur die \ac{lz}-Categories aus, der Rest wird abstrahiert.
 
-\textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Profile alles umfasst, ohne dass viel ausgewählt werden muss.
+\textbf{Fokus}: LZ-Kategorien mit Vereinfachung für den Endnutzer, da die Category alles umfasst, ohne dass viel ausgewählt werden muss.
 
-\textbf{Artefakte}: versionierte \ac{lz}-Profiles z.B. in Git, Governance Decisions und Evidence als Datenobjekte
+\textbf{Artefakte}: versionierte \ac{lz}-Categories z.B. in Git, Governance Decisions und Evidence als Datenobjekte
 
-\textbf{Funktionsweise}: Die Controls werden in \ac{lz}-Profiles gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jedes Profile repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Beim Deployen einer \ac{lz} wählt das Governance Cockpit das entsprechende Profile aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen Profilen enthalten sind.
+\textbf{Funktionsweise}: Die Controls werden in \ac{lz}-Categories gebündelt, die alle relevanten Regeln für die verschiedenen Komponenten enthalten. Jede Category repräsentiert eine bestimmte \ac{lz}-Kategorie, die eine Risikoklasse oder einen Anwendungsfall abdeckt. Die \ac{lz}-Categories entsprechen den Regulations bzw. ihren jeweiligen Abstufungen. Beim Deployen einer \ac{lz} wählt das Governance Cockpit die entsprechende Category aus, ohne dass der Benutzer sich mit den einzelnen Controls oder Policies auseinandersetzen muss. Diese Herangehensweise bietet eine einfache Anwendung und eine klare Customer Story, da die Kategorien direkt mit den Risikoklassen verknüpft sind. Allerdings führt dies zu einer hohen Duplikation von Controls über verschiedene Kategorien hinweg, und die Rückverfolgbarkeit zu einzelnen Controls erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen Kategorien enthalten sind.
 
-\textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem das Mapping der \ac{lz}-Profiles durch den Cloud-Experten sowie die Zuweisung der \ac{lz}-Profiles zu den Foundations.
+\textbf{Verantwortlichkeiten}: Der Projektverantwortliche definiert die Anforderungen für die jeweilige Foundation. Der Compliance Officer ist zuständig für die Regulations und Controls. Er prüft zudem das Mapping der \ac{lz}-Categories durch den Cloud-Experten sowie die Zuweisung der \ac{lz}-Categories zu den Foundations.
 
-\textbf{Maintenance}: Änderungen an einer Control erfordern die Aktualisierung aller \ac{lz}-Profiles, die diese Control enthalten, was den Wartungsaufwand erhöht. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls und \ac{lz}-Profiles gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Controls und Profiles zu ermöglichen.
+\textbf{Maintenance}: Änderungen an einer Control erfordern die Aktualisierung aller \ac{lz}-Categories, die diese Control enthalten, was den Wartungsaufwand erhöht. Es ist wichtig, einen klaren Versionierungsprozess zu etablieren, um sicherzustellen, dass Änderungen nachvollziehbar und Versionen referenzierbar sind und die Historie der Controls und \ac{lz}-Categories gepflegt wird. Dies könnte durch die Verwendung von \ac{iac} in Git erreicht werden, um die Änderungen zu verfolgen und Versionierung von Controls und Categories zu ermöglichen.
 
-\textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von \ac{lz}-Profiles hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Duplikation von Controls über verschiedene Kategorien hinweg die Verwaltung und Aktualisierung der \ac{lz}-Profiles erschwert.
+\textbf{Adaptability}: Neue Controls können durch die Erstellung und Verknüpfung neuer Versionen von \ac{lz}-Categories hinzugefügt werden. Allerdings kann dies zu einer erhöhten Komplexität führen, da die Duplikation von Controls über verschiedene Kategorien hinweg die Verwaltung und Aktualisierung der \ac{lz}-Categories erschwert.
 
 \textbf{Abgrenzung zu anderen Varianten}: Im Vergleich zu Variante 1 und 2, welche die Controls in Bundles oder Component-zentrierte Profiles bündeln, bündelt diese Variante die Controls auf einer höheren Ebene, nämlich auf der Ebene von \ac{lz}-Kategorien.
 
-\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante am schwierigsten, da die Controls in den \ac{lz}-Profiles gebündelt sind und es eine hohe Duplikation von Controls über verschiedene Kategorien hinweg gibt. Es erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Profiles enthalten sind, um eine klare Rückverfolgung zu ermöglichen.
+\textbf{Tracebility-Strength}: Die Rückverfolgbarkeit zu einzelnen Controls ist in dieser Variante am schwierigsten, da die Controls in den \ac{lz}-Categories gebündelt sind und es eine hohe Duplikation von Controls über verschiedene Kategorien hinweg gibt. Es erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Categories enthalten sind, um eine klare Rückverfolgung zu ermöglichen.
 
 \textbf{Laufzeitkomplexität}: Deploy Foundation: O(n), Verify Compliance: O(n)
 
@@ -531,11 +531,11 @@ In der Loop wird über die jeweiligen Policies iteriert, da die Rückverfolgbark
     \label{fig:methodology-poc-variant3-sequence-deployment}
 \end{figure}
 
-Hier wird die Kategorie als Ergebnis der Foundation Placement Decision zurückgegeben, welche dann die Auswahl der \ac{lz}-Profiles bestimmt, welche die entsprechenden Controls und Policies enthalten. Die Rückverfolgbarkeit zu den einzelnen Controls erfolgt über die Policies, welche die Controls implementieren, und erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Profiles enthalten sind.
+Hier wird die Kategorie als Ergebnis der Foundation Placement Decision zurückgegeben, welche dann die Auswahl der \ac{lz}-Categories bestimmt, welche die entsprechenden Controls und Policies enthalten. Die Rückverfolgbarkeit zu den einzelnen Controls erfolgt über die Policies, welche die Controls implementieren, und erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Categories enthalten sind.
 
 \textbf{Pros}
 \begin{itemize}
-    \item Extrem einfache Anwendung (\flqq regulierte Profile anwenden\frqq)
+    \item Extrem einfache Anwendung (\flqq regulierte Kategorien anwenden\frqq)
     \item Klare Customer Story: Kategorien repräsentieren Risikoklassen
 \end{itemize}
 

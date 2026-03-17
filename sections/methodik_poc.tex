@@ -226,7 +226,7 @@ Der \ac{poc} soll einen Fokus auf die Traceability-Architecture gewährleisten. 
     \label{fig:methodology-project-healthcare-view-evidence}
 \end{figure}
 
-Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}. Das 360-Grad-Cockpit verwaltet mit dem Project Service die Projekte inklusive der zugehörigen Foundations. Der \ac{lz} Provisioning Service provisioniert die Foundations auf den Cloud-Plattformen und hält Referenzen auf die erstellten Cloud Resource Container. Der Hauptanwender des 360-Grad-Cockpit ist der Projektverantwortliche. Das Governance Cockpit verawaltet mit dem Governance Configuration Service die Traceability-Relationship auf welcher Basis der Traceability Service Assessment vornimmt. Der Evidence Sevice speichert die Artefakte, welche den Stand der Compliance zu einem gewissen Zeitpunkt abbilden. Die Cloud Administration Komponenten provisioniert mit dem \ac{lz} Plattform Configuration Service die Grundinfrastruktur der \ac{lz}.
+Der \ac{poc} besteht aus den Komponenten in \autoref{fig:methodology-poc-setup}. Das 360-Grad-Cockpit verwaltet mit dem Project Service die Projekte inklusive der zugehörigen Foundations. Der \ac{lz} Provisioning Service provisioniert die Foundations auf den Cloud-Plattformen und hält Referenzen auf die erstellten Cloud Resource Container. Der Hauptanwender des 360-Grad-Cockpit ist der Projektverantwortliche. Das Governance Cockpit verawaltet mit dem Governance Configuration Service die Traceability-Relationship auf welcher Basis der Traceability Service Assessment vornimmt. Der Evidence Service speichert die Artefakte, welche den Stand der Compliance zu einem gewissen Zeitpunkt abbilden. Die Cloud Administration Komponenten provisioniert mit dem \ac{lz} Plattform Configuration Service die Grundinfrastruktur der \ac{lz}. Der Provisioning Service / IaC Execution Layer deckt die Interaktionen inkl. Provisionierung auf den Cloud-Plattformen da. Im \ac{poc} werden lediglich AWS und Azure repräsentativ für weitere grössere Cloud-Plattformen betrachtet.
 
 Um den Fokus auf den genannten Use-Cases zu behalten wird in \autoref{fig:methodology-poc-setup} eine Auswahl getroffen welche Komponenten detailliert implementiert werden. Die grünen Komponenten werden detailliert umgesetzt, um die Funktionalität zu zeigen, die blauen Komponenten werden statisch implementiert da sie sich keinen direkten Bezug zur Funktionsweise der Traceability-Architecture aufweisen.
 
@@ -237,7 +237,7 @@ Um den Fokus auf den genannten Use-Cases zu behalten wird in \autoref{fig:method
     \label{fig:methodology-poc-setup}
 \end{figure}
 
-Im \ac{poc} ist für die Traceability der statisch konfigurierte Inhalte des Governance Configuration Service am relevantesten. Für die implementierte component-cenctric Variante werden dafür zuerst exemplarische Controls aus der Regulation \ac{si001}. Die verwendeten Controls in \autoref{fig:methodology-poc-traceability-relationship-components} sind dabei \hl{hier weiter machen}
+Im \ac{poc} ist für die Traceability der statisch konfigurierte Inhalte des Governance Configuration Service am relevantesten. Für die implementierte component-cenctric Variante werden in {fig:methodology-poc-traceability-relationship-components} dafür zuerst exemplarische Controls aus der Regulation \ac{si001} gewählt. Die Controls decken absichtlich unterschiedliche regulatorische Gebiete ab, damit eine Zuordnung zu verschiedenen Components in diesem Fall Storage, Network und Compute möglich ist. Nach den Controls werden bereits existieren Policies für die Cloud-Plattformen (Azure und AWS) mittels öffentlicher Dokumentation gesucht und wiederum Component/Component-Profiles zugewiesen. Die Component-Profiles werden im \ac{poc} nicht genauer spezifiziert und dienen lediglich als Veranschaulichung. Für eine produktive Anwendung müsste an dieser Stelle ein Security-Intent für ein Profil definiert werden und basierend auf diesem entsprechend Policies mit Parameter gemapped werden.
 
 \begin{figure}[H]
     \centering
@@ -246,5 +246,3 @@ Im \ac{poc} ist für die Traceability der statisch konfigurierte Inhalte des Gov
     \caption{Statische Traceability-Relationship Komponenten für den \ac{poc}}
     \label{fig:methodology-poc-traceability-relationship-components}
 \end{figure}
-
-\hl{Im Sinne der didaktischen Veranschaulichung einer Traceability-Architektur wir der PoC aus Sicht der verschiedenen Use-Cases beschrieb}

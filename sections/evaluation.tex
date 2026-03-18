@@ -31,7 +31,7 @@ Insgesamt positioniert sich die Variante als Governance-zentrierter Ansatz mit h
 
 \subsubsection{Bewertung der Quality Attributes}
 
-Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{3.18} und wird nachfolgenden textuell erläutert.
+Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{3.18} und wird nachfolgend textuell erläutert.
 
 \begin{longtable}{|
   L{1cm}|
@@ -144,7 +144,7 @@ Insgesamt weist die Variante eine geringe strukturelle Komplexität bei gleichze
 
 \subsubsection{Bewertung der Quality Attributes}
 
-Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{3.016} und wird nachfolgenden textuell erläutert.
+Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{3.016} und wird nachfolgend textuell erläutert.
 
 \begin{longtable}{|
   L{1cm}|
@@ -251,13 +251,13 @@ Das Modell ist recht geschlossen und erlaubt bei den Component-Profiles keine De
 
 Die Evaluation der Category-zentrierten Variante zeigt eine Architektur, die eine starke strukturelle Vereinfachung durch die Einführung von \ac{lz}-Categories anstrebt. Durch die Bündelung von Policies auf einer höheren Abstraktionsebene kann die Modellkomplexität reduziert und eine plattformübergreifende Anwendbarkeit unterstützt werden. Dies erleichtert insbesondere die Anpassung der Architektur an neue Anforderungen sowie die Erweiterung um zusätzliche Kategorien im Verlauf des Betriebs.
 
-Gleichzeitig führt die Generalisierung der Traceability-Beziehungen dazu, dass Kontextinformationen teilweise verloren gehen. Obwohl weiterhin nachvollzogen werden kann, welche Policies im Rahmen einer Kategorie zur Compliance-Bewertung herangezogen werden, ist die genaue Begründung der Zuordnung einzelner Policies weniger transparent als in Varianten mit stärker expliziter Modellierung. Dies wirkt sich insbesondere auf die Auditability sowie die Maintainability der Architektur aus.
+Gleichzeitig führt die Generalisierung der Traceability-Beziehungen dazu, dass Kontextinformationen teilweise verloren gehen. Obwohl weiterhin nachvollzogen werden kann, welche Policies im Rahmen einer Kategorie zur Compliance-Bewertung herangezogen werden, ist die genaue Begründung der Zuordnung einzelner Policies weniger transparent als in Varianten mit stärkerer expliziter Modellierung. Dies wirkt sich insbesondere auf die Auditability sowie die Maintainability der Architektur aus.
 
-Auch hinsichtlich der Performance ergeben sich Einschränkungen, da durch die kategoriebasierte Bündelung Policies geprüft werden können, die für eine konkrete Foundation oder bestimmte Ressourcentypen nicht unmittelbar relevant sind. Insgesamt positioniert sich die Variante als engineering-orientierter Ansatz mit hoher Modellvereinfachung und guter Adaptability, der jedoch zugunsten dieser Vereinfachung eine geringere Detailtiefe und Transparenz der Traceability-Beziehungen in Kauf nimmt.
+Auch hinsichtlich der Performance ergeben sich Einschränkungen, da durch die Kategorie-basierte Bündelung Policies geprüft werden können, die für eine konkrete Foundation oder bestimmte Ressourcentypen nicht unmittelbar relevant sind. Insgesamt positioniert sich die Variante als Engineering-orientierter Ansatz mit hoher Modellvereinfachung und guter Adaptability, die jedoch zugunsten dieser Vereinfachung eine geringere Detailtiefe und Transparenz der Traceability-Beziehungen in Kauf nimmt.
 
 \subsubsection{Bewertung der Quality Attributes}
 
-Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{2.508} und wird nachfolgenden textuell erläutert.
+Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{2.508} und wird nachfolgend textuell erläutert.
 
 \begin{longtable}{|
   L{1cm}|
@@ -311,53 +311,54 @@ Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \tex
 \end{longtable}
 
 \textbf{Performance}
-Das Mapping von den Policies auf einer der \ac{lz} Catgories erlaubt, dass Policies bei der Verification gebündelt abgefragt werden können. Wegen der Kategorisiernug werden jedoch auch Policies für Ressourcen-Typen geprüft welche potentiell gar nicht in der Foundation vorkommen. Für jede Policy Prüfung sind Calls and die APIs der Cloud-Provider nötig. Entsprechend ist die Performance gering
+
+Das Mapping der Policies auf eine der \ac{lz} Categories erlaubt, dass Policies bei der Verifikation gebündelt abgefragt werden können. Wegen der Kategorisierung werden jedoch auch Policies für Ressource-Typen geprüft welche potenziell gar nicht in der Foundation vorkommen. Für jede Policy Prüfung sind Calls an die APIs der Cloud-Provider nötig. Entsprechend ist die Performance gering.
 
 \textbf{Portability}
 
-Die Abstraktion der \ac{lz} Category erlaubt ählich wie bei den Component-Profiles eine Anwendung auf anderen Cloud-Plattformen wegen der Abastrktion. Bei einer Nutzung auf einer weiteren Plattform müssen lediglich neue Policies der Category zugeordnet werden.
+Die Abstraktion der \ac{lz} Category erlaubt ähnlich wie bei den Component-Profiles eine Anwendung auf anderen Cloud-Plattformen wegen der Abstraktion. Bei einer Nutzung auf einer weiteren Plattform müssen lediglich neue Policies der Category zugeordnet werden.
 
 \textbf{Auditability}
 
-Die \ac{lz} Category erlaubt es nachzuvollziehen, dass Policies zu den Categories zugeordnet wurden. Gleichzeitigt sinkt jedoch wegen der hohen Anzahl an Controls die Nachvollziehbarkeit warum bspw. eine gewisse Policy mit einer Konfiguration einer Category angehört. Die Auditability ist somit tiefer.
+Die \ac{lz} Category erlaubt es nachzuvollziehen, dass Policies zu den Categories zugeordnet wurden. Gleichzeitig sinkt jedoch wegen der hohen Anzahl an Controls die Nachvollziehbarkeit warum bspw. eine gewisse Policy mit einer Konfiguration einer Category angehört. Die Auditability ist somit tiefer.
 
 \textbf{Automatability}
 
-Die technische Modellierung der \ac{lz} Category erlaubt eine maschinelle Zuweisung und Anwendung auf die Foundation. Die Zuweisung der Policies zu der Category kann AI basiert erfolgen muss jedoch manuell nachgeprüft werden. Die manuelle Prüfung ist hier besonders relevant, da der Kontext auf welchem beurteilt werden kann ob eine Policy einer Category angehört unklarer ist. Dies zeigt sich vor alle im Verglich mit den component profiles oder controls die auf einen genaueren Scope zurückgreifen können.
+Die technische Modellierung der \ac{lz} Category erlaubt eine maschinelle Zuweisung und Anwendung auf die Foundation. Die Zuweisung der Policies zu der Category kann KI basiert erfolgen muss jedoch manuell nachgeprüft werden. Die manuelle Prüfung ist hier besonders relevant, da der Kontext auf welchem beurteilt werden kann, ob eine Policy einer Category angehört, unklarer ist. Dies zeigt sich vor allem im Vergleich mit den Component-Profiles oder Controls die auf einen genaueren Scope zurückgreifen können.
 
 \textbf{Maintainability}
 
-Die Maintainability ist aufwändiger, da die Zuordnung von Policy zu \ac{lz} Category evtl. nicht durch das Modell an sich nachvollziehar ist. Nicht nachvollziebar meint hierbei, dass bspw ein Compliance-Officer die Überlegungen welche zur Zuweisung von einem anderen Compliance-Officer geführt haben, nicht zwangsläufig verstehen kann.
+Die Maintainability ist aufwändiger, da die Zuordnung von Policy zu \ac{lz} Category evtl. nicht durch das Modell an sich nachvollziehbar ist. Nicht nachvollziehbar meint hierbei, dass bspw. ein Compliance-Officer die Überlegungen welche zur Zuweisung von einem anderen Compliance-Officer geführt haben, nicht zwangsläufig verstehen kann.
 
 \textbf{Adaptability}
 
-Die \ac{lz} Categories können sich an einen neuen Bedarf anpassen. So können im Verlauf der Nutzung neue Categories definiert werden, welche spezifische Policies fassen. Durch die Abstraktion kann die unabhängig der Cloud-Plattform erfolgen.
+Die \ac{lz} Categories können sich an einen neuen oder ändernden Bedarf anpassen. So können im Verlauf der Nutzung neue Categories definiert werden, welche spezifische Policies fassen. Durch die Abstraktion kann die Migration unabhängig der Cloud-Plattform erfolgen.
 
 \textbf{Complexity}
 
-Die Modellierung beschränkt sich bewusst lediglich auf die Ebene der \ac{lz}-Category um eine Vereinfachung anzustreben. Deshalb wird die Reduktion der Complexity hoch bewertet.
+Die Modellierung beschränkt sich bewusst lediglich auf die Ebene der Dummy38-Category, um eine Vereinfachung anzustreben. Deshalb wird die Reduktion der Complexity hoch bewertet.
 
 \textbf{Traceability Strength}
 
-Trotz der Generalisierung in den verschiedenen Categories kann nachvollzogen werden, was der Compliance-Stats einer Control ist. Lediglich der Grund der Zuweisung ist wegen der potentiell Grossen Anzahl an Policies in einer Category nicht unbedingt eindeutig
+Trotz der Generalisierung in den verschiedenen Categories kann nachvollzogen werden, was der Compliance-Status einer Control ist. Lediglich der Grund der Zuweisung ist wegen der potenziell grossen Anzahl an Policies in einer Category nicht unbedingt eindeutig.
 
 \subsubsection{Trade-Offs}
 
 \textbf{Explicit Trace Modeling vs. Implicit Derivation}
 
-Die Variante entspricht einer expliziten Modellierung. Die \ac{lz} Category dient dabei als Bündelung von Controls zu Policies. Der Gewinn gegenüber einer impliziten Modellierung ergibt sich aus der Abstufung welche die Categories ermöglichen. Requirements vom Akteur des Projektverantwortlichen können somit direkt das Mass der Anwendung steuern
+Die Variante entspricht einer expliziten Modellierung. Die \ac{lz} Category dient dabei als Bündelung von Controls zu Policies. Der Gewinn gegenüber einer impliziten Modellierung ergibt sich aus der Abstufung, welche die Categories ermöglichen. Requirements vom Akteur des Projektverantwortlichen können somit direkt das Mass der Anwendung steuern.
 
 \textbf{Governance centric Traceability vs. Engineering centric Traceability}
 
-Die Modellierung orientiert sich startk an dem Akteur des Projektverantwortlichen. Durch die starke Abstraktion der angewendeten Policies und Controls findet eine Vereinfachung statt. Diese Vereinfachung führt dazu, dass der Projektveranwortliche keine detaillierten Requirements mehr machen muss sondern lediglich eine Aussage in den Kateogrien machen kann.
+Die Modellierung orientiert sich stark an dem Akteur des Projektverantwortlichen. Durch die starke Abstraktion der angewendeten Policies und Controls findet eine Vereinfachung statt. Diese Vereinfachung führt dazu, dass der Projektverantwortliche keine detaillierten Requirements mehr machen muss, sondern lediglich eine Aussage in den Kategorien machen kann.
 
 \textbf{Traceability Depth vs. Model Simplicity}
 
-Die Variante nimmt eine ähnliche Abstraktion die die Component-centric Variante vor, abstrahiert jedoch durch die stark reduzierten \ac{lz} Kategorien noch mehr. Die Details der Traceability-Beziehung werden dadurch nicht direkt beeinflusst. Die Zuordnung zu verschiedenen Resource-Typen ist jeoch nicht mehr gegeben, da Policies von allen Controls direkt der \ac{lz}-Category 
+Die Variante nimmt eine ähnliche Abstraktion wie die Component-zentrische Variante vor, abstrahiert jedoch durch die stark reduzierten \ac{lz} Kategorien noch mehr. Die Details der Traceability-Beziehung werden dadurch nicht direkt beeinflusst. Die Zuordnung zu verschiedenen Ressource-Typen ist jedoch nicht mehr gegeben, da Policies von allen Controls direkt der \ac{lz}-Category zugeordnet werden.
 
 \textbf{Central Traceability Model vs. Federated Traceability Models}
 
-Das Modell erlaubt trotz zentralen Modell der \ac{lz} Categories die Definition von weiteren Categories, welche theoretisch eigenständig zugeteilt und hierarchisch angeordnet werden können. Somit kann sich trotz der zentralen Definition des \ac{lz} Category Modells selbst eine gewisse föderative Nutzung ergen.
+Das Modell erlaubt trotz des zentralen Modelles der \ac{lz} Categories die Definition von weiteren Categories, welche theoretisch eigenständig zugeteilt und hierarchisch angeordnet werden können. Somit kann sich trotz der zentralen Definition des \ac{lz} Category Modells selbst eine gewisse föderative Nutzung ergeben.
 
 \subsection{Evaluation Variante 4}
 

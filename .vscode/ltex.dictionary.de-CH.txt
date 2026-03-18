@@ -26,3 +26,11 @@ Officer
 Auditierbarkeit
 Automatisierbarkeit
 Component-Profiles
+Complexity
+Adaptability
+Maintainability
+Automatability
+Auditability
+Portability
+Categories
+Category

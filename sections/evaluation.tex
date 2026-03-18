@@ -362,35 +362,15 @@ Das Modell erlaubt trotz des zentralen Modelles der \ac{lz} Categories die Defin
 
 \subsection{Evaluation Variante 4}
 
-Die Evaluation der provider-nativen Variante zeigt eine Architektur,
-die bewusst auf zusätzliche Abstraktionsebenen verzichtet und stattdessen
-die nativen Policy- und Compliance-Mechanismen der jeweiligen
-Cloud-Plattformen direkt nutzt. Dadurch kann eine sehr hohe Performance
-bei der Compliance-Auswertung sowie ein hoher Grad an Automatisierbarkeit
-erreicht werden, da bestehende providerseitige Aggregations- und
-Evaluationsmechanismen wiederverwendet werden.
+Die Evaluation der Provider-nativen Variante zeigt eine Architektur, die bewusst auf zusätzliche Abstraktionsebenen verzichtet und stattdessen die nativen Policy- / Compliance-Mechanismen der jeweiligen Cloud-Plattformen direkt nutzt. Dadurch kann eine sehr hohe Performance bei der Compliance-Auswertung sowie ein hoher Grad an Automatisierbarkeit erreicht werden, da bestehende providerseitige Aggregations- und Evaluationsmechanismen wiederverwendet werden.
 
-Gleichzeitig führt die enge Kopplung an plattformspezifische Konzepte zu
-Einschränkungen hinsichtlich der Portability und Adaptability der
-Architektur. Unterschiede in den Policy-Modellen, Metadatenstrukturen und
-Auswertungsmöglichkeiten zwischen verschiedenen Cloud-Providern erschweren
-eine konsistente, plattformübergreifende Traceability-Betrachtung. Auch die
-langfristige Maintainability kann dadurch beeinflusst werden, da Wissen
-über provider-spezifische Mechanismen und deren Weiterentwicklung erforderlich
-ist.
+Gleichzeitig führt die enge Kopplung an plattformspezifische Konzepte zu Einschränkungen hinsichtlich der Portability und Adaptability der Architektur. Unterschiede in den Policy-Modellen, Metadatenstrukturen und Auswertungsmöglichkeiten zwischen verschiedenen Cloud-Providern erschweren eine konsistente, plattformübergreifende Traceability-Betrachtung. Auch die langfristige Maintainability kann dadurch beeinflusst werden, da Wissen über Provider-spezifische Mechanismen und deren Weiterentwicklung erforderlich ist.
 
-Die strukturelle Komplexität der Architektur bleibt durch den Verzicht auf ein
-zusätzliches Traceability-Metamodell gering. Gleichzeitig kann jedoch die
-Nachvollziehbarkeit regulatorischer Zusammenhänge variieren, da die verfügbaren
-Traceability-Informationen stark von den jeweiligen Plattformfunktionen
-abhängen. Insgesamt positioniert sich die Variante als stark
-engineering-zentrierter Ansatz mit hoher operativer Effizienz, der zugunsten
-dieser Effizienz eine geringere strategische Unabhängigkeit und
-Modellkonsistenz in Kauf nimmt.
+Die strukturelle Komplexität der Architektur bleibt durch den Verzicht auf ein zusätzliches Traceability-Metamodell gering. Gleichzeitig kann jedoch die Nachvollziehbarkeit regulatorischer Zusammenhänge variieren, da die verfügbaren Traceability-Informationen stark von den jeweiligen Plattformfunktionen abhängen. Insgesamt positioniert sich die Variante als stark Engineering-zentrierter Ansatz mit hoher operativer Effizienz, der zugunsten dieser Effizienz eine geringere strategische Unabhängigkeit und Modellkonsistenz in Kauf nimmt.
 
 \subsubsection{Bewertung der Quality Attributes}
 
-Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{2.59} und wird nachfolgenden textuell erläutert.
+Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{2.59} und wird nachfolgend textuell erläutert.
 
 \begin{longtable}{|
   L{1cm}|
@@ -445,15 +425,15 @@ Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \tex
 
 \textbf{Performance}
 
-Die direkte Nutzung von providerspezifischen Policy-Engines lässt annehmen, dass die Auswertung von bspw. bundles Policies bereits optimal erfolgt. Im Gegensatz zu den anderen Varianten bei denen individuelle Abfragen mit einer gewissen Latenz an die APIs der Cloud-Plattform APIs vorgenommen werden, entfällt der Schritt bei dieser Variante. Die Performance ist somit hoch
+Die direkte Nutzung von providerspezifischen Policy-Engines lässt annehmen, dass die Auswertung von bspw. Bundles Policies bereits optimal erfolgt. Im Gegensatz zu den anderen Varianten bei denen individuelle Abfragen mit einer gewissen Latenz an die APIs der Cloud-Plattform APIs vorgenommen werden, entfällt der Schritt bei dieser Variante. Die Performance ist somit hoch.
 
 \textbf{Portability}
 
-Die Nutzung von plattformspezifischen Konzepten reduziert die Wahrschienlichkeit, dass eine Übernahme zu anderen Plattformen möglich ist. Trotzt ähnlicher Idee bez Enforcement / Policy Prüfung können die Konzepte zur Umsetzung grundlegend verschieded sein. Die Portablity ist somit tief.
+Die Nutzung von plattformspezifischen Konzepten reduziert die Wahrscheinlichkeit, dass eine Übernahme zu anderen Plattformen möglich ist. Trotz ähnlicher Idee bzgl. Enforcement / Policy Prüfung können die Konzepte zur Umsetzung grundlegend verschieden sein. Die Portablity ist somit tief.
 
 \textbf{Auditability}
 
-Cloud-Plattformen wie AWS und Azure bieten ouf-of-the-box Services an mit denen die Zuweisung von bspw Policies und weitere Aktionen nachvollziehbar ist. Gleichzeitig ist aber nicht garantiert, dass der Grade der Auditbalility den Anforderungen der Akteuren entspricht
+Cloud-Plattformen wie AWS und Azure bieten ouf-of-the-box Services an mit denen die Zuweisung von bspw. Policies und weitere Aktionen nachvollziehbar ist. Gleichzeitig ist aber nicht garantiert, dass der Grade der Auditability den Anforderungen der Akteuren entspricht.
 
 \textbf{Automatability}
 
@@ -461,11 +441,11 @@ Cloud-Plattformen wie AWS und Azure bieten ouf-of-the-box Services an mit denen 
 
 \textbf{Maintainability}
 
-Die Elemente welche von dem Cloud-Plattformen selbst bereitgestellt werden besitzen (wie bei den anderen Variante indkrekt) ihren eigenen Lifecyle, was zu einem geringen Aufwand führt. Die Parität über die Cloud-Plattformen hinweg ohne eine Model on-top aufrecht zu erhalten ist warhscheinlich langfristig aufwändiger. Des Weiteren müssen tendenziell mehr Akteure wissen über die einzelnen Cloud-Plattformen besitzen. Deshalb wird die Maintainability gering bewertet.
+Die Elemente, welche von den Cloud-Plattformen selbst bereitgestellt werden, besitzen (wie bei den anderen Varianten indirekt) ihren eigenen Lifecycle, was zu einem geringen Aufwand führt. Die Parität über die Cloud-Plattformen hinweg ohne ein Modell obendrauf aufrechtzuerhalten ist wahrscheinlich langfristig aufwändiger. Des Weiteren müssen tendenziell mehr Akteure Wissen über die einzelnen Cloud-Plattformen besitzen. Deshalb wird die Maintainability gering bewertet.
 
 \textbf{Adaptability}
 
-Fehlende Abstraktion aufbauen auf den Cloud-Plattformen erlaubt keine Adaptability, wenn sich nicht bereits von der Plattform vorgesehen ist. Basierend auf den verschiedenen Konzepten welche die Provider verfolgen wird somit eine geringe Adaptability angenommen.
+Fehlende Abstraktion aufzubauen auf den Cloud-Plattformen erlaubt keine Adaptability, wenn dies nicht bereits von der Plattform vorgesehen ist. Basierend auf den verschiedenen Konzepten welche die Provider verfolgen wird somit eine geringe Adaptability angenommen.
 
 \textbf{Complexity}
 
@@ -473,21 +453,22 @@ Die Complexity ist wegen der nicht vorhandenen Abstraktion sehr gering. Konseque
 
 \textbf{Traceability Strength}
 
-Mit der Traceability soll das Verknüpfen von den Controls zu den Ressourcen ermöglicht werden. AWS und Azure erlauben via Metadaten gewisse Informationen in Policy-Assignments einzubauen, um einen Rückschluss zu ermöglichen. Basierend auf den genannten Cloud-Plattformen wird angenommen, dass auch andere Plattformen Tools bereitstellen, um solche Abfragen zu ermöglichen. Die Annahme ist, dass eine Aggregierung über Plattformen hinweg jedoch nur teilweise möglich ist.
+Mit der Traceability soll das Verknüpfen von den Controls zu den Ressourcen ermöglicht werden. AWS und Azure ermöglichen es via Metadaten gewisse Informationen in Policy-Assignments einzubauen, um einen Rückschluss zu ermöglichen. Basierend auf den genannten Cloud-Plattformen wird angenommen, dass auch andere Plattformen Tools bereitstellen, um solche Abfragen zu ermöglichen. Die Annahme ist, dass eine Aggregierung über Plattformen hinweg jedoch nur teilweise möglich ist.
 
 \subsubsection{Trade-Offs}
 
 \textbf{Explicit Trace Modeling vs. Implicit Derivation}
-Die Variante entspricht einer expliziten Modellierung, in der die technischen Mittel der Cloud-Plattformen selbst verwendet werden, um die Regulations abzubilden. Dadurch reduziert sich der Aufwand ein separates Traceability-Beziehung-Modell zu pflegen. Gleichzeit wird jedoch die plattformübergreifende erschwert.
+
+Die Variante entspricht einer expliziten Modellierung, in der die technischen Mittel der Cloud-Plattformen selbst verwendet werden, um die Regulations abzubilden. Dadurch reduziert sich der Aufwand ein separates Traceability-Beziehung-Modell zu pflegen. Gleichzeitig wird jedoch die plattformübergreifende ? erschwert.
 
 \textbf{Governance centric Traceability vs. Engineering centric Traceability}
 
-Wegen der Unterschiede von Plattform zu Plattform kann nicht allgemein gesagt werden wie die Zentrierung aussieht. Für Azure wird durch die Zentralisierung der Policies eher eine governance centric Traceability erwartet, welche für den Akteur des Compliance-Officer nutzbarer ist. Bei AWS wird wegen der Verteilung von Policies über Services eher eine engineering centric erwartet
+Wegen den Unterschieden von Plattform zu Plattform kann nicht allgemein gesagt werden wie die Zentrierung aussieht. Für Azure wird durch die Zentralisierung der Policies eher eine Governance-centric Traceability erwartet, welche für den Akteur des Compliance-Officer nutzbarer ist. Bei AWS wird wegen der Verteilung von Policies über Services eher eine Engineering-centric Traceability erwartet.
 
 \textbf{Traceability Depth vs. Model Simplicity}
 
-Die Model Simplicity ist wegen der geringen bzw. nicht existierenden Abstraktion sehr gering. Gleichzeitig geht aber wegen der fehlenden Abstraktion die Parität von Informationen über Cloud-Plattformen hinweg verloren. Der Compliance-Officer muss bspw. sicherstellen, dass Auswertungen, welche von einem Cloud-Provider zu einer Control bereitgestellt werden, ähnlich sind zu jenen bei einem anderen Provider.
+Die Model Simplicity ist wegen der geringen bzw. nicht existierenden Abstraktion sehr gering. Gleichzeitig geht aber wegen der fehlenden Abstraktion die Parität von Informationen über Cloud-Plattformen hinweg verloren. Der Compliance-Officer muss z.B. sicherstellen, dass Auswertungen, welche von einem Cloud-Provider zu einer Control bereitgestellt werden, ähnlich sind zu jenen bei einem anderen Provider.
 
 \textbf{Central Traceability Model vs. Federated Traceability Models}
 
-Die direkte Nutzung der Policy Engines von den Cloud-Providern macht das Model, welche von den Providern propagiert wird, grundsätzlich zu einem zentralen Model. Azure erlaubt dem Nutzer Policy-Initiatives zu erstellen um Polices kombinieren können. Mit Metadata können eigene Informationen beigefügt werden. AWS erlaubt je nach Service mehr oder weniger Spielraum, was das definieren und strukturieren von eigenen / build-in Policies anbelangt.
+Die direkte Nutzung der Policy Engines von den Cloud-Providern macht das Model, welches von den Providern propagiert wird, grundsätzlich zu einem zentralen Model. Azure erlaubt dem Nutzer Policy-Initiatives zu erstellen um Policies kombinieren können. Mit Metadata können eigene Informationen beigefügt werden. AWS erlaubt je nach Service mehr oder weniger Spielraum, was das Definieren und Strukturieren von eigenen / built-in Policies anbelangt.

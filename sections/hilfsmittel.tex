@@ -1,28 +1,198 @@
 \section{Hilfsmittel}
 \label{sec:hilfsmittel}
 
-\begin{table}[H]
-    \centering
-    \begin{tabularx}{\textwidth}{|X|X|X|}
-        \hline
-        \textbf{Hilfsmittel} & \textbf{Verwendung} & \textbf{Betroffene Stellen} \\
-        \hline
-        Elicit \url{https://elicit.com/} ist ein AI basiertes Tool für die Literarturecherche & Recherche von Literatur für die Erarbeitung der Grundlagen  & \fullref{sec:grundlagen}
-        \\
-        \hline
-        Scite \url{https://scite.ai/} ist ein AI basiertes Tool für die Literarturecherche & Recherche von Literatur für die Erarbeitung der Grundlagen & \fullref{sec:grundlagen}
-        \\
-        \hline
-        Swisscovery \url{https://swisscovery.slsp.ch/} ist eine allgemeine Suchmaschine für digitale wie pyhsische Medien unter anderem im Raum Schwiez & Recherche von Literatur für die Erarbeitung der Grundlagen & \fullref{sec:grundlagen}
-        \\
-        \hline
-        ChatGPT \url{https://chatgpt.com/} ist ein mmultipurpose LLM & Strukturierung der Arbeit, Challengen von Ideen  & \fullref{sec:grundlagen}, \fullref{tab:uc4-define-technical-measures} 
-        \\
-        \hline
-        Base44 \url{https://base44.com/} ist eine AI-powered, no-code Plattform um Web-Applikationen zu erstellen & Generieren von UI-Mockups & \fullref{sec:poc-methodology}
-        \\
-        \hline
-    \end{tabularx}
-    \caption{verwendete Hilfsmittel}
-    \label{tab:hilfsmittel}
-\end{table}
+\begin{longtable}{|
+  p{\dimexpr(\textwidth-4\tabcolsep-3\arrayrulewidth)/2\relax}|
+  p{\dimexpr(\textwidth-4\tabcolsep-3\arrayrulewidth)/2\relax}|
+}
+    \hline
+    \textbf{Hilfsmittel} & \textbf{Beschreibung} \\
+    \hline
+    \endfirsthead
+
+    Elicit \url{https://elicit.com/} & Elicit ist ein AI basiertes Tool für die Literarturecherche
+    \\
+    \hline
+    
+    Scite \url{https://scite.ai/} & Scite ist ein AI basiertes Tool für die Literarturecherche
+    \\
+    \hline
+    
+    Swisscovery \url{https://swisscovery.slsp.ch/} & Swisscovery ist eine allgemeine Suchmaschine für digitale wie pyhsische Medien unter anderem im Raum Schweiz 
+    \\
+    \hline
+    
+    ChatGPT \url{https://chatgpt.com/} & ChatGPT ist ein multipurpose LLM
+    \\
+    \hline
+
+    Base44 \url{https://base44.com/} & Base44 ist eine AI-powered, no-code Plattform um Web-Applikationen zu erstellen
+    \\
+    \hline
+    
+    Github Copilot \url{https://github.com/copilot} & GitHub Copilot ist ein KI-Codierungs-Assistent, der Entwicklern hilft, Code schneller und mit weniger Aufwand zu schreiben.
+    \\
+    \hline
+
+    \caption{Verwendete Hilfsmittel}
+    \label{tab:support-tools}
+\end{longtable}
+
+Die genannten Hilfsmittel werden an folgenden Stellen im Dokument eingesetzt. Die Nutzung des Begriffs \textit{Challengen} bedeutet, dass das Tool als Reflexions- und Diskussionshilfe zur kritischen Einordnung eigener Ideen im Sinne eines Sparringpartners verwendet wird.
+
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2}|
+  p{\dimexpr(\textwidth-3cm-6\tabcolsep-4\arrayrulewidth)/2}|
+}
+    \hline
+    \textbf{Hilfsmittel} & \textbf{Verwendung} & \textbf{Betroffene Stelle} \\
+    \hline
+    \endfirsthead
+
+    \hline
+    \textbf{Hilfsmittel} & \textbf{Verwendung} & \textbf{Betroffene Stelle} \\
+    \hline
+    \endhead
+
+    Elicit &
+    Recherchieren von Literatur zu \ac{lz}, Komponenten etc. & 
+    \autoref{sec:methodik-landingzones}, ganzes Kapitel \newline
+    \autoref{appendix:elicit-report-landingzone}, erzeugte Literaturrecherche \newline
+    \\
+    \hline
+        
+    Scite &
+    Recherchieren von Literatur zu \ac{lz}, Komponenten etc. &
+    \autoref{sec:methodik-landingzones}, ganzes Kapitel
+    \\
+    \hline
+
+    Swisscovery & 
+    Recherchieren von Literatur zu \ac{lz}, Komponenten etc. & 
+    \autoref{sec:methodik-landingzones}, ganzes Kapitel
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen beim Erstellen der Kapitelstruktur & 
+    Ganzes Dokument
+    \\
+    \hline
+
+    Base44 &
+    Generieren von UI-Mockups für den \ac{poc} zur Veranschaulichung eins möglichen Governance-Cockpits &
+    Screenshots von generiertem Mockup in \autoref{fig:methodology-project-healthcare-view}, \autoref{fig:methodology-project-healthcare-view-evidence}. \newline Prompt und weitere Abbildungen in \autoref{appendix:ui-mockup}
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen beim Erstellen der Kapitelstruktur & 
+    Ganzes Dokument
+    \\
+    \hline
+
+    ChatGPT &
+    Sprachliche Überarbeitung und Refomrulierung von eigenen Textentwürfen & 
+    \autoref{sec:einleitung}, ganzes Kapitel \newline \hyperlink{link:abstract}{Abstract}, ganzes Kapitel
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen bei der Platzierung vom Vorgehen im \ac{adm} Cycle & 
+    \autoref{tab:forschungsmethodik}
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen bei der Umwandlung von \ac{nfr} in Capabilities & 
+    \autoref{sec:methodik-capability} in der Capability-Map in \autoref{fig:capability-map-overview}, \autoref{fig:capability-map-detail}
+    \\
+    \hline
+
+    ChatGPT &
+    Ausformulieren der Hauptabläufe & 
+    \autoref{tab:uc4-define-technical-measures}, \autoref{tab:uc6-verify-compliance}
+    \\
+    \hline
+
+    Elicit &
+    Recherchieren von Architektur-Prinzipien &
+    \autoref{tab:architecture-principles} \newline 
+    \autoref{appendix:architecture-principles-v1}, erzeugte Literaturrecherche \newline
+    \autoref{appendix:architecture-principles-v2}, erzeugte Literaturrecherche
+    \\
+    \hline
+
+    Elicit &
+    Recherchieren von Quality-Attributen  & 
+    \autoref{tab:quality-attributes-external} \newline
+    \autoref{appendix:quality-attributes-research}, erzeugte Literaturrecherche
+    \\
+    \hline
+
+    Elicit &
+    Recherchieren von Trade-Off Dimensionen  & 
+    \autoref{tab:tension-fields} \newline
+    \autoref{appendix:trade-off-criteria-reserach}, erzeugte Literaturrecherche
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen des Evaluationsvorgehen für Konformitätsprozess und Varianten der Traceability-Architekturen, sowie mathematischer Formulierungen & 
+    \autoref{sec:conformityprocess-architecture}, ganzes Kapitel \newline
+    \autoref{sec:evaluationprocess-traceability-variants}, ganzes Kapitel \newline
+    \autoref{tab:archicture-conformity-process}, \autoref{tab:evaluation-process-steps}
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen von Kriterien zur Auswahl des \ac{poc} & 
+    \autoref{sec:poc-methodology}, ganzes Kapitel \newline
+    \\
+    \hline
+
+    ChatGPT &
+    Generieren von Prompt für Base44 Mock-Up Generierung & 
+    \autoref{appendix:ui-mockup}
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen der Traceability-Architektur Varianten und Anwendung von Archi-Mate Notation & 
+    \autoref{sec:landingzone-architecture}, ganzes Kapitel \newline
+    \autoref{fig:landing-zone-architecture}, \autoref{fig:traceability-architecure-artifacts}, \autoref{fig:traceability-architecture-control-centric}, \autoref{fig:traceability-architecture-component-centric}, \autoref{fig:traceability-architecture-category-centric}, \autoref{fig:traceability-architecture-provider-native}
+    \\
+    \hline
+
+    GitHub Copilot &
+    Unterstützen beim Implementieren des \ac{poc} in VSCode IDE mit Copliot Extension. Indirekt durch die gezeigten Code-Fragmente & 
+    \autoref{sec:umsetzung}, Code Fragment im ganzen Kapitel
+    \\
+    \hline
+
+    ChatGPT &
+    Generieren der Zusammenfassung basierend auf selbst geschriebener Evaluation der Trade-Off Kriterien und Qualitäts-Attribute der entsprechenden Varianten & 
+    Anfang \autoref{sec:eval-variant1} bis vor Beginn \autoref{sec:eval-variant1-quality} \newline
+    Anfang \autoref{sec:eval-variant2} bis vor Beginn \autoref{sec:eval-variant2-quality} \newline
+    Anfang \autoref{sec:eval-variant3} bis vor Beginn \autoref{sec:eval-variant3-quality} \newline
+    Anfang \autoref{sec:eval-variant4} bis vor Beginn \autoref{sec:eval-variant4-quality} \newline
+    \\
+    \hline
+
+    ChatGPT &
+    Berechnen der Scores der Traceabilityarchitektur-Varianten mittels generierten Script in \autoref{sec:calc-tool} & 
+    \autoref{sec:eval-variant1}, \autoref{sec:eval-variant2}, \autoref{sec:eval-variant3}, \autoref{sec:eval-variant4} \newline
+    \\
+    \hline
+
+    ChatGPT &
+    Challengen der Strukturierung bzw. logischen Aufbau & 
+    \autoref{sec:answer-research-question}, ganzes Kapitel \newline
+    \autoref{sec:discussion}, ganzes Kapitel
+    \\
+    \hline
+
+    \caption{Nutzung der Hilfsmittel in der Arbeit}
+    \label{tab:support-tools-usage}
+\end{longtable}

@@ -113,6 +113,42 @@ Der Output ist der folgende
     \label{fig:prototype-project-healthcare-view-evidence}
 \end{figure}
 
+\section{Tool für die Berechnung der Evaluation Scores}
+\label{sec:calc-tool}
+
+Das folgende Python Script wird für die Berechnung der Scores der verschiedenen Traceabilityarchitektur Varianten in \autoref{sec:evaluation} verwendet.
+
+\begin{figure}[H]
+\centering
+\begin{minted}[breaklines]{python}
+# quality_score.py
+quality_attributes = {
+    "Performance": (0.3, 4),
+    "Portability": (1, 1),
+    "Auditability": (0.6, 2),
+    "Automatability": (1, 4),
+    "Maintainability": (0.8, 2),
+    "Adaptability": (0.6, 1),
+    "Complexity": (0.8, 4),
+    "Traceability Strength": (1, 3),
+}
+
+weighted_sum = 0
+weight_sum = 0
+
+for q, (weight, score) in quality_attributes.items():
+    weighted_sum += weight * score
+    weight_sum += weight
+
+score_quality = weighted_sum / weight_sum
+
+print("Weighted sum:", weighted_sum)
+print("Total weight:", weight_sum)
+print("Score_quality:", round(score_quality, 3))
+\end{minted}
+\caption{Tool zur Berechnung der Scores für die Traceabilityarchitektur Varianten in \autoref{sec:evaluationprocess-traceability-variants}}
+\label{fig:score-calulation-tool}
+\end{figure}
 
 \section{Report zu Landing Zone Literaturrecherche}
 \label{appendix:elicit-report-landingzone}
@@ -130,9 +166,18 @@ hold so that multiple cloud-specific solution architectures can be derived consi
 Research-Report generiert mit elicit.ai am 30.12.2025 basierend auf der Frage \flqq What are possible architecture princples for multi-cloud ready enterprise architecture and solution architecture?\frqq
 \includepdf[pages=-]{appendix/Elicit - Multi-Cloud Architecture Principles - Report.pdf}
 
-\section{Report zu Quality Attributes}
+\section{Report zu Quality Attributes Recherche}
 \label{appendix:quality-attributes-research}
+Research-Report generiert mit elicit.ai am 01.01.2026 basierend auf der Frage \flqq Which architecture-related quality attributes are suitable for the comparative
+evaluation of enterprise architectures in technology-agnostic multi-cloud environments? \frqq
 \includepdf[pages=-]{appendix/Elicit - Comparative Evaluation of Enterprise Architectures - Report.pdf}
+
+\section{Report zu Trade-Off Kriterien Recherche}
+\label{appendix:trade-off-criteria-reserach}
+Research-Report generiert mit elicit.ai am 02.01.2026 basierend auf der Frage \flqq Which architecture-level trade-offs shape the design and evaluation of enterprise
+architectures in technology-agnostic multi-cloud environments? \frqq
+\includepdf[pages=-]{appendix/Elicit - Trade-offs in Multi-Cloud Enterprise Architecture - Report.pdf}
+
 
 % TODO ggf irrelvant
 % \section{Cloud Compliance in einer multi-provider Cloud}

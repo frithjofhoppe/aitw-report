@@ -22,6 +22,7 @@ Orientierung an den verschiedenen Akteuren aus den Use-Cases ist erforderlich um
 Minimale Berechtigungen für die Prüfung der Traceability-Beziehung sind ideal, damit einzelne Akteure keine Administratorprivilegien besitzen müssen, um verschiedenen Ressourcen zu prüfen. Die Traceability-Architektur unterstützt das Prinzip des Security by Design, da unpersönliche Managed Identities verwendet werden können um potenzielle Evidences über den Compliance-Stand generieren zu können. Die Architekture selbst soll einen klaren Security-Intent besitzen um darauf basierend Security-Models aufbauen zu können. Die Traceability-Architektur unterstützt das Security Reconfigurability Principle dadurch, dass der Scope von der Architektur selbst lediglich die Rekonstruktion von Beziehungen zwischen Ressourcen ist. Die Anwendung von schreibenden Operationen ist von der Traceability-Architektur getrennt. Die tatsächliche Durchsetzung von Sicherheitsmechanismen erfolgt weiterhin durch die jeweiligen Cloud-Plattformen selbst. Die Traceability-Architektur ermöglicht somit primär die Nachvollziehbarkeit und Zuordnung von Sicherheitsanforderungen zu konkreten Policies, übernimmt jedoch keine eigenständige Enforcement-Funktion.
 
 \subsection{Evaluation Variante 1}
+\label{sec:eval-variant1}
 
 Die Evaluation der Control-zentrierten Variante zeigt eine Architektur mit hoher Portability und Auditability bei gleichzeitig geringer struktureller Komplexität. Durch die direkte Zuordnung von Controls zu plattformspezifischen Policies entsteht eine klare und nachvollziehbare Traceability-Struktur, welche insbesondere aus Governance-Sicht eine transparente Abbildung regulatorischer Anforderungen ermöglicht.
 
@@ -30,6 +31,7 @@ Gleichzeitig führt der geringe Abstraktionsgrad dazu, dass Kontextinformationen
 Insgesamt positioniert sich die Variante als Governance-zentrierter Ansatz mit hoher Modellvereinfachung und klarer Auditierbarkeit, der jedoch zugunsten dieser Einfachheit eine geringere Differenzierung der Traceability-Beziehungen in Kauf nimmt. Sie eignet sich insbesondere für Szenarien, in denen regulatorische Transparenz und plattformübergreifende Übertragbarkeit wichtiger sind als eine kontextuelle Feinsteuerung der Compliance-Bewertung.
 
 \subsubsection{Bewertung der Quality Attributes}
+\label{sec:eval-variant1-quality}
 
 Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{3.18} und wird nachfolgend textuell erläutert.
 
@@ -135,6 +137,7 @@ Die hohe Model Simplicity ist aus der technischen Sicht einfacher, da weniger Ma
 Das Modell in dieser Variante ist offen bzw. unterliegt denselben Einschränkungen wie die Regulations auf welchen es aufbaut. Sprich alle Regulations mit Control-basiertem Aufbau können implementiert werden, selbst wenn das Modell nicht federated ist.
 
 \subsection{Evaluation Variante 2}
+\label{sec:eval-variant2}
 
 Die Evaluation der Component-spezifischen Variante zeigt insgesamt eine ausgewogene Architektur mit guten Eigenschaften hinsichtlich Portability, Maintainability und Auditability. Die klare Zuordnung von Policies zu Component-Profiles ermöglicht eine strukturierte Modellierung der Traceability-Beziehungen und unterstützt sowohl Automatisierung als auch langfristige Wartbarkeit der Architektur.
 
@@ -143,6 +146,7 @@ Gleichzeitig ergeben sich gewisse Einschränkungen in Bezug auf Performance und 
 Insgesamt weist die Variante eine geringe strukturelle Komplexität bei gleichzeitig hoher Traceability Strength auf. Regulatorische Anforderungen können über Controls und Component-Profiles nachvollziehbar mit konkreten Cloud-Policies verknüpft werden, wodurch eine transparente Abbildung der Compliance-Beziehungen ermöglicht wird.
 
 \subsubsection{Bewertung der Quality Attributes}
+\label{sec:eval-variant2-quality}
 
 Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{3.016} und wird nachfolgend textuell erläutert.
 
@@ -248,6 +252,7 @@ Das Mapping über Component-Profiles erlaubt trotz Fokus auf Components gleichwo
 Das Modell ist recht geschlossen und erlaubt bei den Component-Profiles keine Definition von eigenen Attributen. Lediglich bei der Deklaration oder Referenzierung von Policies von Cloud-Plattformen ist eine Offenheit vorgesehen. Dies bedeutet, dass bei einer Nutzung dieses Modells von Grund auf bereits vorausgedacht werden muss, um anderen Stakeholder die Nutzung zu ermöglichen. Denkbar sind hier andere Regulations, welche nicht zwangsläufig Component- / Control-basiert denken wie \ac{si001}.
 
 \subsection{Evaluation Variante 3}
+\label{sec:eval-variant3}
 
 Die Evaluation der Category-zentrierten Variante zeigt eine Architektur, die eine starke strukturelle Vereinfachung durch die Einführung von \ac{lz}-Categories anstrebt. Durch die Bündelung von Policies auf einer höheren Abstraktionsebene kann die Modellkomplexität reduziert und eine plattformübergreifende Anwendbarkeit unterstützt werden. Dies erleichtert insbesondere die Anpassung der Architektur an neue Anforderungen sowie die Erweiterung um zusätzliche Kategorien im Verlauf des Betriebs.
 
@@ -256,6 +261,7 @@ Gleichzeitig führt die Generalisierung der Traceability-Beziehungen dazu, dass 
 Auch hinsichtlich der Performance ergeben sich Einschränkungen, da durch die Kategorie-basierte Bündelung Policies geprüft werden können, die für eine konkrete Foundation oder bestimmte Ressourcentypen nicht unmittelbar relevant sind. Insgesamt positioniert sich die Variante als Engineering-orientierter Ansatz mit hoher Modellvereinfachung und guter Adaptability, die jedoch zugunsten dieser Vereinfachung eine geringere Detailtiefe und Transparenz der Traceability-Beziehungen in Kauf nimmt.
 
 \subsubsection{Bewertung der Quality Attributes}
+\label{sec:eval-variant3-quality}
 
 Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{2.508} und wird nachfolgend textuell erläutert.
 
@@ -361,6 +367,7 @@ Die Variante nimmt eine ähnliche Abstraktion wie die Component-zentrische Varia
 Das Modell erlaubt trotz des zentralen Modelles der \ac{lz} Categories die Definition von weiteren Categories, welche theoretisch eigenständig zugeteilt und hierarchisch angeordnet werden können. Somit kann sich trotz der zentralen Definition des \ac{lz} Category Modells selbst eine gewisse föderative Nutzung ergeben.
 
 \subsection{Evaluation Variante 4}
+\label{sec:eval-variant4}
 
 Die Evaluation der Provider-nativen Variante zeigt eine Architektur, die bewusst auf zusätzliche Abstraktionsebenen verzichtet und stattdessen die nativen Policy- / Compliance-Mechanismen der jeweiligen Cloud-Plattformen direkt nutzt. Dadurch kann eine sehr hohe Performance bei der Compliance-Auswertung sowie ein hoher Grad an Automatisierbarkeit erreicht werden, da bestehende providerseitige Aggregations- und Evaluationsmechanismen wiederverwendet werden.
 
@@ -369,6 +376,7 @@ Gleichzeitig führt die enge Kopplung an plattformspezifische Konzepte zu Einsch
 Die strukturelle Komplexität der Architektur bleibt durch den Verzicht auf ein zusätzliches Traceability-Metamodell gering. Gleichzeitig kann jedoch die Nachvollziehbarkeit regulatorischer Zusammenhänge variieren, da die verfügbaren Traceability-Informationen stark von den jeweiligen Plattformfunktionen abhängen. Insgesamt positioniert sich die Variante als stark Engineering-zentrierter Ansatz mit hoher operativer Effizienz, der zugunsten dieser Effizienz eine geringere strategische Unabhängigkeit und Modellkonsistenz in Kauf nimmt.
 
 \subsubsection{Bewertung der Quality Attributes}
+\label{sec:eval-variant4-quality}
 
 Die Bewertung mittels der Quality-Attribute erzielt einen totalen Score von \textit{2.59} und wird nachfolgend textuell erläutert.
 

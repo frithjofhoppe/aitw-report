@@ -1,9 +1,5 @@
 # quality_score.py
 
-# Definition der Quality Attributes (Name: (weight, score))
-# weight = w_quality(q)
-# score  = s_quality(q)
-
 quality_attributes = {
     "Performance": (0.3, 4),
     "Portability": (1, 1),

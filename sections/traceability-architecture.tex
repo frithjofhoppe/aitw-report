@@ -252,17 +252,17 @@ Bei der Prüfung der Compliance einer Foundation wird in dieser Variante direkt 
 
 Beim Deployment einer neuen \ac{lz} wird in Variante 1 zur Ermittlung der Governance Domain im Intent Repository nach verfügbaren Control-Bundles geschaut, welche die relevanten Controls enthalten. Es wird also direkt nach den Controls geschaut, da diese direkt mit den Bundles verknüpft sind. Es ist somit einfach zu verfolgen, welche Bundles welche Controls implementieren, was eine klare Rückverfolgung ermöglicht.
 
-\textbf{Pros}
-\begin{itemize}
-    \item Rückverfolgbarkeit ist trivial: Das Ergebnis des Enforcements wird direkt einer Control-ID zugeordnet.
-    \item Ideal für Audits (\flqq Zeig mir alle implementierten Controls\frqq).
-\end{itemize}
+% \textbf{Pros}
+% \begin{itemize}
+%     \item Rückverfolgbarkeit ist trivial: Das Ergebnis des Enforcements wird direkt einer Control-ID zugeordnet.
+%     \item Ideal für Audits (\flqq Zeig mir alle implementierten Controls\frqq).
+% \end{itemize}
 
-\textbf{Cons}
-\begin{itemize}
-    \item Viele kleine Artefakte → erfordern Automatisierung und eine Build-Pipeline
-    \item Einige Provider bevorzugen grössere Sets
-\end{itemize}
+% \textbf{Cons}
+% \begin{itemize}
+%     \item Viele kleine Artefakte → erfordern Automatisierung und eine Build-Pipeline
+%     \item Einige Provider bevorzugen grössere Sets
+% \end{itemize}
 
 \textbf{Fazit}: Diese Variante ist diejenige welche am besten die Traceability Anforderungen erfüllt, aber auch die aufwändigste in der Umsetzung ist. Es könnte als \flqq Goldstandard\frqq\ für die Traceability Architektur angesehen werden, aber es muss evaluiert werden ob der Aufwand gerechtfertigt ist im Vergleich zu den anderen Varianten.
 
@@ -394,17 +394,17 @@ In der Loop wird über die Component Profile IDs iteriert, da die Controls in Co
 
 Beim Deployment einer neuen \ac{lz} wird in dieser Variante zunächst die Governance Domain der \ac{lz} ermittelt, um daraus die relevanten Component Profiles zu identifizieren. Es wird also nicht direkt nach den Controls geschaut, sondern es wird über die Komponente gebündelt, welche die Controls implementiert. Es muss also zuerst das Profil identifiziert werden, welches die relevanten Controls enthält, bevor die Foundation bereitgestellt werden kann.
 
-\textbf{Pros}
-\begin{itemize}
-    \item Passt zur Implementierungspraxis von Teams: Netzwerkrichtlinien werden gemeinsam verwaltet
-    \item Weniger Bundles, einfachere Einführung
-\end{itemize}
+% \textbf{Pros}
+% \begin{itemize}
+%     \item Passt zur Implementierungspraxis von Teams: Netzwerkrichtlinien werden gemeinsam verwaltet
+%     \item Weniger Bundles, einfachere Einführung
+% \end{itemize}
 
-\textbf{Cons}
-\begin{itemize}
-    \item Die Rückverfolgbarkeit erfordert einen zusätzlichen Suchschritt: \flqq Richtlinie X befindet sich im Bundle Netzwerk → enthält Controls A, B, C\frqq
-    \item Einige Policies implementieren mehrere Controls (1:n)
-\end{itemize}
+% \textbf{Cons}
+% \begin{itemize}
+%     \item Die Rückverfolgbarkeit erfordert einen zusätzlichen Suchschritt: \flqq Richtlinie X befindet sich im Bundle Netzwerk → enthält Controls A, B, C\frqq
+%     \item Einige Policies implementieren mehrere Controls (1:n)
+% \end{itemize}
 
 \textbf{Fazit}: Diese Variante bietet einen guten Kompromiss zwischen Rückverfolgbarkeit und Praktikabilität, da sie die Implementierungspraxis der Teams berücksichtigt, aber dennoch eine gewisse Rückverfolgbarkeit ermöglicht. Es könnte als \flqq Silberstandard\frqq\ für die Traceability Architektur angesehen werden, da es eine praktikable Lösung darstellt, ohne den Aufwand der Control-zentrierten Variante zu erfordern.
 
@@ -533,17 +533,17 @@ In der Loop wird über die jeweiligen Policies iteriert, da die Rückverfolgbark
 
 Hier wird die Kategorie als Ergebnis der Foundation Placement Decision zurückgegeben, welche dann die Auswahl der \ac{lz}-Categories bestimmt, welche die entsprechenden Controls und Policies enthalten. Die Rückverfolgbarkeit zu den einzelnen Controls erfolgt über die Policies, welche die Controls implementieren, und erfordert die Pflege eines Manifests, das auflistet, welche Controls in welchen \ac{lz}-Categories enthalten sind.
 
-\textbf{Pros}
-\begin{itemize}
-    \item Extrem einfache Anwendung (\flqq regulierte Kategorien anwenden\frqq)
-    \item Klare Customer Story: Kategorien repräsentieren Risikoklassen
-\end{itemize}
+% \textbf{Pros}
+% \begin{itemize}
+%     \item Extrem einfache Anwendung (\flqq regulierte Kategorien anwenden\frqq)
+%     \item Klare Customer Story: Kategorien repräsentieren Risikoklassen
+% \end{itemize}
 
-\textbf{Cons}
-\begin{itemize}
-    \item Hohe Duplikation von Controls über Kategorien hinweg
-    \item Rückverfolgbarkeit zu einzelnen Controls ist gegeben, aber man muss ein Manifest \flqq Controls in der Profile\frqq\ führen
-\end{itemize}
+% \textbf{Cons}
+% \begin{itemize}
+%     \item Hohe Duplikation von Controls über Kategorien hinweg
+%     \item Rückverfolgbarkeit zu einzelnen Controls ist gegeben, aber man muss ein Manifest \flqq Controls in der Profile\frqq\ führen
+% \end{itemize}
 
 \textbf{Fazit}: Diese Variante bietet die einfachste Anwendung für den Endnutzer, da sie die Komplexität der Auswahl von Controls und Policies abstrahiert. Es könnte als \flqq Bronze-Standard\frqq\ für die Traceability Architektur angesehen werden, da es eine benutzerfreundliche Lösung darstellt, aber mit erheblichen Nachteilen in Bezug auf Duplikation und Rückverfolgbarkeit einhergeht.
 
@@ -668,16 +668,16 @@ In dieser Variante wird die Compliance-Überprüfung direkt über die nativen Me
 
 Beim Deployment einer neuen \ac{lz} wird in dieser Variante die Governance Domain ermittelt, um die entsprechenden nativen Richtlinien des Cloud-Providers zu identifizieren, welche die Controls implementieren. Es wird also nicht direkt nach den Controls oder Bundles geschaut, sondern es wird über die Governance Domain gebündelt, welche die relevanten Richtlinien enthält.
 
-\textbf{Pros}
-\begin{itemize}
-    \item Operativ sauber: Nutzung der nativen Mechanismen der Provider
-    \item Beste Leistung und Providerausrichtung
-\end{itemize}
+% \textbf{Pros}
+% \begin{itemize}
+%     \item Operativ sauber: Nutzung der nativen Mechanismen der Provider
+%     \item Beste Leistung und Providerausrichtung
+% \end{itemize}
 
-\textbf{Cons}
-\begin{itemize}
-    \item Cloud-übergreifende Vergleichbarkeit wird schlechter
-    \item Traceability muss über verschiedene Evidenceformate der Provider hinweg normalisiert werden
-\end{itemize}
+% \textbf{Cons}
+% \begin{itemize}
+%     \item Cloud-übergreifende Vergleichbarkeit wird schlechter
+%     \item Traceability muss über verschiedene Evidenceformate der Provider hinweg normalisiert werden
+% \end{itemize}
 
 \textbf{Fazit}: Diese Variante bietet die beste Leistung und Providerausrichtung, da sie die nativen Mechanismen der Cloud-Provider nutzt. Es könnte als \flqq Performance-Standard\frqq\ für die Traceability Architektur angesehen werden, da sie die effizienteste Nutzung der Ressourcen ermöglicht, aber mit erheblichen Herausforderungen in Bezug auf Vergleichbarkeit und Rückverfolgbarkeit einhergeht.

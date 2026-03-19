@@ -28,7 +28,7 @@ Im UC4 (siehe \hyperlink{usecase-uc4}{Beschrieb UC4}) werden die verschiedenen A
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{graphics/poc_data_model.png}
-    \caption{Datenmodell für Traceability-Beziehung im \ac{poc}}
+    \caption{Datenmodell für Traceability-Beziehung im \ac{poc}, eigene Abbildung}
     \label{fig:data-model-poc}
 \end{figure}
 
@@ -108,7 +108,7 @@ Das \texttt{Regulation} Model bildet zusammen mit den Controls den semantischen 
   ]
 }
 \end{lstlisting}
-\caption{Beispiel für ein Objekt des Typs \texttt{Regulation}, dem verschiedene \texttt{Control}s zugeordnet sind}
+\caption{Beispiel für ein Objekt des Typs \texttt{Regulation}, dem verschiedene \texttt{Control}s zugeordnet sind (eigener Inhalt)}
 \label{fig:regulation-sample}
 \end{figure}
 
@@ -132,7 +132,7 @@ Das \texttt{Regulation} Model bildet zusammen mit den Controls den semantischen 
   "component_ids": ["storage"]
 
 \end{lstlisting}
-\caption{Beispiel für Objekte des Typs \texttt{Control}, die hier einer \texttt{Regulation} und einer \texttt{Component} zugeordnet sind}
+\caption{Beispiel für Objekte des Typs \texttt{Control}, die hier einer \texttt{Regulation} und einer \texttt{Component} zugeordnet sind (eigener Inhalt)}
 \label{fig:control-sample}
 \end{figure}
 
@@ -162,7 +162,7 @@ Basierend auf der Baseline der Component-Profiles werden mittels der Beschreibun
   ]
 }
 \end{lstlisting}
-\caption{Beispiel für das Storage Component-Profile mit der Baseline Standard und den zugeordneten Policies für Azure und AWS}
+\caption{Beispiel für das Storage Component-Profile mit der Baseline Standard und den zugeordneten Policies für Azure und AWS (eigener Inhalt)}
 \label{fig:component-profile-sample}
 \end{figure}
 
@@ -198,7 +198,7 @@ Diese Unterschiede beeinflussen auch wie die einzelnen Policies selbst definiert
   "scope_hint": "organizational"
 }
 \end{lstlisting}
-\caption{Beispiel für eine Policy für AWS, welche präventiv auf der Organization Unit direkt zugewiesen wird}
+\caption{Beispiel für eine Policy für AWS, welche präventiv auf der Organization Unit direkt zugewiesen wird (eigener Inhalt)}
 \label{fig:policy-sample-aws}
 \end{figure}
 
@@ -227,7 +227,7 @@ Die Zuweisungen von Policies zu den Foundations bzw. \ac{lz}s erfolgt theoretisc
   }
 }
 \end{lstlisting}
-\caption{Beispiel der zur Vereinfachung verwendeten Governance-Domains / \ac{lz} Profiles mit statischen Component-Profiles für Azure und AWS}
+\caption{Beispiel der zur Vereinfachung verwendeten Governance-Domains / \ac{lz} Profiles mit statischen Component-Profiles für Azure und AWS (eigener Inhalt)}
 \label{fig:governance-domains-example}
 \end{figure}
 
@@ -261,7 +261,7 @@ Als Grundlage für die Zuweisung von Component-Profiles (und schlussendlich Poli
   }
 }
 \end{lstlisting}
-\caption{Request zum Evaluieren einer Foundation für eine nicht-produktive Umgebung}
+\caption{Request zum Evaluieren einer Foundation für eine nicht-produktive Umgebung (eigener Inhalt)}
 \label{fig:foundation-decision-request}
 \end{figure}
 
@@ -296,7 +296,7 @@ STORAGE_PROFILE_LIMITS = {
 }
 }
 \end{lstlisting}
-\caption{Simplifizierte Struktur zur Auswertung der Storage Component}
+\caption{Simplifizierte Struktur zur Auswertung der Storage Component (eigener Inhalt)}
 \label{fig:storage-profile-limits}
 \end{figure}
 
@@ -325,7 +325,7 @@ def _derive_storage_profile(req: StorageRequirementDto) -> ComponentProfileNameD
     return None
 \end{minted}
 % \end{lstlisting}
-\caption{Vereinfachte Identifikation von passendem Component-Profile Level (Source-Code: assessment\_service.py \#Z495ff)}
+\caption{Vereinfachte Identifikation von passendem Component-Profile Level (Source-Code: assessment\_service.py \#Z495ff) (eigener Inhalt)}
 \label{fig:storage-component-profile-identification}
 \end{figure}
 
@@ -386,7 +386,7 @@ chosen = candidates[0][1]
 ...
 \end{minted}
 % \end{lstlisting}
-\caption{Identifikation des passenden Cloud Resource Containers im \ac{poc}, assessment\_service.py \#Z525ff}
+\caption{Identifikation des passenden Cloud Resource Containers im \ac{poc}, assessment\_service.py \#Z525ff (eigener Inhalt)}
 \label{fig:landing-zone-algorithm}
 \end{figure}
 
@@ -417,7 +417,7 @@ Das Assessment des geeigneten Component-Profiles wird schlussendlich zusammen mi
   }
 }
 \end{lstlisting}
-\caption{Beispiel einer Governance-Decision für eine Foundation}
+\caption{Beispiel einer Governance-Decision für eine Foundation (eigener Inhalt)}
 \label{fig:example-governance-decision}
 \end{figure}
 
@@ -448,7 +448,7 @@ output "subscription_name" {
   description = "Name of the newly created subscription"
 }
 \end{minted}
-\caption{Base Setup für die Blueprint im \ac{poc} auf Azure}
+\caption{Base Setup für die Blueprint im \ac{poc} auf Azure (eigener Inhalt)}
 \label{fig:example-lz-blueprint-base}
 \end{figure}
 
@@ -486,7 +486,7 @@ resource "azurerm_storage_account" "storage" {
   min_tls_version          = "TLS1_2"
 }
 \end{minted}
-\caption{Blueprint im \ac{poc} auf Azure}
+\caption{Blueprint im \ac{poc} auf Azure (eigener Inhalt)}
 \label{fig:example-lz-blueprint-content}
 \end{figure}
 
@@ -550,7 +550,7 @@ for control_id in control_ids:
     ...
 \end{minted}
 % \end{lstlisting}
-\caption{Generierung von Evidences für die Controls des angewendeten Component-Profiles}
+\caption{Generierung von Evidences für die Controls des angewendeten Component-Profiles (eigener Inhalt)}
 \label{fig:evidence-generation-flow}
 \end{figure}
 
@@ -564,7 +564,7 @@ Im nächsten Schritt soll gezeigt werden wie der Evidence Output, welcher basier
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{graphics/Swaggger_Governance_Cockpit.png}
-    \caption{Endpoints für den Abruf der Compliance States, welche das Mockup theoretisch verwenden könnte}
+    \caption{Endpoints für den Abruf der Compliance States, welche das Mockup theoretisch verwenden könnte, eigene Abbildung}
     \label{fig:swagger-governance-cockpit}
 \end{figure}
 
@@ -591,7 +591,7 @@ pipeline = [
 cursor = db[evidence_collection].aggregate(pipeline)
 evidence_docs = await cursor.to_list(length=None)
 \end{lstlisting}
-\caption{MongoDB Abfrage für den letzten Compliance State pro Control je Foundation}
+\caption{MongoDB Abfrage für den letzten Compliance State pro Control je Foundation (eigener Inhalt)}
 \label{fig:query-lates-foundation-compliance-state} 
 \end{figure}
 
@@ -616,7 +616,7 @@ Die Response vom Endpoint bei \autoref{fig:evidence-response-for-fondation} sagt
   ...
 ]
 \end{lstlisting}
-\caption{Evidence für eine Foundation}
+\caption{Evidence für eine Foundation (eigener Inhalt)}
 \label{fig:evidence-response-for-fondation} 
 \end{figure}
 
@@ -656,7 +656,7 @@ Im Falle einer negativen Evaulierung können Details zur einer Evidence über de
   "project_id": "e72fb364-e689-49f6-96bc-9c66d74ff714"
 }
 \end{lstlisting}
-\caption{Detailansicht einer bestimmten Evidence}
+\caption{Detailansicht einer bestimmten Evidence (eigener Inhalt)}
 \label{fig:evidence-detail-response-for-foundation} 
 \end{figure}
 
@@ -684,7 +684,7 @@ Die Policy welche intern durch \texttt{AZ-AKS-DIAGNOSTIC-SETTINGS-TO-LA} identif
   "scope_hint": "landing-zone"
 }
 \end{lstlisting}
-\caption{Detailansicht einer Policy}
+\caption{Detailansicht einer Policy (eigener Inhalt)}
 \label{fig:policy-detail-respnse} 
 \end{figure}
 
@@ -716,6 +716,6 @@ Für die Control View werden die Ergebnisse welche bereits für die Evidence Vie
   }
 ]
 \end{lstlisting}
-\caption{Compliance State der Controls in einem Projekt}
+\caption{Compliance State der Controls in einem Projekt (eigener Inhalt)}
 \label{fig:response-control-evlauation-for-project} 
 \end{figure}

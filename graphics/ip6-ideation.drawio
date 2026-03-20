@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.3.6 Chrome/140.0.7339.249 Electron/38.8.0 Safari/537.36" version="29.3.6" pages="7">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:147.0) Gecko/20100101 Firefox/147.0" version="29.6.4" pages="7">
   <diagram name="Overview" id="hf-reBcKU8pS60tToTwS">
     <mxGraphModel dx="4513" dy="4527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -6225,7 +6225,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CsHJX8_E7Wl7F5OBhqNj" name="PoC">
-    <mxGraphModel dx="2343" dy="903" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1861" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6301,7 +6301,7 @@
         <mxCell id="dZDNOI4ZOPhHZh_bz7i7-34" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=20;verticalAlign=top;align=center;" value="Beinhaltet Schutzbedarf von Projekt gegenüber verschiedenen LZ Komponenten (Network, Logging, Backup, etc.)" vertex="1">
           <mxGeometry height="110" width="180" x="20" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="dZDNOI4ZOPhHZh_bz7i7-42" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div&gt;Plattform auf der Projektveranwortliche&amp;nbsp;ihren Bedarf für die Cloud-Nutzung deklarieren&amp;nbsp;basierend auf Schutzbedarf und generellen Anforderungen. Verwaltung und Erstellen von LZ Subscriptions&lt;/div&gt;" vertex="1">
+        <mxCell id="dZDNOI4ZOPhHZh_bz7i7-42" parent="1" style="shape=note2;boundedLbl=1;whiteSpace=wrap;html=1;size=25;verticalAlign=top;align=center;" value="&lt;div&gt;Plattform auf der Projektverantwortliche&amp;nbsp;ihren Bedarf für die Cloud-Nutzung deklarieren&amp;nbsp;basierend auf Schutzbedarf und generellen Anforderungen.&amp;nbsp;Erstellung und&amp;nbsp;Verwaltung von LZ Subscriptions&lt;/div&gt;" vertex="1">
           <mxGeometry height="150" width="180" x="20" y="220" as="geometry" />
         </mxCell>
         <mxCell id="dZDNOI4ZOPhHZh_bz7i7-43" edge="1" parent="1" source="dZDNOI4ZOPhHZh_bz7i7-67" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.533;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;entryPerimeter=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="dZDNOI4ZOPhHZh_bz7i7-42">

@@ -35,9 +35,9 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         Die Capability-Map erlaubt es die Annahmen zu visualisieren welche Fähigkeiten das BIT mit dem Multi-Cloud-Ansatz erreichen möchte.
         \\
         \hline
-        \textbf{B}Business Architecture &
+        \textbf{B} Business Architecture &
         \multirow{3}{*}{\makecell[X]{Definieren von granulareren Level 2 Capabilities und Use-Cases basierend auf der Priorisierung der L2 Capabilities durch die Stakeholder. Entwerfen von verschiedenen Architektur-Varianten für eine der priorisierten Capabilities}} &
-        Durch die Granularität wird eine bessere Bewert- und Anaylsierbarkeit ermöglicht. Die Use-Cases erlauben anschliessend den Scope zu setzen in welcher die gewählte Architektur-Variante definiert wird.
+        Durch die Granularität wird eine bessere Bewert- und Analysierbarkeit ermöglicht. Die Use-Cases erlauben anschliessend den Scope zu setzen in welcher die gewählte Architektur-Variante definiert wird.
         \\
         \cline{1-1}
         \textbf{C} Information System Architectures & &
@@ -60,7 +60,7 @@ Der in der Arbeit erstellte forschungsmethodische Ansatz lehnt sich gedanklich a
         \\
         \hline
         \textbf{H} Architecture Change Management & - &
-        Nicht anwendbar, da mit dem Output des \ac{adm}-Cylces kein produktiver Zustand, eine Übergabe an den Betrieb oder Weiterentwicklung angestrebt wird
+        Nicht anwendbar, da mit dem Output des \ac{adm}-Cycles kein produktiver Zustand, eine Übergabe an den Betrieb oder Weiterentwicklung angestrebt wird
         \\
         \hline
     \end{tabularx}
@@ -155,7 +155,7 @@ Resource Management &
 über AWS Organizations mit Organisationseinheiten (OU) und Accounts &
 Resource organization mit Naming, Tagging, Subscription Design und Management Group Hierarchie &
 Strukturierung über Folders und Projects, gebunden an einen Root-Node &
-Ressource management über Labels und Directory Permissions zur Integration mit Enterprise Account Systemen &
+Ressource Management über Labels und Directory Permissions zur Integration mit Enterprise Account Systemen &
 läuft unter Service Management \\
 \hline
 
@@ -289,9 +289,9 @@ Der Vergleich von den \ac{lz}-Komponenten auf den verschiedenen Cloud-Plattforme
     \label{tab:bit-stakeholder-requirements}
 \end{longtable}
 
-Basierend auf den Anforderungen der Stakeholder werden mittels Prompt-Chaining zuerst \ac{nfr} abgeleitet, mit denen die qualitativen Anforderungen für eine \ac{lz} identifiziert werden sollen. Diese werden mit eigenen definierten \ac{nfr} für den Multi-Cloud-Kontext ergänzt. Anschliessend werden Level 1 Capabilities ermittelt, konsolidiert und darauf aufbauend Level 2 Capabilities abgeleitet. Die Levels stellen dabei eine Gruppierung und Detailgrad der Capabilities dar. Nach anschliessender Gegenprüfung erhalten wir in \autoref{fig:capability-map-overview} die Capability-Map. Zur Darstellung selbst wird hierbei die ArchiMate Capability-Map Notation verwendet. Zur Nachvollziehbarkeit der Capabilities in \autoref{fig:capability-map-detail}, werden mit farbig gefüllten Post-Its die Level 1 Capabilities und mit farbig umrandeten Post-Its die Level 2 Capabilities detaillierter beschrieben. Jede der Capabilities kann potenziell als Startpunkt für eine Implementation auf tieferer Abstraktionsebene dienen. Somit kann sich sukzessive einer businesszentrierten \ac{lz}-Architektur angenähert werden.
+Basierend auf den Anforderungen der Stakeholder werden mittels Prompt-Chaining zuerst \ac{nfr} abgeleitet, mit denen die qualitativen Anforderungen für eine \ac{lz} identifiziert werden sollen. Diese werden mit eigenen definierten \ac{nfr} für den Multi-Cloud-Kontext ergänzt. Anschliessend werden Level 1 Capabilities ermittelt, konsolidiert und darauf aufbauend Level 2 Capabilities abgeleitet. Die Levels stellen dabei eine Gruppierung und Detailgrad der Capabilities dar. Nach anschliessender Gegenprüfung erhalten wir in \autoref{fig:capability-map-overview} die Capability-Map. Zur Darstellung selbst wird hierbei die ArchiMate Capability-Map Notation verwendet. Zur Nachvollziehbarkeit der Capabilities in \autoref{fig:capability-map-detail}, werden mit farbig gefüllten Post-Its die Level 1 Capabilities und mit farbig umrandeten Post-Its die Level 2 Capabilities detaillierter beschrieben. Jede der Capabilities kann potenziell als Startpunkt für eine Implementation auf tieferer Abstraktionsebene dienen. Somit kann sich sukzessive einer Business-zentrierten \ac{lz}-Architektur angenähert werden.
 
-Diese Arbeit beschränkt sich auf eine Auswahl von Capabilities, um den Prozess exemplarisch aufzuzeigen. Die Auswahl erfolgt hierbei durch Priorisierung mit dem \ac{bit}. Die mit dem \ac{bit} identifizierte grösste Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulationen auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architektur bezeichnet. Diese Architektur leitet sich aus den Level 1 Capabilities Security Governance, Policy and Compliance Lifecycle Governance, Audit \& Evidence Governance sowie Configuration and Standards Governance ab. Basierend auf der Traceability-Architektur werden Use-Cases beschrieben. Diese Use-Cases dienen dazu den Scope der Implementierung der Traceablity-Architektur eingrenzen zu können. Die Architektur selbst kann von verschiedenen Blickwinkeln aus betrachtet werden: zum einen die top-down Betrachtung des Compliant-Officers und zum anderen die bottom-up Betrachtung des Projektverantwortlichen. Ein Compliance Officer möchte nachvollziehen können, ob Regulationen und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei, welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt, was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im Klaren noch die Gesamtheit der regulatorischen Anforderungen, welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
+Diese Arbeit beschränkt sich auf eine Auswahl von Capabilities, um den Prozess exemplarisch aufzuzeigen. Die Auswahl erfolgt hierbei durch Priorisierung mit dem \ac{bit}. Die mit dem \ac{bit} identifizierte grösste Herausforderung ist die Nachvollziehbarkeit der Anwendung von Regulationen auf die konkreten Cloud-Ressourcen. Eine strukturierte konzeptionelle Lösung für diese Problematik wird nachfolgend als Traceability-Architektur bezeichnet. Diese Architektur leitet sich aus den Level 1 Capabilities Security Governance, Policy and Compliance Lifecycle Governance, Audit \& Evidence Governance sowie Configuration and Standards Governance ab. Basierend auf der Traceability-Architektur werden Use-Cases beschrieben. Diese Use-Cases dienen dazu den Scope der Implementierung der Traceability-Architektur eingrenzen zu können. Die Architektur selbst kann von verschiedenen Blickwinkeln aus betrachtet werden: zum einen die top-down Betrachtung des Compliance-Officers und zum anderen die bottom-up Betrachtung des Projektverantwortlichen. Ein Compliance Officer möchte nachvollziehen können, ob Regulationen und schlussendlich das Mapping auf konkrete Cloud-Ressourcen eingehalten wurde. Er weiss hierbei, welche Massnahmen basierend auf welchem Schutzbedarf ergriffen werden müssen. Ein Projektverantwortlicher kann den Schutzbedarf seiner Cloud-Ressourcen identifizieren, weiss jedoch nicht direkt, was dies für eine Cloud-Plattform impliziert. Ein Cloud-Experte ist weder über den Projektkontext im Klaren noch die Gesamtheit der regulatorischen Anforderungen, welche existieren. Der Cloud-Experte hat jedoch Domänenwissen über die Umsetzung von Sicherheitsmassnahmen auf einer gegebenen Cloud-Plattform.
 
 \begin{landscape}
 \begin{figure}[H]
@@ -312,7 +312,7 @@ Diese Arbeit beschränkt sich auf eine Auswahl von Capabilities, um den Prozess 
 
 \end{landscape}
 
-Mit dem Fokus auf die Traceability-Architektur ergeben sich in  \autoref{fig:traceability-use-cases} die Use-Cases. Mit UC1 und UC2 definiert und konkretisiert der Compliance-Officer die relevanten regulatorischen Anforderungen für bspw. die Organisation des \ac{bit}. Der Cloud-Expert implementiert anschliessend die technischen Massnahmen (bspw identifiziert / groupiert Polices etc.). Der Projektverantwortliche kann schlussendlich seinen Schutzbedarf identifizieren und mit dieser Grundlage theoretisch dann auch seine \ac{lz} bestellen. Die Veranwortlichkeiten der Akteure werden folgendermassen definiert.
+Mit dem Fokus auf die Traceability-Architektur ergeben sich in  \autoref{fig:traceability-use-cases} die Use-Cases. Mit UC1 und UC2 definiert und konkretisiert der Compliance-Officer die relevanten regulatorischen Anforderungen für bspw. die Organisation des \ac{bit}. Der Cloud-Expert implementiert anschliessend die technischen Massnahmen (z.B. identifiziert / gruppiert Polices, etc.). Der Projektverantwortliche kann schlussendlich seinen Schutzbedarf identifizieren und mit dieser Grundlage theoretisch dann auch seine \ac{lz} bestellen. Die Verantwortlichkeiten der Akteure werden folgendermassen definiert.
 
 \begin{itemize}
     \item Der \textbf{Compliance Officer} verantwortet den Audit von Projekten innerhalb der Organisation. Der Akteur ist potentiell dem CIO angehängt.

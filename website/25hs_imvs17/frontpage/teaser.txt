@@ -1,1 +1,0 @@
-Entwicklung einer provider-agnostischen Landing-Zone-Architektur für Hybrid-Multi-Cloud-Umgebungen beim Bundesamt für Informatik (BIT), um Governance und Traceability zu verbessern.

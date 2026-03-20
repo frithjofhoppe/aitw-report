@@ -39,3 +39,6 @@ Maintenance
 Capability-Map
 Capability
 Components
+Evidence
+Decision
+Landing-Zones

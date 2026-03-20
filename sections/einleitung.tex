@@ -15,7 +15,7 @@
 
 % \hl{structure notes end}
 
-Die Ausgangslage ist, dass die \ac{bv} eine Hybrid-Multi-Cloud Strategie verfolgt, welche die Nutzung unterschiedlicher Cloud-Anbieter sowie der eigenen Infrastrukturen kombiniert. Das \ac{bit} nimmt dabei die Rolle eines \ac{CSB} wahr. Das \ac{bit} stellt die Anbindung an verschiedene Hyperscaler sicher und betreibt gleichzeitig eine eigene private-Cloud Infrastruktur on-premise. Die konkrete Ausführung der Strategie wird im Rahmen einer öffentlichen Ausschreibung ermittelt. Vor Abschluss dieser existieren keine Präferenzen an Cloud-Anbietern sowohl für den public-Cloud wie private-Cloud Aspekt der Strategie.
+Die Ausgangslage ist, dass die \ac{bv} eine Hybrid-Multi-Cloud Strategie verfolgt, welche die Nutzung unterschiedlicher Cloud-Anbieter sowie der eigenen Infrastrukturen kombiniert. Das \ac{bit} nimmt dabei die Rolle eines \ac{CSB} wahr. Das \ac{bit} stellt die Anbindung an verschiedene Hyperscaler sicher und betreibt gleichzeitig eine eigene private Cloud-Infrastruktur on-premise. Die konkrete Ausführung der Strategie wird im Rahmen einer öffentlichen Ausschreibung ermittelt. Vor Abschluss dieser existieren keine Präferenzen bezüglich Cloud-Anbietern sowohl für den Public-Cloud- als auch den Private-Cloud-Aspekt der Strategie.
 
 
 % Für den Betrieb von Cloud-Diensten nutzen die einzelnen Provider sogenannte Landingzones - vordefinierte Strukturen, die den Rahmen für die Nutzung der jeweiligen Plattform bilden. Die bisherigen Erfahrungen zeigen jedoch, dass sich diese Landingzones zwischen den Anbietern grundlegend unterscheiden und bisher keine übergreifende technische Lösung existiert, die eine einheitliche Nutzung und Steuerung über mehrere Plattformen hinweg ermöglicht.
@@ -24,17 +24,17 @@ Die Ausgangslage ist, dass die \ac{bv} eine Hybrid-Multi-Cloud Strategie verfolg
 
 
 \hypertarget{problemstellung}{}
-Eine Nutzung der verschiedenen Cloud-Plattformen bedingt, dass eine grundlegende Struktur existiert, auf welche die Workloads der Anwender innerhalb der \ac{bv} aufbauen können. Die Plattform-Provider unterscheiden sich in der Art und Weise wie ihre Plattform strukturiert ist \parencite{hoppe_cloud_2025}. Idee oder Konzepte werden zwar häufig zwischen den Providern geteilt, die Ausgestaltung unterscheidet sich jedoch.
+Eine Nutzung der verschiedenen Cloud-Plattformen setzt voraus, dass eine grundlegende Struktur existiert, auf welche die Workloads der Anwender innerhalb der \ac{bv} aufbauen können. Die Plattform-Provider unterscheiden sich in der Art und Weise wie ihre Plattform strukturiert ist \parencite{hoppe_cloud_2025}. Ideen oder Konzepte werden zwar häufig zwischen den Providern geteilt, die Ausgestaltung unterscheidet sich jedoch.
 
 In der praktischen Umsetzung bedeutet dies für eine Organisation wie das \ac{bit}, dass die einzelnen Cloud-Plattformen weitgehend isoliert betrachtet und betrieben werden müssen. Sicherheits- und Governance-Mechanismen werden plattformspezifisch implementiert, wodurch Inkonsistenzen entstehen können.
 
 Gleichzeitig sinkt die Wiederverwendbarkeit von Architektur- und Betriebsmodellen über Plattformgrenzen hinweg. Dies erschwert eine einheitliche Durchsetzung von Governance-Vorgaben sowie die vergleichbare Steuerung von Workloads in einer Hybrid-Multi-Cloud-Umgebung. Ohne eine übergreifende Struktur droht eine Fragmentierung der Cloud-Architekturen innerhalb der Organisation.
 
-Das \ac{bit} strebt deshalb eine Homogenisierung mit dem Konzept einer \ac{lz} an. Diese \ac{lz} wird vom \ac{bit} als eine durch die Vorgabe der Plattform-Provider vordefinierten Struktur verstanden, in welcher die effektiven Angebote bezogen werden können bzw. Workload der Anwender laufen.  Dieses Verständnis \ac{lz} dient als Arbeitshypothese. Die Idee der \ac{lz} soll trotz unterschiedlicher Cloud-Plattformen einheitlich angewendet werden können. Eine Vereinheitlichung würde es dem \ac{bit} ermöglichen einen Leitrahmen zu definieren welcher für Projekte auf verschiedenen Cloud-Plattformen gilt.
+Das \ac{bit} strebt deshalb eine Homogenisierung mit dem Konzept einer \ac{lz} an. Diese \ac{lz} wird vom \ac{bit} als eine durch die Vorgabe der Plattform-Provider vordefinierten Struktur verstanden, in welcher die effektiven Angebote bezogen werden können bzw. Workloads der Anwender laufen.  Dieses Verständnis der \ac{lz} dient als Arbeitshypothese. Die Idee der \ac{lz} soll trotz unterschiedlicher Cloud-Plattformen einheitlich angewendet werden können. Eine Vereinheitlichung würde es dem \ac{bit} ermöglichen einen Leitrahmen zu definieren, welcher für Projekte auf verschiedenen Cloud-Plattformen gilt.
 
-Ziel dieser Arbeit ist die Entwicklung eines provider-agnostischen Architekturansatzes für \ac{lz} in Hybrid-Multi-Cloud-Umgebungen. Der Ansatz soll es ermöglichen, zentrale \ac{lz}-Komponente systematisch zu identifizieren und in einer konsistenten technischen Gesamtarchitektur zu strukturieren. Die Eignung dieses Ansatzes wird exemplarisch anhand einer Teilarchitektur untersucht und mittels definierter Evaluationskriterien bewertet.
+Ziel dieser Arbeit ist die Entwicklung eines provider-agnostischen Architekturansatzes für \ac{lz} in Hybrid-Multi-Cloud-Umgebungen. Der Ansatz soll es ermöglichen, zentrale \ac{lz}-Komponenten systematisch zu identifizieren und in einer konsistenten technischen Gesamtarchitektur zu strukturieren. Die Eignung dieses Ansatzes wird exemplarisch anhand einer Teilarchitektur untersucht und mittels definierter Evaluationskriterien bewertet.
 
-Mit der aufgzeigten Problemstellung und Zielsetzung werden folgenden Fragestellungen formuliert, welche im Rahmen dieser Arbeit beantwortet werden: 
+Mit der aufgezeigten Problemstellung und Zielsetzung werden folgende Fragestellungen formuliert, welche im Rahmen dieser Arbeit beantwortet werden: 
 
 \begin{itemize}
     \item \textit{Welche Komponenten machen eine Landingzone für eine Hybrid-Multi-Cloud-Umgebung aus?}
@@ -44,10 +44,10 @@ Mit der aufgzeigten Problemstellung und Zielsetzung werden folgenden Fragestellu
 
 Zur Beantwortung der Forschungsfragen wird in \autoref{sec:methodik} das Problem aus Sicht des \ac{bit} im Rahmen eines reduzierten \ac{ea} Ansatzes methodisch strukturiert. Auf dieser Grundlage wird mittels einer Capability-Map sowie ausgewählter Use-Cases der Anwendungskontext für einen \ac{lz}-Architekturansatz hergeleitet.
 
-Darauf aufbauend wird in \autoref{sec:landingzone-architecture} eine elementare \ac{lz}-Architektur auf \ac{ea}-Ebene entwickelt und in \autoref{sec:umsetzung} im Rahmen eines Proof of Concept anhand einer Traceability-Architektur exemplarisch konkretisiert.
+Darauf aufbauend wird in \autoref{sec:landingzone-architecture} eine elementare \ac{lz}-Architektur auf \ac{ea}-Ebene entwickelt und in \autoref{sec:umsetzung} im Rahmen eines \ac{poc} exemplarisch anhand einer Traceability-Architektur konkretisiert.
 
 Die entwickelten Architekturen werden anschliessend anhand definierter Architekturprinzipien, Qualitätsattribute sowie Trade-off-Kriterien evaluiert. Auf Basis dieser Evaluation werden in \autoref{sec:discussion-bit} Empfehlungen für den spezifischen Kontext des \ac{bit} abgeleitet. Abschliessend werden in \autoref{sec:abschluss} die Ergebnisse im Hinblick auf die Forschungsfragen zusammengeführt und eingeordnet.
 
 \subsection{Erkenntnis}
 
-Die Recherche zur Grundlage macht ersichtlich, dass kein einheitliches Konzept für eine \ac{lz} existiert. Basierend auf dem gewählten Ansatz wird deshalb einen Vorschlag für eine einheitliche \ac{lz} Architektur auf \ac{ea} Level gemacht. Die Arbeit zeigt, dass sich eine multi-cloud-fähige Landing-Zone-Architektur mithilfe von Architekturprinzipien und einer technischen Capability Map systematisch strukturieren lässt. Der gewählte Ansatz erlaubt eine business-getriebene Betrachtung der Architektur und unterstützt die Zerlegung in Teilarchitekturen. Exemplarische wird dabei eine Traceability-Architektur untersucht.
+Die Recherche zur Grundlage macht ersichtlich, dass kein einheitliches Konzept für eine \ac{lz} existiert. Basierend auf dem gewählten Ansatz wird deshalb ein Vorschlag für eine einheitliche \ac{lz}-Architektur auf \ac{ea} Level gemacht. Die Arbeit zeigt, dass sich eine multi-cloud-fähige \ac{lz}-Architektur mithilfe von Architekturprinzipien und einer technischen Capability Map systematisch strukturieren lässt. Der gewählte Ansatz erlaubt eine business-getriebene Betrachtung der Architektur und unterstützt die Zerlegung in Teilarchitekturen. Exemplarisch wird dabei eine Traceability-Architektur untersucht.

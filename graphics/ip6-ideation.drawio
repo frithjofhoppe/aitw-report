@@ -6106,7 +6106,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="_ZhfmwORhlkMJHHNNUev" name="Use-Case">
-    <mxGraphModel dx="2066" dy="1158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1810" dy="1025" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -6116,7 +6116,7 @@
         <mxCell id="dmqziooqcO0Foqw3riru-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Compliance&lt;div&gt;Officer&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="30" x="60" y="360" as="geometry" />
         </mxCell>
-        <mxCell id="dmqziooqcO0Foqw3riru-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Projektveranwortlicher" vertex="1">
+        <mxCell id="dmqziooqcO0Foqw3riru-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Projektverantwortlicher" vertex="1">
           <mxGeometry height="60" width="30" x="740" y="570" as="geometry" />
         </mxCell>
         <mxCell id="dmqziooqcO0Foqw3riru-3" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="UC7: Erstellt Audit-Evidenz (à la reports etc)" vertex="1">
@@ -6225,7 +6225,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CsHJX8_E7Wl7F5OBhqNj" name="PoC">
-    <mxGraphModel dx="1861" dy="586" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="4447" dy="2050" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />

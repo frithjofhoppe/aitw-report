@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Projekt-Webseite für die Bachelorarbeit -->
+    <title>Enterprise‑Architektur von multicloud‑konformen Landingzones – FHNW - Undergraduate Student Projects</title>
+    <link href="https://web0.fhnw.ch/ht/informatik/css/style.css" type="text/css" rel="stylesheet" media="screen">
+    <script src="https://web0.fhnw.ch/ht/informatik/js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+           <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <a href="https://www.fhnw.ch/de/studium/informatik" class="hsi">
+                        <picture>
+                            <source media="(min-width: 600px)" srcset="https://web0.fhnw.ch/ht/informatik/images/fhnw_hsi_en.svg" alt="HSI">
+                            <img src="https://web0.fhnw.ch/ht/informatik/images/fhnw_hsi_small.svg" alt="HSI">
+                        </picture>
+                    </a>
+               </div>
+            </div>
+        </div>
+    </header>
+    <main id="content">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <h1>Enterprise‑Architektur von multicloud‑konformen Landingzones</h1>
+                    <h2>Die Schweizer Bundesverwaltung verfolgt mit verschiedenen Vorhaben eine Hybrid‑Multi‑Cloud‑Strategie. Unterschiedliche Cloud‑Provider und On‑Premise‑Infrastrukturen führen jedoch zu isolierten Strukturen und machen die Governance komplexer. Diese Arbeit entwickelt einen provider‑agnostischen Rahmen für Landing Zones, der eine konsistente Nutzung mehrerer Clouds ermöglicht.</h2>
+                    <p><img src="images/ui-prototyp_project_healthcare.png" class="responsive" alt="Landing‑Zone‑Architektur"><br>Abbildung: Mock-Up eines potententiellen Governance-Cockpit für eine Landing Zone</p>
+                    <h3>Ausgangslage</h3>
+                    <p>Die Bundesverwaltung verfolgt eine Hybrid‑Multi‑Cloud‑Strategie, die die Nutzung verschiedener Cloud‑Anbieter und eigener Infrastrukturen kombiniert. Das Bundesamt für Informatik und Telekommunikation (BIT) agiert als Cloud Service Broker und stellt Verbindungen zu mehreren Hyperscalern sowie einer privaten Cloud bereit. Aufgrund der unterschiedlichen Strukturelemente der Plattformanbieter können diese nicht immer ganzheitlich betrachtet werden. Dadurch entstehen inkonsistente Sicherheits‑ und Governance‑Mechanismen und die Wiederverwendbarkeit von Architektur‑ und Betriebsmodellen über Plattformgrenzen hinweg wird erschwert. Um diese Fragmentierung zu vermeiden, strebt das BIT eine Homogenisierung mithilfe des Konzepts der Landing Zone an.</p>
+                    <h3>Problemstellung / Projektziel</h3>
+                    <p>Ziel der Arbeit ist die Entwicklung eines provider‑agnostischen Architekturansatzes für Landing Zones in Hybrid‑Multi‑Cloud‑Umgebungen. Der Ansatz soll die zentralen Komponenten einer Landing Zone systematisch identifizieren und in einer konsistenten Gesamtsystemarchitektur strukturieren. Forschungsschwerpunkte sind dabei die Beantwortung der Fragen: Welche Komponenten machen eine Landing Zone in einer Hybrid‑Multi‑Cloud‑Umgebung aus? Wie muss eine geeignete technische Architektur gestaltet sein, damit sie die Anforderungen des BIT erfüllt und plattformunabhängig angewendet werden kann? Die Eignung des entwickelten Ansatzes wird anhand von Teilarchitekturen exemplarisch untersucht und mit definierten Evaluationskriterien bewertet.</p>
+                </div>
+            </div><!-- end row -->
+        </div> <!-- end container -->
+        <section class="grey-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                    <h3>Abbildung 1: Traceability‑ und Landing‑Zone‑Architektur</h3>
+                        <div class="materialboxed-wrap">
+                            <img src="images/ip6-ideation-V2 Traceability-Architecture-traceability-and-lz-arch.drawio.svg" class="responsive materialboxed hoverable" alt="Traceability‑ und Landing‑Zone‑Architektur">
+                        </div>
+                        <p>Das Bild zeigt die kombinierte Architektur der Traceability‑ und Landing‑Zone‑Komponenten. Es verdeutlicht, wie Governance‑ und Compliance‑Kontrollen in die Landing Zone integriert werden und wie die Traceability‑Komponenten miteinander interagieren.</p>
+                    </div>
+                    <div class="col s12 m6 l4">
+                    <h3>Abbildung 2: Capability-Map</h3>
+                        <div class="materialboxed-wrap">
+                            <img src="images/ip6-ideation-CapabilityMapv2.drawio.svg" class="responsive materialboxed hoverable" alt="Basis‑Modell der Traceability‑Architektur">
+                        </div>
+                        <p>Die prototypische Architektur veranschaulicht das Zusammenspiel von Governance-Cockpit, Traceability-Services und der automatisierten Provisionierung von Landing-Zone-Ressourcen. Sie zeigt, wie Governance-Entscheidungen technisch umgesetzt und über Infrastructure-as-Code-Mechanismen konsistent auf unterschiedliche Cloud-Plattformen angewendet werden.</p>
+                    </div>
+                    <div class="col s12 m6 l4">
+                    <h3>Abbildung 3: Beispiel PoC für Traceability Use-Case</h3>
+                        <div class="materialboxed-wrap">
+                            <img src="images/ip6-ideation-PoC.drawio.svg" class="responsive materialboxed hoverable" alt="Architektur‑Prinzipien des BIT">
+                        </div>
+                        <p>Die Architektur‑Prinzipien dienen als Leitplanken für den Entwurf der Landing Zone und definieren grundlegende Anforderungen wie Sicherheit, Standardisierung und Wiederverwendbarkeit. Sie bilden die Grundlage für die erarbeitete Lösung.</p>
+                    </div>
+                </div><!-- end row -->
+            </div> <!-- end container -->
+        </section><!-- end section -->
+        <div class="container">
+            <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <h3>Entwickelte Lösung und Vorteile</h3>
+                    <p>Für die Konzeption der Landing‑Zone‑Architektur wurde ein reduziertes Enterprise‑Architecture‑Framework eingesetzt. Mithilfe einer Capability Map und ausgewählten Use‑Cases wurde der Anwendungskontext analysiert. Darauf aufbauend entstand ein provider‑agnostisches Architekturmodell für Landing Zones, das eine konsistente Governance in Hybrid‑Multi‑Cloud‑Umgebungen ermöglicht. Die Architektur wurde mit einer Traceability‑Architektur in einem Proof of Concept konkretisiert und anhand von Architekturprinzipien, Qualitätsattributen und Trade‑off‑Kriterien evaluiert.</p>
+                    <ul class="nobullet">
+                        <li>Systematische Identifikation und Strukturierung von Landing‑Zone‑Komponenten unabhängig vom Cloud‑Provider</li>
+                        <li>Erstellung einer Capability Map als Grundlage für geschäftsgetriebene Entscheidungen</li>
+                        <li>Integration einer Traceability‑Architektur zur Nachverfolgbarkeit von Anforderungen und Compliance‑Kontrollen</li>
+                        <li>Erhöhte Wiederverwendbarkeit und Konsistenz durch einheitliche Architektur‑Prinzipien</li>
+                        <li>Verbesserte Governance und Compliance über mehrere Cloud‑Plattformen hinweg</li>
+                        <li>Skalierbare und provider‑agnostische Umsetzung des Proof of Concept mit AWS und Azure</li>
+                    </ul>
+                    <p>Die Evaluation zeigt, dass die entwickelte Architektur einen konsistenten Governance‑Leitrahmen über verschiedene Cloud‑Plattformen hinweg bereitstellt und die Anforderungen des BIT erfüllt. Die Lösung bietet eine Basis, um zukünftige Projekte effizienter zu planen und zu betreiben.</p>
+                    <blockquote><strong>Evaluation</strong><br>
+                        «Die Evaluation bestätigt, dass eine provider‑agnostische Strukturierung von Landing Zones möglich ist und einen konsistenten Governance‑Leitrahmen für Hybrid‑Multi‑Cloud‑Umgebungen unterstützt.»<br>
+                        <i>Ergebnis der Bachelorarbeit</i>
+                    </blockquote>
+                    <h3>Schlüsselbegriffe</h3>
+                    <ul class="keyterms">
+                        <li><span>Landing Zone</span>Provider‑agnostisches Rahmenwerk für Cloud‑Strukturen</li>
+                        <li><span>Hybrid‑Multi‑Cloud</span>Verbund mehrerer öffentlicher und privater Cloud‑Plattformen</li>
+                        <li><span>Enterprise Architecture</span>Methodischer Ansatz zur Strukturierung von Organisationen</li>
+                        <li><span>Governance</span>Richtlinien und Prozesse zur Einhaltung von Sicherheit und Compliance</li>
+                        <li><span>Traceability</span>Nachverfolgbarkeit von Anforderungen und Kontrollen</li>
+                    </ul>
+                    <h3>Auftraggeber</h3>
+                    <p><img src="images/bit_logo.jpg" alt="BIT Logo" class="responsive"></p>
+                    <p><strong>Bundesamt für Informatik und Telekommunikation (BIT)</strong><br>
+                        Campus Meielen<br>
+                        Eichenweg 3<br>
+                        CH-3003, Bern<br>
+                        <a href="https://www.bit.admin.ch">www.bit.admin.ch</a>
+                    </p>
+                    <h3>Team</h3>
+                    <div class="row">
+                        <div class="col s12 l4">
+                            <p><strong>Studierende</strong><br>
+                            Frithjof Hoppe<br>
+                            Benjamin Dätwyler</p>
+                        </div>
+                        <div class="col s12 l4">
+                            <p><strong>Betreuung</strong><br>
+                            Romano Roth (Experte)<br>
+                            Sebastian Graf (Fachbetreuer)</p>
+                        </div>
+                        <div class="col s12 l4">
+                            <p><strong>Auftraggeber</strong><br>
+                            Sebastian Matyas<br>
+                            Thierry Perroud</p>
+                        </div>
+                    </div><!-- end row -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="black">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 offset-m1 m10 offset-l2 l8">
+                    <h4><img src="https://web0.fhnw.ch/ht/informatik/images/arrow-left-long-solid.svg" alt="arrow"> <a href="../index.html">Bachelor thesis overview</a></h4>
+                    <p>If you are interested in becoming a customer, please contact <a href="mailto:projekte.sgi.technik@fhnw.ch">projekte.sgi.technik@fhnw.ch</a></p>
+                </div>
+            </div><!-- end row -->
+        </div>
+    </footer>
+</body>
+</html>

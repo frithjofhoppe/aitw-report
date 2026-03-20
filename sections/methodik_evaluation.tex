@@ -389,8 +389,6 @@ Die Dimension des Kontextes und der Anwendung wie beschrieben in \autoref{tab:ev
 
 Mittels der Dimension \flqq Architekturprinzipien\frqq\ wird ein Konformitätsprozess definiert. Der Prozess wendet die verschiedenen Prinzipien auf die Traceability-Architektur an um eine Aussage über die Konformität machen zu können. Diese Aussage soll aufzeigen, dass die Struktur der Traceability-Architektur den Anforderungen aus der Dimension \flqq Kontext und Anwendung\frqq\ entspricht.
 
-\hl{Evaluierung hier ist nicht mehr aktuell, da die prinzipien nur noch als fail pass beurteilt wreden}
-
 \begin{align}
 P &= \{p_1, \dots, p_n\}  \\
 P_{\text{selection}} &= \{\, p \in P \mid p \text{ ist Teil der Auswahl } \,\} \\ \\
@@ -399,23 +397,19 @@ P_{\text{selection}} &= \{\, p \in P \mid p \text{ ist Teil der Auswahl } \,\} \
 Zur Fokussierung auf den Kontext, in welchem die Konformität gezeigt werden soll, wird eine Ausahl der Architekturprinzipien aus \autoref{fig:bit-architecture-principles} und \autoref{tab:architecture-principles} vorgenommen. Diese Auswahl wird als $P_{\text{selection}}$ bezeichnet.
 
 \begin{align}
-s_{\text{principles}} &: P \rightarrow \{0, 1, 2, 3, 4\}
+s_{\text{principles}} &: P \rightarrow \{true,fase\}
 \end{align}
 
-Das Mass der Erfüllung eines Architekturprinzips wird mit $s_{\text{principles}}(p)$ ermittelt.
+Die Erfüllung eines Architekturprinzips wird mit $s_{\text{principles}}(p)$ ermittelt.
 
 \begin{align}
-s_{\text{principles}}(p) =
+s_{\text{principles}}(p) &=
 \begin{cases}
-< 1, & \text{falls Prinzip } p \text{ Prinzip nicht erfüllt } \\
->= 1 & \text{falls Prinzip } p \text{ Prinzip erfüllt }
+true  & \text{falls Prinzip } p \text{ erfüllt ist } \\
+false & \text{falls Prinzip } p \text{ nicht erfüllt ist }
 \end{cases}
-\end{align}
-
-Ein Architekturprinzip, welches mit $w_{\text{principles}}(p) = 0$ resultiert, gilt als nicht erfüllt und bedeutet, dass die Architektur den Konformitätschecks nicht bestanden hat.
-
-\begin{align}
-passed = \forall p \in P_{\text{selection}} \; ( s_{\text{principles}}(p) > 0 )
+\\
+passed &= \forall p \in P_{\text{selection}} \; ( s_{\text{principles}}(p) \text{ is true} )
 \end{align}
 
 Damit der Konformitätschecks als erfüllt gilt, müssen alle Architekturprinzipien in einem Mindestmass mit $passed$ erfüllt werden.
@@ -573,7 +567,7 @@ Score_{\text{quality}} &= \frac{\sum_{q \in Q_{\text{selection}}} w_{\text{quali
 Der $Score_{quality}$ ergibt sich aus einer Auswahl an den Qualitätsattributen $Q$ (siehe \autoref{tab:quality-attributes-external} und \autoref{tab:quality-attributes}), welche als $Q_{\text{selection}}$ bezeichnet wird. Die Anzahl an Qualitätsattributen ist durch $|Q_{\text{selection}}|$ gegeben. Zur Gewichtung der einzelnen Merkmale wird $w_{\text{quality}}(p)$ verwendet.
 
 \begin{align}
-w_{\text{quality}} &: Q \rightarrow \{0.1, 0.3, 0.4, 0.4, 0.6, 0.7, 0.8, 0.9, 1.0\} \\
+w_{\text{quality}} &: Q \rightarrow \{0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0\} \\
 s_{\text{quality}} &: Q \rightarrow \{1, 2, 3, 4\}
 \end{align}
 

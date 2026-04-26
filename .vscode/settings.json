@@ -54,7 +54,9 @@
                 "-outdir=%OUTDIR%",
                 "%DOC%"
             ],
-            "env": {}
+            "env": {
+                "TMPDIR": "/tmp"
+            }
         }
     ],
     "[latex]": {

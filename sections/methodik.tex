@@ -1,3 +1,159 @@
 \section{Methodik und Vorgehen}
 \label{sec:methodik}
 
+3.1 Research Design
+•	Qualitative comparative analysis 
+•	Document-based evaluation of provider documentation and selected technical literature 
+3.2 Selection of Providers
+•	Microsoft Azure 
+•	Amazon Web Services 
+•	Google Cloud Platform 
+•	Alibaba Cloud 
+•	IBM Cloud 
+3.3 Selection Rationale
+•	Providers were selected because they represent major cloud platforms with documented landing zone concepts or equivalent foundational constructs 
+•	The selected set enables a broad comparison across established enterprise-oriented cloud environments 
+3.4 Comparison Framework
+•	Security: how the landing zone supports secure cloud usage 
+•	Governance: how policies, controls, and management structures are embedded 
+•	Scalability: how the concept supports growth, reuse, and organizational expansion 
+•	Resource Organization: how accounts, subscriptions, folders, projects, or equivalent structures are arranged 
+•	Standardization and Automation: how the landing zone enables repeatable and consistent setup 
+3.5 Analysis Procedure
+•	Collection of provider-specific definitions and descriptions 
+•	Extraction of relevant information according to the comparison framework 
+•	Structured comparison of the provider concepts 
+•	Identification of recurring characteristics and major differences 
+•	Derivation of a common definition based on the comparative findings 
+3.6 Methodological Limitations
+•	Dependence on publicly available documentation 
+•	Variation in abstraction level and terminology between providers 
+•	Conceptual focus without validation through implementation or case studies 
+
+
+
+Zum Verständnis, wie der \ac{lz}-Begriff, \ac{lz} und \ac{lz}-Komponenten bereits bei Cloud-Plattformen verbreitet sind, wird eine Recherche gemacht. Das Vorgehen der Recherche besteht aus den folgenden Schritten:
+
+\begin{enumerate}
+    \item Recherche zur Etablierung des Begriffs \ac{lz} in der wissenschaftlichen Literatur
+    \item Unterschiede in der Beschreibung der \ac{lz}s als Begriff und die technischen Komponenten der \ac{lz} bei relevanten Anbietern identifizieren
+    \item Abgrenzung der \ac{lz}s zu anderen Ressourcen auf einer Cloud-Plattform
+\end{enumerate}
+
+Als Begrenzung für die Recherche sollen lediglich relevante Cloud-Provider betrachtet werden. Amazon mit der Plattform AWS, Google mit GCP und Microsoft mit Azure bilden nach \cite{saraswat_cloud_2020} die drei Markt-stärksten Anbieter von umfassenden Cloud-Services. Zu den genannten Anbietern werden zusätzlich noch IBM und Alibaba wegen Verträgen im Rahmen des Vorhabens \flqq Public Clouds Bund\frqq\ der WTO-20007 nach \cite{bk_public_2025} ebenfalls einbezogen, da diese vom \ac{bit} verwendet werden. Diese Anbieter werden im Folgenden weiter als Cloud-Provider verstanden.
+
+In einer initialen systematischen Literaturrecherche wird zunächst ermittelt, wie etabliert der Begriff \ac{lz} bereits in wissenschaftlichen Arbeiten und der Industrie ist. Hierzu soll die Arbeitshypothese darüber, was eine \ac{lz} ist (siehe \hyperlink{problemstellung}{Problemstellung}), welche vom \ac{bit} gefasst wurde, hinterfragt werden. Zur Recherche wird hierfür zu Beginn mit einer allgemeinen Recherchefrage gestartet, welche anschliessend basierend auf der in den Ergebnissen verwendeten Terminologie reformuliert wird. Die initiale Frage ist \flqq What are the key architectural components and design principles for establishing a secure and efficient cloud landing zone?\frqq. Diese Recherchefrage wird anschliessend an ein KI-basiertes Tool übergeben, welches mittels semantischer Ähnlichkeit von Begriffen nach existierenden wissenschaftlichen Publikationen sucht (siehe Tools in \fullref{sec:hilfsmittel}). Die angebundenen Engines sind hierbei Semantic Scholar und OpenAlex \parencite{noauthor_elicits_2025}, welche etabliert sind. Der dadurch generierte Report zeigt \cite{elicit_what_2025} (siehe \autoref{appendix:elicit-report-landingzone}), dass bis auf eine Quelle die Terminologie \ac{lz} nicht explizit verwendet wird. Vielmehr werden auf grundsätzliche architektonische Konzepte hingewiesen, welche mit der Idee der \ac{lz} zusammenhängen. Quellen, welche den Begriff verwenden, sind bis auf wenige Ausnahmen \parencite{laheri_designing_2025} Dokumente der Cloud-Provider selbst oder Fachliteratur, welche indirekt auf die konkrete Implementierung von Cloud-Providern verweist, wie bei \cite{mulder_multi-cloud_2020}. Eine Suche mit ähnlichen Schlüsselwörtern auf einer traditionellen Plattform \footnote{siehe Suche mit Query ('cloud landing zone' OR 'landing zone architecture' OR 'cloud foundation' OR 'multi-account architecture') AND ('design principles' OR 'best practices' OR 'architecture components' OR 'security' OR 'governance') auf \url{https://swisscovery.slsp.ch/}} stützt diese Vermutung.
+
+Dies wirft somit die Frage auf, ob es sich möglicherweise um einen Begriff handelt, der von Cloud-Providern selbst etabliert wurde und nicht aus der Forschung stammt. In ersten Architektur-Blogs von AWS \parencite{orban_four_2017} werden \ac{lz}s als Implementation einer der sogenannten \textit{6R} verwendet \parencite{orban_6_2016}. Bei diesen \textit{R}s handelt es sich um die von \cite{gartner_gartner_2013} ursprünglich fünf erkannten Ansätze von Organisationen in die Cloud zu migrieren. Basierend auf diesen Ansätzen nennt \cite{orban_four_2017}, dass als Teil der Migration das bestehende Applikations-Portfolio nach Bedürfnissen gruppiert werden soll, um passende Operations- und Application-Landing-Zones zu identifizieren. Die \ac{lz} definieren hierbei high-level Architekturpatterns und Capabilities \parencite{orban_four_2017}. Auf dieser ersten Beschreibung des Begriffs aufbauend werden die Dokumentationen aller Cloud-Plattformen konsultiert, um Ähnlichkeiten in der Definition feststellen zu können.
+
+\paragraph{Microsoft Azure}
+\textbf{Implizierte Definition \ac{lz}}: \flqq Ein Azure Zielzone [...] bietet eine konsistente Möglichkeit, zum Einrichten und Verwalten ihrer Azure-Umgebung [...]. Sie sorgt für Konsistenz in ihrer gesamten Organisation, indem es wichtige Anforderungen für Sicherheit, Compliance und Betriebseffizienz [...] erfüllt. Sie bieten eine [...] Grundlage, die auf [\textit{Core-}]Designprinzipien in acht Designbereichen ausgerichtet ist. \frqq \parencite{microsoft_what_2025}
+
+\textbf{Kommentar}: Microsoft bietet eine Referenzarchitektur und unterteilt diese in Plattform- und Anwendungs-\ac{lz}s. Es werden Designprinzipien definiert, welche die Grundlage für die Architektur bilden sollen. \cite{microsoft_what_2025}
+
+\paragraph{Amazon Web Services (AWS)}
+\textbf{Implizierte Definition \ac{lz}}: \flqq Eine landing zone ist eine gut strukturierte AWS Umgebung mit mehreren Konten, die skalierbar und sicher ist. Dies ist ein Ausgangspunkt, von dem aus Ihr Unternehmen schnell Workloads und Anwendungen starten und bereitstellen kann, ohne auf Ihre Sicherheits- und Infrastrukturumgebung verzichten zu müssen.\frqq \parencite{aws_was_2026}
+
+\textbf{Kommentar}: AWS bietet die Möglichkeit \ac{lz}s von AWS Control Tower oder eine eigene Implementation zu nutzen. Das \ac{lz}-Feature von AWS Control Tower wird beschrieben als unternehmensweiter Container, der all Ihre Organisationseinheiten (OUs), Konten, Benutzer und andere Ressourcen enthält, für die Sie Compliance-Vorschriften gelten möchten. \cite{aws_was_2026}, \cite{aws_was_2026-1}
+
+\paragraph{Google Cloud Platform (GCP)}
+\textbf{Implizierte Definition \ac{lz}}: \flqq [...] Eine Landing-Zone ist eine modulare und skalierbare Konfiguration, die es Organisationen ermöglicht, Google Cloud für ihre Geschäftsanforderungen zu übernehmen. Eine Landing-Zone ist oft eine Voraussetzung für die Bereitstellung von Unternehmens-Arbeitslasten in einer Cloud-Umgebung. Eine Landing-Zone ist keine Zone oder zonale Ressourcen. \frqq \parencite{google_design_2026}
+
+\textbf{Kommentar}: Google beschreibt die primären Elemente eine \ac{lz} und bietet eine Beispielarchitektur. Es wird dem Kunden überlassen die \ac{lz} zu gestalten. \cite{google_design_2026}
+
+\paragraph{IBM Cloud}
+\textbf{Implizierte Definition \ac{lz}}: \flqq Die \textit{einsetzbaren Architekturen} sind ein vorkonfigurierter Satz von Infrastructure-as-Code-Assets (IaC IAC) \frqq \parencite{ibm_overview_2026}
+
+\textbf{Kommentar}: IBM sieht \ac{lz}s als \textit{einsetzbare Architekturen} und stellt konkrete Assets für Partnertechnologien bereit. \cite{ibm_overview_2026}
+
+\paragraph{Alibaba Cloud}
+\textbf{Implizierte Definition \ac{lz}}: \flqq Alibaba Cloud Landing Zone is a set of IT governance frameworks designed to guide enterprises to deploy on and migrate to Alibaba Cloud. \frqq \parencite{alibaba_landing_2026}
+
+\textbf{Kommentar}: Alibaba sieht \ac{lz}s als Frameworks, welche Unternehmen bei der Migration zu Alibaba Cloud unterstützen sollen. \cite{alibaba_landing_2026}
+
+\label{tab:term-landingzone}
+
+Die Analyse der verschiedenen Cloud-Plattformen zeigt, dass der Begriff \ac{lz} nicht komplett einheitlich verwendet wird. Es gibt teilweise Überschneidungen mit anderen Begriffen wie \textit{Foundation}, \textit{Architecture} oder \textit{Framework}. Trotz der Unterschiede wird sichtbar, dass die verschiedenen Cloud-Plattformen ähnliche Konzepte und Komponenten beschreiben, welche in der Literatur teilweise als Teil einer \ac{lz} beschrieben werden. Um diese Beobachtung zu festigen, werden in \autoref{tab:cloud-landing-zone-comparison} ebenfalls die  Komponenten der Cloud-Plattformen verglichen. Zum Vergleich werden folgende Komponenten verwendet: IAM / Account Management, Network, Resource Management, Compliance, Financial Management und Security.
+
+Der Vergleicht zeigt, dass es durchaus Überschneidungen gibt bei den Komponenten welche die verschiedenen Anbieter als Teil einer \ac{lz} beschreiben. Unterscheiden tun sich vor allem die Terminologie und die Art und Weise, in der die Komponenten beschrieben werden.
+
+\begin{landscape}
+\begin{longtable}{|
+  L{3cm}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+  p{\dimexpr(\linewidth-3cm-12\tabcolsep-6\arrayrulewidth)/5\relax}|
+}
+\hline
+\textbf{Aspekt / Anbieter} & \textbf{AWS} & \textbf{Azure} & \textbf{GCP} & \textbf{AliBaba} & \textbf{IBM} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Aspect / Cloud} & \textbf{AWS} & \textbf{Azure} & \textbf{GCP} & \textbf{AliBaba} & \textbf{IBM} \\
+\hline
+\endhead
+
+IAM / Account Management &
+ergibt sich aus Accounts und Roles and Permissions in AWS Control Tower &
+Identity and Access Management im Azure Cloud Adoption Framework. Umfasst Authentication, Access auf Ressourcen, Separation of Duties sowie Hybrid Identities mit Entra &
+vorhanden sowohl mit Google als Identity Provider wie auch mit 3rd Party Identity Providern &
+Role Authorization über Alibaba Cloud RAM, Integration mit Enterprise SSO zur einheitlichen Authentifizierung und Umsetzung des Least-Privilege-Prinzips &
+Läuft unter dem Aspekt Security \\
+\hline
+
+Network &
+Networking in AWS Control Tower mit Unterstützung von VPCs &
+Network topology and connectivity. Unterscheidung zwischen corp (interne Anwendungen) und online (Internet-exponierte Anwendungen) &
+nutzt ebenfalls VPCs und typischerweise eine Hub-and-Spoke Architektur &
+Planung von Enterprise-Netzwerken inkl. IP-Segmentierung, Network Control Policies und VPC-Zuweisung für verschiedene Accounts &
+vorhanden \\
+\hline
+
+Resource Management &
+über AWS Organizations mit Organisationseinheiten (OU) und Accounts &
+Resource organization mit Naming, Tagging, Subscription Design und Management Group Hierarchie &
+Strukturierung über Folders und Projects, gebunden an einen Root-Node &
+Ressource Management über Labels und Directory Permissions zur Integration mit Enterprise Account Systemen &
+läuft unter Service Management \\
+\hline
+
+Compliance &
+indirekt über Baselines und Guardrails in AWS Control Tower &
+Azure Governance stellt sicher, dass Designentscheidungen in Identity, Network, Security und Management eingehalten werden &
+vorhanden über das Compliance Resource Center &
+Cloud-Compliance Lösungen für Industry Norms und interne Policies (z.B. Encryption, Port Restrictions) &
+läuft ebenfalls unter Security \\
+\hline
+
+Financial Management &
+nicht als eigener Aspekt, sondern implizit über Billing der AWS Organization &
+Azure Billing und Microsoft Entra Tenant. Betrachtung verschiedener Angebotsmodelle wie Pay-As-You-Go &
+Cost efficiency and control über Google Cloud Billing &
+Kostenübersicht pro Branch / Department / Project über Account Labels zur Unterstützung von Cost Optimization &
+läuft unter Service Management \\
+\hline
+
+Security &
+eigener Security-Aspekt mit Compliance Validation, Data Protection, Resilience und Infrastructure Security &
+Security Design Area mit Fokus auf Security Operations Tooling und Zero Trust &
+eigener Security-Blueprint mit Best Practices &
+Enterprise Security Lösungen für Data, Storage, Host und Network Security &
+IAM, App-Security, Datensicherheit, Infra \& Endpunkte, IDS, Governance \\
+\hline
+
+Quellen &
+\cite{aws_was_2026}, \cite{aws_was_2026-1} &
+\cite{microsoft_what_2025} &
+\cite{google_design_2026} &
+\cite{alibaba_landing_2026} &
+\cite{ibm_overview_2026} \\
+\hline
+
+\caption{Vergleich zentraler Landing-Zone Aspekte zwischen Cloud Providern}
+\label{tab:cloud-landing-zone-comparison}
+
+\end{longtable}
+\end{landscape}

@@ -31,13 +31,13 @@ jobs:
 
       - name: Compile LaTeX Document
         run: |
-          latexmk -pdf -interaction=nonstopmode -shell-escape ip6-project-documentation.tex
-          makeglossaries ip6-project-documentation
-          latexmk -pdf -interaction=nonstopmode -shell-escape ip6-project-documentation.tex
+          latexmk -pdf -interaction=nonstopmode -shell-escape aitw-report.tex
+          makeglossaries aitw-report
+          latexmk -pdf -interaction=nonstopmode -shell-escape aitw-report.tex
         working-directory: ./  # Adjust if your .tex file is in a subfolder
 
       - name: Upload PDF Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ip6-project-documentation-pdf
-          path: ip6-project-documentation.pdf
+          name: aitw-report-pdf
+          path: aitw-report.pdf

@@ -1,25 +1,47 @@
-\section{Grundlagen und Stand der Technik}
+\section{Foundations}
 \label{sec:grundlagen}
 
 \cite{ahuja_mcda_2022}
 
 \ac{adm}
 
-2.1 General Understanding of Landing Zones
-•	Basic meaning of a landing zone as a foundational cloud environment 
-•	Typical objectives such as security, governance, standardization, and operational readiness 
-2.2 Landing Zones in Provider Practice
-•	Use of the concept in provider documentation and technical guidance 
-•	Relationship to practical cloud adoption and organizational cloud setup 
-2.3 Related Concepts and Terminology
-•	Connections between landing zones and related terms 
-•	Differences in naming and conceptual framing across providers 
-2.4 Key Comparison Dimensions in Technical Context
-•	Security as a recurring design objective 
-•	Governance as a central organizational and architectural concern 
-•	Scalability as an important requirement for repeated and controlled cloud adoption 
-•	Resource organization and standardization as supporting dimensions of comparison 
-2.5 Research Gap and Relevance
-•	Lack of a uniform, provider-independent understanding of the term landing zone 
-•	Limited comparability due to provider-specific terminology and structure 
-•	Need for a structured comparison that leads to a common definition 
+% 2.1 General Understanding of Landing Zones
+% •	Basic meaning of a landing zone as a foundational cloud environment 
+% •	Typical objectives such as security, governance, standardization, and operational readiness 
+% 2.2 Landing Zones in Provider Practice
+% •	Use of the concept in provider documentation and technical guidance 
+% •	Relationship to practical cloud adoption and organizational cloud setup 
+% 2.3 Related Concepts and Terminology
+% •	Connections between landing zones and related terms 
+% •	Differences in naming and conceptual framing across providers 
+% 2.4 Key Comparison Dimensions in Technical Context
+% •	Security as a recurring design objective 
+% •	Governance as a central organizational and architectural concern 
+% •	Scalability as an important requirement for repeated and controlled cloud adoption 
+% •	Resource organization and standardization as supporting dimensions of comparison 
+% 2.5 Research Gap and Relevance
+% •	Lack of a uniform, provider-independent understanding of the term landing zone 
+% •	Limited comparability due to provider-specific terminology and structure 
+% •	Need for a structured comparison that leads to a common definition 
+
+% sections/grundlagen.tex
+
+\subsection{General Understanding of Landing Zones}
+
+In general technical usage, a landing zone describes a prepared cloud foundation on which organizations can deploy workloads securely, consistently, and scalably. Typical elements include identity models, resource hierarchies, network concepts, security controls, logging, and governance mechanisms. This understanding aligns with provider-neutral architectural thinking, such as the NIST reference architecture, which treats cloud systems as structured combinations of technical and organizational components. It also aligns with current multi-cloud literature, in which heterogeneity and orchestration are described as central challenges.
+
+\subsection{Landing Zones in Provider Practice}
+
+In practice, providers use the concept as a foundation for initial controlled cloud adoption and later expansion. Google Cloud explicitly refers to a modular and scalable configuration, or \emph{cloud foundation}, recommended before the first enterprise workload. Azure describes a landing zone as a standardized approach for setting up and managing Azure at scale. AWS defines a landing zone as an orchestration framework for a foundational multi-account environment. Alibaba Cloud understands it as a framework for resource structure, access security, network architecture, and compliance. IBM Cloud links the term more strongly to preconfigured deployable architectures, provided through IaC, for secure VPC-based foundations.
+
+\subsection{Related Concepts and Terminology}
+
+The terms \emph{landing zone}, \emph{cloud foundation}, \emph{enterprise foundation}, \emph{multi-account environment}, and \emph{deployable architecture} do not refer to identical concepts, but to closely related ones. This is particularly visible in Google Cloud, where landing zone and cloud foundation are functionally close, and in IBM Cloud, where the provider-specific focus is more strongly oriented toward VPC- and workload-related reference architectures. This terminological variation explains part of the difficulty of comparison: the functional role is similar, but the conceptual framing differs.
+
+\subsection{Key Comparison Dimensions}
+
+Five dimensions are particularly suitable for comparison: security, governance, scalability, resource organization, and standardization and automation. These dimensions correspond both to recurring themes in official documentation and to findings from technical literature, according to which multi-cloud environments succeed or fail largely because of heterogeneity, orchestration, repeatability, and controlled operations. IaC is especially important in this context because it supports reproducibility, auditability, versioning, and standardized change processes.
+
+\subsection{Research Gap and Relevance}
+
+The research gap is not that descriptions of landing zones are absent, but that a consistent provider-independent synthesis is missing. Such a synthesis is particularly relevant for multi-cloud architectures and the comparative analysis of governance models, because it enables a more reliable discussion of similarities, differences, and transferability.

@@ -1,34 +1,64 @@
-\section{Evaluation der Traceability Architektur}
+\section{Evaluation}
 \label{sec:evaluation}
 
 
-4.1 Overview of Provider Concepts
-•	Brief presentation of how each provider frames the concept of a landing zone 
-•	Summary of the main purpose and structure of the concept in each case 
-4.2 Similarities Across Providers
-•	Landing zones as foundational cloud environments 
-•	Shared emphasis on controlled and structured cloud adoption 
-•	Recurrent focus on security, governance, and consistency 
-4.3 Differences Across Providers
-•	Differences in terminology and conceptual framing 
-•	Differences in structural organization 
-•	Differences in the treatment of security, governance, and scalability 
-•	Differences in how strongly the concept is tied to provider-specific implementations 
-4.4 Comparison by Framework Dimensions
-4.4.1 Security
-•	Comparison of how providers address secure cloud usage within their landing zone concepts 
-4.4.2 Governance
-•	Comparison of how providers structure policies, rules, and organizational control mechanisms 
-4.4.3 Scalability
-•	Comparison of how providers design landing zones for growth, reuse, and repeated deployment 
-4.4.4 Resource Organization
-•	Comparison of hierarchical structures such as accounts, subscriptions, folders, or projects 
-4.4.5 Standardization and Automation
-•	Comparison of how providers support repeatable, consistent, and automated setup 
-4.5 Synthesis of Findings
-•	Consolidation of the main shared characteristics 
-•	Identification of the most significant conceptual differences 
-•	Preparation of the basis for a provider-independent definition 
-4.6 Proposed Common Definition
-•	Formulation of a common definition of a landing zone 
-•	Emphasis on the shared functional purpose despite provider-specific differences 
+% 4.1 Overview of Provider Concepts
+% •	Brief presentation of how each provider frames the concept of a landing zone 
+% •	Summary of the main purpose and structure of the concept in each case 
+% 4.2 Similarities Across Providers
+% •	Landing zones as foundational cloud environments 
+% •	Shared emphasis on controlled and structured cloud adoption 
+% •	Recurrent focus on security, governance, and consistency 
+% 4.3 Differences Across Providers
+% •	Differences in terminology and conceptual framing 
+% •	Differences in structural organization 
+% •	Differences in the treatment of security, governance, and scalability 
+% •	Differences in how strongly the concept is tied to provider-specific implementations 
+% 4.4 Comparison by Framework Dimensions
+% 4.4.1 Security
+% •	Comparison of how providers address secure cloud usage within their landing zone concepts 
+% 4.4.2 Governance
+% •	Comparison of how providers structure policies, rules, and organizational control mechanisms 
+% 4.4.3 Scalability
+% •	Comparison of how providers design landing zones for growth, reuse, and repeated deployment 
+% 4.4.4 Resource Organization
+% •	Comparison of hierarchical structures such as accounts, subscriptions, folders, or projects 
+% 4.4.5 Standardization and Automation
+% •	Comparison of how providers support repeatable, consistent, and automated setup 
+% 4.5 Synthesis of Findings
+% •	Consolidation of the main shared characteristics 
+% •	Identification of the most significant conceptual differences 
+% •	Preparation of the basis for a provider-independent definition 
+% 4.6 Proposed Common Definition
+% •	Formulation of a common definition of a landing zone 
+% •	Emphasis on the shared functional purpose despite provider-specific differences 
+
+% sections/evaluation.tex
+
+\subsection{Overview of Provider Concepts}
+
+Azure describes the landing zone as a standardized, modular, and scalable approach with a clear distinction between platform and application landing zones. AWS understands it as an orchestration framework for a secure multi-account environment and operationalizes it strongly through Control Tower, controls, and Account Factory. Google Cloud defines landing zones as a modular cloud foundation with a focus on organization, security, networking, and continuous growth. Alibaba Cloud links the concept closely to Cloud Governance Center, blueprint templates, Resource Directory, core accounts, and guardrails. IBM Cloud frames landing zones primarily as IaC-based, secure, and customizable VPC or workload reference architectures.
+
+\subsection{Similarities}
+
+Despite different terminology, all providers show the same functional core idea: a landing zone creates a preconfigured foundation before productive workloads are rolled out broadly. All models emphasize a minimum level of security controls, governance, resource structuring, and repeatability. They also share the assumption that landing zones are not static, but grow with cloud usage and should be rolled out or extended consistently through automation.
+
+\subsection{Differences}
+
+The main differences lie in scope and abstraction. Azure, AWS, Google Cloud, and Alibaba Cloud largely treat landing zones as organization-wide governance and operating foundations. IBM Cloud uses the term more strongly for deployable architecture packages within an existing account and IAM framework. Google Cloud also explicitly emphasizes that there is no single standard implementation, while Azure provides a more opinionated target architecture with fixed design areas. AWS anchors the concept particularly strongly in multi-account governance with OUs, controls, and Account Factory. Alibaba Cloud connects landing zones closely with blueprint-based governance orchestration in Cloud Governance Center.
+
+\subsection{Comparison by Dimension}
+
+In the security dimension, all providers require central controls, logging, and secure baseline configurations. AWS relies on controls, audit and log archive accounts, and central security services. Google Cloud recommends central security controls and organization-wide log sinks. Alibaba Cloud integrates guardrails, CloudSSO, and centralized log delivery. Azure embeds security as one of eight design areas through management groups and policies. IBM Cloud integrates encryption, observability, compliance functions, and secure network foundations for regulated workloads.
+
+Governance is central for all providers, but it is implemented differently. Azure organizes governance through management groups, Azure Policy, and subscription vending. AWS uses OUs, controls, and Account Factory as an integrated governance mechanism. Google Cloud relies on organizations, folders, projects, inherited organization policies, and deny policies. Alibaba Cloud uses Resource Directory, core and application folders, and guardrails in Cloud Governance Center. IBM Cloud provides resource groups, access groups, and projects, but its landing zone documentation is less focused on organization-wide hierarchy and more focused on compliance-oriented infrastructure packages.
+
+Scalability also shows common goals but different mechanisms. Azure refers to modular architecture and repeatable modules, Google to dynamic and growing landing zones, AWS to an enterprise environment of any size, Alibaba to blueprints and baselines for multi-account scaling, and IBM to modular variations of the same deployable architectures. The difference is that Azure, AWS, Google Cloud, and Alibaba Cloud understand scalability primarily in organizational and governance-related terms, while IBM operationalizes it more through architecture packages.
+
+Resource organization reveals particularly clear provider-specific patterns. Azure uses management groups and subscriptions, separated into platform and application areas. AWS structures environments through organizational units and accounts, including audit and log archive accounts. Google Cloud starts with an organization and structures environments through folders and projects with policy inheritance. Alibaba Cloud builds on Resource Directory, folders, and billing, logging, security, and shared service accounts. IBM Cloud organizes resources primarily through resource groups, tags, accounts, and projects; in its landing zone architectures, VPCs, subnets, and network segments are also central.
+
+Finally, standardization and automation are present across all providers and represent a decisive characteristic of the concept. Azure recommends Bicep or Terraform through the IaC Accelerator. AWS combines Control Tower with Landing Zone Accelerator, CDK, CloudFormation, and configuration-driven pipelines. Google Cloud recommends Terraform, GitOps, and the Enterprise Foundations Blueprint. Alibaba Cloud automates setup through blueprint templates, account baselines, and central governance workflows. IBM Cloud uses Terraform, Schematics, and Projects for standardized deployment of its deployable architectures. This dimension shows the strongest conceptual convergence across provider boundaries.
+
+\subsection{Synthesis and Common Definition}
+
+The analysis suggests that the smallest common denominator is not a specific architecture diagram, but a function: a landing zone creates a standardized order framework in which identities, resource structures, network design, security controls, logging, policies, and automation are prepared so that workloads can be deployed in a controlled, repeatable, and compliant way. From this, the following provider-independent definition can be derived: \emph{A landing zone is a standardized, scalable, and largely automated starting environment in a cloud that establishes organizational, security-related, and technical guardrails for the controlled deployment and operation of workloads.} This definition captures both governance-centered models and more IaC- and architecture-centered variants.

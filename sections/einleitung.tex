@@ -28,18 +28,10 @@
 % •	Chapter 5 discusses the significance and limitations of the findings 
 % •	Chapter 6 concludes the report by answering the research question and summarizing the main outcome 
 
-\subsection{Background}
+Cloud providers such as Microsoft Azure, Amazon Web Services (AWS), Google Cloud, Alibaba Cloud, and IBM Cloud all use the term \emph{landing zone}. In practice, a landing zone is a prepared cloud environment in which workloads can be deployed under defined technical and organizational conditions. It usually brings together key elements such as identity and access management, network design, policy enforcement, logging, and resource organization. As more organizations adopt multi-cloud and hybrid-cloud strategies, such foundations have become more important.
 
-With the increasing adoption of multi-cloud and hybrid-cloud strategies, the need for consistent governance, security, and operating models is growing. In this context, the term \emph{landing zone} has become established as a designation for a prepared and controlled starting environment on which workloads can be deployed in a standardized way. The relevance of such starting environments results not only from the technical complexity of distributed cloud landscapes, but also from the need to harmonize policies, identities, networks, logging, and responsibilities across platforms.
+The concept, however, is not used in the same way by all providers. Some emphasize governance through account structures and policy inheritance. Others focus more on modular reference architectures, reusable \ac{iac} assets, or deployable patterns. This makes direct comparison difficult. It also makes it harder to distinguish the core idea of a landing zone from provider-specific implementation choices.
 
-\subsection{Problem Statement}
+The purpose of this report is to compare landing zone concepts across major cloud providers and to derive a provider-independent definition. The report argues that, despite clear differences in terminology, structure, and implementation emphasis, these concepts share a common purpose: they define a standardized and governed cloud foundation that enables secure, scalable, and controlled workload deployment.
 
-Although the term is widely used in practice, it is not defined uniformly by cloud providers. Some descriptions mainly emphasize multi-account structures and governance, while others focus on modular reference architectures, security controls, or reusable \ac{iac} building blocks. This makes direct comparison difficult, especially when a technical, cross-provider definition is required for architectural or research purposes.
-
-\subsection{Aim and Research Question}
-
-This report examines how major cloud providers conceptualize landing zones, which similarities and differences their models show, and which provider-independent definition can be derived from them. This leads to the following research question: \textit{How do landing zone concepts differ across major cloud providers, and what common definition can be derived from their similarities and differences?}
-
-\subsection{Scope and Structure}
-
-The focus is not on implementation details of individual services, but on the conceptual level. Azure, AWS, Google Cloud, Alibaba Cloud, and IBM Cloud are examined as representative enterprise-oriented platforms. The report first clarifies the conceptual and technical background, then explains the methodology, followed by the comparative analysis. Finally, the findings are discussed and a condensed answer to the research question is provided.
+The report focuses on the conceptual level rather than on the implementation details of individual cloud services. It first reviews the relevant background and literature. It then explains the comparison method. The main section analyzes provider concepts using selected criteria. The final sections discuss the findings and present a common definition.
